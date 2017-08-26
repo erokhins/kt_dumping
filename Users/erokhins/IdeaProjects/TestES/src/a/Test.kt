@@ -8,30 +8,30 @@ Inferred types:
 
 'bas' @ [13:17] ==> public fun bas(): Unit defined in root package in file Test.kt[SimpleFunctionDescriptorImpl]
 
-'run' @ [19:29] ==> @InlineOnly public inline fun <R> run(block: () -> Map<Any?, Nothing>): Map<Any?, Nothing> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'run' @ [19:29] ==> @InlineOnly public inline fun <R> run(block: () -> Map<Int, String>): Map<Int, String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <R> -> Map<Any?, Nothing>
+    <R> -> Map<Int, String>
 
 'if (false) {
             mapOf()
         } else {
             emptyMap()
-        }' @ [21:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Nothing, elseBranch: Nothing): Nothing[SimpleFunctionDescriptorImpl]
+        }' @ [21:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<Int, String>, elseBranch: Map<Int, String>): Map<Int, String>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Nothing
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<Int, String>
 
-'mapOf' @ [22:13] ==> @InlineOnly public inline fun <K, V> mapOf(): Map<Any?, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [22:13] ==> @InlineOnly public inline fun <K, V> mapOf(): Map<Int, String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> Any?
-    <V> -> Any?
+    <K> -> Int
+    <V> -> String
 
-'emptyMap' @ [24:13] ==> public fun <K, V> emptyMap(): Map<Any?, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [24:13] ==> public fun <K, V> emptyMap(): Map<Int, String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> Any?
-    <V> -> Any?
+    <K> -> Int
+    <V> -> String
 
-'emptyMap' @ [27:9] ==> public fun <K, V> emptyMap(): Map<Any?, Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [27:9] ==> public fun <K, V> emptyMap(): Map<Int, String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> Any?
-    <V> -> Nothing
+    <K> -> Int
+    <V> -> String
 
