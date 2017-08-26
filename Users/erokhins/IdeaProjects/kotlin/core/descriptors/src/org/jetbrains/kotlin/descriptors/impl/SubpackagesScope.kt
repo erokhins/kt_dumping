@@ -26,8 +26,6 @@
 
 'acceptsKinds' @ [46:25] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [46:38] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'PACKAGES_MASK' @ [46:59] ==> public final val PACKAGES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
 'listOf' @ [46:82] ==> @InlineOnly public inline fun <T> listOf(): List<DeclarationDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -96,11 +94,11 @@ Inferred types:
 
 'java' @ [61:31] ==> public val <T> KClass<out SubpackagesScope>.java: Class<out SubpackagesScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> SubpackagesScope
+    <T> -> Captured(out SubpackagesScope)
 
 'simpleName' @ [61:36] ==> public final val <T : (Any..Any?)> Class<out SubpackagesScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SubpackagesScope
+    <T : (Any..Any?)> -> Captured(out SubpackagesScope)
 
 'p' @ [62:9] ==> value-parameter p: Printer defined in org.jetbrains.kotlin.descriptors.impl.SubpackagesScope.printScopeStructure[ValueParameterDescriptorImpl]
 

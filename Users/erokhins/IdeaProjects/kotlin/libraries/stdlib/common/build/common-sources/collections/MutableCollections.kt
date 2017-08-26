@@ -54,7 +54,7 @@
 
 'this' @ [65:5] ==> <this> defined in kotlin.collections.plusAssign[ReceiverParameterDescriptorImpl]
 
-'add' @ [65:10] ==> public abstract fun add(element: Any?): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
+'add' @ [65:10] ==> public abstract fun add(element: T): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [65:14] ==> value-parameter element: T defined in kotlin.collections.plusAssign[ValueParameterDescriptorImpl]
 
@@ -92,7 +92,7 @@ Inferred types:
 
 'this' @ [97:5] ==> <this> defined in kotlin.collections.minusAssign[ReceiverParameterDescriptorImpl]
 
-'remove' @ [97:10] ==> public abstract fun remove(element: Any?): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
+'remove' @ [97:10] ==> public abstract fun remove(element: T): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [97:17] ==> value-parameter element: T defined in kotlin.collections.minusAssign[ValueParameterDescriptorImpl]
 

@@ -28,8 +28,6 @@ Inferred types:
 
 'CLONEABLE_NAME' @ [38:17] ==> private final val CLONEABLE_NAME: Name defined in org.jetbrains.kotlin.builtins.JvmBuiltInClassDescriptorFactory.Companion[PropertyDescriptorImpl]
 
-'Modality' @ [38:33] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [38:42] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'INTERFACE' @ [38:62] ==> enum entry INTERFACE defined in org.jetbrains.kotlin.descriptors.ClassKind[FakeCallableDescriptorForObject]

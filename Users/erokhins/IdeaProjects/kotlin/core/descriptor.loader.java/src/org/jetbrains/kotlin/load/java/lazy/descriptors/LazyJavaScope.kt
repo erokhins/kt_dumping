@@ -10,11 +10,7 @@ Inferred types:
 
 'computeDescriptors' @ [56:15] ==> protected final fun computeDescriptors(kindFilter: DescriptorKindFilter, nameFilter: (Name) -> Boolean, location: LookupLocation): List<DeclarationDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [56:34] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'ALL' @ [56:55] ==> @JvmField public final val ALL: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
-
-'MemberScope' @ [56:60] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'ALL_NAME_FILTER' @ [56:72] ==> public final val ALL_NAME_FILTER: (Name) -> Boolean defined in org.jetbrains.kotlin.resolve.scopes.MemberScope.Companion[PropertyDescriptorImpl]
 
@@ -139,7 +135,7 @@ Inferred types:
 
 'c' @ [116:17] ==> protected final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope[PropertyDescriptorImpl]
 
-'childForMethod' @ [116:19] ==> public fun LazyJavaResolverContext.childForMethod(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner, typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy[SimpleFunctionDescriptorImpl]
+'childForMethod' @ [116:19] ==> public fun LazyJavaResolverContext.childForMethod(containingDeclaration: DeclarationDescriptor, typeParameterOwner: JavaTypeParameterListOwner, typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
 
 'functionDescriptorImpl' @ [116:34] ==> val functionDescriptorImpl: JavaMethodDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.resolveMethodToFunctionDescriptor[LocalVariableDescriptor]
 
@@ -212,8 +208,6 @@ Inferred types:
 
 'returnType' @ [130:36] ==> public final val returnType: KotlinType defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.MethodSignatureData[PropertyDescriptorImpl]
 
-'Modality' @ [131:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'convertFromFlags' @ [131:26] ==> public final fun convertFromFlags(abstract: Boolean, open: Boolean): Modality defined in org.jetbrains.kotlin.descriptors.Modality.Companion[SimpleFunctionDescriptorImpl]
 
 'method' @ [131:43] ==> value-parameter method: JavaMethod defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.resolveMethodToFunctionDescriptor[ValueParameterDescriptorImpl]
@@ -233,9 +227,9 @@ Inferred types:
 'if (effectiveSignature.receiverType != null)
                     mapOf(JavaMethodDescriptor.ORIGINAL_VALUE_PARAMETER_FOR_EXTENSION_RECEIVER to valueParameters.descriptors.first())
                 else
-                    emptyMap<FunctionDescriptor.UserDataKey<ValueParameterDescriptor>, ValueParameterDescriptor>()' @ [133:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<FunctionDescriptor.UserDataKey<ValueParameterDescriptor>, ValueParameterDescriptor>, elseBranch: Map<FunctionDescriptor.UserDataKey<ValueParameterDescriptor>, ValueParameterDescriptor>): Map<FunctionDescriptor.UserDataKey<ValueParameterDescriptor>, ValueParameterDescriptor>[SimpleFunctionDescriptorImpl]
+                    emptyMap<FunctionDescriptor.UserDataKey<ValueParameterDescriptor>, ValueParameterDescriptor>()' @ [133:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<(FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>..FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>?), ValueParameterDescriptor>, elseBranch: Map<(FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>..FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>?), ValueParameterDescriptor>): Map<(FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>..FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>?), ValueParameterDescriptor>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<UserDataKey<ValueParameterDescriptor>, ValueParameterDescriptor>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<(org.jetbrains.kotlin.descriptors.FunctionDescriptor.UserDataKey<(org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)>..org.jetbrains.kotlin.descriptors.FunctionDescriptor.UserDataKey<(org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)>?), ValueParameterDescriptor>
 
 'effectiveSignature' @ [133:21] ==> val effectiveSignature: LazyJavaScope.MethodSignatureData defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.resolveMethodToFunctionDescriptor[LocalVariableDescriptor]
 
@@ -308,7 +302,7 @@ Inferred types:
 
 'isAnnotationType' @ [149:55] ==> public abstract val isAnnotationType: Boolean defined in org.jetbrains.kotlin.load.java.structure.JavaClass[PropertyDescriptorImpl]
 
-'toAttributes' @ [150:48] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [150:48] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'annotationMethod' @ [151:44] ==> val annotationMethod: Boolean defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.computeMethodReturnType[LocalVariableDescriptor]
 
@@ -347,7 +341,7 @@ Inferred types:
 
 'javaParameter' @ [167:52] ==> val javaParameter: JavaValueParameter defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.resolveValueParameters.<anonymous>[LocalVariableDescriptor]
 
-'toAttributes' @ [168:46] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [168:46] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'component1' @ [169:18] ==> public final operator fun component1(): KotlinType defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
@@ -509,8 +503,6 @@ Inferred types:
 
 'computeFunctionNames' @ [213:73] ==> protected abstract fun computeFunctionNames(kindFilter: DescriptorKindFilter, nameFilter: ((Name) -> Boolean)?): Set<Name> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [213:94] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'FUNCTIONS' @ [213:115] ==> @JvmField public final val FUNCTIONS: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
 'c' @ [214:38] ==> protected final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope[PropertyDescriptorImpl]
@@ -522,8 +514,6 @@ Inferred types:
     <T : Any> -> Set<Name>
 
 'computePropertyNames' @ [214:73] ==> protected abstract fun computePropertyNames(kindFilter: DescriptorKindFilter, nameFilter: ((Name) -> Boolean)?): Set<Name> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope[SimpleFunctionDescriptorImpl]
-
-'DescriptorKindFilter' @ [214:94] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES' @ [214:115] ==> @JvmField public final val VARIABLES: DescriptorKindFilter defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
@@ -659,9 +649,9 @@ Inferred types:
 
 'storageManager' @ [257:23] ==> public final val storageManager: StorageManager defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaResolverContext[PropertyDescriptorImpl]
 
-'createNullableLazyValue' @ [257:38] ==> public abstract fun <T : Any> createNullableLazyValue(computable: () -> ConstantValue<Any?>?): NullableLazyValue<ConstantValue<Any?>> defined in org.jetbrains.kotlin.storage.StorageManager[SimpleFunctionDescriptorImpl]
+'createNullableLazyValue' @ [257:38] ==> public abstract fun <T : Any> createNullableLazyValue(computable: () -> ConstantValue<*>?): NullableLazyValue<ConstantValue<*>> defined in org.jetbrains.kotlin.storage.StorageManager[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> ConstantValue<Any?>
+    <T : Any> -> ConstantValue<*>
 
 'c' @ [258:25] ==> protected final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope[PropertyDescriptorImpl]
 
@@ -706,8 +696,6 @@ Inferred types:
 'ownerDescriptor' @ [272:17] ==> protected abstract val ownerDescriptor: DeclarationDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope[PropertyDescriptorImpl]
 
 'annotations' @ [272:34] ==> val annotations: Annotations defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.createPropertyDescriptor[LocalVariableDescriptor]
-
-'Modality' @ [272:47] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [272:56] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -759,7 +747,7 @@ Inferred types:
 
 'type' @ [285:23] ==> public abstract val type: JavaType defined in org.jetbrains.kotlin.load.java.structure.JavaField[PropertyDescriptorImpl]
 
-'toAttributes' @ [286:34] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [286:34] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [288:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -793,8 +781,6 @@ Inferred types:
 
 'acceptsKinds' @ [309:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [309:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CLASSIFIERS_MASK' @ [309:58] ==> public final val CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
 'computeClassNames' @ [310:26] ==> protected abstract fun computeClassNames(kindFilter: DescriptorKindFilter, nameFilter: ((Name) -> Boolean)?): Set<Name> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope[SimpleFunctionDescriptorImpl]
@@ -822,8 +808,6 @@ Inferred types:
 'kindFilter' @ [318:13] ==> value-parameter kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.computeDescriptors[ValueParameterDescriptorImpl]
 
 'acceptsKinds' @ [318:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
-
-'DescriptorKindFilter' @ [318:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'FUNCTIONS_MASK' @ [318:58] ==> public final val FUNCTIONS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
@@ -860,8 +844,6 @@ Inferred types:
 'kindFilter' @ [326:13] ==> value-parameter kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.computeDescriptors[ValueParameterDescriptorImpl]
 
 'acceptsKinds' @ [326:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
-
-'DescriptorKindFilter' @ [326:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES_MASK' @ [326:58] ==> public final val VARIABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
@@ -911,11 +893,11 @@ Inferred types:
 
 'java' @ [342:31] ==> public val <T> KClass<out LazyJavaScope>.java: Class<out LazyJavaScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> LazyJavaScope
+    <T> -> Captured(out LazyJavaScope)
 
 'simpleName' @ [342:36] ==> public final val <T : (Any..Any?)> Class<out LazyJavaScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> LazyJavaScope
+    <T : (Any..Any?)> -> Captured(out LazyJavaScope)
 
 'p' @ [343:9] ==> value-parameter p: Printer defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaScope.printScopeStructure[ValueParameterDescriptorImpl]
 

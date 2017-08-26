@@ -1,6 +1,6 @@
 'unwrap' @ [44:67] ==> public abstract fun unwrap(): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinType[SimpleFunctionDescriptorImpl]
 
-'enhancePossiblyFlexible' @ [44:76] ==> private fun UnwrappedType.enhancePossiblyFlexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int): Result defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'enhancePossiblyFlexible' @ [44:76] ==> private fun UnwrappedType.enhancePossiblyFlexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int): Result defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'qualifiers' @ [44:100] ==> value-parameter qualifiers: (Int) -> JavaTypeQualifiers defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhance[ValueParameterDescriptorImpl]
 
@@ -67,7 +67,7 @@ Inferred types:
 
 'lowerBound' @ [65:31] ==> public final val lowerBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[PropertyDescriptorImpl]
 
-'enhanceInflexible' @ [65:42] ==> private fun SimpleType.enhanceInflexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int, position: TypeComponentPosition): SimpleResult defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'enhanceInflexible' @ [65:42] ==> private fun SimpleType.enhanceInflexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int, position: TypeComponentPosition): SimpleResult defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'qualifiers' @ [65:60] ==> value-parameter qualifiers: (Int) -> JavaTypeQualifiers defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhancePossiblyFlexible[ValueParameterDescriptorImpl]
 
@@ -77,7 +77,7 @@ Inferred types:
 
 'upperBound' @ [66:31] ==> public final val upperBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[PropertyDescriptorImpl]
 
-'enhanceInflexible' @ [66:42] ==> private fun SimpleType.enhanceInflexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int, position: TypeComponentPosition): SimpleResult defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'enhanceInflexible' @ [66:42] ==> private fun SimpleType.enhanceInflexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int, position: TypeComponentPosition): SimpleResult defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'qualifiers' @ [66:60] ==> value-parameter qualifiers: (Int) -> JavaTypeQualifiers defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhancePossiblyFlexible[ValueParameterDescriptorImpl]
 
@@ -162,8 +162,6 @@ Inferred types:
 
 'type' @ [77:86] ==> public open val type: SimpleType defined in org.jetbrains.kotlin.load.java.typeEnhancement.SimpleResult[PropertyDescriptorImpl]
 
-'KotlinTypeFactory' @ [78:29] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
-
 'flexibleType' @ [78:47] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
 'lowerResult' @ [78:60] ==> val lowerResult: SimpleResult defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhancePossiblyFlexible[LocalVariableDescriptor]
@@ -188,7 +186,7 @@ Inferred types:
 
 'wereChanges' @ [84:17] ==> val wereChanges: Boolean defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhancePossiblyFlexible[LocalVariableDescriptor]
 
-'enhanceInflexible' @ [87:26] ==> private fun SimpleType.enhanceInflexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int, position: TypeComponentPosition): SimpleResult defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'enhanceInflexible' @ [87:26] ==> private fun SimpleType.enhanceInflexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int, position: TypeComponentPosition): SimpleResult defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'qualifiers' @ [87:44] ==> value-parameter qualifiers: (Int) -> JavaTypeQualifiers defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhancePossiblyFlexible[ValueParameterDescriptorImpl]
 
@@ -198,7 +196,7 @@ Inferred types:
 
 'position' @ [92:25] ==> value-parameter position: TypeComponentPosition defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhanceInflexible[ValueParameterDescriptorImpl]
 
-'shouldEnhance' @ [92:34] ==> private fun TypeComponentPosition.shouldEnhance(): Boolean defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'shouldEnhance' @ [92:34] ==> private fun TypeComponentPosition.shouldEnhance(): Boolean defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [93:9] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -230,7 +228,7 @@ Inferred types:
 
 'originalClass' @ [99:63] ==> val originalClass: ClassifierDescriptor defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhanceInflexible[LocalVariableDescriptor]
 
-'enhanceMutability' @ [99:77] ==> private fun ClassifierDescriptor.enhanceMutability(qualifiers: JavaTypeQualifiers, position: TypeComponentPosition): EnhancementResult<ClassifierDescriptor> defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'enhanceMutability' @ [99:77] ==> private fun ClassifierDescriptor.enhanceMutability(qualifiers: JavaTypeQualifiers, position: TypeComponentPosition): EnhancementResult<ClassifierDescriptor> defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'effectiveQualifiers' @ [99:95] ==> val effectiveQualifiers: JavaTypeQualifiers defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhanceInflexible[LocalVariableDescriptor]
 
@@ -286,7 +284,7 @@ Inferred types:
 
 'unwrap' @ [112:37] ==> public abstract fun unwrap(): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinType[SimpleFunctionDescriptorImpl]
 
-'enhancePossiblyFlexible' @ [112:46] ==> private fun UnwrappedType.enhancePossiblyFlexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int): Result defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'enhancePossiblyFlexible' @ [112:46] ==> private fun UnwrappedType.enhancePossiblyFlexible(qualifiers: (Int) -> JavaTypeQualifiers, index: Int): Result defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'qualifiers' @ [112:70] ==> value-parameter qualifiers: (Int) -> JavaTypeQualifiers defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhanceInflexible[ValueParameterDescriptorImpl]
 
@@ -328,7 +326,7 @@ Inferred types:
 
 'this' @ [119:65] ==> <this> defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhanceInflexible[ReceiverParameterDescriptorImpl]
 
-'getEnhancedNullability' @ [119:70] ==> private fun KotlinType.getEnhancedNullability(qualifiers: JavaTypeQualifiers, position: TypeComponentPosition): EnhancementResult<Boolean> defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'getEnhancedNullability' @ [119:70] ==> private fun KotlinType.getEnhancedNullability(qualifiers: JavaTypeQualifiers, position: TypeComponentPosition): EnhancementResult<Boolean> defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'effectiveQualifiers' @ [119:93] ==> val effectiveQualifiers: JavaTypeQualifiers defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhanceInflexible[LocalVariableDescriptor]
 
@@ -368,7 +366,7 @@ Inferred types:
 Inferred types:
     <T : Any> -> Annotations
 
-'compositeAnnotationsOrSingle' @ [129:23] ==> private fun List<Annotations>.compositeAnnotationsOrSingle(): Annotations defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'compositeAnnotationsOrSingle' @ [129:23] ==> private fun List<Annotations>.compositeAnnotationsOrSingle(): Annotations defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinTypeFactory' @ [131:24] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
@@ -474,7 +472,7 @@ Inferred types:
 
 'position' @ [159:10] ==> value-parameter position: TypeComponentPosition defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhanceMutability[ValueParameterDescriptorImpl]
 
-'shouldEnhance' @ [159:19] ==> private fun TypeComponentPosition.shouldEnhance(): Boolean defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'shouldEnhance' @ [159:19] ==> private fun TypeComponentPosition.shouldEnhance(): Boolean defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [159:43] ==> <this> defined in org.jetbrains.kotlin.load.java.typeEnhancement.enhanceMutability[ReceiverParameterDescriptorImpl]
 
@@ -565,7 +563,7 @@ Inferred types:
 
 'position' @ [181:10] ==> value-parameter position: TypeComponentPosition defined in org.jetbrains.kotlin.load.java.typeEnhancement.getEnhancedNullability[ValueParameterDescriptorImpl]
 
-'shouldEnhance' @ [181:19] ==> private fun TypeComponentPosition.shouldEnhance(): Boolean defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'shouldEnhance' @ [181:19] ==> private fun TypeComponentPosition.shouldEnhance(): Boolean defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [181:43] ==> <this> defined in org.jetbrains.kotlin.load.java.typeEnhancement.getEnhancedNullability[ReceiverParameterDescriptorImpl]
 
@@ -693,8 +691,6 @@ Inferred types:
 'unwrappedType' @ [228:30] ==> val unwrappedType: UnwrappedType defined in org.jetbrains.kotlin.load.java.typeEnhancement.NotNullTypeParameter.substitutionResult[LocalVariableDescriptor]
 
 'prepareReplacement' @ [228:44] ==> private final fun SimpleType.prepareReplacement(): SimpleType defined in org.jetbrains.kotlin.load.java.typeEnhancement.NotNullTypeParameter[SimpleFunctionDescriptorImpl]
-
-'KotlinTypeFactory' @ [229:32] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
 'flexibleType' @ [229:50] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 

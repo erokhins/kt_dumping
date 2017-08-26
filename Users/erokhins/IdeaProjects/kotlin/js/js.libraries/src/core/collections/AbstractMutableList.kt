@@ -98,7 +98,7 @@ Inferred types:
 
 'fromIndex' @ [91:37] ==> value-parameter fromIndex: Int defined in kotlin.collections.AbstractMutableList.removeRange[ValueParameterDescriptorImpl]
 
-'repeat' @ [92:9] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'repeat' @ [92:9] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin in file Standard.kt[SimpleFunctionDescriptorImpl]
 
 'toIndex' @ [92:16] ==> value-parameter toIndex: Int defined in kotlin.collections.AbstractMutableList.removeRange[ValueParameterDescriptorImpl]
 
@@ -152,7 +152,7 @@ Inferred types:
 
 'last' @ [130:24] ==> protected final var last: Int defined in kotlin.collections.AbstractMutableList.IteratorImpl[PropertyDescriptorImpl]
 
-'check' @ [134:13] ==> @InlineOnly public inline fun check(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'check' @ [134:13] ==> @InlineOnly public inline fun check(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'last' @ [134:19] ==> protected final var last: Int defined in kotlin.collections.AbstractMutableList.IteratorImpl[PropertyDescriptorImpl]
 
@@ -222,7 +222,7 @@ Inferred types:
 
 '-' @ [168:20] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'check' @ [172:13] ==> @InlineOnly public inline fun check(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'check' @ [172:13] ==> @InlineOnly public inline fun check(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'last' @ [172:19] ==> protected final var last: Int defined in kotlin.collections.AbstractMutableList.ListIteratorImpl[PropertyDescriptorImpl]
 

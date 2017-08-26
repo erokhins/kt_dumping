@@ -198,7 +198,7 @@
 
 'typeConstructorParameters' @ [202:9] ==> private final lateinit var typeConstructorParameters: List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedTypeAliasDescriptor[PropertyDescriptorImpl]
 
-'computeConstructorTypeParameters' @ [202:37] ==> public fun ClassifierDescriptorWithTypeParameters.computeConstructorTypeParameters(): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'computeConstructorTypeParameters' @ [202:37] ==> public fun ClassifierDescriptorWithTypeParameters.computeConstructorTypeParameters(): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.descriptors in file typeParameterUtils.kt[SimpleFunctionDescriptorImpl]
 
 'defaultTypeImpl' @ [203:9] ==> private final lateinit var defaultTypeImpl: SimpleType defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedTypeAliasDescriptor[PropertyDescriptorImpl]
 

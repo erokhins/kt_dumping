@@ -17,7 +17,7 @@ Inferred types:
 
 'name' @ [28:46] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'primitiveType' @ [28:52] ==> public final val JvmPrimitiveType.primitiveType: PrimitiveType[MyPropertyDescriptor]
 

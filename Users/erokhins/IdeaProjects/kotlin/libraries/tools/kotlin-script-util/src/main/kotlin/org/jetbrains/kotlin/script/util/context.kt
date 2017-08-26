@@ -47,6 +47,8 @@ Inferred types:
     <T> -> (java.net.URL..java.net.URL?)
     <R : Any> -> File
 
+'toFile' @ [20:119] ==> private fun URL.toFile(): File? defined in org.jetbrains.kotlin.script.util in file context.kt[SimpleFunctionDescriptorImpl]
+
 'emptyList' @ [20:130] ==> public fun <T> emptyList(): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
@@ -54,8 +56,6 @@ Inferred types:
 'getProperty' @ [23:16] ==> public open fun getProperty(p0: (String..String?)): (String..String?) defined in java.lang.System[JavaMethodDescriptor]
 
 'split' @ [24:19] ==> @InlineOnly public inline fun CharSequence.split(regex: Regex, limit: Int = ...): List<String> defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
-
-'String' @ [24:25] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
 'format' @ [24:32] ==> @InlineOnly public inline fun String.Companion.format(format: String, vararg args: Any?): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -69,10 +69,14 @@ Inferred types:
 
 'String' @ [25:33] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isEmpty' @ [25:41] ==> @InlineOnly public inline fun CharSequence.isEmpty(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'map' @ [26:19] ==> public inline fun <T, R> Iterable<String>.map(transform: (String) -> File): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [26:25] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'klass' @ [29:18] ==> value-parameter klass: KClass<out Any> defined in org.jetbrains.kotlin.script.util.classpathFromClass[ValueParameterDescriptorImpl]
 
@@ -130,16 +134,16 @@ Inferred types:
 
 'openStream' @ [40:51] ==> public final fun openStream(): (InputStream..InputStream?) defined in java.net.URL[JavaMethodDescriptor]
 
-'use' @ [40:64] ==> @InlineOnly public inline fun <T : Closeable?, R> (InputStream..InputStream?).use(block: ((InputStream..InputStream?)) -> Manifest): Manifest defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
+'use' @ [40:64] ==> @InlineOnly public inline fun <T : Closeable?, R> (InputStream..InputStream?).use(block: ((InputStream..InputStream?)) -> Nothing?): Nothing? defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Closeable?> -> (java.io.InputStream..java.io.InputStream?)
-    <R> -> Manifest
+    <R> -> Nothing?
 
 'Manifest' @ [40:70] ==> public constructor Manifest() defined in java.util.jar.Manifest[JavaClassConstructorDescriptor]
 
-'apply' @ [40:81] ==> @InlineOnly public inline fun <T> Manifest.apply(block: Manifest.() -> Unit): Manifest defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [40:81] ==> @InlineOnly public inline fun <T> ???.apply(block: ???.() -> Unit): ??? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Manifest
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@b9b6fe3
 
 'read' @ [40:89] ==> public open fun read(p0: (InputStream..InputStream?)): Unit defined in java.util.jar.Manifest[JavaMethodDescriptor]
 

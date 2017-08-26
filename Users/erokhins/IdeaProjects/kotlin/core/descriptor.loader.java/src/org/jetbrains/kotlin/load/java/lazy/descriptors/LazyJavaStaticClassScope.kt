@@ -88,7 +88,7 @@ Inferred types:
 
 'resolveOverridesForStaticMembers' @ [67:23] ==> @NotNull public open fun <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> resolveOverridesForStaticMembers(@NotNull name: Name, @NotNull membersFromSupertypes: (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>), @NotNull membersFromCurrent: (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>), @NotNull classDescriptor: ClassDescriptor, @NotNull errorReporter: ErrorReporter): (MutableCollection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>..Collection<(SimpleFunctionDescriptor..SimpleFunctionDescriptor?)>) defined in org.jetbrains.kotlin.load.java.components.DescriptorResolverUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> SimpleFunctionDescriptor
+    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor..org.jetbrains.kotlin.descriptors.SimpleFunctionDescriptor?)
 
 'name' @ [67:56] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaStaticClassScope.computeNonDeclaredFunctions[ValueParameterDescriptorImpl]
 
@@ -182,7 +182,7 @@ Inferred types:
 
 'resolveOverridesForStaticMembers' @ [83:27] ==> @NotNull public open fun <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> resolveOverridesForStaticMembers(@NotNull name: Name, @NotNull membersFromSupertypes: (MutableCollection<(PropertyDescriptor..PropertyDescriptor?)>..Collection<(PropertyDescriptor..PropertyDescriptor?)>), @NotNull membersFromCurrent: (MutableCollection<(PropertyDescriptor..PropertyDescriptor?)>..Collection<(PropertyDescriptor..PropertyDescriptor?)>), @NotNull classDescriptor: ClassDescriptor, @NotNull errorReporter: ErrorReporter): (MutableCollection<(PropertyDescriptor..PropertyDescriptor?)>..Collection<(PropertyDescriptor..PropertyDescriptor?)>) defined in org.jetbrains.kotlin.load.java.components.DescriptorResolverUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> PropertyDescriptor
+    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'name' @ [84:21] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaStaticClassScope.computeNonDeclaredProperties[ValueParameterDescriptorImpl]
 
@@ -213,15 +213,15 @@ Inferred types:
 
 'realOriginal' @ [89:20] ==> private final val PropertyDescriptor.realOriginal: PropertyDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaStaticClassScope[PropertyDescriptorImpl]
 
-'flatMap' @ [90:15] ==> public inline fun <K, V, R> Map<out PropertyDescriptor, List<PropertyDescriptor>>.flatMap(transform: (Map.Entry<PropertyDescriptor, List<PropertyDescriptor>>) -> Iterable<PropertyDescriptor>): List<PropertyDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [90:15] ==> public inline fun <K, V, R> Map<out PropertyDescriptor, List<PropertyDescriptor>>.flatMap(transform: (Map.Entry<PropertyDescriptor, List<PropertyDescriptor>>) -> Iterable<(PropertyDescriptor..PropertyDescriptor?)>): List<(PropertyDescriptor..PropertyDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> PropertyDescriptor
     <V> -> List<PropertyDescriptor>
-    <R> -> PropertyDescriptor
+    <R> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'resolveOverridesForStaticMembers' @ [91:17] ==> @NotNull public open fun <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> resolveOverridesForStaticMembers(@NotNull name: Name, @NotNull membersFromSupertypes: (MutableCollection<(PropertyDescriptor..PropertyDescriptor?)>..Collection<(PropertyDescriptor..PropertyDescriptor?)>), @NotNull membersFromCurrent: (MutableCollection<(PropertyDescriptor..PropertyDescriptor?)>..Collection<(PropertyDescriptor..PropertyDescriptor?)>), @NotNull classDescriptor: ClassDescriptor, @NotNull errorReporter: ErrorReporter): (MutableCollection<(PropertyDescriptor..PropertyDescriptor?)>..Collection<(PropertyDescriptor..PropertyDescriptor?)>) defined in org.jetbrains.kotlin.load.java.components.DescriptorResolverUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> PropertyDescriptor
+    <D : (CallableMemberDescriptor..CallableMemberDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PropertyDescriptor..org.jetbrains.kotlin.descriptors.PropertyDescriptor?)
 
 'name' @ [91:50] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaStaticClassScope.computeNonDeclaredProperties[ValueParameterDescriptorImpl]
 
@@ -259,10 +259,10 @@ Inferred types:
 Inferred types:
     <T> -> SimpleFunctionDescriptor
 
-'dfs' @ [106:13] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull nodes: (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>), @NotNull neighbors: ((ClassDescriptor..ClassDescriptor?)) -> (MutableIterable<(ClassDescriptor..ClassDescriptor?)>..Iterable<(ClassDescriptor..ClassDescriptor?)>), @NotNull handler: DFS.NodeHandler<(ClassDescriptor..ClassDescriptor?), (Unit..Unit?)>): (Unit..Unit?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
+'dfs' @ [106:13] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull nodes: (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>), @NotNull neighbors: (current: (ClassDescriptor..ClassDescriptor?)) -> (MutableIterable<(ClassDescriptor..ClassDescriptor?)>..Iterable<(ClassDescriptor..ClassDescriptor?)>), @NotNull handler: DFS.NodeHandler<(ClassDescriptor..ClassDescriptor?), (Unit..Unit?)>): (Unit..Unit?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> ClassDescriptor
-    <R : (Any..Any?)> -> Unit
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ClassDescriptor..org.jetbrains.kotlin.descriptors.ClassDescriptor?)
+    <R : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'listOf' @ [106:17] ==> public fun <T> listOf(element: ClassDescriptor): List<ClassDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

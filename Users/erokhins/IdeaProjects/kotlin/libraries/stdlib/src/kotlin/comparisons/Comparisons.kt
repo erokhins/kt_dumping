@@ -28,9 +28,9 @@ Inferred types:
 
 'b' @ [35:21] ==> value-parameter b: T defined in kotlin.comparisons.compareValuesByImpl[ValueParameterDescriptorImpl]
 
-'compareValues' @ [36:20] ==> public fun <T : Comparable<*>> compareValues(a: Comparable<Nothing>?, b: Comparable<Nothing>?): Int defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
+'compareValues' @ [36:20] ==> public fun <T : Comparable<*>> compareValues(a: Comparable<*>?, b: Comparable<*>?): Int defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Comparable<*>> -> Comparable<Nothing>
+    <T : Comparable<*>> -> Comparable<*>
 
 'v1' @ [36:34] ==> val v1: Comparable<*>? defined in kotlin.comparisons.compareValuesByImpl[LocalVariableDescriptor]
 
@@ -42,9 +42,9 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [47:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'compareValues' @ [49:12] ==> public fun <T : Comparable<*>> compareValues(a: Comparable<Nothing>?, b: Comparable<Nothing>?): Int defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
+'compareValues' @ [49:12] ==> public fun <T : Comparable<*>> compareValues(a: Comparable<*>?, b: Comparable<*>?): Int defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Comparable<*>> -> Comparable<Nothing>
+    <T : Comparable<*>> -> Comparable<*>
 
 'invoke' @ [49:26] ==> public abstract operator fun invoke(p1: T): Comparable<*>? defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'comparator' @ [59:12] ==> value-parameter comparator: Comparator<in K> /* = Comparator<in K> */ defined in kotlin.comparisons.compareValuesBy[ValueParameterDescriptorImpl]
 
-'compare' @ [59:23] ==> public abstract fun compare(p0: (Any..Any?), p1: (Any..Any?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
+'compare' @ [59:23] ==> public abstract fun compare(p0: (K..K?), p1: (K..K?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
 
 'invoke' @ [59:31] ==> public abstract operator fun invoke(p1: T): K defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -360,7 +360,7 @@ Inferred types:
 
 'comparator' @ [191:60] ==> value-parameter comparator: Comparator<in T> /* = Comparator<in T> */ defined in kotlin.comparisons.then[ValueParameterDescriptorImpl]
 
-'compare' @ [191:71] ==> public abstract fun compare(p0: (Any..Any?), p1: (Any..Any?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
+'compare' @ [191:71] ==> public abstract fun compare(p0: (T..T?), p1: (T..T?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
 
 'a' @ [191:79] ==> value-parameter a: (T..T?) defined in kotlin.comparisons.then.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -388,7 +388,7 @@ Inferred types:
 
 'comparator' @ [201:60] ==> value-parameter comparator: Comparator<in T> /* = Comparator<in T> */ defined in kotlin.comparisons.thenDescending[ValueParameterDescriptorImpl]
 
-'compare' @ [201:71] ==> public abstract fun compare(p0: (Any..Any?), p1: (Any..Any?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
+'compare' @ [201:71] ==> public abstract fun compare(p0: (T..T?), p1: (T..T?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
 
 'b' @ [201:79] ==> value-parameter b: (T..T?) defined in kotlin.comparisons.thenDescending.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -419,7 +419,7 @@ Inferred types:
 
 'comparator' @ [215:25] ==> value-parameter comparator: Comparator<in T> /* = Comparator<in T> */ defined in kotlin.comparisons.nullsFirst[ValueParameterDescriptorImpl]
 
-'compare' @ [215:36] ==> public abstract fun compare(p0: (Any..Any?), p1: (Any..Any?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
+'compare' @ [215:36] ==> public abstract fun compare(p0: (T..T?), p1: (T..T?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
 
 'a' @ [215:44] ==> value-parameter a: T? defined in kotlin.comparisons.nullsFirst.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -460,7 +460,7 @@ Inferred types:
 
 'comparator' @ [236:25] ==> value-parameter comparator: Comparator<in T> /* = Comparator<in T> */ defined in kotlin.comparisons.nullsLast[ValueParameterDescriptorImpl]
 
-'compare' @ [236:36] ==> public abstract fun compare(p0: (Any..Any?), p1: (Any..Any?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
+'compare' @ [236:36] ==> public abstract fun compare(p0: (T..T?), p1: (T..T?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
 
 'a' @ [236:44] ==> value-parameter a: T? defined in kotlin.comparisons.nullsLast.<anonymous>[ValueParameterDescriptorImpl]
 

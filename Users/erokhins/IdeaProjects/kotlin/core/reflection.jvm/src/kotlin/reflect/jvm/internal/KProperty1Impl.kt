@@ -20,7 +20,7 @@ Inferred types:
 
 'lazy' @ [29:45] ==> @NotNull public open fun <T : (Any..Any?)> lazy(@NotNull initializer: () -> (KProperty1Impl.Getter<T, R>..KProperty1Impl.Getter<T, R>?)): ReflectProperties.LazyVal<(KProperty1Impl.Getter<T, R>..KProperty1Impl.Getter<T, R>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Getter<T, R>
+    <T : (Any..Any?)> -> (kotlin.reflect.jvm.internal.KProperty1Impl.Getter<T, R>..kotlin.reflect.jvm.internal.KProperty1Impl.Getter<T, R>?)
 
 'Getter' @ [29:52] ==> public constructor Getter<T, out R>(property: KProperty1Impl<T, R>) defined in kotlin.reflect.jvm.internal.KProperty1Impl.Getter[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -91,7 +91,7 @@ Inferred types:
 
 'lazy' @ [51:45] ==> @NotNull public open fun <T : (Any..Any?)> lazy(@NotNull initializer: () -> (KMutableProperty1Impl.Setter<T, R>..KMutableProperty1Impl.Setter<T, R>?)): ReflectProperties.LazyVal<(KMutableProperty1Impl.Setter<T, R>..KMutableProperty1Impl.Setter<T, R>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Setter<T, R>
+    <T : (Any..Any?)> -> (kotlin.reflect.jvm.internal.KMutableProperty1Impl.Setter<T, R>..kotlin.reflect.jvm.internal.KMutableProperty1Impl.Setter<T, R>?)
 
 'Setter' @ [51:52] ==> public constructor Setter<T, R>(property: KMutableProperty1Impl<T, R>) defined in kotlin.reflect.jvm.internal.KMutableProperty1Impl.Setter[ClassConstructorDescriptorImpl]
 Inferred types:

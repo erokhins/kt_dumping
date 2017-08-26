@@ -50,35 +50,35 @@ Inferred types:
 
 'index' @ [24:106] ==> public final var index: Int defined in arrayIterator.<no name provided>[PropertyDescriptorImpl]
 
-'booleanArrayIterator' @ [27:23] ==> @JsName internal fun booleanArrayIterator(array: BooleanArray): BooleanIterator defined in root package[SimpleFunctionDescriptorImpl]
+'booleanArrayIterator' @ [27:23] ==> @JsName internal fun booleanArrayIterator(array: BooleanArray): BooleanIterator defined in root package in file builtins.kt[SimpleFunctionDescriptorImpl]
 
 'array' @ [27:44] ==> value-parameter array: dynamic defined in arrayIterator[ValueParameterDescriptorImpl]
 
-'byteArrayIterator' @ [28:20] ==> @JsName internal fun byteArrayIterator(array: ByteArray): ByteIterator defined in root package[SimpleFunctionDescriptorImpl]
+'byteArrayIterator' @ [28:20] ==> @JsName internal fun byteArrayIterator(array: ByteArray): ByteIterator defined in root package in file builtins.kt[SimpleFunctionDescriptorImpl]
 
 'array' @ [28:38] ==> value-parameter array: dynamic defined in arrayIterator[ValueParameterDescriptorImpl]
 
-'shortArrayIterator' @ [29:21] ==> @JsName internal fun shortArrayIterator(array: ShortArray): ShortIterator defined in root package[SimpleFunctionDescriptorImpl]
+'shortArrayIterator' @ [29:21] ==> @JsName internal fun shortArrayIterator(array: ShortArray): ShortIterator defined in root package in file builtins.kt[SimpleFunctionDescriptorImpl]
 
 'array' @ [29:40] ==> value-parameter array: dynamic defined in arrayIterator[ValueParameterDescriptorImpl]
 
-'charArrayIterator' @ [30:20] ==> @JsName internal fun charArrayIterator(array: CharArray): CharIterator defined in root package[SimpleFunctionDescriptorImpl]
+'charArrayIterator' @ [30:20] ==> @JsName internal fun charArrayIterator(array: CharArray): CharIterator defined in root package in file builtins.kt[SimpleFunctionDescriptorImpl]
 
 'array' @ [30:38] ==> value-parameter array: dynamic defined in arrayIterator[ValueParameterDescriptorImpl]
 
-'intArrayIterator' @ [31:19] ==> @JsName internal fun intArrayIterator(array: IntArray): IntIterator defined in root package[SimpleFunctionDescriptorImpl]
+'intArrayIterator' @ [31:19] ==> @JsName internal fun intArrayIterator(array: IntArray): IntIterator defined in root package in file builtins.kt[SimpleFunctionDescriptorImpl]
 
 'array' @ [31:36] ==> value-parameter array: dynamic defined in arrayIterator[ValueParameterDescriptorImpl]
 
-'longArrayIterator' @ [32:20] ==> @JsName internal fun longArrayIterator(array: LongArray): LongIterator defined in root package[SimpleFunctionDescriptorImpl]
+'longArrayIterator' @ [32:20] ==> @JsName internal fun longArrayIterator(array: LongArray): LongIterator defined in root package in file builtins.kt[SimpleFunctionDescriptorImpl]
 
 'array' @ [32:38] ==> value-parameter array: dynamic defined in arrayIterator[ValueParameterDescriptorImpl]
 
-'floatArrayIterator' @ [33:21] ==> @JsName internal fun floatArrayIterator(array: FloatArray): FloatIterator defined in root package[SimpleFunctionDescriptorImpl]
+'floatArrayIterator' @ [33:21] ==> @JsName internal fun floatArrayIterator(array: FloatArray): FloatIterator defined in root package in file builtins.kt[SimpleFunctionDescriptorImpl]
 
 'array' @ [33:40] ==> value-parameter array: dynamic defined in arrayIterator[ValueParameterDescriptorImpl]
 
-'doubleArrayIterator' @ [34:22] ==> @JsName internal fun doubleArrayIterator(array: DoubleArray): DoubleIterator defined in root package[SimpleFunctionDescriptorImpl]
+'doubleArrayIterator' @ [34:22] ==> @JsName internal fun doubleArrayIterator(array: DoubleArray): DoubleIterator defined in root package in file builtins.kt[SimpleFunctionDescriptorImpl]
 
 'array' @ [34:42] ==> value-parameter array: dynamic defined in arrayIterator[ValueParameterDescriptorImpl]
 
@@ -374,7 +374,7 @@ Inferred types:
 
 'js' @ [113:65] ==> public val <T : Any> KClass<out Throwable>.js: JsClass<out Throwable> defined in kotlin.js[PropertyDescriptorImpl]
 Inferred types:
-    <T : Any> -> Throwable
+    <T : Any> -> Captured(out Throwable)
 
 'instance' @ [116:9] ==> value-parameter instance: Throwable defined in captureStack[ValueParameterDescriptorImpl]
 

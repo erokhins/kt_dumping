@@ -12,7 +12,7 @@
 
 'put' @ [38:17] ==> public open fun <T : (Any..Any?)> put(p0: (Context.Key<(PrintWriter..PrintWriter?)>..Context.Key<(PrintWriter..PrintWriter?)>?), p1: (PrintWriter..PrintWriter?)): Unit defined in com.sun.tools.javac.util.Context[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PrintWriter
+    <T : (Any..Any?)> -> (java.io.PrintWriter..java.io.PrintWriter?)
 
 'outKey' @ [38:25] ==> public final val outKey: (Context.Key<(PrintWriter..PrintWriter?)>..Context.Key<(PrintWriter..PrintWriter?)>?) defined in com.sun.tools.javac.util.Log[JavaPropertyDescriptor]
 
@@ -164,7 +164,7 @@ Inferred types:
 
 'put' @ [104:21] ==> public open fun <T : (Any..Any?)> put(p0: (Context.Key<(Log..Log?)>..Context.Key<(Log..Log?)>?), p1: (Context.Factory<(Log..Log?)>..Context.Factory<(Log..Log?)>?)): Unit defined in com.sun.tools.javac.util.Context[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Log
+    <T : (Any..Any?)> -> (com.sun.tools.javac.util.Log..com.sun.tools.javac.util.Log?)
 
 'logKey' @ [104:29] ==> public final val logKey: (Context.Key<(Log..Log?)>..Context.Key<(Log..Log?)>?) defined in com.sun.tools.javac.util.Log[JavaPropertyDescriptor]
 

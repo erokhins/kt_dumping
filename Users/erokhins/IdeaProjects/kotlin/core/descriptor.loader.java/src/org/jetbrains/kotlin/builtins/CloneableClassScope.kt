@@ -12,8 +12,6 @@ Inferred types:
 
 'containingClass' @ [33:49] ==> protected final val containingClass: ClassDescriptor defined in org.jetbrains.kotlin.builtins.CloneableClassScope[PropertyDescriptorImpl]
 
-'Annotations' @ [33:66] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [33:78] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
 'CLONE_NAME' @ [33:85] ==> internal final val CLONE_NAME: Name defined in org.jetbrains.kotlin.builtins.CloneableClassScope.Companion[PropertyDescriptorImpl]
@@ -45,8 +43,6 @@ Inferred types:
 'builtIns' @ [35:114] ==> public val DeclarationDescriptor.builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[PropertyDescriptorImpl]
 
 'anyType' @ [35:123] ==> public final val KotlinBuiltIns.anyType: SimpleType[MyPropertyDescriptor]
-
-'Modality' @ [36:25] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [36:34] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

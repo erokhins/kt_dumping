@@ -1248,7 +1248,7 @@ Inferred types:
 
 'asmType' @ [483:26] ==> public abstract val asmType: Type defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer[PropertyDescriptorImpl]
 
-'writeValueNullAware' @ [485:54] ==> private fun writeValueNullAware(v: InstructionAdapter, block: () -> Unit): Unit defined in org.jetbrains.kotlin.android.parcel.serializers[SimpleFunctionDescriptorImpl]
+'writeValueNullAware' @ [485:54] ==> private fun writeValueNullAware(v: InstructionAdapter, block: () -> Unit): Unit defined in org.jetbrains.kotlin.android.parcel.serializers in file ParcelSerializers.kt[SimpleFunctionDescriptorImpl]
 
 'v' @ [485:74] ==> value-parameter v: InstructionAdapter defined in org.jetbrains.kotlin.android.parcel.serializers.NullAwareParcelSerializerWrapper.writeValue[ValueParameterDescriptorImpl]
 
@@ -1258,7 +1258,7 @@ Inferred types:
 
 'v' @ [486:29] ==> value-parameter v: InstructionAdapter defined in org.jetbrains.kotlin.android.parcel.serializers.NullAwareParcelSerializerWrapper.writeValue[ValueParameterDescriptorImpl]
 
-'readValueNullAware' @ [489:53] ==> private fun readValueNullAware(v: InstructionAdapter, block: () -> Unit): Unit defined in org.jetbrains.kotlin.android.parcel.serializers[SimpleFunctionDescriptorImpl]
+'readValueNullAware' @ [489:53] ==> private fun readValueNullAware(v: InstructionAdapter, block: () -> Unit): Unit defined in org.jetbrains.kotlin.android.parcel.serializers in file ParcelSerializers.kt[SimpleFunctionDescriptorImpl]
 
 'v' @ [489:72] ==> value-parameter v: InstructionAdapter defined in org.jetbrains.kotlin.android.parcel.serializers.NullAwareParcelSerializerWrapper.readValue[ValueParameterDescriptorImpl]
 

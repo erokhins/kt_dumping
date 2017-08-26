@@ -44,7 +44,7 @@ Inferred types:
 
 'function' @ [29:134] ==> value-parameter function: Operation defined in org.jetbrains.idl2k.generateFunction[ValueParameterDescriptorImpl]
 
-'getterOrSetter' @ [29:143] ==> private fun Operation.getterOrSetter(): NativeGetterOrSetter defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getterOrSetter' @ [29:143] ==> private fun Operation.getterOrSetter(): NativeGetterOrSetter defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'function' @ [30:9] ==> value-parameter function: Operation defined in org.jetbrains.idl2k.generateFunction[ValueParameterDescriptorImpl]
 
@@ -169,7 +169,7 @@ Inferred types:
 
 'function' @ [58:9] ==> value-parameter function: Operation defined in org.jetbrains.idl2k.generateFunctions[ValueParameterDescriptorImpl]
 
-'getterOrSetter' @ [58:18] ==> private fun Operation.getterOrSetter(): NativeGetterOrSetter defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getterOrSetter' @ [58:18] ==> private fun Operation.getterOrSetter(): NativeGetterOrSetter defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'NONE' @ [58:59] ==> enum entry NONE defined in org.jetbrains.idl2k.NativeGetterOrSetter[FakeCallableDescriptorForObject]
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'function' @ [62:40] ==> value-parameter function: Operation defined in org.jetbrains.idl2k.generateFunctions[ValueParameterDescriptorImpl]
 
-'getterOrSetter' @ [62:49] ==> private fun Operation.getterOrSetter(): NativeGetterOrSetter defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getterOrSetter' @ [62:49] ==> private fun Operation.getterOrSetter(): NativeGetterOrSetter defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'NONE' @ [63:30] ==> enum entry NONE defined in org.jetbrains.idl2k.NativeGetterOrSetter[FakeCallableDescriptorForObject]
 
@@ -440,7 +440,7 @@ Inferred types:
 
 'static' @ [93:49] ==> public final val static: Boolean defined in org.jetbrains.idl2k.Attribute[PropertyDescriptorImpl]
 
-'mapLiteral' @ [94:25] ==> private fun mapLiteral(literal: String?, expectedType: Type = ..., enums: Map<String, EnumDefinition>): String? defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'mapLiteral' @ [94:25] ==> private fun mapLiteral(literal: String?, expectedType: Type = ..., enums: Map<String, EnumDefinition>): String? defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'attribute' @ [94:36] ==> value-parameter attribute: Attribute defined in org.jetbrains.idl2k.generateAttribute[ValueParameterDescriptorImpl]
 
@@ -516,7 +516,7 @@ Inferred types:
 
 'iface' @ [111:127] ==> value-parameter iface: InterfaceDefinition defined in org.jetbrains.idl2k.resolveDefinitionKind[ValueParameterDescriptorImpl]
 
-'findConstructors' @ [111:133] ==> public fun InterfaceDefinition.findConstructors(): List<ExtendedAttribute> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'findConstructors' @ [111:133] ==> public fun InterfaceDefinition.findConstructors(): List<ExtendedAttribute> defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
 'when {
             iface.dictionary -> GenerateDefinitionKind.INTERFACE
@@ -558,7 +558,7 @@ Inferred types:
 
 'iface' @ [115:42] ==> value-parameter iface: InterfaceDefinition defined in org.jetbrains.idl2k.resolveDefinitionKind[ValueParameterDescriptorImpl]
 
-'superTypes' @ [115:48] ==> private fun InterfaceDefinition.superTypes(repository: Repository): List<InterfaceDefinition> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'superTypes' @ [115:48] ==> private fun InterfaceDefinition.superTypes(repository: Repository): List<InterfaceDefinition> defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [115:59] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.resolveDefinitionKind[ValueParameterDescriptorImpl]
 
@@ -566,7 +566,7 @@ Inferred types:
 Inferred types:
     <T> -> InterfaceDefinition
 
-'resolveDefinitionKind' @ [115:77] ==> private fun resolveDefinitionKind(repository: Repository, iface: InterfaceDefinition, constructors: List<ExtendedAttribute> = ...): GenerateDefinitionKind defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'resolveDefinitionKind' @ [115:77] ==> private fun resolveDefinitionKind(repository: Repository, iface: InterfaceDefinition, constructors: List<ExtendedAttribute> = ...): GenerateDefinitionKind defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [115:99] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.resolveDefinitionKind[ValueParameterDescriptorImpl]
 
@@ -608,7 +608,7 @@ Inferred types:
     <T> -> Operation
     <R> -> GenerateFunction
 
-'generateFunctions' @ [124:94] ==> public fun generateFunctions(repository: Repository, function: Operation): List<GenerateFunction> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'generateFunctions' @ [124:94] ==> public fun generateFunctions(repository: Repository, function: Operation): List<GenerateFunction> defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [124:112] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.mapOperations[ValueParameterDescriptorImpl]
 
@@ -659,7 +659,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Boolean
 
-'resolveDefinitionKind' @ [132:23] ==> private fun resolveDefinitionKind(repository: Repository, iface: InterfaceDefinition, constructors: List<ExtendedAttribute> = ...): GenerateDefinitionKind defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'resolveDefinitionKind' @ [132:23] ==> private fun resolveDefinitionKind(repository: Repository, iface: InterfaceDefinition, constructors: List<ExtendedAttribute> = ...): GenerateDefinitionKind defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [132:45] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
@@ -692,9 +692,9 @@ Inferred types:
 
 'iface' @ [141:32] ==> value-parameter iface: InterfaceDefinition defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
-'findConstructors' @ [141:38] ==> public fun InterfaceDefinition.findConstructors(): List<ExtendedAttribute> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'findConstructors' @ [141:38] ==> public fun InterfaceDefinition.findConstructors(): List<ExtendedAttribute> defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
-'resolveDefinitionKind' @ [142:22] ==> private fun resolveDefinitionKind(repository: Repository, iface: InterfaceDefinition, constructors: List<ExtendedAttribute> = ...): GenerateDefinitionKind defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'resolveDefinitionKind' @ [142:22] ==> private fun resolveDefinitionKind(repository: Repository, iface: InterfaceDefinition, constructors: List<ExtendedAttribute> = ...): GenerateDefinitionKind defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [142:44] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
@@ -786,7 +786,7 @@ Inferred types:
     <T> -> ExtendedAttribute
     <R> -> ConstructorWithSuperTypeCall
 
-'generateConstructorAsFunction' @ [153:37] ==> public fun generateConstructorAsFunction(repository: Repository, constructor: ExtendedAttribute): GenerateFunction defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'generateConstructorAsFunction' @ [153:37] ==> public fun generateConstructorAsFunction(repository: Repository, constructor: ExtendedAttribute): GenerateFunction defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [153:67] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
@@ -805,7 +805,7 @@ Inferred types:
     <T> -> ExtendedAttribute
     <R> -> ConstructorWithSuperTypeCall
 
-'generateConstructorAsFunction' @ [159:37] ==> public fun generateConstructorAsFunction(repository: Repository, constructor: ExtendedAttribute): GenerateFunction defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'generateConstructorAsFunction' @ [159:37] ==> public fun generateConstructorAsFunction(repository: Repository, constructor: ExtendedAttribute): GenerateFunction defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [159:67] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
@@ -850,7 +850,7 @@ Inferred types:
 
 'iface' @ [165:32] ==> value-parameter iface: InterfaceDefinition defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
-'mapAttributes' @ [165:38] ==> private fun InterfaceDefinition.mapAttributes(repository: Repository): List<GenerateAttribute> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'mapAttributes' @ [165:38] ==> private fun InterfaceDefinition.mapAttributes(repository: Repository): List<GenerateAttribute> defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [165:52] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
@@ -860,7 +860,7 @@ Inferred types:
 
 'iface' @ [166:31] ==> value-parameter iface: InterfaceDefinition defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
-'mapOperations' @ [166:37] ==> private fun InterfaceDefinition.mapOperations(repository: Repository): List<GenerateFunction> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'mapOperations' @ [166:37] ==> private fun InterfaceDefinition.mapOperations(repository: Repository): List<GenerateFunction> defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [166:51] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
@@ -879,7 +879,7 @@ Inferred types:
 
 'it' @ [167:48] ==> value-parameter it: Constant defined in org.jetbrains.idl2k.generateTrait.<anonymous>[ValueParameterDescriptorImpl]
 
-'mapConstant' @ [167:51] ==> private fun Constant.mapConstant(repository: Repository): GenerateAttribute defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'mapConstant' @ [167:51] ==> private fun Constant.mapConstant(repository: Repository): GenerateAttribute defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [167:63] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
@@ -901,7 +901,7 @@ Inferred types:
 
 'it' @ [167:119] ==> value-parameter it: Constant defined in org.jetbrains.idl2k.generateTrait.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'mapConstant' @ [167:122] ==> private fun Constant.mapConstant(repository: Repository): GenerateAttribute defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'mapConstant' @ [167:122] ==> private fun Constant.mapConstant(repository: Repository): GenerateAttribute defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [167:134] ==> value-parameter repository: Repository defined in org.jetbrains.idl2k.generateTrait[ValueParameterDescriptorImpl]
 
@@ -1067,6 +1067,8 @@ Inferred types:
     <T> -> UnionType
     <R> -> GenerateTraitOrClass
 
+'mapUnionType' @ [207:119] ==> public fun mapUnionType(it: UnionType): GenerateTraitOrClass defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
+
 'definitions' @ [210:9] ==> value-parameter definitions: Iterable<InterfaceDefinition> defined in org.jetbrains.idl2k.mapDefinitions[ValueParameterDescriptorImpl]
 
 'map' @ [210:21] ==> public inline fun <T, R> Iterable<InterfaceDefinition>.map(transform: (InterfaceDefinition) -> GenerateTraitOrClass): List<GenerateTraitOrClass> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -1091,11 +1093,11 @@ Inferred types:
 
 'name' @ [213:49] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateTraitOrClass[PropertyDescriptorImpl]
 
-'collectUnionTypes' @ [215:31] ==> internal fun collectUnionTypes(allTypes: Map<String, GenerateTraitOrClass>): Sequence<UnionType> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'collectUnionTypes' @ [215:31] ==> internal fun collectUnionTypes(allTypes: Map<String, GenerateTraitOrClass>): Sequence<UnionType> defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'declaredTypes' @ [215:49] ==> val declaredTypes: Map<String, GenerateTraitOrClass> defined in org.jetbrains.idl2k.generateUnions[LocalVariableDescriptor]
 
-'generateUnionTypeTraits' @ [216:36] ==> public fun generateUnionTypeTraits(allUnionTypes: Sequence<UnionType>): Sequence<GenerateTraitOrClass> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'generateUnionTypeTraits' @ [216:36] ==> public fun generateUnionTypeTraits(allUnionTypes: Sequence<UnionType>): Sequence<GenerateTraitOrClass> defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'anonymousUnionTypes' @ [216:60] ==> val anonymousUnionTypes: Sequence<UnionType> defined in org.jetbrains.idl2k.generateUnions[LocalVariableDescriptor]
 
@@ -1176,7 +1178,7 @@ Inferred types:
     <V> -> List<NamedValue<UnionType>>
     <R> -> GenerateTraitOrClass
 
-'mapUnionType' @ [223:84] ==> public fun mapUnionType(it: UnionType): GenerateTraitOrClass defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'mapUnionType' @ [223:84] ==> public fun mapUnionType(it: UnionType): GenerateTraitOrClass defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [223:97] ==> value-parameter it: Map.Entry<String, List<NamedValue<UnionType>>> defined in org.jetbrains.idl2k.generateUnions.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1314,7 +1316,7 @@ Inferred types:
 
 'type' @ [248:22] ==> public final val type: String defined in org.jetbrains.idl2k.SimpleType[PropertyDescriptorImpl]
 
-'mapEnumConstant' @ [248:35] ==> public fun mapEnumConstant(entry: String): String defined in org.jetbrains.idl2k.util[SimpleFunctionDescriptorImpl]
+'mapEnumConstant' @ [248:35] ==> public fun mapEnumConstant(entry: String): String defined in org.jetbrains.idl2k.util in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'literal' @ [248:51] ==> value-parameter literal: String? defined in org.jetbrains.idl2k.mapLiteral[ValueParameterDescriptorImpl]
 
@@ -1353,7 +1355,7 @@ Inferred types:
 
 'literal' @ [258:21] ==> value-parameter literal: String? defined in org.jetbrains.idl2k.mapLiteral[ValueParameterDescriptorImpl]
 
-'getUnimplementedMembers' @ [263:34] ==> private fun getUnimplementedMembers(declarations: List<GenerateTraitOrClass>): Map<String, UnimplementedMembers> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getUnimplementedMembers' @ [263:34] ==> private fun getUnimplementedMembers(declarations: List<GenerateTraitOrClass>): Map<String, UnimplementedMembers> defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'declarations' @ [263:58] ==> value-parameter declarations: List<GenerateTraitOrClass> defined in org.jetbrains.idl2k.implementInterfaces[ValueParameterDescriptorImpl]
 

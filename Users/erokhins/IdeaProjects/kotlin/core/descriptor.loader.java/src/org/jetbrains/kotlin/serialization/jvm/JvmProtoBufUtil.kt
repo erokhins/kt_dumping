@@ -95,7 +95,7 @@ Inferred types:
 
 'hasExtension' @ [61:27] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'methodSignature' @ [61:52] ==> public final val methodSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -103,7 +103,7 @@ Inferred types:
 
 'getExtension' @ [61:76] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'methodSignature' @ [61:101] ==> public final val methodSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Function..ProtoBuf.Function?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -225,7 +225,7 @@ Inferred types:
 
 'hasExtension' @ [83:27] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'constructorSignature' @ [83:52] ==> public final val constructorSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -233,7 +233,7 @@ Inferred types:
 
 'getExtension' @ [83:81] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?)): (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Constructor[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmMethodSignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmMethodSignature?)
 
 'constructorSignature' @ [83:106] ==> public final val constructorSignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Constructor..ProtoBuf.Constructor?), (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -289,15 +289,15 @@ Inferred types:
 
 'desc' @ [92:27] ==> val desc: String defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil.getJvmConstructorSignature[LocalVariableDescriptor]
 
-'if (proto.hasExtension(JvmProtoBuf.propertySignature)) proto.getExtension(JvmProtoBuf.propertySignature) else return null' @ [101:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: JvmProtoBuf.JvmPropertySignature, elseBranch: JvmProtoBuf.JvmPropertySignature): JvmProtoBuf.JvmPropertySignature[SimpleFunctionDescriptorImpl]
+'if (proto.hasExtension(JvmProtoBuf.propertySignature)) proto.getExtension(JvmProtoBuf.propertySignature) else return null' @ [101:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?), elseBranch: (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JvmPropertySignature
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'proto' @ [101:21] ==> value-parameter proto: ProtoBuf.Property defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil.getJvmFieldSignature[ValueParameterDescriptorImpl]
 
 'hasExtension' @ [101:27] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [101:52] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -305,7 +305,7 @@ Inferred types:
 
 'getExtension' @ [101:78] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [101:103] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -313,11 +313,11 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JvmFieldSignature?
 
-'signature' @ [103:21] ==> val signature: JvmProtoBuf.JvmPropertySignature defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil.getJvmFieldSignature[LocalVariableDescriptor]
+'signature' @ [103:21] ==> val signature: (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil.getJvmFieldSignature[LocalVariableDescriptor]
 
 'hasField' @ [103:31] ==> public open fun hasField(): Boolean defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature[JavaMethodDescriptor]
 
-'signature' @ [103:43] ==> val signature: JvmProtoBuf.JvmPropertySignature defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil.getJvmFieldSignature[LocalVariableDescriptor]
+'signature' @ [103:43] ==> val signature: (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil.getJvmFieldSignature[LocalVariableDescriptor]
 
 'field' @ [103:53] ==> public final val JvmProtoBuf.JvmPropertySignature.field: (JvmProtoBuf.JvmFieldSignature..JvmProtoBuf.JvmFieldSignature?)[MyPropertyDescriptor]
 
@@ -385,8 +385,6 @@ Inferred types:
 'type' @ [116:20] ==> value-parameter type: ProtoBuf.Type defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil.mapTypeDefault[ValueParameterDescriptorImpl]
 
 'hasClassName' @ [116:25] ==> public open fun hasClassName(): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
-
-'ClassMapperLite' @ [116:41] ==> public object ClassMapperLite defined in org.jetbrains.kotlin.serialization.jvm in file ClassMapperLite.kt[FakeCallableDescriptorForObject]
 
 'mapClass' @ [116:57] ==> @JvmStatic public final fun mapClass(classId: ClassId): String defined in org.jetbrains.kotlin.serialization.jvm.ClassMapperLite[SimpleFunctionDescriptorImpl]
 

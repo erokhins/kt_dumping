@@ -96,8 +96,6 @@ Inferred types:
 
 'it' @ [55:13] ==> value-parameter it: Long defined in kotlin.io.readBytes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'Int' @ [55:18] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [55:22] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'OutOfMemoryError' @ [55:39] ==> public constructor OutOfMemoryError(p0: (String..String?)) defined in java.lang.OutOfMemoryError[JavaClassConstructorDescriptor]
@@ -214,7 +212,7 @@ Inferred types:
 
 'charset' @ [107:114] ==> value-parameter charset: Charset = ... defined in kotlin.io.appendText[ValueParameterDescriptorImpl]
 
-'forEachBlock' @ [118:91] ==> public fun File.forEachBlock(blockSize: Int, action: (buffer: ByteArray, bytesRead: Int) -> Unit): Unit defined in kotlin.io[SimpleFunctionDescriptorImpl]
+'forEachBlock' @ [118:91] ==> public fun File.forEachBlock(blockSize: Int, action: (buffer: ByteArray, bytesRead: Int) -> Unit): Unit defined in kotlin.io in file FileReadWrite.kt[SimpleFunctionDescriptorImpl]
 
 'DEFAULT_BLOCK_SIZE' @ [118:104] ==> internal const val DEFAULT_BLOCK_SIZE: Int defined in kotlin.io in file Constants.kt[PropertyDescriptorImpl]
 
@@ -272,7 +270,7 @@ Inferred types:
 
 'charset' @ [158:61] ==> value-parameter charset: Charset = ... defined in kotlin.io.forEachLine[ValueParameterDescriptorImpl]
 
-'forEachLine' @ [158:71] ==> public fun Reader.forEachLine(action: (String) -> Unit): Unit defined in kotlin.io[SimpleFunctionDescriptorImpl]
+'forEachLine' @ [158:71] ==> public fun Reader.forEachLine(action: (String) -> Unit): Unit defined in kotlin.io in file ReadWrite.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [158:83] ==> value-parameter action: (line: String) -> Unit defined in kotlin.io.forEachLine[ValueParameterDescriptorImpl]
 
@@ -296,7 +294,7 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> String
 
-'forEachLine' @ [187:5] ==> public fun File.forEachLine(charset: Charset = ..., action: (line: String) -> Unit): Unit defined in kotlin.io[SimpleFunctionDescriptorImpl]
+'forEachLine' @ [187:5] ==> public fun File.forEachLine(charset: Charset = ..., action: (line: String) -> Unit): Unit defined in kotlin.io in file FileReadWrite.kt[SimpleFunctionDescriptorImpl]
 
 'charset' @ [187:17] ==> value-parameter charset: Charset = ... defined in kotlin.io.readLines[ValueParameterDescriptorImpl]
 
@@ -325,5 +323,5 @@ Inferred types:
 
 'it' @ [199:45] ==> value-parameter it: BufferedReader defined in kotlin.io.useLines.<anonymous>[ValueParameterDescriptorImpl]
 
-'lineSequence' @ [199:48] ==> public fun BufferedReader.lineSequence(): Sequence<String> defined in kotlin.io[SimpleFunctionDescriptorImpl]
+'lineSequence' @ [199:48] ==> public fun BufferedReader.lineSequence(): Sequence<String> defined in kotlin.io in file ReadWrite.kt[SimpleFunctionDescriptorImpl]
 

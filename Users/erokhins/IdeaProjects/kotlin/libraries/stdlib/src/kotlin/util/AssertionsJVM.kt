@@ -18,7 +18,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [16:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'assert' @ [18:5] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'assert' @ [18:5] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file AssertionsJVM.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [18:12] ==> value-parameter value: Boolean defined in kotlin.assert[ValueParameterDescriptorImpl]
 

@@ -130,13 +130,13 @@
 
 'java' @ [82:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [82:51] ==> <this> defined in org.jetbrains.kotlin.kapt3.javac.KaptJavaFileObject[LazyClassReceiverParameterDescriptor]
 
 'java' @ [82:63] ==> public val <T> KClass<out KaptJavaFileObject>.java: Class<out KaptJavaFileObject> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> KaptJavaFileObject
+    <T> -> Captured(out KaptJavaFileObject)
 
 'other' @ [84:9] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.kapt3.javac.KaptJavaFileObject.equals[ValueParameterDescriptorImpl]
 

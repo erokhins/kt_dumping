@@ -10,7 +10,7 @@
 
 'this' @ [64:40] ==> <this> defined in org.jetbrains.kotlin.descriptors.Visibility[LazyClassReceiverParameterDescriptor]
 
-'effectiveVisibility' @ [67:99] ==> public fun effectiveVisibility(visibility: Visibility, descriptor: DeclarationDescriptor, checkPublishedApi: Boolean = ...): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'effectiveVisibility' @ [67:99] ==> public fun effectiveVisibility(visibility: Visibility, descriptor: DeclarationDescriptor, checkPublishedApi: Boolean = ...): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'normalize' @ [67:119] ==> public open fun normalize(): Visibility defined in org.jetbrains.kotlin.descriptors.Visibility[SimpleFunctionDescriptorImpl]
 

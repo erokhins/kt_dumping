@@ -1,10 +1,10 @@
 'create' @ [33:38] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): CompilerConfigurationKey<(List<String>..List<String>?)> defined in org.jetbrains.kotlin.config.CompilerConfigurationKey[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'create' @ [35:83] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): CompilerConfigurationKey<(List<String>..List<String>?)> defined in org.jetbrains.kotlin.config.CompilerConfigurationKey[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'mapOf' @ [40:33] ==> public fun <K, V> mapOf(pair: Pair<String, List<String>>): Map<String, List<String>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -86,7 +86,7 @@ Inferred types:
 
 'get' @ [68:41] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(List<String>..List<String>?)>): List<String>? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'ANNOTATION' @ [68:45] ==> public final val ANNOTATION: CompilerConfigurationKey<List<String>> defined in org.jetbrains.kotlin.allopen.AllOpenConfigurationKeys[PropertyImportedFromObject]
 
@@ -102,7 +102,7 @@ Inferred types:
 
 'get' @ [69:23] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(List<String>..List<String>?)>): List<String>? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'PRESET' @ [69:27] ==> public final val PRESET: CompilerConfigurationKey<List<String>> defined in org.jetbrains.kotlin.allopen.AllOpenConfigurationKeys[PropertyImportedFromObject]
 

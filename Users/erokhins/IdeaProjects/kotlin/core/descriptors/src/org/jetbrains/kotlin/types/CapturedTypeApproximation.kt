@@ -194,7 +194,7 @@ Inferred types:
 
 'OUT_VARIANCE' @ [80:39] ==> enum entry OUT_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
-'approximateCapturedTypes' @ [82:29] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'approximateCapturedTypes' @ [82:29] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [82:54] ==> val type: KotlinType defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypesIfNecessary[LocalVariableDescriptor]
 
@@ -208,7 +208,7 @@ Inferred types:
 
 'approximateContravariant' @ [86:9] ==> value-parameter approximateContravariant: Boolean defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypesIfNecessary[ValueParameterDescriptorImpl]
 
-'approximateCapturedTypes' @ [88:29] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'approximateCapturedTypes' @ [88:29] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [88:54] ==> val type: KotlinType defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypesIfNecessary[LocalVariableDescriptor]
 
@@ -260,13 +260,13 @@ Inferred types:
 
 'isFlexible' @ [110:14] ==> public fun KotlinType.isFlexible(): Boolean defined in org.jetbrains.kotlin.types in file flexibleTypes.kt[SimpleFunctionDescriptorImpl]
 
-'approximateCapturedTypes' @ [111:38] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'approximateCapturedTypes' @ [111:38] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [111:63] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[ValueParameterDescriptorImpl]
 
 'lowerIfFlexible' @ [111:68] ==> public fun KotlinType.lowerIfFlexible(): SimpleType defined in org.jetbrains.kotlin.types in file flexibleTypes.kt[SimpleFunctionDescriptorImpl]
 
-'approximateCapturedTypes' @ [112:38] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'approximateCapturedTypes' @ [112:38] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [112:63] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[ValueParameterDescriptorImpl]
 
@@ -275,8 +275,6 @@ Inferred types:
 'ApproximationBounds' @ [114:16] ==> public constructor ApproximationBounds<out T>(lower: UnwrappedType, upper: UnwrappedType) defined in org.jetbrains.kotlin.types.typesApproximation.ApproximationBounds[ClassConstructorDescriptorImpl]
 Inferred types:
     <out T> -> UnwrappedType
-
-'KotlinTypeFactory' @ [115:17] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
 'flexibleType' @ [115:35] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
@@ -295,8 +293,6 @@ Inferred types:
 'inheritEnhancement' @ [118:19] ==> public fun UnwrappedType.inheritEnhancement(origin: KotlinType): UnwrappedType defined in org.jetbrains.kotlin.types in file TypeWithEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [118:38] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[ValueParameterDescriptorImpl]
-
-'KotlinTypeFactory' @ [119:17] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
 'flexibleType' @ [119:35] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
@@ -441,7 +437,7 @@ Inferred types:
 
 'typeProjection' @ [143:28] ==> val typeProjection: TypeProjection defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[LocalVariableDescriptor]
 
-'toTypeArgument' @ [143:43] ==> private fun TypeProjection.toTypeArgument(typeParameter: TypeParameterDescriptor): TypeArgument defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'toTypeArgument' @ [143:43] ==> private fun TypeProjection.toTypeArgument(typeParameter: TypeParameterDescriptor): TypeArgument defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameter' @ [143:58] ==> val typeParameter: (TypeParameterDescriptor..TypeParameterDescriptor?) defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[LocalVariableDescriptor]
 
@@ -477,7 +473,7 @@ Inferred types:
 
 'component2' @ [151:25] ==> public final operator fun component2(): TypeArgument defined in org.jetbrains.kotlin.types.typesApproximation.ApproximationBounds[SimpleFunctionDescriptorImpl]
 
-'approximateProjection' @ [151:34] ==> private fun approximateProjection(typeArgument: TypeArgument): ApproximationBounds<TypeArgument> defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'approximateProjection' @ [151:34] ==> private fun approximateProjection(typeArgument: TypeArgument): ApproximationBounds<TypeArgument> defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'typeArgument' @ [151:56] ==> val typeArgument: TypeArgument defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[LocalVariableDescriptor]
 
@@ -523,13 +519,13 @@ Inferred types:
 
 'type' @ [158:69] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[ValueParameterDescriptorImpl]
 
-'replaceTypeArguments' @ [158:74] ==> private fun KotlinType.replaceTypeArguments(newTypeArguments: List<TypeArgument>): KotlinType defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'replaceTypeArguments' @ [158:74] ==> private fun KotlinType.replaceTypeArguments(newTypeArguments: List<TypeArgument>): KotlinType defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'lowerBoundArguments' @ [158:95] ==> val lowerBoundArguments: ArrayList<TypeArgument> defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[LocalVariableDescriptor]
 
 'type' @ [159:13] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[ValueParameterDescriptorImpl]
 
-'replaceTypeArguments' @ [159:18] ==> private fun KotlinType.replaceTypeArguments(newTypeArguments: List<TypeArgument>): KotlinType defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'replaceTypeArguments' @ [159:18] ==> private fun KotlinType.replaceTypeArguments(newTypeArguments: List<TypeArgument>): KotlinType defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'upperBoundArguments' @ [159:39] ==> val upperBoundArguments: ArrayList<TypeArgument> defined in org.jetbrains.kotlin.types.typesApproximation.approximateCapturedTypes[LocalVariableDescriptor]
 
@@ -545,7 +541,7 @@ Inferred types:
 
 'newTypeArguments' @ [163:82] ==> value-parameter newTypeArguments: List<TypeArgument> defined in org.jetbrains.kotlin.types.typesApproximation.replaceTypeArguments[ValueParameterDescriptorImpl]
 
-'replace' @ [164:12] ==> @JvmOverloads public fun KotlinType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): KotlinType defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'replace' @ [164:12] ==> @JvmOverloads public fun KotlinType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): KotlinType defined in org.jetbrains.kotlin.types in file TypeSubstitution.kt[SimpleFunctionDescriptorImpl]
 
 'newTypeArguments' @ [164:20] ==> value-parameter newTypeArguments: List<TypeArgument> defined in org.jetbrains.kotlin.types.typesApproximation.replaceTypeArguments[ValueParameterDescriptorImpl]
 
@@ -562,7 +558,7 @@ Inferred types:
 
 'component2' @ [168:19] ==> public final operator fun component2(): KotlinType defined in org.jetbrains.kotlin.types.typesApproximation.ApproximationBounds[SimpleFunctionDescriptorImpl]
 
-'approximateCapturedTypes' @ [168:30] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'approximateCapturedTypes' @ [168:30] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'typeArgument' @ [168:55] ==> value-parameter typeArgument: TypeArgument defined in org.jetbrains.kotlin.types.typesApproximation.approximateProjection[ValueParameterDescriptorImpl]
 
@@ -572,7 +568,7 @@ Inferred types:
 
 'component2' @ [169:20] ==> public final operator fun component2(): KotlinType defined in org.jetbrains.kotlin.types.typesApproximation.ApproximationBounds[SimpleFunctionDescriptorImpl]
 
-'approximateCapturedTypes' @ [169:32] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation[SimpleFunctionDescriptorImpl]
+'approximateCapturedTypes' @ [169:32] ==> public fun approximateCapturedTypes(type: KotlinType): ApproximationBounds<KotlinType> defined in org.jetbrains.kotlin.types.typesApproximation in file CapturedTypeApproximation.kt[SimpleFunctionDescriptorImpl]
 
 'typeArgument' @ [169:57] ==> value-parameter typeArgument: TypeArgument defined in org.jetbrains.kotlin.types.typesApproximation.approximateProjection[ValueParameterDescriptorImpl]
 

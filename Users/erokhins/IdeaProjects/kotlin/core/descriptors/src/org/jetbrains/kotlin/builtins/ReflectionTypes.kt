@@ -1,8 +1,8 @@
 'FqName' @ [31:30] ==> public constructor FqName(@NotNull fqName: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
 
-'lazy' @ [35:52] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> MemberScope): Lazy<MemberScope> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [35:52] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MemberScope
+    <T> -> T
 
 'PUBLICATION' @ [35:78] ==> enum entry PUBLICATION defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -94,7 +94,7 @@ Inferred types:
 
 'type' @ [62:106] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.builtins.ReflectionTypes.getKClassType[ValueParameterDescriptorImpl]
 
-'getFunctionTypeArgumentProjections' @ [72:25] ==> public fun getFunctionTypeArgumentProjections(receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, builtIns: KotlinBuiltIns): List<TypeProjection> defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'getFunctionTypeArgumentProjections' @ [72:25] ==> public fun getFunctionTypeArgumentProjections(receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, builtIns: KotlinBuiltIns): List<TypeProjection> defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'receiverType' @ [72:60] ==> value-parameter receiverType: KotlinType? defined in org.jetbrains.kotlin.builtins.ReflectionTypes.getKFunctionType[ValueParameterDescriptorImpl]
 
@@ -194,6 +194,8 @@ Inferred types:
     <T> -> KotlinType
     <R> -> TypeProjectionImpl
 
+'TypeProjectionImpl' @ [94:60] ==> public constructor TypeProjectionImpl(@NotNull type: KotlinType) defined in org.jetbrains.kotlin.types.TypeProjectionImpl[JavaClassConstructorDescriptor]
+
 'KotlinTypeFactory' @ [95:16] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
 'simpleNotNullType' @ [95:34] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
@@ -206,7 +208,7 @@ Inferred types:
 
 'getParentOfType' @ [100:53] ==> @Nullable public open fun <D : (DeclarationDescriptor..DeclarationDescriptor?)> getParentOfType(@Nullable descriptor: DeclarationDescriptor?, @NotNull aClass: Class<(PackageFragmentDescriptor..PackageFragmentDescriptor?)>): PackageFragmentDescriptor? defined in org.jetbrains.kotlin.resolve.DescriptorUtils[JavaMethodDescriptor]
 Inferred types:
-    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> PackageFragmentDescriptor
+    <D : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor..org.jetbrains.kotlin.descriptors.PackageFragmentDescriptor?)
 
 'descriptor' @ [100:69] ==> value-parameter descriptor: ClassDescriptor defined in org.jetbrains.kotlin.builtins.ReflectionTypes.Companion.isReflectionClass[ValueParameterDescriptorImpl]
 
@@ -401,8 +403,6 @@ Inferred types:
 'KotlinTypeFactory' @ [149:20] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
 'simpleNotNullType' @ [149:38] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
-
-'Annotations' @ [149:56] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [149:68] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 

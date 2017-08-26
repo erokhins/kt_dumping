@@ -122,7 +122,7 @@ Inferred types:
 
 'message' @ [95:37] ==> value-parameter message: String? defined in kotlin.test.expect[ValueParameterDescriptorImpl]
 
-'assertFails' @ [99:49] ==> @SinceKotlin public fun assertFails(message: String?, block: () -> Unit): Throwable defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'assertFails' @ [99:49] ==> @SinceKotlin public fun assertFails(message: String?, block: () -> Unit): Throwable defined in kotlin.test in file Assertions.kt[SimpleFunctionDescriptorImpl]
 
 'block' @ [99:67] ==> value-parameter block: () -> Unit defined in kotlin.test.assertFails[ValueParameterDescriptorImpl]
 
@@ -148,7 +148,7 @@ Inferred types:
 
 'fail' @ [110:14] ==> public abstract fun fail(message: String?): Nothing defined in kotlin.test.Asserter[SimpleFunctionDescriptorImpl]
 
-'messagePrefix' @ [110:19] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'messagePrefix' @ [110:19] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [110:33] ==> value-parameter message: String? defined in kotlin.test.assertFails[ValueParameterDescriptorImpl]
 
@@ -186,7 +186,7 @@ Inferred types:
 
 'assertTrue' @ [161:9] ==> public open fun assertTrue(lazyMessage: () -> String?, actual: Boolean): Unit defined in kotlin.test.Asserter[SimpleFunctionDescriptorImpl]
 
-'messagePrefix' @ [161:22] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'messagePrefix' @ [161:22] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [161:36] ==> value-parameter message: String? defined in kotlin.test.Asserter.assertEquals[ValueParameterDescriptorImpl]
 
@@ -200,7 +200,7 @@ Inferred types:
 
 'assertTrue' @ [170:9] ==> public open fun assertTrue(lazyMessage: () -> String?, actual: Boolean): Unit defined in kotlin.test.Asserter[SimpleFunctionDescriptorImpl]
 
-'messagePrefix' @ [170:22] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'messagePrefix' @ [170:22] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [170:36] ==> value-parameter message: String? defined in kotlin.test.Asserter.assertNotEquals[ValueParameterDescriptorImpl]
 
@@ -212,7 +212,7 @@ Inferred types:
 
 'assertTrue' @ [179:9] ==> public open fun assertTrue(lazyMessage: () -> String?, actual: Boolean): Unit defined in kotlin.test.Asserter[SimpleFunctionDescriptorImpl]
 
-'messagePrefix' @ [179:22] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'messagePrefix' @ [179:22] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [179:36] ==> value-parameter message: String? defined in kotlin.test.Asserter.assertNull[ValueParameterDescriptorImpl]
 
@@ -222,7 +222,7 @@ Inferred types:
 
 'assertTrue' @ [188:9] ==> public open fun assertTrue(lazyMessage: () -> String?, actual: Boolean): Unit defined in kotlin.test.Asserter[SimpleFunctionDescriptorImpl]
 
-'messagePrefix' @ [188:22] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'messagePrefix' @ [188:22] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [188:36] ==> value-parameter message: String? defined in kotlin.test.Asserter.assertNotNull[ValueParameterDescriptorImpl]
 

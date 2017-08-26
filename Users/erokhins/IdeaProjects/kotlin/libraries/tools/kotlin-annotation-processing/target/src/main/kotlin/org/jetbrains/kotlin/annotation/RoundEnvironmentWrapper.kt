@@ -46,7 +46,7 @@ Inferred types:
 
 'name' @ [30:49] ==> public final val <T : (Any..Any?)> Class<out Annotation>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Annotation
+    <T : (Any..Any?)> -> Captured(out Annotation)
 
 'elements' @ [31:16] ==> val elements: HashSet<(Element..Element?)> /* = HashSet<(Element..Element?)> */ defined in org.jetbrains.kotlin.annotation.RoundEnvironmentWrapper.getElementsAnnotatedWith[LocalVariableDescriptor]
 
@@ -150,7 +150,7 @@ Inferred types:
 
 'descriptors' @ [66:37] ==> val descriptors: Set<AnnotatedElement> defined in org.jetbrains.kotlin.annotation.RoundEnvironmentWrapper.resolveKotlinElements[LocalVariableDescriptor]
 
-'fold' @ [66:49] ==> public inline fun <T, R> Iterable<AnnotatedElement>.fold(initial: HashSet<Element> /* = HashSet<Element> */, operation: (HashSet<Element> /* = HashSet<Element> */, AnnotatedElement) -> HashSet<Element> /* = HashSet<Element> */): HashSet<Element> /* = HashSet<Element> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [66:49] ==> public inline fun <T, R> Iterable<AnnotatedElement>.fold(initial: HashSet<Element> /* = HashSet<Element> */, operation: (acc: HashSet<Element> /* = HashSet<Element> */, AnnotatedElement) -> HashSet<Element> /* = HashSet<Element> */): HashSet<Element> /* = HashSet<Element> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AnnotatedElement
     <R> -> HashSet<Element>

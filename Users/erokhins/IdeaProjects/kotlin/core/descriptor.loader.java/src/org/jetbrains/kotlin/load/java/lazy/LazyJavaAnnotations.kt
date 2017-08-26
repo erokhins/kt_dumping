@@ -30,8 +30,6 @@ Inferred types:
 
 'annotationDescriptors' @ [36:57] ==> private final val annotationDescriptors: MemoizedFunctionToNullable<JavaAnnotation, AnnotationDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaAnnotations[PropertyDescriptorImpl]
 
-'JavaAnnotationMapper' @ [37:16] ==> public object JavaAnnotationMapper defined in org.jetbrains.kotlin.load.java.components in file JavaAnnotationMapper.kt[FakeCallableDescriptorForObject]
-
 'findMappedJavaAnnotation' @ [37:37] ==> public final fun findMappedJavaAnnotation(kotlinName: FqName, annotationOwner: JavaAnnotationOwner, c: LazyJavaResolverContext): AnnotationDescriptor? defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationMapper[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [37:62] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaAnnotations.findAnnotation[ValueParameterDescriptorImpl]
@@ -88,8 +86,6 @@ Inferred types:
     <R> -> AnnotationDescriptor?
 
 'annotationDescriptors' @ [47:59] ==> private final val annotationDescriptors: MemoizedFunctionToNullable<JavaAnnotation, AnnotationDescriptor> defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaAnnotations[PropertyDescriptorImpl]
-
-'JavaAnnotationMapper' @ [48:16] ==> public object JavaAnnotationMapper defined in org.jetbrains.kotlin.load.java.components in file JavaAnnotationMapper.kt[FakeCallableDescriptorForObject]
 
 'findMappedJavaAnnotation' @ [48:37] ==> public final fun findMappedJavaAnnotation(kotlinName: FqName, annotationOwner: JavaAnnotationOwner, c: LazyJavaResolverContext): AnnotationDescriptor? defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationMapper[SimpleFunctionDescriptorImpl]
 

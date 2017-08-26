@@ -184,9 +184,9 @@
 
 'kotlin.internal.OnlyInputTypes' @ [379:22] ==> public constructor OnlyInputTypes() defined in kotlin.internal.OnlyInputTypes[ClassConstructorDescriptorImpl]
 
-'indexOf' @ [380:12] ==> public fun <@OnlyInputTypes T> Array<out T?>.indexOf(element: T?): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'indexOf' @ [380:12] ==> public fun <@OnlyInputTypes T> Array<out T>.indexOf(element: T): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <@OnlyInputTypes T> -> T?
+    <@OnlyInputTypes T> -> T
 
 'element' @ [380:20] ==> value-parameter element: T defined in kotlin.collections.contains[ValueParameterDescriptorImpl]
 
@@ -542,49 +542,49 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [666:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'firstOrNull' @ [668:12] ==> public inline fun ByteArray.firstOrNull(predicate: (Byte) -> Boolean): Byte? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'firstOrNull' @ [668:12] ==> public inline fun ByteArray.firstOrNull(predicate: (Byte) -> Boolean): Byte? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [668:24] ==> value-parameter predicate: (Byte) -> Boolean defined in kotlin.collections.find[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [674:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'firstOrNull' @ [676:12] ==> public inline fun ShortArray.firstOrNull(predicate: (Short) -> Boolean): Short? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'firstOrNull' @ [676:12] ==> public inline fun ShortArray.firstOrNull(predicate: (Short) -> Boolean): Short? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [676:24] ==> value-parameter predicate: (Short) -> Boolean defined in kotlin.collections.find[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [682:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'firstOrNull' @ [684:12] ==> public inline fun IntArray.firstOrNull(predicate: (Int) -> Boolean): Int? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'firstOrNull' @ [684:12] ==> public inline fun IntArray.firstOrNull(predicate: (Int) -> Boolean): Int? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [684:24] ==> value-parameter predicate: (Int) -> Boolean defined in kotlin.collections.find[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [690:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'firstOrNull' @ [692:12] ==> public inline fun LongArray.firstOrNull(predicate: (Long) -> Boolean): Long? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'firstOrNull' @ [692:12] ==> public inline fun LongArray.firstOrNull(predicate: (Long) -> Boolean): Long? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [692:24] ==> value-parameter predicate: (Long) -> Boolean defined in kotlin.collections.find[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [698:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'firstOrNull' @ [700:12] ==> public inline fun FloatArray.firstOrNull(predicate: (Float) -> Boolean): Float? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'firstOrNull' @ [700:12] ==> public inline fun FloatArray.firstOrNull(predicate: (Float) -> Boolean): Float? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [700:24] ==> value-parameter predicate: (Float) -> Boolean defined in kotlin.collections.find[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [706:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'firstOrNull' @ [708:12] ==> public inline fun DoubleArray.firstOrNull(predicate: (Double) -> Boolean): Double? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'firstOrNull' @ [708:12] ==> public inline fun DoubleArray.firstOrNull(predicate: (Double) -> Boolean): Double? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [708:24] ==> value-parameter predicate: (Double) -> Boolean defined in kotlin.collections.find[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [714:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'firstOrNull' @ [716:12] ==> public inline fun BooleanArray.firstOrNull(predicate: (Boolean) -> Boolean): Boolean? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'firstOrNull' @ [716:12] ==> public inline fun BooleanArray.firstOrNull(predicate: (Boolean) -> Boolean): Boolean? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [716:24] ==> value-parameter predicate: (Boolean) -> Boolean defined in kotlin.collections.find[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [722:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'firstOrNull' @ [724:12] ==> public inline fun CharArray.firstOrNull(predicate: (Char) -> Boolean): Char? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'firstOrNull' @ [724:12] ==> public inline fun CharArray.firstOrNull(predicate: (Char) -> Boolean): Char? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [724:24] ==> value-parameter predicate: (Char) -> Boolean defined in kotlin.collections.find[ValueParameterDescriptorImpl]
 
@@ -598,49 +598,49 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [738:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'lastOrNull' @ [740:12] ==> public inline fun ByteArray.lastOrNull(predicate: (Byte) -> Boolean): Byte? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'lastOrNull' @ [740:12] ==> public inline fun ByteArray.lastOrNull(predicate: (Byte) -> Boolean): Byte? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [740:23] ==> value-parameter predicate: (Byte) -> Boolean defined in kotlin.collections.findLast[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [746:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'lastOrNull' @ [748:12] ==> public inline fun ShortArray.lastOrNull(predicate: (Short) -> Boolean): Short? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'lastOrNull' @ [748:12] ==> public inline fun ShortArray.lastOrNull(predicate: (Short) -> Boolean): Short? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [748:23] ==> value-parameter predicate: (Short) -> Boolean defined in kotlin.collections.findLast[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [754:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'lastOrNull' @ [756:12] ==> public inline fun IntArray.lastOrNull(predicate: (Int) -> Boolean): Int? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'lastOrNull' @ [756:12] ==> public inline fun IntArray.lastOrNull(predicate: (Int) -> Boolean): Int? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [756:23] ==> value-parameter predicate: (Int) -> Boolean defined in kotlin.collections.findLast[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [762:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'lastOrNull' @ [764:12] ==> public inline fun LongArray.lastOrNull(predicate: (Long) -> Boolean): Long? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'lastOrNull' @ [764:12] ==> public inline fun LongArray.lastOrNull(predicate: (Long) -> Boolean): Long? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [764:23] ==> value-parameter predicate: (Long) -> Boolean defined in kotlin.collections.findLast[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [770:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'lastOrNull' @ [772:12] ==> public inline fun FloatArray.lastOrNull(predicate: (Float) -> Boolean): Float? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'lastOrNull' @ [772:12] ==> public inline fun FloatArray.lastOrNull(predicate: (Float) -> Boolean): Float? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [772:23] ==> value-parameter predicate: (Float) -> Boolean defined in kotlin.collections.findLast[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [778:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'lastOrNull' @ [780:12] ==> public inline fun DoubleArray.lastOrNull(predicate: (Double) -> Boolean): Double? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'lastOrNull' @ [780:12] ==> public inline fun DoubleArray.lastOrNull(predicate: (Double) -> Boolean): Double? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [780:23] ==> value-parameter predicate: (Double) -> Boolean defined in kotlin.collections.findLast[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [786:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'lastOrNull' @ [788:12] ==> public inline fun BooleanArray.lastOrNull(predicate: (Boolean) -> Boolean): Boolean? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'lastOrNull' @ [788:12] ==> public inline fun BooleanArray.lastOrNull(predicate: (Boolean) -> Boolean): Boolean? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [788:23] ==> value-parameter predicate: (Boolean) -> Boolean defined in kotlin.collections.findLast[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [794:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'lastOrNull' @ [796:12] ==> public inline fun CharArray.lastOrNull(predicate: (Char) -> Boolean): Char? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'lastOrNull' @ [796:12] ==> public inline fun CharArray.lastOrNull(predicate: (Char) -> Boolean): Char? defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [796:23] ==> value-parameter predicate: (Char) -> Boolean defined in kotlin.collections.findLast[ValueParameterDescriptorImpl]
 
@@ -2966,7 +2966,7 @@ Inferred types:
 
 'single' @ [2522:12] ==> var single: Char? defined in kotlin.collections.singleOrNull[LocalVariableDescriptor]
 
-'require' @ [2529:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2529:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2529:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
@@ -2982,13 +2982,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2530:32] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2537:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2537:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2537:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
 'n' @ [2537:49] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
-'takeLast' @ [2538:12] ==> public fun ByteArray.takeLast(n: Int): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'takeLast' @ [2538:12] ==> public fun ByteArray.takeLast(n: Int): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2538:22] ==> public final val size: Int defined in kotlin.ByteArray[DeserializedPropertyDescriptor]
 
@@ -2996,13 +2996,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2538:32] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2545:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2545:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2545:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
 'n' @ [2545:49] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
-'takeLast' @ [2546:12] ==> public fun ShortArray.takeLast(n: Int): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'takeLast' @ [2546:12] ==> public fun ShortArray.takeLast(n: Int): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2546:22] ==> public final val size: Int defined in kotlin.ShortArray[DeserializedPropertyDescriptor]
 
@@ -3010,13 +3010,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2546:32] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2553:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2553:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2553:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
 'n' @ [2553:49] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
-'takeLast' @ [2554:12] ==> public fun IntArray.takeLast(n: Int): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'takeLast' @ [2554:12] ==> public fun IntArray.takeLast(n: Int): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2554:22] ==> public final val size: Int defined in kotlin.IntArray[DeserializedPropertyDescriptor]
 
@@ -3024,13 +3024,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2554:32] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2561:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2561:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2561:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
 'n' @ [2561:49] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
-'takeLast' @ [2562:12] ==> public fun LongArray.takeLast(n: Int): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'takeLast' @ [2562:12] ==> public fun LongArray.takeLast(n: Int): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2562:22] ==> public final val size: Int defined in kotlin.LongArray[DeserializedPropertyDescriptor]
 
@@ -3038,13 +3038,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2562:32] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2569:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2569:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2569:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
 'n' @ [2569:49] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
-'takeLast' @ [2570:12] ==> public fun FloatArray.takeLast(n: Int): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'takeLast' @ [2570:12] ==> public fun FloatArray.takeLast(n: Int): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2570:22] ==> public final val size: Int defined in kotlin.FloatArray[DeserializedPropertyDescriptor]
 
@@ -3052,13 +3052,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2570:32] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2577:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2577:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2577:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
 'n' @ [2577:49] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
-'takeLast' @ [2578:12] ==> public fun DoubleArray.takeLast(n: Int): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'takeLast' @ [2578:12] ==> public fun DoubleArray.takeLast(n: Int): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2578:22] ==> public final val size: Int defined in kotlin.DoubleArray[DeserializedPropertyDescriptor]
 
@@ -3066,13 +3066,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2578:32] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2585:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2585:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2585:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
 'n' @ [2585:49] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
-'takeLast' @ [2586:12] ==> public fun BooleanArray.takeLast(n: Int): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'takeLast' @ [2586:12] ==> public fun BooleanArray.takeLast(n: Int): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2586:22] ==> public final val size: Int defined in kotlin.BooleanArray[DeserializedPropertyDescriptor]
 
@@ -3080,13 +3080,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2586:32] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2593:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2593:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2593:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
 'n' @ [2593:49] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
-'takeLast' @ [2594:12] ==> public fun CharArray.takeLast(n: Int): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'takeLast' @ [2594:12] ==> public fun CharArray.takeLast(n: Int): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2594:22] ==> public final val size: Int defined in kotlin.CharArray[DeserializedPropertyDescriptor]
 
@@ -3094,7 +3094,7 @@ Inferred types:
 
 'coerceAtLeast' @ [2594:32] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2601:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2601:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2601:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
@@ -3110,13 +3110,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2602:28] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2609:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2609:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2609:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
 'n' @ [2609:49] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
-'take' @ [2610:12] ==> public fun ByteArray.take(n: Int): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2610:12] ==> public fun ByteArray.take(n: Int): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2610:18] ==> public final val size: Int defined in kotlin.ByteArray[DeserializedPropertyDescriptor]
 
@@ -3124,13 +3124,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2610:28] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2617:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2617:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2617:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
 'n' @ [2617:49] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
-'take' @ [2618:12] ==> public fun ShortArray.take(n: Int): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2618:12] ==> public fun ShortArray.take(n: Int): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2618:18] ==> public final val size: Int defined in kotlin.ShortArray[DeserializedPropertyDescriptor]
 
@@ -3138,13 +3138,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2618:28] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2625:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2625:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2625:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
 'n' @ [2625:49] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
-'take' @ [2626:12] ==> public fun IntArray.take(n: Int): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2626:12] ==> public fun IntArray.take(n: Int): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2626:18] ==> public final val size: Int defined in kotlin.IntArray[DeserializedPropertyDescriptor]
 
@@ -3152,13 +3152,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2626:28] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2633:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2633:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2633:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
 'n' @ [2633:49] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
-'take' @ [2634:12] ==> public fun LongArray.take(n: Int): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2634:12] ==> public fun LongArray.take(n: Int): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2634:18] ==> public final val size: Int defined in kotlin.LongArray[DeserializedPropertyDescriptor]
 
@@ -3166,13 +3166,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2634:28] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2641:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2641:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2641:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
 'n' @ [2641:49] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
-'take' @ [2642:12] ==> public fun FloatArray.take(n: Int): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2642:12] ==> public fun FloatArray.take(n: Int): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2642:18] ==> public final val size: Int defined in kotlin.FloatArray[DeserializedPropertyDescriptor]
 
@@ -3180,13 +3180,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2642:28] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2649:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2649:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2649:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
 'n' @ [2649:49] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
-'take' @ [2650:12] ==> public fun DoubleArray.take(n: Int): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2650:12] ==> public fun DoubleArray.take(n: Int): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2650:18] ==> public final val size: Int defined in kotlin.DoubleArray[DeserializedPropertyDescriptor]
 
@@ -3194,13 +3194,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2650:28] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2657:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2657:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2657:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
 'n' @ [2657:49] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
-'take' @ [2658:12] ==> public fun BooleanArray.take(n: Int): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2658:12] ==> public fun BooleanArray.take(n: Int): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2658:18] ==> public final val size: Int defined in kotlin.BooleanArray[DeserializedPropertyDescriptor]
 
@@ -3208,13 +3208,13 @@ Inferred types:
 
 'coerceAtLeast' @ [2658:28] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _RangesJs.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [2665:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [2665:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [2665:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
 'n' @ [2665:49] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
-'take' @ [2666:12] ==> public fun CharArray.take(n: Int): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2666:12] ==> public fun CharArray.take(n: Int): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [2666:18] ==> public final val size: Int defined in kotlin.CharArray[DeserializedPropertyDescriptor]
 
@@ -3254,7 +3254,7 @@ Inferred types:
 
 'index' @ [2686:29] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
-'take' @ [2687:20] ==> public fun ByteArray.take(n: Int): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2687:20] ==> public fun ByteArray.take(n: Int): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [2687:25] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
@@ -3272,7 +3272,7 @@ Inferred types:
 
 'index' @ [2698:29] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
-'take' @ [2699:20] ==> public fun ShortArray.take(n: Int): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2699:20] ==> public fun ShortArray.take(n: Int): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [2699:25] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
@@ -3290,7 +3290,7 @@ Inferred types:
 
 'index' @ [2710:29] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
-'take' @ [2711:20] ==> public fun IntArray.take(n: Int): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2711:20] ==> public fun IntArray.take(n: Int): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [2711:25] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
@@ -3308,7 +3308,7 @@ Inferred types:
 
 'index' @ [2722:29] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
-'take' @ [2723:20] ==> public fun LongArray.take(n: Int): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2723:20] ==> public fun LongArray.take(n: Int): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [2723:25] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
@@ -3326,7 +3326,7 @@ Inferred types:
 
 'index' @ [2734:29] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
-'take' @ [2735:20] ==> public fun FloatArray.take(n: Int): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2735:20] ==> public fun FloatArray.take(n: Int): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [2735:25] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
@@ -3344,7 +3344,7 @@ Inferred types:
 
 'index' @ [2746:29] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
-'take' @ [2747:20] ==> public fun DoubleArray.take(n: Int): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2747:20] ==> public fun DoubleArray.take(n: Int): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [2747:25] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
@@ -3362,7 +3362,7 @@ Inferred types:
 
 'index' @ [2758:29] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
-'take' @ [2759:20] ==> public fun BooleanArray.take(n: Int): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2759:20] ==> public fun BooleanArray.take(n: Int): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [2759:25] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
@@ -3380,7 +3380,7 @@ Inferred types:
 
 'index' @ [2770:29] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
-'take' @ [2771:20] ==> public fun CharArray.take(n: Int): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'take' @ [2771:20] ==> public fun CharArray.take(n: Int): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [2771:25] ==> val index: Int defined in kotlin.collections.dropLastWhile[LocalVariableDescriptor]
 
@@ -3939,7 +3939,7 @@ Inferred types:
 
 'destination' @ [3074:12] ==> value-parameter destination: C defined in kotlin.collections.filterIndexedTo[ValueParameterDescriptorImpl]
 
-'forEachIndexed' @ [3083:5] ==> public inline fun ByteArray.forEachIndexed(action: (index: Int, Byte) -> Unit): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [3083:5] ==> public inline fun ByteArray.forEachIndexed(action: (index: Int, Byte) -> Unit): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [3084:13] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Byte): Boolean defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -3955,7 +3955,7 @@ Inferred types:
 
 'destination' @ [3086:12] ==> value-parameter destination: C defined in kotlin.collections.filterIndexedTo[ValueParameterDescriptorImpl]
 
-'forEachIndexed' @ [3095:5] ==> public inline fun ShortArray.forEachIndexed(action: (index: Int, Short) -> Unit): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [3095:5] ==> public inline fun ShortArray.forEachIndexed(action: (index: Int, Short) -> Unit): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [3096:13] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Short): Boolean defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -3971,7 +3971,7 @@ Inferred types:
 
 'destination' @ [3098:12] ==> value-parameter destination: C defined in kotlin.collections.filterIndexedTo[ValueParameterDescriptorImpl]
 
-'forEachIndexed' @ [3107:5] ==> public inline fun IntArray.forEachIndexed(action: (index: Int, Int) -> Unit): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [3107:5] ==> public inline fun IntArray.forEachIndexed(action: (index: Int, Int) -> Unit): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [3108:13] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Int): Boolean defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -3987,7 +3987,7 @@ Inferred types:
 
 'destination' @ [3110:12] ==> value-parameter destination: C defined in kotlin.collections.filterIndexedTo[ValueParameterDescriptorImpl]
 
-'forEachIndexed' @ [3119:5] ==> public inline fun LongArray.forEachIndexed(action: (index: Int, Long) -> Unit): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [3119:5] ==> public inline fun LongArray.forEachIndexed(action: (index: Int, Long) -> Unit): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [3120:13] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Long): Boolean defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -4003,7 +4003,7 @@ Inferred types:
 
 'destination' @ [3122:12] ==> value-parameter destination: C defined in kotlin.collections.filterIndexedTo[ValueParameterDescriptorImpl]
 
-'forEachIndexed' @ [3131:5] ==> public inline fun FloatArray.forEachIndexed(action: (index: Int, Float) -> Unit): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [3131:5] ==> public inline fun FloatArray.forEachIndexed(action: (index: Int, Float) -> Unit): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [3132:13] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Float): Boolean defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -4019,7 +4019,7 @@ Inferred types:
 
 'destination' @ [3134:12] ==> value-parameter destination: C defined in kotlin.collections.filterIndexedTo[ValueParameterDescriptorImpl]
 
-'forEachIndexed' @ [3143:5] ==> public inline fun DoubleArray.forEachIndexed(action: (index: Int, Double) -> Unit): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [3143:5] ==> public inline fun DoubleArray.forEachIndexed(action: (index: Int, Double) -> Unit): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [3144:13] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Double): Boolean defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -4035,7 +4035,7 @@ Inferred types:
 
 'destination' @ [3146:12] ==> value-parameter destination: C defined in kotlin.collections.filterIndexedTo[ValueParameterDescriptorImpl]
 
-'forEachIndexed' @ [3155:5] ==> public inline fun BooleanArray.forEachIndexed(action: (index: Int, Boolean) -> Unit): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [3155:5] ==> public inline fun BooleanArray.forEachIndexed(action: (index: Int, Boolean) -> Unit): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [3156:13] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Boolean): Boolean defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -4051,7 +4051,7 @@ Inferred types:
 
 'destination' @ [3158:12] ==> value-parameter destination: C defined in kotlin.collections.filterIndexedTo[ValueParameterDescriptorImpl]
 
-'forEachIndexed' @ [3167:5] ==> public inline fun CharArray.forEachIndexed(action: (index: Int, Char) -> Unit): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [3167:5] ==> public inline fun CharArray.forEachIndexed(action: (index: Int, Char) -> Unit): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [3168:13] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Char): Boolean defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -4514,7 +4514,7 @@ Inferred types:
 
 'endInclusive' @ [3423:47] ==> public open val endInclusive: Int defined in kotlin.ranges.IntRange[PropertyDescriptorImpl]
 
-'asList' @ [3423:65] ==> @InlineOnly public inline fun ByteArray.asList(): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'asList' @ [3423:65] ==> @InlineOnly public inline fun ByteArray.asList(): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'indices' @ [3430:9] ==> value-parameter indices: IntRange defined in kotlin.collections.slice[ValueParameterDescriptorImpl]
 
@@ -4534,7 +4534,7 @@ Inferred types:
 
 'endInclusive' @ [3431:47] ==> public open val endInclusive: Int defined in kotlin.ranges.IntRange[PropertyDescriptorImpl]
 
-'asList' @ [3431:65] ==> @InlineOnly public inline fun ShortArray.asList(): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'asList' @ [3431:65] ==> @InlineOnly public inline fun ShortArray.asList(): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'indices' @ [3438:9] ==> value-parameter indices: IntRange defined in kotlin.collections.slice[ValueParameterDescriptorImpl]
 
@@ -4554,7 +4554,7 @@ Inferred types:
 
 'endInclusive' @ [3439:47] ==> public open val endInclusive: Int defined in kotlin.ranges.IntRange[PropertyDescriptorImpl]
 
-'asList' @ [3439:65] ==> @InlineOnly public inline fun IntArray.asList(): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'asList' @ [3439:65] ==> @InlineOnly public inline fun IntArray.asList(): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'indices' @ [3446:9] ==> value-parameter indices: IntRange defined in kotlin.collections.slice[ValueParameterDescriptorImpl]
 
@@ -4574,7 +4574,7 @@ Inferred types:
 
 'endInclusive' @ [3447:47] ==> public open val endInclusive: Int defined in kotlin.ranges.IntRange[PropertyDescriptorImpl]
 
-'asList' @ [3447:65] ==> @InlineOnly public inline fun LongArray.asList(): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'asList' @ [3447:65] ==> @InlineOnly public inline fun LongArray.asList(): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'indices' @ [3454:9] ==> value-parameter indices: IntRange defined in kotlin.collections.slice[ValueParameterDescriptorImpl]
 
@@ -4594,7 +4594,7 @@ Inferred types:
 
 'endInclusive' @ [3455:47] ==> public open val endInclusive: Int defined in kotlin.ranges.IntRange[PropertyDescriptorImpl]
 
-'asList' @ [3455:65] ==> @InlineOnly public inline fun FloatArray.asList(): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'asList' @ [3455:65] ==> @InlineOnly public inline fun FloatArray.asList(): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'indices' @ [3462:9] ==> value-parameter indices: IntRange defined in kotlin.collections.slice[ValueParameterDescriptorImpl]
 
@@ -4614,7 +4614,7 @@ Inferred types:
 
 'endInclusive' @ [3463:47] ==> public open val endInclusive: Int defined in kotlin.ranges.IntRange[PropertyDescriptorImpl]
 
-'asList' @ [3463:65] ==> @InlineOnly public inline fun DoubleArray.asList(): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'asList' @ [3463:65] ==> @InlineOnly public inline fun DoubleArray.asList(): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'indices' @ [3470:9] ==> value-parameter indices: IntRange defined in kotlin.collections.slice[ValueParameterDescriptorImpl]
 
@@ -4634,7 +4634,7 @@ Inferred types:
 
 'endInclusive' @ [3471:47] ==> public open val endInclusive: Int defined in kotlin.ranges.IntRange[PropertyDescriptorImpl]
 
-'asList' @ [3471:65] ==> @InlineOnly public inline fun BooleanArray.asList(): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'asList' @ [3471:65] ==> @InlineOnly public inline fun BooleanArray.asList(): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'indices' @ [3478:9] ==> value-parameter indices: IntRange defined in kotlin.collections.slice[ValueParameterDescriptorImpl]
 
@@ -4654,7 +4654,7 @@ Inferred types:
 
 'endInclusive' @ [3479:47] ==> public open val endInclusive: Int defined in kotlin.ranges.IntRange[PropertyDescriptorImpl]
 
-'asList' @ [3479:65] ==> public fun CharArray.asList(): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'asList' @ [3479:65] ==> public fun CharArray.asList(): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'indices' @ [3486:16] ==> value-parameter indices: Iterable<Int> defined in kotlin.collections.slice[ValueParameterDescriptorImpl]
 
@@ -5240,7 +5240,7 @@ Inferred types:
 
 'endInclusive' @ [3776:47] ==> public open val endInclusive: Int defined in kotlin.ranges.IntRange[PropertyDescriptorImpl]
 
-'require' @ [3783:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3783:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3783:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5288,7 +5288,7 @@ Inferred types:
 
 'list' @ [3794:12] ==> val list: ArrayList<T> defined in kotlin.collections.take[LocalVariableDescriptor]
 
-'require' @ [3801:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3801:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3801:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5304,7 +5304,7 @@ Inferred types:
 
 'size' @ [3803:14] ==> public final val size: Int defined in kotlin.ByteArray[DeserializedPropertyDescriptor]
 
-'toList' @ [3803:27] ==> public fun ByteArray.toList(): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3803:27] ==> public fun ByteArray.toList(): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3804:9] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5334,7 +5334,7 @@ Inferred types:
 
 'list' @ [3812:12] ==> val list: ArrayList<Byte> defined in kotlin.collections.take[LocalVariableDescriptor]
 
-'require' @ [3819:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3819:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3819:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5350,7 +5350,7 @@ Inferred types:
 
 'size' @ [3821:14] ==> public final val size: Int defined in kotlin.ShortArray[DeserializedPropertyDescriptor]
 
-'toList' @ [3821:27] ==> public fun ShortArray.toList(): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3821:27] ==> public fun ShortArray.toList(): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3822:9] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5380,7 +5380,7 @@ Inferred types:
 
 'list' @ [3830:12] ==> val list: ArrayList<Short> defined in kotlin.collections.take[LocalVariableDescriptor]
 
-'require' @ [3837:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3837:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3837:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5396,7 +5396,7 @@ Inferred types:
 
 'size' @ [3839:14] ==> public final val size: Int defined in kotlin.IntArray[DeserializedPropertyDescriptor]
 
-'toList' @ [3839:27] ==> public fun IntArray.toList(): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3839:27] ==> public fun IntArray.toList(): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3840:9] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5426,7 +5426,7 @@ Inferred types:
 
 'list' @ [3848:12] ==> val list: ArrayList<Int> defined in kotlin.collections.take[LocalVariableDescriptor]
 
-'require' @ [3855:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3855:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3855:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5442,7 +5442,7 @@ Inferred types:
 
 'size' @ [3857:14] ==> public final val size: Int defined in kotlin.LongArray[DeserializedPropertyDescriptor]
 
-'toList' @ [3857:27] ==> public fun LongArray.toList(): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3857:27] ==> public fun LongArray.toList(): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3858:9] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5472,7 +5472,7 @@ Inferred types:
 
 'list' @ [3866:12] ==> val list: ArrayList<Long> defined in kotlin.collections.take[LocalVariableDescriptor]
 
-'require' @ [3873:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3873:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3873:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5488,7 +5488,7 @@ Inferred types:
 
 'size' @ [3875:14] ==> public final val size: Int defined in kotlin.FloatArray[DeserializedPropertyDescriptor]
 
-'toList' @ [3875:27] ==> public fun FloatArray.toList(): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3875:27] ==> public fun FloatArray.toList(): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3876:9] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5518,7 +5518,7 @@ Inferred types:
 
 'list' @ [3884:12] ==> val list: ArrayList<Float> defined in kotlin.collections.take[LocalVariableDescriptor]
 
-'require' @ [3891:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3891:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3891:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5534,7 +5534,7 @@ Inferred types:
 
 'size' @ [3893:14] ==> public final val size: Int defined in kotlin.DoubleArray[DeserializedPropertyDescriptor]
 
-'toList' @ [3893:27] ==> public fun DoubleArray.toList(): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3893:27] ==> public fun DoubleArray.toList(): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3894:9] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5564,7 +5564,7 @@ Inferred types:
 
 'list' @ [3902:12] ==> val list: ArrayList<Double> defined in kotlin.collections.take[LocalVariableDescriptor]
 
-'require' @ [3909:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3909:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3909:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5580,7 +5580,7 @@ Inferred types:
 
 'size' @ [3911:14] ==> public final val size: Int defined in kotlin.BooleanArray[DeserializedPropertyDescriptor]
 
-'toList' @ [3911:27] ==> public fun BooleanArray.toList(): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3911:27] ==> public fun BooleanArray.toList(): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3912:9] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5610,7 +5610,7 @@ Inferred types:
 
 'list' @ [3920:12] ==> val list: ArrayList<Boolean> defined in kotlin.collections.take[LocalVariableDescriptor]
 
-'require' @ [3927:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3927:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3927:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5626,7 +5626,7 @@ Inferred types:
 
 'size' @ [3929:14] ==> public final val size: Int defined in kotlin.CharArray[DeserializedPropertyDescriptor]
 
-'toList' @ [3929:27] ==> public fun CharArray.toList(): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3929:27] ==> public fun CharArray.toList(): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3930:9] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -5656,7 +5656,7 @@ Inferred types:
 
 'list' @ [3938:12] ==> val list: ArrayList<Char> defined in kotlin.collections.take[LocalVariableDescriptor]
 
-'require' @ [3945:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3945:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3945:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5710,7 +5710,7 @@ Inferred types:
 
 'list' @ [3953:12] ==> val list: ArrayList<T> defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'require' @ [3960:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3960:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3960:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5728,7 +5728,7 @@ Inferred types:
 
 'size' @ [3963:14] ==> val size: Int defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'toList' @ [3963:27] ==> public fun ByteArray.toList(): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3963:27] ==> public fun ByteArray.toList(): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3964:9] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5762,7 +5762,7 @@ Inferred types:
 
 'list' @ [3968:12] ==> val list: ArrayList<Byte> defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'require' @ [3975:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3975:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3975:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5780,7 +5780,7 @@ Inferred types:
 
 'size' @ [3978:14] ==> val size: Int defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'toList' @ [3978:27] ==> public fun ShortArray.toList(): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3978:27] ==> public fun ShortArray.toList(): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3979:9] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5814,7 +5814,7 @@ Inferred types:
 
 'list' @ [3983:12] ==> val list: ArrayList<Short> defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'require' @ [3990:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [3990:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3990:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5832,7 +5832,7 @@ Inferred types:
 
 'size' @ [3993:14] ==> val size: Int defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'toList' @ [3993:27] ==> public fun IntArray.toList(): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [3993:27] ==> public fun IntArray.toList(): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [3994:9] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5866,7 +5866,7 @@ Inferred types:
 
 'list' @ [3998:12] ==> val list: ArrayList<Int> defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'require' @ [4005:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [4005:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4005:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5884,7 +5884,7 @@ Inferred types:
 
 'size' @ [4008:14] ==> val size: Int defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'toList' @ [4008:27] ==> public fun LongArray.toList(): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4008:27] ==> public fun LongArray.toList(): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4009:9] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5918,7 +5918,7 @@ Inferred types:
 
 'list' @ [4013:12] ==> val list: ArrayList<Long> defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'require' @ [4020:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [4020:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4020:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5936,7 +5936,7 @@ Inferred types:
 
 'size' @ [4023:14] ==> val size: Int defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'toList' @ [4023:27] ==> public fun FloatArray.toList(): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4023:27] ==> public fun FloatArray.toList(): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4024:9] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5970,7 +5970,7 @@ Inferred types:
 
 'list' @ [4028:12] ==> val list: ArrayList<Float> defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'require' @ [4035:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [4035:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4035:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -5988,7 +5988,7 @@ Inferred types:
 
 'size' @ [4038:14] ==> val size: Int defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'toList' @ [4038:27] ==> public fun DoubleArray.toList(): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4038:27] ==> public fun DoubleArray.toList(): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4039:9] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -6022,7 +6022,7 @@ Inferred types:
 
 'list' @ [4043:12] ==> val list: ArrayList<Double> defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'require' @ [4050:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [4050:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4050:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -6040,7 +6040,7 @@ Inferred types:
 
 'size' @ [4053:14] ==> val size: Int defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'toList' @ [4053:27] ==> public fun BooleanArray.toList(): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4053:27] ==> public fun BooleanArray.toList(): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4054:9] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -6074,7 +6074,7 @@ Inferred types:
 
 'list' @ [4058:12] ==> val list: ArrayList<Boolean> defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'require' @ [4065:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [4065:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4065:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -6092,7 +6092,7 @@ Inferred types:
 
 'size' @ [4068:14] ==> val size: Int defined in kotlin.collections.takeLast[LocalVariableDescriptor]
 
-'toList' @ [4068:27] ==> public fun CharArray.toList(): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4068:27] ==> public fun CharArray.toList(): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [4069:9] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -6158,11 +6158,11 @@ Inferred types:
 
 'index' @ [4093:29] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'drop' @ [4094:20] ==> public fun ByteArray.drop(n: Int): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'drop' @ [4094:20] ==> public fun ByteArray.drop(n: Int): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [4094:25] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'toList' @ [4097:12] ==> public fun ByteArray.toList(): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4097:12] ==> public fun ByteArray.toList(): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'lastIndex' @ [4104:19] ==> public val ShortArray.lastIndex: Int defined in kotlin.collections in file _ArraysJs.kt[PropertyDescriptorImpl]
 
@@ -6174,11 +6174,11 @@ Inferred types:
 
 'index' @ [4105:29] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'drop' @ [4106:20] ==> public fun ShortArray.drop(n: Int): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'drop' @ [4106:20] ==> public fun ShortArray.drop(n: Int): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [4106:25] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'toList' @ [4109:12] ==> public fun ShortArray.toList(): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4109:12] ==> public fun ShortArray.toList(): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'lastIndex' @ [4116:19] ==> public val IntArray.lastIndex: Int defined in kotlin.collections in file _ArraysJs.kt[PropertyDescriptorImpl]
 
@@ -6190,11 +6190,11 @@ Inferred types:
 
 'index' @ [4117:29] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'drop' @ [4118:20] ==> public fun IntArray.drop(n: Int): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'drop' @ [4118:20] ==> public fun IntArray.drop(n: Int): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [4118:25] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'toList' @ [4121:12] ==> public fun IntArray.toList(): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4121:12] ==> public fun IntArray.toList(): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'lastIndex' @ [4128:19] ==> public val LongArray.lastIndex: Int defined in kotlin.collections in file _ArraysJs.kt[PropertyDescriptorImpl]
 
@@ -6206,11 +6206,11 @@ Inferred types:
 
 'index' @ [4129:29] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'drop' @ [4130:20] ==> public fun LongArray.drop(n: Int): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'drop' @ [4130:20] ==> public fun LongArray.drop(n: Int): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [4130:25] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'toList' @ [4133:12] ==> public fun LongArray.toList(): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4133:12] ==> public fun LongArray.toList(): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'lastIndex' @ [4140:19] ==> public val FloatArray.lastIndex: Int defined in kotlin.collections in file _ArraysJs.kt[PropertyDescriptorImpl]
 
@@ -6222,11 +6222,11 @@ Inferred types:
 
 'index' @ [4141:29] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'drop' @ [4142:20] ==> public fun FloatArray.drop(n: Int): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'drop' @ [4142:20] ==> public fun FloatArray.drop(n: Int): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [4142:25] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'toList' @ [4145:12] ==> public fun FloatArray.toList(): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4145:12] ==> public fun FloatArray.toList(): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'lastIndex' @ [4152:19] ==> public val DoubleArray.lastIndex: Int defined in kotlin.collections in file _ArraysJs.kt[PropertyDescriptorImpl]
 
@@ -6238,11 +6238,11 @@ Inferred types:
 
 'index' @ [4153:29] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'drop' @ [4154:20] ==> public fun DoubleArray.drop(n: Int): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'drop' @ [4154:20] ==> public fun DoubleArray.drop(n: Int): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [4154:25] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'toList' @ [4157:12] ==> public fun DoubleArray.toList(): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4157:12] ==> public fun DoubleArray.toList(): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'lastIndex' @ [4164:19] ==> public val BooleanArray.lastIndex: Int defined in kotlin.collections in file _ArraysJs.kt[PropertyDescriptorImpl]
 
@@ -6254,11 +6254,11 @@ Inferred types:
 
 'index' @ [4165:29] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'drop' @ [4166:20] ==> public fun BooleanArray.drop(n: Int): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'drop' @ [4166:20] ==> public fun BooleanArray.drop(n: Int): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [4166:25] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'toList' @ [4169:12] ==> public fun BooleanArray.toList(): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4169:12] ==> public fun BooleanArray.toList(): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'lastIndex' @ [4176:19] ==> public val CharArray.lastIndex: Int defined in kotlin.collections in file _ArraysJs.kt[PropertyDescriptorImpl]
 
@@ -6270,11 +6270,11 @@ Inferred types:
 
 'index' @ [4177:29] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'drop' @ [4178:20] ==> public fun CharArray.drop(n: Int): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'drop' @ [4178:20] ==> public fun CharArray.drop(n: Int): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [4178:25] ==> val index: Int defined in kotlin.collections.takeLastWhile[LocalVariableDescriptor]
 
-'toList' @ [4181:12] ==> public fun CharArray.toList(): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toList' @ [4181:12] ==> public fun CharArray.toList(): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'ArrayList' @ [4188:16] ==> public constructor ArrayList<E>(@Suppress capacity: Int = ...) defined in kotlin.collections.ArrayList[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -6772,7 +6772,7 @@ Inferred types:
 Inferred types:
     <T> -> Byte
 
-'toMutableList' @ [4451:16] ==> public fun ByteArray.toMutableList(): MutableList<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [4451:16] ==> public fun ByteArray.toMutableList(): MutableList<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'list' @ [4452:5] ==> val list: MutableList<Byte> defined in kotlin.collections.reversed[LocalVariableDescriptor]
 
@@ -6788,7 +6788,7 @@ Inferred types:
 Inferred types:
     <T> -> Short
 
-'toMutableList' @ [4461:16] ==> public fun ShortArray.toMutableList(): MutableList<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [4461:16] ==> public fun ShortArray.toMutableList(): MutableList<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'list' @ [4462:5] ==> val list: MutableList<Short> defined in kotlin.collections.reversed[LocalVariableDescriptor]
 
@@ -6804,7 +6804,7 @@ Inferred types:
 Inferred types:
     <T> -> Int
 
-'toMutableList' @ [4471:16] ==> public fun IntArray.toMutableList(): MutableList<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [4471:16] ==> public fun IntArray.toMutableList(): MutableList<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'list' @ [4472:5] ==> val list: MutableList<Int> defined in kotlin.collections.reversed[LocalVariableDescriptor]
 
@@ -6820,7 +6820,7 @@ Inferred types:
 Inferred types:
     <T> -> Long
 
-'toMutableList' @ [4481:16] ==> public fun LongArray.toMutableList(): MutableList<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [4481:16] ==> public fun LongArray.toMutableList(): MutableList<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'list' @ [4482:5] ==> val list: MutableList<Long> defined in kotlin.collections.reversed[LocalVariableDescriptor]
 
@@ -6836,7 +6836,7 @@ Inferred types:
 Inferred types:
     <T> -> Float
 
-'toMutableList' @ [4491:16] ==> public fun FloatArray.toMutableList(): MutableList<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [4491:16] ==> public fun FloatArray.toMutableList(): MutableList<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'list' @ [4492:5] ==> val list: MutableList<Float> defined in kotlin.collections.reversed[LocalVariableDescriptor]
 
@@ -6852,7 +6852,7 @@ Inferred types:
 Inferred types:
     <T> -> Double
 
-'toMutableList' @ [4501:16] ==> public fun DoubleArray.toMutableList(): MutableList<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [4501:16] ==> public fun DoubleArray.toMutableList(): MutableList<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'list' @ [4502:5] ==> val list: MutableList<Double> defined in kotlin.collections.reversed[LocalVariableDescriptor]
 
@@ -6868,7 +6868,7 @@ Inferred types:
 Inferred types:
     <T> -> Boolean
 
-'toMutableList' @ [4511:16] ==> public fun BooleanArray.toMutableList(): MutableList<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [4511:16] ==> public fun BooleanArray.toMutableList(): MutableList<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'list' @ [4512:5] ==> val list: MutableList<Boolean> defined in kotlin.collections.reversed[LocalVariableDescriptor]
 
@@ -6884,7 +6884,7 @@ Inferred types:
 Inferred types:
     <T> -> Char
 
-'toMutableList' @ [4521:16] ==> public fun CharArray.toMutableList(): MutableList<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [4521:16] ==> public fun CharArray.toMutableList(): MutableList<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'list' @ [4522:5] ==> val list: MutableList<Char> defined in kotlin.collections.reversed[LocalVariableDescriptor]
 
@@ -7210,15 +7210,15 @@ Inferred types:
 
 'reverse' @ [4721:9] ==> public fun CharArray.reverse(): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
-'sortedArray' @ [4729:12] ==> public fun <T : Comparable<Nothing>> Array<out T>.sortedArray(): Array<out T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedArray' @ [4729:12] ==> public fun <T : Comparable<*>> Array<out T>.sortedArray(): Array<out T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Comparable<T>> -> T
+    <T : Comparable<T>> -> Captured(out T)
 
 'asList' @ [4729:26] ==> public fun <T> Array<out T>.asList(): List<T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
-'toTypedArray' @ [4736:12] ==> public fun ByteArray.toTypedArray(): Array<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [4736:12] ==> public fun ByteArray.toTypedArray(): Array<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [4736:27] ==> @InlineOnly public inline fun <T> Array<Byte>.apply(block: Array<Byte>.() -> Unit): Array<Byte> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7232,7 +7232,7 @@ Inferred types:
 Inferred types:
     <T> -> Byte
 
-'toTypedArray' @ [4743:12] ==> public fun ShortArray.toTypedArray(): Array<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [4743:12] ==> public fun ShortArray.toTypedArray(): Array<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [4743:27] ==> @InlineOnly public inline fun <T> Array<Short>.apply(block: Array<Short>.() -> Unit): Array<Short> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7246,7 +7246,7 @@ Inferred types:
 Inferred types:
     <T> -> Short
 
-'toTypedArray' @ [4750:12] ==> public fun IntArray.toTypedArray(): Array<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [4750:12] ==> public fun IntArray.toTypedArray(): Array<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [4750:27] ==> @InlineOnly public inline fun <T> Array<Int>.apply(block: Array<Int>.() -> Unit): Array<Int> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7260,7 +7260,7 @@ Inferred types:
 Inferred types:
     <T> -> Int
 
-'toTypedArray' @ [4757:12] ==> public fun LongArray.toTypedArray(): Array<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [4757:12] ==> public fun LongArray.toTypedArray(): Array<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [4757:27] ==> @InlineOnly public inline fun <T> Array<Long>.apply(block: Array<Long>.() -> Unit): Array<Long> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7274,7 +7274,7 @@ Inferred types:
 Inferred types:
     <T> -> Long
 
-'toTypedArray' @ [4764:12] ==> public fun FloatArray.toTypedArray(): Array<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [4764:12] ==> public fun FloatArray.toTypedArray(): Array<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [4764:27] ==> @InlineOnly public inline fun <T> Array<Float>.apply(block: Array<Float>.() -> Unit): Array<Float> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7288,7 +7288,7 @@ Inferred types:
 Inferred types:
     <T> -> Float
 
-'toTypedArray' @ [4771:12] ==> public fun DoubleArray.toTypedArray(): Array<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [4771:12] ==> public fun DoubleArray.toTypedArray(): Array<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [4771:27] ==> @InlineOnly public inline fun <T> Array<Double>.apply(block: Array<Double>.() -> Unit): Array<Double> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7302,7 +7302,7 @@ Inferred types:
 Inferred types:
     <T> -> Double
 
-'toTypedArray' @ [4778:12] ==> public fun CharArray.toTypedArray(): Array<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [4778:12] ==> public fun CharArray.toTypedArray(): Array<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [4778:27] ==> @InlineOnly public inline fun <T> Array<Char>.apply(block: Array<Char>.() -> Unit): Array<Char> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7588,7 +7588,7 @@ Inferred types:
 
 'selector' @ [4921:33] ==> value-parameter crossinline selector: (T) -> R? defined in kotlin.collections.sortedBy[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4928:12] ==> public fun ByteArray.sortedWith(comparator: Comparator<in Byte>): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4928:12] ==> public fun ByteArray.sortedWith(comparator: Comparator<in Byte>): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareBy' @ [4928:23] ==> @InlineOnly public inline fun <T> compareBy(crossinline selector: (Byte) -> Comparable<*>?): Comparator<Byte> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7596,7 +7596,7 @@ Inferred types:
 
 'selector' @ [4928:33] ==> value-parameter crossinline selector: (Byte) -> R? defined in kotlin.collections.sortedBy[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4935:12] ==> public fun ShortArray.sortedWith(comparator: Comparator<in Short>): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4935:12] ==> public fun ShortArray.sortedWith(comparator: Comparator<in Short>): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareBy' @ [4935:23] ==> @InlineOnly public inline fun <T> compareBy(crossinline selector: (Short) -> Comparable<*>?): Comparator<Short> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7604,7 +7604,7 @@ Inferred types:
 
 'selector' @ [4935:33] ==> value-parameter crossinline selector: (Short) -> R? defined in kotlin.collections.sortedBy[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4942:12] ==> public fun IntArray.sortedWith(comparator: Comparator<in Int>): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4942:12] ==> public fun IntArray.sortedWith(comparator: Comparator<in Int>): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareBy' @ [4942:23] ==> @InlineOnly public inline fun <T> compareBy(crossinline selector: (Int) -> Comparable<*>?): Comparator<Int> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7612,7 +7612,7 @@ Inferred types:
 
 'selector' @ [4942:33] ==> value-parameter crossinline selector: (Int) -> R? defined in kotlin.collections.sortedBy[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4949:12] ==> public fun LongArray.sortedWith(comparator: Comparator<in Long>): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4949:12] ==> public fun LongArray.sortedWith(comparator: Comparator<in Long>): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareBy' @ [4949:23] ==> @InlineOnly public inline fun <T> compareBy(crossinline selector: (Long) -> Comparable<*>?): Comparator<Long> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7620,7 +7620,7 @@ Inferred types:
 
 'selector' @ [4949:33] ==> value-parameter crossinline selector: (Long) -> R? defined in kotlin.collections.sortedBy[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4956:12] ==> public fun FloatArray.sortedWith(comparator: Comparator<in Float>): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4956:12] ==> public fun FloatArray.sortedWith(comparator: Comparator<in Float>): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareBy' @ [4956:23] ==> @InlineOnly public inline fun <T> compareBy(crossinline selector: (Float) -> Comparable<*>?): Comparator<Float> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7628,7 +7628,7 @@ Inferred types:
 
 'selector' @ [4956:33] ==> value-parameter crossinline selector: (Float) -> R? defined in kotlin.collections.sortedBy[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4963:12] ==> public fun DoubleArray.sortedWith(comparator: Comparator<in Double>): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4963:12] ==> public fun DoubleArray.sortedWith(comparator: Comparator<in Double>): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareBy' @ [4963:23] ==> @InlineOnly public inline fun <T> compareBy(crossinline selector: (Double) -> Comparable<*>?): Comparator<Double> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7636,7 +7636,7 @@ Inferred types:
 
 'selector' @ [4963:33] ==> value-parameter crossinline selector: (Double) -> R? defined in kotlin.collections.sortedBy[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4970:12] ==> public fun BooleanArray.sortedWith(comparator: Comparator<in Boolean>): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4970:12] ==> public fun BooleanArray.sortedWith(comparator: Comparator<in Boolean>): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareBy' @ [4970:23] ==> @InlineOnly public inline fun <T> compareBy(crossinline selector: (Boolean) -> Comparable<*>?): Comparator<Boolean> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7644,7 +7644,7 @@ Inferred types:
 
 'selector' @ [4970:33] ==> value-parameter crossinline selector: (Boolean) -> R? defined in kotlin.collections.sortedBy[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4977:12] ==> public fun CharArray.sortedWith(comparator: Comparator<in Char>): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4977:12] ==> public fun CharArray.sortedWith(comparator: Comparator<in Char>): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareBy' @ [4977:23] ==> @InlineOnly public inline fun <T> compareBy(crossinline selector: (Char) -> Comparable<*>?): Comparator<Char> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7662,7 +7662,7 @@ Inferred types:
 
 'selector' @ [4984:43] ==> value-parameter crossinline selector: (T) -> R? defined in kotlin.collections.sortedByDescending[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4991:12] ==> public fun ByteArray.sortedWith(comparator: Comparator<in Byte>): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4991:12] ==> public fun ByteArray.sortedWith(comparator: Comparator<in Byte>): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareByDescending' @ [4991:23] ==> @InlineOnly public inline fun <T> compareByDescending(crossinline selector: (Byte) -> Comparable<*>?): Comparator<Byte> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7670,7 +7670,7 @@ Inferred types:
 
 'selector' @ [4991:43] ==> value-parameter crossinline selector: (Byte) -> R? defined in kotlin.collections.sortedByDescending[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [4998:12] ==> public fun ShortArray.sortedWith(comparator: Comparator<in Short>): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [4998:12] ==> public fun ShortArray.sortedWith(comparator: Comparator<in Short>): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareByDescending' @ [4998:23] ==> @InlineOnly public inline fun <T> compareByDescending(crossinline selector: (Short) -> Comparable<*>?): Comparator<Short> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7678,7 +7678,7 @@ Inferred types:
 
 'selector' @ [4998:43] ==> value-parameter crossinline selector: (Short) -> R? defined in kotlin.collections.sortedByDescending[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [5005:12] ==> public fun IntArray.sortedWith(comparator: Comparator<in Int>): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [5005:12] ==> public fun IntArray.sortedWith(comparator: Comparator<in Int>): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareByDescending' @ [5005:23] ==> @InlineOnly public inline fun <T> compareByDescending(crossinline selector: (Int) -> Comparable<*>?): Comparator<Int> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7686,7 +7686,7 @@ Inferred types:
 
 'selector' @ [5005:43] ==> value-parameter crossinline selector: (Int) -> R? defined in kotlin.collections.sortedByDescending[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [5012:12] ==> public fun LongArray.sortedWith(comparator: Comparator<in Long>): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [5012:12] ==> public fun LongArray.sortedWith(comparator: Comparator<in Long>): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareByDescending' @ [5012:23] ==> @InlineOnly public inline fun <T> compareByDescending(crossinline selector: (Long) -> Comparable<*>?): Comparator<Long> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7694,7 +7694,7 @@ Inferred types:
 
 'selector' @ [5012:43] ==> value-parameter crossinline selector: (Long) -> R? defined in kotlin.collections.sortedByDescending[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [5019:12] ==> public fun FloatArray.sortedWith(comparator: Comparator<in Float>): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [5019:12] ==> public fun FloatArray.sortedWith(comparator: Comparator<in Float>): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareByDescending' @ [5019:23] ==> @InlineOnly public inline fun <T> compareByDescending(crossinline selector: (Float) -> Comparable<*>?): Comparator<Float> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7702,7 +7702,7 @@ Inferred types:
 
 'selector' @ [5019:43] ==> value-parameter crossinline selector: (Float) -> R? defined in kotlin.collections.sortedByDescending[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [5026:12] ==> public fun DoubleArray.sortedWith(comparator: Comparator<in Double>): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [5026:12] ==> public fun DoubleArray.sortedWith(comparator: Comparator<in Double>): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareByDescending' @ [5026:23] ==> @InlineOnly public inline fun <T> compareByDescending(crossinline selector: (Double) -> Comparable<*>?): Comparator<Double> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7710,7 +7710,7 @@ Inferred types:
 
 'selector' @ [5026:43] ==> value-parameter crossinline selector: (Double) -> R? defined in kotlin.collections.sortedByDescending[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [5033:12] ==> public fun BooleanArray.sortedWith(comparator: Comparator<in Boolean>): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [5033:12] ==> public fun BooleanArray.sortedWith(comparator: Comparator<in Boolean>): List<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareByDescending' @ [5033:23] ==> @InlineOnly public inline fun <T> compareByDescending(crossinline selector: (Boolean) -> Comparable<*>?): Comparator<Boolean> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7718,7 +7718,7 @@ Inferred types:
 
 'selector' @ [5033:43] ==> value-parameter crossinline selector: (Boolean) -> R? defined in kotlin.collections.sortedByDescending[ValueParameterDescriptorImpl]
 
-'sortedWith' @ [5040:12] ==> public fun CharArray.sortedWith(comparator: Comparator<in Char>): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sortedWith' @ [5040:12] ==> public fun CharArray.sortedWith(comparator: Comparator<in Char>): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'compareByDescending' @ [5040:23] ==> @InlineOnly public inline fun <T> compareByDescending(crossinline selector: (Char) -> Comparable<*>?): Comparator<Char> defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7742,7 +7742,7 @@ Inferred types:
 
 'sort' @ [5054:29] ==> @library public fun ByteArray.sort(): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
-'reversed' @ [5054:38] ==> public fun ByteArray.reversed(): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reversed' @ [5054:38] ==> public fun ByteArray.reversed(): List<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'copyOf' @ [5061:12] ==> @Suppress public inline fun ShortArray.copyOf(): ShortArray defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
@@ -7752,7 +7752,7 @@ Inferred types:
 
 'sort' @ [5061:29] ==> @library public fun ShortArray.sort(): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
-'reversed' @ [5061:38] ==> public fun ShortArray.reversed(): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reversed' @ [5061:38] ==> public fun ShortArray.reversed(): List<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'copyOf' @ [5068:12] ==> @Suppress public inline fun IntArray.copyOf(): IntArray defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
@@ -7762,7 +7762,7 @@ Inferred types:
 
 'sort' @ [5068:29] ==> @library public fun IntArray.sort(): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
-'reversed' @ [5068:38] ==> public fun IntArray.reversed(): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reversed' @ [5068:38] ==> public fun IntArray.reversed(): List<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'copyOf' @ [5075:12] ==> public fun LongArray.copyOf(): LongArray defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
@@ -7772,7 +7772,7 @@ Inferred types:
 
 'sort' @ [5075:29] ==> public fun LongArray.sort(): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
-'reversed' @ [5075:38] ==> public fun LongArray.reversed(): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reversed' @ [5075:38] ==> public fun LongArray.reversed(): List<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'copyOf' @ [5082:12] ==> @Suppress public inline fun FloatArray.copyOf(): FloatArray defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
@@ -7782,7 +7782,7 @@ Inferred types:
 
 'sort' @ [5082:29] ==> @library public fun FloatArray.sort(): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
-'reversed' @ [5082:38] ==> public fun FloatArray.reversed(): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reversed' @ [5082:38] ==> public fun FloatArray.reversed(): List<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'copyOf' @ [5089:12] ==> @Suppress public inline fun DoubleArray.copyOf(): DoubleArray defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
@@ -7792,7 +7792,7 @@ Inferred types:
 
 'sort' @ [5089:29] ==> @library public fun DoubleArray.sort(): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
-'reversed' @ [5089:38] ==> public fun DoubleArray.reversed(): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reversed' @ [5089:38] ==> public fun DoubleArray.reversed(): List<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'copyOf' @ [5096:12] ==> public fun CharArray.copyOf(): CharArray defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
@@ -7802,7 +7802,7 @@ Inferred types:
 
 'sort' @ [5096:29] ==> @library public fun CharArray.sort(): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
-'reversed' @ [5096:38] ==> public fun CharArray.reversed(): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reversed' @ [5096:38] ==> public fun CharArray.reversed(): List<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'sortedArrayWith' @ [5103:12] ==> public fun <T> Array<out T>.sortedArrayWith(comparator: Comparator<in T>): Array<out T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7814,7 +7814,7 @@ Inferred types:
 Inferred types:
     <T> -> T
 
-'toTypedArray' @ [5110:12] ==> public fun ByteArray.toTypedArray(): Array<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [5110:12] ==> public fun ByteArray.toTypedArray(): Array<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [5110:27] ==> @InlineOnly public inline fun <T> Array<Byte>.apply(block: Array<Byte>.() -> Unit): Array<Byte> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7830,7 +7830,7 @@ Inferred types:
 Inferred types:
     <T> -> Byte
 
-'toTypedArray' @ [5117:12] ==> public fun ShortArray.toTypedArray(): Array<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [5117:12] ==> public fun ShortArray.toTypedArray(): Array<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [5117:27] ==> @InlineOnly public inline fun <T> Array<Short>.apply(block: Array<Short>.() -> Unit): Array<Short> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7846,7 +7846,7 @@ Inferred types:
 Inferred types:
     <T> -> Short
 
-'toTypedArray' @ [5124:12] ==> public fun IntArray.toTypedArray(): Array<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [5124:12] ==> public fun IntArray.toTypedArray(): Array<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [5124:27] ==> @InlineOnly public inline fun <T> Array<Int>.apply(block: Array<Int>.() -> Unit): Array<Int> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7862,7 +7862,7 @@ Inferred types:
 Inferred types:
     <T> -> Int
 
-'toTypedArray' @ [5131:12] ==> public fun LongArray.toTypedArray(): Array<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [5131:12] ==> public fun LongArray.toTypedArray(): Array<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [5131:27] ==> @InlineOnly public inline fun <T> Array<Long>.apply(block: Array<Long>.() -> Unit): Array<Long> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7878,7 +7878,7 @@ Inferred types:
 Inferred types:
     <T> -> Long
 
-'toTypedArray' @ [5138:12] ==> public fun FloatArray.toTypedArray(): Array<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [5138:12] ==> public fun FloatArray.toTypedArray(): Array<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [5138:27] ==> @InlineOnly public inline fun <T> Array<Float>.apply(block: Array<Float>.() -> Unit): Array<Float> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7894,7 +7894,7 @@ Inferred types:
 Inferred types:
     <T> -> Float
 
-'toTypedArray' @ [5145:12] ==> public fun DoubleArray.toTypedArray(): Array<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [5145:12] ==> public fun DoubleArray.toTypedArray(): Array<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [5145:27] ==> @InlineOnly public inline fun <T> Array<Double>.apply(block: Array<Double>.() -> Unit): Array<Double> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7910,7 +7910,7 @@ Inferred types:
 Inferred types:
     <T> -> Double
 
-'toTypedArray' @ [5152:12] ==> public fun BooleanArray.toTypedArray(): Array<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [5152:12] ==> public fun BooleanArray.toTypedArray(): Array<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [5152:27] ==> @InlineOnly public inline fun <T> Array<Boolean>.apply(block: Array<Boolean>.() -> Unit): Array<Boolean> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -7926,7 +7926,7 @@ Inferred types:
 Inferred types:
     <T> -> Boolean
 
-'toTypedArray' @ [5159:12] ==> public fun CharArray.toTypedArray(): Array<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toTypedArray' @ [5159:12] ==> public fun CharArray.toTypedArray(): Array<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [5159:27] ==> @InlineOnly public inline fun <T> Array<Char>.apply(block: Array<Char>.() -> Unit): Array<Char> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -9620,7 +9620,7 @@ Inferred types:
 
 'this' @ [6696:17] ==> <this> defined in kotlin.collections.toList[ReceiverParameterDescriptorImpl]
 
-'toMutableList' @ [6696:22] ==> public fun ByteArray.toMutableList(): MutableList<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [6696:22] ==> public fun ByteArray.toMutableList(): MutableList<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'when (size) {
         0 -> emptyList()
@@ -9644,7 +9644,7 @@ Inferred types:
 
 'this' @ [6707:17] ==> <this> defined in kotlin.collections.toList[ReceiverParameterDescriptorImpl]
 
-'toMutableList' @ [6707:22] ==> public fun ShortArray.toMutableList(): MutableList<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [6707:22] ==> public fun ShortArray.toMutableList(): MutableList<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'when (size) {
         0 -> emptyList()
@@ -9668,7 +9668,7 @@ Inferred types:
 
 'this' @ [6718:17] ==> <this> defined in kotlin.collections.toList[ReceiverParameterDescriptorImpl]
 
-'toMutableList' @ [6718:22] ==> public fun IntArray.toMutableList(): MutableList<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [6718:22] ==> public fun IntArray.toMutableList(): MutableList<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'when (size) {
         0 -> emptyList()
@@ -9692,7 +9692,7 @@ Inferred types:
 
 'this' @ [6729:17] ==> <this> defined in kotlin.collections.toList[ReceiverParameterDescriptorImpl]
 
-'toMutableList' @ [6729:22] ==> public fun LongArray.toMutableList(): MutableList<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [6729:22] ==> public fun LongArray.toMutableList(): MutableList<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'when (size) {
         0 -> emptyList()
@@ -9716,7 +9716,7 @@ Inferred types:
 
 'this' @ [6740:17] ==> <this> defined in kotlin.collections.toList[ReceiverParameterDescriptorImpl]
 
-'toMutableList' @ [6740:22] ==> public fun FloatArray.toMutableList(): MutableList<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [6740:22] ==> public fun FloatArray.toMutableList(): MutableList<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'when (size) {
         0 -> emptyList()
@@ -9740,7 +9740,7 @@ Inferred types:
 
 'this' @ [6751:17] ==> <this> defined in kotlin.collections.toList[ReceiverParameterDescriptorImpl]
 
-'toMutableList' @ [6751:22] ==> public fun DoubleArray.toMutableList(): MutableList<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [6751:22] ==> public fun DoubleArray.toMutableList(): MutableList<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'when (size) {
         0 -> emptyList()
@@ -9764,7 +9764,7 @@ Inferred types:
 
 'this' @ [6762:17] ==> <this> defined in kotlin.collections.toList[ReceiverParameterDescriptorImpl]
 
-'toMutableList' @ [6762:22] ==> public fun BooleanArray.toMutableList(): MutableList<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [6762:22] ==> public fun BooleanArray.toMutableList(): MutableList<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'when (size) {
         0 -> emptyList()
@@ -9788,7 +9788,7 @@ Inferred types:
 
 'this' @ [6773:17] ==> <this> defined in kotlin.collections.toList[ReceiverParameterDescriptorImpl]
 
-'toMutableList' @ [6773:22] ==> public fun CharArray.toMutableList(): MutableList<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [6773:22] ==> public fun CharArray.toMutableList(): MutableList<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'ArrayList' @ [6781:12] ==> public constructor ArrayList<E>(elements: Collection<T>) defined in kotlin.collections.ArrayList[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -10714,9 +10714,9 @@ Inferred types:
 
 'destination' @ [7371:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7371:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<T>>.getOrPut(key: Any?, defaultValue: () -> MutableList<T>): MutableList<T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7371:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<T>>.getOrPut(key: K, defaultValue: () -> MutableList<T>): MutableList<T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<T>
 
 'key' @ [7371:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10741,9 +10741,9 @@ Inferred types:
 
 'destination' @ [7388:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7388:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Byte>>.getOrPut(key: Any?, defaultValue: () -> MutableList<Byte>): MutableList<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7388:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Byte>>.getOrPut(key: K, defaultValue: () -> MutableList<Byte>): MutableList<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<Byte>
 
 'key' @ [7388:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10768,9 +10768,9 @@ Inferred types:
 
 'destination' @ [7405:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7405:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Short>>.getOrPut(key: Any?, defaultValue: () -> MutableList<Short>): MutableList<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7405:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Short>>.getOrPut(key: K, defaultValue: () -> MutableList<Short>): MutableList<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<Short>
 
 'key' @ [7405:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10795,9 +10795,9 @@ Inferred types:
 
 'destination' @ [7422:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7422:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Int>>.getOrPut(key: Any?, defaultValue: () -> MutableList<Int>): MutableList<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7422:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Int>>.getOrPut(key: K, defaultValue: () -> MutableList<Int>): MutableList<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<Int>
 
 'key' @ [7422:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10822,9 +10822,9 @@ Inferred types:
 
 'destination' @ [7439:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7439:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Long>>.getOrPut(key: Any?, defaultValue: () -> MutableList<Long>): MutableList<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7439:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Long>>.getOrPut(key: K, defaultValue: () -> MutableList<Long>): MutableList<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<Long>
 
 'key' @ [7439:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10849,9 +10849,9 @@ Inferred types:
 
 'destination' @ [7456:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7456:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Float>>.getOrPut(key: Any?, defaultValue: () -> MutableList<Float>): MutableList<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7456:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Float>>.getOrPut(key: K, defaultValue: () -> MutableList<Float>): MutableList<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<Float>
 
 'key' @ [7456:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10876,9 +10876,9 @@ Inferred types:
 
 'destination' @ [7473:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7473:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Double>>.getOrPut(key: Any?, defaultValue: () -> MutableList<Double>): MutableList<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7473:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Double>>.getOrPut(key: K, defaultValue: () -> MutableList<Double>): MutableList<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<Double>
 
 'key' @ [7473:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10903,9 +10903,9 @@ Inferred types:
 
 'destination' @ [7490:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7490:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Boolean>>.getOrPut(key: Any?, defaultValue: () -> MutableList<Boolean>): MutableList<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7490:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Boolean>>.getOrPut(key: K, defaultValue: () -> MutableList<Boolean>): MutableList<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<Boolean>
 
 'key' @ [7490:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10930,9 +10930,9 @@ Inferred types:
 
 'destination' @ [7507:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7507:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Char>>.getOrPut(key: Any?, defaultValue: () -> MutableList<Char>): MutableList<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7507:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Char>>.getOrPut(key: K, defaultValue: () -> MutableList<Char>): MutableList<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<Char>
 
 'key' @ [7507:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10957,9 +10957,9 @@ Inferred types:
 
 'destination' @ [7525:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7525:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7525:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [7525:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -10986,9 +10986,9 @@ Inferred types:
 
 'destination' @ [7543:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7543:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7543:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [7543:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -11015,9 +11015,9 @@ Inferred types:
 
 'destination' @ [7561:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7561:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7561:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [7561:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -11044,9 +11044,9 @@ Inferred types:
 
 'destination' @ [7579:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7579:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7579:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [7579:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -11073,9 +11073,9 @@ Inferred types:
 
 'destination' @ [7597:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7597:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7597:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [7597:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -11102,9 +11102,9 @@ Inferred types:
 
 'destination' @ [7615:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7615:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7615:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [7615:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -11131,9 +11131,9 @@ Inferred types:
 
 'destination' @ [7633:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7633:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7633:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [7633:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -11160,9 +11160,9 @@ Inferred types:
 
 'destination' @ [7651:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7651:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7651:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [7651:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -11189,9 +11189,9 @@ Inferred types:
 
 'destination' @ [7669:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [7669:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [7669:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [7669:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -11824,7 +11824,7 @@ Inferred types:
 
 'this' @ [8174:12] ==> <this> defined in kotlin.collections.distinct[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8174:17] ==> public fun ByteArray.toMutableSet(): MutableSet<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8174:17] ==> public fun ByteArray.toMutableSet(): MutableSet<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [8174:32] ==> public fun <T> Iterable<Byte>.toList(): List<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -11832,7 +11832,7 @@ Inferred types:
 
 'this' @ [8183:12] ==> <this> defined in kotlin.collections.distinct[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8183:17] ==> public fun ShortArray.toMutableSet(): MutableSet<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8183:17] ==> public fun ShortArray.toMutableSet(): MutableSet<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [8183:32] ==> public fun <T> Iterable<Short>.toList(): List<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -11840,7 +11840,7 @@ Inferred types:
 
 'this' @ [8192:12] ==> <this> defined in kotlin.collections.distinct[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8192:17] ==> public fun IntArray.toMutableSet(): MutableSet<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8192:17] ==> public fun IntArray.toMutableSet(): MutableSet<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [8192:32] ==> public fun <T> Iterable<Int>.toList(): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -11848,7 +11848,7 @@ Inferred types:
 
 'this' @ [8201:12] ==> <this> defined in kotlin.collections.distinct[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8201:17] ==> public fun LongArray.toMutableSet(): MutableSet<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8201:17] ==> public fun LongArray.toMutableSet(): MutableSet<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [8201:32] ==> public fun <T> Iterable<Long>.toList(): List<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -11856,7 +11856,7 @@ Inferred types:
 
 'this' @ [8210:12] ==> <this> defined in kotlin.collections.distinct[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8210:17] ==> public fun FloatArray.toMutableSet(): MutableSet<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8210:17] ==> public fun FloatArray.toMutableSet(): MutableSet<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [8210:32] ==> public fun <T> Iterable<Float>.toList(): List<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -11864,7 +11864,7 @@ Inferred types:
 
 'this' @ [8219:12] ==> <this> defined in kotlin.collections.distinct[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8219:17] ==> public fun DoubleArray.toMutableSet(): MutableSet<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8219:17] ==> public fun DoubleArray.toMutableSet(): MutableSet<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [8219:32] ==> public fun <T> Iterable<Double>.toList(): List<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -11872,7 +11872,7 @@ Inferred types:
 
 'this' @ [8228:12] ==> <this> defined in kotlin.collections.distinct[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8228:17] ==> public fun BooleanArray.toMutableSet(): MutableSet<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8228:17] ==> public fun BooleanArray.toMutableSet(): MutableSet<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [8228:32] ==> public fun <T> Iterable<Boolean>.toList(): List<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -11880,7 +11880,7 @@ Inferred types:
 
 'this' @ [8237:12] ==> <this> defined in kotlin.collections.distinct[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8237:17] ==> public fun CharArray.toMutableSet(): MutableSet<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8237:17] ==> public fun CharArray.toMutableSet(): MutableSet<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [8237:32] ==> public fun <T> Iterable<Char>.toList(): List<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -12156,7 +12156,7 @@ Inferred types:
 
 'this' @ [8410:15] ==> <this> defined in kotlin.collections.intersect[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8410:20] ==> public fun ByteArray.toMutableSet(): MutableSet<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8410:20] ==> public fun ByteArray.toMutableSet(): MutableSet<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8411:5] ==> val set: MutableSet<Byte> defined in kotlin.collections.intersect[LocalVariableDescriptor]
 
@@ -12170,7 +12170,7 @@ Inferred types:
 
 'this' @ [8421:15] ==> <this> defined in kotlin.collections.intersect[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8421:20] ==> public fun ShortArray.toMutableSet(): MutableSet<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8421:20] ==> public fun ShortArray.toMutableSet(): MutableSet<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8422:5] ==> val set: MutableSet<Short> defined in kotlin.collections.intersect[LocalVariableDescriptor]
 
@@ -12184,7 +12184,7 @@ Inferred types:
 
 'this' @ [8432:15] ==> <this> defined in kotlin.collections.intersect[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8432:20] ==> public fun IntArray.toMutableSet(): MutableSet<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8432:20] ==> public fun IntArray.toMutableSet(): MutableSet<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8433:5] ==> val set: MutableSet<Int> defined in kotlin.collections.intersect[LocalVariableDescriptor]
 
@@ -12198,7 +12198,7 @@ Inferred types:
 
 'this' @ [8443:15] ==> <this> defined in kotlin.collections.intersect[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8443:20] ==> public fun LongArray.toMutableSet(): MutableSet<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8443:20] ==> public fun LongArray.toMutableSet(): MutableSet<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8444:5] ==> val set: MutableSet<Long> defined in kotlin.collections.intersect[LocalVariableDescriptor]
 
@@ -12212,7 +12212,7 @@ Inferred types:
 
 'this' @ [8454:15] ==> <this> defined in kotlin.collections.intersect[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8454:20] ==> public fun FloatArray.toMutableSet(): MutableSet<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8454:20] ==> public fun FloatArray.toMutableSet(): MutableSet<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8455:5] ==> val set: MutableSet<Float> defined in kotlin.collections.intersect[LocalVariableDescriptor]
 
@@ -12226,7 +12226,7 @@ Inferred types:
 
 'this' @ [8465:15] ==> <this> defined in kotlin.collections.intersect[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8465:20] ==> public fun DoubleArray.toMutableSet(): MutableSet<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8465:20] ==> public fun DoubleArray.toMutableSet(): MutableSet<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8466:5] ==> val set: MutableSet<Double> defined in kotlin.collections.intersect[LocalVariableDescriptor]
 
@@ -12240,7 +12240,7 @@ Inferred types:
 
 'this' @ [8476:15] ==> <this> defined in kotlin.collections.intersect[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8476:20] ==> public fun BooleanArray.toMutableSet(): MutableSet<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8476:20] ==> public fun BooleanArray.toMutableSet(): MutableSet<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8477:5] ==> val set: MutableSet<Boolean> defined in kotlin.collections.intersect[LocalVariableDescriptor]
 
@@ -12254,7 +12254,7 @@ Inferred types:
 
 'this' @ [8487:15] ==> <this> defined in kotlin.collections.intersect[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8487:20] ==> public fun CharArray.toMutableSet(): MutableSet<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8487:20] ==> public fun CharArray.toMutableSet(): MutableSet<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8488:5] ==> val set: MutableSet<Char> defined in kotlin.collections.intersect[LocalVariableDescriptor]
 
@@ -12284,7 +12284,7 @@ Inferred types:
 
 'this' @ [8509:15] ==> <this> defined in kotlin.collections.subtract[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8509:20] ==> public fun ByteArray.toMutableSet(): MutableSet<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8509:20] ==> public fun ByteArray.toMutableSet(): MutableSet<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8510:5] ==> val set: MutableSet<Byte> defined in kotlin.collections.subtract[LocalVariableDescriptor]
 
@@ -12298,7 +12298,7 @@ Inferred types:
 
 'this' @ [8520:15] ==> <this> defined in kotlin.collections.subtract[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8520:20] ==> public fun ShortArray.toMutableSet(): MutableSet<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8520:20] ==> public fun ShortArray.toMutableSet(): MutableSet<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8521:5] ==> val set: MutableSet<Short> defined in kotlin.collections.subtract[LocalVariableDescriptor]
 
@@ -12312,7 +12312,7 @@ Inferred types:
 
 'this' @ [8531:15] ==> <this> defined in kotlin.collections.subtract[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8531:20] ==> public fun IntArray.toMutableSet(): MutableSet<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8531:20] ==> public fun IntArray.toMutableSet(): MutableSet<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8532:5] ==> val set: MutableSet<Int> defined in kotlin.collections.subtract[LocalVariableDescriptor]
 
@@ -12326,7 +12326,7 @@ Inferred types:
 
 'this' @ [8542:15] ==> <this> defined in kotlin.collections.subtract[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8542:20] ==> public fun LongArray.toMutableSet(): MutableSet<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8542:20] ==> public fun LongArray.toMutableSet(): MutableSet<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8543:5] ==> val set: MutableSet<Long> defined in kotlin.collections.subtract[LocalVariableDescriptor]
 
@@ -12340,7 +12340,7 @@ Inferred types:
 
 'this' @ [8553:15] ==> <this> defined in kotlin.collections.subtract[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8553:20] ==> public fun FloatArray.toMutableSet(): MutableSet<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8553:20] ==> public fun FloatArray.toMutableSet(): MutableSet<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8554:5] ==> val set: MutableSet<Float> defined in kotlin.collections.subtract[LocalVariableDescriptor]
 
@@ -12354,7 +12354,7 @@ Inferred types:
 
 'this' @ [8564:15] ==> <this> defined in kotlin.collections.subtract[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8564:20] ==> public fun DoubleArray.toMutableSet(): MutableSet<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8564:20] ==> public fun DoubleArray.toMutableSet(): MutableSet<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8565:5] ==> val set: MutableSet<Double> defined in kotlin.collections.subtract[LocalVariableDescriptor]
 
@@ -12368,7 +12368,7 @@ Inferred types:
 
 'this' @ [8575:15] ==> <this> defined in kotlin.collections.subtract[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8575:20] ==> public fun BooleanArray.toMutableSet(): MutableSet<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8575:20] ==> public fun BooleanArray.toMutableSet(): MutableSet<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8576:5] ==> val set: MutableSet<Boolean> defined in kotlin.collections.subtract[LocalVariableDescriptor]
 
@@ -12382,7 +12382,7 @@ Inferred types:
 
 'this' @ [8586:15] ==> <this> defined in kotlin.collections.subtract[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8586:20] ==> public fun CharArray.toMutableSet(): MutableSet<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8586:20] ==> public fun CharArray.toMutableSet(): MutableSet<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8587:5] ==> val set: MutableSet<Char> defined in kotlin.collections.subtract[LocalVariableDescriptor]
 
@@ -12574,7 +12574,7 @@ Inferred types:
 
 'this' @ [8711:15] ==> <this> defined in kotlin.collections.union[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8711:20] ==> public fun ByteArray.toMutableSet(): MutableSet<Byte> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8711:20] ==> public fun ByteArray.toMutableSet(): MutableSet<Byte> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8712:5] ==> val set: MutableSet<Byte> defined in kotlin.collections.union[LocalVariableDescriptor]
 
@@ -12588,7 +12588,7 @@ Inferred types:
 
 'this' @ [8724:15] ==> <this> defined in kotlin.collections.union[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8724:20] ==> public fun ShortArray.toMutableSet(): MutableSet<Short> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8724:20] ==> public fun ShortArray.toMutableSet(): MutableSet<Short> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8725:5] ==> val set: MutableSet<Short> defined in kotlin.collections.union[LocalVariableDescriptor]
 
@@ -12602,7 +12602,7 @@ Inferred types:
 
 'this' @ [8737:15] ==> <this> defined in kotlin.collections.union[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8737:20] ==> public fun IntArray.toMutableSet(): MutableSet<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8737:20] ==> public fun IntArray.toMutableSet(): MutableSet<Int> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8738:5] ==> val set: MutableSet<Int> defined in kotlin.collections.union[LocalVariableDescriptor]
 
@@ -12616,7 +12616,7 @@ Inferred types:
 
 'this' @ [8750:15] ==> <this> defined in kotlin.collections.union[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8750:20] ==> public fun LongArray.toMutableSet(): MutableSet<Long> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8750:20] ==> public fun LongArray.toMutableSet(): MutableSet<Long> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8751:5] ==> val set: MutableSet<Long> defined in kotlin.collections.union[LocalVariableDescriptor]
 
@@ -12630,7 +12630,7 @@ Inferred types:
 
 'this' @ [8763:15] ==> <this> defined in kotlin.collections.union[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8763:20] ==> public fun FloatArray.toMutableSet(): MutableSet<Float> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8763:20] ==> public fun FloatArray.toMutableSet(): MutableSet<Float> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8764:5] ==> val set: MutableSet<Float> defined in kotlin.collections.union[LocalVariableDescriptor]
 
@@ -12644,7 +12644,7 @@ Inferred types:
 
 'this' @ [8776:15] ==> <this> defined in kotlin.collections.union[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8776:20] ==> public fun DoubleArray.toMutableSet(): MutableSet<Double> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8776:20] ==> public fun DoubleArray.toMutableSet(): MutableSet<Double> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8777:5] ==> val set: MutableSet<Double> defined in kotlin.collections.union[LocalVariableDescriptor]
 
@@ -12658,7 +12658,7 @@ Inferred types:
 
 'this' @ [8789:15] ==> <this> defined in kotlin.collections.union[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8789:20] ==> public fun BooleanArray.toMutableSet(): MutableSet<Boolean> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8789:20] ==> public fun BooleanArray.toMutableSet(): MutableSet<Boolean> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8790:5] ==> val set: MutableSet<Boolean> defined in kotlin.collections.union[LocalVariableDescriptor]
 
@@ -12672,7 +12672,7 @@ Inferred types:
 
 'this' @ [8802:15] ==> <this> defined in kotlin.collections.union[ReceiverParameterDescriptorImpl]
 
-'toMutableSet' @ [8802:20] ==> public fun CharArray.toMutableSet(): MutableSet<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'toMutableSet' @ [8802:20] ==> public fun CharArray.toMutableSet(): MutableSet<Char> defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'set' @ [8803:5] ==> val set: MutableSet<Char> defined in kotlin.collections.union[LocalVariableDescriptor]
 
@@ -14364,7 +14364,7 @@ Inferred types:
 
 'comparator' @ [10088:13] ==> value-parameter comparator: Comparator<in T> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10088:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10088:24] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [10088:32] ==> var max: T defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -14390,7 +14390,7 @@ Inferred types:
 
 'comparator' @ [10101:13] ==> value-parameter comparator: Comparator<in Byte> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10101:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10101:24] ==> @JsName public abstract fun compare(a: Byte, b: Byte): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [10101:32] ==> var max: Byte defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -14416,7 +14416,7 @@ Inferred types:
 
 'comparator' @ [10114:13] ==> value-parameter comparator: Comparator<in Short> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10114:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10114:24] ==> @JsName public abstract fun compare(a: Short, b: Short): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [10114:32] ==> var max: Short defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -14442,7 +14442,7 @@ Inferred types:
 
 'comparator' @ [10127:13] ==> value-parameter comparator: Comparator<in Int> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10127:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10127:24] ==> @JsName public abstract fun compare(a: Int, b: Int): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [10127:32] ==> var max: Int defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -14468,7 +14468,7 @@ Inferred types:
 
 'comparator' @ [10140:13] ==> value-parameter comparator: Comparator<in Long> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10140:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10140:24] ==> @JsName public abstract fun compare(a: Long, b: Long): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [10140:32] ==> var max: Long defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -14494,7 +14494,7 @@ Inferred types:
 
 'comparator' @ [10153:13] ==> value-parameter comparator: Comparator<in Float> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10153:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10153:24] ==> @JsName public abstract fun compare(a: Float, b: Float): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [10153:32] ==> var max: Float defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -14520,7 +14520,7 @@ Inferred types:
 
 'comparator' @ [10166:13] ==> value-parameter comparator: Comparator<in Double> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10166:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10166:24] ==> @JsName public abstract fun compare(a: Double, b: Double): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [10166:32] ==> var max: Double defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -14546,7 +14546,7 @@ Inferred types:
 
 'comparator' @ [10179:13] ==> value-parameter comparator: Comparator<in Boolean> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10179:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10179:24] ==> @JsName public abstract fun compare(a: Boolean, b: Boolean): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [10179:32] ==> var max: Boolean defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -14572,7 +14572,7 @@ Inferred types:
 
 'comparator' @ [10192:13] ==> value-parameter comparator: Comparator<in Char> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10192:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10192:24] ==> @JsName public abstract fun compare(a: Char, b: Char): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [10192:32] ==> var max: Char defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -15196,7 +15196,7 @@ Inferred types:
 
 'comparator' @ [10515:13] ==> value-parameter comparator: Comparator<in T> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10515:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10515:24] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [10515:32] ==> var min: T defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -15222,7 +15222,7 @@ Inferred types:
 
 'comparator' @ [10528:13] ==> value-parameter comparator: Comparator<in Byte> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10528:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10528:24] ==> @JsName public abstract fun compare(a: Byte, b: Byte): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [10528:32] ==> var min: Byte defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -15248,7 +15248,7 @@ Inferred types:
 
 'comparator' @ [10541:13] ==> value-parameter comparator: Comparator<in Short> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10541:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10541:24] ==> @JsName public abstract fun compare(a: Short, b: Short): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [10541:32] ==> var min: Short defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -15274,7 +15274,7 @@ Inferred types:
 
 'comparator' @ [10554:13] ==> value-parameter comparator: Comparator<in Int> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10554:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10554:24] ==> @JsName public abstract fun compare(a: Int, b: Int): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [10554:32] ==> var min: Int defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -15300,7 +15300,7 @@ Inferred types:
 
 'comparator' @ [10567:13] ==> value-parameter comparator: Comparator<in Long> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10567:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10567:24] ==> @JsName public abstract fun compare(a: Long, b: Long): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [10567:32] ==> var min: Long defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -15326,7 +15326,7 @@ Inferred types:
 
 'comparator' @ [10580:13] ==> value-parameter comparator: Comparator<in Float> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10580:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10580:24] ==> @JsName public abstract fun compare(a: Float, b: Float): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [10580:32] ==> var min: Float defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -15352,7 +15352,7 @@ Inferred types:
 
 'comparator' @ [10593:13] ==> value-parameter comparator: Comparator<in Double> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10593:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10593:24] ==> @JsName public abstract fun compare(a: Double, b: Double): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [10593:32] ==> var min: Double defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -15378,7 +15378,7 @@ Inferred types:
 
 'comparator' @ [10606:13] ==> value-parameter comparator: Comparator<in Boolean> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10606:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10606:24] ==> @JsName public abstract fun compare(a: Boolean, b: Boolean): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [10606:32] ==> var min: Boolean defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -15404,7 +15404,7 @@ Inferred types:
 
 'comparator' @ [10619:13] ==> value-parameter comparator: Comparator<in Char> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [10619:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [10619:24] ==> @JsName public abstract fun compare(a: Char, b: Char): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [10619:32] ==> var min: Char defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -16981,7 +16981,7 @@ Inferred types:
 
 'second' @ [11660:24] ==> val second: ArrayList<Char> defined in kotlin.collections.partition[LocalVariableDescriptor]
 
-'zip' @ [11667:12] ==> public inline fun <T, R, V> Array<out T>.zip(other: Array<out R>, transform: (T, R) -> Pair<T, R>): List<Pair<T, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11667:12] ==> public inline fun <T, R, V> Array<out T>.zip(other: Array<out R>, transform: (a: T, b: R) -> Pair<T, R>): List<Pair<T, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <R> -> R
@@ -16993,7 +16993,7 @@ Inferred types:
 
 't2' @ [11667:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11674:12] ==> public inline fun <R, V> ByteArray.zip(other: Array<out R>, transform: (a: Byte, R) -> Pair<Byte, R>): List<Pair<Byte, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11674:12] ==> public inline fun <R, V> ByteArray.zip(other: Array<out R>, transform: (a: Byte, b: R) -> Pair<Byte, R>): List<Pair<Byte, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Byte, R>
@@ -17004,7 +17004,7 @@ Inferred types:
 
 't2' @ [11674:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11681:12] ==> public inline fun <R, V> ShortArray.zip(other: Array<out R>, transform: (a: Short, R) -> Pair<Short, R>): List<Pair<Short, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11681:12] ==> public inline fun <R, V> ShortArray.zip(other: Array<out R>, transform: (a: Short, b: R) -> Pair<Short, R>): List<Pair<Short, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Short, R>
@@ -17015,7 +17015,7 @@ Inferred types:
 
 't2' @ [11681:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11688:12] ==> public inline fun <R, V> IntArray.zip(other: Array<out R>, transform: (a: Int, R) -> Pair<Int, R>): List<Pair<Int, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11688:12] ==> public inline fun <R, V> IntArray.zip(other: Array<out R>, transform: (a: Int, b: R) -> Pair<Int, R>): List<Pair<Int, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Int, R>
@@ -17026,7 +17026,7 @@ Inferred types:
 
 't2' @ [11688:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11695:12] ==> public inline fun <R, V> LongArray.zip(other: Array<out R>, transform: (a: Long, R) -> Pair<Long, R>): List<Pair<Long, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11695:12] ==> public inline fun <R, V> LongArray.zip(other: Array<out R>, transform: (a: Long, b: R) -> Pair<Long, R>): List<Pair<Long, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Long, R>
@@ -17037,7 +17037,7 @@ Inferred types:
 
 't2' @ [11695:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11702:12] ==> public inline fun <R, V> FloatArray.zip(other: Array<out R>, transform: (a: Float, R) -> Pair<Float, R>): List<Pair<Float, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11702:12] ==> public inline fun <R, V> FloatArray.zip(other: Array<out R>, transform: (a: Float, b: R) -> Pair<Float, R>): List<Pair<Float, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Float, R>
@@ -17048,7 +17048,7 @@ Inferred types:
 
 't2' @ [11702:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11709:12] ==> public inline fun <R, V> DoubleArray.zip(other: Array<out R>, transform: (a: Double, R) -> Pair<Double, R>): List<Pair<Double, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11709:12] ==> public inline fun <R, V> DoubleArray.zip(other: Array<out R>, transform: (a: Double, b: R) -> Pair<Double, R>): List<Pair<Double, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Double, R>
@@ -17059,7 +17059,7 @@ Inferred types:
 
 't2' @ [11709:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11716:12] ==> public inline fun <R, V> BooleanArray.zip(other: Array<out R>, transform: (a: Boolean, R) -> Pair<Boolean, R>): List<Pair<Boolean, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11716:12] ==> public inline fun <R, V> BooleanArray.zip(other: Array<out R>, transform: (a: Boolean, b: R) -> Pair<Boolean, R>): List<Pair<Boolean, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Boolean, R>
@@ -17070,7 +17070,7 @@ Inferred types:
 
 't2' @ [11716:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11723:12] ==> public inline fun <R, V> CharArray.zip(other: Array<out R>, transform: (a: Char, R) -> Pair<Char, R>): List<Pair<Char, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11723:12] ==> public inline fun <R, V> CharArray.zip(other: Array<out R>, transform: (a: Char, b: R) -> Pair<Char, R>): List<Pair<Char, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Char, R>
@@ -17387,7 +17387,7 @@ Inferred types:
 
 'list' @ [11831:12] ==> val list: ArrayList<V> defined in kotlin.collections.zip[LocalVariableDescriptor]
 
-'zip' @ [11838:12] ==> public inline fun <T, R, V> Array<out T>.zip(other: Iterable<R>, transform: (T, R) -> Pair<T, R>): List<Pair<T, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11838:12] ==> public inline fun <T, R, V> Array<out T>.zip(other: Iterable<R>, transform: (a: T, b: R) -> Pair<T, R>): List<Pair<T, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <R> -> R
@@ -17399,7 +17399,7 @@ Inferred types:
 
 't2' @ [11838:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11845:12] ==> public inline fun <R, V> ByteArray.zip(other: Iterable<R>, transform: (a: Byte, R) -> Pair<Byte, R>): List<Pair<Byte, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11845:12] ==> public inline fun <R, V> ByteArray.zip(other: Iterable<R>, transform: (a: Byte, b: R) -> Pair<Byte, R>): List<Pair<Byte, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Byte, R>
@@ -17410,7 +17410,7 @@ Inferred types:
 
 't2' @ [11845:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11852:12] ==> public inline fun <R, V> ShortArray.zip(other: Iterable<R>, transform: (a: Short, R) -> Pair<Short, R>): List<Pair<Short, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11852:12] ==> public inline fun <R, V> ShortArray.zip(other: Iterable<R>, transform: (a: Short, b: R) -> Pair<Short, R>): List<Pair<Short, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Short, R>
@@ -17421,7 +17421,7 @@ Inferred types:
 
 't2' @ [11852:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11859:12] ==> public inline fun <R, V> IntArray.zip(other: Iterable<R>, transform: (a: Int, R) -> Pair<Int, R>): List<Pair<Int, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11859:12] ==> public inline fun <R, V> IntArray.zip(other: Iterable<R>, transform: (a: Int, b: R) -> Pair<Int, R>): List<Pair<Int, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Int, R>
@@ -17432,7 +17432,7 @@ Inferred types:
 
 't2' @ [11859:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11866:12] ==> public inline fun <R, V> LongArray.zip(other: Iterable<R>, transform: (a: Long, R) -> Pair<Long, R>): List<Pair<Long, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11866:12] ==> public inline fun <R, V> LongArray.zip(other: Iterable<R>, transform: (a: Long, b: R) -> Pair<Long, R>): List<Pair<Long, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Long, R>
@@ -17443,7 +17443,7 @@ Inferred types:
 
 't2' @ [11866:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11873:12] ==> public inline fun <R, V> FloatArray.zip(other: Iterable<R>, transform: (a: Float, R) -> Pair<Float, R>): List<Pair<Float, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11873:12] ==> public inline fun <R, V> FloatArray.zip(other: Iterable<R>, transform: (a: Float, b: R) -> Pair<Float, R>): List<Pair<Float, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Float, R>
@@ -17454,7 +17454,7 @@ Inferred types:
 
 't2' @ [11873:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11880:12] ==> public inline fun <R, V> DoubleArray.zip(other: Iterable<R>, transform: (a: Double, R) -> Pair<Double, R>): List<Pair<Double, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11880:12] ==> public inline fun <R, V> DoubleArray.zip(other: Iterable<R>, transform: (a: Double, b: R) -> Pair<Double, R>): List<Pair<Double, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Double, R>
@@ -17465,7 +17465,7 @@ Inferred types:
 
 't2' @ [11880:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11887:12] ==> public inline fun <R, V> BooleanArray.zip(other: Iterable<R>, transform: (a: Boolean, R) -> Pair<Boolean, R>): List<Pair<Boolean, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11887:12] ==> public inline fun <R, V> BooleanArray.zip(other: Iterable<R>, transform: (a: Boolean, b: R) -> Pair<Boolean, R>): List<Pair<Boolean, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Boolean, R>
@@ -17476,7 +17476,7 @@ Inferred types:
 
 't2' @ [11887:41] ==> value-parameter t2: R defined in kotlin.collections.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'zip' @ [11894:12] ==> public inline fun <R, V> CharArray.zip(other: Iterable<R>, transform: (a: Char, R) -> Pair<Char, R>): List<Pair<Char, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [11894:12] ==> public inline fun <R, V> CharArray.zip(other: Iterable<R>, transform: (a: Char, b: R) -> Pair<Char, R>): List<Pair<Char, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
     <V> -> Pair<Char, R>
@@ -19334,8 +19334,6 @@ Inferred types:
 
 'count' @ [12642:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [12642:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [12642:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [12642:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -19357,8 +19355,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [12656:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
-
-'Double' @ [12656:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [12656:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
@@ -19382,8 +19378,6 @@ Inferred types:
 
 'count' @ [12670:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [12670:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [12670:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [12670:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -19405,8 +19399,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [12684:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
-
-'Double' @ [12684:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [12684:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
@@ -19430,8 +19422,6 @@ Inferred types:
 
 'count' @ [12698:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [12698:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [12698:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [12698:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -19454,8 +19444,6 @@ Inferred types:
 
 'count' @ [12712:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [12712:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [12712:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [12712:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -19475,8 +19463,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [12725:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
-
-'Double' @ [12725:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [12725:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
@@ -19498,8 +19484,6 @@ Inferred types:
 
 'count' @ [12738:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [12738:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [12738:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [12738:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -19519,8 +19503,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [12751:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
-
-'Double' @ [12751:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [12751:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
@@ -19542,8 +19524,6 @@ Inferred types:
 
 'count' @ [12764:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [12764:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [12764:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [12764:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -19564,8 +19544,6 @@ Inferred types:
 
 'count' @ [12777:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [12777:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [12777:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [12777:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -19585,8 +19563,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [12790:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
-
-'Double' @ [12790:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [12790:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
@@ -20414,7 +20390,7 @@ Inferred types:
 
 'size' @ [13436:9] ==> public final val size: Int defined in kotlin.LongArray[DeserializedPropertyDescriptor]
 
-'sort' @ [13437:9] ==> @InlineOnly public inline fun LongArray.sort(noinline comparison: (a: Long, b: Long) -> Int): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sort' @ [13437:9] ==> @InlineOnly public inline fun LongArray.sort(noinline comparison: (a: Long, b: Long) -> Int): Unit defined in kotlin.collections in file _ArraysJs.kt[SimpleFunctionDescriptorImpl]
 
 'a' @ [13437:36] ==> value-parameter a: Long defined in kotlin.collections.sort.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -20444,7 +20420,7 @@ Inferred types:
 
 'size' @ [13484:9] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
-'sort' @ [13485:9] ==> @InlineOnly public inline fun <T> Array<out T>.sort(noinline comparison: (T, T) -> Int): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sort' @ [13485:9] ==> @InlineOnly public inline fun <T> Array<out T>.sort(noinline comparison: (a: T, b: T) -> Int): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -20456,13 +20432,13 @@ Inferred types:
 
 'size' @ [13492:9] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
-'sort' @ [13493:9] ==> @InlineOnly public inline fun <T> Array<out T>.sort(noinline comparison: (T, T) -> Int): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'sort' @ [13493:9] ==> @InlineOnly public inline fun <T> Array<out T>.sort(noinline comparison: (a: T, b: T) -> Int): Unit defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
 'comparator' @ [13493:24] ==> value-parameter comparator: Comparator<in T> defined in kotlin.collections.sortWith[ValueParameterDescriptorImpl]
 
-'compare' @ [13493:35] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [13493:35] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'a' @ [13493:43] ==> value-parameter a: T defined in kotlin.collections.sortWith.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -1,7 +1,7 @@
-'dfs' @ [25:16] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull nodes: (MutableCollection<(CallableDescriptor..CallableDescriptor?)>..Collection<(CallableDescriptor..CallableDescriptor?)>), @NotNull neighbors: ((CallableDescriptor..CallableDescriptor?)) -> (MutableIterable<(CallableDescriptor..CallableDescriptor?)>..Iterable<(CallableDescriptor..CallableDescriptor?)>), @NotNull handler: DFS.NodeHandler<(CallableDescriptor..CallableDescriptor?), (ArrayList<D>..ArrayList<D>?)>): (ArrayList<D>..ArrayList<D>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
+'dfs' @ [25:16] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull nodes: (MutableCollection<(CallableDescriptor..CallableDescriptor?)>..Collection<(CallableDescriptor..CallableDescriptor?)>), @NotNull neighbors: (current: (CallableDescriptor..CallableDescriptor?)) -> (MutableIterable<(CallableDescriptor..CallableDescriptor?)>..Iterable<(CallableDescriptor..CallableDescriptor?)>), @NotNull handler: DFS.NodeHandler<(CallableDescriptor..CallableDescriptor?), (ArrayList<D>..ArrayList<D>?)>): (ArrayList<D>..ArrayList<D>?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> CallableDescriptor
-    <R : (Any..Any?)> -> ArrayList<D>
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <R : (Any..Any?)> -> (java.util.ArrayList<D>..java.util.ArrayList<D>?)
 
 'listOf' @ [26:13] ==> public fun <T> listOf(element: D): List<D> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -93,7 +93,7 @@ Inferred types:
 
 'extractMembersOverridableInBothWays' @ [62:32] ==> @NotNull public open fun <H : (Any..Any?)> extractMembersOverridableInBothWays(@NotNull overrider: H, @NotNull @Mutable extractFrom: MutableCollection<(H..H?)>, @NotNull descriptorByHandle: ((H..H?)) -> (CallableDescriptor..CallableDescriptor?), @NotNull onConflict: ((H..H?)) -> (Unit..Unit?)): (MutableCollection<(H..H?)>..Collection<(H..H?)>) defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 Inferred types:
-    <H : (Any..Any?)> -> H
+    <H : (Any..Any?)> -> (H..H?)
 
 'nextHandle' @ [62:68] ==> val nextHandle: H defined in org.jetbrains.kotlin.resolve.selectMostSpecificInEachOverridableGroup[LocalVariableDescriptor]
 
@@ -127,7 +127,7 @@ Inferred types:
 
 'selectMostSpecificMember' @ [69:43] ==> @NotNull public open fun <H : (Any..Any?)> selectMostSpecificMember(@NotNull overridables: (MutableCollection<(H..H?)>..Collection<(H..H?)>), @NotNull descriptorByHandle: ((H..H?)) -> (CallableDescriptor..CallableDescriptor?)): H defined in org.jetbrains.kotlin.resolve.OverridingUtil[JavaMethodDescriptor]
 Inferred types:
-    <H : (Any..Any?)> -> H
+    <H : (Any..Any?)> -> (H..H?)
 
 'overridableGroup' @ [69:68] ==> val overridableGroup: (MutableCollection<(H..H?)>..Collection<(H..H?)>) defined in org.jetbrains.kotlin.resolve.selectMostSpecificInEachOverridableGroup[LocalVariableDescriptor]
 

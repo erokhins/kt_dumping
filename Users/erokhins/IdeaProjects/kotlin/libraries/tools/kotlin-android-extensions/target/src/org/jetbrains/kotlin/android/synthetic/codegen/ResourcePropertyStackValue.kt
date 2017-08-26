@@ -18,8 +18,6 @@
 
 'containerType' @ [45:33] ==> public final val containerType: AndroidContainerType defined in org.jetbrains.kotlin.android.synthetic.descriptors.ContainerOptionsProxy[PropertyDescriptorImpl]
 
-'AndroidContainerType' @ [45:50] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
-
 'UNKNOWN' @ [45:71] ==> enum entry UNKNOWN defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'typeMapper' @ [49:32] ==> private final val typeMapper: KotlinTypeMapper defined in org.jetbrains.kotlin.android.synthetic.codegen.ResourcePropertyStackValue[PropertyDescriptorImpl]

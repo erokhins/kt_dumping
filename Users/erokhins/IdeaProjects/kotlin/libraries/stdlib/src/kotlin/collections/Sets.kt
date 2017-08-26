@@ -129,7 +129,7 @@ Inferred types:
 
 'singleton' @ [81:66] ==> public open fun <T : (Any..Any?)> singleton(p0: (T..T?)): (MutableSet<(T..T?)>..Set<(T..T?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'element' @ [81:76] ==> value-parameter element: T defined in kotlin.collections.setOf[ValueParameterDescriptorImpl]
 

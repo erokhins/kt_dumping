@@ -4,7 +4,7 @@
 
 'genericParameterTypes' @ [28:32] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.genericParameterTypes: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'types' @ [29:17] ==> val types: (Array<(Type..Type?)>..Array<out (Type..Type?)>?) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaConstructor.<get-valueParameters>[LocalVariableDescriptor]
 
@@ -20,7 +20,7 @@ Inferred types:
 
 'declaringClass' @ [31:32] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.declaringClass: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'when {
                 klass.declaringClass != null && !Modifier.isStatic(klass.modifiers) -> types.copyOfRange(1, types.size)
@@ -33,7 +33,7 @@ Inferred types:
 
 'declaringClass' @ [34:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaringClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out (kotlin.Any..kotlin.Any?))
 
 '!' @ [34:49] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -43,7 +43,7 @@ Inferred types:
 
 'modifiers' @ [34:74] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.modifiers: Int[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out (kotlin.Any..kotlin.Any?))
 
 'types' @ [34:88] ==> val types: (Array<(Type..Type?)>..Array<out (Type..Type?)>?) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaConstructor.<get-valueParameters>[LocalVariableDescriptor]
 
@@ -61,7 +61,7 @@ Inferred types:
 
 'parameterAnnotations' @ [38:38] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterAnnotations: (Array<(Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)>..Array<out (Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'when {
                 annotations.size < realTypes.size -> throw IllegalStateException("Illegal generic signature: $member")
@@ -121,16 +121,18 @@ Inferred types:
 
 'isVarArgs' @ [45:74] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.isVarArgs: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'member' @ [49:17] ==> public open val member: Constructor<*> defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaConstructor[PropertyDescriptorImpl]
 
 'typeParameters' @ [49:24] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.typeParameters: (Array<out (TypeVariable<out (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)>..TypeVariable<out (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)>?)>..Array<out (TypeVariable<out (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)>..TypeVariable<out (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'map' @ [49:39] ==> public inline fun <T, R> Array<out (TypeVariable<out (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)>..TypeVariable<out (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)>?)>.map(transform: ((TypeVariable<out (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)>..TypeVariable<out (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?)>?)) -> ReflectJavaTypeParameter): List<ReflectJavaTypeParameter> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.lang.reflect.TypeVariable<out (java.lang.reflect.Constructor<out (kotlin.Any..kotlin.Any?)>..java.lang.reflect.Constructor<out (kotlin.Any..kotlin.Any?)>?)>..java.lang.reflect.TypeVariable<out (java.lang.reflect.Constructor<out (kotlin.Any..kotlin.Any?)>..java.lang.reflect.Constructor<out (kotlin.Any..kotlin.Any?)>?)>?)
     <R> -> ReflectJavaTypeParameter
+
+'ReflectJavaTypeParameter' @ [49:45] ==> public constructor ReflectJavaTypeParameter(typeVariable: TypeVariable<*>) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaTypeParameter[ClassConstructorDescriptorImpl]
 

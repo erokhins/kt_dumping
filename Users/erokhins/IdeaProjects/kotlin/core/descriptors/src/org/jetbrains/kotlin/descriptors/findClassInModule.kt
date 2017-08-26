@@ -62,6 +62,8 @@ Inferred types:
 
 'classId' @ [40:48] ==> value-parameter classId: ClassId defined in org.jetbrains.kotlin.descriptors.findNonGenericClassAcrossDependencies[ValueParameterDescriptorImpl]
 
+'getOuterClassId' @ [40:66] ==> @Nullable public open fun getOuterClassId(): ClassId? defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
+
 'map' @ [40:83] ==> public fun <T, R> Sequence<ClassId>.map(transform: (ClassId) -> Int): Sequence<Int> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ClassId

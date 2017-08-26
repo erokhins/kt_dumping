@@ -1,12 +1,12 @@
-'lazy' @ [23:80] ==> public fun <T> lazy(initializer: () -> ProcessLauncher): Lazy<ProcessLauncher> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [23:80] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ProcessLauncher
+    <T> -> T
 
 'get' @ [24:44] ==> @ThreadSafe public open fun <T : (NativeIntegration..NativeIntegration?)> get(p0: (Class<(ProcessLauncher..ProcessLauncher?)>..Class<(ProcessLauncher..ProcessLauncher?)>?)): (ProcessLauncher..ProcessLauncher?) defined in net.rubygrapefruit.platform.Native[JavaMethodDescriptor]
 Inferred types:
-    <T : (NativeIntegration..NativeIntegration?)> -> ProcessLauncher
+    <T : (NativeIntegration..NativeIntegration?)> -> (net.rubygrapefruit.platform.ProcessLauncher..net.rubygrapefruit.platform.ProcessLauncher?)
 
-'ProcessLauncher' @ [24:76] ==> @ThreadSafe public fun ProcessLauncher(function: ((ProcessBuilder..ProcessBuilder?)) -> (Process..Process?)): ProcessLauncher defined in net.rubygrapefruit.platform[SimpleFunctionDescriptorImpl]
+'ProcessLauncher' @ [24:76] ==> @ThreadSafe public fun ProcessLauncher(function: ((ProcessBuilder..ProcessBuilder?)) -> (Process..Process?)): ProcessLauncher defined in net.rubygrapefruit.platform[SamConstructorDescriptorImpl]
 
 'java' @ [24:99] ==> public val <T> KClass<ProcessLauncher>.java: Class<ProcessLauncher> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

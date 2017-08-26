@@ -28,9 +28,9 @@ Inferred types:
 
 'b' @ [35:21] ==> value-parameter b: T defined in kotlin.comparisons.compareValuesByImpl[ValueParameterDescriptorImpl]
 
-'compareValues' @ [36:20] ==> public fun <T : Comparable<*>> compareValues(a: Comparable<Nothing>?, b: Comparable<Nothing>?): Int defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
+'compareValues' @ [36:20] ==> public fun <T : Comparable<*>> compareValues(a: Comparable<*>?, b: Comparable<*>?): Int defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Comparable<*>> -> Comparable<Nothing>
+    <T : Comparable<*>> -> Comparable<*>
 
 'v1' @ [36:34] ==> val v1: Comparable<*>? defined in kotlin.comparisons.compareValuesByImpl[LocalVariableDescriptor]
 
@@ -42,9 +42,9 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [47:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'compareValues' @ [49:12] ==> public fun <T : Comparable<*>> compareValues(a: Comparable<Nothing>?, b: Comparable<Nothing>?): Int defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
+'compareValues' @ [49:12] ==> public fun <T : Comparable<*>> compareValues(a: Comparable<*>?, b: Comparable<*>?): Int defined in kotlin.comparisons[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Comparable<*>> -> Comparable<Nothing>
+    <T : Comparable<*>> -> Comparable<*>
 
 'invoke' @ [49:26] ==> public abstract operator fun invoke(p1: T): Comparable<*>? defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'comparator' @ [59:12] ==> value-parameter comparator: Comparator<in K> defined in kotlin.comparisons.compareValuesBy[ValueParameterDescriptorImpl]
 
-'compare' @ [59:23] ==> public abstract header fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [59:23] ==> public abstract header fun compare(a: K, b: K): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [59:31] ==> public abstract operator fun invoke(p1: T): K defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -92,7 +92,7 @@ Inferred types:
 
 'size' @ [91:23] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
-'Comparator' @ [92:12] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [92:12] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -108,7 +108,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [100:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'Comparator' @ [102:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [102:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [108:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'Comparator' @ [110:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [110:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -143,7 +143,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [115:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'Comparator' @ [117:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [117:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -159,7 +159,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [125:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'Comparator' @ [127:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [127:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -178,7 +178,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [133:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'Comparator' @ [135:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [135:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -210,7 +210,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [144:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'Comparator' @ [146:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [146:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -245,7 +245,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [155:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'Comparator' @ [157:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [157:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -277,7 +277,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [166:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'Comparator' @ [168:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [168:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -312,7 +312,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [177:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'Comparator' @ [179:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [179:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -338,7 +338,7 @@ Inferred types:
 
 'b' @ [181:74] ==> value-parameter b: T defined in kotlin.comparisons.thenComparator.<anonymous>[ValueParameterDescriptorImpl]
 
-'Comparator' @ [189:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [189:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -360,13 +360,13 @@ Inferred types:
 
 'comparator' @ [191:60] ==> value-parameter comparator: Comparator<in T> defined in kotlin.comparisons.then[ValueParameterDescriptorImpl]
 
-'compare' @ [191:71] ==> public abstract header fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [191:71] ==> public abstract header fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'a' @ [191:79] ==> value-parameter a: T defined in kotlin.comparisons.then.<anonymous>[ValueParameterDescriptorImpl]
 
 'b' @ [191:82] ==> value-parameter b: T defined in kotlin.comparisons.then.<anonymous>[ValueParameterDescriptorImpl]
 
-'Comparator' @ [199:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T, T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [199:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T, b: T) -> Int): Comparator<T> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
 
@@ -388,13 +388,13 @@ Inferred types:
 
 'comparator' @ [201:60] ==> value-parameter comparator: Comparator<in T> defined in kotlin.comparisons.thenDescending[ValueParameterDescriptorImpl]
 
-'compare' @ [201:71] ==> public abstract header fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [201:71] ==> public abstract header fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'b' @ [201:79] ==> value-parameter b: T defined in kotlin.comparisons.thenDescending.<anonymous>[ValueParameterDescriptorImpl]
 
 'a' @ [201:82] ==> value-parameter a: T defined in kotlin.comparisons.thenDescending.<anonymous>[ValueParameterDescriptorImpl]
 
-'Comparator' @ [210:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T?, T?) -> Int): Comparator<T?> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [210:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T?, b: T?) -> Int): Comparator<T?> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T?
 
@@ -419,7 +419,7 @@ Inferred types:
 
 'comparator' @ [215:25] ==> value-parameter comparator: Comparator<in T> defined in kotlin.comparisons.nullsFirst[ValueParameterDescriptorImpl]
 
-'compare' @ [215:36] ==> public abstract header fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [215:36] ==> public abstract header fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'a' @ [215:44] ==> value-parameter a: T? defined in kotlin.comparisons.nullsFirst.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -435,7 +435,7 @@ Inferred types:
 Inferred types:
     <T : Comparable<T>> -> T
 
-'Comparator' @ [231:9] ==> public header inline fun <T> Comparator(crossinline comparison: (T?, T?) -> Int): Comparator<T?> defined in kotlin[SimpleFunctionDescriptorImpl]
+'Comparator' @ [231:9] ==> public header inline fun <T> Comparator(crossinline comparison: (a: T?, b: T?) -> Int): Comparator<T?> defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T?
 
@@ -460,7 +460,7 @@ Inferred types:
 
 'comparator' @ [236:25] ==> value-parameter comparator: Comparator<in T> defined in kotlin.comparisons.nullsLast[ValueParameterDescriptorImpl]
 
-'compare' @ [236:36] ==> public abstract header fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [236:36] ==> public abstract header fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'a' @ [236:44] ==> value-parameter a: T? defined in kotlin.comparisons.nullsLast.<anonymous>[ValueParameterDescriptorImpl]
 

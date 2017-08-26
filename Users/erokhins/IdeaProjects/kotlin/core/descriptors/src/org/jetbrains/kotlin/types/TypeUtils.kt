@@ -213,6 +213,8 @@ Inferred types:
     <T> -> KotlinType
     <R> -> TypeProjectionImpl
 
+'TypeProjectionImpl' @ [100:73] ==> public constructor TypeProjectionImpl(@NotNull type: KotlinType) defined in org.jetbrains.kotlin.types.TypeProjectionImpl[JavaClassConstructorDescriptor]
+
 'isDefaultBound' @ [102:59] ==> public open fun isDefaultBound(@NotNull type: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
 'getSupertypeRepresentative' @ [102:74] ==> public fun KotlinType.getSupertypeRepresentative(): KotlinType defined in org.jetbrains.kotlin.types in file TypeCapabilities.kt[SimpleFunctionDescriptorImpl]
@@ -241,13 +243,13 @@ Inferred types:
 
 'HashSet' @ [110:18] ==> public constructor HashSet<E : (Any..Any?)>(p0: (MutableCollection<out (KotlinType..KotlinType?)>..Collection<(KotlinType..KotlinType?)>?)) defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> KotlinType
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'this' @ [110:26] ==> <this> defined in org.jetbrains.kotlin.types.typeUtil.closure[ReceiverParameterDescriptorImpl]
 
-'result' @ [111:27] ==> val result: HashSet<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
+'result' @ [111:27] ==> val result: HashSet<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
-'result' @ [113:12] ==> val result: HashSet<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
+'result' @ [113:12] ==> val result: HashSet<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
 'size' @ [113:19] ==> public open val size: Int defined in java.util.HashSet[JavaPropertyDescriptor]
 
@@ -255,7 +257,7 @@ Inferred types:
 
 'oldSize' @ [114:9] ==> var oldSize: Int defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
-'result' @ [114:19] ==> val result: HashSet<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
+'result' @ [114:19] ==> val result: HashSet<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
 'size' @ [114:26] ==> public open val size: Int defined in java.util.HashSet[JavaPropertyDescriptor]
 
@@ -263,11 +265,11 @@ Inferred types:
 Inferred types:
     <T> -> KotlinType
 
-'elementsToCheck' @ [116:9] ==> var elementsToCheck: HashSet<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
+'elementsToCheck' @ [116:9] ==> var elementsToCheck: HashSet<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
-'forEach' @ [116:25] ==> @HidesMembers public inline fun <T> Iterable<KotlinType>.forEach(action: (KotlinType) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [116:25] ==> @HidesMembers public inline fun <T> Iterable<(KotlinType..KotlinType?)>.forEach(action: ((KotlinType..KotlinType?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinType
+    <T> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'toAdd' @ [116:35] ==> val toAdd: HashSet<KotlinType> /* = HashSet<KotlinType> */ defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
@@ -275,23 +277,23 @@ Inferred types:
 
 'invoke' @ [116:48] ==> public abstract operator fun invoke(p1: KotlinType): Collection<KotlinType> defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'it' @ [116:50] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.types.typeUtil.closure.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [116:50] ==> value-parameter it: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.types.typeUtil.closure.<anonymous>[ValueParameterDescriptorImpl]
 
-'result' @ [117:9] ==> val result: HashSet<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
+'result' @ [117:9] ==> val result: HashSet<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
-'addAll' @ [117:16] ==> public open fun addAll(elements: Collection<KotlinType>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'addAll' @ [117:16] ==> public open fun addAll(elements: Collection<(KotlinType..KotlinType?)>): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'toAdd' @ [117:23] ==> val toAdd: HashSet<KotlinType> /* = HashSet<KotlinType> */ defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
-'elementsToCheck' @ [118:9] ==> var elementsToCheck: HashSet<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
+'elementsToCheck' @ [118:9] ==> var elementsToCheck: HashSet<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
 'toAdd' @ [118:27] ==> val toAdd: HashSet<KotlinType> /* = HashSet<KotlinType> */ defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
-'result' @ [121:12] ==> val result: HashSet<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
+'result' @ [121:12] ==> val result: HashSet<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.types.typeUtil.closure[LocalVariableDescriptor]
 
 'types' @ [125:9] ==> value-parameter types: Collection<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.boundClosure[ValueParameterDescriptorImpl]
 
-'closure' @ [125:15] ==> public fun Collection<KotlinType>.closure(f: (KotlinType) -> Collection<KotlinType>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'closure' @ [125:15] ==> public fun Collection<KotlinType>.closure(f: (KotlinType) -> Collection<KotlinType>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 '?:' @ [125:33] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Collection<KotlinType>?, right: Collection<KotlinType>): Collection<KotlinType>[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -311,7 +313,7 @@ Inferred types:
 Inferred types:
     <T> -> KotlinType
 
-'constituentTypes' @ [129:5] ==> private fun constituentTypes(result: MutableSet<KotlinType>, types: Collection<KotlinType>): Unit defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'constituentTypes' @ [129:5] ==> private fun constituentTypes(result: MutableSet<KotlinType>, types: Collection<KotlinType>): Unit defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [129:22] ==> val result: HashSet<KotlinType> /* = HashSet<KotlinType> */ defined in org.jetbrains.kotlin.types.typeUtil.constituentTypes[LocalVariableDescriptor]
 
@@ -319,7 +321,7 @@ Inferred types:
 
 'result' @ [130:12] ==> val result: HashSet<KotlinType> /* = HashSet<KotlinType> */ defined in org.jetbrains.kotlin.types.typeUtil.constituentTypes[LocalVariableDescriptor]
 
-'constituentTypes' @ [134:9] ==> public fun constituentTypes(types: Collection<KotlinType>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'constituentTypes' @ [134:9] ==> public fun constituentTypes(types: Collection<KotlinType>): Collection<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [134:26] ==> public fun <T> listOf(element: KotlinType): List<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -357,7 +359,7 @@ Inferred types:
 
 'asFlexibleType' @ [140:24] ==> public fun KotlinType.asFlexibleType(): FlexibleType defined in org.jetbrains.kotlin.types in file flexibleTypes.kt[SimpleFunctionDescriptorImpl]
 
-'constituentTypes' @ [140:44] ==> private fun constituentTypes(result: MutableSet<KotlinType>, types: Collection<KotlinType>): Unit defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'constituentTypes' @ [140:44] ==> private fun constituentTypes(result: MutableSet<KotlinType>, types: Collection<KotlinType>): Unit defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [140:61] ==> value-parameter result: MutableSet<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.constituentTypes[ValueParameterDescriptorImpl]
 
@@ -369,7 +371,7 @@ Inferred types:
 
 'upperBound' @ [140:87] ==> public final val upperBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[PropertyDescriptorImpl]
 
-'constituentTypes' @ [143:13] ==> private fun constituentTypes(result: MutableSet<KotlinType>, types: Collection<KotlinType>): Unit defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'constituentTypes' @ [143:13] ==> private fun constituentTypes(result: MutableSet<KotlinType>, types: Collection<KotlinType>): Unit defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [143:30] ==> value-parameter result: MutableSet<KotlinType> defined in org.jetbrains.kotlin.types.typeUtil.constituentTypes[ValueParameterDescriptorImpl]
 
@@ -463,8 +465,6 @@ Inferred types:
 
 'unwrapped' @ [162:18] ==> val unwrapped: UnwrappedType defined in org.jetbrains.kotlin.types.typeUtil.replaceArgumentsWithStarProjections[LocalVariableDescriptor]
 
-'KotlinTypeFactory' @ [163:28] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
-
 'flexibleType' @ [163:46] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
 'unwrapped' @ [164:17] ==> val unwrapped: UnwrappedType defined in org.jetbrains.kotlin.types.typeUtil.replaceArgumentsWithStarProjections[LocalVariableDescriptor]
@@ -508,11 +508,13 @@ Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
     <R> -> StarProjectionImpl
 
-'replace' @ [176:12] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'StarProjectionImpl' @ [174:53] ==> public constructor StarProjectionImpl(typeParameter: TypeParameterDescriptor) defined in org.jetbrains.kotlin.types.StarProjectionImpl[ClassConstructorDescriptorImpl]
+
+'replace' @ [176:12] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types in file TypeSubstitution.kt[SimpleFunctionDescriptorImpl]
 
 'newArguments' @ [176:20] ==> val newArguments: List<StarProjectionImpl> defined in org.jetbrains.kotlin.types.typeUtil.replaceArgumentsWithStarProjections[LocalVariableDescriptor]
 
-'contains' @ [180:9] ==> public fun KotlinType.contains(predicate: (UnwrappedType) -> Boolean): Boolean defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'contains' @ [180:9] ==> public fun KotlinType.contains(predicate: (UnwrappedType) -> Boolean): Boolean defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [181:13] ==> value-parameter it: UnwrappedType defined in org.jetbrains.kotlin.types.typeUtil.containsTypeAliasParameters.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -522,7 +524,7 @@ Inferred types:
 
 'isTypeAliasParameter' @ [181:51] ==> public fun ClassifierDescriptor.isTypeAliasParameter(): Boolean defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
-'contains' @ [185:9] ==> public fun KotlinType.contains(predicate: (UnwrappedType) -> Boolean): Boolean defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'contains' @ [185:9] ==> public fun KotlinType.contains(predicate: (UnwrappedType) -> Boolean): Boolean defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [186:13] ==> value-parameter it: UnwrappedType defined in org.jetbrains.kotlin.types.typeUtil.containsTypeAliases.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -534,7 +536,7 @@ Inferred types:
 
 'containingDeclaration' @ [190:44] ==> public final val TypeParameterDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'contains' @ [193:9] ==> public fun KotlinType.contains(predicate: (UnwrappedType) -> Boolean): Boolean defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'contains' @ [193:9] ==> public fun KotlinType.contains(predicate: (UnwrappedType) -> Boolean): Boolean defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [194:13] ==> value-parameter it: UnwrappedType defined in org.jetbrains.kotlin.types.typeUtil.requiresTypeAliasExpansion.<anonymous>[ValueParameterDescriptorImpl]
 

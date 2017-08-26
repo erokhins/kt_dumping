@@ -1,4 +1,4 @@
-'firstArgumentValue' @ [56:35] ==> public fun AnnotationDescriptor.firstArgumentValue(): Any? defined in org.jetbrains.kotlin.resolve.descriptorUtil[SimpleFunctionDescriptorImpl]
+'firstArgumentValue' @ [56:35] ==> public fun AnnotationDescriptor.firstArgumentValue(): Any? defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[SimpleFunctionDescriptorImpl]
 
 'NullabilityQualifierWithMigrationStatus' @ [58:23] ==> public constructor NullabilityQualifierWithMigrationStatus(qualifier: NullabilityQualifier, isForWarningOnly: Boolean = ...) defined in org.jetbrains.kotlin.load.java.typeEnhancement.NullabilityQualifierWithMigrationStatus[ClassConstructorDescriptorImpl]
 
@@ -183,7 +183,7 @@ Inferred types:
 
 'getUserData' @ [119:39] ==> @Nullable public abstract fun <V : (Any..Any?)> getUserData(key: (FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>..FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>?)): ValueParameterDescriptor? defined in org.jetbrains.kotlin.descriptors.FunctionDescriptor[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> ValueParameterDescriptor
+    <V : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ValueParameterDescriptor..org.jetbrains.kotlin.descriptors.ValueParameterDescriptor?)
 
 'ORIGINAL_VALUE_PARAMETER_FOR_EXTENSION_RECEIVER' @ [119:72] ==> public final val ORIGINAL_VALUE_PARAMETER_FOR_EXTENSION_RECEIVER: (FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>..FunctionDescriptor.UserDataKey<(ValueParameterDescriptor..ValueParameterDescriptor?)>?) defined in org.jetbrains.kotlin.load.java.descriptors.JavaMethodDescriptor[JavaPropertyDescriptor]
 
@@ -218,7 +218,7 @@ Inferred types:
 
 'this' @ [130:118] ==> <this> defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement.enhanceSignature.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'computeJvmDescriptor' @ [130:123] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [130:123] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [131:27] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> PredefinedFunctionEnhancementInfo?): PredefinedFunctionEnhancementInfo? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -393,10 +393,10 @@ Inferred types:
 
 'predefined' @ [184:76] ==> value-parameter predefined: TypeEnhancementInfo? = ... defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement.SignatureParts.enhance[ValueParameterDescriptorImpl]
 
-'let' @ [184:88] ==> @InlineOnly public inline fun <T, R> TypeEnhancementInfo.let(block: (TypeEnhancementInfo) -> ((Int) -> JavaTypeQualifiers)?): ((Int) -> JavaTypeQualifiers)? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [184:88] ==> @InlineOnly public inline fun <T, R> TypeEnhancementInfo.let(block: (TypeEnhancementInfo) -> (Int) -> JavaTypeQualifiers): (Int) -> JavaTypeQualifiers defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TypeEnhancementInfo
-    <R> -> Function1<Int, JavaTypeQualifiers>?
+    <R> -> Function1<Int, JavaTypeQualifiers>
 
 'predefined' @ [187:21] ==> value-parameter predefined: TypeEnhancementInfo? = ... defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement.SignatureParts.enhance[ValueParameterDescriptorImpl]
 
@@ -410,7 +410,7 @@ Inferred types:
 
 'fromOverride' @ [191:20] ==> private final val fromOverride: KotlinType defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement.SignatureParts[PropertyDescriptorImpl]
 
-'enhance' @ [191:33] ==> public fun KotlinType.enhance(qualifiers: (Int) -> JavaTypeQualifiers): KotlinType? defined in org.jetbrains.kotlin.load.java.typeEnhancement[SimpleFunctionDescriptorImpl]
+'enhance' @ [191:33] ==> public fun KotlinType.enhance(qualifiers: (Int) -> JavaTypeQualifiers): KotlinType? defined in org.jetbrains.kotlin.load.java.typeEnhancement in file typeEnhancement.kt[SimpleFunctionDescriptorImpl]
 
 'qualifiersWithPredefined' @ [191:41] ==> val qualifiersWithPredefined: ((Int) -> JavaTypeQualifiers)? defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement.SignatureParts.enhance[LocalVariableDescriptor]
 
@@ -535,7 +535,7 @@ Inferred types:
 
 'typeContainer' @ [220:50] ==> private final val typeContainer: Annotated? defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement.SignatureParts[PropertyDescriptorImpl]
 
-'composeAnnotations' @ [221:25] ==> public fun composeAnnotations(first: Annotations, second: Annotations): Annotations defined in org.jetbrains.kotlin.descriptors.annotations[SimpleFunctionDescriptorImpl]
+'composeAnnotations' @ [221:25] ==> public fun composeAnnotations(first: Annotations, second: Annotations): Annotations defined in org.jetbrains.kotlin.descriptors.annotations in file Annotations.kt[SimpleFunctionDescriptorImpl]
 
 'typeContainer' @ [221:44] ==> private final val typeContainer: Annotated? defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement.SignatureParts[PropertyDescriptorImpl]
 
@@ -654,6 +654,8 @@ Inferred types:
     <R : Any> -> NullabilityQualifierWithMigrationStatus
 
 'this@SignatureEnhancement' @ [256:41] ==> <this> defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement[LazyClassReceiverParameterDescriptor]
+
+'extractNullability' @ [256:68] ==> public final fun extractNullability(annotationDescriptor: AnnotationDescriptor): NullabilityQualifierWithMigrationStatus? defined in org.jetbrains.kotlin.load.java.typeEnhancement.SignatureEnhancement[SimpleFunctionDescriptorImpl]
 
 'ArrayList' @ [260:28] ==> public constructor ArrayList<E : (Any..Any?)>(p0: Int) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:

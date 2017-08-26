@@ -58,3 +58,5 @@ Inferred types:
 
 'this' @ [47:36] ==> <this> defined in kotlin.concurrent.getOrSet[ReceiverParameterDescriptorImpl]
 
+'set' @ [47:42] ==> public open fun set(p0: (T..T?)): Unit defined in java.lang.ThreadLocal[JavaMethodDescriptor]
+

@@ -114,7 +114,7 @@ Inferred types:
 
 'get' @ [75:13] ==> public open fun <E : CoroutineContext.Element> get(key: CoroutineContext.Key<out CoroutineContext.Element>): CoroutineContext.Element? defined in kotlin.coroutines.experimental.CombinedContext[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <E : CoroutineContext.Element> -> Element
+    <E : CoroutineContext.Element> -> Captured(*)
 
 'element' @ [75:17] ==> value-parameter element: CoroutineContext.Element defined in kotlin.coroutines.experimental.CombinedContext.contains[ValueParameterDescriptorImpl]
 

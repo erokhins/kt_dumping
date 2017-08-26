@@ -211,15 +211,13 @@ Inferred types:
 
 'unwrapped' @ [123:17] ==> val unwrapped: UnwrappedType defined in org.jetbrains.kotlin.types.replace[LocalVariableDescriptor]
 
-'KotlinTypeFactory' @ [124:28] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
-
 'flexibleType' @ [124:46] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
 'unwrapped' @ [124:59] ==> val unwrapped: UnwrappedType defined in org.jetbrains.kotlin.types.replace[LocalVariableDescriptor]
 
 'lowerBound' @ [124:69] ==> public final val lowerBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[PropertyDescriptorImpl]
 
-'replace' @ [124:80] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'replace' @ [124:80] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types in file TypeSubstitution.kt[SimpleFunctionDescriptorImpl]
 
 'newArguments' @ [124:88] ==> value-parameter newArguments: List<TypeProjection> = ... defined in org.jetbrains.kotlin.types.replace[ValueParameterDescriptorImpl]
 
@@ -229,7 +227,7 @@ Inferred types:
 
 'upperBound' @ [125:69] ==> public final val upperBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[PropertyDescriptorImpl]
 
-'replace' @ [125:80] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'replace' @ [125:80] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types in file TypeSubstitution.kt[SimpleFunctionDescriptorImpl]
 
 'newArguments' @ [125:88] ==> value-parameter newArguments: List<TypeProjection> = ... defined in org.jetbrains.kotlin.types.replace[ValueParameterDescriptorImpl]
 
@@ -237,7 +235,7 @@ Inferred types:
 
 'unwrapped' @ [126:26] ==> val unwrapped: UnwrappedType defined in org.jetbrains.kotlin.types.replace[LocalVariableDescriptor]
 
-'replace' @ [126:36] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'replace' @ [126:36] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types in file TypeSubstitution.kt[SimpleFunctionDescriptorImpl]
 
 'newArguments' @ [126:44] ==> value-parameter newArguments: List<TypeProjection> = ... defined in org.jetbrains.kotlin.types.replace[ValueParameterDescriptorImpl]
 

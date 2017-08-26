@@ -1,8 +1,8 @@
-'getValue' @ [34:46] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (RuntimeModuleData..RuntimeModuleData?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [34:46] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [34:64] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (RuntimeModuleData..RuntimeModuleData?)): ReflectProperties.LazySoftVal<(RuntimeModuleData..RuntimeModuleData?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> RuntimeModuleData
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.load.kotlin.reflect.RuntimeModuleData..org.jetbrains.kotlin.load.kotlin.reflect.RuntimeModuleData?)
 
 'jClass' @ [35:13] ==> public abstract val jClass: Class<*> defined in kotlin.reflect.jvm.internal.KDeclarationContainerImpl[DeserializedPropertyDescriptor]
 
@@ -64,8 +64,8 @@ Inferred types:
 
 'accept' @ [66:28] ==> public abstract fun <R : (Any..Any?), D : (Any..Any?)> accept(visitor: (DeclarationDescriptorVisitor<(KCallableImpl<*>..KCallableImpl<*>?), (Unit..Unit?)>..DeclarationDescriptorVisitor<(KCallableImpl<*>..KCallableImpl<*>?), (Unit..Unit?)>?), data: (Unit..Unit?)): (KCallableImpl<*>..KCallableImpl<*>?) defined in org.jetbrains.kotlin.descriptors.DeclarationDescriptor[JavaMethodDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> KCallableImpl<*>
-    <D : (Any..Any?)> -> Unit
+    <R : (Any..Any?)> -> (kotlin.reflect.jvm.internal.KCallableImpl<*>..kotlin.reflect.jvm.internal.KCallableImpl<*>?)
+    <D : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'visitor' @ [66:35] ==> val visitor: <no name provided> defined in kotlin.reflect.jvm.internal.KDeclarationContainerImpl.getMembers[LocalVariableDescriptor]
 
@@ -439,9 +439,9 @@ Inferred types:
 
 'klass' @ [174:21] ==> var klass: Class<*>? defined in kotlin.reflect.jvm.internal.KDeclarationContainerImpl.lookupMethod[LocalVariableDescriptor]
 
-'superclass' @ [174:27] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [174:27] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'if (declared) getDeclaredMethod(name, *parameterTypes) else getMethod(name, *parameterTypes)' @ [182:30] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Method..Method?), elseBranch: (Method..Method?)): (Method..Method?)[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -493,11 +493,11 @@ Inferred types:
 
 'declaredMethods' @ [190:52] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredMethods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'methods' @ [190:73] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'allMethods' @ [191:21] ==> val allMethods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?) defined in kotlin.reflect.jvm.internal.KDeclarationContainerImpl.tryGetMethod[LocalVariableDescriptor]
 
@@ -668,9 +668,9 @@ Inferred types:
 
 'add' @ [246:16] ==> public abstract fun add(element: Class<*>): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'if (isConstructor) DEFAULT_CONSTRUCTOR_MARKER else Any::class.java' @ [246:20] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out Any>, elseBranch: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
+'if (isConstructor) DEFAULT_CONSTRUCTOR_MARKER else Any::class.java' @ [246:20] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?), elseBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out Any>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.Class<out (kotlin.Any..kotlin.Any?)>..java.lang.Class<out (kotlin.Any..kotlin.Any?)>?)
 
 'isConstructor' @ [246:24] ==> value-parameter isConstructor: Boolean defined in kotlin.reflect.jvm.internal.KDeclarationContainerImpl.addParametersAndMasks[ValueParameterDescriptorImpl]
 

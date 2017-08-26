@@ -6,9 +6,9 @@
 
 'Suppress' @ [17:11] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'getOrImplicitDefault' @ [17:40] ==> @JvmName @PublishedApi internal fun <K, V> Map<in String, V>.getOrImplicitDefault(key: Any?): V defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrImplicitDefault' @ [17:40] ==> @JvmName @PublishedApi internal fun <K, V> Map<in String, V>.getOrImplicitDefault(key: String): V defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in String)
     <V> -> [@kotlin.internal.Exact] V
 
 'property' @ [17:61] ==> value-parameter property: KProperty<*> defined in kotlin.collections.getValue[ValueParameterDescriptorImpl]
@@ -21,9 +21,9 @@ Inferred types:
 
 'Suppress' @ [30:11] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'getOrImplicitDefault' @ [30:40] ==> @JvmName @PublishedApi internal fun <K, V> Map<in String, Any?>.getOrImplicitDefault(key: Any?): Any? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrImplicitDefault' @ [30:40] ==> @JvmName @PublishedApi internal fun <K, V> Map<in String, Any?>.getOrImplicitDefault(key: String): Any? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in String)
     <V> -> Any?
 
 'property' @ [30:61] ==> value-parameter property: KProperty<*> defined in kotlin.collections.getValue[ValueParameterDescriptorImpl]
@@ -34,7 +34,7 @@ Inferred types:
 
 'this' @ [40:5] ==> <this> defined in kotlin.collections.setValue[ReceiverParameterDescriptorImpl]
 
-'put' @ [40:10] ==> public abstract fun put(key: Any?, value: Any?): Any? defined in kotlin.collections.MutableMap[SimpleFunctionDescriptorImpl]
+'put' @ [40:10] ==> public abstract fun put(key: String, value: V): Any? defined in kotlin.collections.MutableMap[SimpleFunctionDescriptorImpl]
 
 'property' @ [40:14] ==> value-parameter property: KProperty<*> defined in kotlin.collections.setValue[ValueParameterDescriptorImpl]
 

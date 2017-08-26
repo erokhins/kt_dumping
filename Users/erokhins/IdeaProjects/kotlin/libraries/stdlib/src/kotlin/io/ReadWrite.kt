@@ -54,7 +54,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'forEachLine' @ [37:5] ==> public fun Reader.forEachLine(action: (String) -> Unit): Unit defined in kotlin.io[SimpleFunctionDescriptorImpl]
+'forEachLine' @ [37:5] ==> public fun Reader.forEachLine(action: (String) -> Unit): Unit defined in kotlin.io in file ReadWrite.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [37:19] ==> val result: ArrayList<String> /* = ArrayList<String> */ defined in kotlin.io.readLines[LocalVariableDescriptor]
 
@@ -75,7 +75,7 @@ Inferred types:
 
 'it' @ [47:32] ==> value-parameter it: BufferedReader defined in kotlin.io.useLines.<anonymous>[ValueParameterDescriptorImpl]
 
-'lineSequence' @ [47:35] ==> public fun BufferedReader.lineSequence(): Sequence<String> defined in kotlin.io[SimpleFunctionDescriptorImpl]
+'lineSequence' @ [47:35] ==> public fun BufferedReader.lineSequence(): Sequence<String> defined in kotlin.io in file ReadWrite.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [50:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 

@@ -8,8 +8,6 @@
 
 'getDelegate' @ [33:42] ==> @SinceKotlin public abstract fun getDelegate(receiver: Any?): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
-'KPropertyImpl' @ [33:54] ==> public companion object defined in kotlin.reflect.jvm.internal.KPropertyImpl[FakeCallableDescriptorForObject]
-
 'EXTENSION_PROPERTY_DELEGATE' @ [33:68] ==> public final val EXTENSION_PROPERTY_DELEGATE: Any defined in kotlin.reflect.jvm.internal.KPropertyImpl.Companion[PropertyDescriptorImpl]
 
 'SinceKotlin' @ [44:1] ==> public constructor SinceKotlin(version: String) defined in kotlin.SinceKotlin[DeserializedClassConstructorDescriptor]
@@ -21,8 +19,6 @@
 'getDelegate' @ [47:45] ==> @SinceKotlin public abstract fun getDelegate(receiver1: D, receiver2: Any?): Any? defined in kotlin.reflect.KProperty2[DeserializedSimpleFunctionDescriptor]
 
 'receiver' @ [47:57] ==> value-parameter receiver: D defined in kotlin.reflect.full.getExtensionDelegate[ValueParameterDescriptorImpl]
-
-'KPropertyImpl' @ [47:67] ==> public companion object defined in kotlin.reflect.jvm.internal.KPropertyImpl[FakeCallableDescriptorForObject]
 
 'EXTENSION_PROPERTY_DELEGATE' @ [47:81] ==> public final val EXTENSION_PROPERTY_DELEGATE: Any defined in kotlin.reflect.jvm.internal.KPropertyImpl.Companion[PropertyDescriptorImpl]
 

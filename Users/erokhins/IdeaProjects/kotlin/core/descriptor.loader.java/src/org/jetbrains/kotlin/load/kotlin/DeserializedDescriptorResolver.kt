@@ -148,8 +148,6 @@ Inferred types:
 
 'metadataVersion' @ [75:61] ==> public final val metadataVersion: JvmMetadataVersion defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader[PropertyDescriptorImpl]
 
-'JvmMetadataVersion' @ [75:78] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion[FakeCallableDescriptorForObject]
-
 'INSTANCE' @ [75:97] ==> @JvmField public final val INSTANCE: JvmMetadataVersion defined in org.jetbrains.kotlin.load.kotlin.JvmMetadataVersion.Companion[PropertyDescriptorImpl]
 
 'location' @ [75:107] ==> public abstract val location: String defined in org.jetbrains.kotlin.load.kotlin.KotlinJvmBinaryClass[PropertyDescriptorImpl]

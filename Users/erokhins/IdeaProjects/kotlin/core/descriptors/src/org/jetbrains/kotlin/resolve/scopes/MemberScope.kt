@@ -449,11 +449,11 @@ Inferred types:
 
 'java' @ [183:43] ==> public val <T> KClass<out DescriptorKindExclude>.java: Class<out DescriptorKindExclude> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DescriptorKindExclude
+    <T> -> Captured(out DescriptorKindExclude)
 
 'simpleName' @ [183:48] ==> public final val <T : (Any..Any?)> Class<out DescriptorKindExclude>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DescriptorKindExclude
+    <T : (Any..Any?)> -> Captured(out DescriptorKindExclude)
 
 'DescriptorKindExclude' @ [185:25] ==> public constructor DescriptorKindExclude() defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindExclude[ClassConstructorDescriptorImpl]
 
@@ -478,8 +478,6 @@ Inferred types:
 'DescriptorKindFilter' @ [197:60] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'FUNCTIONS_MASK' @ [197:81] ==> public final val FUNCTIONS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
-
-'DescriptorKindFilter' @ [197:99] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'VARIABLES_MASK' @ [197:120] ==> public final val VARIABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 

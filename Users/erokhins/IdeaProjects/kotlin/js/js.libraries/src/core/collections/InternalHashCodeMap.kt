@@ -90,9 +90,9 @@ Inferred types:
                     backingMap[hashCode] = arrayOf(entry, SimpleEntry(key, value))
                     size++
                     return null
-                }' @ [55:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: dynamic, elseBranch: dynamic): dynamic[SimpleFunctionDescriptorImpl]
+                }' @ [55:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Nothing, elseBranch: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> dynamic
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Nothing
 
 'equality' @ [55:21] ==> public open val equality: EqualityComparator defined in kotlin.collections.InternalHashCodeMap[PropertyDescriptorImpl]
 
@@ -218,9 +218,9 @@ Inferred types:
             }
             else {
                 return null
-            }' @ [84:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Unit, elseBranch: Unit): Unit[SimpleFunctionDescriptorImpl]
+            }' @ [84:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Nothing, elseBranch: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Unit
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Nothing
 
 'equality' @ [84:17] ==> public open val equality: EqualityComparator defined in kotlin.collections.InternalHashCodeMap[PropertyDescriptorImpl]
 

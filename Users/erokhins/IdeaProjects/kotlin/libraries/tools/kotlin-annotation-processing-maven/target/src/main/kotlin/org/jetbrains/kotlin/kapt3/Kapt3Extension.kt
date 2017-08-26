@@ -79,7 +79,7 @@ Inferred types:
 
 'load' @ [92:40] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(Processor..Processor?)>..Class<(Processor..Processor?)>?), p1: (ClassLoader..ClassLoader?)): (ServiceLoader<(Processor..Processor?)>..ServiceLoader<(Processor..Processor?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> Processor
+    <S : (Any..Any?)> -> (javax.annotation.processing.Processor..javax.annotation.processing.Processor?)
 
 'java' @ [92:62] ==> public val <T> KClass<Processor>.java: Class<Processor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -121,13 +121,13 @@ Inferred types:
 
 'it' @ [97:81] ==> value-parameter it: (Processor..Processor?) defined in org.jetbrains.kotlin.kapt3.ClasspathBasedKapt3Extension.loadProcessors.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'java' @ [97:91] ==> public val <T> KClass<out Processor>.java: Class<out Processor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [97:91] ==> public val <T> KClass<out (Processor..Processor?)>.java: Class<out (Processor..Processor?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Processor
+    <T> -> Captured(out (javax.annotation.processing.Processor..javax.annotation.processing.Processor?))
 
-'canonicalName' @ [97:96] ==> public final val <T : (Any..Any?)> Class<out Processor>.canonicalName: (String..String?)[MyPropertyDescriptor]
+'canonicalName' @ [97:96] ==> public final val <T : (Any..Any?)> Class<out (Processor..Processor?)>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Processor
+    <T : (Any..Any?)> -> Captured(out (javax.annotation.processing.Processor..javax.annotation.processing.Processor?))
 
 'processors' @ [100:16] ==> val processors: List<(Processor..Processor?)> defined in org.jetbrains.kotlin.kapt3.ClasspathBasedKapt3Extension.loadProcessors[LocalVariableDescriptor]
 
@@ -275,8 +275,6 @@ Inferred types:
 
 'doNotGenerateCode' @ [177:13] ==> local final fun doNotGenerateCode(): AnalysisResult defined in org.jetbrains.kotlin.kapt3.AbstractKapt3Extension.analysisCompleted[SimpleFunctionDescriptorImpl]
 
-'AnalysisResult' @ [179:13] ==> public companion object defined in org.jetbrains.kotlin.analyzer.AnalysisResult[FakeCallableDescriptorForObject]
-
 'RetryWithAdditionalJavaRoots' @ [179:28] ==> public constructor RetryWithAdditionalJavaRoots(bindingContext: BindingContext, moduleDescriptor: ModuleDescriptor, additionalJavaRoots: List<File>, addToEnvironment: Boolean = ...) defined in org.jetbrains.kotlin.analyzer.AnalysisResult.RetryWithAdditionalJavaRoots[DeserializedClassConstructorDescriptor]
 
 'bindingTrace' @ [180:21] ==> value-parameter bindingTrace: BindingTrace defined in org.jetbrains.kotlin.kapt3.AbstractKapt3Extension.analysisCompleted[ValueParameterDescriptorImpl]
@@ -381,7 +379,7 @@ Inferred types:
 
 'kaptContext' @ [205:13] ==> value-parameter kaptContext: KaptContext<*> defined in org.jetbrains.kotlin.kapt3.AbstractKapt3Extension.runAnnotationProcessing[ValueParameterDescriptorImpl]
 
-'doAnnotationProcessing' @ [205:25] ==> public fun KaptContext<*>.doAnnotationProcessing(javaSourceFiles: List<File>, processors: List<Processor>, compileClasspath: List<File>, annotationProcessingClasspath: List<File>, annotationProcessors: String, sourcesOutputDir: File, classesOutputDir: File, additionalSources: List<JCTree.JCCompilationUnit> = ..., withJdk: Boolean = ...): Unit defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
+'doAnnotationProcessing' @ [205:25] ==> public fun KaptContext<*>.doAnnotationProcessing(javaSourceFiles: List<File>, processors: List<Processor>, compileClasspath: List<File>, annotationProcessingClasspath: List<File>, annotationProcessors: String, sourcesOutputDir: File, classesOutputDir: File, additionalSources: List<JCTree.JCCompilationUnit> = ..., withJdk: Boolean = ...): Unit defined in org.jetbrains.kotlin.kapt3 in file annotationProcessing.kt[SimpleFunctionDescriptorImpl]
 
 'javaSourceFiles' @ [206:21] ==> val javaSourceFiles: List<File> defined in org.jetbrains.kotlin.kapt3.AbstractKapt3Extension.runAnnotationProcessing[LocalVariableDescriptor]
 
@@ -408,8 +406,6 @@ Inferred types:
 'TargetId' @ [221:24] ==> public constructor TargetId(name: String, type: String) defined in org.jetbrains.kotlin.modules.TargetId[DeserializedClassConstructorDescriptor]
 
 'compilerConfiguration' @ [222:24] ==> public final val compilerConfiguration: CompilerConfiguration defined in org.jetbrains.kotlin.kapt3.AbstractKapt3Extension[PropertyDescriptorImpl]
-
-'CommonConfigurationKeys' @ [222:46] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
 
 'MODULE_NAME' @ [222:70] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -667,8 +663,6 @@ Inferred types:
 'configuration' @ [287:61] ==> public final val configuration: CompilerConfiguration defined in org.jetbrains.kotlin.codegen.state.GenerationState[DeserializedPropertyDescriptor]
 
 'getBoolean' @ [287:75] ==> public open fun getBoolean(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>): Boolean defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
-
-'CommonConfigurationKeys' @ [287:86] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
 
 'REPORT_OUTPUT_FILES' @ [287:110] ==> @field:JvmField public final val REPORT_OUTPUT_FILES: CompilerConfigurationKey<Boolean> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 

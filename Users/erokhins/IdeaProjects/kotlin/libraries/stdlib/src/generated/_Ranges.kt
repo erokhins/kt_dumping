@@ -764,8 +764,6 @@ Inferred types:
 
 'toInt' @ [453:39] ==> public open fun toInt(): Int defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
 
-'Byte' @ [453:48] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [453:53] ==> public const final val MAX_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
 'toInt' @ [453:63] ==> public open fun toInt(): Int defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
@@ -785,8 +783,6 @@ Inferred types:
 'MIN_VALUE' @ [457:29] ==> public const final val MIN_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
 'toLong' @ [457:39] ==> public open fun toLong(): Long defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
-
-'Byte' @ [457:49] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [457:54] ==> public const final val MAX_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
@@ -808,8 +804,6 @@ Inferred types:
 
 'toShort' @ [461:39] ==> public open fun toShort(): Short defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
 
-'Byte' @ [461:50] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [461:55] ==> public const final val MAX_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
 'toShort' @ [461:65] ==> public open fun toShort(): Short defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
@@ -829,8 +823,6 @@ Inferred types:
 'MIN_VALUE' @ [465:29] ==> public const final val MIN_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
 'toDouble' @ [465:39] ==> public open fun toDouble(): Double defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
-
-'Byte' @ [465:51] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [465:56] ==> public const final val MAX_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
@@ -852,8 +844,6 @@ Inferred types:
 
 'toFloat' @ [469:39] ==> public open fun toFloat(): Float defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
 
-'Byte' @ [469:50] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [469:55] ==> public const final val MAX_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
 'toFloat' @ [469:65] ==> public open fun toFloat(): Float defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
@@ -873,8 +863,6 @@ Inferred types:
 'MIN_VALUE' @ [473:28] ==> public const final val MIN_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'toLong' @ [473:38] ==> public open fun toLong(): Long defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
-
-'Int' @ [473:48] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [473:52] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
@@ -896,8 +884,6 @@ Inferred types:
 
 'toDouble' @ [477:38] ==> public open fun toDouble(): Double defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'Int' @ [477:50] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [477:54] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'toDouble' @ [477:64] ==> public open fun toDouble(): Double defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
@@ -917,8 +903,6 @@ Inferred types:
 'MIN_VALUE' @ [481:28] ==> public const final val MIN_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'toFloat' @ [481:38] ==> public open fun toFloat(): Float defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
-
-'Int' @ [481:49] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [481:53] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
@@ -940,8 +924,6 @@ Inferred types:
 
 'toDouble' @ [485:39] ==> public open fun toDouble(): Double defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
-'Long' @ [485:51] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [485:56] ==> public const final val MAX_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 
 'toDouble' @ [485:66] ==> public open fun toDouble(): Double defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
@@ -961,8 +943,6 @@ Inferred types:
 'MIN_VALUE' @ [489:29] ==> public const final val MIN_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 
 'toFloat' @ [489:39] ==> public open fun toFloat(): Float defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
-
-'Long' @ [489:50] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [489:55] ==> public const final val MAX_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 
@@ -984,8 +964,6 @@ Inferred types:
 
 'toInt' @ [493:40] ==> public open fun toInt(): Int defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
 
-'Short' @ [493:49] ==> public companion object defined in kotlin.Short[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [493:55] ==> public const final val MAX_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
 'toInt' @ [493:65] ==> public open fun toInt(): Int defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
@@ -1005,8 +983,6 @@ Inferred types:
 'MIN_VALUE' @ [497:30] ==> public const final val MIN_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
 'toLong' @ [497:40] ==> public open fun toLong(): Long defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
-
-'Short' @ [497:50] ==> public companion object defined in kotlin.Short[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [497:56] ==> public const final val MAX_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
@@ -1028,8 +1004,6 @@ Inferred types:
 
 'toDouble' @ [501:40] ==> public open fun toDouble(): Double defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
 
-'Short' @ [501:52] ==> public companion object defined in kotlin.Short[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [501:58] ==> public const final val MAX_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
 'toDouble' @ [501:68] ==> public open fun toDouble(): Double defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
@@ -1049,8 +1023,6 @@ Inferred types:
 'MIN_VALUE' @ [505:30] ==> public const final val MIN_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
 'toFloat' @ [505:40] ==> public open fun toFloat(): Float defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
-
-'Short' @ [505:51] ==> public companion object defined in kotlin.Short[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [505:57] ==> public const final val MAX_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
@@ -1110,8 +1082,6 @@ Inferred types:
 
 'to' @ [552:9] ==> value-parameter to: Int defined in kotlin.ranges.until[ValueParameterDescriptorImpl]
 
-'Int' @ [552:15] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MIN_VALUE' @ [552:19] ==> public const final val MIN_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'IntRange' @ [552:37] ==> public companion object defined in kotlin.ranges.IntRange[FakeCallableDescriptorForObject]
@@ -1134,8 +1104,6 @@ Inferred types:
 
 'to' @ [569:9] ==> value-parameter to: Int defined in kotlin.ranges.until[ValueParameterDescriptorImpl]
 
-'Int' @ [569:15] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MIN_VALUE' @ [569:19] ==> public const final val MIN_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'IntRange' @ [569:37] ==> public companion object defined in kotlin.ranges.IntRange[FakeCallableDescriptorForObject]
@@ -1151,8 +1119,6 @@ Inferred types:
 'toInt' @ [570:37] ==> public open fun toInt(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
 'to' @ [579:9] ==> value-parameter to: Int defined in kotlin.ranges.until[ValueParameterDescriptorImpl]
-
-'Int' @ [579:15] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MIN_VALUE' @ [579:19] ==> public const final val MIN_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
@@ -1170,8 +1136,6 @@ Inferred types:
 
 'to' @ [589:9] ==> value-parameter to: Long defined in kotlin.ranges.until[ValueParameterDescriptorImpl]
 
-'Long' @ [589:15] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
-
 'MIN_VALUE' @ [589:20] ==> public const final val MIN_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 
 'LongRange' @ [589:38] ==> public companion object defined in kotlin.ranges.LongRange[FakeCallableDescriptorForObject]
@@ -1188,8 +1152,6 @@ Inferred types:
 
 'to' @ [599:9] ==> value-parameter to: Long defined in kotlin.ranges.until[ValueParameterDescriptorImpl]
 
-'Long' @ [599:15] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
-
 'MIN_VALUE' @ [599:20] ==> public const final val MIN_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 
 'LongRange' @ [599:38] ==> public companion object defined in kotlin.ranges.LongRange[FakeCallableDescriptorForObject]
@@ -1203,8 +1165,6 @@ Inferred types:
 'toLong' @ [600:29] ==> public open fun toLong(): Long defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
 'to' @ [609:9] ==> value-parameter to: Long defined in kotlin.ranges.until[ValueParameterDescriptorImpl]
-
-'Long' @ [609:15] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
 'MIN_VALUE' @ [609:20] ==> public const final val MIN_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 
@@ -1221,8 +1181,6 @@ Inferred types:
 'toLong' @ [610:38] ==> public open fun toLong(): Long defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
 'to' @ [619:9] ==> value-parameter to: Long defined in kotlin.ranges.until[ValueParameterDescriptorImpl]
-
-'Long' @ [619:15] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
 'MIN_VALUE' @ [619:20] ==> public const final val MIN_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 

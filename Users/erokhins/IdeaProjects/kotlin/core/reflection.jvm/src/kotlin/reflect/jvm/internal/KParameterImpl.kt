@@ -1,20 +1,20 @@
-'getValue' @ [31:52] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (ParameterDescriptor..ParameterDescriptor?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [31:52] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [31:70] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (ParameterDescriptor..ParameterDescriptor?)): ReflectProperties.LazySoftVal<(ParameterDescriptor..ParameterDescriptor?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ParameterDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.ParameterDescriptor..org.jetbrains.kotlin.descriptors.ParameterDescriptor?)
 
 'computeDescriptor' @ [31:79] ==> value-parameter computeDescriptor: () -> ParameterDescriptor defined in kotlin.reflect.jvm.internal.KParameterImpl.<init>[ValueParameterDescriptorImpl]
 
-'getValue' @ [33:51] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (List<Annotation>..List<Annotation>?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [33:51] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [33:69] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (List<Annotation>..List<Annotation>?)): ReflectProperties.LazySoftVal<(List<Annotation>..List<Annotation>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<Annotation>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.Annotation>..kotlin.collections.List<kotlin.Annotation>?)
 
 'descriptor' @ [33:80] ==> private final val descriptor: ParameterDescriptor defined in kotlin.reflect.jvm.internal.KParameterImpl[PropertyDescriptorImpl]
 
-'computeAnnotations' @ [33:91] ==> internal fun Annotated.computeAnnotations(): List<Annotation> defined in kotlin.reflect.jvm.internal[SimpleFunctionDescriptorImpl]
+'computeAnnotations' @ [33:91] ==> internal fun Annotated.computeAnnotations(): List<Annotation> defined in kotlin.reflect.jvm.internal in file util.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [36:30] ==> private final val descriptor: ParameterDescriptor defined in kotlin.reflect.jvm.internal.KParameterImpl[PropertyDescriptorImpl]
 

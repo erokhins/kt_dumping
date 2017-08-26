@@ -39,8 +39,6 @@ Inferred types:
 Inferred types:
     <T> -> MultiTargetPlatform
 
-'MultiTargetPlatform' @ [44:30] ==> public companion object defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform[FakeCallableDescriptorForObject]
-
 'CAPABILITY' @ [44:50] ==> @JvmField public final val CAPABILITY: ModuleDescriptor.Capability<MultiTargetPlatform> defined in org.jetbrains.kotlin.resolve.MultiTargetPlatform.Companion[PropertyDescriptorImpl]
 
 'module' @ [47:10] ==> public val DeclarationDescriptor.module: ModuleDescriptor defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[PropertyDescriptorImpl]

@@ -4,9 +4,9 @@
 
 'TemporaryFolder' @ [38:22] ==> public constructor TemporaryFolder() defined in org.junit.rules.TemporaryFolder[JavaClassConstructorDescriptor]
 
-'lazy' @ [40:50] ==> public fun <T> lazy(initializer: () -> List<File>): Lazy<List<File>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [40:50] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<File>
+    <T> -> T
 
 'listOf' @ [41:9] ==> public fun <T> listOf(element: File): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -14,9 +14,9 @@ Inferred types:
 
 'fileFromProp' @ [41:16] ==> private final fun fileFromProp(propName: String, defaultPath: String): File defined in org.jetbrains.kotlin.compiler.client.CompilerClientIT[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [44:53] ==> public fun <T> lazy(initializer: () -> List<File>): Lazy<List<File>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [44:53] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<File>
+    <T> -> T
 
 'listOf' @ [45:9] ==> public fun <T> listOf(vararg elements: File): List<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -26,9 +26,9 @@ Inferred types:
 
 'fileFromProp' @ [46:16] ==> private final fun fileFromProp(propName: String, defaultPath: String): File defined in org.jetbrains.kotlin.compiler.client.CompilerClientIT[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [49:36] ==> public fun <T> lazy(initializer: () -> File): Lazy<File> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [49:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> File
+    <T> -> T
 
 'createTempFile' @ [50:9] ==> public fun createTempFile(prefix: String = ..., suffix: String? = ..., directory: File? = ...): File defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
@@ -40,9 +40,9 @@ Inferred types:
 
 'File' @ [56:13] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
-'?:' @ [56:19] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
+'?:' @ [56:19] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: (String..String?)): (String..String?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> (kotlin.String..kotlin.String?)
 
 'getProperty' @ [56:26] ==> public open fun getProperty(p0: (String..String?)): (String..String?) defined in java.lang.System[JavaMethodDescriptor]
 
@@ -64,9 +64,9 @@ Inferred types:
 
 'this' @ [58:77] ==> <this> defined in org.jetbrains.kotlin.compiler.client.CompilerClientIT.fileFromProp.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'lazy' @ [61:52] ==> public fun <T> lazy(initializer: () -> CompileService): Lazy<CompileService> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [61:52] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompileService
+    <T> -> T
 
 'CompilerId' @ [62:26] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompilerId[FakeCallableDescriptorForObject]
 
@@ -90,7 +90,9 @@ Inferred types:
 Inferred types:
     <T> -> DaemonReportMessage
 
-'KotlinCompilerClient' @ [67:9] ==> public object KotlinCompilerClient defined in org.jetbrains.kotlin.daemon.client[FakeCallableDescriptorForObject]
+'?:' @ [67:9] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompileService?, right: CompileService): CompileService[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompileService
 
 'connectToCompileService' @ [67:30] ==> public final fun connectToCompileService(compilerId: CompilerId, clientAliveFlagFile: File, daemonJVMOptions: DaemonJVMOptions, daemonOptions: DaemonOptions, reportingTargets: DaemonReportingTargets, autostart: Boolean = ...): CompileService? defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient[DeserializedSimpleFunctionDescriptor]
 
@@ -168,7 +170,7 @@ Inferred types:
 
 'clear' @ [85:28] ==> public open fun clear(): Unit defined in org.jetbrains.kotlin.compiler.client.TestMessageCollector[SimpleFunctionDescriptorImpl]
 
-'captureOutAndErr' @ [86:19] ==> internal fun captureOutAndErr(body: () -> Unit): String defined in org.jetbrains.kotlin.compiler.client[SimpleFunctionDescriptorImpl]
+'captureOutAndErr' @ [86:19] ==> internal fun captureOutAndErr(body: () -> Unit): String defined in org.jetbrains.kotlin.compiler.client in file CompilerClientIT.kt[SimpleFunctionDescriptorImpl]
 
 'code' @ [87:13] ==> var code: Int defined in org.jetbrains.kotlin.compiler.client.CompilerClientIT.runCompiler[LocalVariableDescriptor]
 
@@ -178,19 +180,13 @@ Inferred types:
 
 'compilerService' @ [87:49] ==> private final val compilerService: CompileService defined in org.jetbrains.kotlin.compiler.client.CompilerClientIT[PropertyDescriptorImpl]
 
-'CompileService' @ [87:66] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
-
 'NO_SESSION' @ [87:81] ==> public final val NO_SESSION: Int defined in org.jetbrains.kotlin.daemon.common.CompileService.Companion[DeserializedPropertyDescriptor]
-
-'CompileService' @ [87:93] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [87:123] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
 'args' @ [87:128] ==> value-parameter vararg args: String defined in org.jetbrains.kotlin.compiler.client.CompilerClientIT.runCompiler[ValueParameterDescriptorImpl]
 
 'myMessageCollector' @ [87:134] ==> private final val myMessageCollector: TestMessageCollector defined in org.jetbrains.kotlin.compiler.client.CompilerClientIT[PropertyDescriptorImpl]
-
-'ReportSeverity' @ [88:38] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 
 'DEBUG' @ [88:53] ==> enum entry DEBUG defined in org.jetbrains.kotlin.daemon.common.ReportSeverity[FakeCallableDescriptorForObject]
 

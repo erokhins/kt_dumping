@@ -4,11 +4,11 @@
 
 'KDeclarationContainerImpl.Data' @ [40:32] ==> public constructor Data() defined in kotlin.reflect.jvm.internal.KDeclarationContainerImpl.Data[ClassConstructorDescriptorImpl]
 
-'getValue' @ [41:57] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (ReflectKotlinClass..ReflectKotlinClass?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [41:57] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
-'lazySoft' @ [41:75] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (ReflectKotlinClass..ReflectKotlinClass?)): ReflectProperties.LazySoftVal<(ReflectKotlinClass..ReflectKotlinClass?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
+'lazySoft' @ [41:75] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> ReflectKotlinClass?): ReflectProperties.LazySoftVal<ReflectKotlinClass?> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReflectKotlinClass
+    <T : (Any..Any?)> -> ReflectKotlinClass?
 
 'ReflectKotlinClass' @ [43:13] ==> public companion object Factory defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClass[FakeCallableDescriptorForObject]
 
@@ -16,11 +16,11 @@ Inferred types:
 
 'jClass' @ [43:39] ==> public open val jClass: Class<*> defined in kotlin.reflect.jvm.internal.KPackageImpl[PropertyDescriptorImpl]
 
-'getValue' @ [46:50] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (PackageViewDescriptor..PackageViewDescriptor?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [46:50] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [46:68] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (PackageViewDescriptor..PackageViewDescriptor?)): ReflectProperties.LazySoftVal<(PackageViewDescriptor..PackageViewDescriptor?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PackageViewDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.PackageViewDescriptor..org.jetbrains.kotlin.descriptors.PackageViewDescriptor?)
 
 'with' @ [47:13] ==> @InlineOnly public inline fun <T, R> with(receiver: RuntimeModuleData, block: RuntimeModuleData.() -> PackageViewDescriptor): PackageViewDescriptor defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -40,6 +40,8 @@ Inferred types:
 
 'packagePartProvider' @ [48:53] ==> public final val packagePartProvider: RuntimePackagePartProvider defined in org.jetbrains.kotlin.load.kotlin.reflect.RuntimeModuleData[PropertyDescriptorImpl]
 
+'registerModule' @ [48:74] ==> public final fun registerModule(moduleName: String): Unit defined in org.jetbrains.kotlin.load.kotlin.reflect.RuntimePackagePartProvider[SimpleFunctionDescriptorImpl]
+
 'module' @ [49:17] ==> public final val module: ModuleDescriptor defined in org.jetbrains.kotlin.load.kotlin.reflect.RuntimeModuleData[PropertyDescriptorImpl]
 
 'getPackage' @ [49:24] ==> public abstract fun getPackage(fqName: FqName): PackageViewDescriptor defined in org.jetbrains.kotlin.descriptors.ModuleDescriptor[SimpleFunctionDescriptorImpl]
@@ -50,11 +52,11 @@ Inferred types:
 
 'packageFqName' @ [49:50] ==> public final val ClassId.packageFqName: FqName[MyPropertyDescriptor]
 
-'getValue' @ [53:38] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (Class<out Any>..Class<out Any>?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazyVal[JavaMethodDescriptor]
+'getValue' @ [53:38] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazyVal[JavaMethodDescriptor]
 
-'lazy' @ [53:56] ==> @NotNull public open fun <T : (Any..Any?)> lazy(@NotNull initializer: () -> (Class<out Any>..Class<out Any>?)): ReflectProperties.LazyVal<(Class<out Any>..Class<out Any>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
+'lazy' @ [53:56] ==> @NotNull public open fun <T : (Any..Any?)> lazy(@NotNull initializer: () -> (Class<*>..Class<*>?)): ReflectProperties.LazyVal<(Class<*>..Class<*>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Class<out Any>
+    <T : (Any..Any?)> -> (java.lang.Class<*>..java.lang.Class<*>?)
 
 'kotlinClass' @ [54:30] ==> private final val kotlinClass: ReflectKotlinClass? defined in kotlin.reflect.jvm.internal.KPackageImpl.Data[PropertyDescriptorImpl]
 
@@ -67,9 +69,9 @@ Inferred types:
             }
             else {
                 jClass
-            }' @ [57:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out Any>, elseBranch: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
+            }' @ [57:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Class<*>..Class<*>?), elseBranch: (Class<*>..Class<*>?)): (Class<*>..Class<*>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out Any>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.Class<*>..java.lang.Class<*>?)
 
 'facadeName' @ [57:17] ==> val facadeName: String? defined in kotlin.reflect.jvm.internal.KPackageImpl.Data.methodOwner.<anonymous>[LocalVariableDescriptor]
 
@@ -81,7 +83,7 @@ Inferred types:
 
 'classLoader' @ [58:24] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'loadClass' @ [58:36] ==> public open fun loadClass(p0: (String..String?)): (Class<*>..Class<*>?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
 
@@ -125,19 +127,17 @@ Inferred types:
 
 'strings' @ [69:37] ==> val strings: Array<String>? defined in kotlin.reflect.jvm.internal.KPackageImpl.Data.metadata.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'JvmProtoBufUtil' @ [70:21] ==> public object JvmProtoBufUtil defined in org.jetbrains.kotlin.serialization.jvm in file JvmProtoBufUtil.kt[FakeCallableDescriptorForObject]
-
 'readPackageDataFrom' @ [70:37] ==> @JvmStatic public final fun readPackageDataFrom(data: Array<String>, strings: Array<String>): PackageData defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil[SimpleFunctionDescriptorImpl]
 
 'data' @ [70:57] ==> val data: Array<String>? defined in kotlin.reflect.jvm.internal.KPackageImpl.Data.metadata.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'strings' @ [70:63] ==> val strings: Array<String>? defined in kotlin.reflect.jvm.internal.KPackageImpl.Data.metadata.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'getValue' @ [76:54] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (List<KCallableImpl<*>>..List<KCallableImpl<*>>?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [76:54] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [76:72] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (List<KCallableImpl<*>>..List<KCallableImpl<*>>?)): ReflectProperties.LazySoftVal<(List<KCallableImpl<*>>..List<KCallableImpl<*>>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<KCallableImpl<*>>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.reflect.jvm.internal.KCallableImpl<*>>..kotlin.collections.List<kotlin.reflect.jvm.internal.KCallableImpl<*>>?)
 
 'getMembers' @ [77:13] ==> protected final fun getMembers(scope: MemberScope, belonginess: KDeclarationContainerImpl.MemberBelonginess): Collection<KCallableImpl<*>> defined in kotlin.reflect.jvm.internal.KPackageImpl[SimpleFunctionDescriptorImpl]
 
@@ -175,7 +175,7 @@ Inferred types:
 
 'lazy' @ [86:42] ==> @NotNull public open fun <T : (Any..Any?)> lazy(@NotNull initializer: () -> (KPackageImpl.Data..KPackageImpl.Data?)): ReflectProperties.LazyVal<(KPackageImpl.Data..KPackageImpl.Data?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Data
+    <T : (Any..Any?)> -> (kotlin.reflect.jvm.internal.KPackageImpl.Data..kotlin.reflect.jvm.internal.KPackageImpl.Data?)
 
 'Data' @ [86:49] ==> public constructor Data() defined in kotlin.reflect.jvm.internal.KPackageImpl.Data[ClassConstructorDescriptorImpl]
 
@@ -230,7 +230,7 @@ Inferred types:
 
 'getExtension' @ [105:38] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?), p1: Int): (ProtoBuf.Property..ProtoBuf.Property?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Property
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Property..org.jetbrains.kotlin.serialization.ProtoBuf.Property?)
 
 'packageLocalVariable' @ [105:63] ==> public final val packageLocalVariable: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (MutableList<(ProtoBuf.Property..ProtoBuf.Property?)>..List<(ProtoBuf.Property..ProtoBuf.Property?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -254,6 +254,8 @@ Inferred types:
 'typeTable' @ [106:89] ==> public final val ProtoBuf.Package.typeTable: (ProtoBuf.TypeTable..ProtoBuf.TypeTable?)[MyPropertyDescriptor]
 
 'MemberDeserializer' @ [106:101] ==> public constructor MemberDeserializer(c: DeserializationContext) defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer[ClassConstructorDescriptorImpl]
+
+'loadProperty' @ [106:121] ==> public final fun loadProperty(proto: ProtoBuf.Property): PropertyDescriptor defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer[SimpleFunctionDescriptorImpl]
 
 'other' @ [111:13] ==> value-parameter other: Any? defined in kotlin.reflect.jvm.internal.KPackageImpl.equals[ValueParameterDescriptorImpl]
 

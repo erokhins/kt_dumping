@@ -40,8 +40,6 @@
 Inferred types:
     <T> -> UnwrappedType
 
-'KotlinTypeFactory' @ [50:27] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
-
 'flexibleType' @ [50:45] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
 'c' @ [51:21] ==> private final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaTypeParameterDescriptor[PropertyDescriptorImpl]
@@ -75,7 +73,7 @@ Inferred types:
 
 'it' @ [56:46] ==> value-parameter it: JavaClassifierType defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaTypeParameterDescriptor.resolveUpperBounds.<anonymous>[ValueParameterDescriptorImpl]
 
-'toAttributes' @ [56:67] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [56:67] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [56:109] ==> <this> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaTypeParameterDescriptor[LazyClassReceiverParameterDescriptor]
 

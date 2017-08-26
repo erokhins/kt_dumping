@@ -28,8 +28,6 @@
 
 'MIN_HIGH_SURROGATE' @ [31:59] ==> public const final val MIN_HIGH_SURROGATE: Char defined in kotlin.Char.Companion[DeserializedPropertyDescriptor]
 
-'Char' @ [31:79] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
-
 'MAX_HIGH_SURROGATE' @ [31:84] ==> public const final val MAX_HIGH_SURROGATE: Char defined in kotlin.Char.Companion[DeserializedPropertyDescriptor]
 
 'this' @ [36:45] ==> <this> defined in kotlin.text.isLowSurrogate[ReceiverParameterDescriptorImpl]
@@ -37,8 +35,6 @@
 'Char' @ [36:53] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
 
 'MIN_LOW_SURROGATE' @ [36:58] ==> public const final val MIN_LOW_SURROGATE: Char defined in kotlin.Char.Companion[DeserializedPropertyDescriptor]
-
-'Char' @ [36:77] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
 
 'MAX_LOW_SURROGATE' @ [36:82] ==> public const final val MAX_LOW_SURROGATE: Char defined in kotlin.Char.Companion[DeserializedPropertyDescriptor]
 

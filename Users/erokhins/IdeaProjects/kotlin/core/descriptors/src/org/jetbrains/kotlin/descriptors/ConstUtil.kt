@@ -2,7 +2,7 @@
 
 'type' @ [26:61] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.descriptors.ConstUtil.canBeUsedForConstVal[ValueParameterDescriptorImpl]
 
-'canBeUsedForConstVal' @ [26:66] ==> public fun KotlinType.canBeUsedForConstVal(): Boolean defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'canBeUsedForConstVal' @ [26:66] ==> public fun KotlinType.canBeUsedForConstVal(): Boolean defined in org.jetbrains.kotlin.descriptors in file ConstUtil.kt[SimpleFunctionDescriptorImpl]
 
 'isPrimitiveType' @ [29:56] ==> public open fun isPrimitiveType(@NotNull type: KotlinType): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 

@@ -8,7 +8,7 @@
 
 'split' @ [25:65] ==> public fun CharSequence.split(vararg delimiters: Char, ignoreCase: Boolean = ..., limit: Int = ...): List<String> defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'fold' @ [25:76] ==> public inline fun <T, R> Iterable<String>.fold(initial: ArrayList<String> /* = ArrayList<String> */, operation: (ArrayList<String> /* = ArrayList<String> */, String) -> ArrayList<String> /* = ArrayList<String> */): ArrayList<String> /* = ArrayList<String> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [25:76] ==> public inline fun <T, R> Iterable<String>.fold(initial: ArrayList<String> /* = ArrayList<String> */, operation: (acc: ArrayList<String> /* = ArrayList<String> */, String) -> ArrayList<String> /* = ArrayList<String> */): ArrayList<String> /* = ArrayList<String> */ defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> ArrayList<String>
@@ -52,7 +52,9 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'AndroidConst' @ [58:18] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
+'?:' @ [58:18] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: List<String>?, right: List<String>): List<String>[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> List<String>
 
 'IDENTIFIER_REGEX' @ [58:31] ==> public final val IDENTIFIER_REGEX: Regex defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 

@@ -43,6 +43,8 @@ Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
     <R> -> TypeConstructor
 
+'getTypeConstructor' @ [31:70] ==> @NotNull @Override public abstract fun getTypeConstructor(): TypeConstructor defined in org.jetbrains.kotlin.descriptors.TypeParameterDescriptor[JavaMethodDescriptor]
+
 'zip' @ [31:90] ==> public infix fun <T, R> Iterable<TypeConstructor>.zip(other: Iterable<TypeProjection>): List<Pair<TypeConstructor, TypeProjection>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TypeConstructor

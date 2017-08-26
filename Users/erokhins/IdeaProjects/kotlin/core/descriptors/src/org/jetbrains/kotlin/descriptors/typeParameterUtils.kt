@@ -68,7 +68,7 @@ Inferred types:
 
 'it' @ [40:24] ==> value-parameter it: (TypeParameterDescriptor..TypeParameterDescriptor?) defined in org.jetbrains.kotlin.descriptors.computeConstructorTypeParameters.<anonymous>[ValueParameterDescriptorImpl]
 
-'capturedCopyForInnerDeclaration' @ [40:27] ==> private fun TypeParameterDescriptor.capturedCopyForInnerDeclaration(declarationDescriptor: DeclarationDescriptor, declaredTypeParametersCount: Int): CapturedTypeParameterDescriptor defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'capturedCopyForInnerDeclaration' @ [40:27] ==> private fun TypeParameterDescriptor.capturedCopyForInnerDeclaration(declarationDescriptor: DeclarationDescriptor, declaredTypeParametersCount: Int): CapturedTypeParameterDescriptor defined in org.jetbrains.kotlin.descriptors in file typeParameterUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [40:59] ==> <this> defined in org.jetbrains.kotlin.descriptors.computeConstructorTypeParameters[ReceiverParameterDescriptorImpl]
 

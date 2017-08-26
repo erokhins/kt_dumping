@@ -24,8 +24,6 @@ Inferred types:
 
 'asString' @ [46:29] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'RuntimeTypeMapper' @ [47:13] ==> internal object RuntimeTypeMapper defined in kotlin.reflect.jvm.internal in file RuntimeTypeMapper.kt[FakeCallableDescriptorForObject]
-
 'mapSignature' @ [47:31] ==> public final fun mapSignature(possiblySubstitutedFunction: FunctionDescriptor): JvmFunctionSignature defined in kotlin.reflect.jvm.internal.RuntimeTypeMapper[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [47:44] ==> value-parameter descriptor: FunctionDescriptor defined in kotlin.reflect.jvm.internal.KFunctionImpl.<init>[ValueParameterDescriptorImpl]
@@ -38,11 +36,11 @@ Inferred types:
 
 'NO_RECEIVER' @ [51:78] ==> @SinceKotlin public final val NO_RECEIVER: (Any..Any?) defined in kotlin.jvm.internal.CallableReference[JavaPropertyDescriptor]
 
-'getValue' @ [53:52] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (FunctionDescriptor..FunctionDescriptor?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [53:52] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [53:70] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@Nullable initialValue: FunctionDescriptor?, @NotNull initializer: () -> (FunctionDescriptor..FunctionDescriptor?)): ReflectProperties.LazySoftVal<(FunctionDescriptor..FunctionDescriptor?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FunctionDescriptor
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.descriptors.FunctionDescriptor..org.jetbrains.kotlin.descriptors.FunctionDescriptor?)
 
 'descriptorInitialValue' @ [53:79] ==> value-parameter descriptorInitialValue: FunctionDescriptor? defined in kotlin.reflect.jvm.internal.KFunctionImpl.<init>[ValueParameterDescriptorImpl]
 
@@ -60,11 +58,11 @@ Inferred types:
 
 'asString' @ [57:55] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'getValue' @ [59:47] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>..FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [59:47] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
-'lazySoft' @ [59:65] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>..FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>?)): ReflectProperties.LazySoftVal<(FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>..FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
+'lazySoft' @ [59:65] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (FunctionCaller<Member?>..FunctionCaller<Member?>?)): ReflectProperties.LazySoftVal<(FunctionCaller<Member?>..FunctionCaller<Member?>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>
+    <T : (Any..Any?)> -> (kotlin.reflect.jvm.internal.FunctionCaller<java.lang.reflect.Member?>..kotlin.reflect.jvm.internal.FunctionCaller<java.lang.reflect.Member?>?)
 
 'RuntimeTypeMapper' @ [60:28] ==> internal object RuntimeTypeMapper defined in kotlin.reflect.jvm.internal in file RuntimeTypeMapper.kt[FakeCallableDescriptorForObject]
 
@@ -197,9 +195,9 @@ Inferred types:
                     createStaticMethodCaller(member)
             }
             else -> throw KotlinReflectionInternalError("Call is not yet supported for this function: $descriptor (member = $member)")
-        }' @ [78:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>, entry1: FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>, entry2: FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>): FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>[SimpleFunctionDescriptorImpl]
+        }' @ [78:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: FunctionCaller<*>, entry1: FunctionCaller<*>, entry2: FunctionCaller<*>): FunctionCaller<*>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> FunctionCaller<*>
 
 'member' @ [78:15] ==> val member: Member? defined in kotlin.reflect.jvm.internal.KFunctionImpl.caller.<anonymous>[LocalVariableDescriptor]
 
@@ -252,11 +250,11 @@ Inferred types:
 
 'member' @ [89:126] ==> val member: Member? defined in kotlin.reflect.jvm.internal.KFunctionImpl.caller.<anonymous>[LocalVariableDescriptor]
 
-'getValue' @ [93:55] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>..FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [93:55] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
-'lazySoft' @ [93:73] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>..FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>?)): ReflectProperties.LazySoftVal<(FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>..FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
+'lazySoft' @ [93:73] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> FunctionCaller<Member?>?): ReflectProperties.LazySoftVal<FunctionCaller<Member?>?> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FunctionCaller<{AccessibleObject & Member & GenericDeclaration}?>
+    <T : (Any..Any?)> -> FunctionCaller<Member?>?
 
 'RuntimeTypeMapper' @ [94:28] ==> internal object RuntimeTypeMapper defined in kotlin.reflect.jvm.internal in file RuntimeTypeMapper.kt[FakeCallableDescriptorForObject]
 
@@ -391,9 +389,9 @@ Inferred types:
                     createStaticMethodCaller(member)
             }
             else -> null
-        }' @ [115:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>?, entry1: FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>?, entry2: FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>?): FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>?[SimpleFunctionDescriptorImpl]
+        }' @ [115:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: FunctionCaller<*>?, entry1: FunctionCaller<*>?, entry2: FunctionCaller<*>?): FunctionCaller<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> FunctionCaller<{AccessibleObject & Member & GenericDeclaration}>?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> FunctionCaller<*>?
 
 'member' @ [115:15] ==> val member: Member? defined in kotlin.reflect.jvm.internal.KFunctionImpl.defaultCaller.<anonymous>[LocalVariableDescriptor]
 
@@ -445,15 +443,11 @@ Inferred types:
 
 'isBound' @ [134:17] ==> public open val isBound: Boolean defined in kotlin.reflect.jvm.internal.KFunctionImpl[PropertyDescriptorImpl]
 
-'FunctionCaller' @ [134:26] ==> public companion object defined in kotlin.reflect.jvm.internal.FunctionCaller[FakeCallableDescriptorForObject]
-
 'BoundStaticMethod' @ [134:41] ==> public constructor BoundStaticMethod(method: Method, boundReceiver: Any?) defined in kotlin.reflect.jvm.internal.FunctionCaller.BoundStaticMethod[ClassConstructorDescriptorImpl]
 
 'member' @ [134:59] ==> value-parameter member: Method defined in kotlin.reflect.jvm.internal.KFunctionImpl.createStaticMethodCaller[ValueParameterDescriptorImpl]
 
 'boundReceiver' @ [134:67] ==> private final val boundReceiver: Any? defined in kotlin.reflect.jvm.internal.KFunctionImpl[PropertyDescriptorImpl]
-
-'FunctionCaller' @ [134:87] ==> public companion object defined in kotlin.reflect.jvm.internal.FunctionCaller[FakeCallableDescriptorForObject]
 
 'StaticMethod' @ [134:102] ==> public constructor StaticMethod(method: Method) defined in kotlin.reflect.jvm.internal.FunctionCaller.StaticMethod[ClassConstructorDescriptorImpl]
 
@@ -465,13 +459,9 @@ Inferred types:
 
 'isBound' @ [137:17] ==> public open val isBound: Boolean defined in kotlin.reflect.jvm.internal.KFunctionImpl[PropertyDescriptorImpl]
 
-'FunctionCaller' @ [137:26] ==> public companion object defined in kotlin.reflect.jvm.internal.FunctionCaller[FakeCallableDescriptorForObject]
-
 'BoundJvmStaticInObject' @ [137:41] ==> public constructor BoundJvmStaticInObject(method: Method) defined in kotlin.reflect.jvm.internal.FunctionCaller.BoundJvmStaticInObject[ClassConstructorDescriptorImpl]
 
 'member' @ [137:64] ==> value-parameter member: Method defined in kotlin.reflect.jvm.internal.KFunctionImpl.createJvmStaticInObjectCaller[ValueParameterDescriptorImpl]
-
-'FunctionCaller' @ [137:77] ==> public companion object defined in kotlin.reflect.jvm.internal.FunctionCaller[FakeCallableDescriptorForObject]
 
 'JvmStaticInObject' @ [137:92] ==> public constructor JvmStaticInObject(method: Method) defined in kotlin.reflect.jvm.internal.FunctionCaller.JvmStaticInObject[ClassConstructorDescriptorImpl]
 
@@ -483,15 +473,11 @@ Inferred types:
 
 'isBound' @ [140:17] ==> public open val isBound: Boolean defined in kotlin.reflect.jvm.internal.KFunctionImpl[PropertyDescriptorImpl]
 
-'FunctionCaller' @ [140:26] ==> public companion object defined in kotlin.reflect.jvm.internal.FunctionCaller[FakeCallableDescriptorForObject]
-
 'BoundInstanceMethod' @ [140:41] ==> public constructor BoundInstanceMethod(method: Method, boundReceiver: Any?) defined in kotlin.reflect.jvm.internal.FunctionCaller.BoundInstanceMethod[ClassConstructorDescriptorImpl]
 
 'member' @ [140:61] ==> value-parameter member: Method defined in kotlin.reflect.jvm.internal.KFunctionImpl.createInstanceMethodCaller[ValueParameterDescriptorImpl]
 
 'boundReceiver' @ [140:69] ==> private final val boundReceiver: Any? defined in kotlin.reflect.jvm.internal.KFunctionImpl[PropertyDescriptorImpl]
-
-'FunctionCaller' @ [140:89] ==> public companion object defined in kotlin.reflect.jvm.internal.FunctionCaller[FakeCallableDescriptorForObject]
 
 'InstanceMethod' @ [140:104] ==> public constructor InstanceMethod(method: Method) defined in kotlin.reflect.jvm.internal.FunctionCaller.InstanceMethod[ClassConstructorDescriptorImpl]
 
@@ -503,15 +489,11 @@ Inferred types:
 
 'isBound' @ [143:17] ==> public open val isBound: Boolean defined in kotlin.reflect.jvm.internal.KFunctionImpl[PropertyDescriptorImpl]
 
-'FunctionCaller' @ [143:26] ==> public companion object defined in kotlin.reflect.jvm.internal.FunctionCaller[FakeCallableDescriptorForObject]
-
 'BoundConstructor' @ [143:41] ==> public constructor BoundConstructor(constructor: Constructor<*>, boundReceiver: Any?) defined in kotlin.reflect.jvm.internal.FunctionCaller.BoundConstructor[ClassConstructorDescriptorImpl]
 
 'member' @ [143:58] ==> value-parameter member: Constructor<*> defined in kotlin.reflect.jvm.internal.KFunctionImpl.createConstructorCaller[ValueParameterDescriptorImpl]
 
 'boundReceiver' @ [143:66] ==> private final val boundReceiver: Any? defined in kotlin.reflect.jvm.internal.KFunctionImpl[PropertyDescriptorImpl]
-
-'FunctionCaller' @ [143:86] ==> public companion object defined in kotlin.reflect.jvm.internal.FunctionCaller[FakeCallableDescriptorForObject]
 
 'Constructor' @ [143:101] ==> public constructor Constructor(constructor: Constructor<*>) defined in kotlin.reflect.jvm.internal.FunctionCaller.Constructor[ClassConstructorDescriptorImpl]
 

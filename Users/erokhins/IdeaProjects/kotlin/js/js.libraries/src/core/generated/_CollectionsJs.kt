@@ -806,7 +806,7 @@ Inferred types:
 
 'single' @ [535:12] ==> var single: T? defined in kotlin.collections.singleOrNull[LocalVariableDescriptor]
 
-'require' @ [542:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [542:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [542:13] ==> value-parameter n: Int defined in kotlin.collections.drop[ValueParameterDescriptorImpl]
 
@@ -934,7 +934,7 @@ Inferred types:
 Inferred types:
     <T> -> T
 
-'require' @ [577:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [577:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [577:13] ==> value-parameter n: Int defined in kotlin.collections.dropLast[ValueParameterDescriptorImpl]
 
@@ -1200,7 +1200,7 @@ Inferred types:
 
 'list' @ [711:12] ==> val list: ArrayList<T> defined in kotlin.collections.slice[LocalVariableDescriptor]
 
-'require' @ [718:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [718:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [718:13] ==> value-parameter n: Int defined in kotlin.collections.take[ValueParameterDescriptorImpl]
 
@@ -1256,7 +1256,7 @@ Inferred types:
 Inferred types:
     <T> -> T
 
-'require' @ [738:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [738:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [738:13] ==> value-parameter n: Int defined in kotlin.collections.takeLast[ValueParameterDescriptorImpl]
 
@@ -2058,9 +2058,9 @@ Inferred types:
 
 'destination' @ [1163:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [1163:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<T>>.getOrPut(key: Any?, defaultValue: () -> MutableList<T>): MutableList<T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [1163:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<T>>.getOrPut(key: K, defaultValue: () -> MutableList<T>): MutableList<T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<T>
 
 'key' @ [1163:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -2085,9 +2085,9 @@ Inferred types:
 
 'destination' @ [1181:20] ==> value-parameter destination: M defined in kotlin.collections.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [1181:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [1181:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [1181:41] ==> val key: K defined in kotlin.collections.groupByTo[LocalVariableDescriptor]
@@ -2704,7 +2704,7 @@ Inferred types:
 
 'comparator' @ [1566:13] ==> value-parameter comparator: Comparator<in T> defined in kotlin.collections.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [1566:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [1566:24] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [1566:32] ==> var max: T defined in kotlin.collections.maxWith[LocalVariableDescriptor]
 
@@ -2898,7 +2898,7 @@ Inferred types:
 
 'comparator' @ [1651:13] ==> value-parameter comparator: Comparator<in T> defined in kotlin.collections.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [1651:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [1651:24] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [1651:32] ==> var min: T defined in kotlin.collections.minWith[LocalVariableDescriptor]
 
@@ -3547,7 +3547,7 @@ Inferred types:
 
 'element' @ [1957:17] ==> value-parameter element: T defined in kotlin.collections.plusElement[ValueParameterDescriptorImpl]
 
-'zip' @ [1964:12] ==> public inline fun <T, R, V> Iterable<T>.zip(other: Array<out R>, transform: (T, R) -> Pair<T, R>): List<Pair<T, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [1964:12] ==> public inline fun <T, R, V> Iterable<T>.zip(other: Array<out R>, transform: (a: T, b: R) -> Pair<T, R>): List<Pair<T, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <R> -> R
@@ -3595,7 +3595,7 @@ Inferred types:
 
 'list' @ [1978:12] ==> val list: ArrayList<V> defined in kotlin.collections.zip[LocalVariableDescriptor]
 
-'zip' @ [1985:12] ==> public inline fun <T, R, V> Iterable<T>.zip(other: Iterable<R>, transform: (T, R) -> Pair<T, R>): List<Pair<T, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'zip' @ [1985:12] ==> public inline fun <T, R, V> Iterable<T>.zip(other: Iterable<R>, transform: (a: T, b: R) -> Pair<T, R>): List<Pair<T, R>> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <R> -> R
@@ -3766,8 +3766,6 @@ Inferred types:
 
 'count' @ [2059:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [2059:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [2059:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [2059:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -3789,8 +3787,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [2073:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
-
-'Double' @ [2073:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [2073:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
@@ -3814,8 +3810,6 @@ Inferred types:
 
 'count' @ [2087:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [2087:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [2087:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [2087:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -3837,8 +3831,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [2101:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
-
-'Double' @ [2101:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [2101:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
@@ -3862,8 +3854,6 @@ Inferred types:
 
 'count' @ [2115:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
 
-'Double' @ [2115:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [2115:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [2115:44] ==> var sum: Double defined in kotlin.collections.average[LocalVariableDescriptor]
@@ -3885,8 +3875,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [2129:16] ==> var count: Int defined in kotlin.collections.average[LocalVariableDescriptor]
-
-'Double' @ [2129:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [2129:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 

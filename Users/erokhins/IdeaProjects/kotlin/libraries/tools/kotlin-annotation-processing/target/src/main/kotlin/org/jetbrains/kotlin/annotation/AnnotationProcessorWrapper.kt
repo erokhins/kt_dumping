@@ -1,8 +1,8 @@
 'AbstractProcessor' @ [29:33] ==> protected/*protected and package*/ constructor AbstractProcessor() defined in javax.annotation.processing.AbstractProcessor[JavaClassConstructorDescriptor]
 
-'lazy' @ [50:41] ==> public fun <T> lazy(initializer: () -> Processor): Lazy<Processor> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [50:41] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Processor
+    <T> -> T
 
 'forName' @ [52:34] ==> @CallerSensitive public open fun forName(p0: (String..String?)): (Class<*>..Class<*>?) defined in java.lang.Class[JavaMethodDescriptor]
 

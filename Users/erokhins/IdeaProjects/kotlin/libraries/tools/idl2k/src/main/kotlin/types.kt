@@ -16,7 +16,7 @@ Inferred types:
 
 'Type' @ [24:61] ==> private constructor Type() defined in org.jetbrains.idl2k.Type[ClassConstructorDescriptorImpl]
 
-'appendNullabilitySuffix' @ [25:35] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'appendNullabilitySuffix' @ [25:35] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k in file types.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [25:59] ==> <this> defined in org.jetbrains.idl2k.AnyType[LazyClassReceiverParameterDescriptor]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'type' @ [28:29] ==> public final val type: String defined in org.jetbrains.idl2k.SimpleType[PropertyDescriptorImpl]
 
-'appendNullabilitySuffix' @ [28:34] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'appendNullabilitySuffix' @ [28:34] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k in file types.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [28:58] ==> <this> defined in org.jetbrains.idl2k.SimpleType[LazyClassReceiverParameterDescriptor]
 
@@ -62,7 +62,7 @@ Inferred types:
 
 'render' @ [35:50] ==> public abstract fun render(): String defined in org.jetbrains.idl2k.Type[SimpleFunctionDescriptorImpl]
 
-'appendNullabilitySuffix' @ [35:62] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'appendNullabilitySuffix' @ [35:62] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k in file types.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [35:86] ==> <this> defined in org.jetbrains.idl2k.PromiseType[LazyClassReceiverParameterDescriptor]
 
@@ -74,7 +74,7 @@ Inferred types:
 
 'LinkedHashSet' @ [42:34] ==> public constructor LinkedHashSet<E : (Any..Any?)>(p0: (MutableCollection<out (Type..Type?)>..Collection<(Type..Type?)>?)) defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Type
+    <E : (Any..Any?)> -> (org.jetbrains.idl2k.Type..org.jetbrains.idl2k.Type?)
 
 'types' @ [42:48] ==> value-parameter types: Collection<Type> defined in org.jetbrains.idl2k.UnionType.<init>[ValueParameterDescriptorImpl]
 
@@ -128,7 +128,7 @@ Inferred types:
 
 'name' @ [50:37] ==> public final val name: String defined in org.jetbrains.idl2k.UnionType[PropertyDescriptorImpl]
 
-'appendNullabilitySuffix' @ [50:42] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'appendNullabilitySuffix' @ [50:42] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k in file types.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [50:66] ==> <this> defined in org.jetbrains.idl2k.UnionType[LazyClassReceiverParameterDescriptor]
 
@@ -190,7 +190,7 @@ Inferred types:
 
 'render' @ [59:87] ==> public abstract fun render(): String defined in org.jetbrains.idl2k.Type[SimpleFunctionDescriptorImpl]
 
-'appendNullabilitySuffix' @ [59:99] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'appendNullabilitySuffix' @ [59:99] ==> private fun String.appendNullabilitySuffix(type: Type): String defined in org.jetbrains.idl2k in file types.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [59:123] ==> <this> defined in org.jetbrains.idl2k.ArrayType[LazyClassReceiverParameterDescriptor]
 
@@ -319,9 +319,9 @@ Inferred types:
 'when (this.type) {
         "Int", "Short", "Byte", "Float", "Double", "Boolean", "Long" -> this
         else -> this.toNullable()
-    }' @ [87:22] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {SimpleType & T}, entry1: {SimpleType & T}): {SimpleType & T}[SimpleFunctionDescriptorImpl]
+    }' @ [87:22] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Type, entry1: Type): Type[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {SimpleType & T}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Type
 
 'this' @ [87:28] ==> <this> defined in org.jetbrains.idl2k.toNullableIfNonPrimitive[ReceiverParameterDescriptorImpl]
 
@@ -331,9 +331,9 @@ Inferred types:
 
 'this' @ [89:17] ==> <this> defined in org.jetbrains.idl2k.toNullableIfNonPrimitive[ReceiverParameterDescriptorImpl]
 
-'toNullable' @ [89:22] ==> public fun <T : Type> {SimpleType & T}.toNullable(): {SimpleType & T} defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'toNullable' @ [89:22] ==> public fun <T : Type> Type.toNullable(): Type defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Type> -> {SimpleType & T}
+    <T : Type> -> Type
 
 'this' @ [91:13] ==> <this> defined in org.jetbrains.idl2k.toNullableIfNonPrimitive[ReceiverParameterDescriptorImpl]
 

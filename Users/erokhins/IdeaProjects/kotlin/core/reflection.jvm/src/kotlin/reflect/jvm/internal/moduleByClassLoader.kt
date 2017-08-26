@@ -1,7 +1,7 @@
 'ConcurrentHashMap' @ [26:104] ==> public constructor ConcurrentHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.concurrent.ConcurrentHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> WeakClassLoaderBox
-    <V : (Any..Any?)> -> WeakReference<RuntimeModuleData>
+    <K : (Any..Any?)> -> (kotlin.reflect.jvm.internal.WeakClassLoaderBox..kotlin.reflect.jvm.internal.WeakClassLoaderBox?)
+    <V : (Any..Any?)> -> (java.lang.ref.WeakReference<org.jetbrains.kotlin.load.kotlin.reflect.RuntimeModuleData>..java.lang.ref.WeakReference<org.jetbrains.kotlin.load.kotlin.reflect.RuntimeModuleData>?)
 
 'WeakReference' @ [29:43] ==> public constructor WeakReference<T : (Any..Any?)>(p0: (ClassLoader..ClassLoader?)) defined in java.lang.ref.WeakReference[JavaClassConstructorDescriptor]
 Inferred types:

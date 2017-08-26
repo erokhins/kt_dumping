@@ -10,7 +10,7 @@ Inferred types:
 
 'ownerDocument' @ [34:9] ==> public open val ownerDocument: Document? defined in org.w3c.dom.Element[PropertyDescriptorImpl]
 
-'createElement' @ [34:25] ==> public fun Document.createElement(name: String, init: Element.() -> Unit): Element defined in kotlin.dom[SimpleFunctionDescriptorImpl]
+'createElement' @ [34:25] ==> public fun Document.createElement(name: String, init: Element.() -> Unit): Element defined in kotlin.dom in file Builders.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [34:39] ==> value-parameter name: String defined in kotlin.dom.appendElement[ValueParameterDescriptorImpl]
 

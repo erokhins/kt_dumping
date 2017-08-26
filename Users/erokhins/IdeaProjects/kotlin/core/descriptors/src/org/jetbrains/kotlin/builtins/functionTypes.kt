@@ -4,14 +4,14 @@
 
 'dfsFromNode' @ [41:13] ==> public open fun <N : (Any..Any?), R : (Any..Any?)> dfsFromNode(@NotNull node: KotlinType, @NotNull neighbors: DFS.Neighbors<(KotlinType..KotlinType?)>, @NotNull visited: DFS.Visited<(KotlinType..KotlinType?)>, @NotNull handler: DFS.NodeHandler<(KotlinType..KotlinType?), (Boolean..Boolean?)>): (Boolean..Boolean?) defined in org.jetbrains.kotlin.utils.DFS[JavaMethodDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> KotlinType
-    <R : (Any..Any?)> -> Boolean
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
+    <R : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'this' @ [42:17] ==> <this> defined in org.jetbrains.kotlin.builtins.isTypeOrSubtypeOf[ReceiverParameterDescriptorImpl]
 
-'Neighbors' @ [43:21] ==> public final fun <N : (Any..Any?)> Neighbors(function: ((KotlinType..KotlinType?)) -> (MutableIterable<(KotlinType..KotlinType?)>..Iterable<(KotlinType..KotlinType?)>)): DFS.Neighbors<KotlinType> defined in org.jetbrains.kotlin.utils.DFS[SimpleFunctionDescriptorImpl]
+'Neighbors' @ [43:21] ==> public final fun <N : (Any..Any?)> Neighbors(function: (current: (KotlinType..KotlinType?)) -> (MutableIterable<(KotlinType..KotlinType?)>..Iterable<(KotlinType..KotlinType?)>)): DFS.Neighbors<(KotlinType..KotlinType?)> defined in org.jetbrains.kotlin.utils.DFS[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <N : (Any..Any?)> -> KotlinType
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'it' @ [43:33] ==> value-parameter it: (KotlinType..KotlinType?) defined in org.jetbrains.kotlin.builtins.isTypeOrSubtypeOf.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -21,7 +21,7 @@ Inferred types:
 
 'VisitedWithSet' @ [44:21] ==> public constructor VisitedWithSet<N : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.DFS.VisitedWithSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> KotlinType
+    <N : (Any..Any?)> -> (org.jetbrains.kotlin.types.KotlinType..org.jetbrains.kotlin.types.KotlinType?)
 
 'DFS.AbstractNodeHandler<KotlinType, Boolean>' @ [45:26] ==> public constructor AbstractNodeHandler<N : (Any..Any?), R : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.DFS.AbstractNodeHandler[JavaClassConstructorDescriptor]
 Inferred types:
@@ -40,13 +40,13 @@ Inferred types:
 
 'result' @ [55:45] ==> private final var result: Boolean defined in org.jetbrains.kotlin.builtins.isTypeOrSubtypeOf.<no name provided>[PropertyDescriptorImpl]
 
-'isTypeOrSubtypeOf' @ [60:13] ==> private fun KotlinType.isTypeOrSubtypeOf(predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'isTypeOrSubtypeOf' @ [60:13] ==> private fun KotlinType.isTypeOrSubtypeOf(predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [60:33] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.builtins.<get-isFunctionTypeOrSubtype>.<anonymous>[ValueParameterDescriptorImpl]
 
 'isFunctionType' @ [60:36] ==> public val KotlinType.isFunctionType: Boolean defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[PropertyDescriptorImpl]
 
-'isTypeOrSubtypeOf' @ [63:13] ==> private fun KotlinType.isTypeOrSubtypeOf(predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'isTypeOrSubtypeOf' @ [63:13] ==> private fun KotlinType.isTypeOrSubtypeOf(predicate: (KotlinType) -> Boolean): Boolean defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [63:33] ==> value-parameter it: KotlinType defined in org.jetbrains.kotlin.builtins.<get-isBuiltinFunctionalTypeOrSubtype>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -228,7 +228,7 @@ Inferred types:
 
 'newReturnType' @ [133:105] ==> value-parameter newReturnType: KotlinType defined in org.jetbrains.kotlin.builtins.replaceReturnType[ValueParameterDescriptorImpl]
 
-'replace' @ [134:12] ==> @JvmOverloads public fun KotlinType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): KotlinType defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'replace' @ [134:12] ==> @JvmOverloads public fun KotlinType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): KotlinType defined in org.jetbrains.kotlin.types in file TypeSubstitution.kt[SimpleFunctionDescriptorImpl]
 
 'argumentsWithNewReturnType' @ [134:35] ==> val argumentsWithNewReturnType: MutableList<TypeProjection> defined in org.jetbrains.kotlin.builtins.replaceReturnType[LocalVariableDescriptor]
 
@@ -426,7 +426,7 @@ Inferred types:
 
 'JvmOverloads' @ [187:1] ==> public constructor JvmOverloads() defined in kotlin.jvm.JvmOverloads[DeserializedClassConstructorDescriptor]
 
-'getFunctionTypeArgumentProjections' @ [197:21] ==> public fun getFunctionTypeArgumentProjections(receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, builtIns: KotlinBuiltIns): List<TypeProjection> defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'getFunctionTypeArgumentProjections' @ [197:21] ==> public fun getFunctionTypeArgumentProjections(receiverType: KotlinType?, parameterTypes: List<KotlinType>, parameterNames: List<Name>?, returnType: KotlinType, builtIns: KotlinBuiltIns): List<TypeProjection> defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'receiverType' @ [197:56] ==> value-parameter receiverType: KotlinType? defined in org.jetbrains.kotlin.builtins.createFunctionType[ValueParameterDescriptorImpl]
 

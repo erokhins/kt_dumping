@@ -14,7 +14,7 @@
 
 'hasExtension' @ [33:19] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Boolean
+    <Type : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'isRaw' @ [33:44] ==> public final val isRaw: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 

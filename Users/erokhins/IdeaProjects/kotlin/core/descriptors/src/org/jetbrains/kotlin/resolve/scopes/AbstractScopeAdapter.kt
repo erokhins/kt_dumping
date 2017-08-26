@@ -61,11 +61,11 @@ Inferred types:
 
 'java' @ [60:31] ==> public val <T> KClass<out AbstractScopeAdapter>.java: Class<out AbstractScopeAdapter> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> AbstractScopeAdapter
+    <T> -> Captured(out AbstractScopeAdapter)
 
 'simpleName' @ [60:36] ==> public final val <T : (Any..Any?)> Class<out AbstractScopeAdapter>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AbstractScopeAdapter
+    <T : (Any..Any?)> -> Captured(out AbstractScopeAdapter)
 
 'p' @ [61:9] ==> value-parameter p: Printer defined in org.jetbrains.kotlin.resolve.scopes.AbstractScopeAdapter.printScopeStructure[ValueParameterDescriptorImpl]
 

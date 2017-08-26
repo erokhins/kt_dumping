@@ -1,6 +1,6 @@
 'nil' @ [41:76] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCCompilationUnit..JCTree.JCCompilationUnit?)>..List<(JCTree.JCCompilationUnit..JCTree.JCCompilationUnit?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCCompilationUnit
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCCompilationUnit..com.sun.tools.javac.tree.JCTree.JCCompilationUnit?)
 
 'with' @ [44:5] ==> @InlineOnly public inline fun <T, R> with(receiver: Options, block: Options.() -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -83,7 +83,7 @@ Inferred types:
 
 'get' @ [59:31] ==> public open operator fun <T : (Any..Any?)> get(p0: (Class<(JavaFileManager..JavaFileManager?)>..Class<(JavaFileManager..JavaFileManager?)>?)): (JavaFileManager..JavaFileManager?) defined in com.sun.tools.javac.util.Context[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaFileManager
+    <T : (Any..Any?)> -> (javax.tools.JavaFileManager..javax.tools.JavaFileManager?)
 
 'java' @ [59:58] ==> public val <T> KClass<JavaFileManager>.java: Class<JavaFileManager> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

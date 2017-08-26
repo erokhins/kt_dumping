@@ -170,8 +170,6 @@ Inferred types:
 
 'typeTable' @ [68:42] ==> public final val ProtoBuf.Class.typeTable: (ProtoBuf.TypeTable..ProtoBuf.TypeTable?)[MyPropertyDescriptor]
 
-'SinceKotlinInfoTable' @ [69:21] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfoTable[FakeCallableDescriptorForObject]
-
 'create' @ [69:42] ==> public final fun create(table: ProtoBuf.SinceKotlinInfoTable): SinceKotlinInfoTable defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfoTable.Companion[SimpleFunctionDescriptorImpl]
 
 'classProto' @ [69:49] ==> val classProto: ProtoBuf.Class defined in org.jetbrains.kotlin.serialization.deserialization.ClassDeserializer.createClass[LocalVariableDescriptor]

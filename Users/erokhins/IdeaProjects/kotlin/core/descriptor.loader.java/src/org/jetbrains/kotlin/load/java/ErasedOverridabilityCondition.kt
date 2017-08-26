@@ -77,8 +77,6 @@ Inferred types:
 
 'substitute' @ [42:43] ==> public abstract fun substitute(substitutor: TypeSubstitutor): (CallableDescriptor..CallableDescriptor?) defined in org.jetbrains.kotlin.descriptors.CallableDescriptor[SimpleFunctionDescriptorImpl]
 
-'RawSubstitution' @ [42:54] ==> internal object RawSubstitution : TypeSubstitution defined in org.jetbrains.kotlin.load.java.lazy.types in file RawType.kt[FakeCallableDescriptorForObject]
-
 'buildSubstitutor' @ [42:70] ==> public final fun buildSubstitutor(): TypeSubstitutor defined in org.jetbrains.kotlin.load.java.lazy.types.RawSubstitution[SimpleFunctionDescriptorImpl]
 
 'UNKNOWN' @ [42:107] ==> enum entry UNKNOWN defined in org.jetbrains.kotlin.resolve.ExternalOverridabilityCondition.Result[FakeCallableDescriptorForObject]

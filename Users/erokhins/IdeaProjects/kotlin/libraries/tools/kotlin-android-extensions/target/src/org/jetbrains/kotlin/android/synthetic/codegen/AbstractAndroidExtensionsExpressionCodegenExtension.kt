@@ -16,7 +16,7 @@
 
 'resultingDescriptor' @ [73:48] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'if (resultingDescriptor is PropertyDescriptor) {
             return generateResourcePropertyCall(receiver, resolvedCall, c, resultingDescriptor)
@@ -41,13 +41,13 @@ Inferred types:
 
 'resultingDescriptor' @ [81:43] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'resolvedCall' @ [82:9] ==> value-parameter resolvedCall: ResolvedCall<*> defined in org.jetbrains.kotlin.android.synthetic.codegen.AbstractAndroidExtensionsExpressionCodegenExtension.applyFunction[ValueParameterDescriptorImpl]
 
 'resultingDescriptor' @ [82:22] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'if (targetCallable.name.asString() == AndroidConst.CLEAR_FUNCTION_NAME) {
             val container = resolvedCall.getReceiverDeclarationDescriptor() as? ClassDescriptor ?: return null
@@ -64,8 +64,6 @@ Inferred types:
 'name' @ [84:35] ==> public final val CallableDescriptor.name: Name[MyPropertyDescriptor]
 
 'asString' @ [84:40] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
-
-'AndroidConst' @ [84:54] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'CLEAR_FUNCTION_NAME' @ [84:67] ==> public final val CLEAR_FUNCTION_NAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
@@ -99,7 +97,7 @@ Inferred types:
 
 'call' @ [101:62] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'calleeExpression' @ [101:67] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
@@ -112,8 +110,6 @@ Inferred types:
 'containerOptions' @ [105:13] ==> val containerOptions: ContainerOptionsProxy defined in org.jetbrains.kotlin.android.synthetic.codegen.AbstractAndroidExtensionsExpressionCodegenExtension.generateClearFindViewByIdCacheFunctionCall[LocalVariableDescriptor]
 
 'containerType' @ [105:30] ==> public final val containerType: AndroidContainerType defined in org.jetbrains.kotlin.android.synthetic.descriptors.ContainerOptionsProxy[PropertyDescriptorImpl]
-
-'AndroidContainerType' @ [105:47] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'UNKNOWN' @ [105:68] ==> enum entry UNKNOWN defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
@@ -201,13 +197,13 @@ Inferred types:
 
 'call' @ [128:109] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'calleeExpression' @ [128:114] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 
 'resultingDescriptor' @ [132:35] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'extensionReceiverParameter' @ [132:55] ==> public final val CallableDescriptor.extensionReceiverParameter: ReceiverParameterDescriptor?[MyPropertyDescriptor]
 
@@ -219,7 +215,7 @@ Inferred types:
 
 'extensionReceiver' @ [133:29] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.extensionReceiver: ReceiverValue?[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'type' @ [133:65] ==> public final val ReceiverValue.type: KotlinType[MyPropertyDescriptor]
 
@@ -422,8 +418,6 @@ Inferred types:
 
 'newMethod' @ [190:42] ==> @NotNull public abstract fun newMethod(@NotNull p0: JvmDeclarationOrigin, p1: Int, @NotNull p2: String, @NotNull p3: String, @Nullable p4: String?, @Nullable p5: (Array<(String..String?)>?..Array<out (String..String?)>?)): MethodVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [190:52] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [190:73] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'ACC_PUBLIC' @ [190:84] ==> public const final val ACC_PUBLIC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
@@ -489,8 +483,6 @@ Inferred types:
 'classBuilder' @ [204:29] ==> public final val classBuilder: ClassBuilder defined in org.jetbrains.kotlin.android.synthetic.codegen.AbstractAndroidExtensionsExpressionCodegenExtension.SyntheticPartsGenerateContext[PropertyDescriptorImpl]
 
 'newMethod' @ [204:42] ==> @NotNull public abstract fun newMethod(@NotNull p0: JvmDeclarationOrigin, p1: Int, @NotNull p2: String, @NotNull p3: String, @Nullable p4: String?, @Nullable p5: (Array<(String..String?)>?..Array<out (String..String?)>?)): MethodVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
-
-'JvmDeclarationOrigin' @ [204:52] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [204:73] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
@@ -582,8 +574,6 @@ Inferred types:
 
 'newField' @ [225:22] ==> @NotNull public abstract fun newField(@NotNull p0: JvmDeclarationOrigin, p1: Int, @NotNull p2: String, @NotNull p3: String, @Nullable p4: String?, @Nullable p5: Any?): FieldVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [225:31] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [225:52] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'ACC_PRIVATE' @ [225:63] ==> public const final val ACC_PRIVATE: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
@@ -607,8 +597,6 @@ Inferred types:
 'classBuilder' @ [233:29] ==> public final val classBuilder: ClassBuilder defined in org.jetbrains.kotlin.android.synthetic.codegen.AbstractAndroidExtensionsExpressionCodegenExtension.SyntheticPartsGenerateContext[PropertyDescriptorImpl]
 
 'newMethod' @ [233:42] ==> @NotNull public abstract fun newMethod(@NotNull p0: JvmDeclarationOrigin, p1: Int, @NotNull p2: String, @NotNull p3: String, @Nullable p4: String?, @Nullable p5: (Array<(String..String?)>?..Array<out (String..String?)>?)): MethodVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
-
-'JvmDeclarationOrigin' @ [234:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [234:38] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 

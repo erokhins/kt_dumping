@@ -190,9 +190,9 @@
 
 'value' @ [161:89] ==> public final val value: Int defined in kotlin.text.CharCategory[PropertyDescriptorImpl]
 
-'lazy' @ [165:36] ==> @JvmVersion public fun <T> lazy(initializer: () -> Map<Int, CharCategory>): Lazy<Map<Int, CharCategory>> defined in kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [165:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> Map<Int, CharCategory>
+    <T> -> T
 
 'CharCategory' @ [165:43] ==> public companion object defined in kotlin.text.CharCategory[FakeCallableDescriptorForObject]
 

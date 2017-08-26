@@ -36,11 +36,11 @@ Inferred types:
 
 'stream' @ [35:66] ==> public final fun <T : (Any..Any?)> stream(p0: (() -> (Spliterator<(T..T?)>..Spliterator<(T..T?)>?)..(() -> (Spliterator<(T..T?)>..Spliterator<(T..T?)>?))?), p1: Int, p2: Boolean): (Stream<(T..T?)>..Stream<(T..T?)>?) defined in java.util.stream.StreamSupport[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'spliteratorUnknownSize' @ [35:88] ==> public open fun <T : (Any..Any?)> spliteratorUnknownSize(p0: (MutableIterator<(T..T?)>..Iterator<(T..T?)>?), p1: Int): (Spliterator<(T..T?)>..Spliterator<(T..T?)>?) defined in java.util.Spliterators[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'iterator' @ [35:111] ==> public abstract operator fun iterator(): Iterator<T> defined in kotlin.sequences.Sequence[DeserializedSimpleFunctionDescriptor]
 
@@ -50,10 +50,10 @@ Inferred types:
 
 'SinceKotlin' @ [40:1] ==> public constructor SinceKotlin(version: String) defined in kotlin.SinceKotlin[DeserializedClassConstructorDescriptor]
 
-'collect' @ [41:46] ==> public abstract fun <R : (Any..Any?), A : (Any..Any?)> collect(p0: (Collector<in (T..T?), (Any..Any?), (MutableList<T>..MutableList<T>?)>..Collector<in (T..T?), (Any..Any?), (MutableList<T>..MutableList<T>?)>?)): (MutableList<T>..MutableList<T>?) defined in java.util.stream.Stream[JavaMethodDescriptor]
+'collect' @ [41:46] ==> public abstract fun <R : (Any..Any?), A : (Any..Any?)> collect(p0: (Collector<in (T..T?), Any?, (MutableList<T>..MutableList<T>?)>..Collector<in (T..T?), Any?, (MutableList<T>..MutableList<T>?)>?)): (MutableList<T>..MutableList<T>?) defined in java.util.stream.Stream[JavaMethodDescriptor]
 Inferred types:
     <R : (Any..Any?)> -> MutableList<T>
-    <A : (Any..Any?)> -> Any
+    <A : (Any..Any?)> -> Any?
 
 'toList' @ [41:87] ==> public open fun <T : (Any..Any?)> toList(): (Collector<(T..T?), *, (MutableList<(T..T?)>..List<(T..T?)>?)>..Collector<(T..T?), *, (MutableList<(T..T?)>..List<(T..T?)>?)>?) defined in java.util.stream.Collectors[JavaMethodDescriptor]
 Inferred types:

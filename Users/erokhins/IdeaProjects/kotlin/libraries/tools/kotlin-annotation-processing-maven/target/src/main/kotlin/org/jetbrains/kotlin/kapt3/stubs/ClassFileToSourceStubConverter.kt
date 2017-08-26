@@ -112,6 +112,8 @@ Inferred types:
 
 'Any' @ [75:37] ==> public constructor Any() defined in kotlin.Any[DeserializedClassConstructorDescriptor]
 
+'toString' @ [75:42] ==> public open fun toString(): String defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
+
 'mutableMapOf' @ [78:29] ==> @SinceKotlin @InlineOnly public inline fun <K, V> mutableMapOf(): MutableMap<String, KaptJavaFileObject> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
@@ -125,7 +127,7 @@ Inferred types:
 
 'get' @ [83:51] ==> public open operator fun <T : (Any..Any?)> get(p0: (Class<(JavaFileManager..JavaFileManager?)>..Class<(JavaFileManager..JavaFileManager?)>?)): (JavaFileManager..JavaFileManager?) defined in com.sun.tools.javac.util.Context[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> JavaFileManager
+    <T : (Any..Any?)> -> (javax.tools.JavaFileManager..javax.tools.JavaFileManager?)
 
 'java' @ [83:78] ==> public val <T> KClass<JavaFileManager>.java: Class<JavaFileManager> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -208,15 +210,15 @@ Inferred types:
 
 'nil' @ [110:27] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>..List<(JCTree.JCTypeParameter..JCTree.JCTypeParameter?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCTypeParameter
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCTypeParameter..com.sun.tools.javac.tree.JCTree.JCTypeParameter?)
 
 'nil' @ [112:27] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'nil' @ [113:27] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree..JCTree?)>..List<(JCTree..JCTree?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCTree
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree..com.sun.tools.javac.tree.JCTree?)
 
 'treeMaker' @ [115:24] ==> public final val treeMaker: KaptTreeMaker defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[PropertyDescriptorImpl]
 
@@ -224,7 +226,7 @@ Inferred types:
 
 'nil' @ [115:53] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCAnnotation
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCAnnotation..com.sun.tools.javac.tree.JCTree.JCAnnotation?)
 
 'treeMaker' @ [115:60] ==> public final val treeMaker: KaptTreeMaker defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[PropertyDescriptorImpl]
 
@@ -232,7 +234,7 @@ Inferred types:
 
 'of' @ [115:101] ==> public open fun <A : (Any..Any?)> of(p0: (JCTree..JCTree?)): (List<(JCTree..JCTree?)>..List<(JCTree..JCTree?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCTree
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree..com.sun.tools.javac.tree.JCTree?)
 
 'nonExistentClass' @ [115:104] ==> val nonExistentClass: (JCTree.JCClassDecl..JCTree.JCClassDecl?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.generateNonExistentClass[LocalVariableDescriptor]
 
@@ -304,9 +306,9 @@ Inferred types:
 
 'packageName' @ [134:52] ==> val packageName: String defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertTopLevelClass[LocalVariableDescriptor]
 
-'if (correctErrorTypes) convertImports(ktFile, classDeclaration) else JavacList.nil()' @ [136:23] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<JCTree>..List<JCTree>?), elseBranch: (List<JCTree>..List<JCTree>?)): (List<JCTree>..List<JCTree>?)[SimpleFunctionDescriptorImpl]
+'if (correctErrorTypes) convertImports(ktFile, classDeclaration) else JavacList.nil()' @ [136:23] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: List<JCTree>, elseBranch: List<JCTree>): List<JCTree>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree>..com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<JCTree>
 
 'correctErrorTypes' @ [136:27] ==> public final val correctErrorTypes: Boolean defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[PropertyDescriptorImpl]
 
@@ -318,7 +320,7 @@ Inferred types:
 
 'nil' @ [136:102] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree..JCTree?)>..List<(JCTree..JCTree?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCTree
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree..com.sun.tools.javac.tree.JCTree?)
 
 'of' @ [137:33] ==> public open fun <A : (Any..Any?)> of(p0: (JCTree..JCTree?)): (List<(JCTree..JCTree?)>..List<(JCTree..JCTree?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
@@ -334,7 +336,7 @@ Inferred types:
 
 'packageClause' @ [139:63] ==> val packageClause: JCTree.JCExpression? defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertTopLevelClass[LocalVariableDescriptor]
 
-'imports' @ [139:78] ==> val imports: (List<JCTree>..List<JCTree>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertTopLevelClass[LocalVariableDescriptor]
+'imports' @ [139:78] ==> val imports: List<JCTree> defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertTopLevelClass[LocalVariableDescriptor]
 
 'classes' @ [139:88] ==> val classes: (List<(JCTree..JCTree?)>..List<(JCTree..JCTree?)>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertTopLevelClass[LocalVariableDescriptor]
 
@@ -473,7 +475,7 @@ Inferred types:
 
 'from' @ [178:26] ==> public open fun <A : (Any..Any?)> from(p0: (MutableIterable<(JCTree..JCTree?)>..Iterable<(JCTree..JCTree?)>?)): (List<(JCTree..JCTree?)>..List<(JCTree..JCTree?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCTree
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree..com.sun.tools.javac.tree.JCTree?)
 
 'imports' @ [178:31] ==> val imports: MutableList<JCTree> defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertImports[LocalVariableDescriptor]
 
@@ -495,7 +497,7 @@ Inferred types:
 
 'selectorExpression' @ [183:71] ==> public open val selectorExpression: KtExpression? defined in org.jetbrains.kotlin.psi.KtQualifiedExpression[DeserializedPropertyDescriptor]
 
-'isSynthetic' @ [191:13] ==> internal fun isSynthetic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isSynthetic' @ [191:13] ==> internal fun isSynthetic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'clazz' @ [191:25] ==> value-parameter clazz: ClassNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertClass[ValueParameterDescriptorImpl]
 
@@ -547,11 +549,11 @@ Inferred types:
 
 'clazz' @ [200:22] ==> value-parameter clazz: ClassNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertClass[ValueParameterDescriptorImpl]
 
-'isEnum' @ [200:28] ==> internal fun ClassNode.isEnum(): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isEnum' @ [200:28] ==> internal fun ClassNode.isEnum(): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'clazz' @ [201:28] ==> value-parameter clazz: ClassNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertClass[ValueParameterDescriptorImpl]
 
-'isAnnotation' @ [201:34] ==> internal fun ClassNode.isAnnotation(): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isAnnotation' @ [201:34] ==> internal fun ClassNode.isAnnotation(): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'convertModifiers' @ [203:25] ==> @Suppress private final inline fun convertModifiers(access: Int, kind: ElementKind, packageFqName: String, visibleAnnotations: List<AnnotationNode>?, invisibleAnnotations: List<AnnotationNode>?): JCTree.JCModifiers defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[SimpleFunctionDescriptorImpl]
 
@@ -589,13 +591,13 @@ Inferred types:
 
 'asString' @ [207:69] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'isPublic' @ [208:33] ==> internal fun isPublic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isPublic' @ [208:33] ==> internal fun isPublic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'clazz' @ [208:42] ==> value-parameter clazz: ClassNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertClass[ValueParameterDescriptorImpl]
 
 'access' @ [208:48] ==> public final var access: Int defined in org.jetbrains.org.objectweb.asm.tree.ClassNode[JavaPropertyDescriptor]
 
-'isFinal' @ [208:59] ==> internal fun isFinal(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isFinal' @ [208:59] ==> internal fun isFinal(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'clazz' @ [208:67] ==> value-parameter clazz: ClassNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertClass[ValueParameterDescriptorImpl]
 
@@ -706,7 +708,7 @@ Inferred types:
 
 'it' @ [231:52] ==> value-parameter it: (FieldNode..FieldNode?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertClass.<anonymous>[ValueParameterDescriptorImpl]
 
-'isEnumValue' @ [231:55] ==> internal fun FieldNode.isEnumValue(): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isEnumValue' @ [231:55] ==> internal fun FieldNode.isEnumValue(): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [231:71] ==> public inline fun <T, R> Iterable<(FieldNode..FieldNode?)>.map(transform: ((FieldNode..FieldNode?)) -> EnumValueData): List<EnumValueData> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -844,7 +846,7 @@ Inferred types:
 
 'nil' @ [262:48] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'treeMaker' @ [263:35] ==> public final val treeMaker: KaptTreeMaker defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[PropertyDescriptorImpl]
 
@@ -873,13 +875,13 @@ Inferred types:
 
 'fields' @ [268:56] ==> public final var fields: (MutableList<(FieldNode..FieldNode?)>..List<(FieldNode..FieldNode?)>?) defined in org.jetbrains.org.objectweb.asm.tree.ClassNode[JavaPropertyDescriptor]
 
-'if (it.isEnumValue()) null else convertField(it, packageFqName)' @ [269:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: JCTree.JCVariableDecl?, elseBranch: JCTree.JCVariableDecl?): JCTree.JCVariableDecl?[SimpleFunctionDescriptorImpl]
+'if (it.isEnumValue()) null else convertField(it, packageFqName)' @ [269:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: JCTree?, elseBranch: JCTree?): JCTree?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JCVariableDecl?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JCTree?
 
 'it' @ [269:17] ==> value-parameter it: FieldNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertClass.<anonymous>[ValueParameterDescriptorImpl]
 
-'isEnumValue' @ [269:20] ==> internal fun FieldNode.isEnumValue(): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isEnumValue' @ [269:20] ==> internal fun FieldNode.isEnumValue(): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'convertField' @ [269:45] ==> private final fun convertField(field: FieldNode, packageFqName: String, explicitInitializer: JCTree.JCExpression? = ...): JCTree.JCVariableDecl? defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[SimpleFunctionDescriptorImpl]
 
@@ -1247,7 +1249,7 @@ Inferred types:
 
 'asString' @ [349:77] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'isSynthetic' @ [358:13] ==> internal fun isSynthetic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isSynthetic' @ [358:13] ==> internal fun isSynthetic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'field' @ [358:25] ==> value-parameter field: FieldNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertField[ValueParameterDescriptorImpl]
 
@@ -1308,7 +1310,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JCExpression
 
-'isEnum' @ [372:34] ==> internal fun isEnum(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isEnum' @ [372:34] ==> internal fun isEnum(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'field' @ [372:41] ==> value-parameter field: FieldNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertField[ValueParameterDescriptorImpl]
 
@@ -1380,7 +1382,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JCExpression?
 
-'isFinal' @ [385:34] ==> internal fun isFinal(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isFinal' @ [385:34] ==> internal fun isFinal(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'field' @ [385:42] ==> value-parameter field: FieldNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertField[ValueParameterDescriptorImpl]
 
@@ -1418,13 +1420,13 @@ Inferred types:
 
 'descriptor' @ [393:45] ==> val descriptor: CallableDescriptor defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[LocalVariableDescriptor]
 
-'isSynthetic' @ [393:81] ==> internal fun isSynthetic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isSynthetic' @ [393:81] ==> internal fun isSynthetic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [393:93] ==> value-parameter method: MethodNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
 'access' @ [393:100] ==> public final var access: Int defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaPropertyDescriptor]
 
-'isStatic' @ [394:48] ==> internal fun isStatic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isStatic' @ [394:48] ==> internal fun isStatic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [394:57] ==> value-parameter method: MethodNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
@@ -1436,7 +1438,7 @@ Inferred types:
 
 'endsWith' @ [394:87] ==> public fun String.endsWith(suffix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'isSynthetic' @ [396:13] ==> internal fun isSynthetic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isSynthetic' @ [396:13] ==> internal fun isSynthetic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [396:25] ==> value-parameter method: MethodNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
@@ -1458,9 +1460,9 @@ Inferred types:
             (method.visibleAnnotations ?: emptyList()) + AnnotationNode(Type.getType(Override::class.java).descriptor)
         } else {
             method.visibleAnnotations
-        }' @ [399:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<AnnotationNode>..List<AnnotationNode>?), elseBranch: (List<AnnotationNode>..List<AnnotationNode>?)): (List<AnnotationNode>..List<AnnotationNode>?)[SimpleFunctionDescriptorImpl]
+        }' @ [399:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<(AnnotationNode..AnnotationNode?)>..List<(AnnotationNode..AnnotationNode?)>?), elseBranch: (List<(AnnotationNode..AnnotationNode?)>..List<(AnnotationNode..AnnotationNode?)>?)): (List<(AnnotationNode..AnnotationNode?)>..List<(AnnotationNode..AnnotationNode?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.List<org.jetbrains.org.objectweb.asm.tree.AnnotationNode>..kotlin.collections.List<org.jetbrains.org.objectweb.asm.tree.AnnotationNode>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.collections.List<(org.jetbrains.org.objectweb.asm.tree.AnnotationNode..org.jetbrains.org.objectweb.asm.tree.AnnotationNode?)>..kotlin.collections.List<(org.jetbrains.org.objectweb.asm.tree.AnnotationNode..org.jetbrains.org.objectweb.asm.tree.AnnotationNode?)>?)
 
 'isOverridden' @ [399:38] ==> val isOverridden: Boolean defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[LocalVariableDescriptor]
 
@@ -1513,7 +1515,7 @@ Inferred types:
 
 'containingClass' @ [409:21] ==> value-parameter containingClass: ClassNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
-'isEnum' @ [409:37] ==> internal fun ClassNode.isEnum(): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isEnum' @ [409:37] ==> internal fun ClassNode.isEnum(): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'isConstructor' @ [409:49] ==> val isConstructor: Boolean defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[LocalVariableDescriptor]
 
@@ -1537,7 +1539,7 @@ Inferred types:
 
 'packageFqName' @ [413:37] ==> value-parameter packageFqName: String defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
-'visibleAnnotations' @ [413:52] ==> val visibleAnnotations: (List<AnnotationNode>..List<AnnotationNode>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[LocalVariableDescriptor]
+'visibleAnnotations' @ [413:52] ==> val visibleAnnotations: (List<(AnnotationNode..AnnotationNode?)>..List<(AnnotationNode..AnnotationNode?)>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[LocalVariableDescriptor]
 
 'method' @ [413:72] ==> value-parameter method: MethodNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
@@ -1563,7 +1565,7 @@ Inferred types:
 
 'method' @ [418:30] ==> value-parameter method: MethodNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
-'getParametersInfo' @ [418:37] ==> internal fun MethodNode.getParametersInfo(containingClass: ClassNode): List<ParameterInfo> defined in org.jetbrains.kotlin.kapt3.stubs[SimpleFunctionDescriptorImpl]
+'getParametersInfo' @ [418:37] ==> internal fun MethodNode.getParametersInfo(containingClass: ClassNode): List<ParameterInfo> defined in org.jetbrains.kotlin.kapt3.stubs in file parseParameters.kt[SimpleFunctionDescriptorImpl]
 
 'containingClass' @ [418:55] ==> value-parameter containingClass: ClassNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
@@ -1618,7 +1620,7 @@ Inferred types:
 
 'method' @ [429:63] ==> value-parameter method: MethodNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
-'isVarargs' @ [429:70] ==> internal fun MethodNode.isVarargs(): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isVarargs' @ [429:70] ==> internal fun MethodNode.isVarargs(): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'VARARGS' @ [429:89] ==> public const final val VARARGS: Long defined in com.sun.tools.javac.code.Flags[JavaPropertyDescriptor]
 
@@ -1798,7 +1800,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JCBlock?
 
-'isAbstract' @ [452:20] ==> internal fun isAbstract(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isAbstract' @ [452:20] ==> internal fun isAbstract(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'method' @ [452:31] ==> value-parameter method: MethodNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
@@ -1836,7 +1838,7 @@ Inferred types:
 
 'containingClass' @ [454:37] ==> value-parameter containingClass: ClassNode defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[ValueParameterDescriptorImpl]
 
-'isEnum' @ [454:53] ==> internal fun ClassNode.isEnum(): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isEnum' @ [454:53] ==> internal fun ClassNode.isEnum(): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'treeMaker' @ [455:13] ==> public final val treeMaker: KaptTreeMaker defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[PropertyDescriptorImpl]
 
@@ -1844,7 +1846,7 @@ Inferred types:
 
 'nil' @ [455:42] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCStatement..JCTree.JCStatement?)>..List<(JCTree.JCStatement..JCTree.JCStatement?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCStatement
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCStatement..com.sun.tools.javac.tree.JCTree.JCStatement?)
 
 'if (isConstructor) {
             // We already checked it in convertClass()
@@ -1912,9 +1914,9 @@ Inferred types:
                 JavacList.of<JCStatement>(treeMaker.Exec(call))
             } else {
                 JavacList.nil<JCStatement>()
-            }' @ [462:45] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<JCTree.JCStatement>..List<JCTree.JCStatement>?), elseBranch: (List<JCTree.JCStatement>..List<JCTree.JCStatement>?)): (List<JCTree.JCStatement>..List<JCTree.JCStatement>?)[SimpleFunctionDescriptorImpl]
+            }' @ [462:45] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (List<(JCTree.JCStatement..JCTree.JCStatement?)>..List<(JCTree.JCStatement..JCTree.JCStatement?)>?), elseBranch: (List<(JCTree.JCStatement..JCTree.JCStatement?)>..List<(JCTree.JCStatement..JCTree.JCStatement?)>?)): (List<(JCTree.JCStatement..JCTree.JCStatement?)>..List<(JCTree.JCStatement..JCTree.JCStatement?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree.JCStatement>..com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree.JCStatement>?)
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.sun.tools.javac.util.List<(com.sun.tools.javac.tree.JCTree.JCStatement..com.sun.tools.javac.tree.JCTree.JCStatement?)>..com.sun.tools.javac.util.List<(com.sun.tools.javac.tree.JCTree.JCStatement..com.sun.tools.javac.tree.JCTree.JCStatement?)>?)
 
 'superClassConstructor' @ [462:49] ==> val superClassConstructor: ClassConstructorDescriptor? defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[LocalVariableDescriptor]
 
@@ -1949,7 +1951,7 @@ Inferred types:
 
 'nil' @ [466:54] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'treeMaker' @ [466:61] ==> public final val treeMaker: KaptTreeMaker defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[PropertyDescriptorImpl]
 
@@ -1975,7 +1977,7 @@ Inferred types:
 
 'Block' @ [472:23] ==> public open fun Block(p0: Long, p1: (List<(JCTree.JCStatement..JCTree.JCStatement?)>..List<(JCTree.JCStatement..JCTree.JCStatement?)>?)): (JCTree.JCBlock..JCTree.JCBlock?) defined in org.jetbrains.kotlin.kapt3.javac.KaptTreeMaker[JavaMethodDescriptor]
 
-'superClassConstructorCall' @ [472:32] ==> val superClassConstructorCall: (List<JCTree.JCStatement>..List<JCTree.JCStatement>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[LocalVariableDescriptor]
+'superClassConstructorCall' @ [472:32] ==> val superClassConstructorCall: (List<(JCTree.JCStatement..JCTree.JCStatement?)>..List<(JCTree.JCStatement..JCTree.JCStatement?)>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[LocalVariableDescriptor]
 
 'if (asmReturnType == Type.VOID_TYPE) {
             treeMaker.Block(0, JavacList.nil())
@@ -1996,7 +1998,7 @@ Inferred types:
 
 'nil' @ [474:42] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCStatement..JCTree.JCStatement?)>..List<(JCTree.JCStatement..JCTree.JCStatement?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCStatement
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCStatement..com.sun.tools.javac.tree.JCTree.JCStatement?)
 
 'treeMaker' @ [476:35] ==> public final val treeMaker: KaptTreeMaker defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[PropertyDescriptorImpl]
 
@@ -2014,7 +2016,7 @@ Inferred types:
 
 'of' @ [477:42] ==> public open fun <A : (Any..Any?)> of(p0: (JCTree.JCStatement..JCTree.JCStatement?)): (List<(JCTree.JCStatement..JCTree.JCStatement?)>..List<(JCTree.JCStatement..JCTree.JCStatement?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCStatement
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCStatement..com.sun.tools.javac.tree.JCTree.JCStatement?)
 
 'returnStatement' @ [477:45] ==> val returnStatement: (JCTree.JCReturn..JCTree.JCReturn?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertMethod[LocalVariableDescriptor]
 
@@ -2318,10 +2320,10 @@ Inferred types:
 
 'visibleAnnotations' @ [586:27] ==> value-parameter visibleAnnotations: List<AnnotationNode>? defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[ValueParameterDescriptorImpl]
 
-'fold' @ [586:47] ==> public inline fun <T, R> Iterable<AnnotationNode>.fold(initial: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?), operation: ((List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?), AnnotationNode) -> (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?)): (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [586:47] ==> public inline fun <T, R> Iterable<AnnotationNode>.fold(initial: (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?), operation: (acc: (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?), AnnotationNode) -> (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?)): (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AnnotationNode
-    <R> -> (com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree.JCAnnotation>..com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree.JCAnnotation>?)
+    <R> -> (com.sun.tools.javac.util.List<(com.sun.tools.javac.tree.JCTree.JCAnnotation..com.sun.tools.javac.tree.JCTree.JCAnnotation?)>..com.sun.tools.javac.util.List<(com.sun.tools.javac.tree.JCTree.JCAnnotation..com.sun.tools.javac.tree.JCTree.JCAnnotation?)>?)
 
 'nil' @ [586:62] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
@@ -2338,28 +2340,28 @@ Inferred types:
     <T> -> JCAnnotation
     <R> -> (com.sun.tools.javac.util.List<(com.sun.tools.javac.tree.JCTree.JCAnnotation..com.sun.tools.javac.tree.JCTree.JCAnnotation?)>..com.sun.tools.javac.util.List<(com.sun.tools.javac.tree.JCTree.JCAnnotation..com.sun.tools.javac.tree.JCTree.JCAnnotation?)>?)
 
-'list' @ [587:59] ==> value-parameter list: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
+'list' @ [587:59] ==> value-parameter list: (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
 
 'prepend' @ [587:64] ==> public open fun prepend(p0: (JCTree.JCAnnotation..JCTree.JCAnnotation?)): (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 
 'it' @ [587:72] ==> value-parameter it: JCTree.JCAnnotation defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'list' @ [587:81] ==> value-parameter list: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
+'list' @ [587:81] ==> value-parameter list: (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
 
 'nil' @ [588:24] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCAnnotation
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCAnnotation..com.sun.tools.javac.tree.JCTree.JCAnnotation?)
 
-'annotations' @ [589:9] ==> var annotations: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[LocalVariableDescriptor]
+'annotations' @ [589:9] ==> var annotations: List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)> defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[LocalVariableDescriptor]
 
 'invisibleAnnotations' @ [589:23] ==> value-parameter invisibleAnnotations: List<AnnotationNode>? defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[ValueParameterDescriptorImpl]
 
-'fold' @ [589:45] ==> public inline fun <T, R> Iterable<AnnotationNode>.fold(initial: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?), operation: ((List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?), AnnotationNode) -> (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?)): (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [589:45] ==> public inline fun <T, R> Iterable<AnnotationNode>.fold(initial: List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>, operation: (acc: List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>, AnnotationNode) -> List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>): List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AnnotationNode
-    <R> -> (com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree.JCAnnotation>..com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree.JCAnnotation>?)
+    <R> -> List<(com.sun.tools.javac.tree.JCTree.JCAnnotation..com.sun.tools.javac.tree.JCTree.JCAnnotation?)>
 
-'annotations' @ [589:50] ==> var annotations: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[LocalVariableDescriptor]
+'annotations' @ [589:50] ==> var annotations: List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)> defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[LocalVariableDescriptor]
 
 'convertAnnotation' @ [590:13] ==> private final fun convertAnnotation(annotation: AnnotationNode, packageFqName: String? = ..., filtered: Boolean = ...): JCTree.JCAnnotation? defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter[SimpleFunctionDescriptorImpl]
 
@@ -2372,15 +2374,15 @@ Inferred types:
     <T> -> JCAnnotation
     <R> -> (com.sun.tools.javac.util.List<(com.sun.tools.javac.tree.JCTree.JCAnnotation..com.sun.tools.javac.tree.JCTree.JCAnnotation?)>..com.sun.tools.javac.util.List<(com.sun.tools.javac.tree.JCTree.JCAnnotation..com.sun.tools.javac.tree.JCTree.JCAnnotation?)>?)
 
-'list' @ [590:59] ==> value-parameter list: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
+'list' @ [590:59] ==> value-parameter list: List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)> defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
 
 'prepend' @ [590:64] ==> public open fun prepend(p0: (JCTree.JCAnnotation..JCTree.JCAnnotation?)): (List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>..List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 
 'it' @ [590:72] ==> value-parameter it: JCTree.JCAnnotation defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'list' @ [590:81] ==> value-parameter list: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
+'list' @ [590:81] ==> value-parameter list: List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)> defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers.<anonymous>[ValueParameterDescriptorImpl]
 
-'annotations' @ [591:14] ==> var annotations: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[LocalVariableDescriptor]
+'annotations' @ [591:14] ==> var annotations: List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)> defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[LocalVariableDescriptor]
 
 'when (kind) {
             ElementKind.ENUM -> access and CLASS_MODIFIERS and Opcodes.ACC_ABSTRACT.inv().toLong()
@@ -2441,7 +2443,7 @@ Inferred types:
 
 'flags' @ [601:36] ==> val flags: Long defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[LocalVariableDescriptor]
 
-'annotations' @ [601:43] ==> var annotations: (List<JCTree.JCAnnotation>..List<JCTree.JCAnnotation>?) defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[LocalVariableDescriptor]
+'annotations' @ [601:43] ==> var annotations: List<(JCTree.JCAnnotation..JCTree.JCAnnotation?)> defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.convertModifiers[LocalVariableDescriptor]
 
 'getType' @ [605:35] ==> public open fun getType(p0: (String..String?)): (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaMethodDescriptor]
 
@@ -2656,7 +2658,7 @@ Inferred types:
 
 'nil' @ [637:64] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'mapJList' @ [637:71] ==> internal inline fun <T, R> mapJList(values: Iterable<Byte>?, f: (Byte) -> JCTree.JCExpression?): List<(JCTree.JCExpression..JCTree.JCExpression?)> defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2677,7 +2679,7 @@ Inferred types:
 
 'nil' @ [638:67] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'mapJList' @ [638:74] ==> internal inline fun <T, R> mapJList(values: Iterable<Boolean>?, f: (Boolean) -> JCTree.JCExpression?): List<(JCTree.JCExpression..JCTree.JCExpression?)> defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2698,7 +2700,7 @@ Inferred types:
 
 'nil' @ [639:64] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'mapJList' @ [639:71] ==> internal inline fun <T, R> mapJList(values: Iterable<Char>?, f: (Char) -> JCTree.JCExpression?): List<(JCTree.JCExpression..JCTree.JCExpression?)> defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2719,7 +2721,7 @@ Inferred types:
 
 'nil' @ [640:65] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'mapJList' @ [640:72] ==> internal inline fun <T, R> mapJList(values: Iterable<Short>?, f: (Short) -> JCTree.JCExpression?): List<(JCTree.JCExpression..JCTree.JCExpression?)> defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2740,7 +2742,7 @@ Inferred types:
 
 'nil' @ [641:63] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'mapJList' @ [641:70] ==> internal inline fun <T, R> mapJList(values: Iterable<Int>?, f: (Int) -> JCTree.JCExpression?): List<(JCTree.JCExpression..JCTree.JCExpression?)> defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2761,7 +2763,7 @@ Inferred types:
 
 'nil' @ [642:64] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'mapJList' @ [642:71] ==> internal inline fun <T, R> mapJList(values: Iterable<Long>?, f: (Long) -> JCTree.JCExpression?): List<(JCTree.JCExpression..JCTree.JCExpression?)> defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2782,7 +2784,7 @@ Inferred types:
 
 'nil' @ [643:65] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'mapJList' @ [643:72] ==> internal inline fun <T, R> mapJList(values: Iterable<Float>?, f: (Float) -> JCTree.JCExpression?): List<(JCTree.JCExpression..JCTree.JCExpression?)> defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2803,7 +2805,7 @@ Inferred types:
 
 'nil' @ [644:66] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'mapJList' @ [644:73] ==> internal inline fun <T, R> mapJList(values: Iterable<Double>?, f: (Double) -> JCTree.JCExpression?): List<(JCTree.JCExpression..JCTree.JCExpression?)> defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2854,7 +2856,7 @@ Inferred types:
 
 'nil' @ [651:62] ==> public open fun <A : (Any..Any?)> nil(): (List<(JCTree.JCExpression..JCTree.JCExpression?)>..List<(JCTree.JCExpression..JCTree.JCExpression?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> JCExpression
+    <A : (Any..Any?)> -> (com.sun.tools.javac.tree.JCTree.JCExpression..com.sun.tools.javac.tree.JCTree.JCExpression?)
 
 'mapJList' @ [651:69] ==> internal inline fun <T, R> mapJList(values: Iterable<Any?>?, f: (Any?) -> JCTree.JCExpression?): List<(JCTree.JCExpression..JCTree.JCExpression?)> defined in org.jetbrains.kotlin.kapt3[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -2893,11 +2895,11 @@ Inferred types:
 
 'java' @ [655:110] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'canonicalName' @ [655:115] ==> public final val <T : (Any..Any?)> Class<out Any>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'when (type) {
         Type.BYTE_TYPE -> 0
@@ -2909,9 +2911,9 @@ Inferred types:
         Type.FLOAT_TYPE -> 0.0F
         Type.DOUBLE_TYPE -> 0.0
         else -> null
-    }' @ [659:53] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?, entry1: {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?, entry2: {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?, entry3: {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?, entry4: {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?, entry5: {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?, entry6: {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?, entry7: {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?, entry8: {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?): {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?[SimpleFunctionDescriptorImpl]
+    }' @ [659:53] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any?, entry1: Any?, entry2: Any?, entry3: Any?, entry4: Any?, entry5: Any?, entry6: Any?, entry7: Any?, entry8: Any?): Any?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {java.io.Serializable & Comparable<{Long & Boolean & Char & Double & Float}>}?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any?
 
 'type' @ [659:59] ==> value-parameter type: Type defined in org.jetbrains.kotlin.kapt3.stubs.ClassFileToSourceStubConverter.getDefaultValue[ValueParameterDescriptorImpl]
 

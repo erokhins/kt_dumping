@@ -63,15 +63,11 @@ Inferred types:
 
 'isEmpty' @ [56:29] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'Annotations' @ [56:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [56:52] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
-
-'Annotations' @ [57:18] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [57:30] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
-'createKotlinType' @ [59:22] ==> private fun createKotlinType(typeAnnotations: Annotations, typeConstructor: TypeConstructor, arguments: List<KTypeProjection>, nullable: Boolean): SimpleType defined in kotlin.reflect.full[SimpleFunctionDescriptorImpl]
+'createKotlinType' @ [59:22] ==> private fun createKotlinType(typeAnnotations: Annotations, typeConstructor: TypeConstructor, arguments: List<KTypeProjection>, nullable: Boolean): SimpleType defined in kotlin.reflect.full in file KClassifiers.kt[SimpleFunctionDescriptorImpl]
 
 'typeAnnotations' @ [59:39] ==> val typeAnnotations: Annotations defined in kotlin.reflect.full.createType[LocalVariableDescriptor]
 
@@ -169,7 +165,7 @@ Inferred types:
 
 'descriptor' @ [90:54] ==> public abstract val descriptor: ClassifierDescriptor defined in kotlin.reflect.jvm.internal.KClassifierImpl[PropertyDescriptorImpl]
 
-'createType' @ [91:36] ==> @SinceKotlin public fun KClassifier.createType(arguments: List<KTypeProjection> = ..., nullable: Boolean = ..., annotations: List<Annotation> = ...): KType defined in kotlin.reflect.full[SimpleFunctionDescriptorImpl]
+'createType' @ [91:36] ==> @SinceKotlin public fun KClassifier.createType(arguments: List<KTypeProjection> = ..., nullable: Boolean = ..., annotations: List<Annotation> = ...): KType defined in kotlin.reflect.full in file KClassifiers.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [93:30] ==> val descriptor: ClassifierDescriptor defined in kotlin.reflect.full.<get-starProjectedType>[LocalVariableDescriptor]
 
@@ -181,9 +177,9 @@ Inferred types:
 
 'isEmpty' @ [94:28] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'createType' @ [94:46] ==> @SinceKotlin public fun KClassifier.createType(arguments: List<KTypeProjection> = ..., nullable: Boolean = ..., annotations: List<Annotation> = ...): KType defined in kotlin.reflect.full[SimpleFunctionDescriptorImpl]
+'createType' @ [94:46] ==> @SinceKotlin public fun KClassifier.createType(arguments: List<KTypeProjection> = ..., nullable: Boolean = ..., annotations: List<Annotation> = ...): KType defined in kotlin.reflect.full in file KClassifiers.kt[SimpleFunctionDescriptorImpl]
 
-'createType' @ [96:16] ==> @SinceKotlin public fun KClassifier.createType(arguments: List<KTypeProjection> = ..., nullable: Boolean = ..., annotations: List<Annotation> = ...): KType defined in kotlin.reflect.full[SimpleFunctionDescriptorImpl]
+'createType' @ [96:16] ==> @SinceKotlin public fun KClassifier.createType(arguments: List<KTypeProjection> = ..., nullable: Boolean = ..., annotations: List<Annotation> = ...): KType defined in kotlin.reflect.full in file KClassifiers.kt[SimpleFunctionDescriptorImpl]
 
 'typeParameters' @ [96:27] ==> val typeParameters: List<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in kotlin.reflect.full.<get-starProjectedType>[LocalVariableDescriptor]
 

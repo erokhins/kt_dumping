@@ -268,10 +268,10 @@ Inferred types:
 
 'supertypes' @ [185:13] ==> @SinceKotlin public abstract val supertypes: List<KType> defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
-'mapNotNull' @ [185:24] ==> public inline fun <T, R : Any> Iterable<KType>.mapNotNull(transform: (KType) -> KClass<out Any>?): List<KClass<out Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapNotNull' @ [185:24] ==> public inline fun <T, R : Any> Iterable<KType>.mapNotNull(transform: (KType) -> KClass<*>?): List<KClass<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KType
-    <R : Any> -> KClass<out Any>
+    <R : Any> -> KClass<*>
 
 'it' @ [185:37] ==> value-parameter it: KType defined in kotlin.reflect.full.<get-superclasses>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -281,14 +281,14 @@ Inferred types:
 
 'dfs' @ [193:17] ==> public open fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull nodes: (MutableCollection<(KType..KType?)>..Collection<(KType..KType?)>), @NotNull neighbors: DFS.Neighbors<(KType..KType?)>, @NotNull visited: DFS.Visited<(KType..KType?)>, @NotNull handler: DFS.NodeHandler<(KType..KType?), (LinkedList<(KType..KType?)>..LinkedList<(KType..KType?)>?)>): (LinkedList<(KType..KType?)>..LinkedList<(KType..KType?)>?) defined in org.jetbrains.kotlin.utils.DFS[JavaMethodDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> KType
-    <R : (Any..Any?)> -> LinkedList<(kotlin.reflect.KType..kotlin.reflect.KType?)>
+    <N : (Any..Any?)> -> (kotlin.reflect.KType..kotlin.reflect.KType?)
+    <R : (Any..Any?)> -> (java.util.LinkedList<(kotlin.reflect.KType..kotlin.reflect.KType?)>..java.util.LinkedList<(kotlin.reflect.KType..kotlin.reflect.KType?)>?)
 
 'supertypes' @ [194:13] ==> @SinceKotlin public abstract val supertypes: List<KType> defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
-'Neighbors' @ [195:17] ==> public final fun <N : (Any..Any?)> Neighbors(function: ((KType..KType?)) -> (MutableIterable<(KType..KType?)>..Iterable<(KType..KType?)>)): DFS.Neighbors<KType> defined in org.jetbrains.kotlin.utils.DFS[SimpleFunctionDescriptorImpl]
+'Neighbors' @ [195:17] ==> public final fun <N : (Any..Any?)> Neighbors(function: (current: (KType..KType?)) -> (MutableIterable<(KType..KType?)>..Iterable<(KType..KType?)>)): DFS.Neighbors<(KType..KType?)> defined in org.jetbrains.kotlin.utils.DFS[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <N : (Any..Any?)> -> KType
+    <N : (Any..Any?)> -> (kotlin.reflect.KType..kotlin.reflect.KType?)
 
 'current' @ [196:29] ==> value-parameter current: (KType..KType?) defined in kotlin.reflect.full.<get-allSupertypes>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -298,7 +298,7 @@ Inferred types:
 
 'current' @ [196:126] ==> value-parameter current: (KType..KType?) defined in kotlin.reflect.full.<get-allSupertypes>.<anonymous>[ValueParameterDescriptorImpl]
 
-'klass' @ [197:34] ==> val klass: KClass<out Any> defined in kotlin.reflect.full.<get-allSupertypes>.<anonymous>[LocalVariableDescriptor]
+'klass' @ [197:34] ==> val klass: KClass<*> defined in kotlin.reflect.full.<get-allSupertypes>.<anonymous>[LocalVariableDescriptor]
 
 'supertypes' @ [197:40] ==> @SinceKotlin public abstract val supertypes: List<KType> defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
@@ -368,7 +368,7 @@ Inferred types:
 
 'VisitedWithSet' @ [211:17] ==> public constructor VisitedWithSet<N : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.DFS.VisitedWithSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> KType
+    <N : (Any..Any?)> -> (kotlin.reflect.KType..kotlin.reflect.KType?)
 
 'DFS.NodeHandlerWithListResult<KType, KType>' @ [212:22] ==> protected/*protected and package*/ constructor NodeHandlerWithListResult<N : (Any..Any?), R : (Any..Any?)>() defined in org.jetbrains.kotlin.utils.DFS.NodeHandlerWithListResult[JavaClassConstructorDescriptor]
 Inferred types:
@@ -385,10 +385,10 @@ Inferred types:
 
 'allSupertypes' @ [227:13] ==> @SinceKotlin public val KClass<*>.allSupertypes: Collection<KType> defined in kotlin.reflect.full in file KClasses.kt[PropertyDescriptorImpl]
 
-'map' @ [227:27] ==> public inline fun <T, R> Iterable<KType>.map(transform: (KType) -> KClass<out Any>): List<KClass<out Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [227:27] ==> public inline fun <T, R> Iterable<KType>.map(transform: (KType) -> KClass<*>): List<KClass<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KType
-    <R> -> KClass<out Any>
+    <R> -> KClass<*>
 
 'supertype' @ [228:9] ==> value-parameter supertype: KType defined in kotlin.reflect.full.<get-allSuperclasses>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -404,17 +404,19 @@ Inferred types:
 
 'base' @ [236:17] ==> value-parameter base: KClass<*> defined in kotlin.reflect.full.isSubclassOf[ValueParameterDescriptorImpl]
 
-'ifAny' @ [237:13] ==> public final fun <N : (Any..Any?)> ifAny(@NotNull nodes: (MutableCollection<(KClass<out Any>..KClass<out Any>?)>..Collection<(KClass<out Any>..KClass<out Any>?)>), @NotNull neighbors: ((KClass<out Any>..KClass<out Any>?)) -> (MutableIterable<(KClass<out Any>..KClass<out Any>?)>..Iterable<(KClass<out Any>..KClass<out Any>?)>), @NotNull predicate: ((KClass<out Any>..KClass<out Any>?)) -> (Boolean..Boolean?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
+'ifAny' @ [237:13] ==> public final fun <N : (Any..Any?)> ifAny(@NotNull nodes: (MutableCollection<(KClass<*>..KClass<*>?)>..Collection<(KClass<*>..KClass<*>?)>), @NotNull neighbors: (current: (KClass<*>..KClass<*>?)) -> (MutableIterable<(KClass<*>..KClass<*>?)>..Iterable<(KClass<*>..KClass<*>?)>), @NotNull predicate: ((KClass<*>..KClass<*>?)) -> (Boolean..Boolean?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
-    <N : (Any..Any?)> -> KClass<out Any>
+    <N : (Any..Any?)> -> (kotlin.reflect.KClass<*>..kotlin.reflect.KClass<*>?)
 
-'listOf' @ [237:19] ==> public fun <T> listOf(element: KClass<out Any>): List<KClass<out Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [237:19] ==> public fun <T> listOf(element: KClass<*>): List<KClass<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KClass<out Any>
+    <T> -> KClass<*>
 
 'this' @ [237:26] ==> <this> defined in kotlin.reflect.full.isSubclassOf[ReceiverParameterDescriptorImpl]
 
-'it' @ [237:60] ==> value-parameter it: (KClass<out Any>..KClass<out Any>?) defined in kotlin.reflect.full.isSubclassOf.<anonymous>[ValueParameterDescriptorImpl]
+'superclasses' @ [237:44] ==> @SinceKotlin public val KClass<*>.superclasses: List<KClass<*>> defined in kotlin.reflect.full in file KClasses.kt[PropertyDescriptorImpl]
+
+'it' @ [237:60] ==> value-parameter it: (KClass<*>..KClass<*>?) defined in kotlin.reflect.full.isSubclassOf.<anonymous>[ValueParameterDescriptorImpl]
 
 'base' @ [237:66] ==> value-parameter base: KClass<*> defined in kotlin.reflect.full.isSubclassOf[ValueParameterDescriptorImpl]
 
@@ -467,6 +469,8 @@ Inferred types:
 'all' @ [280:71] ==> public inline fun <T> Iterable<KParameter>.all(predicate: (KParameter) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KParameter
+
+'isOptional' @ [280:87] ==> public abstract val isOptional: Boolean defined in kotlin.reflect.KParameter[DeserializedPropertyDescriptor]
 
 'IllegalArgumentException' @ [281:38] ==> public final fun <init>(p0: (String..String?)): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
 

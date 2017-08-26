@@ -1,6 +1,6 @@
 'create' @ [32:38] ==> @NotNull public open fun <T : (Any..Any?)> create(@NotNull @NonNls p0: String): CompilerConfigurationKey<(List<String>..List<String>?)> defined in org.jetbrains.kotlin.config.CompilerConfigurationKey[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'CliOption' @ [37:31] ==> public constructor CliOption(name: String, valueDescription: String, description: String, required: Boolean = ..., allowMultipleOccurrences: Boolean = ...) defined in org.jetbrains.kotlin.compiler.plugin.CliOption[DeserializedClassConstructorDescriptor]
 
@@ -31,9 +31,7 @@ Inferred types:
 
 'getList' @ [48:39] ==> @NotNull public open fun <T : (Any..Any?)> getList(@NotNull p0: CompilerConfigurationKey<(MutableList<(String..String?)>..List<(String..String?)>?)>): (MutableList<(String..String?)>..List<(String..String?)>) defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'SourceSectionsConfigurationKeys' @ [48:47] ==> public object SourceSectionsConfigurationKeys defined in org.jetbrains.kotlin.sourceSections in file SourceSectionsPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'SECTIONS_OPTION' @ [48:79] ==> public final val SECTIONS_OPTION: CompilerConfigurationKey<List<String>> defined in org.jetbrains.kotlin.sourceSections.SourceSectionsConfigurationKeys[PropertyDescriptorImpl]
 
@@ -51,9 +49,7 @@ Inferred types:
 
 'put' @ [50:27] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(List<String>..List<String>?)>, @NotNull p1: List<String>): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
-
-'SourceSectionsConfigurationKeys' @ [50:31] ==> public object SourceSectionsConfigurationKeys defined in org.jetbrains.kotlin.sourceSections in file SourceSectionsPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'SECTIONS_OPTION' @ [50:63] ==> public final val SECTIONS_OPTION: CompilerConfigurationKey<List<String>> defined in org.jetbrains.kotlin.sourceSections.SourceSectionsConfigurationKeys[PropertyDescriptorImpl]
 
@@ -69,13 +65,11 @@ Inferred types:
 
 'get' @ [58:38] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(List<String>..List<String>?)>): List<String>? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
-
-'SourceSectionsConfigurationKeys' @ [58:42] ==> public object SourceSectionsConfigurationKeys defined in org.jetbrains.kotlin.sourceSections in file SourceSectionsPlugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'SECTIONS_OPTION' @ [58:74] ==> public final val SECTIONS_OPTION: CompilerConfigurationKey<List<String>> defined in org.jetbrains.kotlin.sourceSections.SourceSectionsConfigurationKeys[PropertyDescriptorImpl]
 
-'registerAllowedSourceSections' @ [59:9] ==> public fun registerAllowedSourceSections(project: Project, sections: List<String>): Unit defined in org.jetbrains.kotlin.sourceSections[SimpleFunctionDescriptorImpl]
+'registerAllowedSourceSections' @ [59:9] ==> public fun registerAllowedSourceSections(project: Project, sections: List<String>): Unit defined in org.jetbrains.kotlin.sourceSections in file SourceSectionsPlugin.kt[SimpleFunctionDescriptorImpl]
 
 'project' @ [59:39] ==> value-parameter project: MockProject defined in org.jetbrains.kotlin.sourceSections.SourceSectionsComponentRegistrar.registerProjectComponents[ValueParameterDescriptorImpl]
 

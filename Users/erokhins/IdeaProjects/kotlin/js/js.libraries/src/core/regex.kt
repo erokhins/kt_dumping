@@ -243,7 +243,7 @@ Inferred types:
 
 'replacement' @ [132:82] ==> value-parameter replacement: String defined in kotlin.text.Regex.replaceFirst[ValueParameterDescriptorImpl]
 
-'require' @ [141:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [141:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'limit' @ [141:17] ==> value-parameter limit: Int = ... defined in kotlin.text.Regex.split[ValueParameterDescriptorImpl]
 

@@ -4,19 +4,13 @@
 
 'NameShortener' @ [7:40] ==> public constructor NameShortener(type: String) defined in org.jetbrains.kotlin.annotation.CompactAnnotationWriter.NameShortener[ClassConstructorDescriptorImpl]
 
-'Notation' @ [7:54] ==> public object CompactNotationType defined in org.jetbrains.kotlin.annotation in file CompactNotationType.kt[FakeCallableDescriptorForObject]
-
 'SHORTENED_ANNOTATION' @ [7:63] ==> public const final val SHORTENED_ANNOTATION: String defined in org.jetbrains.kotlin.annotation.CompactNotationType[PropertyDescriptorImpl]
 
 'NameShortener' @ [8:36] ==> public constructor NameShortener(type: String) defined in org.jetbrains.kotlin.annotation.CompactAnnotationWriter.NameShortener[ClassConstructorDescriptorImpl]
 
-'Notation' @ [8:50] ==> public object CompactNotationType defined in org.jetbrains.kotlin.annotation in file CompactNotationType.kt[FakeCallableDescriptorForObject]
-
 'SHORTENED_PACKAGE_NAME' @ [8:59] ==> public const final val SHORTENED_PACKAGE_NAME: String defined in org.jetbrains.kotlin.annotation.CompactNotationType[PropertyDescriptorImpl]
 
 'writeLine' @ [11:9] ==> protected final fun writeLine(vararg parts: String?): Unit defined in org.jetbrains.kotlin.annotation.CompactAnnotationWriter[SimpleFunctionDescriptorImpl]
-
-'Notation' @ [11:19] ==> public object CompactNotationType defined in org.jetbrains.kotlin.annotation in file CompactNotationType.kt[FakeCallableDescriptorForObject]
 
 'CLASS_DECLARATION' @ [11:28] ==> public const final val CLASS_DECLARATION: String defined in org.jetbrains.kotlin.annotation.CompactNotationType[PropertyDescriptorImpl]
 
@@ -26,8 +20,6 @@
 
 'writeAnnotated' @ [15:9] ==> private final fun writeAnnotated(type: String, annotationName: String, className: String, memberName: String? = ...): Unit defined in org.jetbrains.kotlin.annotation.CompactAnnotationWriter[SimpleFunctionDescriptorImpl]
 
-'Notation' @ [15:24] ==> public object CompactNotationType defined in org.jetbrains.kotlin.annotation in file CompactNotationType.kt[FakeCallableDescriptorForObject]
-
 'ANNOTATED_CLASS' @ [15:33] ==> public const final val ANNOTATED_CLASS: String defined in org.jetbrains.kotlin.annotation.CompactNotationType[PropertyDescriptorImpl]
 
 'annotationName' @ [15:50] ==> value-parameter annotationName: String defined in org.jetbrains.kotlin.annotation.CompactAnnotationWriter.writeAnnotatedClass[ValueParameterDescriptorImpl]
@@ -35,8 +27,6 @@
 'classFqName' @ [15:66] ==> value-parameter classFqName: String defined in org.jetbrains.kotlin.annotation.CompactAnnotationWriter.writeAnnotatedClass[ValueParameterDescriptorImpl]
 
 'writeAnnotated' @ [19:9] ==> private final fun writeAnnotated(type: String, annotationName: String, className: String, memberName: String? = ...): Unit defined in org.jetbrains.kotlin.annotation.CompactAnnotationWriter[SimpleFunctionDescriptorImpl]
-
-'Notation' @ [19:24] ==> public object CompactNotationType defined in org.jetbrains.kotlin.annotation in file CompactNotationType.kt[FakeCallableDescriptorForObject]
 
 'ANNOTATED_METHOD' @ [19:33] ==> public const final val ANNOTATED_METHOD: String defined in org.jetbrains.kotlin.annotation.CompactNotationType[PropertyDescriptorImpl]
 
@@ -47,8 +37,6 @@
 'methodName' @ [19:80] ==> value-parameter methodName: String defined in org.jetbrains.kotlin.annotation.CompactAnnotationWriter.writeAnnotatedMethod[ValueParameterDescriptorImpl]
 
 'writeAnnotated' @ [23:9] ==> private final fun writeAnnotated(type: String, annotationName: String, className: String, memberName: String? = ...): Unit defined in org.jetbrains.kotlin.annotation.CompactAnnotationWriter[SimpleFunctionDescriptorImpl]
-
-'Notation' @ [23:24] ==> public object CompactNotationType defined in org.jetbrains.kotlin.annotation in file CompactNotationType.kt[FakeCallableDescriptorForObject]
 
 'ANNOTATED_FIELD' @ [23:33] ==> public const final val ANNOTATED_FIELD: String defined in org.jetbrains.kotlin.annotation.CompactNotationType[PropertyDescriptorImpl]
 

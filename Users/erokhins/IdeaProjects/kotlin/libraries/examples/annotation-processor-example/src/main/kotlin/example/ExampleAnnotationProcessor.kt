@@ -27,7 +27,7 @@ Inferred types:
 
 'processAnnotation' @ [28:13] ==> private final fun <T : Annotation> processAnnotation(roundEnv: RoundEnvironment, annotationClass: KClass<out Annotation>, generatedFilePrefix: String): Unit defined in example.ExampleAnnotationProcessor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Annotation> -> Annotation
+    <T : Annotation> -> Captured(out Annotation)
 
 'roundEnv' @ [28:31] ==> value-parameter roundEnv: RoundEnvironment defined in example.ExampleAnnotationProcessor.process[ValueParameterDescriptorImpl]
 
@@ -195,11 +195,11 @@ Inferred types:
 
 'java' @ [70:85] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out Annotation)
 
 'canonicalName' @ [70:90] ==> public final val <T : (Any..Any?)> Class<out Annotation>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Annotation
+    <T : (Any..Any?)> -> Captured(out Annotation)
 
 'toSet' @ [70:106] ==> public fun <T> Iterable<(String..String?)>.toSet(): Set<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

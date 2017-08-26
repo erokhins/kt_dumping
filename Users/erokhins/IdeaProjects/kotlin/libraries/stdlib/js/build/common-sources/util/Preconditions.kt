@@ -4,7 +4,7 @@
 
 'kotlin.internal.InlineOnly' @ [10:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'require' @ [11:51] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [11:51] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [11:59] ==> value-parameter value: Boolean defined in kotlin.require[ValueParameterDescriptorImpl]
 
@@ -55,7 +55,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [53:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'check' @ [54:49] ==> @InlineOnly public inline fun check(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'check' @ [54:49] ==> @InlineOnly public inline fun check(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [54:55] ==> value-parameter value: Boolean defined in kotlin.check[ValueParameterDescriptorImpl]
 

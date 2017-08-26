@@ -168,9 +168,9 @@
 
 'println' @ [132:16] ==> public open fun println(): Unit defined in java.io.PrintStream[JavaMethodDescriptor]
 
-'lazy' @ [138:38] ==> @JvmVersion public fun <T> lazy(initializer: () -> BufferedReader): Lazy<BufferedReader> defined in kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [138:38] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> BufferedReader
+    <T> -> T
 
 'BufferedReader' @ [138:45] ==> public constructor BufferedReader(p0: (Reader..Reader?)) defined in java.io.BufferedReader[JavaClassConstructorDescriptor]
 

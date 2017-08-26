@@ -14,7 +14,7 @@
 
 'patch' @ [18:51] ==> public final val patch: Int defined in kotlin.KotlinVersion[PropertyDescriptorImpl]
 
-'require' @ [21:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [21:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'major' @ [21:17] ==> value-parameter major: Int defined in kotlin.KotlinVersion.versionOf[ValueParameterDescriptorImpl]
 

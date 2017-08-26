@@ -14,8 +14,6 @@ Inferred types:
 
 'append' @ [14:48] ==> public abstract fun append(p0: (CharSequence..CharSequence?)): (Appendable..Appendable?) defined in java.lang.Appendable[JavaMethodDescriptor]
 
-'SystemProperties' @ [14:55] ==> private object SystemProperties defined in kotlin.text in file StringBuilderJVM.kt[FakeCallableDescriptorForObject]
-
 'LINE_SEPARATOR' @ [14:72] ==> @JvmField public final val LINE_SEPARATOR: String defined in kotlin.text.SystemProperties[PropertyDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [17:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
@@ -24,7 +22,7 @@ Inferred types:
 
 'value' @ [18:82] ==> value-parameter value: CharSequence? defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [18:89] ==> public fun Appendable /* = Appendable */.appendln(): Appendable /* = Appendable */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [18:89] ==> public fun Appendable /* = Appendable */.appendln(): Appendable /* = Appendable */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [21:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -32,11 +30,9 @@ Inferred types:
 
 'value' @ [22:73] ==> value-parameter value: Char defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [22:80] ==> public fun Appendable /* = Appendable */.appendln(): Appendable /* = Appendable */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [22:80] ==> public fun Appendable /* = Appendable */.appendln(): Appendable /* = Appendable */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'append' @ [25:54] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
-
-'SystemProperties' @ [25:61] ==> private object SystemProperties defined in kotlin.text in file StringBuilderJVM.kt[FakeCallableDescriptorForObject]
 
 'LINE_SEPARATOR' @ [25:78] ==> @JvmField public final val LINE_SEPARATOR: String defined in kotlin.text.SystemProperties[PropertyDescriptorImpl]
 
@@ -46,7 +42,7 @@ Inferred types:
 
 'value' @ [29:88] ==> value-parameter value: StringBuffer? defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [29:95] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [29:95] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [32:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -54,7 +50,7 @@ Inferred types:
 
 'value' @ [33:88] ==> value-parameter value: CharSequence? defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [33:95] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [33:95] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [36:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -62,7 +58,7 @@ Inferred types:
 
 'value' @ [37:82] ==> value-parameter value: String? defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [37:89] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [37:89] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [40:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -70,7 +66,7 @@ Inferred types:
 
 'value' @ [41:79] ==> value-parameter value: Any? defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [41:86] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [41:86] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [44:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -78,7 +74,7 @@ Inferred types:
 
 'value' @ [45:89] ==> value-parameter value: StringBuilder? /* = StringBuilder? */ defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [45:96] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [45:96] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [48:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -86,7 +82,7 @@ Inferred types:
 
 'value' @ [49:84] ==> value-parameter value: CharArray defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [49:91] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [49:91] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [52:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -94,7 +90,7 @@ Inferred types:
 
 'value' @ [53:79] ==> value-parameter value: Char defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [53:86] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [53:86] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [56:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -102,7 +98,7 @@ Inferred types:
 
 'value' @ [57:82] ==> value-parameter value: Boolean defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [57:89] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [57:89] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [60:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -110,7 +106,7 @@ Inferred types:
 
 'value' @ [61:78] ==> value-parameter value: Int defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [61:85] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [61:85] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [64:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -120,7 +116,7 @@ Inferred types:
 
 'toInt' @ [65:86] ==> public open fun toInt(): Int defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
 
-'appendln' @ [65:95] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [65:95] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [68:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -130,7 +126,7 @@ Inferred types:
 
 'toInt' @ [69:85] ==> public open fun toInt(): Int defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
 
-'appendln' @ [69:94] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [69:94] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [72:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -138,7 +134,7 @@ Inferred types:
 
 'value' @ [73:79] ==> value-parameter value: Long defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [73:86] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [73:86] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [76:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -146,7 +142,7 @@ Inferred types:
 
 'value' @ [77:80] ==> value-parameter value: Float defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [77:87] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [77:87] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [80:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -154,5 +150,5 @@ Inferred types:
 
 'value' @ [81:81] ==> value-parameter value: Double defined in kotlin.text.appendln[ValueParameterDescriptorImpl]
 
-'appendln' @ [81:88] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'appendln' @ [81:88] ==> public fun StringBuilder /* = StringBuilder */.appendln(): StringBuilder /* = StringBuilder */ defined in kotlin.text in file StringBuilderJVM.kt[SimpleFunctionDescriptorImpl]
 

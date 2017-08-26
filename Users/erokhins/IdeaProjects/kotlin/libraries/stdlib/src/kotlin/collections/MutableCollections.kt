@@ -82,7 +82,7 @@
 
 'this' @ [65:5] ==> <this> defined in kotlin.collections.plusAssign[ReceiverParameterDescriptorImpl]
 
-'add' @ [65:10] ==> public abstract fun add(element: Any?): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
+'add' @ [65:10] ==> public abstract fun add(element: T): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [65:14] ==> value-parameter element: T defined in kotlin.collections.plusAssign[ValueParameterDescriptorImpl]
 
@@ -120,7 +120,7 @@ Inferred types:
 
 'this' @ [97:5] ==> <this> defined in kotlin.collections.minusAssign[ReceiverParameterDescriptorImpl]
 
-'remove' @ [97:10] ==> public abstract fun remove(element: Any?): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
+'remove' @ [97:10] ==> public abstract fun remove(element: T): Boolean defined in kotlin.collections.MutableCollection[DeserializedSimpleFunctionDescriptor]
 
 'element' @ [97:17] ==> value-parameter element: T defined in kotlin.collections.minusAssign[ValueParameterDescriptorImpl]
 
@@ -427,7 +427,7 @@ Inferred types:
 
 'sort' @ [276:41] ==> public open fun <T : (Comparable<(T..T?)>..Comparable<(T..T?)>?)> sort(p0: (MutableList<(T..T?)>..List<(T..T?)>?)): Unit defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Comparable<(T..T?)>..Comparable<(T..T?)>?)> -> T
+    <T : (Comparable<(T..T?)>..Comparable<(T..T?)>?)> -> (T..T?)
 
 'this' @ [276:46] ==> <this> defined in kotlin.collections.sort[ReceiverParameterDescriptorImpl]
 
@@ -437,7 +437,7 @@ Inferred types:
 
 'sort' @ [284:41] ==> public open fun <T : (Any..Any?)> sort(p0: (MutableList<(T..T?)>..List<(T..T?)>?), p1: (Comparator<in (T..T?)>..Comparator<in (T..T?)>?)): Unit defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'this' @ [284:46] ==> <this> defined in kotlin.collections.sortWith[ReceiverParameterDescriptorImpl]
 

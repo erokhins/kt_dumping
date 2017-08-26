@@ -364,21 +364,19 @@ Inferred types:
 
 'storageManager' @ [126:41] ==> public final val storageManager: StorageManager defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaResolverContext[PropertyDescriptorImpl]
 
-'createLazyValue' @ [126:56] ==> public abstract fun <T : Any> createLazyValue(computable: () -> Map<Name, ConstantValue<Any?>>): NotNullLazyValue<Map<Name, ConstantValue<Any?>>> defined in org.jetbrains.kotlin.storage.StorageManager[SimpleFunctionDescriptorImpl]
+'createLazyValue' @ [126:56] ==> public abstract fun <T : Any> createLazyValue(computable: () -> Map<Name, ConstantValue<*>>): NotNullLazyValue<Map<Name, ConstantValue<*>>> defined in org.jetbrains.kotlin.storage.StorageManager[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> Map<Name, ConstantValue<Any?>>
+    <T : Any> -> Map<Name, ConstantValue<*>>
 
 'when (firstArgument) {
             is JavaArrayAnnotationArgument -> JavaAnnotationTargetMapper.mapJavaTargetArguments(firstArgument.getElements(), c.module.builtIns)
             is JavaEnumValueAnnotationArgument -> JavaAnnotationTargetMapper.mapJavaTargetArguments(listOf(firstArgument), c.module.builtIns)
             else -> null
-        }' @ [127:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: ConstantValue<Any?>?, entry1: ConstantValue<Any?>?, entry2: ConstantValue<Any?>?): ConstantValue<Any?>?[SimpleFunctionDescriptorImpl]
+        }' @ [127:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: ConstantValue<*>?, entry1: ConstantValue<*>?, entry2: ConstantValue<*>?): ConstantValue<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> ConstantValue<Any?>?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> ConstantValue<*>?
 
 'firstArgument' @ [127:36] ==> protected final val firstArgument: JavaAnnotationArgument? defined in org.jetbrains.kotlin.load.java.components.JavaTargetAnnotationDescriptor[PropertyDescriptorImpl]
-
-'JavaAnnotationTargetMapper' @ [128:47] ==> public object JavaAnnotationTargetMapper defined in org.jetbrains.kotlin.load.java.components in file JavaAnnotationMapper.kt[FakeCallableDescriptorForObject]
 
 'mapJavaTargetArguments' @ [128:74] ==> internal final fun mapJavaTargetArguments(arguments: List<JavaAnnotationArgument>, builtIns: KotlinBuiltIns): ConstantValue<*> defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationTargetMapper[SimpleFunctionDescriptorImpl]
 
@@ -391,8 +389,6 @@ Inferred types:
 'module' @ [128:128] ==> public final val module: ModuleDescriptor defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaResolverContext[PropertyDescriptorImpl]
 
 'builtIns' @ [128:135] ==> public abstract val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.descriptors.ModuleDescriptor[PropertyDescriptorImpl]
-
-'JavaAnnotationTargetMapper' @ [129:51] ==> public object JavaAnnotationTargetMapper defined in org.jetbrains.kotlin.load.java.components in file JavaAnnotationMapper.kt[FakeCallableDescriptorForObject]
 
 'mapJavaTargetArguments' @ [129:78] ==> internal final fun mapJavaTargetArguments(arguments: List<JavaAnnotationArgument>, builtIns: KotlinBuiltIns): ConstantValue<*> defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationTargetMapper[SimpleFunctionDescriptorImpl]
 
@@ -408,28 +404,28 @@ Inferred types:
 
 'builtIns' @ [129:133] ==> public abstract val builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.descriptors.ModuleDescriptor[PropertyDescriptorImpl]
 
-'targetArgument' @ [132:9] ==> val targetArgument: ConstantValue<Any?>? defined in org.jetbrains.kotlin.load.java.components.JavaTargetAnnotationDescriptor.allValueArguments.<anonymous>[LocalVariableDescriptor]
+'targetArgument' @ [132:9] ==> val targetArgument: ConstantValue<*>? defined in org.jetbrains.kotlin.load.java.components.JavaTargetAnnotationDescriptor.allValueArguments.<anonymous>[LocalVariableDescriptor]
 
-'let' @ [132:25] ==> @InlineOnly public inline fun <T, R> ConstantValue<Any?>.let(block: (ConstantValue<Any?>) -> Map<Name, ConstantValue<Any?>>): Map<Name, ConstantValue<Any?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [132:25] ==> @InlineOnly public inline fun <T, R> ConstantValue<*>.let(block: (ConstantValue<*>) -> Map<Name, ConstantValue<*>>): Map<Name, ConstantValue<*>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ConstantValue<Any?>
-    <R> -> Map<Name, ConstantValue<Any?>>
+    <T> -> ConstantValue<*>
+    <R> -> Map<Name, ConstantValue<*>>
 
-'mapOf' @ [132:31] ==> public fun <K, V> mapOf(pair: Pair<Name, ConstantValue<Any?>>): Map<Name, ConstantValue<Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [132:31] ==> public fun <K, V> mapOf(pair: Pair<Name, ConstantValue<*>>): Map<Name, ConstantValue<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Name
-    <V> -> ConstantValue<Any?>
+    <V> -> ConstantValue<*>
 
 'JavaAnnotationMapper' @ [132:37] ==> public object JavaAnnotationMapper defined in org.jetbrains.kotlin.load.java.components in file JavaAnnotationMapper.kt[FakeCallableDescriptorForObject]
 
 'TARGET_ANNOTATION_ALLOWED_TARGETS' @ [132:58] ==> internal final val TARGET_ANNOTATION_ALLOWED_TARGETS: Name defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationMapper[PropertyDescriptorImpl]
 
-'it' @ [132:95] ==> value-parameter it: ConstantValue<Any?> defined in org.jetbrains.kotlin.load.java.components.JavaTargetAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [132:95] ==> value-parameter it: ConstantValue<*> defined in org.jetbrains.kotlin.load.java.components.JavaTargetAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'orEmpty' @ [132:101] ==> @InlineOnly public inline fun <K, V> Map<Name, ConstantValue<Any?>>?.orEmpty(): Map<Name, ConstantValue<Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'orEmpty' @ [132:101] ==> @InlineOnly public inline fun <K, V> Map<Name, ConstantValue<*>>?.orEmpty(): Map<Name, ConstantValue<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Name
-    <V> -> ConstantValue<Any?>
+    <V> -> ConstantValue<*>
 
 'JavaAnnotationDescriptor' @ [139:4] ==> public constructor JavaAnnotationDescriptor(c: LazyJavaResolverContext, annotation: JavaAnnotation?, fqName: FqName) defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationDescriptor[ClassConstructorDescriptorImpl]
 
@@ -445,9 +441,9 @@ Inferred types:
 
 'storageManager' @ [140:41] ==> public final val storageManager: StorageManager defined in org.jetbrains.kotlin.load.java.lazy.LazyJavaResolverContext[PropertyDescriptorImpl]
 
-'createLazyValue' @ [140:56] ==> public abstract fun <T : Any> createLazyValue(computable: () -> Map<Name, ConstantValue<Any?>>): NotNullLazyValue<Map<Name, ConstantValue<Any?>>> defined in org.jetbrains.kotlin.storage.StorageManager[SimpleFunctionDescriptorImpl]
+'createLazyValue' @ [140:56] ==> public abstract fun <T : Any> createLazyValue(computable: () -> Map<Name, ConstantValue<*>>): NotNullLazyValue<Map<Name, ConstantValue<*>>> defined in org.jetbrains.kotlin.storage.StorageManager[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> Map<Name, ConstantValue<Any?>>
+    <T : Any> -> Map<Name, ConstantValue<*>>
 
 'JavaAnnotationTargetMapper' @ [141:33] ==> public object JavaAnnotationTargetMapper defined in org.jetbrains.kotlin.load.java.components in file JavaAnnotationMapper.kt[FakeCallableDescriptorForObject]
 
@@ -463,40 +459,40 @@ Inferred types:
 
 'retentionArgument' @ [142:9] ==> val retentionArgument: ConstantValue<*>? defined in org.jetbrains.kotlin.load.java.components.JavaRetentionAnnotationDescriptor.allValueArguments.<anonymous>[LocalVariableDescriptor]
 
-'let' @ [142:28] ==> @InlineOnly public inline fun <T, R> ConstantValue<Any?>.let(block: (ConstantValue<Any?>) -> Map<Name, ConstantValue<Any?>>): Map<Name, ConstantValue<Any?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [142:28] ==> @InlineOnly public inline fun <T, R> ConstantValue<*>.let(block: (ConstantValue<*>) -> Map<Name, ConstantValue<*>>): Map<Name, ConstantValue<*>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ConstantValue<Any?>
-    <R> -> Map<Name, ConstantValue<Any?>>
+    <T> -> ConstantValue<*>
+    <R> -> Map<Name, ConstantValue<*>>
 
-'mapOf' @ [142:34] ==> public fun <K, V> mapOf(pair: Pair<Name, ConstantValue<Any?>>): Map<Name, ConstantValue<Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [142:34] ==> public fun <K, V> mapOf(pair: Pair<Name, ConstantValue<*>>): Map<Name, ConstantValue<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Name
-    <V> -> ConstantValue<Any?>
+    <V> -> ConstantValue<*>
 
 'JavaAnnotationMapper' @ [142:40] ==> public object JavaAnnotationMapper defined in org.jetbrains.kotlin.load.java.components in file JavaAnnotationMapper.kt[FakeCallableDescriptorForObject]
 
 'RETENTION_ANNOTATION_VALUE' @ [142:61] ==> internal final val RETENTION_ANNOTATION_VALUE: Name defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationMapper[PropertyDescriptorImpl]
 
-'it' @ [142:91] ==> value-parameter it: ConstantValue<Any?> defined in org.jetbrains.kotlin.load.java.components.JavaRetentionAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [142:91] ==> value-parameter it: ConstantValue<*> defined in org.jetbrains.kotlin.load.java.components.JavaRetentionAnnotationDescriptor.allValueArguments.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'orEmpty' @ [142:97] ==> @InlineOnly public inline fun <K, V> Map<Name, ConstantValue<Any?>>?.orEmpty(): Map<Name, ConstantValue<Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'orEmpty' @ [142:97] ==> @InlineOnly public inline fun <K, V> Map<Name, ConstantValue<*>>?.orEmpty(): Map<Name, ConstantValue<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Name
-    <V> -> ConstantValue<Any?>
+    <V> -> ConstantValue<*>
 
-'mapOf' @ [147:35] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)>): Map<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [147:35] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)>): Map<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <V> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
-'to' @ [147:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [147:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'noneOf' @ [147:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> noneOf(p0: (Class<(KotlinTarget..KotlinTarget?)>..Class<(KotlinTarget..KotlinTarget?)>?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'KotlinTarget' @ [147:77] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
@@ -504,136 +500,112 @@ Inferred types:
 Inferred types:
     <T> -> KotlinTarget
 
-'to' @ [148:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [148:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'of' @ [148:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
-
-'KotlinTarget' @ [148:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CLASS' @ [148:86] ==> enum entry CLASS defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'KotlinTarget' @ [148:93] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
 'FILE' @ [148:106] ==> enum entry FILE defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'to' @ [149:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [149:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'of' @ [149:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
-
-'KotlinTarget' @ [149:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'ANNOTATION_CLASS' @ [149:86] ==> enum entry ANNOTATION_CLASS defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'to' @ [150:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [150:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'of' @ [150:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
-
-'KotlinTarget' @ [150:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'TYPE_PARAMETER' @ [150:86] ==> enum entry TYPE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'to' @ [151:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [151:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'of' @ [151:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
-
-'KotlinTarget' @ [151:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'FIELD' @ [151:86] ==> enum entry FIELD defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'to' @ [152:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [152:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'of' @ [152:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
-
-'KotlinTarget' @ [152:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'LOCAL_VARIABLE' @ [152:86] ==> enum entry LOCAL_VARIABLE defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'to' @ [153:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [153:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'of' @ [153:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
-
-'KotlinTarget' @ [153:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'VALUE_PARAMETER' @ [153:86] ==> enum entry VALUE_PARAMETER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'to' @ [154:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [154:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'of' @ [154:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
-
-'KotlinTarget' @ [154:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'CONSTRUCTOR' @ [154:86] ==> enum entry CONSTRUCTOR defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'to' @ [155:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [155:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'of' @ [155:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?), p1: (KotlinTarget..KotlinTarget?), p2: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
-
-'KotlinTarget' @ [155:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'FUNCTION' @ [155:86] ==> enum entry FUNCTION defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'KotlinTarget' @ [156:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_GETTER' @ [156:86] ==> enum entry PROPERTY_GETTER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
-
-'KotlinTarget' @ [157:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
 'PROPERTY_SETTER' @ [157:86] ==> enum entry PROPERTY_SETTER defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'to' @ [158:41] ==> public infix fun <A, B> String.to(that: (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)): Pair<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [158:41] ==> public infix fun <A, B> String.to(that: (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)): Pair<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> (java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>..java.util.EnumSet<org.jetbrains.kotlin.descriptors.annotations.KotlinTarget>?)
+    <B> -> (java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>..java.util.EnumSet<(org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)>?)
 
 'of' @ [158:70] ==> public open fun <E : (Enum<(KotlinTarget..KotlinTarget?)>..Enum<(KotlinTarget..KotlinTarget?)>?)> of(p0: (KotlinTarget..KotlinTarget?)): (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> KotlinTarget
-
-'KotlinTarget' @ [158:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (org.jetbrains.kotlin.descriptors.annotations.KotlinTarget..org.jetbrains.kotlin.descriptors.annotations.KotlinTarget?)
 
 'TYPE' @ [158:86] ==> enum entry TYPE defined in org.jetbrains.kotlin.descriptors.annotations.KotlinTarget[FakeCallableDescriptorForObject]
 
-'targetNameLists' @ [161:81] ==> private final val targetNameLists: Map<String, (EnumSet<KotlinTarget>..EnumSet<KotlinTarget>?)> defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationTargetMapper[PropertyDescriptorImpl]
+'targetNameLists' @ [161:81] ==> private final val targetNameLists: Map<String, (EnumSet<(KotlinTarget..KotlinTarget?)>..EnumSet<(KotlinTarget..KotlinTarget?)>?)> defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationTargetMapper[PropertyDescriptorImpl]
 
 'argumentName' @ [161:97] ==> value-parameter argumentName: String? defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationTargetMapper.mapJavaTargetArgumentByName[ValueParameterDescriptorImpl]
 
@@ -678,9 +650,9 @@ Inferred types:
     <T> -> ClassDescriptor
     <R> -> EnumValue
 
-'getAnnotationParameterByName' @ [169:59] ==> @Nullable public open fun getAnnotationParameterByName(@NotNull name: Name, @NotNull annotationClass: ClassDescriptor): ValueParameterDescriptor? defined in org.jetbrains.kotlin.load.java.components.DescriptorResolverUtils[JavaMethodDescriptor]
+'EnumValue' @ [168:24] ==> public constructor EnumValue(value: ClassDescriptor) defined in org.jetbrains.kotlin.resolve.constants.EnumValue[ClassConstructorDescriptorImpl]
 
-'JavaAnnotationMapper' @ [170:17] ==> public object JavaAnnotationMapper defined in org.jetbrains.kotlin.load.java.components in file JavaAnnotationMapper.kt[FakeCallableDescriptorForObject]
+'getAnnotationParameterByName' @ [169:59] ==> @Nullable public open fun getAnnotationParameterByName(@NotNull name: Name, @NotNull annotationClass: ClassDescriptor): ValueParameterDescriptor? defined in org.jetbrains.kotlin.load.java.components.DescriptorResolverUtils[JavaMethodDescriptor]
 
 'TARGET_ANNOTATION_ALLOWED_TARGETS' @ [170:38] ==> internal final val TARGET_ANNOTATION_ALLOWED_TARGETS: Name defined in org.jetbrains.kotlin.load.java.components.JavaAnnotationMapper[PropertyDescriptorImpl]
 
@@ -762,4 +734,6 @@ Inferred types:
 Inferred types:
     <T> -> ClassDescriptor
     <R> -> EnumValue
+
+'EnumValue' @ [186:69] ==> public constructor EnumValue(value: ClassDescriptor) defined in org.jetbrains.kotlin.resolve.constants.EnumValue[ClassConstructorDescriptorImpl]
 

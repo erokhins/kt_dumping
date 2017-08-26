@@ -18,7 +18,7 @@
 
 'isPrimitive' @ [47:24] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'thisJClass' @ [47:44] ==> val thisJClass: Class<*> defined in kotlin.jvm.<get-javaPrimitiveType>[LocalVariableDescriptor]
 
@@ -32,15 +32,15 @@ Inferred types:
             "java.lang.Long"      -> Long::class.java
             "java.lang.Double"    -> Double::class.java
             else -> null
-        }' @ [49:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?, entry1: Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?, entry2: Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?, entry3: Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?, entry4: Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?, entry5: Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?, entry6: Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?, entry7: Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?, entry8: Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?): Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?[SimpleFunctionDescriptorImpl]
+        }' @ [49:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Class<out Any>?, entry1: Class<out Any>?, entry2: Class<out Any>?, entry3: Class<out Any>?, entry4: Class<out Any>?, entry5: Class<out Any>?, entry6: Class<out Any>?, entry7: Class<out Any>?, entry8: Class<out Any>?): Class<out Any>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Class<out Any>?
 
 'thisJClass' @ [49:22] ==> val thisJClass: Class<*> defined in kotlin.jvm.<get-javaPrimitiveType>[LocalVariableDescriptor]
 
 'name' @ [49:33] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'Boolean' @ [50:38] ==> private constructor Boolean() defined in kotlin.Boolean[DeserializedClassConstructorDescriptor]
 
@@ -100,7 +100,7 @@ Inferred types:
 
 'isPrimitive' @ [69:25] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'thisJClass' @ [69:45] ==> val thisJClass: Class<*> defined in kotlin.jvm.<get-javaObjectType>[LocalVariableDescriptor]
 
@@ -114,15 +114,15 @@ Inferred types:
             "long"    -> JavaLangLong::class.java
             "double"  -> JavaLangDouble::class.java
             else -> thisJClass
-        }' @ [71:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Class<out Any>, entry1: Class<out Any>, entry2: Class<out Any>, entry3: Class<out Any>, entry4: Class<out Any>, entry5: Class<out Any>, entry6: Class<out Any>, entry7: Class<out Any>, entry8: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
+        }' @ [71:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Class<out (Any..Any?)>, entry1: Class<out (Any..Any?)>, entry2: Class<out (Any..Any?)>, entry3: Class<out (Any..Any?)>, entry4: Class<out (Any..Any?)>, entry5: Class<out (Any..Any?)>, entry6: Class<out (Any..Any?)>, entry7: Class<out (Any..Any?)>, entry8: Class<out (Any..Any?)>): Class<out (Any..Any?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Class<out Any>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Class<out (kotlin.Any..kotlin.Any?)>
 
 'thisJClass' @ [71:22] ==> val thisJClass: Class<*> defined in kotlin.jvm.<get-javaObjectType>[LocalVariableDescriptor]
 
 'name' @ [71:33] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'java' @ [72:49] ==> @Suppress public val <T> KClass<Boolean>.java: Class<Boolean> defined in kotlin.jvm[PropertyDescriptorImpl]
 Inferred types:
@@ -198,11 +198,11 @@ Inferred types:
 
 'java' @ [110:52] ==> @Suppress public val <T> KClass<out Array<*>>.java: Class<out Array<*>> defined in kotlin.jvm[PropertyDescriptorImpl]
 Inferred types:
-    <T> -> Array<*>
+    <T> -> Captured(out Array<*>)
 
 'componentType' @ [110:57] ==> public final val <T : (Any..Any?)> Class<out Array<*>>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Array<*>
+    <T : (Any..Any?)> -> Captured(out Array<*>)
 
 'this' @ [116:14] ==> <this> defined in kotlin.jvm.annotationClass[ReceiverParameterDescriptorImpl]
 
@@ -210,5 +210,5 @@ Inferred types:
 
 'kotlin' @ [116:72] ==> public val <T : Any> Class<out (Annotation..Annotation?)>.kotlin: KClass<out (Annotation..Annotation?)> defined in kotlin.jvm[PropertyDescriptorImpl]
 Inferred types:
-    <T : Any> -> (kotlin.Annotation..kotlin.Annotation?)
+    <T : Any> -> Captured(out (kotlin.Annotation..kotlin.Annotation?))
 

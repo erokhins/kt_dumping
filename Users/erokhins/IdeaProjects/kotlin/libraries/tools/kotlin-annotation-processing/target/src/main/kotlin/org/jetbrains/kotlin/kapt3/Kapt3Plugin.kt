@@ -151,9 +151,7 @@ Inferred types:
 
 'put' @ [153:59] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [153:63] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'ANNOTATION_PROCESSORS' @ [153:86] ==> public final val ANNOTATION_PROCESSORS: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -165,9 +163,7 @@ Inferred types:
 
 'put' @ [154:49] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [154:53] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'APT_OPTIONS' @ [154:76] ==> public final val APT_OPTIONS: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -179,9 +175,7 @@ Inferred types:
 
 'put' @ [155:55] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [155:59] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'JAVAC_CLI_OPTIONS' @ [155:82] ==> public final val JAVAC_CLI_OPTIONS: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -193,9 +187,7 @@ Inferred types:
 
 'put' @ [156:55] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [156:59] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'SOURCE_OUTPUT_DIR' @ [156:82] ==> public final val SOURCE_OUTPUT_DIR: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -207,9 +199,7 @@ Inferred types:
 
 'put' @ [157:54] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [157:58] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'CLASS_OUTPUT_DIR' @ [157:81] ==> public final val CLASS_OUTPUT_DIR: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -221,9 +211,7 @@ Inferred types:
 
 'put' @ [158:54] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [158:58] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'STUBS_OUTPUT_DIR' @ [158:81] ==> public final val STUBS_OUTPUT_DIR: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -235,9 +223,7 @@ Inferred types:
 
 'put' @ [159:65] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [159:69] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'INCREMENTAL_DATA_OUTPUT_DIR' @ [159:92] ==> public final val INCREMENTAL_DATA_OUTPUT_DIR: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -249,9 +235,7 @@ Inferred types:
 
 'put' @ [160:50] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [160:54] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'VERBOSE_MODE' @ [160:77] ==> public final val VERBOSE_MODE: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -263,9 +247,7 @@ Inferred types:
 
 'put' @ [161:46] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [161:50] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'APT_ONLY' @ [161:73] ==> @Deprecated public final val APT_ONLY: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -277,9 +259,7 @@ Inferred types:
 
 'put' @ [162:46] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [162:50] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'APT_MODE' @ [162:73] ==> public final val APT_MODE: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -291,9 +271,7 @@ Inferred types:
 
 'put' @ [163:56] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [163:60] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'USE_LIGHT_ANALYSIS' @ [163:83] ==> public final val USE_LIGHT_ANALYSIS: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -305,9 +283,7 @@ Inferred types:
 
 'put' @ [164:57] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [164:61] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'CORRECT_ERROR_TYPES' @ [164:84] ==> public final val CORRECT_ERROR_TYPES: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -368,9 +344,7 @@ Inferred types:
 
 'get' @ [194:51] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [194:55] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'APT_MODE' @ [194:78] ==> public final val APT_MODE: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -378,9 +352,7 @@ Inferred types:
 
 'get' @ [195:51] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [195:55] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'APT_ONLY' @ [195:78] ==> @Deprecated public final val APT_ONLY: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -388,9 +360,7 @@ Inferred types:
 
 'get' @ [197:39] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [197:43] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'VERBOSE_MODE' @ [197:66] ==> public final val VERBOSE_MODE: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -398,7 +368,7 @@ Inferred types:
 
 'get' @ [198:46] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>): MessageCollector? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [198:71] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -430,9 +400,7 @@ Inferred types:
 
 'get' @ [209:46] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [209:50] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'SOURCE_OUTPUT_DIR' @ [209:73] ==> public final val SOURCE_OUTPUT_DIR: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -441,13 +409,13 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [209:99] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'configuration' @ [210:35] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.kapt3.Kapt3ComponentRegistrar.registerProjectComponents[ValueParameterDescriptorImpl]
 
 'get' @ [210:49] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [210:53] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'CLASS_OUTPUT_DIR' @ [210:76] ==> public final val CLASS_OUTPUT_DIR: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -456,13 +424,13 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [210:101] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'configuration' @ [211:30] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.kapt3.Kapt3ComponentRegistrar.registerProjectComponents[ValueParameterDescriptorImpl]
 
 'get' @ [211:44] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [211:48] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'STUBS_OUTPUT_DIR' @ [211:71] ==> public final val STUBS_OUTPUT_DIR: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -471,13 +439,13 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [211:96] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'configuration' @ [212:40] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.kapt3.Kapt3ComponentRegistrar.registerProjectComponents[ValueParameterDescriptorImpl]
 
 'get' @ [212:54] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [212:58] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'INCREMENTAL_DATA_OUTPUT_DIR' @ [212:81] ==> public final val INCREMENTAL_DATA_OUTPUT_DIR: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -486,13 +454,13 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [212:117] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'configuration' @ [214:36] ==> value-parameter configuration: CompilerConfiguration defined in org.jetbrains.kotlin.kapt3.Kapt3ComponentRegistrar.registerProjectComponents[ValueParameterDescriptorImpl]
 
 'get' @ [214:50] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [214:54] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'ANNOTATION_PROCESSORS' @ [214:77] ==> public final val ANNOTATION_PROCESSORS: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -500,7 +468,7 @@ Inferred types:
 
 'get' @ [216:41] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(List<String>..List<String>?)>): List<String>? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<String>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.String>..kotlin.collections.List<kotlin.String>?)
 
 'ANNOTATION_PROCESSOR_CLASSPATH' @ [216:45] ==> public final val ANNOTATION_PROCESSOR_CLASSPATH: CompilerConfigurationKey<List<String>> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyImportedFromObject]
 
@@ -508,6 +476,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [216:84] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'sourcesOutputDir' @ [218:13] ==> val sourcesOutputDir: File? defined in org.jetbrains.kotlin.kapt3.Kapt3ComponentRegistrar.registerProjectComponents[LocalVariableDescriptor]
 
@@ -518,8 +488,6 @@ Inferred types:
 'stubsOutputDir' @ [218:95] ==> val stubsOutputDir: File? defined in org.jetbrains.kotlin.kapt3.Kapt3ComponentRegistrar.registerProjectComponents[LocalVariableDescriptor]
 
 'aptMode' @ [219:17] ==> val aptMode: AptMode defined in org.jetbrains.kotlin.kapt3.Kapt3ComponentRegistrar.registerProjectComponents[LocalVariableDescriptor]
-
-'AptMode' @ [219:28] ==> public companion object defined in org.jetbrains.kotlin.kapt3.AptMode[FakeCallableDescriptorForObject]
 
 'WITH_COMPILATION' @ [219:36] ==> enum entry WITH_COMPILATION defined in org.jetbrains.kotlin.kapt3.AptMode[FakeCallableDescriptorForObject]
 
@@ -547,9 +515,7 @@ Inferred types:
 
 'get' @ [227:48] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [227:52] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [227:76] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
@@ -557,7 +523,7 @@ Inferred types:
 
 'get' @ [228:51] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(MutableList<(Module..Module?)>..List<(Module..Module?)>?)>): (MutableList<(Module..Module?)>?..List<(Module..Module?)>?) defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)>..kotlin.collections.List<(org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)>)
+    <T : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)>..kotlin.collections.List<(org.jetbrains.kotlin.modules.Module..org.jetbrains.kotlin.modules.Module?)>?)
 
 'MODULES' @ [228:76] ==> public final val MODULES: (CompilerConfigurationKey<(MutableList<(Module..Module?)>..List<(Module..Module?)>?)>..CompilerConfigurationKey<(MutableList<(Module..Module?)>..List<(Module..Module?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -589,7 +555,7 @@ Inferred types:
 
 'get' @ [235:39] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'APT_OPTIONS' @ [235:43] ==> public final val APT_OPTIONS: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyImportedFromObject]
 
@@ -611,7 +577,7 @@ Inferred types:
 
 'get' @ [236:45] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'JAVAC_CLI_OPTIONS' @ [236:49] ==> public final val JAVAC_CLI_OPTIONS: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyImportedFromObject]
 
@@ -675,9 +641,7 @@ Inferred types:
 
 'get' @ [246:46] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [246:50] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'USE_LIGHT_ANALYSIS' @ [246:73] ==> public final val USE_LIGHT_ANALYSIS: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 
@@ -685,9 +649,7 @@ Inferred types:
 
 'get' @ [247:47] ==> @Nullable public open operator fun <T : (Any..Any?)> get(@NotNull p0: CompilerConfigurationKey<(String..String?)>): String? defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'Kapt3ConfigurationKeys' @ [247:51] ==> public object Kapt3ConfigurationKeys defined in org.jetbrains.kotlin.kapt3 in file Kapt3Plugin.kt[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'CORRECT_ERROR_TYPES' @ [247:74] ==> public final val CORRECT_ERROR_TYPES: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.kapt3.Kapt3ConfigurationKeys[PropertyDescriptorImpl]
 

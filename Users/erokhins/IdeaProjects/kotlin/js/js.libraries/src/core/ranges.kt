@@ -6,7 +6,7 @@
 
 'toDouble' @ [22:14] ==> public open fun toDouble(): Double defined in kotlin.Float[DeserializedSimpleFunctionDescriptor]
 
-'rangeTo' @ [22:25] ==> @SinceKotlin public operator fun Double.rangeTo(that: Double): ClosedFloatingPointRange<Double> defined in kotlin.ranges[SimpleFunctionDescriptorImpl]
+'rangeTo' @ [22:25] ==> @SinceKotlin public operator fun Double.rangeTo(that: Double): ClosedFloatingPointRange<Double> defined in kotlin.ranges in file Ranges.kt[SimpleFunctionDescriptorImpl]
 
 'that' @ [22:33] ==> value-parameter that: Float defined in kotlin.ranges.rangeTo[ValueParameterDescriptorImpl]
 

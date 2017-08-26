@@ -1,36 +1,24 @@
 '' @ [25:13] ==> private constructor AndroidContainerType(className: String, doesSupportCache: Boolean = ..., isFragment: Boolean = ...) defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[ClassConstructorDescriptorImpl]
 
-'AndroidConst' @ [25:14] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
-
 'ACTIVITY_FQNAME' @ [25:27] ==> public final val ACTIVITY_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 '' @ [26:13] ==> private constructor AndroidContainerType(className: String, doesSupportCache: Boolean = ..., isFragment: Boolean = ...) defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[ClassConstructorDescriptorImpl]
-
-'AndroidConst' @ [26:14] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'FRAGMENT_FQNAME' @ [26:27] ==> public final val FRAGMENT_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 '' @ [27:11] ==> private constructor AndroidContainerType(className: String, doesSupportCache: Boolean = ..., isFragment: Boolean = ...) defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[ClassConstructorDescriptorImpl]
 
-'AndroidConst' @ [27:12] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
-
 'DIALOG_FQNAME' @ [27:25] ==> public final val DIALOG_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 '' @ [28:30] ==> private constructor AndroidContainerType(className: String, doesSupportCache: Boolean = ..., isFragment: Boolean = ...) defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[ClassConstructorDescriptorImpl]
-
-'AndroidConst' @ [28:31] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'SUPPORT_FRAGMENT_ACTIVITY_FQNAME' @ [28:44] ==> public final val SUPPORT_FRAGMENT_ACTIVITY_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 '' @ [29:21] ==> private constructor AndroidContainerType(className: String, doesSupportCache: Boolean = ..., isFragment: Boolean = ...) defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[ClassConstructorDescriptorImpl]
 
-'AndroidConst' @ [29:22] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
-
 'SUPPORT_FRAGMENT_FQNAME' @ [29:35] ==> public final val SUPPORT_FRAGMENT_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 '' @ [30:9] ==> private constructor AndroidContainerType(className: String, doesSupportCache: Boolean = ..., isFragment: Boolean = ...) defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[ClassConstructorDescriptorImpl]
-
-'AndroidConst' @ [30:10] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'VIEW_FQNAME' @ [30:23] ==> public final val VIEW_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
@@ -77,15 +65,11 @@ Inferred types:
 
 'ACTIVITY_FQNAME' @ [41:30] ==> public final val ACTIVITY_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
-'AndroidContainerType' @ [41:49] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
-
 'ACTIVITY' @ [41:70] ==> enum entry ACTIVITY defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'AndroidConst' @ [42:17] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'FRAGMENT_FQNAME' @ [42:30] ==> public final val FRAGMENT_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
-
-'AndroidContainerType' @ [42:49] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'FRAGMENT' @ [42:70] ==> enum entry FRAGMENT defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
@@ -93,15 +77,11 @@ Inferred types:
 
 'DIALOG_FQNAME' @ [43:30] ==> public final val DIALOG_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
-'AndroidContainerType' @ [43:47] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
-
 'DIALOG' @ [43:68] ==> enum entry DIALOG defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'AndroidConst' @ [44:17] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'SUPPORT_FRAGMENT_ACTIVITY_FQNAME' @ [44:30] ==> public final val SUPPORT_FRAGMENT_ACTIVITY_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
-
-'AndroidContainerType' @ [44:66] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'SUPPORT_FRAGMENT_ACTIVITY' @ [44:87] ==> enum entry SUPPORT_FRAGMENT_ACTIVITY defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
@@ -109,21 +89,15 @@ Inferred types:
 
 'SUPPORT_FRAGMENT_FQNAME' @ [45:30] ==> public final val SUPPORT_FRAGMENT_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
-'AndroidContainerType' @ [45:57] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
-
 'SUPPORT_FRAGMENT' @ [45:78] ==> enum entry SUPPORT_FRAGMENT defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'AndroidConst' @ [46:17] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'VIEW_FQNAME' @ [46:30] ==> public final val VIEW_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
-'AndroidContainerType' @ [46:45] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
-
 'VIEW' @ [46:66] ==> enum entry VIEW defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'LAYOUT_CONTAINER_FQNAME' @ [47:17] ==> private final val LAYOUT_CONTAINER_FQNAME: (String..String?) defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType.Companion[PropertyDescriptorImpl]
-
-'AndroidContainerType' @ [47:44] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'LAYOUT_CONTAINER' @ [47:65] ==> enum entry LAYOUT_CONTAINER defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
@@ -161,8 +135,6 @@ Inferred types:
 'declarationDescriptor' @ [56:45] ==> val declarationDescriptor: ClassifierDescriptor? defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType.Companion.get[LocalVariableDescriptor]
 
 'containerType' @ [57:25] ==> val containerType: AndroidContainerType defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType.Companion.get[LocalVariableDescriptor]
-
-'AndroidContainerType' @ [57:42] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'UNKNOWN' @ [57:63] ==> enum entry UNKNOWN defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 

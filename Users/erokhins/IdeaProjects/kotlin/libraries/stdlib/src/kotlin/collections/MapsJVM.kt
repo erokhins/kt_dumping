@@ -29,8 +29,8 @@ Inferred types:
 
 'TreeMap' @ [38:82] ==> public constructor TreeMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (K..K?), out (V..V?)>..Map<out (K..K?), (V..V?)>?)) defined in java.util.TreeMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'this' @ [38:90] ==> <this> defined in kotlin.collections.toSortedMap[ReceiverParameterDescriptorImpl]
 

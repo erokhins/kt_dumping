@@ -120,9 +120,9 @@
 
 'toInt' @ [110:76] ==> public open fun toInt(): Int defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [114:42] ==> @JvmVersion public fun <T> lazy(initializer: () -> Map<Int, CharDirectionality>): Lazy<Map<Int, CharDirectionality>> defined in kotlin[SimpleFunctionDescriptorImpl]
+'getValue' @ [114:42] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> Map<Int, CharDirectionality>
+    <T> -> T
 
 'CharDirectionality' @ [114:49] ==> public companion object defined in kotlin.text.CharDirectionality[FakeCallableDescriptorForObject]
 

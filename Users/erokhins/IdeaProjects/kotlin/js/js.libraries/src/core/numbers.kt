@@ -8,25 +8,17 @@
 
 'this' @ [18:43] ==> <this> defined in kotlin.isInfinite[ReceiverParameterDescriptorImpl]
 
-'Double' @ [18:51] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'POSITIVE_INFINITY' @ [18:58] ==> public final val POSITIVE_INFINITY: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'this' @ [18:79] ==> <this> defined in kotlin.isInfinite[ReceiverParameterDescriptorImpl]
-
-'Double' @ [18:87] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NEGATIVE_INFINITY' @ [18:94] ==> public final val NEGATIVE_INFINITY: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'this' @ [23:42] ==> <this> defined in kotlin.isInfinite[ReceiverParameterDescriptorImpl]
 
-'Float' @ [23:50] ==> public companion object defined in kotlin.Float[FakeCallableDescriptorForObject]
-
 'POSITIVE_INFINITY' @ [23:56] ==> public final val POSITIVE_INFINITY: Float defined in kotlin.Float.Companion[DeserializedPropertyDescriptor]
 
 'this' @ [23:77] ==> <this> defined in kotlin.isInfinite[ReceiverParameterDescriptorImpl]
-
-'Float' @ [23:85] ==> public companion object defined in kotlin.Float[FakeCallableDescriptorForObject]
 
 'NEGATIVE_INFINITY' @ [23:91] ==> public final val NEGATIVE_INFINITY: Float defined in kotlin.Float.Companion[DeserializedPropertyDescriptor]
 

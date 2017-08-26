@@ -31,15 +31,11 @@ Inferred types:
 
 'modality' @ [47:92] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [47:104] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'SEALED' @ [47:113] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'functionCodegen' @ [49:9] ==> public final val functionCodegen: (FunctionCodegen..FunctionCodegen?) defined in org.jetbrains.kotlin.codegen.ImplementationBodyCodegen[JavaPropertyDescriptor]
 
 'generateMethod' @ [49:25] ==> public open fun generateMethod(@NotNull p0: JvmDeclarationOrigin, @NotNull p1: FunctionDescriptor, @NotNull p2: FunctionGenerationStrategy): Unit defined in org.jetbrains.kotlin.codegen.FunctionCodegen[JavaMethodDescriptor]
-
-'JvmDeclarationOrigin' @ [49:40] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [49:61] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
@@ -114,8 +110,6 @@ Inferred types:
 
 'containingClass' @ [71:65] ==> value-parameter containingClass: ClassDescriptor defined in org.jetbrains.kotlin.noarg.NoArgExpressionCodegenExtension.createNoArgConstructorDescriptor[ValueParameterDescriptorImpl]
 
-'Annotations' @ [71:82] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [71:94] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[DeserializedPropertyDescriptor]
 
 'NO_SOURCE' @ [71:122] ==> public final val NO_SOURCE: (SourceElement..SourceElement?) defined in org.jetbrains.kotlin.descriptors.SourceElement[JavaPropertyDescriptor]
@@ -142,8 +136,6 @@ Inferred types:
 
 'unitType' @ [73:49] ==> public final val KotlinBuiltIns.unitType: SimpleType[MyPropertyDescriptor]
 
-'Modality' @ [73:59] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'OPEN' @ [73:68] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [73:87] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -152,7 +144,7 @@ Inferred types:
 
 'getUserData' @ [77:47] ==> public open fun <T : (Any..Any?)> getUserData(@NotNull p0: Key<(Boolean..Boolean?)>): Boolean? defined in org.jetbrains.kotlin.psi.KtClass[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'NO_ARG_CLASS_KEY' @ [77:59] ==> public val NO_ARG_CLASS_KEY: Key<Boolean> defined in org.jetbrains.kotlin.noarg in file NoArgClassKey.kt[PropertyDescriptorImpl]
 

@@ -96,7 +96,7 @@ Inferred types:
 
 'newChar' @ [56:60] ==> value-parameter newChar: Char defined in kotlin.text.replace[ValueParameterDescriptorImpl]
 
-'splitToSequence' @ [58:16] ==> public fun CharSequence.splitToSequence(vararg delimiters: Char, ignoreCase: Boolean = ..., limit: Int = ...): Sequence<String> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'splitToSequence' @ [58:16] ==> public fun CharSequence.splitToSequence(vararg delimiters: Char, ignoreCase: Boolean = ..., limit: Int = ...): Sequence<String> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'oldChar' @ [58:32] ==> value-parameter oldChar: Char defined in kotlin.text.replace[ValueParameterDescriptorImpl]
 
@@ -110,7 +110,7 @@ Inferred types:
 
 'toString' @ [58:99] ==> public open fun toString(): String defined in kotlin.Char[DeserializedSimpleFunctionDescriptor]
 
-'splitToSequence' @ [66:9] ==> public fun CharSequence.splitToSequence(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): Sequence<String> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'splitToSequence' @ [66:9] ==> public fun CharSequence.splitToSequence(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): Sequence<String> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'oldValue' @ [66:25] ==> value-parameter oldValue: String defined in kotlin.text.replace[ValueParameterDescriptorImpl]
 
@@ -248,7 +248,7 @@ Inferred types:
 
 'args' @ [144:145] ==> value-parameter vararg args: Any? defined in kotlin.text.format[ValueParameterDescriptorImpl]
 
-'require' @ [154:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [154:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'limit' @ [154:13] ==> value-parameter limit: Int = ... defined in kotlin.text.split[ValueParameterDescriptorImpl]
 
@@ -411,8 +411,6 @@ Inferred types:
 
 'length' @ [233:112] ==> value-parameter length: Int defined in kotlin.text.String[ValueParameterDescriptorImpl]
 
-'Charsets' @ [233:120] ==> public object Charsets defined in kotlin.text in file Charsets.kt[FakeCallableDescriptorForObject]
-
 'UTF_8' @ [233:129] ==> @JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[PropertyDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [239:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
@@ -420,8 +418,6 @@ Inferred types:
 'String' @ [240:64] ==> public constructor String(p0: (ByteArray..ByteArray?), p1: (Charset..Charset?)) defined in java.lang.String[JavaClassConstructorDescriptor]
 
 'bytes' @ [240:71] ==> value-parameter bytes: ByteArray defined in kotlin.text.String[ValueParameterDescriptorImpl]
-
-'Charsets' @ [240:78] ==> public object Charsets defined in kotlin.text in file Charsets.kt[FakeCallableDescriptorForObject]
 
 'UTF_8' @ [240:87] ==> @JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[PropertyDescriptorImpl]
 
@@ -702,7 +698,7 @@ Inferred types:
 
 'this' @ [401:105] ==> <this> defined in kotlin.text.decapitalize[ReceiverParameterDescriptorImpl]
 
-'require' @ [410:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [410:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [410:14] ==> value-parameter n: Int defined in kotlin.text.repeat[ValueParameterDescriptorImpl]
 

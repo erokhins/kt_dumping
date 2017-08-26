@@ -190,13 +190,9 @@
 
 'int' @ [177:9] ==> val int: Int defined in kotlin.text.toByteOrNull[LocalVariableDescriptor]
 
-'Byte' @ [177:15] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
-
 'MIN_VALUE' @ [177:20] ==> public const final val MIN_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
 'int' @ [177:33] ==> val int: Int defined in kotlin.text.toByteOrNull[LocalVariableDescriptor]
-
-'Byte' @ [177:39] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [177:44] ==> public const final val MAX_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
@@ -218,13 +214,9 @@
 
 'int' @ [197:9] ==> val int: Int defined in kotlin.text.toShortOrNull[LocalVariableDescriptor]
 
-'Short' @ [197:15] ==> public companion object defined in kotlin.Short[FakeCallableDescriptorForObject]
-
 'MIN_VALUE' @ [197:21] ==> public const final val MIN_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
 'int' @ [197:34] ==> val int: Int defined in kotlin.text.toShortOrNull[LocalVariableDescriptor]
-
-'Short' @ [197:40] ==> public companion object defined in kotlin.Short[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [197:46] ==> public const final val MAX_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
@@ -534,6 +526,8 @@ Inferred types:
 
 'this' @ [333:62] ==> <this> defined in kotlin.text.toFloatOrNull[ReceiverParameterDescriptorImpl]
 
+'parseFloat' @ [333:85] ==> public open fun parseFloat(p0: (String..String?)): Float defined in java.lang.Float[JavaMethodDescriptor]
+
 'SinceKotlin' @ [339:1] ==> public constructor SinceKotlin(version: String) defined in kotlin.SinceKotlin[DeserializedClassConstructorDescriptor]
 
 'kotlin.jvm.JvmVersion' @ [340:1] ==> public constructor JvmVersion(minimum: Int = ..., maximum: Int = ...) defined in kotlin.jvm.JvmVersion[ClassConstructorDescriptorImpl]
@@ -543,6 +537,8 @@ Inferred types:
     <T> -> Double
 
 'this' @ [341:64] ==> <this> defined in kotlin.text.toDoubleOrNull[ReceiverParameterDescriptorImpl]
+
+'parseDouble' @ [341:88] ==> public open fun parseDouble(p0: (String..String?)): Double defined in java.lang.Double[JavaMethodDescriptor]
 
 'kotlin.jvm.JvmVersion' @ [346:1] ==> public constructor JvmVersion(minimum: Int = ..., maximum: Int = ...) defined in kotlin.jvm.JvmVersion[ClassConstructorDescriptorImpl]
 

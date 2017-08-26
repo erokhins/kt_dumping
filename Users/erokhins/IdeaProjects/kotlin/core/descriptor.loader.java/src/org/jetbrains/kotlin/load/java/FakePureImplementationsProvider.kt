@@ -55,3 +55,5 @@ Inferred types:
     <T> -> String
     <R> -> FqName
 
+'FqName' @ [39:80] ==> public constructor FqName(@NotNull fqName: String) defined in org.jetbrains.kotlin.name.FqName[JavaClassConstructorDescriptor]
+

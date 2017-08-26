@@ -36,13 +36,13 @@
 
 'other' @ [33:26] ==> value-parameter other: Any? defined in kotlin.ranges.ComparableRange.equals[ValueParameterDescriptorImpl]
 
-'start' @ [33:32] ==> public open val start: Comparable<Nothing> defined in kotlin.ranges.ComparableRange[PropertyDescriptorImpl]
+'start' @ [33:32] ==> public open val start: Comparable<*> defined in kotlin.ranges.ComparableRange[PropertyDescriptorImpl]
 
 'endInclusive' @ [33:41] ==> public open val endInclusive: T defined in kotlin.ranges.ComparableRange[PropertyDescriptorImpl]
 
 'other' @ [33:57] ==> value-parameter other: Any? defined in kotlin.ranges.ComparableRange.equals[ValueParameterDescriptorImpl]
 
-'endInclusive' @ [33:63] ==> public open val endInclusive: Comparable<Nothing> defined in kotlin.ranges.ComparableRange[PropertyDescriptorImpl]
+'endInclusive' @ [33:63] ==> public open val endInclusive: Comparable<*> defined in kotlin.ranges.ComparableRange[PropertyDescriptorImpl]
 
 'if (isEmpty()) -1 else 31 * start.hashCode() + endInclusive.hashCode()' @ [37:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Int, elseBranch: Int): Int[SimpleFunctionDescriptorImpl]
 Inferred types:

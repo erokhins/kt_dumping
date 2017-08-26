@@ -4,7 +4,7 @@
 
 'getService' @ [28:31] ==> public open fun <T : (Any..Any?)> getService(@NotNull p0: Project, @NotNull p1: Class<(AndroidLayoutXmlFileManager..AndroidLayoutXmlFileManager?)>): (AndroidLayoutXmlFileManager..AndroidLayoutXmlFileManager?) defined in org.jetbrains.kotlin.com.intellij.openapi.components.ServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AndroidLayoutXmlFileManager
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager..org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager?)
 
 'project' @ [28:42] ==> value-parameter project: Project defined in org.jetbrains.kotlin.android.synthetic.res.CliAndroidPackageFragmentProviderExtension.getLayoutXmlFileManager[ValueParameterDescriptorImpl]
 

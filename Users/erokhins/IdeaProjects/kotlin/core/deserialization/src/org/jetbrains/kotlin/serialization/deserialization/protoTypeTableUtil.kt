@@ -1,9 +1,9 @@
 'supertypeList' @ [23:12] ==> public final val ProtoBuf.Class.supertypeList: (MutableList<(ProtoBuf.Type..ProtoBuf.Type?)>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?)[MyPropertyDescriptor]
 
-'ifEmpty' @ [23:26] ==> public inline fun <T, C : Collection<(ProtoBuf.Type..ProtoBuf.Type?)>> List<ProtoBuf.Type>.ifEmpty(body: () -> List<ProtoBuf.Type>): List<ProtoBuf.Type> defined in org.jetbrains.kotlin.utils[SimpleFunctionDescriptorImpl]
+'ifEmpty' @ [23:26] ==> public inline fun <T, C : Collection<(ProtoBuf.Type..ProtoBuf.Type?)>> (List<ProtoBuf.Type>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?).ifEmpty(body: () -> (List<ProtoBuf.Type>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?)): (List<ProtoBuf.Type>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?) defined in org.jetbrains.kotlin.utils[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Type..org.jetbrains.kotlin.serialization.ProtoBuf.Type?)
-    <C : Collection<T>> -> List<Type>
+    <C : Collection<T>> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Type>..kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Type..org.jetbrains.kotlin.serialization.ProtoBuf.Type?)>?)
 
 'supertypeIdList' @ [23:36] ==> public final val ProtoBuf.Class.supertypeIdList: (MutableList<(Int..Int?)>..List<(Int..Int?)>?)[MyPropertyDescriptor]
 
@@ -54,10 +54,10 @@ Inferred types:
 
 'upperBoundList' @ [43:12] ==> public final val ProtoBuf.TypeParameter.upperBoundList: (MutableList<(ProtoBuf.Type..ProtoBuf.Type?)>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?)[MyPropertyDescriptor]
 
-'ifEmpty' @ [43:27] ==> public inline fun <T, C : Collection<(ProtoBuf.Type..ProtoBuf.Type?)>> List<ProtoBuf.Type>.ifEmpty(body: () -> List<ProtoBuf.Type>): List<ProtoBuf.Type> defined in org.jetbrains.kotlin.utils[SimpleFunctionDescriptorImpl]
+'ifEmpty' @ [43:27] ==> public inline fun <T, C : Collection<(ProtoBuf.Type..ProtoBuf.Type?)>> (List<ProtoBuf.Type>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?).ifEmpty(body: () -> (List<ProtoBuf.Type>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?)): (List<ProtoBuf.Type>..List<(ProtoBuf.Type..ProtoBuf.Type?)>?) defined in org.jetbrains.kotlin.utils[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> (org.jetbrains.kotlin.serialization.ProtoBuf.Type..org.jetbrains.kotlin.serialization.ProtoBuf.Type?)
-    <C : Collection<T>> -> List<Type>
+    <C : Collection<T>> -> (kotlin.collections.List<org.jetbrains.kotlin.serialization.ProtoBuf.Type>..kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Type..org.jetbrains.kotlin.serialization.ProtoBuf.Type?)>?)
 
 'upperBoundIdList' @ [43:37] ==> public final val ProtoBuf.TypeParameter.upperBoundIdList: (MutableList<(Int..Int?)>..List<(Int..Int?)>?)[MyPropertyDescriptor]
 

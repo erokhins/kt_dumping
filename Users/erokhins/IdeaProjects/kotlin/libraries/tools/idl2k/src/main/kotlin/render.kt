@@ -79,7 +79,7 @@ Inferred types:
 
 'name' @ [50:16] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateAttribute[PropertyDescriptorImpl]
 
-'replaceKeywords' @ [50:21] ==> private fun String.replaceKeywords(): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'replaceKeywords' @ [50:21] ==> private fun String.replaceKeywords(): String defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'append' @ [51:5] ==> public abstract fun append(p0: (CharSequence..CharSequence?)): (Appendable..Appendable?) defined in java.lang.Appendable[JavaMethodDescriptor]
 
@@ -107,7 +107,7 @@ Inferred types:
 
 'initializer' @ [59:20] ==> public final val initializer: String? defined in org.jetbrains.idl2k.GenerateAttribute[PropertyDescriptorImpl]
 
-'replaceWrongConstants' @ [59:32] ==> private fun String.replaceWrongConstants(type: Type): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'replaceWrongConstants' @ [59:32] ==> private fun String.replaceWrongConstants(type: Type): String defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'arg' @ [59:54] ==> value-parameter arg: GenerateAttribute defined in org.jetbrains.idl2k.renderAttributeDeclaration[ValueParameterDescriptorImpl]
 
@@ -137,7 +137,7 @@ Inferred types:
 
 'name' @ [71:33] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateAttribute[PropertyDescriptorImpl]
 
-'renderAttributeDeclaration' @ [74:5] ==> private fun Appendable /* = Appendable */.renderAttributeDeclaration(arg: GenerateAttribute, modality: MemberModality, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderAttributeDeclaration' @ [74:5] ==> private fun Appendable /* = Appendable */.renderAttributeDeclaration(arg: GenerateAttribute, modality: MemberModality, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'arg' @ [74:32] ==> value-parameter arg: GenerateAttribute defined in org.jetbrains.idl2k.renderAttributeDeclarationAsProperty[ValueParameterDescriptorImpl]
 
@@ -220,11 +220,9 @@ Inferred types:
 
 'type' @ [92:63] ==> public final val type: String defined in org.jetbrains.idl2k.SimpleType[PropertyDescriptorImpl]
 
-'parse' @ [92:80] ==> private fun String.parse(): BigInteger defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'parse' @ [92:80] ==> private fun String.parse(): BigInteger defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'valueOf' @ [92:101] ==> public open fun valueOf(p0: Long): (BigInteger..BigInteger?) defined in java.math.BigInteger[JavaMethodDescriptor]
-
-'Int' @ [92:109] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [92:113] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
@@ -273,7 +271,7 @@ Inferred types:
 Inferred types:
     <T> -> StringBuilder
 
-'renderAttributeDeclaration' @ [100:37] ==> private fun Appendable /* = Appendable */.renderAttributeDeclaration(arg: GenerateAttribute, modality: MemberModality, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderAttributeDeclaration' @ [100:37] ==> private fun Appendable /* = Appendable */.renderAttributeDeclaration(arg: GenerateAttribute, modality: MemberModality, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [100:64] ==> value-parameter it: GenerateAttribute defined in org.jetbrains.idl2k.renderArgumentsDeclaration.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -295,7 +293,7 @@ Inferred types:
 
 'name' @ [103:62] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateFunctionCall[PropertyDescriptorImpl]
 
-'replaceKeywords' @ [103:67] ==> private fun String.replaceKeywords(): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'replaceKeywords' @ [103:67] ==> private fun String.replaceKeywords(): String defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'call' @ [103:88] ==> value-parameter call: GenerateFunctionCall defined in org.jetbrains.idl2k.renderCall[ValueParameterDescriptorImpl]
 
@@ -306,6 +304,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [103:146] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'replaceKeywords' @ [103:154] ==> private fun String.replaceKeywords(): String defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'indent' @ [106:5] ==> private fun <O : Appendable /* = Appendable */> Appendable /* = Appendable */.indent(commented: Boolean = ..., level: Int): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -365,9 +365,9 @@ Inferred types:
 
 'name' @ [125:14] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateFunction[PropertyDescriptorImpl]
 
-'replaceKeywords' @ [125:19] ==> private fun String.replaceKeywords(): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'replaceKeywords' @ [125:19] ==> private fun String.replaceKeywords(): String defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
-'renderArgumentsDeclaration' @ [126:5] ==> private fun Appendable /* = Appendable */.renderArgumentsDeclaration(args: List<GenerateAttribute>, omitDefaults: Boolean = ...): Appendable /* = Appendable */ defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderArgumentsDeclaration' @ [126:5] ==> private fun Appendable /* = Appendable */.renderArgumentsDeclaration(args: List<GenerateAttribute>, omitDefaults: Boolean = ...): Appendable /* = Appendable */ defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'f' @ [126:32] ==> value-parameter f: GenerateFunction defined in org.jetbrains.idl2k.renderFunctionDeclaration[ValueParameterDescriptorImpl]
 
@@ -506,7 +506,7 @@ Inferred types:
 
 'arg' @ [148:136] ==> value-parameter arg: GenerateAttribute defined in org.jetbrains.idl2k.fixRequiredArguments.<anonymous>[ValueParameterDescriptorImpl]
 
-'isRequiredFunctionArgument' @ [148:140] ==> private fun GenerateAttribute.isRequiredFunctionArgument(owner: String, functionName: String): Boolean defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'isRequiredFunctionArgument' @ [148:140] ==> private fun GenerateAttribute.isRequiredFunctionArgument(owner: String, functionName: String): Boolean defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'parent' @ [148:167] ==> value-parameter parent: String defined in org.jetbrains.idl2k.fixRequiredArguments[ValueParameterDescriptorImpl]
 
@@ -585,7 +585,7 @@ Inferred types:
 
 'iface' @ [170:25] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
-'allSuperTypes' @ [170:31] ==> public fun GenerateTraitOrClass.allSuperTypes(all: Map<String, GenerateTraitOrClass>): List<GenerateTraitOrClass> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'allSuperTypes' @ [170:31] ==> public fun GenerateTraitOrClass.allSuperTypes(all: Map<String, GenerateTraitOrClass>): List<GenerateTraitOrClass> defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [170:45] ==> value-parameter allTypes: Map<String, GenerateTraitOrClass> defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -636,13 +636,13 @@ Inferred types:
 Inferred types:
     <T> -> ConstructorWithSuperTypeCall
 
-'renderArgumentsDeclaration' @ [176:9] ==> private fun Appendable /* = Appendable */.renderArgumentsDeclaration(args: List<GenerateAttribute>, omitDefaults: Boolean = ...): Appendable /* = Appendable */ defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderArgumentsDeclaration' @ [176:9] ==> private fun Appendable /* = Appendable */.renderArgumentsDeclaration(args: List<GenerateAttribute>, omitDefaults: Boolean = ...): Appendable /* = Appendable */ defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'primary' @ [176:36] ==> val primary: ConstructorWithSuperTypeCall? defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
 'constructor' @ [176:44] ==> public final val constructor: GenerateFunction defined in org.jetbrains.idl2k.ConstructorWithSuperTypeCall[PropertyDescriptorImpl]
 
-'fixRequiredArguments' @ [176:56] ==> private fun GenerateFunction.fixRequiredArguments(parent: String): GenerateFunction defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'fixRequiredArguments' @ [176:56] ==> private fun GenerateFunction.fixRequiredArguments(parent: String): GenerateFunction defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [176:77] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -650,7 +650,7 @@ Inferred types:
 
 'arguments' @ [176:89] ==> public final val arguments: List<GenerateAttribute> defined in org.jetbrains.idl2k.GenerateFunction[PropertyDescriptorImpl]
 
-'dynamicIfUnknownType' @ [176:99] ==> public fun List<GenerateAttribute>.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): List<GenerateAttribute> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [176:99] ==> public fun List<GenerateAttribute>.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): List<GenerateAttribute> defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
 'allTypesAndEnums' @ [176:120] ==> val allTypesAndEnums: Set<String> defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
@@ -739,13 +739,13 @@ Inferred types:
 
 'append' @ [193:9] ==> public abstract fun append(p0: (CharSequence..CharSequence?)): (Appendable..Appendable?) defined in java.lang.Appendable[JavaMethodDescriptor]
 
-'renderArgumentsDeclaration' @ [194:9] ==> private fun Appendable /* = Appendable */.renderArgumentsDeclaration(args: List<GenerateAttribute>, omitDefaults: Boolean = ...): Appendable /* = Appendable */ defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderArgumentsDeclaration' @ [194:9] ==> private fun Appendable /* = Appendable */.renderArgumentsDeclaration(args: List<GenerateAttribute>, omitDefaults: Boolean = ...): Appendable /* = Appendable */ defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'secondary' @ [194:36] ==> value-parameter secondary: ConstructorWithSuperTypeCall defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
 'constructor' @ [194:46] ==> public final val constructor: GenerateFunction defined in org.jetbrains.idl2k.ConstructorWithSuperTypeCall[PropertyDescriptorImpl]
 
-'fixRequiredArguments' @ [194:58] ==> private fun GenerateFunction.fixRequiredArguments(parent: String): GenerateFunction defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'fixRequiredArguments' @ [194:58] ==> private fun GenerateFunction.fixRequiredArguments(parent: String): GenerateFunction defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [194:79] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -753,7 +753,7 @@ Inferred types:
 
 'arguments' @ [194:91] ==> public final val arguments: List<GenerateAttribute> defined in org.jetbrains.idl2k.GenerateFunction[PropertyDescriptorImpl]
 
-'dynamicIfUnknownType' @ [194:101] ==> public fun List<GenerateAttribute>.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): List<GenerateAttribute> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [194:101] ==> public fun List<GenerateAttribute>.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): List<GenerateAttribute> defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
 'allTypesAndEnums' @ [194:122] ==> val allTypesAndEnums: Set<String> defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
@@ -850,7 +850,7 @@ Inferred types:
 
 'name' @ [207:71] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateAttribute[PropertyDescriptorImpl]
 
-'hasNoVars' @ [207:78] ==> private fun List<GenerateAttribute>.hasNoVars(): Boolean defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'hasNoVars' @ [207:78] ==> private fun List<GenerateAttribute>.hasNoVars(): Boolean defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [209:10] ==> public inline fun <T, R> Iterable<GenerateAttribute>.map(transform: (GenerateAttribute) -> GenerateAttribute): List<GenerateAttribute> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -859,7 +859,7 @@ Inferred types:
 
 'it' @ [209:16] ==> value-parameter it: GenerateAttribute defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'dynamicIfUnknownType' @ [209:19] ==> public fun GenerateAttribute.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): GenerateAttribute defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [209:19] ==> public fun GenerateAttribute.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): GenerateAttribute defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
 'allTypesAndEnums' @ [209:40] ==> val allTypesAndEnums: Set<String> defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
@@ -931,6 +931,8 @@ Inferred types:
 Inferred types:
     <K> -> String
     <V> -> GenerateAttribute
+
+'merge' @ [213:25] ==> private fun merge(a: GenerateAttribute, b: GenerateAttribute): GenerateAttribute defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'values' @ [213:32] ==> public abstract val values: Collection<GenerateAttribute> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
@@ -1099,7 +1101,7 @@ Inferred types:
 
 'attribute' @ [229:24] ==> value-parameter attribute: GenerateAttribute defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'kindNotChanged' @ [229:34] ==> private fun GenerateAttribute.kindNotChanged(superAttributesByName: Map<String, List<GenerateAttribute>>): Boolean defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'kindNotChanged' @ [229:34] ==> private fun GenerateAttribute.kindNotChanged(superAttributesByName: Map<String, List<GenerateAttribute>>): Boolean defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'superAttributesByName' @ [229:49] ==> val superAttributesByName: Map<String, List<GenerateAttribute>> defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
@@ -1111,11 +1113,11 @@ Inferred types:
 
 'attribute' @ [230:75] ==> value-parameter attribute: GenerateAttribute defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'hasSuperImplementation' @ [230:85] ==> private fun GenerateAttribute.hasSuperImplementation(allSuperTypes: List<GenerateTraitOrClass>): Boolean defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'hasSuperImplementation' @ [230:85] ==> private fun GenerateAttribute.hasSuperImplementation(allSuperTypes: List<GenerateTraitOrClass>): Boolean defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'allSuperTypes' @ [230:108] ==> val allSuperTypes: List<GenerateTraitOrClass> defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
-'renderAttributeDeclarationAsProperty' @ [234:17] ==> private fun Appendable /* = Appendable */.renderAttributeDeclarationAsProperty(arg: GenerateAttribute, modality: MemberModality, commented: Boolean, level: Int, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderAttributeDeclarationAsProperty' @ [234:17] ==> private fun Appendable /* = Appendable */.renderAttributeDeclarationAsProperty(arg: GenerateAttribute, modality: MemberModality, commented: Boolean, level: Int, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'attribute' @ [234:54] ==> value-parameter attribute: GenerateAttribute defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1123,7 +1125,7 @@ Inferred types:
 
 'attribute' @ [236:37] ==> value-parameter attribute: GenerateAttribute defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'isCommented' @ [236:47] ==> private fun GenerateAttribute.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'isCommented' @ [236:47] ==> private fun GenerateAttribute.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [236:59] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1164,7 +1166,7 @@ Inferred types:
 
 'it' @ [243:20] ==> value-parameter it: GenerateFunction defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'dynamicIfUnknownType' @ [243:23] ==> public fun GenerateFunction.dynamicIfUnknownType(allTypes: Set<String>): GenerateFunction defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [243:23] ==> public fun GenerateFunction.dynamicIfUnknownType(allTypes: Set<String>): GenerateFunction defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
 'allTypesAndEnums' @ [243:44] ==> val allTypesAndEnums: Set<String> defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
@@ -1182,9 +1184,11 @@ Inferred types:
     <K> -> String
     <V> -> GenerateFunction
 
+'betterFunction' @ [243:104] ==> public fun betterFunction(f1: GenerateFunction, f2: GenerateFunction): GenerateFunction defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
+
 'values' @ [243:120] ==> public abstract val values: Collection<GenerateFunction> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
-'renderFunctionDeclaration' @ [246:9] ==> private fun Appendable /* = Appendable */.renderFunctionDeclaration(owner: String, f: GenerateFunction, override: Boolean, commented: Boolean, level: Int = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderFunctionDeclaration' @ [246:9] ==> private fun Appendable /* = Appendable */.renderFunctionDeclaration(owner: String, f: GenerateFunction, override: Boolean, commented: Boolean, level: Int = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [247:17] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1192,7 +1196,7 @@ Inferred types:
 
 'function' @ [247:29] ==> value-parameter function: GenerateFunction defined in org.jetbrains.idl2k.render.doRenderFunction[ValueParameterDescriptorImpl]
 
-'fixRequiredArguments' @ [247:38] ==> private fun GenerateFunction.fixRequiredArguments(parent: String): GenerateFunction defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'fixRequiredArguments' @ [247:38] ==> private fun GenerateFunction.fixRequiredArguments(parent: String): GenerateFunction defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [247:59] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1210,7 +1214,7 @@ Inferred types:
 
 'function' @ [249:29] ==> value-parameter function: GenerateFunction defined in org.jetbrains.idl2k.render.doRenderFunction[ValueParameterDescriptorImpl]
 
-'isCommented' @ [249:38] ==> private fun GenerateFunction.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'isCommented' @ [249:38] ==> private fun GenerateFunction.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [249:50] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1298,7 +1302,7 @@ Inferred types:
 Inferred types:
     <T> -> GenerateAttribute
 
-'renderAttributeDeclarationAsProperty' @ [264:13] ==> private fun Appendable /* = Appendable */.renderAttributeDeclarationAsProperty(arg: GenerateAttribute, modality: MemberModality, commented: Boolean, level: Int, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderAttributeDeclarationAsProperty' @ [264:13] ==> private fun Appendable /* = Appendable */.renderAttributeDeclarationAsProperty(arg: GenerateAttribute, modality: MemberModality, commented: Boolean, level: Int, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [264:50] ==> value-parameter it: GenerateAttribute defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1306,7 +1310,7 @@ Inferred types:
 
 'it' @ [264:99] ==> value-parameter it: GenerateAttribute defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'isCommented' @ [264:102] ==> private fun GenerateAttribute.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'isCommented' @ [264:102] ==> private fun GenerateAttribute.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [264:114] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1318,7 +1322,7 @@ Inferred types:
 Inferred types:
     <T> -> GenerateAttribute
 
-'renderAttributeDeclarationAsProperty' @ [267:13] ==> private fun Appendable /* = Appendable */.renderAttributeDeclarationAsProperty(arg: GenerateAttribute, modality: MemberModality, commented: Boolean, level: Int, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderAttributeDeclarationAsProperty' @ [267:13] ==> private fun Appendable /* = Appendable */.renderAttributeDeclarationAsProperty(arg: GenerateAttribute, modality: MemberModality, commented: Boolean, level: Int, omitDefaults: Boolean = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [267:50] ==> value-parameter it: GenerateAttribute defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1326,7 +1330,7 @@ Inferred types:
 
 'it' @ [267:99] ==> value-parameter it: GenerateAttribute defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'isCommented' @ [267:102] ==> private fun GenerateAttribute.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'isCommented' @ [267:102] ==> private fun GenerateAttribute.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [267:114] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1338,7 +1342,7 @@ Inferred types:
 Inferred types:
     <T> -> GenerateFunction
 
-'renderFunctionDeclaration' @ [270:13] ==> private fun Appendable /* = Appendable */.renderFunctionDeclaration(owner: String, f: GenerateFunction, override: Boolean, commented: Boolean, level: Int = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderFunctionDeclaration' @ [270:13] ==> private fun Appendable /* = Appendable */.renderFunctionDeclaration(owner: String, f: GenerateFunction, override: Boolean, commented: Boolean, level: Int = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [270:39] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1346,7 +1350,7 @@ Inferred types:
 
 'it' @ [270:51] ==> value-parameter it: GenerateFunction defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'fixRequiredArguments' @ [270:54] ==> private fun GenerateFunction.fixRequiredArguments(parent: String): GenerateFunction defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'fixRequiredArguments' @ [270:54] ==> private fun GenerateFunction.fixRequiredArguments(parent: String): GenerateFunction defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [270:75] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1354,7 +1358,7 @@ Inferred types:
 
 'it' @ [270:129] ==> value-parameter it: GenerateFunction defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 
-'isCommented' @ [270:132] ==> private fun GenerateFunction.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'isCommented' @ [270:132] ==> private fun GenerateFunction.isCommented(parent: String): Boolean defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [270:144] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1394,7 +1398,7 @@ Inferred types:
 
 'generateBuilderFunction' @ [280:15] ==> public final val generateBuilderFunction: Boolean defined in org.jetbrains.idl2k.GenerateTraitOrClass[PropertyDescriptorImpl]
 
-'renderBuilderFunction' @ [281:9] ==> public fun Appendable /* = Appendable */.renderBuilderFunction(dictionary: GenerateTraitOrClass, allSuperTypes: List<GenerateTraitOrClass>, allTypes: Set<String>): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderBuilderFunction' @ [281:9] ==> public fun Appendable /* = Appendable */.renderBuilderFunction(dictionary: GenerateTraitOrClass, allSuperTypes: List<GenerateTraitOrClass>, allTypes: Set<String>): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'iface' @ [281:31] ==> value-parameter iface: GenerateTraitOrClass defined in org.jetbrains.idl2k.render[ValueParameterDescriptorImpl]
 
@@ -1481,7 +1485,7 @@ Inferred types:
 
 'ARGUMENT' @ [292:49] ==> enum entry ARGUMENT defined in org.jetbrains.idl2k.AttributeKind[FakeCallableDescriptorForObject]
 
-'dynamicIfUnknownType' @ [293:14] ==> public fun List<GenerateAttribute>.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): List<GenerateAttribute> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [293:14] ==> public fun List<GenerateAttribute>.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): List<GenerateAttribute> defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [293:35] ==> value-parameter allTypes: Set<String> defined in org.jetbrains.idl2k.renderBuilderFunction[ValueParameterDescriptorImpl]
 
@@ -1530,7 +1534,7 @@ Inferred types:
 
 'name' @ [297:44] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateTraitOrClass[PropertyDescriptorImpl]
 
-'renderArgumentsDeclaration' @ [298:5] ==> private fun Appendable /* = Appendable */.renderArgumentsDeclaration(args: List<GenerateAttribute>, omitDefaults: Boolean = ...): Appendable /* = Appendable */ defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'renderArgumentsDeclaration' @ [298:5] ==> private fun Appendable /* = Appendable */.renderArgumentsDeclaration(args: List<GenerateAttribute>, omitDefaults: Boolean = ...): Appendable /* = Appendable */ defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'fields' @ [298:32] ==> val fields: List<GenerateAttribute> defined in org.jetbrains.idl2k.renderBuilderFunction[LocalVariableDescriptor]
 
@@ -1564,7 +1568,7 @@ Inferred types:
 
 'name' @ [307:50] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateAttribute[PropertyDescriptorImpl]
 
-'replaceKeywords' @ [307:55] ==> private fun String.replaceKeywords(): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'replaceKeywords' @ [307:55] ==> private fun String.replaceKeywords(): String defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'appendln' @ [310:5] ==> public fun Appendable /* = Appendable */.appendln(): Appendable /* = Appendable */ defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -1617,7 +1621,7 @@ Inferred types:
 
 'type' @ [323:65] ==> public final val type: Type defined in org.jetbrains.idl2k.GenerateAttribute[PropertyDescriptorImpl]
 
-'betterType' @ [323:72] ==> private fun Pair<Type, Type>.betterType(): Type defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'betterType' @ [323:72] ==> private fun Pair<Type, Type>.betterType(): Type defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [323:93] ==> value-parameter it: Pair<GenerateAttribute, GenerateAttribute> defined in org.jetbrains.idl2k.betterFunction.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1630,7 +1634,7 @@ Inferred types:
 
 'name' @ [323:105] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateAttribute[PropertyDescriptorImpl]
 
-'betterName' @ [323:112] ==> private fun Pair<String, String>.betterName(): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'betterName' @ [323:112] ==> private fun Pair<String, String>.betterName(): String defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [324:40] ==> public fun <T> listOf(vararg elements: NativeGetterOrSetter): List<NativeGetterOrSetter> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1690,6 +1694,8 @@ Inferred types:
     <R> -> String
 
 'Int' @ [330:65] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
+
+'toString' @ [330:70] ==> public open fun toString(): String defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
 'listOf' @ [330:82] ==> public fun <T> listOf(element: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1886,7 +1892,7 @@ Inferred types:
 
 'entries' @ [374:34] ==> public final val entries: List<String> defined in org.jetbrains.idl2k.EnumDefinition[PropertyDescriptorImpl]
 
-'mapEnumConstant' @ [375:25] ==> public fun mapEnumConstant(entry: String): String defined in org.jetbrains.idl2k.util[SimpleFunctionDescriptorImpl]
+'mapEnumConstant' @ [375:25] ==> public fun mapEnumConstant(entry: String): String defined in org.jetbrains.idl2k.util in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'entry' @ [375:41] ==> val entry: String defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
@@ -1951,7 +1957,7 @@ Inferred types:
 Inferred types:
     <T> -> GenerateTraitOrClass
 
-'render' @ [388:9] ==> public fun Appendable /* = Appendable */.render(allTypes: Map<String, GenerateTraitOrClass>, enums: List<EnumDefinition>, typeNamesToUnions: Map<String, List<String>>, iface: GenerateTraitOrClass, markerAnnotation: Boolean = ..., mdnCache: MDNDocumentationCache? = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'render' @ [388:9] ==> public fun Appendable /* = Appendable */.render(allTypes: Map<String, GenerateTraitOrClass>, enums: List<EnumDefinition>, typeNamesToUnions: Map<String, List<String>>, iface: GenerateTraitOrClass, markerAnnotation: Boolean = ..., mdnCache: MDNDocumentationCache? = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [388:16] ==> val allTypes: Map<String, GenerateTraitOrClass> defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
@@ -1989,7 +1995,7 @@ Inferred types:
 Inferred types:
     <T> -> GenerateTraitOrClass
 
-'render' @ [392:9] ==> public fun Appendable /* = Appendable */.render(allTypes: Map<String, GenerateTraitOrClass>, enums: List<EnumDefinition>, typeNamesToUnions: Map<String, List<String>>, iface: GenerateTraitOrClass, markerAnnotation: Boolean = ..., mdnCache: MDNDocumentationCache? = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'render' @ [392:9] ==> public fun Appendable /* = Appendable */.render(allTypes: Map<String, GenerateTraitOrClass>, enums: List<EnumDefinition>, typeNamesToUnions: Map<String, List<String>>, iface: GenerateTraitOrClass, markerAnnotation: Boolean = ..., mdnCache: MDNDocumentationCache? = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [392:16] ==> val allTypes: Map<String, GenerateTraitOrClass> defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
@@ -2026,7 +2032,7 @@ Inferred types:
 Inferred types:
     <T> -> GenerateTraitOrClass
 
-'render' @ [396:9] ==> public fun Appendable /* = Appendable */.render(allTypes: Map<String, GenerateTraitOrClass>, enums: List<EnumDefinition>, typeNamesToUnions: Map<String, List<String>>, iface: GenerateTraitOrClass, markerAnnotation: Boolean = ..., mdnCache: MDNDocumentationCache? = ...): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'render' @ [396:9] ==> public fun Appendable /* = Appendable */.render(allTypes: Map<String, GenerateTraitOrClass>, enums: List<EnumDefinition>, typeNamesToUnions: Map<String, List<String>>, iface: GenerateTraitOrClass, markerAnnotation: Boolean = ..., mdnCache: MDNDocumentationCache? = ...): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [396:16] ==> val allTypes: Map<String, GenerateTraitOrClass> defined in org.jetbrains.idl2k.render[LocalVariableDescriptor]
 
@@ -2055,7 +2061,7 @@ Inferred types:
 Inferred types:
     <T> -> EnumDefinition
 
-'render' @ [400:24] ==> public fun Appendable /* = Appendable */.render(enumDefinition: EnumDefinition): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'render' @ [400:24] ==> public fun Appendable /* = Appendable */.render(enumDefinition: EnumDefinition): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [400:31] ==> value-parameter it: EnumDefinition defined in org.jetbrains.idl2k.render.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -178,7 +178,7 @@ Inferred types:
 
 'invocator' @ [87:30] ==> val invocator: Invocable? defined in org.jetbrains.kotlin.script.jsr223.KotlinJsr223LocalScriptEngineIT.testInvocable[LocalVariableDescriptor]
 
-'assertThrows' @ [88:9] ==> public fun assertThrows(exceptionClass: Class<*>, body: () -> Unit): Unit defined in org.jetbrains.kotlin.script.jsr223[SimpleFunctionDescriptorImpl]
+'assertThrows' @ [88:9] ==> public fun assertThrows(exceptionClass: Class<*>, body: () -> Unit): Unit defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineIT.kt[SimpleFunctionDescriptorImpl]
 
 'NoSuchMethodException' @ [88:22] ==> public constructor NoSuchMethodException() defined in java.lang.NoSuchMethodException[JavaClassConstructorDescriptor]
 
@@ -517,7 +517,7 @@ Inferred types:
 
 'name' @ [201:70] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '!' @ [204:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -537,7 +537,7 @@ Inferred types:
 
 'name' @ [205:74] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'e' @ [205:90] ==> val e: Throwable defined in org.jetbrains.kotlin.script.jsr223.assertThrows[LocalVariableDescriptor]
 

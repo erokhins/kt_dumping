@@ -36,7 +36,7 @@ Inferred types:
 
 'readHoldCount' @ [71:46] ==> public final val ReentrantReadWriteLock.readHoldCount: Int[MyPropertyDescriptor]
 
-'repeat' @ [72:5] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'repeat' @ [72:5] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin in file Standard.kt[SimpleFunctionDescriptorImpl]
 
 'readCount' @ [72:12] ==> val readCount: Int defined in kotlin.concurrent.write[LocalVariableDescriptor]
 
@@ -52,7 +52,7 @@ Inferred types:
 
 'invoke' @ [77:16] ==> public abstract operator fun invoke(): T defined in kotlin.Function0[FunctionInvokeDescriptor]
 
-'repeat' @ [79:9] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'repeat' @ [79:9] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin in file Standard.kt[SimpleFunctionDescriptorImpl]
 
 'readCount' @ [79:16] ==> val readCount: Int defined in kotlin.concurrent.write[LocalVariableDescriptor]
 

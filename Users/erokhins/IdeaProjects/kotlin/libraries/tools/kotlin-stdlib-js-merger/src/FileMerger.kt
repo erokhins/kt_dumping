@@ -44,7 +44,7 @@
 
 'wrapper' @ [47:26] ==> val wrapper: List<JsStatement> defined in org.jetbrains.kotlin.js.main[LocalVariableDescriptor]
 
-'createInsertionPlace' @ [47:34] ==> private fun List<JsStatement>.createInsertionPlace(): JsBlock defined in org.jetbrains.kotlin.js[SimpleFunctionDescriptorImpl]
+'createInsertionPlace' @ [47:34] ==> private fun List<JsStatement>.createInsertionPlace(): JsBlock defined in org.jetbrains.kotlin.js in file FileMerger.kt[SimpleFunctionDescriptorImpl]
 
 'mutableListOf' @ [49:20] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableListOf(): MutableList<File> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -69,7 +69,7 @@ Inferred types:
 Inferred types:
     <T> -> File
 
-'collectFiles' @ [50:45] ==> private fun collectFiles(rootFile: File, target: MutableList<File>): Unit defined in org.jetbrains.kotlin.js[SimpleFunctionDescriptorImpl]
+'collectFiles' @ [50:45] ==> private fun collectFiles(rootFile: File, target: MutableList<File>): Unit defined in org.jetbrains.kotlin.js in file FileMerger.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [50:58] ==> value-parameter it: File defined in org.jetbrains.kotlin.js.main.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -323,9 +323,9 @@ Inferred types:
 
 'ctx' @ [111:17] ==> value-parameter ctx: JsContext<in JsStatement> defined in org.jetbrains.kotlin.js.createInsertionPlace.<no name provided>.visit[ValueParameterDescriptorImpl]
 
-'replaceMe' @ [111:21] ==> public abstract fun <R : (JsNode..JsNode?)> replaceMe(p0: (JsGlobalBlock..JsGlobalBlock?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
+'replaceMe' @ [111:21] ==> public abstract fun <R : (JsStatement..JsStatement?)> replaceMe(p0: (JsGlobalBlock..JsGlobalBlock?)): Unit defined in org.jetbrains.kotlin.js.backend.ast.JsContext[JavaMethodDescriptor]
 Inferred types:
-    <R : (CapturedType(in JsStatement)..CapturedType(in JsStatement)?)> -> JsGlobalBlock
+    <R : (JsStatement..JsStatement?)> -> (org.jetbrains.kotlin.js.backend.ast.JsGlobalBlock..org.jetbrains.kotlin.js.backend.ast.JsGlobalBlock?)
 
 'block' @ [111:31] ==> val block: JsGlobalBlock defined in org.jetbrains.kotlin.js.createInsertionPlace[LocalVariableDescriptor]
 
@@ -367,7 +367,7 @@ Inferred types:
 
 'accept' @ [129:17] ==> public final fun <T : (JsNode..JsNode?)> accept(p0: (JsStatement..JsStatement?)): (JsStatement..JsStatement?) defined in org.jetbrains.kotlin.js.createInsertionPlace.<no name provided>[JavaMethodDescriptor]
 Inferred types:
-    <T : (JsNode..JsNode?)> -> JsStatement
+    <T : (JsNode..JsNode?)> -> (org.jetbrains.kotlin.js.backend.ast.JsStatement..org.jetbrains.kotlin.js.backend.ast.JsStatement?)
 
 'statement' @ [129:24] ==> val statement: JsStatement defined in org.jetbrains.kotlin.js.createInsertionPlace[LocalVariableDescriptor]
 
@@ -396,7 +396,7 @@ Inferred types:
 Inferred types:
     <T : Comparable<T>> -> (java.io.File..java.io.File?)
 
-'collectFiles' @ [137:13] ==> private fun collectFiles(rootFile: File, target: MutableList<File>): Unit defined in org.jetbrains.kotlin.js[SimpleFunctionDescriptorImpl]
+'collectFiles' @ [137:13] ==> private fun collectFiles(rootFile: File, target: MutableList<File>): Unit defined in org.jetbrains.kotlin.js in file FileMerger.kt[SimpleFunctionDescriptorImpl]
 
 'child' @ [137:26] ==> val child: (File..File?) defined in org.jetbrains.kotlin.js.collectFiles[LocalVariableDescriptor]
 

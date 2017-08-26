@@ -93,6 +93,8 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [98:47] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'this' @ [98:56] ==> <this> defined in kotlin.io.relativeToOrSelf[ReceiverParameterDescriptorImpl]
 
 'toRelativeStringOrNull' @ [108:11] ==> private fun File.toRelativeStringOrNull(base: File): String? defined in kotlin.io in file Utils.kt[SimpleFunctionDescriptorImpl]
@@ -103,6 +105,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [108:47] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'this' @ [113:26] ==> <this> defined in kotlin.io.toRelativeStringOrNull[ReceiverParameterDescriptorImpl]
 
@@ -539,7 +543,7 @@ Inferred types:
 
 'walkBottomUp' @ [310:48] ==> public fun File.walkBottomUp(): FileTreeWalk defined in kotlin.io in file FileTreeWalk.kt[SimpleFunctionDescriptorImpl]
 
-'fold' @ [310:63] ==> public inline fun <T, R> Sequence<File>.fold(initial: Boolean, operation: (Boolean, File) -> Boolean): Boolean defined in kotlin.sequences[SimpleFunctionDescriptorImpl]
+'fold' @ [310:63] ==> public inline fun <T, R> Sequence<File>.fold(initial: Boolean, operation: (acc: Boolean, File) -> Boolean): Boolean defined in kotlin.sequences[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> File
     <R> -> Boolean
@@ -671,7 +675,7 @@ Inferred types:
 
 'segments' @ [373:48] ==> public final val segments: List<File> defined in kotlin.io.FilePathComponents[PropertyDescriptorImpl]
 
-'normalize' @ [373:57] ==> private fun List<File>.normalize(): List<File> defined in kotlin.io[SimpleFunctionDescriptorImpl]
+'normalize' @ [373:57] ==> private fun List<File>.normalize(): List<File> defined in kotlin.io in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'joinToString' @ [373:69] ==> public fun <T> Iterable<File>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((File) -> CharSequence)? = ...): String defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -685,7 +689,7 @@ Inferred types:
 
 'segments' @ [376:36] ==> public final val segments: List<File> defined in kotlin.io.FilePathComponents[PropertyDescriptorImpl]
 
-'normalize' @ [376:45] ==> private fun List<File>.normalize(): List<File> defined in kotlin.io[SimpleFunctionDescriptorImpl]
+'normalize' @ [376:45] ==> private fun List<File>.normalize(): List<File> defined in kotlin.io in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'ArrayList' @ [379:35] ==> public constructor ArrayList<E : (Any..Any?)>(p0: Int) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -709,9 +713,9 @@ Inferred types:
 
 'name' @ [381:20] ==> public final val File.name: (String..String?)[MyPropertyDescriptor]
 
-'if (!list.isEmpty() && list.last().name != "..") list.removeAt(list.size - 1) else list.add(file)' @ [383:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {Comparable<{File & Boolean}> & Serializable}, elseBranch: {Comparable<{File & Boolean}> & Serializable}): {Comparable<{File & Boolean}> & Serializable}[SimpleFunctionDescriptorImpl]
+'if (!list.isEmpty() && list.last().name != "..") list.removeAt(list.size - 1) else list.add(file)' @ [383:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Any, elseBranch: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {Comparable<{File & Boolean}> & Serializable}
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Any
 
 '!' @ [383:25] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 

@@ -19,6 +19,8 @@ Inferred types:
 
 'Kind' @ [45:58] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 
+'id' @ [45:64] ==> public final val id: Int defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[PropertyDescriptorImpl]
+
 'JvmStatic' @ [47:13] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
 'entryById' @ [48:36] ==> private final val entryById: Map<Int, KotlinClassHeader.Kind> defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind.Companion[PropertyDescriptorImpl]
@@ -35,8 +37,6 @@ Inferred types:
 
 'kind' @ [58:38] ==> public final val kind: KotlinClassHeader.Kind defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader[PropertyDescriptorImpl]
 
-'Kind' @ [58:46] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
-
 'MULTIFILE_CLASS_PART' @ [58:51] ==> enum entry MULTIFILE_CLASS_PART defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 
 'data' @ [61:17] ==> public final val data: Array<String>? defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader[PropertyDescriptorImpl]
@@ -46,8 +46,6 @@ Inferred types:
     <T> -> Array<String>?
 
 'kind' @ [61:31] ==> public final val kind: KotlinClassHeader.Kind defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader[PropertyDescriptorImpl]
-
-'Kind' @ [61:39] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 
 'MULTIFILE_CLASS' @ [61:44] ==> enum entry MULTIFILE_CLASS defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 
@@ -72,13 +70,9 @@ Inferred types:
 
 'kind' @ [65:21] ==> public final val kind: KotlinClassHeader.Kind defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader[PropertyDescriptorImpl]
 
-'Kind' @ [65:29] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
-
 'MULTIFILE_CLASS' @ [65:34] ==> enum entry MULTIFILE_CLASS defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 
 'kind' @ [65:53] ==> public final val kind: KotlinClassHeader.Kind defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader[PropertyDescriptorImpl]
-
-'Kind' @ [65:61] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 
 'MULTIFILE_CLASS_PART' @ [65:66] ==> enum entry MULTIFILE_CLASS_PART defined in org.jetbrains.kotlin.load.kotlin.header.KotlinClassHeader.Kind[FakeCallableDescriptorForObject]
 

@@ -61,7 +61,7 @@ Inferred types:
 
 'absolutePath' @ [19:154] ==> public final val File.absolutePath: (String..String?)[MyPropertyDescriptor]
 
-'fold' @ [19:169] ==> public inline fun <T, R> Iterable<File>.fold(initial: Repository, operation: (Repository, File) -> Repository): Repository defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [19:169] ==> public inline fun <T, R> Iterable<File>.fold(initial: Repository, operation: (acc: Repository, File) -> Repository): Repository defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> File
     <R> -> Repository
@@ -122,6 +122,8 @@ Inferred types:
 'fileRepository' @ [25:57] ==> val fileRepository: Repository defined in org.jetbrains.idl2k.main.<anonymous>[LocalVariableDescriptor]
 
 'interfaces' @ [25:72] ==> public final val interfaces: Map<String, InterfaceDefinition> defined in org.jetbrains.idl2k.Repository[PropertyDescriptorImpl]
+
+'merge' @ [25:86] ==> public fun merge(i1: InterfaceDefinition, i2: InterfaceDefinition): InterfaceDefinition defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'acc' @ [26:28] ==> value-parameter acc: Repository defined in org.jetbrains.idl2k.main.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -184,7 +186,7 @@ Inferred types:
 
 'types' @ [34:133] ==> public final val types: Type defined in org.jetbrains.idl2k.TypedefDefinition[PropertyDescriptorImpl]
 
-'mapDefinitions' @ [36:23] ==> public fun mapDefinitions(repository: Repository, definitions: Iterable<InterfaceDefinition>): List<GenerateTraitOrClass> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'mapDefinitions' @ [36:23] ==> public fun mapDefinitions(repository: Repository, definitions: Iterable<InterfaceDefinition>): List<GenerateTraitOrClass> defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'repository' @ [36:38] ==> val repository: Repository defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
@@ -227,7 +229,7 @@ Inferred types:
 
 'it' @ [42:13] ==> value-parameter it: GenerateTraitOrClass defined in org.jetbrains.idl2k.main.<anonymous>[ValueParameterDescriptorImpl]
 
-'generateUnions' @ [45:18] ==> public fun generateUnions(ifaces: List<GenerateTraitOrClass>, typedefs: Iterable<TypedefDefinition>): GenerateUnionTypes defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'generateUnions' @ [45:18] ==> public fun generateUnions(ifaces: List<GenerateTraitOrClass>, typedefs: Iterable<TypedefDefinition>): GenerateUnionTypes defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'definitions' @ [45:33] ==> val definitions: List<GenerateTraitOrClass> defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
@@ -275,7 +277,7 @@ Inferred types:
 Inferred types:
     <T : Comparable<T>> -> String
 
-'implementInterfaces' @ [47:5] ==> public fun implementInterfaces(declarations: List<GenerateTraitOrClass>): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'implementInterfaces' @ [47:5] ==> public fun implementInterfaces(declarations: List<GenerateTraitOrClass>): Unit defined in org.jetbrains.idl2k in file gen.kt[SimpleFunctionDescriptorImpl]
 
 'definitions' @ [47:25] ==> val definitions: List<GenerateTraitOrClass> defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
@@ -297,27 +299,23 @@ Inferred types:
 
 'canRead' @ [53:40] ==> public open fun canRead(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
-'MDNDocumentationCache' @ [53:51] ==> public companion object defined in org.jetbrains.idl2k.MDNDocumentationCache[FakeCallableDescriptorForObject]
-
 'read' @ [53:73] ==> public final fun read(file: File): MDNDocumentationCache defined in org.jetbrains.idl2k.MDNDocumentationCache.Companion[SimpleFunctionDescriptorImpl]
 
 'mdnCacheFile' @ [53:78] ==> val mdnCacheFile: File defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
-'MDNDocumentationCache' @ [53:97] ==> public companion object defined in org.jetbrains.idl2k.MDNDocumentationCache[FakeCallableDescriptorForObject]
-
 'Empty' @ [53:119] ==> public final val Empty: MDNDocumentationCache defined in org.jetbrains.idl2k.MDNDocumentationCache.Companion[PropertyDescriptorImpl]
 
-'HashSet' @ [54:31] ==> public final fun <E> <init>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)): HashSet<String> /* = HashSet<String> */ defined in kotlin.collections.HashSet[TypeAliasConstructorDescriptorImpl]
+'HashSet' @ [54:31] ==> public final fun <E> <init>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)): HashSet<(String..String?)> /* = HashSet<(String..String?)> */ defined in kotlin.collections.HashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> String
+    <E> -> (kotlin.String..kotlin.String?)
 
 'oldMdnCache' @ [54:39] ==> val oldMdnCache: MDNDocumentationCache defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
 'existing' @ [54:51] ==> public final val existing: Set<String> defined in org.jetbrains.idl2k.MDNDocumentationCache[PropertyDescriptorImpl]
 
-'HashSet' @ [55:34] ==> public final fun <E> <init>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)): HashSet<String> /* = HashSet<String> */ defined in kotlin.collections.HashSet[TypeAliasConstructorDescriptorImpl]
+'HashSet' @ [55:34] ==> public final fun <E> <init>(p0: (MutableCollection<out (String..String?)>..Collection<(String..String?)>?)): HashSet<(String..String?)> /* = HashSet<(String..String?)> */ defined in kotlin.collections.HashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> String
+    <E> -> (kotlin.String..kotlin.String?)
 
 'oldMdnCache' @ [55:42] ==> val oldMdnCache: MDNDocumentationCache defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
@@ -382,23 +380,23 @@ Inferred types:
 
 'addUrl' @ [70:13] ==> val addUrl: Boolean defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
-'newMdnCacheExisting' @ [71:13] ==> val newMdnCacheExisting: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
+'newMdnCacheExisting' @ [71:13] ==> val newMdnCacheExisting: HashSet<(String..String?)> /* = HashSet<(String..String?)> */ defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
-'add' @ [71:33] ==> public open fun add(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'add' @ [71:33] ==> public open fun add(element: (String..String?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'url' @ [71:37] ==> val url: String defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
-'newMdnCacheNonExisting' @ [73:13] ==> val newMdnCacheNonExisting: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
+'newMdnCacheNonExisting' @ [73:13] ==> val newMdnCacheNonExisting: HashSet<(String..String?)> /* = HashSet<(String..String?)> */ defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
-'add' @ [73:36] ==> public open fun add(element: String): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
+'add' @ [73:36] ==> public open fun add(element: (String..String?)): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
 'url' @ [73:40] ==> val url: String defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
 'MDNDocumentationCache' @ [76:20] ==> public constructor MDNDocumentationCache(existing: Set<String>, nonExisting: Set<String>) defined in org.jetbrains.idl2k.MDNDocumentationCache[ClassConstructorDescriptorImpl]
 
-'newMdnCacheExisting' @ [76:42] ==> val newMdnCacheExisting: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
+'newMdnCacheExisting' @ [76:42] ==> val newMdnCacheExisting: HashSet<(String..String?)> /* = HashSet<(String..String?)> */ defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
-'newMdnCacheNonExisting' @ [76:63] ==> val newMdnCacheNonExisting: HashSet<String> /* = HashSet<String> */ defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
+'newMdnCacheNonExisting' @ [76:63] ==> val newMdnCacheNonExisting: HashSet<(String..String?)> /* = HashSet<(String..String?)> */ defined in org.jetbrains.idl2k.main[LocalVariableDescriptor]
 
 'MDNDocumentationCache' @ [77:5] ==> public companion object defined in org.jetbrains.idl2k.MDNDocumentationCache[FakeCallableDescriptorForObject]
 
@@ -505,7 +503,7 @@ Inferred types:
 
 'w' @ [103:13] ==> value-parameter w: BufferedWriter defined in org.jetbrains.idl2k.main.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'render' @ [103:15] ==> public fun Appendable /* = Appendable */.render(namespace: String, ifaces: List<GenerateTraitOrClass>, unions: GenerateUnionTypes, enums: List<EnumDefinition>, mdnCache: MDNDocumentationCache): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'render' @ [103:15] ==> public fun Appendable /* = Appendable */.render(namespace: String, ifaces: List<GenerateTraitOrClass>, unions: GenerateUnionTypes, enums: List<EnumDefinition>, mdnCache: MDNDocumentationCache): Unit defined in org.jetbrains.idl2k in file render.kt[SimpleFunctionDescriptorImpl]
 
 'pkg' @ [103:22] ==> value-parameter pkg: String defined in org.jetbrains.idl2k.main.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -537,7 +535,7 @@ Inferred types:
 
 'value' @ [108:115] ==> public abstract val value: List<V> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'reduce' @ [108:121] ==> public inline fun <S, T : V> Iterable<V>.reduce(operation: (V, V) -> V): V defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [108:121] ==> public inline fun <S, T : V> Iterable<V>.reduce(operation: (acc: V, V) -> V): V defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> V
     <T : S> -> V

@@ -40,7 +40,5 @@
 
 'MIN_SURROGATE' @ [50:55] ==> public const final val MIN_SURROGATE: Char defined in kotlin.Char.Companion[DeserializedPropertyDescriptor]
 
-'Char' @ [50:70] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
-
 'MAX_SURROGATE' @ [50:75] ==> public const final val MAX_SURROGATE: Char defined in kotlin.Char.Companion[DeserializedPropertyDescriptor]
 

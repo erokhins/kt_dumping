@@ -34,7 +34,7 @@
 
 'name' @ [42:47] ==> public final val VirtualFile.name: String[MyPropertyDescriptor]
 
-'filterByteContents' @ [44:53] ==> private fun filterByteContents(sectionIds: Collection<String>, bytes: ByteArray, charset: Charset): ByteArray defined in org.jetbrains.kotlin.sourceSections[SimpleFunctionDescriptorImpl]
+'filterByteContents' @ [44:53] ==> private fun filterByteContents(sectionIds: Collection<String>, bytes: ByteArray, charset: Charset): ByteArray defined in org.jetbrains.kotlin.sourceSections in file FilteredSectionsVirtualFile.kt[SimpleFunctionDescriptorImpl]
 
 'sectionIds' @ [44:72] ==> public final val sectionIds: Collection<String> defined in org.jetbrains.kotlin.sourceSections.FilteredSectionsVirtualFile[PropertyDescriptorImpl]
 
@@ -98,7 +98,7 @@
 
 'modificationStamp' @ [56:206] ==> public final var LightVirtualFile.modificationStamp: Long[MyPropertyDescriptor]
 
-'filterStringBuilderContents' @ [57:47] ==> private fun filterStringBuilderContents(content: StringBuilder /* = StringBuilder */, sectionIds: Collection<String>): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.sourceSections[SimpleFunctionDescriptorImpl]
+'filterStringBuilderContents' @ [57:47] ==> private fun filterStringBuilderContents(content: StringBuilder /* = StringBuilder */, sectionIds: Collection<String>): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.sourceSections in file FilteredSectionsVirtualFile.kt[SimpleFunctionDescriptorImpl]
 
 'StringBuilder' @ [57:75] ==> public final fun <init>(p0: (CharSequence..CharSequence?)): StringBuilder /* = StringBuilder */ defined in kotlin.text.StringBuilder[TypeAliasConstructorDescriptorImpl]
 
@@ -108,7 +108,7 @@
 
 'sectionIds' @ [57:108] ==> public final val sectionIds: Collection<String> defined in org.jetbrains.kotlin.sourceSections.FilteredSectionsLightVirtualFile[PropertyDescriptorImpl]
 
-'filterByteContents' @ [58:53] ==> private fun filterByteContents(sectionIds: Collection<String>, bytes: ByteArray, charset: Charset): ByteArray defined in org.jetbrains.kotlin.sourceSections[SimpleFunctionDescriptorImpl]
+'filterByteContents' @ [58:53] ==> private fun filterByteContents(sectionIds: Collection<String>, bytes: ByteArray, charset: Charset): ByteArray defined in org.jetbrains.kotlin.sourceSections in file FilteredSectionsVirtualFile.kt[SimpleFunctionDescriptorImpl]
 
 'sectionIds' @ [58:72] ==> public final val sectionIds: Collection<String> defined in org.jetbrains.kotlin.sourceSections.FilteredSectionsLightVirtualFile[PropertyDescriptorImpl]
 
@@ -130,7 +130,7 @@
 
 'bytes' @ [62:64] ==> value-parameter bytes: ByteArray defined in org.jetbrains.kotlin.sourceSections.filterByteContents[ValueParameterDescriptorImpl]
 
-'filterStringBuilderContents' @ [63:5] ==> private fun filterStringBuilderContents(content: StringBuilder /* = StringBuilder */, sectionIds: Collection<String>): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.sourceSections[SimpleFunctionDescriptorImpl]
+'filterStringBuilderContents' @ [63:5] ==> private fun filterStringBuilderContents(content: StringBuilder /* = StringBuilder */, sectionIds: Collection<String>): StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.sourceSections in file FilteredSectionsVirtualFile.kt[SimpleFunctionDescriptorImpl]
 
 'content' @ [63:33] ==> val content: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.sourceSections.filterByteContents[LocalVariableDescriptor]
 

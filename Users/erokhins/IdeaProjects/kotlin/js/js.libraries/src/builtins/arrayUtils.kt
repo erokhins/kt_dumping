@@ -90,7 +90,7 @@ Inferred types:
 Inferred types:
     <T> -> Boolean
 
-'booleanArray' @ [48:98] ==> @JsName public fun booleanArray(size: Int, init: dynamic): Array<Boolean> defined in root package[SimpleFunctionDescriptorImpl]
+'booleanArray' @ [48:98] ==> @JsName public fun booleanArray(size: Int, init: dynamic): Array<Boolean> defined in root package in file arrayUtils.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [48:111] ==> value-parameter size: Int defined in booleanArrayWithFun[ValueParameterDescriptorImpl]
 
@@ -131,7 +131,7 @@ Inferred types:
 Inferred types:
     <T> -> Char
 
-'charArray' @ [62:89] ==> @JsName @Suppress public fun charArray(size: Int, init: dynamic): Array<Char> defined in root package[SimpleFunctionDescriptorImpl]
+'charArray' @ [62:89] ==> @JsName @Suppress public fun charArray(size: Int, init: dynamic): Array<Char> defined in root package in file arrayUtils.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [62:99] ==> value-parameter size: Int defined in charArrayWithFun[ValueParameterDescriptorImpl]
 
@@ -181,7 +181,7 @@ Inferred types:
 Inferred types:
     <T> -> Long
 
-'longArray' @ [76:89] ==> @JsName public fun longArray(size: Int, init: dynamic): Array<Long> defined in root package[SimpleFunctionDescriptorImpl]
+'longArray' @ [76:89] ==> @JsName public fun longArray(size: Int, init: dynamic): Array<Long> defined in root package in file arrayUtils.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [76:99] ==> value-parameter size: Int defined in longArrayWithFun[ValueParameterDescriptorImpl]
 

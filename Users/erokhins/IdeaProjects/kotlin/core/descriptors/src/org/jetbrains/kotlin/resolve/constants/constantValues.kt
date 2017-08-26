@@ -76,13 +76,13 @@ Inferred types:
 
 'java' @ [63:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [63:51] ==> <this> defined in org.jetbrains.kotlin.resolve.constants.ArrayValue[LazyClassReceiverParameterDescriptor]
 
 'java' @ [63:63] ==> public val <T> KClass<out ArrayValue>.java: Class<out ArrayValue> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ArrayValue
+    <T> -> Captured(out ArrayValue)
 
 'value' @ [65:16] ==> public open val value: List<ConstantValue<*>> defined in org.jetbrains.kotlin.resolve.constants.ArrayValue[PropertyDescriptorImpl]
 
@@ -176,9 +176,9 @@ Inferred types:
 
 'toChar' @ [108:12] ==> public open fun toChar(): Char defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'if (isPrintableUnicode(c)) Character.toString(c) else "?"' @ [110:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
+'if (isPrintableUnicode(c)) Character.toString(c) else "?"' @ [110:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (String..String?), elseBranch: (String..String?)): (String..String?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.String..kotlin.String?)
 
 'isPrintableUnicode' @ [110:21] ==> private final fun isPrintableUnicode(c: Char): Boolean defined in org.jetbrains.kotlin.resolve.constants.CharValue[SimpleFunctionDescriptorImpl]
 
@@ -280,13 +280,13 @@ Inferred types:
 
 'java' @ [149:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [149:51] ==> <this> defined in org.jetbrains.kotlin.resolve.constants.EnumValue[LazyClassReceiverParameterDescriptor]
 
 'java' @ [149:63] ==> public val <T> KClass<out EnumValue>.java: Class<out EnumValue> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> EnumValue
+    <T> -> Captured(out EnumValue)
 
 'value' @ [151:16] ==> public open val value: ClassDescriptor defined in org.jetbrains.kotlin.resolve.constants.EnumValue[PropertyDescriptorImpl]
 
@@ -376,13 +376,13 @@ Inferred types:
 
 'java' @ [201:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [201:51] ==> <this> defined in org.jetbrains.kotlin.resolve.constants.IntValue[LazyClassReceiverParameterDescriptor]
 
 'java' @ [201:63] ==> public val <T> KClass<out IntValue>.java: Class<out IntValue> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> IntValue
+    <T> -> Captured(out IntValue)
 
 'other' @ [203:24] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.resolve.constants.IntValue.equals[ValueParameterDescriptorImpl]
 
@@ -504,13 +504,13 @@ Inferred types:
 
 'java' @ [266:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [266:51] ==> <this> defined in org.jetbrains.kotlin.resolve.constants.StringValue[LazyClassReceiverParameterDescriptor]
 
 'java' @ [266:63] ==> public val <T> KClass<out StringValue>.java: Class<out StringValue> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> StringValue
+    <T> -> Captured(out StringValue)
 
 'value' @ [268:16] ==> public open val value: String defined in org.jetbrains.kotlin.resolve.constants.StringValue[PropertyDescriptorImpl]
 

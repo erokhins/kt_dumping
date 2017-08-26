@@ -4,7 +4,7 @@ Inferred types:
 
 'isEmpty' @ [5:42] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'fold' @ [5:60] ==> public inline fun <T, R> Iterable<List<*>>.fold(initial: Int, operation: (Int, List<*>) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [5:60] ==> public inline fun <T, R> Iterable<List<*>>.fold(initial: Int, operation: (acc: Int, List<*>) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> List<*>
     <R> -> Int
@@ -79,7 +79,7 @@ Inferred types:
 
 'carry' @ [29:16] ==> var carry: Int defined in org.jetbrains.idl2k.util.mutations.next[LocalVariableDescriptor]
 
-'mutationsCount' @ [32:17] ==> public fun List<List<*>>.mutationsCount(): Int defined in org.jetbrains.idl2k.util[SimpleFunctionDescriptorImpl]
+'mutationsCount' @ [32:17] ==> public fun List<List<*>>.mutationsCount(): Int defined in org.jetbrains.idl2k.util in file utils.kt[SimpleFunctionDescriptorImpl]
 
 'count' @ [33:9] ==> val count: Int defined in org.jetbrains.idl2k.util.mutations[LocalVariableDescriptor]
 

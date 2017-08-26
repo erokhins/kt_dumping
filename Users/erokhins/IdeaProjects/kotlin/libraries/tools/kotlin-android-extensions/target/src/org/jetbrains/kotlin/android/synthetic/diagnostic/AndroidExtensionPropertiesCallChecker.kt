@@ -4,7 +4,7 @@
 
 'resultingDescriptor' @ [41:47] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.resultingDescriptor: (CallableDescriptor..CallableDescriptor?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'propertyDescriptor' @ [42:33] ==> val propertyDescriptor: PropertyDescriptor defined in org.jetbrains.kotlin.android.synthetic.diagnostic.AndroidExtensionPropertiesCallChecker.check[LocalVariableDescriptor]
 
@@ -107,7 +107,7 @@ Inferred types:
 
 'call' @ [72:45] ==> public final val <D : (CallableDescriptor..CallableDescriptor?)> ResolvedCall<out (CallableDescriptor..CallableDescriptor?)>.call: Call[MyPropertyDescriptor]
 Inferred types:
-    <D : (CallableDescriptor..CallableDescriptor?)> -> (org.jetbrains.kotlin.descriptors.CallableDescriptor..org.jetbrains.kotlin.descriptors.CallableDescriptor?)
+    <D : (CallableDescriptor..CallableDescriptor?)> -> Captured(*)
 
 'calleeExpression' @ [72:50] ==> public final val Call.calleeExpression: KtExpression?[MyPropertyDescriptor]
 

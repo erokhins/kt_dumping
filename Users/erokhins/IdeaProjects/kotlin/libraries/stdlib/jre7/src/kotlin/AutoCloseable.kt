@@ -18,7 +18,7 @@
 
 'this' @ [41:9] ==> <this> defined in kotlin.use[ReceiverParameterDescriptorImpl]
 
-'closeFinally' @ [41:14] ==> @SinceKotlin @PublishedApi internal fun AutoCloseable?.closeFinally(cause: Throwable?): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'closeFinally' @ [41:14] ==> @SinceKotlin @PublishedApi internal fun AutoCloseable?.closeFinally(cause: Throwable?): Unit defined in kotlin in file AutoCloseable.kt[SimpleFunctionDescriptorImpl]
 
 'exception' @ [41:27] ==> var exception: Throwable? defined in kotlin.use[LocalVariableDescriptor]
 

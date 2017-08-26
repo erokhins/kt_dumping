@@ -237,13 +237,9 @@ Inferred types:
 
 'type' @ [72:49] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion.get[ValueParameterDescriptorImpl]
 
-'BoxedPrimitiveTypeParcelSerializer' @ [72:55] ==> public companion object defined in org.jetbrains.kotlin.android.parcel.serializers.BoxedPrimitiveTypeParcelSerializer[FakeCallableDescriptorForObject]
-
 'forUnboxedType' @ [72:90] ==> public final fun forUnboxedType(type: Type): BoxedPrimitiveTypeParcelSerializer defined in org.jetbrains.kotlin.android.parcel.serializers.BoxedPrimitiveTypeParcelSerializer.Companion[SimpleFunctionDescriptorImpl]
 
 'asmType' @ [72:105] ==> value-parameter asmType: Type defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion.get[ValueParameterDescriptorImpl]
-
-'PrimitiveTypeParcelSerializer' @ [74:25] ==> public companion object defined in org.jetbrains.kotlin.android.parcel.serializers.PrimitiveTypeParcelSerializer[FakeCallableDescriptorForObject]
 
 'getInstance' @ [74:55] ==> public final fun getInstance(type: Type): PrimitiveTypeParcelSerializer defined in org.jetbrains.kotlin.android.parcel.serializers.PrimitiveTypeParcelSerializer.Companion[SimpleFunctionDescriptorImpl]
 
@@ -263,9 +259,9 @@ Inferred types:
 
 'className' @ [81:17] ==> val className: (String..String?) defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion.get[LocalVariableDescriptor]
 
-'List' @ [81:30] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> Nothing): List<Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'List' @ [81:30] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> ???): List<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Nothing
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@d08ff0b
 
 'java' @ [81:42] ==> public val <T> KClass<List<*>>.java: Class<List<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -279,7 +275,7 @@ Inferred types:
 
 'ArrayList' @ [82:37] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@2bd7349f
 
 'java' @ [82:54] ==> public val <T> KClass<ArrayList<*>>.java: Class<ArrayList<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -293,7 +289,7 @@ Inferred types:
 
 'LinkedList' @ [83:37] ==> public constructor LinkedList<E : (Any..Any?)>() defined in java.util.LinkedList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7e980214
 
 'java' @ [83:55] ==> public val <T> KClass<LinkedList<*>>.java: Class<LinkedList<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -337,7 +333,7 @@ Inferred types:
 
 'HashSet' @ [87:37] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@3234622f
 
 'java' @ [87:52] ==> public val <T> KClass<HashSet<*>>.java: Class<HashSet<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -351,7 +347,7 @@ Inferred types:
 
 'LinkedHashSet' @ [88:37] ==> public constructor LinkedHashSet<E : (Any..Any?)>() defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@788e33c5
 
 'java' @ [88:58] ==> public val <T> KClass<LinkedHashSet<*>>.java: Class<LinkedHashSet<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -365,7 +361,7 @@ Inferred types:
 
 'TreeSet' @ [89:37] ==> public constructor TreeSet<E : (Any..Any?)>() defined in java.util.TreeSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6aef8387
 
 'java' @ [89:52] ==> public val <T> KClass<TreeSet<*>>.java: Class<TreeSet<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -443,8 +439,8 @@ Inferred types:
 
 'HashMap' @ [100:37] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@5459a46c
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@45ed91d2
 
 'java' @ [100:52] ==> public val <T> KClass<HashMap<*, *>>.java: Class<HashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -458,8 +454,8 @@ Inferred types:
 
 'LinkedHashMap' @ [101:37] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@4cf482b1
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@5a11d313
 
 'java' @ [101:58] ==> public val <T> KClass<LinkedHashMap<*, *>>.java: Class<LinkedHashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -473,8 +469,8 @@ Inferred types:
 
 'TreeMap' @ [102:37] ==> public constructor TreeMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.TreeMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@43f276f9
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6a381c54
 
 'java' @ [102:52] ==> public val <T> KClass<TreeMap<*, *>>.java: Class<TreeMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -488,8 +484,8 @@ Inferred types:
 
 'ConcurrentHashMap' @ [103:37] ==> public constructor ConcurrentHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.concurrent.ConcurrentHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@2b1eaa8
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@566c38a6
 
 'java' @ [103:62] ==> public val <T> KClass<ConcurrentHashMap<*, *>>.java: Class<ConcurrentHashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -576,8 +572,6 @@ Inferred types:
 'wrapToNullAwareIfNeeded' @ [113:47] ==> private final fun wrapToNullAwareIfNeeded(type: KotlinType, serializer: ParcelSerializer): ParcelSerializer defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion[SimpleFunctionDescriptorImpl]
 
 'type' @ [113:71] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion.get[ValueParameterDescriptorImpl]
-
-'BoxedPrimitiveTypeParcelSerializer' @ [113:77] ==> public companion object defined in org.jetbrains.kotlin.android.parcel.serializers.BoxedPrimitiveTypeParcelSerializer[FakeCallableDescriptorForObject]
 
 'forBoxedType' @ [113:112] ==> public final fun forBoxedType(type: Type): BoxedPrimitiveTypeParcelSerializer defined in org.jetbrains.kotlin.android.parcel.serializers.BoxedPrimitiveTypeParcelSerializer.Companion[SimpleFunctionDescriptorImpl]
 
@@ -707,8 +701,6 @@ Inferred types:
 
 'asmType' @ [148:25] ==> value-parameter asmType: Type defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion.get[ValueParameterDescriptorImpl]
 
-'PrimitiveTypeParcelSerializer' @ [148:34] ==> public companion object defined in org.jetbrains.kotlin.android.parcel.serializers.PrimitiveTypeParcelSerializer[FakeCallableDescriptorForObject]
-
 'getInstance' @ [148:64] ==> public final fun getInstance(type: Type): PrimitiveTypeParcelSerializer defined in org.jetbrains.kotlin.android.parcel.serializers.PrimitiveTypeParcelSerializer.Companion[SimpleFunctionDescriptorImpl]
 
 'INT_TYPE' @ [148:81] ==> public final val INT_TYPE: (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaPropertyDescriptor]
@@ -724,8 +716,6 @@ Inferred types:
 'SparseArrayParcelSerializer' @ [150:78] ==> public constructor SparseArrayParcelSerializer(asmType: Type, valueSerializer: ParcelSerializer) defined in org.jetbrains.kotlin.android.parcel.serializers.SparseArrayParcelSerializer[ClassConstructorDescriptorImpl]
 
 'asmType' @ [151:25] ==> value-parameter asmType: Type defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion.get[ValueParameterDescriptorImpl]
-
-'PrimitiveTypeParcelSerializer' @ [151:34] ==> public companion object defined in org.jetbrains.kotlin.android.parcel.serializers.PrimitiveTypeParcelSerializer[FakeCallableDescriptorForObject]
 
 'getInstance' @ [151:64] ==> public final fun getInstance(type: Type): PrimitiveTypeParcelSerializer defined in org.jetbrains.kotlin.android.parcel.serializers.PrimitiveTypeParcelSerializer.Companion[SimpleFunctionDescriptorImpl]
 
@@ -837,7 +827,7 @@ Inferred types:
 
 'type' @ [176:17] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion.get[ValueParameterDescriptorImpl]
 
-'isParcelable' @ [176:22] ==> internal fun KotlinType.isParcelable(): Boolean defined in org.jetbrains.kotlin.android.parcel.serializers[SimpleFunctionDescriptorImpl]
+'isParcelable' @ [176:22] ==> internal fun KotlinType.isParcelable(): Boolean defined in org.jetbrains.kotlin.android.parcel.serializers in file ParcelSerializer.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [177:33] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion.get[ValueParameterDescriptorImpl]
 
@@ -869,8 +859,6 @@ Inferred types:
 'clazz' @ [178:42] ==> val clazz: ClassDescriptor? defined in org.jetbrains.kotlin.android.parcel.serializers.ParcelSerializer.Companion.get[LocalVariableDescriptor]
 
 'modality' @ [178:48] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [178:60] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [178:69] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

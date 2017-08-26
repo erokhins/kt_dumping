@@ -138,7 +138,7 @@ Inferred types:
 
 'allLayoutFiles' @ [74:33] ==> val allLayoutFiles: List<VirtualFile> defined in org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager.getVariantData[LocalVariableDescriptor]
 
-'fold' @ [74:48] ==> public inline fun <T, R> Iterable<VirtualFile>.fold(initial: ArrayList<PsiFile>, operation: (ArrayList<PsiFile>, VirtualFile) -> ArrayList<PsiFile>): ArrayList<PsiFile> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [74:48] ==> public inline fun <T, R> Iterable<VirtualFile>.fold(initial: ArrayList<PsiFile>, operation: (acc: ArrayList<PsiFile>, VirtualFile) -> ArrayList<PsiFile>): ArrayList<PsiFile> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> VirtualFile
     <R> -> ArrayList<PsiFile>
@@ -236,8 +236,6 @@ Inferred types:
 'Widget' @ [98:42] ==> public constructor Widget(id: ResourceIdentifier, xmlType: String, sourceElement: PsiElement?, partiallyDefined: Boolean = ...) defined in org.jetbrains.kotlin.android.synthetic.res.AndroidResource.Widget[ClassConstructorDescriptorImpl]
 
 'id' @ [98:49] ==> value-parameter id: ResourceIdentifier defined in org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager.parseAndroidResource[ValueParameterDescriptorImpl]
-
-'AndroidConst' @ [98:53] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'VIEW_FQNAME' @ [98:66] ==> public final val VIEW_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
@@ -418,8 +416,6 @@ Inferred types:
 
 'xmlType' @ [124:73] ==> public final val xmlType: String defined in org.jetbrains.kotlin.android.synthetic.res.AndroidResource.Widget[PropertyDescriptorImpl]
 
-'AndroidConst' @ [124:84] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
-
 'VIEW_FQNAME' @ [124:97] ==> public final val VIEW_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
 'Widget' @ [125:64] ==> public constructor Widget(id: ResourceIdentifier, xmlType: String, sourceElement: PsiElement?, partiallyDefined: Boolean = ...) defined in org.jetbrains.kotlin.android.synthetic.res.AndroidResource.Widget[ClassConstructorDescriptorImpl]
@@ -427,8 +423,6 @@ Inferred types:
 'res' @ [126:37] ==> val res: AndroidResource defined in org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager.filterDuplicates[LocalVariableDescriptor]
 
 'id' @ [126:41] ==> public final val id: ResourceIdentifier defined in org.jetbrains.kotlin.android.synthetic.res.AndroidResource[PropertyDescriptorImpl]
-
-'AndroidConst' @ [126:45] ==> public object AndroidConst defined in org.jetbrains.kotlin.android.synthetic in file AndroidConst.kt[FakeCallableDescriptorForObject]
 
 'VIEW_FQNAME' @ [126:58] ==> public final val VIEW_FQNAME: String defined in org.jetbrains.kotlin.android.synthetic.AndroidConst[PropertyDescriptorImpl]
 
@@ -505,7 +499,7 @@ Inferred types:
 
 'getService' @ [146:48] ==> @Nullable public open fun <T : (Any..Any?)> getService(@NotNull p0: Module, @NotNull p1: Class<(AndroidLayoutXmlFileManager..AndroidLayoutXmlFileManager?)>): AndroidLayoutXmlFileManager? defined in org.jetbrains.kotlin.com.intellij.openapi.module.ModuleServiceManager[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AndroidLayoutXmlFileManager
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager..org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager?)
 
 'module' @ [146:59] ==> value-parameter module: Module defined in org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager.Companion.getInstance[ValueParameterDescriptorImpl]
 
@@ -521,7 +515,7 @@ Inferred types:
 
 'getComponent' @ [147:38] ==> public abstract fun <T : (Any..Any?)> getComponent(@NotNull p0: Class<(AndroidLayoutXmlFileManager..AndroidLayoutXmlFileManager?)>): (AndroidLayoutXmlFileManager..AndroidLayoutXmlFileManager?) defined in org.jetbrains.kotlin.com.intellij.openapi.module.Module[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AndroidLayoutXmlFileManager
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager..org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager?)
 
 'AndroidLayoutXmlFileManager' @ [147:51] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.res.AndroidLayoutXmlFileManager[FakeCallableDescriptorForObject]
 

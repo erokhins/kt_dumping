@@ -43,7 +43,7 @@ Inferred types:
 Inferred types:
     <T> -> Array<T>
 
-'copyToArrayImpl' @ [34:9] ==> @JsName internal fun copyToArrayImpl(collection: Collection<*>): Array<Any?> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'copyToArrayImpl' @ [34:9] ==> @JsName internal fun copyToArrayImpl(collection: Collection<*>): Array<Any?> defined in kotlin.collections in file collections.kt[SimpleFunctionDescriptorImpl]
 
 'collection' @ [34:25] ==> value-parameter collection: Collection<T> defined in kotlin.collections.copyToArray[ValueParameterDescriptorImpl]
 
@@ -87,7 +87,7 @@ Inferred types:
 
 'size' @ [48:33] ==> public abstract val size: Int defined in kotlin.collections.Collection[PropertyDescriptorImpl]
 
-'copyToArrayImpl' @ [49:16] ==> @JsName internal fun copyToArrayImpl(collection: Collection<*>): Array<Any?> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'copyToArrayImpl' @ [49:16] ==> @JsName internal fun copyToArrayImpl(collection: Collection<*>): Array<Any?> defined in kotlin.collections in file collections.kt[SimpleFunctionDescriptorImpl]
 
 'collection' @ [49:32] ==> value-parameter collection: Collection<*> defined in kotlin.collections.copyToArrayImpl[ValueParameterDescriptorImpl]
 

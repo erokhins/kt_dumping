@@ -26,9 +26,9 @@ Inferred types:
 
 'thisCollection' @ [45:12] ==> val thisCollection: Collection<T> defined in kotlin.collections.toTypedArray[LocalVariableDescriptor]
 
-'toArray' @ [45:27] ==> public abstract fun <T : (Any..Any?)> toArray(p0: (Array<(T..T?)>..Array<out (T..T?)>?)): (Array<(T..T?)>..Array<out (T..T?)>?) defined in java.util.Collection[JavaMethodDescriptor]
+'toArray' @ [45:27] ==> public abstract fun <T : (Any..Any?)> toArray(p0: (Array<T?>..Array<out T?>?)): (Array<T?>..Array<out T?>?) defined in java.util.Collection[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> T?
 
 'arrayOfNulls' @ [45:35] ==> public fun <reified @PureReifiable T> arrayOfNulls(size: Int): Array<T?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:

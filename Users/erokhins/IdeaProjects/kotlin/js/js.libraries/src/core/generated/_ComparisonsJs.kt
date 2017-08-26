@@ -128,8 +128,6 @@ Inferred types:
 
 'toInt' @ [91:23] ==> public open fun toInt(): Int defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
 
-'Math' @ [91:32] ==> public external object Math defined in kotlin.js in file math.kt[FakeCallableDescriptorForObject]
-
 'max' @ [91:37] ==> public final fun max(vararg values: Int): Int defined in kotlin.js.Math[SimpleFunctionDescriptorImpl]
 
 'b' @ [91:41] ==> value-parameter b: Byte defined in kotlin.comparisons.maxOf[ValueParameterDescriptorImpl]
@@ -153,8 +151,6 @@ Inferred types:
 'a' @ [100:21] ==> value-parameter a: Short defined in kotlin.comparisons.maxOf[ValueParameterDescriptorImpl]
 
 'toInt' @ [100:23] ==> public open fun toInt(): Int defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
-
-'Math' @ [100:32] ==> public external object Math defined in kotlin.js in file math.kt[FakeCallableDescriptorForObject]
 
 'max' @ [100:37] ==> public final fun max(vararg values: Int): Int defined in kotlin.js.Math[SimpleFunctionDescriptorImpl]
 
@@ -252,7 +248,7 @@ Inferred types:
 
 'comparator' @ [153:16] ==> value-parameter comparator: Comparator<in T> defined in kotlin.comparisons.maxOf[ValueParameterDescriptorImpl]
 
-'compare' @ [153:27] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [153:27] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'a' @ [153:35] ==> value-parameter a: T defined in kotlin.comparisons.maxOf[ValueParameterDescriptorImpl]
 
@@ -388,8 +384,6 @@ Inferred types:
 
 'toInt' @ [233:23] ==> public open fun toInt(): Int defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
 
-'Math' @ [233:32] ==> public external object Math defined in kotlin.js in file math.kt[FakeCallableDescriptorForObject]
-
 'min' @ [233:37] ==> public final fun min(vararg values: Int): Int defined in kotlin.js.Math[SimpleFunctionDescriptorImpl]
 
 'b' @ [233:41] ==> value-parameter b: Byte defined in kotlin.comparisons.minOf[ValueParameterDescriptorImpl]
@@ -413,8 +407,6 @@ Inferred types:
 'a' @ [242:21] ==> value-parameter a: Short defined in kotlin.comparisons.minOf[ValueParameterDescriptorImpl]
 
 'toInt' @ [242:23] ==> public open fun toInt(): Int defined in kotlin.Short[DeserializedSimpleFunctionDescriptor]
-
-'Math' @ [242:32] ==> public external object Math defined in kotlin.js in file math.kt[FakeCallableDescriptorForObject]
 
 'min' @ [242:37] ==> public final fun min(vararg values: Int): Int defined in kotlin.js.Math[SimpleFunctionDescriptorImpl]
 
@@ -512,7 +504,7 @@ Inferred types:
 
 'comparator' @ [295:16] ==> value-parameter comparator: Comparator<in T> defined in kotlin.comparisons.minOf[ValueParameterDescriptorImpl]
 
-'compare' @ [295:27] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [295:27] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'a' @ [295:35] ==> value-parameter a: T defined in kotlin.comparisons.minOf[ValueParameterDescriptorImpl]
 

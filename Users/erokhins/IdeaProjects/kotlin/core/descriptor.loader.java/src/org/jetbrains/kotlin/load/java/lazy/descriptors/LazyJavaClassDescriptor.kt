@@ -28,7 +28,7 @@ Inferred types:
 
 'outerContext' @ [66:46] ==> value-parameter outerContext: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor.<init>[ValueParameterDescriptorImpl]
 
-'childForClassOrPackage' @ [66:59] ==> public fun LazyJavaResolverContext.childForClassOrPackage(containingDeclaration: ClassOrPackageFragmentDescriptor, typeParameterOwner: JavaTypeParameterListOwner? = ..., typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy[SimpleFunctionDescriptorImpl]
+'childForClassOrPackage' @ [66:59] ==> public fun LazyJavaResolverContext.childForClassOrPackage(containingDeclaration: ClassOrPackageFragmentDescriptor, typeParameterOwner: JavaTypeParameterListOwner? = ..., typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [66:82] ==> <this> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor[LazyClassReceiverParameterDescriptor]
 
@@ -93,11 +93,7 @@ Inferred types:
 
 'isAnnotationType' @ [83:39] ==> public abstract val isAnnotationType: Boolean defined in org.jetbrains.kotlin.load.java.structure.JavaClass[PropertyDescriptorImpl]
 
-'Modality' @ [84:32] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [84:41] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
-'Modality' @ [85:33] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'convertFromFlags' @ [85:42] ==> public final fun convertFromFlags(abstract: Boolean, open: Boolean): Modality defined in org.jetbrains.kotlin.descriptors.Modality.Companion[SimpleFunctionDescriptorImpl]
 
@@ -183,7 +179,7 @@ Inferred types:
 
 'unsubstitutedMemberScope' @ [124:38] ==> private final val unsubstitutedMemberScope: LazyJavaClassMemberScope defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor[PropertyDescriptorImpl]
 
-'invoke' @ [124:63] ==> public abstract fun invoke(): List<ClassConstructorDescriptor> defined in org.jetbrains.kotlin.storage.NotNullLazyValue[FunctionInvokeDescriptor]
+'invoke' @ [124:63] ==> public abstract fun invoke(): List<(ClassConstructorDescriptor..ClassConstructorDescriptor?)> defined in org.jetbrains.kotlin.storage.NotNullLazyValue[FunctionInvokeDescriptor]
 
 'c' @ [126:32] ==> private final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor[PropertyDescriptorImpl]
 
@@ -314,7 +310,7 @@ Inferred types:
 
 'this@LazyJavaClassDescriptor' @ [165:13] ==> <this> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor[LazyClassReceiverParameterDescriptor]
 
-'computeConstructorTypeParameters' @ [165:42] ==> public fun ClassifierDescriptorWithTypeParameters.computeConstructorTypeParameters(): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'computeConstructorTypeParameters' @ [165:42] ==> public fun ClassifierDescriptorWithTypeParameters.computeConstructorTypeParameters(): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.descriptors in file typeParameterUtils.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [168:71] ==> public abstract fun invoke(): List<TypeParameterDescriptor> defined in org.jetbrains.kotlin.storage.NotNullLazyValue[FunctionInvokeDescriptor]
 
@@ -346,7 +342,7 @@ Inferred types:
 
 'javaType' @ [178:67] ==> val javaType: JavaClassifierType defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor.LazyJavaClassTypeConstructor.computeSupertypes[LocalVariableDescriptor]
 
-'toAttributes' @ [178:97] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types[SimpleFunctionDescriptorImpl]
+'toAttributes' @ [178:97] ==> public fun TypeUsage.toAttributes(isForAnnotationParameter: Boolean = ..., upperBoundForTypeParameter: TypeParameterDescriptor? = ...): JavaTypeAttributes defined in org.jetbrains.kotlin.load.java.lazy.types in file JavaTypeResolver.kt[SimpleFunctionDescriptorImpl]
 
 'kotlinType' @ [179:21] ==> val kotlinType: KotlinType defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor.LazyJavaClassTypeConstructor.computeSupertypes[LocalVariableDescriptor]
 
@@ -492,8 +488,6 @@ Inferred types:
 
 'annotatedPurelyImplementedFqName' @ [217:21] ==> val annotatedPurelyImplementedFqName: FqName? defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor.LazyJavaClassTypeConstructor.getPurelyImplementedSupertype[LocalVariableDescriptor]
 
-'FakePureImplementationsProvider' @ [218:24] ==> public object FakePureImplementationsProvider defined in org.jetbrains.kotlin.load.java in file FakePureImplementationsProvider.kt[FakeCallableDescriptorForObject]
-
 'getPurelyImplementedInterface' @ [218:56] ==> public final fun getPurelyImplementedInterface(classFqName: FqName): FqName? defined in org.jetbrains.kotlin.load.java.FakePureImplementationsProvider[SimpleFunctionDescriptorImpl]
 
 'fqNameSafe' @ [218:86] ==> public val DeclarationDescriptor.fqNameSafe: FqName defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[PropertyDescriptorImpl]
@@ -592,8 +586,6 @@ Inferred types:
 
 'simpleNotNullType' @ [241:38] ==> @JvmStatic public final fun simpleNotNullType(annotations: Annotations, descriptor: ClassDescriptor, arguments: List<TypeProjection>): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
-'Annotations' @ [241:56] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [241:68] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
 'classDescriptor' @ [241:75] ==> val classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor.LazyJavaClassTypeConstructor.getPurelyImplementedSupertype[LocalVariableDescriptor]
@@ -652,7 +644,7 @@ Inferred types:
 
 'c' @ [271:13] ==> private final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor[PropertyDescriptorImpl]
 
-'replaceComponents' @ [271:15] ==> public fun LazyJavaResolverContext.replaceComponents(components: JavaResolverComponents): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy[SimpleFunctionDescriptorImpl]
+'replaceComponents' @ [271:15] ==> public fun LazyJavaResolverContext.replaceComponents(components: JavaResolverComponents): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
 
 'c' @ [271:33] ==> private final val c: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaClassDescriptor[PropertyDescriptorImpl]
 

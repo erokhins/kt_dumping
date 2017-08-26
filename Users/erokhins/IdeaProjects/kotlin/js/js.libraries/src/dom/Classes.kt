@@ -28,7 +28,7 @@ Inferred types:
 
 'className' @ [33:9] ==> public open var className: String defined in org.w3c.dom.Element[PropertyDescriptorImpl]
 
-'buildString' @ [33:21] ==> @InlineOnly public inline fun buildString(builderAction: StringBuilder.() -> Unit): String defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'buildString' @ [33:21] ==> @InlineOnly public inline fun buildString(builderAction: StringBuilder.() -> Unit): String defined in kotlin.text in file StringBuilder.kt[SimpleFunctionDescriptorImpl]
 
 'append' @ [34:13] ==> public open fun append(csq: CharSequence?): StringBuilder defined in kotlin.text.StringBuilder[SimpleFunctionDescriptorImpl]
 
@@ -73,7 +73,7 @@ Inferred types:
 
 'trim' @ [54:31] ==> @InlineOnly public inline fun String.trim(): String defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
-'split' @ [54:38] ==> @InlineOnly public inline fun CharSequence.split(regex: Regex, limit: Int = ...): List<String> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'split' @ [54:38] ==> @InlineOnly public inline fun CharSequence.split(regex: Regex, limit: Int = ...): List<String> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'toRegex' @ [54:51] ==> @InlineOnly public inline fun String.toRegex(): Regex defined in kotlin.text in file RegexExtensions.kt[SimpleFunctionDescriptorImpl]
 

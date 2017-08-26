@@ -180,7 +180,7 @@ Inferred types:
     <T> -> LinkedHashSet<GenerateTraitOrClass>
     <R> -> List<GenerateTraitOrClass>
 
-'allSuperTypesImpl' @ [49:136] ==> public tailrec fun allSuperTypesImpl(roots: List<GenerateTraitOrClass>, all: Map<String, GenerateTraitOrClass>, result: MutableSet<GenerateTraitOrClass>): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'allSuperTypesImpl' @ [49:136] ==> public tailrec fun allSuperTypesImpl(roots: List<GenerateTraitOrClass>, all: Map<String, GenerateTraitOrClass>, result: MutableSet<GenerateTraitOrClass>): Unit defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'listOf' @ [49:154] ==> public fun <T> listOf(element: GenerateTraitOrClass): List<GenerateTraitOrClass> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -204,7 +204,7 @@ Inferred types:
 Inferred types:
     <T> -> GenerateTraitOrClass
 
-'allSuperTypesImpl' @ [53:9] ==> public tailrec fun allSuperTypesImpl(roots: List<GenerateTraitOrClass>, all: Map<String, GenerateTraitOrClass>, result: MutableSet<GenerateTraitOrClass>): Unit defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'allSuperTypesImpl' @ [53:9] ==> public tailrec fun allSuperTypesImpl(roots: List<GenerateTraitOrClass>, all: Map<String, GenerateTraitOrClass>, result: MutableSet<GenerateTraitOrClass>): Unit defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'roots' @ [53:27] ==> value-parameter roots: List<GenerateTraitOrClass> defined in org.jetbrains.idl2k.allSuperTypesImpl[ValueParameterDescriptorImpl]
 
@@ -269,7 +269,7 @@ Inferred types:
 Inferred types:
     <T> -> Type
 
-'standardTypes' @ [58:81] ==> public fun standardTypes(): Set<Type> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'standardTypes' @ [58:81] ==> public fun standardTypes(): Set<Type> defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'when {
     this is DynamicType || this is UnitType -> this
@@ -321,7 +321,7 @@ Inferred types:
 
 'memberType' @ [63:49] ==> public final val memberType: Type defined in org.jetbrains.idl2k.ArrayType[PropertyDescriptorImpl]
 
-'dynamicIfUnknownType' @ [63:60] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [63:60] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [63:81] ==> value-parameter allTypes: Set<String> defined in org.jetbrains.idl2k.dynamicIfUnknownType[ValueParameterDescriptorImpl]
 
@@ -349,7 +349,7 @@ Inferred types:
 
 'returnType' @ [65:47] ==> public final val returnType: Type defined in org.jetbrains.idl2k.FunctionType[PropertyDescriptorImpl]
 
-'dynamicIfUnknownType' @ [65:58] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [65:58] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [65:79] ==> value-parameter allTypes: Set<String> defined in org.jetbrains.idl2k.dynamicIfUnknownType[ValueParameterDescriptorImpl]
 
@@ -370,7 +370,7 @@ Inferred types:
 
 'type' @ [65:161] ==> public final val type: Type defined in org.jetbrains.idl2k.Attribute[PropertyDescriptorImpl]
 
-'dynamicIfUnknownType' @ [65:166] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [65:166] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [65:187] ==> value-parameter allTypes: Set<String> defined in org.jetbrains.idl2k.dynamicIfUnknownType[ValueParameterDescriptorImpl]
 
@@ -382,7 +382,7 @@ Inferred types:
 
 'valueType' @ [67:26] ==> public final val valueType: Type defined in org.jetbrains.idl2k.PromiseType[PropertyDescriptorImpl]
 
-'dynamicIfUnknownType' @ [67:36] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [67:36] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [67:57] ==> value-parameter allTypes: Set<String> defined in org.jetbrains.idl2k.dynamicIfUnknownType[ValueParameterDescriptorImpl]
 
@@ -534,7 +534,7 @@ Inferred types:
 
 'nullable' @ [87:108] ==> public abstract val nullable: Boolean defined in org.jetbrains.idl2k.Type[PropertyDescriptorImpl]
 
-'toSingleTypeIfPossible' @ [87:118] ==> public fun UnionType.toSingleTypeIfPossible(): Type defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'toSingleTypeIfPossible' @ [87:118] ==> public fun UnionType.toSingleTypeIfPossible(): Type defined in org.jetbrains.idl2k in file types.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [88:24] ==> value-parameter type: Type defined in org.jetbrains.idl2k.mapType[ValueParameterDescriptorImpl]
 
@@ -724,7 +724,7 @@ Inferred types:
 
 'constructor' @ [114:72] ==> public final val constructor: GenerateFunction defined in org.jetbrains.idl2k.ConstructorWithSuperTypeCall[PropertyDescriptorImpl]
 
-'allTypes' @ [114:84] ==> private fun GenerateFunction?.allTypes(): Sequence<Type> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'allTypes' @ [114:84] ==> private fun GenerateFunction?.allTypes(): Sequence<Type> defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'sequenceOf' @ [115:21] ==> public fun <T> sequenceOf(vararg elements: ConstructorWithSuperTypeCall?): Sequence<ConstructorWithSuperTypeCall?> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -747,7 +747,7 @@ Inferred types:
 
 'constructor' @ [115:84] ==> public final val constructor: GenerateFunction defined in org.jetbrains.idl2k.ConstructorWithSuperTypeCall[PropertyDescriptorImpl]
 
-'allTypes' @ [115:96] ==> private fun GenerateFunction?.allTypes(): Sequence<Type> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'allTypes' @ [115:96] ==> private fun GenerateFunction?.allTypes(): Sequence<Type> defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [116:29] ==> value-parameter it: GenerateTraitOrClass defined in org.jetbrains.idl2k.collectUnionTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -781,7 +781,7 @@ Inferred types:
 
 'it' @ [117:71] ==> value-parameter it: GenerateFunction defined in org.jetbrains.idl2k.collectUnionTypes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'allTypes' @ [117:74] ==> private fun GenerateFunction?.allTypes(): Sequence<Type> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'allTypes' @ [117:74] ==> private fun GenerateFunction?.allTypes(): Sequence<Type> defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'filterIsInstance' @ [119:18] ==> public inline fun <reified R> Sequence<*>.filterIsInstance(): Sequence<UnionType> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -831,7 +831,7 @@ Inferred types:
 
 'copy' @ [123:27] ==> public final fun copy(namespace: String = ..., types: Collection<Type> = ..., nullable: Boolean = ...): UnionType defined in org.jetbrains.idl2k.UnionType[SimpleFunctionDescriptorImpl]
 
-'guessPackage' @ [123:44] ==> private fun guessPackage(types: List<String>, allTypes: Map<String, GenerateTraitOrClass>): String defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'guessPackage' @ [123:44] ==> private fun guessPackage(types: List<String>, allTypes: Map<String, GenerateTraitOrClass>): String defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [123:57] ==> value-parameter it: UnionType defined in org.jetbrains.idl2k.collectUnionTypes.<anonymous>[ValueParameterDescriptorImpl]
 

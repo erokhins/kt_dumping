@@ -49,7 +49,7 @@ Inferred types:
 
 'lookupLocation' @ [36:78] ==> value-parameter lookupLocation: LookupLocation defined in org.jetbrains.kotlin.descriptors.findContinuationClassDescriptorOrNull[ValueParameterDescriptorImpl]
 
-'findContinuationClassDescriptorOrNull' @ [39:9] ==> public fun ModuleDescriptor.findContinuationClassDescriptorOrNull(lookupLocation: LookupLocation): ClassDescriptor? defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'findContinuationClassDescriptorOrNull' @ [39:9] ==> public fun ModuleDescriptor.findContinuationClassDescriptorOrNull(lookupLocation: LookupLocation): ClassDescriptor? defined in org.jetbrains.kotlin.descriptors in file descriptorUtil.kt[SimpleFunctionDescriptorImpl]
 
 'lookupLocation' @ [39:47] ==> value-parameter lookupLocation: LookupLocation defined in org.jetbrains.kotlin.descriptors.findContinuationClassDescriptor[ValueParameterDescriptorImpl]
 

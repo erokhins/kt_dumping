@@ -100,11 +100,11 @@ Inferred types:
 
 'java' @ [50:31] ==> public val <T> KClass<out ChainedMemberScope>.java: Class<out ChainedMemberScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ChainedMemberScope
+    <T> -> Captured(out ChainedMemberScope)
 
 'simpleName' @ [50:36] ==> public final val <T : (Any..Any?)> Class<out ChainedMemberScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ChainedMemberScope
+    <T : (Any..Any?)> -> Captured(out ChainedMemberScope)
 
 'debugName' @ [50:54] ==> internal final val debugName: String defined in org.jetbrains.kotlin.resolve.scopes.ChainedMemberScope[PropertyDescriptorImpl]
 
@@ -139,8 +139,6 @@ Inferred types:
 'scopes' @ [63:26] ==> value-parameter scopes: List<MemberScope> defined in org.jetbrains.kotlin.resolve.scopes.ChainedMemberScope.Companion.create[ValueParameterDescriptorImpl]
 
 'size' @ [63:33] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
-
-'MemberScope' @ [64:22] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'Empty' @ [64:34] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 

@@ -16,8 +16,6 @@ Inferred types:
 
 'position' @ [33:51] ==> public abstract val position: Position defined in org.jetbrains.kotlin.incremental.components.LocationInfo[PropertyDescriptorImpl]
 
-'Position' @ [33:65] ==> public companion object defined in org.jetbrains.kotlin.incremental.components.Position[FakeCallableDescriptorForObject]
-
 'NO_POSITION' @ [33:74] ==> public final val NO_POSITION: Position defined in org.jetbrains.kotlin.incremental.components.Position.Companion[PropertyDescriptorImpl]
 
 'record' @ [34:5] ==> public abstract fun record(filePath: String, position: Position, scopeFqName: String, scopeKind: ScopeKind, name: String): Unit defined in org.jetbrains.kotlin.incremental.components.LookupTracker[SimpleFunctionDescriptorImpl]
@@ -57,8 +55,6 @@ Inferred types:
 'location' @ [40:42] ==> val location: LocationInfo defined in org.jetbrains.kotlin.incremental.record[LocalVariableDescriptor]
 
 'position' @ [40:51] ==> public abstract val position: Position defined in org.jetbrains.kotlin.incremental.components.LocationInfo[PropertyDescriptorImpl]
-
-'Position' @ [40:65] ==> public companion object defined in org.jetbrains.kotlin.incremental.components.Position[FakeCallableDescriptorForObject]
 
 'NO_POSITION' @ [40:74] ==> public final val NO_POSITION: Position defined in org.jetbrains.kotlin.incremental.components.Position.Companion[PropertyDescriptorImpl]
 

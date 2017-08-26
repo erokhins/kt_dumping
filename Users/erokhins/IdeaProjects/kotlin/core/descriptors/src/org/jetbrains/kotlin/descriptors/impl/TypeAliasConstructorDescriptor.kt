@@ -68,8 +68,6 @@ Inferred types:
 
 'returnType' @ [82:21] ==> public final var TypeAliasConstructorDescriptorImpl.returnType: KotlinType[MyPropertyDescriptor]
 
-'Modality' @ [83:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [83:30] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'typeAliasDescriptor' @ [84:21] ==> public open val typeAliasDescriptor: TypeAliasDescriptor defined in org.jetbrains.kotlin.descriptors.impl.TypeAliasConstructorDescriptorImpl[PropertyDescriptorImpl]
@@ -289,8 +287,6 @@ Inferred types:
 'valueParameters' @ [197:21] ==> val valueParameters: (MutableList<(ValueParameterDescriptor..ValueParameterDescriptor?)>..List<(ValueParameterDescriptor..ValueParameterDescriptor?)>) defined in org.jetbrains.kotlin.descriptors.impl.TypeAliasConstructorDescriptorImpl.Companion.createIfAvailable[LocalVariableDescriptor]
 
 'returnType' @ [198:21] ==> val returnType: SimpleType defined in org.jetbrains.kotlin.descriptors.impl.TypeAliasConstructorDescriptorImpl.Companion.createIfAvailable[LocalVariableDescriptor]
-
-'Modality' @ [199:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [199:30] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

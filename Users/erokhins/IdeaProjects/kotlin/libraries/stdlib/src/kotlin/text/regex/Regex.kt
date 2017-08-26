@@ -2,7 +2,7 @@
 
 'this' @ [30:9] ==> <this> defined in kotlin.text.toInt[ReceiverParameterDescriptorImpl]
 
-'fold' @ [30:14] ==> public inline fun <T, R> Iterable<FlagEnum>.fold(initial: Int, operation: (Int, FlagEnum) -> Int): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'fold' @ [30:14] ==> public inline fun <T, R> Iterable<FlagEnum>.fold(initial: Int, operation: (acc: Int, FlagEnum) -> Int): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> FlagEnum
     <R> -> Int
@@ -15,11 +15,11 @@ Inferred types:
 
 'unmodifiableSet' @ [32:21] ==> public open fun <T : (Any..Any?)> unmodifiableSet(p0: (MutableSet<out (T..T?)>..Set<(T..T?)>?)): (MutableSet<(T..T?)>..Set<(T..T?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'allOf' @ [32:45] ==> public open fun <E : (Enum<(T..T?)>..Enum<(T..T?)>?)> allOf(p0: (Class<(T..T?)>..Class<(T..T?)>?)): (EnumSet<(T..T?)>..EnumSet<(T..T?)>?) defined in java.util.EnumSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> T
+    <E : (Enum<(E..E?)>..Enum<(E..E?)>?)> -> (T..T?)
 
 'java' @ [32:60] ==> public val <T> KClass<T>.java: Class<T> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -103,7 +103,7 @@ Inferred types:
 
 'options' @ [108:117] ==> value-parameter options: Set<RegexOption> defined in kotlin.text.Regex.<init>[ValueParameterDescriptorImpl]
 
-'toInt' @ [108:125] ==> private fun Iterable<FlagEnum>.toInt(): Int defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'toInt' @ [108:125] ==> private fun Iterable<FlagEnum>.toInt(): Int defined in kotlin.text in file Regex.kt[SimpleFunctionDescriptorImpl]
 
 'nativePattern' @ [113:17] ==> private final val nativePattern: Pattern defined in kotlin.text.Regex[PropertyDescriptorImpl]
 
@@ -154,6 +154,8 @@ Inferred types:
 'input' @ [135:115] ==> value-parameter input: CharSequence defined in kotlin.text.Regex.findAll[ValueParameterDescriptorImpl]
 
 'startIndex' @ [135:122] ==> value-parameter startIndex: Int = ... defined in kotlin.text.Regex.findAll[ValueParameterDescriptorImpl]
+
+'next' @ [135:150] ==> public abstract fun next(): MatchResult? defined in kotlin.text.MatchResult[SimpleFunctionDescriptorImpl]
 
 'nativePattern' @ [142:65] ==> private final val nativePattern: Pattern defined in kotlin.text.Regex[PropertyDescriptorImpl]
 
@@ -263,7 +265,7 @@ Inferred types:
 
 'replacement' @ [182:123] ==> value-parameter replacement: String defined in kotlin.text.Regex.replaceFirst[ValueParameterDescriptorImpl]
 
-'require' @ [192:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [192:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'limit' @ [192:17] ==> value-parameter limit: Int = ... defined in kotlin.text.Regex.split[ValueParameterDescriptorImpl]
 

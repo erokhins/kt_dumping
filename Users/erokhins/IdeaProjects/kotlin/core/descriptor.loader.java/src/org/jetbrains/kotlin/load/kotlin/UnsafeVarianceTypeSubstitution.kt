@@ -68,8 +68,6 @@ Inferred types:
 
 'this' @ [46:22] ==> <this> defined in org.jetbrains.kotlin.load.kotlin.UnsafeVarianceTypeSubstitution.annotatePartsWithUnsafeVariance[ReceiverParameterDescriptorImpl]
 
-'KotlinTypeFactory' @ [48:17] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
-
 'flexibleType' @ [48:35] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
 'lowerBound' @ [49:25] ==> public final val lowerBound: SimpleType defined in org.jetbrains.kotlin.types.FlexibleType[PropertyDescriptorImpl]
@@ -110,13 +108,13 @@ Inferred types:
 
 'replaceAnnotations' @ [61:20] ==> public abstract fun replaceAnnotations(newAnnotations: Annotations): SimpleType defined in org.jetbrains.kotlin.types.SimpleType[SimpleFunctionDescriptorImpl]
 
-'composeAnnotations' @ [61:39] ==> public fun composeAnnotations(first: Annotations, second: Annotations): Annotations defined in org.jetbrains.kotlin.descriptors.annotations[SimpleFunctionDescriptorImpl]
+'composeAnnotations' @ [61:39] ==> public fun composeAnnotations(first: Annotations, second: Annotations): Annotations defined in org.jetbrains.kotlin.descriptors.annotations in file Annotations.kt[SimpleFunctionDescriptorImpl]
 
 'annotations' @ [61:58] ==> public abstract val annotations: Annotations defined in org.jetbrains.kotlin.types.SimpleType[PropertyDescriptorImpl]
 
 'unsafeVarianceAnnotations' @ [61:71] ==> private final val unsafeVarianceAnnotations: AnnotationsImpl defined in org.jetbrains.kotlin.load.kotlin.UnsafeVarianceTypeSubstitution[PropertyDescriptorImpl]
 
-'replace' @ [64:16] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types[SimpleFunctionDescriptorImpl]
+'replace' @ [64:16] ==> @JvmOverloads public fun SimpleType.replace(newArguments: List<TypeProjection> = ..., newAnnotations: Annotations = ...): SimpleType defined in org.jetbrains.kotlin.types in file TypeSubstitution.kt[SimpleFunctionDescriptorImpl]
 
 'arguments' @ [64:39] ==> public abstract val arguments: List<TypeProjection> defined in org.jetbrains.kotlin.types.SimpleType[PropertyDescriptorImpl]
 

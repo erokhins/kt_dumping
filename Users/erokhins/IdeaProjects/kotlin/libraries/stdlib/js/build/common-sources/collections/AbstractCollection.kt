@@ -40,7 +40,7 @@ Inferred types:
 
 'toString' @ [36:54] ==> public fun Any?.toString(): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'copyToArrayImpl' @ [42:49] ==> @JsName internal fun copyToArrayImpl(collection: Collection<*>): Array<Any?> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'copyToArrayImpl' @ [42:49] ==> @JsName internal fun copyToArrayImpl(collection: Collection<*>): Array<Any?> defined in kotlin.collections in file collections.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [42:65] ==> <this> defined in kotlin.collections.AbstractCollection[LazyClassReceiverParameterDescriptor]
 

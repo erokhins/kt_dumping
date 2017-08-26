@@ -36,7 +36,9 @@ Inferred types:
 
 'element' @ [59:54] ==> public open val element: Class<*> defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaClass[PropertyDescriptorImpl]
 
-'JavaToKotlinClassMap' @ [64:27] ==> public object JavaToKotlinClassMap : PlatformToKotlinClassMap defined in org.jetbrains.kotlin.platform in file JavaToKotlinClassMap.kt[FakeCallableDescriptorForObject]
+'?:' @ [64:27] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassId?, right: ClassId?): ClassId?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ClassId?
 
 'mapKotlinToJava' @ [64:48] ==> public final fun mapKotlinToJava(kotlinFqName: FqNameUnsafe): ClassId? defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap[SimpleFunctionDescriptorImpl]
 
@@ -88,9 +90,9 @@ Inferred types:
 
 'className' @ [76:15] ==> value-parameter className: String defined in kotlin.reflect.jvm.internal.loadClass[ValueParameterDescriptorImpl]
 
-'Array' @ [77:31] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [77:31] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@8d8fab0
 
 'java' @ [77:49] ==> public val <T> KClass<Array<Any>>.java: Class<Array<Any>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -130,7 +132,7 @@ Inferred types:
 
 'classLoader' @ [89:12] ==> value-parameter classLoader: ClassLoader defined in kotlin.reflect.jvm.internal.loadClass[ValueParameterDescriptorImpl]
 
-'tryLoadClass' @ [89:24] ==> public fun ClassLoader.tryLoadClass(fqName: String): Class<*>? defined in org.jetbrains.kotlin.load.java.reflect[SimpleFunctionDescriptorImpl]
+'tryLoadClass' @ [89:24] ==> public fun ClassLoader.tryLoadClass(fqName: String): Class<*>? defined in org.jetbrains.kotlin.load.java.reflect in file ReflectJavaClassFinder.kt[SimpleFunctionDescriptorImpl]
 
 'packageName' @ [89:39] ==> value-parameter packageName: String defined in kotlin.reflect.jvm.internal.loadClass[ValueParameterDescriptorImpl]
 
@@ -286,7 +288,7 @@ Inferred types:
 
 'hasExtension' @ [142:27] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [142:52] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -298,7 +300,7 @@ Inferred types:
 
 'getExtension' @ [143:50] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?)): (Int..Int?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Package[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> Int
+    <Type : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'packageModuleName' @ [143:75] ==> public final val packageModuleName: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Package..ProtoBuf.Package?), (Int..Int?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -314,15 +316,13 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'ReflectKotlinClass' @ [148:17] ==> public companion object Factory defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClass[FakeCallableDescriptorForObject]
-
 'create' @ [148:36] ==> public final fun create(klass: Class<*>): ReflectKotlinClass? defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClass.Factory[SimpleFunctionDescriptorImpl]
 
 'klass' @ [148:43] ==> public final val klass: Class<*> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClass[PropertyDescriptorImpl]
 
 'classLoader' @ [148:49] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'loadClass' @ [148:61] ==> public open fun loadClass(p0: (String..String?)): (Class<*>..Class<*>?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
 
@@ -385,8 +385,6 @@ Inferred types:
 'module' @ [176:66] ==> public final val module: ModuleDescriptor defined in org.jetbrains.kotlin.load.kotlin.reflect.RuntimeModuleData[PropertyDescriptorImpl]
 
 'typeTable' @ [176:74] ==> value-parameter typeTable: TypeTable defined in kotlin.reflect.jvm.internal.deserializeToDescriptor[ValueParameterDescriptorImpl]
-
-'SinceKotlinInfoTable' @ [176:85] ==> public companion object defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfoTable[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [176:106] ==> public final val EMPTY: SinceKotlinInfoTable defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.SinceKotlinInfoTable.Companion[PropertyDescriptorImpl]
 

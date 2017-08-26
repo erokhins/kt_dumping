@@ -2,7 +2,7 @@
 
 'declaredAnnotations' @ [27:26] ==> public final val AnnotatedElement.declaredAnnotations: (Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)[MyPropertyDescriptor]
 
-'getAnnotations' @ [27:47] ==> public fun Array<Annotation>.getAnnotations(): List<ReflectJavaAnnotation> defined in org.jetbrains.kotlin.load.java.structure.reflect[SimpleFunctionDescriptorImpl]
+'getAnnotations' @ [27:47] ==> public fun Array<Annotation>.getAnnotations(): List<ReflectJavaAnnotation> defined in org.jetbrains.kotlin.load.java.structure.reflect in file ReflectJavaAnnotationOwner.kt[SimpleFunctionDescriptorImpl]
 
 'emptyList' @ [27:67] ==> public fun <T> emptyList(): List<ReflectJavaAnnotation> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -12,7 +12,7 @@ Inferred types:
 
 'declaredAnnotations' @ [30:22] ==> public final val AnnotatedElement.declaredAnnotations: (Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)[MyPropertyDescriptor]
 
-'findAnnotation' @ [30:43] ==> public fun Array<Annotation>.findAnnotation(fqName: FqName): ReflectJavaAnnotation? defined in org.jetbrains.kotlin.load.java.structure.reflect[SimpleFunctionDescriptorImpl]
+'findAnnotation' @ [30:43] ==> public fun Array<Annotation>.findAnnotation(fqName: FqName): ReflectJavaAnnotation? defined in org.jetbrains.kotlin.load.java.structure.reflect in file ReflectJavaAnnotationOwner.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [30:58] ==> value-parameter fqName: FqName defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaAnnotationOwner.findAnnotation[ValueParameterDescriptorImpl]
 
@@ -20,6 +20,8 @@ Inferred types:
 Inferred types:
     <T> -> Annotation
     <R> -> ReflectJavaAnnotation
+
+'ReflectJavaAnnotation' @ [37:18] ==> public constructor ReflectJavaAnnotation(annotation: Annotation) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaAnnotation[ClassConstructorDescriptorImpl]
 
 'firstOrNull' @ [41:12] ==> public inline fun <T> Array<out Annotation>.firstOrNull(predicate: (Annotation) -> Boolean): Annotation? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -33,7 +35,7 @@ Inferred types:
 
 'java' @ [41:45] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out Annotation)
 
 'classId' @ [41:50] ==> public val Class<*>.classId: ClassId defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[PropertyDescriptorImpl]
 
@@ -45,4 +47,6 @@ Inferred types:
 Inferred types:
     <T> -> Annotation
     <R> -> ReflectJavaAnnotation
+
+'ReflectJavaAnnotation' @ [41:94] ==> public constructor ReflectJavaAnnotation(annotation: Annotation) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaAnnotation[ClassConstructorDescriptorImpl]
 

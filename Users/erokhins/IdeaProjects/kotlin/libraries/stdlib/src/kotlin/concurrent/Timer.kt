@@ -4,7 +4,7 @@
 
 'kotlin.internal.InlineOnly' @ [12:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'timerTask' @ [14:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timerTask' @ [14:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [14:26] ==> value-parameter crossinline action: TimerTask.() -> Unit defined in kotlin.concurrent.schedule[ValueParameterDescriptorImpl]
 
@@ -18,7 +18,7 @@
 
 'kotlin.internal.InlineOnly' @ [22:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'timerTask' @ [24:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timerTask' @ [24:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [24:26] ==> value-parameter crossinline action: TimerTask.() -> Unit defined in kotlin.concurrent.schedule[ValueParameterDescriptorImpl]
 
@@ -32,7 +32,7 @@
 
 'kotlin.internal.InlineOnly' @ [34:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'timerTask' @ [36:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timerTask' @ [36:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [36:26] ==> value-parameter crossinline action: TimerTask.() -> Unit defined in kotlin.concurrent.schedule[ValueParameterDescriptorImpl]
 
@@ -48,7 +48,7 @@
 
 'kotlin.internal.InlineOnly' @ [45:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'timerTask' @ [47:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timerTask' @ [47:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [47:26] ==> value-parameter crossinline action: TimerTask.() -> Unit defined in kotlin.concurrent.schedule[ValueParameterDescriptorImpl]
 
@@ -64,7 +64,7 @@
 
 'kotlin.internal.InlineOnly' @ [57:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'timerTask' @ [59:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timerTask' @ [59:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [59:26] ==> value-parameter crossinline action: TimerTask.() -> Unit defined in kotlin.concurrent.scheduleAtFixedRate[ValueParameterDescriptorImpl]
 
@@ -80,7 +80,7 @@
 
 'kotlin.internal.InlineOnly' @ [68:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'timerTask' @ [70:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timerTask' @ [70:16] ==> @InlineOnly public inline fun timerTask(crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [70:26] ==> value-parameter crossinline action: TimerTask.() -> Unit defined in kotlin.concurrent.scheduleAtFixedRate[ValueParameterDescriptorImpl]
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'toLong' @ [89:95] ==> public open fun toLong(): Long defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'timer' @ [90:17] ==> @PublishedApi internal fun timer(name: String?, daemon: Boolean): Timer defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timer' @ [90:17] ==> @PublishedApi internal fun timer(name: String?, daemon: Boolean): Timer defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [90:23] ==> value-parameter name: String? = ... defined in kotlin.concurrent.timer[ValueParameterDescriptorImpl]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'timer' @ [91:5] ==> val timer: Timer defined in kotlin.concurrent.timer[LocalVariableDescriptor]
 
-'schedule' @ [91:11] ==> @InlineOnly public inline fun Timer.schedule(delay: Long, period: Long, crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'schedule' @ [91:11] ==> @InlineOnly public inline fun Timer.schedule(delay: Long, period: Long, crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'initialDelay' @ [91:20] ==> value-parameter initialDelay: Long = ... defined in kotlin.concurrent.timer[ValueParameterDescriptorImpl]
 
@@ -136,7 +136,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [102:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'timer' @ [104:17] ==> @PublishedApi internal fun timer(name: String?, daemon: Boolean): Timer defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timer' @ [104:17] ==> @PublishedApi internal fun timer(name: String?, daemon: Boolean): Timer defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [104:23] ==> value-parameter name: String? = ... defined in kotlin.concurrent.timer[ValueParameterDescriptorImpl]
 
@@ -144,7 +144,7 @@ Inferred types:
 
 'timer' @ [105:5] ==> val timer: Timer defined in kotlin.concurrent.timer[LocalVariableDescriptor]
 
-'schedule' @ [105:11] ==> @InlineOnly public inline fun Timer.schedule(time: Date, period: Long, crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'schedule' @ [105:11] ==> @InlineOnly public inline fun Timer.schedule(time: Date, period: Long, crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'startAt' @ [105:20] ==> value-parameter startAt: Date defined in kotlin.concurrent.timer[ValueParameterDescriptorImpl]
 
@@ -158,7 +158,7 @@ Inferred types:
 
 'toLong' @ [118:104] ==> public open fun toLong(): Long defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'timer' @ [119:17] ==> @PublishedApi internal fun timer(name: String?, daemon: Boolean): Timer defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timer' @ [119:17] ==> @PublishedApi internal fun timer(name: String?, daemon: Boolean): Timer defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [119:23] ==> value-parameter name: String? = ... defined in kotlin.concurrent.fixedRateTimer[ValueParameterDescriptorImpl]
 
@@ -166,7 +166,7 @@ Inferred types:
 
 'timer' @ [120:5] ==> val timer: Timer defined in kotlin.concurrent.fixedRateTimer[LocalVariableDescriptor]
 
-'scheduleAtFixedRate' @ [120:11] ==> @InlineOnly public inline fun Timer.scheduleAtFixedRate(delay: Long, period: Long, crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'scheduleAtFixedRate' @ [120:11] ==> @InlineOnly public inline fun Timer.scheduleAtFixedRate(delay: Long, period: Long, crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'initialDelay' @ [120:31] ==> value-parameter initialDelay: Long = ... defined in kotlin.concurrent.fixedRateTimer[ValueParameterDescriptorImpl]
 
@@ -178,7 +178,7 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [131:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'timer' @ [133:17] ==> @PublishedApi internal fun timer(name: String?, daemon: Boolean): Timer defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'timer' @ [133:17] ==> @PublishedApi internal fun timer(name: String?, daemon: Boolean): Timer defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [133:23] ==> value-parameter name: String? = ... defined in kotlin.concurrent.fixedRateTimer[ValueParameterDescriptorImpl]
 
@@ -186,7 +186,7 @@ Inferred types:
 
 'timer' @ [134:5] ==> val timer: Timer defined in kotlin.concurrent.fixedRateTimer[LocalVariableDescriptor]
 
-'scheduleAtFixedRate' @ [134:11] ==> @InlineOnly public inline fun Timer.scheduleAtFixedRate(time: Date, period: Long, crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent[SimpleFunctionDescriptorImpl]
+'scheduleAtFixedRate' @ [134:11] ==> @InlineOnly public inline fun Timer.scheduleAtFixedRate(time: Date, period: Long, crossinline action: TimerTask.() -> Unit): TimerTask defined in kotlin.concurrent in file Timer.kt[SimpleFunctionDescriptorImpl]
 
 'startAt' @ [134:31] ==> value-parameter startAt: Date defined in kotlin.concurrent.fixedRateTimer[ValueParameterDescriptorImpl]
 

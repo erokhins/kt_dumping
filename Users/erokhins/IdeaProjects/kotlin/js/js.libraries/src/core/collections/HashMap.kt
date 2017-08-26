@@ -68,11 +68,11 @@ Inferred types:
     <K> -> K
     <V> -> V
 
-'require' @ [83:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [83:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'initialCapacity' @ [83:17] ==> value-parameter initialCapacity: Int defined in kotlin.collections.HashMap.<init>[ValueParameterDescriptorImpl]
 
-'require' @ [84:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [84:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'loadFactor' @ [84:17] ==> value-parameter loadFactor: Float = ... defined in kotlin.collections.HashMap.<init>[ValueParameterDescriptorImpl]
 

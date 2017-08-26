@@ -39,7 +39,5 @@ Inferred types:
 
 'stream' @ [43:40] ==> value-parameter stream: InputStream defined in org.jetbrains.kotlin.builtins.BuiltInsPackageFragmentImpl.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'BuiltInSerializerProtocol' @ [43:48] ==> public object BuiltInSerializerProtocol : SerializerExtensionProtocol defined in org.jetbrains.kotlin.builtins in file BuiltInSerializerProtocol.kt[FakeCallableDescriptorForObject]
-
 'extensionRegistry' @ [43:74] ==> public final val extensionRegistry: ExtensionRegistryLite defined in org.jetbrains.kotlin.builtins.BuiltInSerializerProtocol[PropertyDescriptorImpl]
 

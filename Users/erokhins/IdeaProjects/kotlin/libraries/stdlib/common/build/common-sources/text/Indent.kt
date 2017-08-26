@@ -6,17 +6,17 @@
 
 'marginPrefix' @ [21:31] ==> value-parameter marginPrefix: String = ... defined in kotlin.text.trimMargin[ValueParameterDescriptorImpl]
 
-'require' @ [29:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [29:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'marginPrefix' @ [29:13] ==> value-parameter marginPrefix: String = ... defined in kotlin.text.replaceIndentByMargin[ValueParameterDescriptorImpl]
 
 'isNotBlank' @ [29:26] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
-'lines' @ [30:17] ==> public fun CharSequence.lines(): List<String> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'lines' @ [30:17] ==> public fun CharSequence.lines(): List<String> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'lines' @ [32:12] ==> val lines: List<String> defined in kotlin.text.replaceIndentByMargin[LocalVariableDescriptor]
 
-'reindent' @ [32:18] ==> private inline fun List<String>.reindent(resultSizeEstimate: Int, indentAddFunction: (String) -> String, indentCutFunction: (String) -> String?): String defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'reindent' @ [32:18] ==> private inline fun List<String>.reindent(resultSizeEstimate: Int, indentAddFunction: (String) -> String, indentCutFunction: (String) -> String?): String defined in kotlin.text in file Indent.kt[SimpleFunctionDescriptorImpl]
 
 'length' @ [32:27] ==> public open val length: Int defined in kotlin.String[DeserializedPropertyDescriptor]
 
@@ -28,13 +28,13 @@
 
 'size' @ [32:61] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'getIndentFunction' @ [32:67] ==> private fun getIndentFunction(indent: String): (String) -> String defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'getIndentFunction' @ [32:67] ==> private fun getIndentFunction(indent: String): (String) -> String defined in kotlin.text in file Indent.kt[SimpleFunctionDescriptorImpl]
 
 'newIndent' @ [32:85] ==> value-parameter newIndent: String = ... defined in kotlin.text.replaceIndentByMargin[ValueParameterDescriptorImpl]
 
 'line' @ [33:39] ==> value-parameter line: String defined in kotlin.text.replaceIndentByMargin.<anonymous>[ValueParameterDescriptorImpl]
 
-'indexOfFirst' @ [33:44] ==> public header inline fun CharSequence.indexOfFirst(predicate: (Char) -> Boolean): Int defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'indexOfFirst' @ [33:44] ==> public header inline fun CharSequence.indexOfFirst(predicate: (Char) -> Boolean): Int defined in kotlin.text in file _Strings.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [33:59] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -74,7 +74,7 @@ Inferred types:
 
 'replaceIndent' @ [58:42] ==> public fun String.replaceIndent(newIndent: String = ...): String defined in kotlin.text in file Indent.kt[SimpleFunctionDescriptorImpl]
 
-'lines' @ [64:17] ==> public fun CharSequence.lines(): List<String> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'lines' @ [64:17] ==> public fun CharSequence.lines(): List<String> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'lines' @ [66:27] ==> val lines: List<String> defined in kotlin.text.replaceIndent[LocalVariableDescriptor]
 
@@ -84,6 +84,8 @@ Inferred types:
 
 'String' @ [67:21] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isNotBlank' @ [67:29] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
+
 'map' @ [68:14] ==> public header inline fun <T, R> Iterable<String>.map(transform: (String) -> Int): List<Int> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> String
@@ -91,13 +93,15 @@ Inferred types:
 
 'String' @ [68:18] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'indentWidth' @ [68:26] ==> private fun String.indentWidth(): Int defined in kotlin.text in file Indent.kt[SimpleFunctionDescriptorImpl]
+
 'min' @ [69:14] ==> public header fun <T : Comparable<Int>> Iterable<Int>.min(): Int? defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : Comparable<T>> -> Int
 
 'lines' @ [71:12] ==> val lines: List<String> defined in kotlin.text.replaceIndent[LocalVariableDescriptor]
 
-'reindent' @ [71:18] ==> private inline fun List<String>.reindent(resultSizeEstimate: Int, indentAddFunction: (String) -> String, indentCutFunction: (String) -> String?): String defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'reindent' @ [71:18] ==> private inline fun List<String>.reindent(resultSizeEstimate: Int, indentAddFunction: (String) -> String, indentCutFunction: (String) -> String?): String defined in kotlin.text in file Indent.kt[SimpleFunctionDescriptorImpl]
 
 'length' @ [71:27] ==> public open val length: Int defined in kotlin.String[DeserializedPropertyDescriptor]
 
@@ -109,7 +113,7 @@ Inferred types:
 
 'size' @ [71:61] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'getIndentFunction' @ [71:67] ==> private fun getIndentFunction(indent: String): (String) -> String defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'getIndentFunction' @ [71:67] ==> private fun getIndentFunction(indent: String): (String) -> String defined in kotlin.text in file Indent.kt[SimpleFunctionDescriptorImpl]
 
 'newIndent' @ [71:85] ==> value-parameter newIndent: String = ... defined in kotlin.text.replaceIndent[ValueParameterDescriptorImpl]
 
@@ -119,7 +123,7 @@ Inferred types:
 
 'minCommonIndent' @ [71:117] ==> val minCommonIndent: Int defined in kotlin.text.replaceIndent[LocalVariableDescriptor]
 
-'lineSequence' @ [80:5] ==> public fun CharSequence.lineSequence(): Sequence<String> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'lineSequence' @ [80:5] ==> public fun CharSequence.lineSequence(): Sequence<String> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [81:6] ==> public header fun <T, R> Sequence<String>.map(transform: (String) -> String): Sequence<String> defined in kotlin.sequences[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -169,7 +173,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'indexOfFirst' @ [94:41] ==> public header inline fun CharSequence.indexOfFirst(predicate: (Char) -> Boolean): Int defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'indexOfFirst' @ [94:41] ==> public header inline fun CharSequence.indexOfFirst(predicate: (Char) -> Boolean): Int defined in kotlin.text in file _Strings.kt[SimpleFunctionDescriptorImpl]
 
 '!' @ [94:56] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 

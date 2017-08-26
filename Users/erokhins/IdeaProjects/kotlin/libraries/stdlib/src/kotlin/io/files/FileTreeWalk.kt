@@ -28,7 +28,7 @@
 
 'ENABLED' @ [56:29] ==> @PublishedApi @JvmField internal final val ENABLED: Boolean defined in kotlin._Assertions[PropertyDescriptorImpl]
 
-'assert' @ [57:17] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'assert' @ [57:17] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file AssertionsJVM.kt[SimpleFunctionDescriptorImpl]
 
 'rootDir' @ [57:24] ==> value-parameter rootDir: File defined in kotlin.io.FileTreeWalk.DirectoryState.<init>[ValueParameterDescriptorImpl]
 
@@ -420,7 +420,7 @@ Inferred types:
 
 'ENABLED' @ [203:33] ==> @PublishedApi @JvmField internal final val ENABLED: Boolean defined in kotlin._Assertions[PropertyDescriptorImpl]
 
-'assert' @ [204:21] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'assert' @ [204:21] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file AssertionsJVM.kt[SimpleFunctionDescriptorImpl]
 
 'rootFile' @ [204:28] ==> value-parameter rootFile: File defined in kotlin.io.FileTreeWalk.FileTreeWalkIterator.SingleFileState.<init>[ValueParameterDescriptorImpl]
 

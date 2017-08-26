@@ -34,25 +34,25 @@ Inferred types:
 
 'methods' @ [39:56] ==> private final val methods: List<Method> defined in kotlin.reflect.jvm.internal.AnnotationConstructorCaller[PropertyDescriptorImpl]
 
-'map' @ [39:64] ==> public inline fun <T, R> Iterable<Method>.map(transform: (Method) -> Class<out Any>): List<Class<out Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [39:64] ==> public inline fun <T, R> Iterable<Method>.map(transform: (Method) -> (Class<*>..Class<*>?)): List<(Class<*>..Class<*>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Method
-    <R> -> Class<out Any>
+    <R> -> (java.lang.Class<*>..java.lang.Class<*>?)
 
 'method' @ [39:80] ==> value-parameter method: Method defined in kotlin.reflect.jvm.internal.AnnotationConstructorCaller.erasedParameterTypes.<anonymous>[ValueParameterDescriptorImpl]
 
 'returnType' @ [39:87] ==> public final val Method.returnType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 
-'let' @ [39:98] ==> @InlineOnly public inline fun <T, R> Class<out (Any..Any?)>.let(block: (Class<out (Any..Any?)>) -> Class<out Any>): Class<out Any> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [39:98] ==> @InlineOnly public inline fun <T, R> (Class<*>..Class<*>?).let(block: ((Class<*>..Class<*>?)) -> (Class<*>..Class<*>?)): (Class<*>..Class<*>?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out (kotlin.Any..kotlin.Any?)>
-    <R> -> Class<out Any>
+    <T> -> (java.lang.Class<*>..java.lang.Class<*>?)
+    <R> -> (java.lang.Class<*>..java.lang.Class<*>?)
 
-'it' @ [39:104] ==> value-parameter it: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.AnnotationConstructorCaller.erasedParameterTypes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [39:104] ==> value-parameter it: (Class<*>..Class<*>?) defined in kotlin.reflect.jvm.internal.AnnotationConstructorCaller.erasedParameterTypes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'wrapperByPrimitive' @ [39:107] ==> public val Class<*>.wrapperByPrimitive: Class<*>? defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[PropertyDescriptorImpl]
 
-'it' @ [39:129] ==> value-parameter it: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.AnnotationConstructorCaller.erasedParameterTypes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [39:129] ==> value-parameter it: (Class<*>..Class<*>?) defined in kotlin.reflect.jvm.internal.AnnotationConstructorCaller.erasedParameterTypes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'methods' @ [41:45] ==> private final val methods: List<Method> defined in kotlin.reflect.jvm.internal.AnnotationConstructorCaller[PropertyDescriptorImpl]
 
@@ -131,7 +131,7 @@ Inferred types:
 
 'index' @ [61:98] ==> value-parameter index: Int defined in kotlin.reflect.jvm.internal.AnnotationConstructorCaller.call.<anonymous>[ValueParameterDescriptorImpl]
 
-'createAnnotationInstance' @ [64:16] ==> private fun createAnnotationInstance(annotationClass: Class<*>, methods: List<Method>, values: Map<String, Any>): Any defined in kotlin.reflect.jvm.internal[SimpleFunctionDescriptorImpl]
+'createAnnotationInstance' @ [64:16] ==> private fun createAnnotationInstance(annotationClass: Class<*>, methods: List<Method>, values: Map<String, Any>): Any defined in kotlin.reflect.jvm.internal in file AnnotationConstructorCaller.kt[SimpleFunctionDescriptorImpl]
 
 'jClass' @ [64:41] ==> private final val jClass: Class<*> defined in kotlin.reflect.jvm.internal.AnnotationConstructorCaller[PropertyDescriptorImpl]
 
@@ -172,7 +172,7 @@ Inferred types:
 
 'java' @ [76:30] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'when {
             this.isArrayOf<Class<*>>() -> return null
@@ -205,7 +205,7 @@ Inferred types:
 
 'java' @ [79:80] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'toTypedArray' @ [79:87] ==> public inline fun <reified T> Collection<Class<out Any>>.toTypedArray(): Array<Class<out Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -232,15 +232,15 @@ Inferred types:
         expectedJvmType.isArray && expectedJvmType.componentType == Class::class.java ->
             @Suppress("CLASS_LITERAL_LHS_NOT_A_CLASS") Array<KClass<*>>::class // Workaround KT-13924
         else -> expectedJvmType.kotlin
-    }' @ [89:23] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: KClass<out Any>, entry1: KClass<out Any>, entry2: KClass<out Any>): KClass<out Any>[SimpleFunctionDescriptorImpl]
+    }' @ [89:23] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: KClass<out (Any..Any?)>, entry1: KClass<out (Any..Any?)>, entry2: KClass<out (Any..Any?)>): KClass<out (Any..Any?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> KClass<out Any>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> KClass<out (kotlin.Any..kotlin.Any?)>
 
 'expectedJvmType' @ [90:9] ==> value-parameter expectedJvmType: Class<*> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[ValueParameterDescriptorImpl]
 
 'Class' @ [90:28] ==> private constructor Class<T : (Any..Any?)>() defined in java.lang.Class[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@24f9a01f
 
 'java' @ [90:41] ==> public val <T> KClass<Class<*>>.java: Class<Class<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -250,17 +250,17 @@ Inferred types:
 
 'isArray' @ [91:25] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'expectedJvmType' @ [91:36] ==> value-parameter expectedJvmType: Class<*> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[ValueParameterDescriptorImpl]
 
 'componentType' @ [91:52] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'Class' @ [91:69] ==> private constructor Class<T : (Any..Any?)>() defined in java.lang.Class[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6718a08
 
 'java' @ [91:82] ==> public val <T> KClass<Class<*>>.java: Class<Class<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -268,15 +268,15 @@ Inferred types:
 
 'Suppress' @ [92:13] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'Array' @ [92:56] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [92:56] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6dda4e78
 
 'expectedJvmType' @ [93:17] ==> value-parameter expectedJvmType: Class<*> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[ValueParameterDescriptorImpl]
 
 'kotlin' @ [93:33] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'when {
         kotlinClass.qualifiedName == Array<Any>::class.qualifiedName ->
@@ -286,37 +286,37 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> String?
 
-'kotlinClass' @ [97:9] ==> val kotlinClass: KClass<out Any> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[LocalVariableDescriptor]
+'kotlinClass' @ [97:9] ==> val kotlinClass: KClass<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[LocalVariableDescriptor]
 
 'qualifiedName' @ [97:21] ==> public abstract val qualifiedName: String? defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
-'Array' @ [97:38] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [97:38] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@614847de
 
 'qualifiedName' @ [97:56] ==> public abstract val qualifiedName: String? defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
-'kotlinClass' @ [98:16] ==> val kotlinClass: KClass<out Any> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[LocalVariableDescriptor]
+'kotlinClass' @ [98:16] ==> val kotlinClass: KClass<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[LocalVariableDescriptor]
 
 'qualifiedName' @ [98:28] ==> public abstract val qualifiedName: String? defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
-'kotlinClass' @ [98:45] ==> val kotlinClass: KClass<out Any> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[LocalVariableDescriptor]
+'kotlinClass' @ [98:45] ==> val kotlinClass: KClass<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[LocalVariableDescriptor]
 
-'java' @ [98:57] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [98:57] ==> public val <T> KClass<out (Any..Any?)>.java: Class<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out (kotlin.Any..kotlin.Any?))
 
-'componentType' @ [98:62] ==> public final val <T : (Any..Any?)> Class<out Any>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
+'componentType' @ [98:62] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out (kotlin.Any..kotlin.Any?))
 
 'kotlin' @ [98:76] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'qualifiedName' @ [98:83] ==> public abstract val qualifiedName: String? defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
-'kotlinClass' @ [99:17] ==> val kotlinClass: KClass<out Any> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[LocalVariableDescriptor]
+'kotlinClass' @ [99:17] ==> val kotlinClass: KClass<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.throwIllegalArgumentType[LocalVariableDescriptor]
 
 'qualifiedName' @ [99:29] ==> public abstract val qualifiedName: String? defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
@@ -338,7 +338,7 @@ Inferred types:
 
 'java' @ [106:54] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out Annotation)
 
 'annotationClass' @ [106:62] ==> value-parameter annotationClass: Class<*> defined in kotlin.reflect.jvm.internal.createAnnotationInstance[ValueParameterDescriptorImpl]
 
@@ -433,9 +433,9 @@ Inferred types:
 
 'theirs' @ [120:37] ==> val theirs: (Any..Any?) defined in kotlin.reflect.jvm.internal.createAnnotationInstance.equals.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [124:21] ==> public fun <T> lazy(initializer: () -> Int): Lazy<Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [124:21] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Int
+    <T> -> T
 
 'values' @ [125:9] ==> value-parameter values: Map<String, Any> defined in kotlin.reflect.jvm.internal.createAnnotationInstance[ValueParameterDescriptorImpl]
 
@@ -522,9 +522,9 @@ Inferred types:
 
 'valueHash' @ [139:38] ==> val valueHash: Int defined in kotlin.reflect.jvm.internal.createAnnotationInstance.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [143:21] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [143:21] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'buildString' @ [144:9] ==> @InlineOnly public inline fun buildString(builderAction: StringBuilder /* = StringBuilder */.() -> Unit): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -536,7 +536,7 @@ Inferred types:
 
 'canonicalName' @ [146:36] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.canonicalName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'values' @ [147:13] ==> value-parameter values: Map<String, Any> defined in kotlin.reflect.jvm.internal.createAnnotationInstance[ValueParameterDescriptorImpl]
 
@@ -628,11 +628,11 @@ Inferred types:
 
 'classLoader' @ [166:51] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'arrayOf' @ [166:64] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: Class<out (Any..Any?)>): Array<Class<out (Any..Any?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [166:64] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: Class<*>): Array<Class<*>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <reified @PureReifiable T> -> Class<*>
 
 'annotationClass' @ [166:72] ==> value-parameter annotationClass: Class<*> defined in kotlin.reflect.jvm.internal.createAnnotationInstance[ValueParameterDescriptorImpl]
 

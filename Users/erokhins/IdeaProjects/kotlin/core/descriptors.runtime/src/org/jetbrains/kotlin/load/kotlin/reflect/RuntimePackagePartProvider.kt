@@ -40,8 +40,6 @@ Inferred types:
 
 'mapping' @ [38:48] ==> val mapping: ModuleMapping? defined in org.jetbrains.kotlin.load.kotlin.reflect.RuntimePackagePartProvider.registerModule[LocalVariableDescriptor]
 
-'ModuleMapping' @ [38:59] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [38:73] ==> @JvmField public final val EMPTY: ModuleMapping defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping.Companion[PropertyDescriptorImpl]
 
 'module2Mapping' @ [42:16] ==> private final val module2Mapping: ConcurrentHashMap<String, ModuleMapping> defined in org.jetbrains.kotlin.load.kotlin.reflect.RuntimePackagePartProvider[PropertyDescriptorImpl]

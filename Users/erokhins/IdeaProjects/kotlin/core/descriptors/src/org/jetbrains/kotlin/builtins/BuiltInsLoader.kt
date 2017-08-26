@@ -1,6 +1,6 @@
 'load' @ [38:31] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(BuiltInsLoader..BuiltInsLoader?)>..Class<(BuiltInsLoader..BuiltInsLoader?)>?), p1: (ClassLoader..ClassLoader?)): (ServiceLoader<(BuiltInsLoader..BuiltInsLoader?)>..ServiceLoader<(BuiltInsLoader..BuiltInsLoader?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> BuiltInsLoader
+    <S : (Any..Any?)> -> (org.jetbrains.kotlin.builtins.BuiltInsLoader..org.jetbrains.kotlin.builtins.BuiltInsLoader?)
 
 'BuiltInsLoader' @ [38:36] ==> public companion object defined in org.jetbrains.kotlin.builtins.BuiltInsLoader[FakeCallableDescriptorForObject]
 

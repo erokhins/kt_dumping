@@ -662,7 +662,7 @@ Inferred types:
 
 'args' @ [231:9] ==> value-parameter args: List<EffectiveVisibility> defined in org.jetbrains.kotlin.descriptors.lowerBound[ValueParameterDescriptorImpl]
 
-'fold' @ [231:14] ==> public inline fun <T, R> Iterable<EffectiveVisibility>.fold(initial: EffectiveVisibility, operation: (EffectiveVisibility, EffectiveVisibility) -> EffectiveVisibility): EffectiveVisibility defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [231:14] ==> public inline fun <T, R> Iterable<EffectiveVisibility>.fold(initial: EffectiveVisibility, operation: (acc: EffectiveVisibility, EffectiveVisibility) -> EffectiveVisibility): EffectiveVisibility defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> EffectiveVisibility
     <R> -> EffectiveVisibility
@@ -685,7 +685,7 @@ Inferred types:
 
 'Public' @ [234:29] ==> public object Public : EffectiveVisibility defined in org.jetbrains.kotlin.descriptors.EffectiveVisibility[FakeCallableDescriptorForObject]
 
-'lowerBound' @ [234:41] ==> private fun lowerBound(first: EffectiveVisibility, args: List<EffectiveVisibility>): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'lowerBound' @ [234:41] ==> private fun lowerBound(first: EffectiveVisibility, args: List<EffectiveVisibility>): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'args' @ [234:52] ==> value-parameter args: List<EffectiveVisibility> defined in org.jetbrains.kotlin.descriptors.lowerBound[ValueParameterDescriptorImpl]
 
@@ -834,15 +834,15 @@ Inferred types:
 
 'ownRelation' @ [273:44] ==> value-parameter ownRelation: RelationToType defined in org.jetbrains.kotlin.descriptors.dependentDescriptors[ValueParameterDescriptorImpl]
 
-'?:' @ [274:10] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Set<DescriptorWithRelation>?, right: Set<DescriptorWithRelation>): Set<DescriptorWithRelation>[SimpleFunctionDescriptorImpl]
+'?:' @ [274:10] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Iterable<DescriptorWithRelation>?, right: Iterable<DescriptorWithRelation>): Iterable<DescriptorWithRelation>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Set<DescriptorWithRelation>
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Iterable<DescriptorWithRelation>
 
 'this' @ [274:11] ==> <this> defined in org.jetbrains.kotlin.descriptors.dependentDescriptors[ReceiverParameterDescriptorImpl]
 
 'containingDeclaration' @ [274:16] ==> public final val ClassifierDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'dependentDescriptors' @ [274:65] ==> private fun ClassifierDescriptor.dependentDescriptors(ownRelation: RelationToType): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'dependentDescriptors' @ [274:65] ==> private fun ClassifierDescriptor.dependentDescriptors(ownRelation: RelationToType): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'ownRelation' @ [274:86] ==> value-parameter ownRelation: RelationToType defined in org.jetbrains.kotlin.descriptors.dependentDescriptors[ValueParameterDescriptorImpl]
 
@@ -852,7 +852,7 @@ Inferred types:
 Inferred types:
     <T> -> DescriptorWithRelation
 
-'effectiveVisibility' @ [276:79] ==> private fun ClassDescriptor.effectiveVisibility(classes: Set<ClassDescriptor>, checkPublishedApi: Boolean): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'effectiveVisibility' @ [276:79] ==> private fun ClassDescriptor.effectiveVisibility(classes: Set<ClassDescriptor>, checkPublishedApi: Boolean): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'emptySet' @ [276:99] ==> public fun <T> emptySet(): Set<ClassDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -882,7 +882,7 @@ Inferred types:
 
 'containingDeclaration' @ [280:24] ==> public final val ClassDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'lowerBound' @ [281:13] ==> private fun lowerBound(first: EffectiveVisibility, second: EffectiveVisibility): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'lowerBound' @ [281:13] ==> private fun lowerBound(first: EffectiveVisibility, second: EffectiveVisibility): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'visibility' @ [281:24] ==> public final val ClassDescriptor.visibility: Visibility[MyPropertyDescriptor]
 
@@ -894,7 +894,7 @@ Inferred types:
 
 'this' @ [281:101] ==> <this> defined in org.jetbrains.kotlin.descriptors.effectiveVisibility.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'effectiveVisibility' @ [281:107] ==> private fun ClassDescriptor.effectiveVisibility(classes: Set<ClassDescriptor>, checkPublishedApi: Boolean): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'effectiveVisibility' @ [281:107] ==> private fun ClassDescriptor.effectiveVisibility(classes: Set<ClassDescriptor>, checkPublishedApi: Boolean): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'classes' @ [281:127] ==> value-parameter classes: Set<ClassDescriptor> defined in org.jetbrains.kotlin.descriptors.effectiveVisibility[ValueParameterDescriptorImpl]
 
@@ -904,7 +904,7 @@ Inferred types:
 
 'Public' @ [281:185] ==> public object Public : EffectiveVisibility defined in org.jetbrains.kotlin.descriptors.EffectiveVisibility[FakeCallableDescriptorForObject]
 
-'dependentDescriptors' @ [285:49] ==> private fun KotlinType.dependentDescriptors(types: Set<KotlinType>, ownRelation: RelationToType): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'dependentDescriptors' @ [285:49] ==> private fun KotlinType.dependentDescriptors(types: Set<KotlinType>, ownRelation: RelationToType): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'emptySet' @ [285:70] ==> public fun <T> emptySet(): Set<KotlinType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -924,7 +924,7 @@ Inferred types:
 
 'declarationDescriptor' @ [289:36] ==> public final val TypeConstructor.declarationDescriptor: ClassifierDescriptor?[MyPropertyDescriptor]
 
-'dependentDescriptors' @ [289:59] ==> private fun ClassifierDescriptor.dependentDescriptors(ownRelation: RelationToType): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'dependentDescriptors' @ [289:59] ==> private fun ClassifierDescriptor.dependentDescriptors(ownRelation: RelationToType): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'ownRelation' @ [289:80] ==> value-parameter ownRelation: RelationToType defined in org.jetbrains.kotlin.descriptors.dependentDescriptors[ValueParameterDescriptorImpl]
 
@@ -943,7 +943,7 @@ Inferred types:
 
 'type' @ [290:48] ==> public final val TypeProjection.type: KotlinType[MyPropertyDescriptor]
 
-'dependentDescriptors' @ [290:53] ==> private fun KotlinType.dependentDescriptors(types: Set<KotlinType>, ownRelation: RelationToType): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'dependentDescriptors' @ [290:53] ==> private fun KotlinType.dependentDescriptors(types: Set<KotlinType>, ownRelation: RelationToType): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'types' @ [290:74] ==> value-parameter types: Set<KotlinType> defined in org.jetbrains.kotlin.descriptors.dependentDescriptors[ValueParameterDescriptorImpl]
 
@@ -986,9 +986,9 @@ Inferred types:
 
 'descriptorWithRelation' @ [299:24] ==> val descriptorWithRelation: DescriptorWithRelation defined in org.jetbrains.kotlin.descriptors.leastPermissive[LocalVariableDescriptor]
 
-'dependentDescriptors' @ [307:71] ==> private fun KotlinType.dependentDescriptors(): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'dependentDescriptors' @ [307:71] ==> private fun KotlinType.dependentDescriptors(): Set<DescriptorWithRelation> defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
-'leastPermissive' @ [307:94] ==> private fun Set<DescriptorWithRelation>.leastPermissive(base: EffectiveVisibility): DescriptorWithRelation? defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'leastPermissive' @ [307:94] ==> private fun Set<DescriptorWithRelation>.leastPermissive(base: EffectiveVisibility): DescriptorWithRelation? defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'base' @ [307:110] ==> value-parameter base: EffectiveVisibility defined in org.jetbrains.kotlin.descriptors.leastPermissiveDescriptor[ValueParameterDescriptorImpl]
 
@@ -996,7 +996,7 @@ Inferred types:
 
 'visibility' @ [310:39] ==> public final val DeclarationDescriptorWithVisibility.visibility: Visibility[MyPropertyDescriptor]
 
-'lowerBound' @ [312:9] ==> private fun lowerBound(first: EffectiveVisibility, second: EffectiveVisibility): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'lowerBound' @ [312:9] ==> private fun lowerBound(first: EffectiveVisibility, second: EffectiveVisibility): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'visibility' @ [312:20] ==> value-parameter visibility: Visibility = ... defined in org.jetbrains.kotlin.descriptors.effectiveVisibility[ValueParameterDescriptorImpl]
 
@@ -1014,7 +1014,7 @@ Inferred types:
 
 'containingDeclaration' @ [313:26] ==> public final val DeclarationDescriptorWithVisibility.containingDeclaration: DeclarationDescriptor?[MyPropertyDescriptor]
 
-'effectiveVisibility' @ [313:70] ==> public fun ClassDescriptor.effectiveVisibility(checkPublishedApi: Boolean = ...): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors[SimpleFunctionDescriptorImpl]
+'effectiveVisibility' @ [313:70] ==> public fun ClassDescriptor.effectiveVisibility(checkPublishedApi: Boolean = ...): EffectiveVisibility defined in org.jetbrains.kotlin.descriptors in file EffectiveVisibility.kt[SimpleFunctionDescriptorImpl]
 
 'checkPublishedApi' @ [313:90] ==> value-parameter checkPublishedApi: Boolean = ... defined in org.jetbrains.kotlin.descriptors.effectiveVisibility[ValueParameterDescriptorImpl]
 

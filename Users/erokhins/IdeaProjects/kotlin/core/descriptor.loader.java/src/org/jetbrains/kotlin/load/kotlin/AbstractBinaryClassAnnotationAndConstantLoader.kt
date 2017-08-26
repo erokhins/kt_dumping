@@ -156,11 +156,7 @@ Inferred types:
 
 'DELEGATED_PROPERTY_NAME_SUFFIX' @ [108:91] ==> public const final val DELEGATED_PROPERTY_NAME_SUFFIX: String defined in org.jetbrains.kotlin.load.java.JvmAbi[JavaPropertyDescriptor]
 
-'AnnotationUseSiteTarget' @ [109:48] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
 'PROPERTY_DELEGATE_FIELD' @ [109:72] ==> enum entry PROPERTY_DELEGATE_FIELD defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
-
-'AnnotationUseSiteTarget' @ [112:48] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
 'FIELD' @ [112:72] ==> enum entry FIELD defined in org.jetbrains.kotlin.descriptors.annotations.AnnotationUseSiteTarget[FakeCallableDescriptorForObject]
 
@@ -203,8 +199,6 @@ Inferred types:
 'proto' @ [122:50] ==> value-parameter proto: ProtoBuf.EnumEntry defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.loadEnumEntryAnnotations[ValueParameterDescriptorImpl]
 
 'name' @ [122:56] ==> public final val ProtoBuf.EnumEntry.name: Int[MyPropertyDescriptor]
-
-'ClassMapperLite' @ [123:17] ==> public object ClassMapperLite defined in org.jetbrains.kotlin.serialization.jvm in file ClassMapperLite.kt[FakeCallableDescriptorForObject]
 
 'mapClass' @ [123:33] ==> @JvmStatic public final fun mapClass(classId: ClassId): String defined in org.jetbrains.kotlin.serialization.jvm.ClassMapperLite[SimpleFunctionDescriptorImpl]
 
@@ -347,7 +341,7 @@ Inferred types:
 
 'java' @ [170:96] ==> public val <T> KClass<out MessageLite>.java: Class<out MessageLite> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> MessageLite
+    <T> -> Captured(out MessageLite)
 
 'getCallableSignature' @ [179:31] ==> private final fun getCallableSignature(proto: MessageLite, nameResolver: NameResolver, typeTable: TypeTable, kind: AnnotatedCallableKind): MemberSignature? defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader[SimpleFunctionDescriptorImpl]
 
@@ -385,7 +379,7 @@ Inferred types:
 
 'getExtension' @ [189:22] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Type[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)>..kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)>)
+    <Type : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)>..kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)>?)
 
 'typeAnnotation' @ [189:47] ==> public final val typeAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Type..ProtoBuf.Type?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -404,7 +398,7 @@ Inferred types:
 
 'getExtension' @ [193:22] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?)): (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.TypeParameter[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)>..kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)>)
+    <Type : (Any..Any?)> -> (kotlin.collections.MutableList<(org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)>..kotlin.collections.List<(org.jetbrains.kotlin.serialization.ProtoBuf.Annotation..org.jetbrains.kotlin.serialization.ProtoBuf.Annotation?)>?)
 
 'typeParameterAnnotation' @ [193:47] ==> public final val typeParameterAnnotation: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.TypeParameter..ProtoBuf.TypeParameter?), (MutableList<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>..List<(ProtoBuf.Annotation..ProtoBuf.Annotation?)>?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -605,8 +599,6 @@ Inferred types:
 
 'AnnotationVisitorForMethod' @ [259:24] ==> public constructor AnnotationVisitorForMethod(signature: MemberSignature) defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.loadAnnotationsAndInitializers.<no name provided>.AnnotationVisitorForMethod[ClassConstructorDescriptorImpl]
 
-'MemberSignature' @ [259:51] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.MemberSignature[FakeCallableDescriptorForObject]
-
 'fromMethodNameAndDesc' @ [259:67] ==> @JvmStatic public final fun fromMethodNameAndDesc(name: String, desc: String): MemberSignature defined in org.jetbrains.kotlin.load.kotlin.MemberSignature.Companion[SimpleFunctionDescriptorImpl]
 
 'name' @ [259:89] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.loadAnnotationsAndInitializers.<no name provided>.visitMethod[ValueParameterDescriptorImpl]
@@ -721,15 +713,15 @@ Inferred types:
 'propertyConstants' @ [304:43] ==> val propertyConstants: HashMap<MemberSignature, C> defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.loadAnnotationsAndInitializers[LocalVariableDescriptor]
 
 'if (proto.hasExtension(propertySignature)) proto.getExtension(propertySignature)
-                else return null' @ [315:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: JvmProtoBuf.JvmPropertySignature, elseBranch: JvmProtoBuf.JvmPropertySignature): JvmProtoBuf.JvmPropertySignature[SimpleFunctionDescriptorImpl]
+                else return null' @ [315:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?), elseBranch: (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> JvmPropertySignature
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'proto' @ [315:21] ==> value-parameter proto: ProtoBuf.Property defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getPropertySignature[ValueParameterDescriptorImpl]
 
 'hasExtension' @ [315:27] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [315:40] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -737,7 +729,7 @@ Inferred types:
 
 'getExtension' @ [315:66] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [315:79] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -757,7 +749,9 @@ Inferred types:
 
 'component2' @ [319:24] ==> public final operator fun component2(): String defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil.PropertySignature[SimpleFunctionDescriptorImpl]
 
-'JvmProtoBufUtil' @ [319:32] ==> public object JvmProtoBufUtil defined in org.jetbrains.kotlin.serialization.jvm in file JvmProtoBufUtil.kt[FakeCallableDescriptorForObject]
+'?:' @ [319:32] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: JvmProtoBufUtil.PropertySignature?, right: JvmProtoBufUtil.PropertySignature): JvmProtoBufUtil.PropertySignature[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> PropertySignature
 
 'getJvmFieldSignature' @ [319:48] ==> public final fun getJvmFieldSignature(proto: ProtoBuf.Property, nameResolver: NameResolver, typeTable: TypeTable): JvmProtoBufUtil.PropertySignature? defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil[SimpleFunctionDescriptorImpl]
 
@@ -777,7 +771,7 @@ Inferred types:
 
 'synthetic' @ [322:18] ==> value-parameter synthetic: Boolean = ... defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getPropertySignature[ValueParameterDescriptorImpl]
 
-'signature' @ [322:31] ==> val signature: JvmProtoBuf.JvmPropertySignature defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getPropertySignature[LocalVariableDescriptor]
+'signature' @ [322:31] ==> val signature: (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getPropertySignature[LocalVariableDescriptor]
 
 'hasSyntheticMethod' @ [322:41] ==> public open fun hasSyntheticMethod(): Boolean defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature[JavaMethodDescriptor]
 
@@ -787,7 +781,7 @@ Inferred types:
 
 'nameResolver' @ [323:47] ==> value-parameter nameResolver: NameResolver defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getPropertySignature[ValueParameterDescriptorImpl]
 
-'signature' @ [323:61] ==> val signature: JvmProtoBuf.JvmPropertySignature defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getPropertySignature[LocalVariableDescriptor]
+'signature' @ [323:61] ==> val signature: (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getPropertySignature[LocalVariableDescriptor]
 
 'syntheticMethod' @ [323:71] ==> public final val JvmProtoBuf.JvmPropertySignature.syntheticMethod: (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)[MyPropertyDescriptor]
 
@@ -814,11 +808,11 @@ Inferred types:
 
 'proto' @ [336:13] ==> value-parameter proto: MessageLite defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getCallableSignature[ValueParameterDescriptorImpl]
 
-'MemberSignature' @ [337:17] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.MemberSignature[FakeCallableDescriptorForObject]
-
 'fromMethodNameAndDesc' @ [337:33] ==> @JvmStatic public final fun fromMethodNameAndDesc(namePlusDesc: String): MemberSignature defined in org.jetbrains.kotlin.load.kotlin.MemberSignature.Companion[SimpleFunctionDescriptorImpl]
 
-'JvmProtoBufUtil' @ [337:55] ==> public object JvmProtoBufUtil defined in org.jetbrains.kotlin.serialization.jvm in file JvmProtoBufUtil.kt[FakeCallableDescriptorForObject]
+'?:' @ [337:55] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> String
 
 'getJvmConstructorSignature' @ [337:71] ==> public final fun getJvmConstructorSignature(proto: ProtoBuf.Constructor, nameResolver: NameResolver, typeTable: TypeTable): String? defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil[SimpleFunctionDescriptorImpl]
 
@@ -830,11 +824,11 @@ Inferred types:
 
 'proto' @ [339:13] ==> value-parameter proto: MessageLite defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getCallableSignature[ValueParameterDescriptorImpl]
 
-'MemberSignature' @ [340:17] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.MemberSignature[FakeCallableDescriptorForObject]
-
 'fromMethodNameAndDesc' @ [340:33] ==> @JvmStatic public final fun fromMethodNameAndDesc(namePlusDesc: String): MemberSignature defined in org.jetbrains.kotlin.load.kotlin.MemberSignature.Companion[SimpleFunctionDescriptorImpl]
 
-'JvmProtoBufUtil' @ [340:55] ==> public object JvmProtoBufUtil defined in org.jetbrains.kotlin.serialization.jvm in file JvmProtoBufUtil.kt[FakeCallableDescriptorForObject]
+'?:' @ [340:55] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: String?, right: String): String[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> String
 
 'getJvmMethodSignature' @ [340:71] ==> public final fun getJvmMethodSignature(proto: ProtoBuf.Function, nameResolver: NameResolver, typeTable: TypeTable): String? defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil[SimpleFunctionDescriptorImpl]
 
@@ -850,7 +844,7 @@ Inferred types:
 
 'hasExtension' @ [342:49] ==> public final fun <Type : (Any..Any?)> hasExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): Boolean defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [342:62] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -858,7 +852,7 @@ Inferred types:
 
 'getExtension' @ [343:39] ==> public final fun <Type : (Any..Any?)> getExtension(p0: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?)): (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Property[JavaMethodDescriptor]
 Inferred types:
-    <Type : (Any..Any?)> -> JvmPropertySignature
+    <Type : (Any..Any?)> -> (org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature..org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.JvmPropertySignature?)
 
 'propertySignature' @ [343:52] ==> public final val propertySignature: (GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>..GeneratedMessageLite.GeneratedExtension<(ProtoBuf.Property..ProtoBuf.Property?), (JvmProtoBuf.JvmPropertySignature..JvmProtoBuf.JvmPropertySignature?)>?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf[JavaPropertyDescriptor]
 
@@ -875,8 +869,6 @@ Inferred types:
 
 'PROPERTY_GETTER' @ [345:43] ==> enum entry PROPERTY_GETTER defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
 
-'MemberSignature' @ [345:62] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.MemberSignature[FakeCallableDescriptorForObject]
-
 'fromMethod' @ [345:78] ==> @JvmStatic public final fun fromMethod(nameResolver: NameResolver, signature: JvmProtoBuf.JvmMethodSignature): MemberSignature defined in org.jetbrains.kotlin.load.kotlin.MemberSignature.Companion[SimpleFunctionDescriptorImpl]
 
 'nameResolver' @ [345:89] ==> value-parameter nameResolver: NameResolver defined in org.jetbrains.kotlin.load.kotlin.AbstractBinaryClassAnnotationAndConstantLoader.getCallableSignature[ValueParameterDescriptorImpl]
@@ -886,8 +878,6 @@ Inferred types:
 'getter' @ [345:113] ==> public final val JvmProtoBuf.JvmPropertySignature.getter: (JvmProtoBuf.JvmMethodSignature..JvmProtoBuf.JvmMethodSignature?)[MyPropertyDescriptor]
 
 'PROPERTY_SETTER' @ [346:43] ==> enum entry PROPERTY_SETTER defined in org.jetbrains.kotlin.serialization.deserialization.AnnotatedCallableKind[FakeCallableDescriptorForObject]
-
-'MemberSignature' @ [346:62] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.MemberSignature[FakeCallableDescriptorForObject]
 
 'fromMethod' @ [346:78] ==> @JvmStatic public final fun fromMethod(nameResolver: NameResolver, signature: JvmProtoBuf.JvmMethodSignature): MemberSignature defined in org.jetbrains.kotlin.load.kotlin.MemberSignature.Companion[SimpleFunctionDescriptorImpl]
 
@@ -927,6 +917,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.name.FqName..org.jetbrains.kotlin.name.FqName?)
     <R> -> ClassId
+
+'topLevel' @ [368:24] ==> @NotNull public open fun topLevel(@NotNull topLevelFqName: FqName): ClassId defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
 
 'toSet' @ [368:34] ==> public fun <T> Iterable<ClassId>.toSet(): Set<ClassId> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

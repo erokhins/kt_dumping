@@ -1,15 +1,15 @@
 'instanceClass' @ [33:13] ==> internal final val instanceClass: Class<*>? defined in kotlin.reflect.jvm.internal.FunctionCaller[PropertyDescriptorImpl]
 
-'let' @ [33:28] ==> @InlineOnly public inline fun <T, R> Class<out (Any..Any?)>.let(block: (Class<out (Any..Any?)>) -> List<Type>): List<Type> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [33:28] ==> @InlineOnly public inline fun <T, R> Class<*>.let(block: (Class<*>) -> List<Type>): List<Type> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T> -> Class<*>
     <R> -> List<Type>
 
 'listOf' @ [33:34] ==> public fun <T> listOf(vararg elements: Type): List<Type> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Type
 
-'it' @ [33:41] ==> value-parameter it: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.FunctionCaller.parameterTypes.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [33:41] ==> value-parameter it: Class<*> defined in kotlin.reflect.jvm.internal.FunctionCaller.parameterTypes.<anonymous>[ValueParameterDescriptorImpl]
 
 'valueParameterTypes' @ [33:46] ==> value-parameter valueParameterTypes: Array<Type> defined in kotlin.reflect.jvm.internal.FunctionCaller.<init>[ValueParameterDescriptorImpl]
 
@@ -61,28 +61,28 @@ Inferred types:
 
 'declaringClass' @ [57:25] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.declaringClass: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'constructor' @ [58:13] ==> value-parameter constructor: Constructor<*> defined in kotlin.reflect.jvm.internal.FunctionCaller.Constructor.<init>[ValueParameterDescriptorImpl]
 
 'declaringClass' @ [58:25] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.declaringClass: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'let' @ [58:40] ==> @InlineOnly public inline fun <T, R> Class<out (Any..Any?)>.let(block: (Class<out (Any..Any?)>) -> Class<out (Any..Any?)>?): Class<out (Any..Any?)>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [58:40] ==> @InlineOnly public inline fun <T, R> (Class<out (Any..Any?)>..Class<out (Any..Any?)>?).let(block: ((Class<out (Any..Any?)>..Class<out (Any..Any?)>?)) -> Class<*>?): Class<*>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out (kotlin.Any..kotlin.Any?)>
-    <R> -> Class<out (kotlin.Any..kotlin.Any?)>?
+    <T> -> (java.lang.Class<out (kotlin.Any..kotlin.Any?)>..java.lang.Class<out (kotlin.Any..kotlin.Any?)>?)
+    <R> -> Class<*>?
 
-'klass' @ [59:34] ==> value-parameter klass: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.FunctionCaller.Constructor.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'klass' @ [59:34] ==> value-parameter klass: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in kotlin.reflect.jvm.internal.FunctionCaller.Constructor.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
 'declaringClass' @ [59:40] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaringClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out (kotlin.Any..kotlin.Any?))
 
-'if (outerClass != null && !Modifier.isStatic(klass.modifiers)) outerClass else null' @ [60:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out (Any..Any?)>?, elseBranch: Class<out (Any..Any?)>?): Class<out (Any..Any?)>?[SimpleFunctionDescriptorImpl]
+'if (outerClass != null && !Modifier.isStatic(klass.modifiers)) outerClass else null' @ [60:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<*>?, elseBranch: Class<*>?): Class<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out (kotlin.Any..kotlin.Any?)>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<*>?
 
 'outerClass' @ [60:21] ==> val outerClass: (Class<*>..Class<*>?) defined in kotlin.reflect.jvm.internal.FunctionCaller.Constructor.<init>.<anonymous>[LocalVariableDescriptor]
 
@@ -90,11 +90,11 @@ Inferred types:
 
 'isStatic' @ [60:53] ==> public open fun isStatic(p0: Int): Boolean defined in java.lang.reflect.Modifier[JavaMethodDescriptor]
 
-'klass' @ [60:62] ==> value-parameter klass: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.FunctionCaller.Constructor.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'klass' @ [60:62] ==> value-parameter klass: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in kotlin.reflect.jvm.internal.FunctionCaller.Constructor.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
 'modifiers' @ [60:68] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.modifiers: Int[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out (kotlin.Any..kotlin.Any?))
 
 'outerClass' @ [60:80] ==> val outerClass: (Class<*>..Class<*>?) defined in kotlin.reflect.jvm.internal.FunctionCaller.Constructor.<init>.<anonymous>[LocalVariableDescriptor]
 
@@ -102,7 +102,7 @@ Inferred types:
 
 'genericParameterTypes' @ [62:25] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.genericParameterTypes: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'checkArguments' @ [65:13] ==> protected open fun checkArguments(args: Array<*>): Unit defined in kotlin.reflect.jvm.internal.FunctionCaller.Constructor[SimpleFunctionDescriptorImpl]
 
@@ -124,13 +124,13 @@ Inferred types:
 
 'declaringClass' @ [74:46] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.declaringClass: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'constructor' @ [75:21] ==> value-parameter constructor: Constructor<*> defined in kotlin.reflect.jvm.internal.FunctionCaller.BoundConstructor.<init>[ValueParameterDescriptorImpl]
 
 'genericParameterTypes' @ [75:33] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.genericParameterTypes: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'checkArguments' @ [78:13] ==> protected open fun checkArguments(args: Array<*>): Unit defined in kotlin.reflect.jvm.internal.FunctionCaller.BoundConstructor[SimpleFunctionDescriptorImpl]
 
@@ -168,9 +168,9 @@ Inferred types:
 
 'genericReturnType' @ [91:20] ==> public final val Method.genericReturnType: (Type..Type?)[MyPropertyDescriptor]
 
-'if (requiresInstance) method.declaringClass else null' @ [92:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out (Any..Any?)>?, elseBranch: Class<out (Any..Any?)>?): Class<out (Any..Any?)>?[SimpleFunctionDescriptorImpl]
+'if (requiresInstance) method.declaringClass else null' @ [92:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<*>?, elseBranch: Class<*>?): Class<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out (kotlin.Any..kotlin.Any?)>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<*>?
 
 'requiresInstance' @ [92:17] ==> value-parameter requiresInstance: Boolean = ... defined in kotlin.reflect.jvm.internal.FunctionCaller.Method.<init>[ValueParameterDescriptorImpl]
 
@@ -320,9 +320,9 @@ Inferred types:
 
 'genericType' @ [158:19] ==> public final val Field.genericType: (Type..Type?)[MyPropertyDescriptor]
 
-'if (requiresInstance) field.declaringClass else null' @ [159:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out (Any..Any?)>?, elseBranch: Class<out (Any..Any?)>?): Class<out (Any..Any?)>?[SimpleFunctionDescriptorImpl]
+'if (requiresInstance) field.declaringClass else null' @ [159:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<*>?, elseBranch: Class<*>?): Class<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out (kotlin.Any..kotlin.Any?)>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<*>?
 
 'requiresInstance' @ [159:17] ==> value-parameter requiresInstance: Boolean = ... defined in kotlin.reflect.jvm.internal.FunctionCaller.FieldGetter.<init>[ValueParameterDescriptorImpl]
 
@@ -370,9 +370,9 @@ Inferred types:
 
 'TYPE' @ [174:18] ==> public final val TYPE: (Class<(Void..Void?)>..Class<(Void..Void?)>?) defined in java.lang.Void[JavaPropertyDescriptor]
 
-'if (requiresInstance) field.declaringClass else null' @ [175:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out (Any..Any?)>?, elseBranch: Class<out (Any..Any?)>?): Class<out (Any..Any?)>?[SimpleFunctionDescriptorImpl]
+'if (requiresInstance) field.declaringClass else null' @ [175:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<*>?, elseBranch: Class<*>?): Class<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out (kotlin.Any..kotlin.Any?)>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<*>?
 
 'requiresInstance' @ [175:17] ==> value-parameter requiresInstance: Boolean = ... defined in kotlin.reflect.jvm.internal.FunctionCaller.FieldSetter.<init>[ValueParameterDescriptorImpl]
 
@@ -708,7 +708,7 @@ Inferred types:
 
 'copyOfRange' @ [287:53] ==> @InlineOnly public inline fun <T> Array<out T>.copyOfRange(fromIndex: Int, toIndex: Int): Array<out T> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> T
+    <T> -> Captured(out T)
 
 'size' @ [287:68] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 

@@ -14,7 +14,7 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.org.objectweb.asm.tree.ParameterNode..org.jetbrains.org.objectweb.asm.tree.ParameterNode?)
 
-'isStatic' @ [39:20] ==> internal fun isStatic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isStatic' @ [39:20] ==> internal fun isStatic(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'access' @ [39:29] ==> public final var access: Int defined in org.jetbrains.org.objectweb.asm.tree.MethodNode[JavaPropertyDescriptor]
 
@@ -26,7 +26,7 @@ Inferred types:
 
 'containingClass' @ [43:51] ==> value-parameter containingClass: ClassNode defined in org.jetbrains.kotlin.kapt3.stubs.getParametersInfo[ValueParameterDescriptorImpl]
 
-'isEnum' @ [43:67] ==> internal fun ClassNode.isEnum(): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isEnum' @ [43:67] ==> internal fun ClassNode.isEnum(): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'if (isEnumConstructor) 2 else 0' @ [44:31] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Int, elseBranch: Int): Int[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -67,7 +67,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> String?
 
-'isAbstract' @ [53:33] ==> internal fun isAbstract(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util[SimpleFunctionDescriptorImpl]
+'isAbstract' @ [53:33] ==> internal fun isAbstract(access: Int): Boolean defined in org.jetbrains.kotlin.kapt3.util in file asmUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [53:44] ==> <this> defined in org.jetbrains.kotlin.kapt3.stubs.getParametersInfo[ReceiverParameterDescriptorImpl]
 

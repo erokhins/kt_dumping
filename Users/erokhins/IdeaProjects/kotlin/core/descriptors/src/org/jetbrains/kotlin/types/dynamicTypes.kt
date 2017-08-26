@@ -6,8 +6,6 @@
 
 'builtIns' @ [37:63] ==> value-parameter builtIns: KotlinBuiltIns defined in org.jetbrains.kotlin.types.createDynamicType[ValueParameterDescriptorImpl]
 
-'Annotations' @ [37:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [37:85] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
 'FlexibleType' @ [39:86] ==> public constructor FlexibleType(lowerBound: SimpleType, upperBound: SimpleType) defined in org.jetbrains.kotlin.types.FlexibleType[ClassConstructorDescriptorImpl]

@@ -8,9 +8,9 @@
 
 'isLocked' @ [45:24] ==> public final var isLocked: Boolean defined in org.jetbrains.kotlin.renderer.DescriptorRendererOptionsImpl[PropertyDescriptorImpl]
 
-'lazy' @ [48:76] ==> public fun <T> lazy(initializer: () -> DescriptorRendererImpl): Lazy<DescriptorRendererImpl> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [48:76] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> DescriptorRendererImpl
+    <T> -> T
 
 'this' @ [49:9] ==> <this> defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl[LazyClassReceiverParameterDescriptor]
 
@@ -30,9 +30,9 @@ Inferred types:
 
 'ALWAYS_PARENTHESIZED' @ [51:85] ==> enum entry ALWAYS_PARENTHESIZED defined in org.jetbrains.kotlin.renderer.AnnotationArgumentsRenderingPolicy[FakeCallableDescriptorForObject]
 
-'lazy' @ [54:75] ==> public fun <T> lazy(initializer: () -> DescriptorRenderer): Lazy<DescriptorRenderer> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [54:75] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> DescriptorRenderer
+    <T> -> T
 
 'this' @ [55:9] ==> <this> defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl[LazyClassReceiverParameterDescriptor]
 
@@ -210,7 +210,7 @@ Inferred types:
 
 'escape' @ [121:58] ==> private final fun escape(string: String): String defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl[SimpleFunctionDescriptorImpl]
 
-'renderFqName' @ [121:95] ==> public fun renderFqName(pathSegments: List<Name>): String defined in org.jetbrains.kotlin.renderer[SimpleFunctionDescriptorImpl]
+'renderFqName' @ [121:95] ==> public fun renderFqName(pathSegments: List<Name>): String defined in org.jetbrains.kotlin.renderer in file RenderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'pathSegments' @ [121:108] ==> value-parameter pathSegments: List<Name> defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderFqName[ValueParameterDescriptorImpl]
 
@@ -676,7 +676,7 @@ Inferred types:
 
 'java' @ [284:65] ==> public val <T> KClass<out ClassifierDescriptor>.java: Class<out ClassifierDescriptor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ClassifierDescriptor
+    <T> -> Captured(out ClassifierDescriptor)
 
 'buildString' @ [288:73] ==> @InlineOnly public inline fun buildString(builderAction: StringBuilder /* = StringBuilder */.() -> Unit): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -826,7 +826,7 @@ Inferred types:
 
 'type' @ [346:30] ==> value-parameter type: KotlinType defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderFunctionType[ValueParameterDescriptorImpl]
 
-'getValueParameterTypesFromFunctionType' @ [346:35] ==> public fun KotlinType.getValueParameterTypesFromFunctionType(): List<TypeProjection> defined in org.jetbrains.kotlin.builtins[SimpleFunctionDescriptorImpl]
+'getValueParameterTypesFromFunctionType' @ [346:35] ==> public fun KotlinType.getValueParameterTypesFromFunctionType(): List<TypeProjection> defined in org.jetbrains.kotlin.builtins in file functionTypes.kt[SimpleFunctionDescriptorImpl]
 
 'component1' @ [347:15] ==> public final operator fun component1(): Int defined in kotlin.collections.IndexedValue[DeserializedSimpleFunctionDescriptor]
 
@@ -975,7 +975,7 @@ Inferred types:
 
 'sourceFileName' @ [390:85] ==> value-parameter sourceFileName: String defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.appendDefinedIn.<anonymous>[ValueParameterDescriptorImpl]
 
-'DescriptorRendererModifier' @ [397:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'!in' @ [397:13] ==> public abstract fun contains(element: DescriptorRendererModifier): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'ANNOTATIONS' @ [397:40] ==> enum entry ANNOTATIONS defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -1224,7 +1224,7 @@ Inferred types:
 
 'visibility' @ [456:26] ==> value-parameter visibility: Visibility defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderVisibility[ValueParameterDescriptorImpl]
 
-'DescriptorRendererModifier' @ [457:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'!in' @ [457:13] ==> public abstract fun contains(element: DescriptorRendererModifier): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'VISIBILITY' @ [457:40] ==> enum entry VISIBILITY defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -1258,7 +1258,7 @@ Inferred types:
 
 'append' @ [462:63] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'DescriptorRendererModifier' @ [466:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'!in' @ [466:13] ==> public abstract fun contains(element: DescriptorRendererModifier): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'MODALITY' @ [466:40] ==> enum entry MODALITY defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -1280,7 +1280,7 @@ Inferred types:
 
 'append' @ [468:48] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'DescriptorRendererModifier' @ [472:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'!in' @ [472:13] ==> public abstract fun contains(element: DescriptorRendererModifier): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'HEADER' @ [472:40] ==> enum entry HEADER defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -1296,7 +1296,7 @@ Inferred types:
 
 'append' @ [474:53] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'DescriptorRendererModifier' @ [479:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'!in' @ [479:13] ==> public abstract fun contains(element: DescriptorRendererModifier): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'IMPL' @ [479:40] ==> enum entry IMPL defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -1312,7 +1312,7 @@ Inferred types:
 
 'append' @ [481:51] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'DescriptorRendererModifier' @ [486:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'!in' @ [486:13] ==> public abstract fun contains(element: DescriptorRendererModifier): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'INNER' @ [486:40] ==> enum entry INNER defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -1328,7 +1328,7 @@ Inferred types:
 
 'append' @ [488:52] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'DescriptorRendererModifier' @ [493:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'!in' @ [493:13] ==> public abstract fun contains(element: DescriptorRendererModifier): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'DATA' @ [493:40] ==> enum entry DATA defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -1356,8 +1356,6 @@ Inferred types:
 
 'modality' @ [498:74] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [498:86] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [498:95] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'overridesSomething' @ [499:17] ==> private final fun overridesSomething(callable: CallableMemberDescriptor): Boolean defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl[SimpleFunctionDescriptorImpl]
@@ -1372,8 +1370,6 @@ Inferred types:
 
 'modality' @ [499:128] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [499:140] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'OPEN' @ [499:149] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'renderModality' @ [502:13] ==> private final fun renderModality(modality: Modality, builder: StringBuilder /* = StringBuilder */): Unit defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl[SimpleFunctionDescriptorImpl]
@@ -1384,7 +1380,7 @@ Inferred types:
 
 'builder' @ [502:47] ==> value-parameter builder: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderModalityForCallable[ValueParameterDescriptorImpl]
 
-'DescriptorRendererModifier' @ [507:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'!in' @ [507:13] ==> public abstract fun contains(element: DescriptorRendererModifier): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'OVERRIDE' @ [507:40] ==> enum entry OVERRIDE defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -1418,7 +1414,7 @@ Inferred types:
 
 'append' @ [512:92] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'DescriptorRendererModifier' @ [519:13] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
+'!in' @ [519:13] ==> public abstract fun contains(element: DescriptorRendererModifier): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'MEMBER_KIND' @ [519:40] ==> enum entry MEMBER_KIND defined in org.jetbrains.kotlin.renderer.DescriptorRendererModifier[FakeCallableDescriptorForObject]
 
@@ -1566,8 +1562,8 @@ Inferred types:
 
 'accept' @ [568:35] ==> public abstract fun <R : (Any..Any?), D : (Any..Any?)> accept(visitor: (DeclarationDescriptorVisitor<(Unit..Unit?), (StringBuilder /* = StringBuilder */..StringBuilder? /* = StringBuilder? */)>..DeclarationDescriptorVisitor<(Unit..Unit?), (StringBuilder /* = StringBuilder */..StringBuilder? /* = StringBuilder? */)>?), data: (StringBuilder /* = StringBuilder */..StringBuilder? /* = StringBuilder? */)): (Unit..Unit?) defined in org.jetbrains.kotlin.descriptors.DeclarationDescriptor[JavaMethodDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> Unit
-    <D : (Any..Any?)> -> StringBuilder
+    <R : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
+    <D : (Any..Any?)> -> (kotlin.text.StringBuilder /* = java.lang.StringBuilder */..kotlin.text.StringBuilder? /* = java.lang.StringBuilder? */)
 
 'RenderDeclarationDescriptorVisitor' @ [568:42] ==> public constructor RenderDeclarationDescriptorVisitor() defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.RenderDeclarationDescriptorVisitor[ClassConstructorDescriptorImpl]
 
@@ -2583,9 +2579,9 @@ Inferred types:
 
 'compileTimeInitializer' @ [879:22] ==> public final val VariableDescriptor.compileTimeInitializer: ConstantValue<*>?[MyPropertyDescriptor]
 
-'let' @ [879:46] ==> @InlineOnly public inline fun <T, R> ConstantValue<Any?>.let(block: (ConstantValue<Any?>) -> (StringBuilder..StringBuilder?)): (StringBuilder..StringBuilder?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [879:46] ==> @InlineOnly public inline fun <T, R> ConstantValue<*>.let(block: (ConstantValue<*>) -> (StringBuilder..StringBuilder?)): (StringBuilder..StringBuilder?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ConstantValue<Any?>
+    <T> -> ConstantValue<*>
     <R> -> (java.lang.StringBuilder..java.lang.StringBuilder?)
 
 'builder' @ [880:17] ==> value-parameter builder: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderInitializer[ValueParameterDescriptorImpl]
@@ -2598,7 +2594,7 @@ Inferred types:
 
 'renderConstant' @ [880:53] ==> private final fun renderConstant(value: ConstantValue<*>): String defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl[SimpleFunctionDescriptorImpl]
 
-'constant' @ [880:68] ==> value-parameter constant: ConstantValue<Any?> defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderInitializer.<anonymous>[ValueParameterDescriptorImpl]
+'constant' @ [880:68] ==> value-parameter constant: ConstantValue<*> defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderInitializer.<anonymous>[ValueParameterDescriptorImpl]
 
 'builder' @ [886:9] ==> value-parameter builder: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderTypeAlias[ValueParameterDescriptorImpl]
 
@@ -2748,8 +2744,6 @@ Inferred types:
 
 'modality' @ [918:62] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [918:74] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [918:83] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'klass' @ [919:19] ==> value-parameter klass: ClassDescriptor defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderClass[ValueParameterDescriptorImpl]
@@ -2761,8 +2755,6 @@ Inferred types:
 'klass' @ [919:45] ==> value-parameter klass: ClassDescriptor defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl.renderClass[ValueParameterDescriptorImpl]
 
 'modality' @ [919:51] ==> public final val ClassDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [919:63] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [919:72] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -2984,8 +2976,6 @@ Inferred types:
 'append' @ [972:17] ==> public open fun append(p0: (String..String?)): (StringBuilder..StringBuilder?) defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
 'renderKeyword' @ [972:24] ==> private final fun renderKeyword(keyword: String): String defined in org.jetbrains.kotlin.renderer.DescriptorRendererImpl[SimpleFunctionDescriptorImpl]
-
-'DescriptorRenderer' @ [972:38] ==> public companion object defined in org.jetbrains.kotlin.renderer.DescriptorRenderer[FakeCallableDescriptorForObject]
 
 'getClassifierKindPrefix' @ [972:57] ==> public final fun getClassifierKindPrefix(classifier: ClassifierDescriptorWithTypeParameters): String defined in org.jetbrains.kotlin.renderer.DescriptorRenderer.Companion[SimpleFunctionDescriptorImpl]
 

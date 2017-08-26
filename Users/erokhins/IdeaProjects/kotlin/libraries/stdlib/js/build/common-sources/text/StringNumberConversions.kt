@@ -18,13 +18,9 @@
 
 'int' @ [177:9] ==> val int: Int defined in kotlin.text.toByteOrNull[LocalVariableDescriptor]
 
-'Byte' @ [177:15] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
-
 'MIN_VALUE' @ [177:20] ==> public const final val MIN_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
 'int' @ [177:33] ==> val int: Int defined in kotlin.text.toByteOrNull[LocalVariableDescriptor]
-
-'Byte' @ [177:39] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [177:44] ==> public const final val MAX_VALUE: Byte defined in kotlin.Byte.Companion[DeserializedPropertyDescriptor]
 
@@ -46,13 +42,9 @@
 
 'int' @ [197:9] ==> val int: Int defined in kotlin.text.toShortOrNull[LocalVariableDescriptor]
 
-'Short' @ [197:15] ==> public companion object defined in kotlin.Short[FakeCallableDescriptorForObject]
-
 'MIN_VALUE' @ [197:21] ==> public const final val MIN_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 
 'int' @ [197:34] ==> val int: Int defined in kotlin.text.toShortOrNull[LocalVariableDescriptor]
-
-'Short' @ [197:40] ==> public companion object defined in kotlin.Short[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [197:46] ==> public const final val MAX_VALUE: Short defined in kotlin.Short.Companion[DeserializedPropertyDescriptor]
 

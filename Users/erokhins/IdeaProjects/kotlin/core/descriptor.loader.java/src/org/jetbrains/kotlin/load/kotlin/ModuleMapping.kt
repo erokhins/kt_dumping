@@ -160,6 +160,10 @@ Inferred types:
 
 'multifileFacadeNameList' @ [70:90] ==> public final val JvmPackageTable.PackageParts.multifileFacadeNameList: (ProtocolStringList..ProtocolStringList?)[MyPropertyDescriptor]
 
+'getOrNull' @ [70:115] ==> public fun <T> List<(String..String?)>.getOrNull(index: Int): String? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> (kotlin.String..kotlin.String?)
+
 'table' @ [74:31] ==> val table: JvmPackageTable.PackageTable defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping.Companion.create[LocalVariableDescriptor]
 
 'metadataPartsList' @ [74:37] ==> public final val JvmPackageTable.PackageTable.metadataPartsList: (MutableList<(JvmPackageTable.PackageParts..JvmPackageTable.PackageParts?)>..List<(JvmPackageTable.PackageParts..JvmPackageTable.PackageParts?)>?)[MyPropertyDescriptor]
@@ -190,6 +194,8 @@ Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
 
 'packageParts' @ [76:49] ==> val packageParts: PackageParts defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping.Companion.create[LocalVariableDescriptor]
+
+'addMetadataPart' @ [76:63] ==> public final fun addMetadataPart(shortName: String): Unit defined in org.jetbrains.kotlin.load.kotlin.PackageParts[SimpleFunctionDescriptorImpl]
 
 'ModuleMapping' @ [79:24] ==> private constructor ModuleMapping(packageFqName2Parts: Map<String, PackageParts>, debugName: String) defined in org.jetbrains.kotlin.load.kotlin.ModuleMapping[ClassConstructorDescriptorImpl]
 
@@ -338,10 +344,12 @@ Inferred types:
     <T> -> Pair<Int, String>
     <R : Comparable<R>> -> Int
 
-'Pair' @ [126:104] ==> public constructor Pair<out A, out B>(first: Nothing, second: Nothing) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [126:104] ==> public constructor Pair<out A, out B>(first: ???, second: ???) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> Nothing
-    <out B> -> Nothing
+    <out A> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@4b182707
+    <out B> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@5f57ca9a
+
+'first' @ [126:123] ==> public final val first: Int defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
 'assert' @ [127:21] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
@@ -418,6 +426,8 @@ Inferred types:
     <T> -> String
 
 'this' @ [147:37] ==> <this> defined in org.jetbrains.kotlin.load.kotlin.PackageParts[LazyClassReceiverParameterDescriptor]
+
+'addMetadataPart' @ [147:43] ==> public final fun addMetadataPart(shortName: String): Unit defined in org.jetbrains.kotlin.load.kotlin.PackageParts[SimpleFunctionDescriptorImpl]
 
 'other' @ [151:13] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.load.kotlin.PackageParts.equals[ValueParameterDescriptorImpl]
 

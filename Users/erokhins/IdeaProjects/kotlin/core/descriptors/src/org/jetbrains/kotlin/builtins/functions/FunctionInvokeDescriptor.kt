@@ -4,11 +4,7 @@
 
 'original' @ [37:9] ==> value-parameter original: FunctionInvokeDescriptor? defined in org.jetbrains.kotlin.builtins.functions.FunctionInvokeDescriptor.<init>[ValueParameterDescriptorImpl]
 
-'Annotations' @ [38:9] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
-
 'EMPTY' @ [38:21] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
-
-'OperatorNameConventions' @ [39:9] ==> public object OperatorNameConventions defined in org.jetbrains.kotlin.util in file OperatorNameConventions.kt[FakeCallableDescriptorForObject]
 
 'INVOKE' @ [39:33] ==> @JvmField public final val INVOKE: Name defined in org.jetbrains.kotlin.util.OperatorNameConventions[PropertyDescriptorImpl]
 
@@ -231,8 +227,6 @@ Inferred types:
 
 'defaultType' @ [110:43] ==> public final val TypeParameterDescriptor.defaultType: SimpleType[MyPropertyDescriptor]
 
-'Modality' @ [111:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [111:30] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'PUBLIC' @ [112:34] ==> @NotNull public final val PUBLIC: Visibility defined in org.jetbrains.kotlin.descriptors.Visibilities[JavaPropertyDescriptor]
@@ -271,8 +265,6 @@ Inferred types:
 'containingDeclaration' @ [134:21] ==> value-parameter containingDeclaration: FunctionInvokeDescriptor defined in org.jetbrains.kotlin.builtins.functions.FunctionInvokeDescriptor.Factory.createValueParameter[ValueParameterDescriptorImpl]
 
 'index' @ [134:50] ==> value-parameter index: Int defined in org.jetbrains.kotlin.builtins.functions.FunctionInvokeDescriptor.Factory.createValueParameter[ValueParameterDescriptorImpl]
-
-'Annotations' @ [135:21] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [135:33] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 

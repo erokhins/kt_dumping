@@ -36,7 +36,7 @@ Inferred types:
 
 '_facade' @ [49:16] ==> private final var _facade: Continuation<Any?>? defined in kotlin.coroutines.experimental.jvm.internal.CoroutineImpl[PropertyDescriptorImpl]
 
-'processBareContinuationResume' @ [53:9] ==> @InlineOnly internal inline fun processBareContinuationResume(completion: Continuation<*>, block: () -> Any?): Unit defined in kotlin.coroutines.experimental[SimpleFunctionDescriptorImpl]
+'processBareContinuationResume' @ [53:9] ==> @InlineOnly internal inline fun processBareContinuationResume(completion: Continuation<*>, block: () -> Any?): Unit defined in kotlin.coroutines.experimental in file CoroutinesLibrary.kt[SimpleFunctionDescriptorImpl]
 
 'completion' @ [53:39] ==> @JvmField protected final var completion: Continuation<Any?>? defined in kotlin.coroutines.experimental.jvm.internal.CoroutineImpl[PropertyDescriptorImpl]
 
@@ -44,7 +44,7 @@ Inferred types:
 
 'value' @ [54:22] ==> value-parameter value: Any? defined in kotlin.coroutines.experimental.jvm.internal.CoroutineImpl.resume[ValueParameterDescriptorImpl]
 
-'processBareContinuationResume' @ [59:9] ==> @InlineOnly internal inline fun processBareContinuationResume(completion: Continuation<*>, block: () -> Any?): Unit defined in kotlin.coroutines.experimental[SimpleFunctionDescriptorImpl]
+'processBareContinuationResume' @ [59:9] ==> @InlineOnly internal inline fun processBareContinuationResume(completion: Continuation<*>, block: () -> Any?): Unit defined in kotlin.coroutines.experimental in file CoroutinesLibrary.kt[SimpleFunctionDescriptorImpl]
 
 'completion' @ [59:39] ==> @JvmField protected final var completion: Continuation<Any?>? defined in kotlin.coroutines.experimental.jvm.internal.CoroutineImpl[PropertyDescriptorImpl]
 

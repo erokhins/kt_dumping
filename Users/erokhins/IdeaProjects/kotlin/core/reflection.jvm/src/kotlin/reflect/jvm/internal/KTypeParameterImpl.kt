@@ -4,11 +4,11 @@
 
 'asString' @ [27:33] ==> @NotNull public open fun asString(): String defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'getValue' @ [29:46] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (List<KTypeImpl>..List<KTypeImpl>?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [29:46] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [29:64] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (List<KTypeImpl>..List<KTypeImpl>?)): ReflectProperties.LazySoftVal<(List<KTypeImpl>..List<KTypeImpl>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<KTypeImpl>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.reflect.jvm.internal.KTypeImpl>..kotlin.collections.List<kotlin.reflect.jvm.internal.KTypeImpl>?)
 
 'descriptor' @ [30:9] ==> public open val descriptor: TypeParameterDescriptor defined in kotlin.reflect.jvm.internal.KTypeParameterImpl[PropertyDescriptorImpl]
 

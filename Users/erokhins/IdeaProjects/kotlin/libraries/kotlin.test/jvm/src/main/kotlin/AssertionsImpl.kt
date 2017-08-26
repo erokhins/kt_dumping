@@ -22,7 +22,7 @@
 
 'fail' @ [36:18] ==> public abstract fun fail(message: String?): Nothing defined in kotlin.test.Asserter[SimpleFunctionDescriptorImpl]
 
-'messagePrefix' @ [36:23] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'messagePrefix' @ [36:23] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [36:37] ==> value-parameter message: String? defined in kotlin.test.assertFailsWithImpl[ValueParameterDescriptorImpl]
 
@@ -32,7 +32,7 @@
 
 'Suppress' @ [39:5] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'messagePrefix' @ [40:15] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'messagePrefix' @ [40:15] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [40:29] ==> value-parameter message: String? defined in kotlin.test.assertFailsWithImpl[ValueParameterDescriptorImpl]
 
@@ -68,7 +68,7 @@ Inferred types:
 
 '+' @ [55:24] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'currentStackTrace' @ [55:37] ==> @Suppress @InlineOnly public inline fun currentStackTrace(): (Array<(StackTraceElement..StackTraceElement?)>..Array<out (StackTraceElement..StackTraceElement?)>?) defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'currentStackTrace' @ [55:37] ==> @Suppress @InlineOnly public inline fun currentStackTrace(): (Array<(StackTraceElement..StackTraceElement?)>..Array<out (StackTraceElement..StackTraceElement?)>?) defined in kotlin.test in file AssertionsImpl.kt[SimpleFunctionDescriptorImpl]
 
 'Suppress' @ [63:1] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 

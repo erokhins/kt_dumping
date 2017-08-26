@@ -242,8 +242,8 @@ Inferred types:
 
 'newUpdater' @ [205:92] ==> public open fun <U : (Any..Any?), W : (Any..Any?)> newUpdater(p0: (Class<(SafePublicationLazyImpl<*>..SafePublicationLazyImpl<*>?)>..Class<(SafePublicationLazyImpl<*>..SafePublicationLazyImpl<*>?)>?), p1: (Class<(Any..Any?)>..Class<(Any..Any?)>?), p2: (String..String?)): (AtomicReferenceFieldUpdater<(SafePublicationLazyImpl<*>..SafePublicationLazyImpl<*>?), (Any..Any?)>..AtomicReferenceFieldUpdater<(SafePublicationLazyImpl<*>..SafePublicationLazyImpl<*>?), (Any..Any?)>?) defined in java.util.concurrent.atomic.AtomicReferenceFieldUpdater[JavaMethodDescriptor]
 Inferred types:
-    <U : (Any..Any?)> -> SafePublicationLazyImpl<*>
-    <W : (Any..Any?)> -> Any
+    <U : (Any..Any?)> -> (kotlin.SafePublicationLazyImpl<*>..kotlin.SafePublicationLazyImpl<*>?)
+    <W : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'SafePublicationLazyImpl' @ [206:17] ==> public companion object defined in kotlin.SafePublicationLazyImpl[FakeCallableDescriptorForObject]
 

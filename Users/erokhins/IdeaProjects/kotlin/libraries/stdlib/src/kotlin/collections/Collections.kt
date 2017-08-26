@@ -72,9 +72,9 @@ Inferred types:
 
 'values' @ [69:50] ==> public final val values: Array<out T> defined in kotlin.collections.ArrayAsCollection[PropertyDescriptorImpl]
 
-'contains' @ [69:57] ==> public operator fun <@OnlyInputTypes T> Array<out T?>.contains(element: T?): Boolean defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'contains' @ [69:57] ==> public operator fun <@OnlyInputTypes T> Array<out T>.contains(element: T): Boolean defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <@OnlyInputTypes T> -> T?
+    <@OnlyInputTypes T> -> T
 
 'element' @ [69:66] ==> value-parameter element: T defined in kotlin.collections.ArrayAsCollection.contains[ValueParameterDescriptorImpl]
 
@@ -130,7 +130,7 @@ Inferred types:
 
 'singletonList' @ [91:68] ==> public open fun <T : (Any..Any?)> singletonList(p0: (T..T?)): (MutableList<(T..T?)>..List<(T..T?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'element' @ [91:82] ==> value-parameter element: T defined in kotlin.collections.listOf[ValueParameterDescriptorImpl]
 
@@ -238,7 +238,7 @@ Inferred types:
 
 'size' @ [132:29] ==> value-parameter size: Int defined in kotlin.collections.MutableList[ValueParameterDescriptorImpl]
 
-'repeat' @ [133:5] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'repeat' @ [133:5] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin in file Standard.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [133:12] ==> value-parameter size: Int defined in kotlin.collections.MutableList[ValueParameterDescriptorImpl]
 
@@ -288,7 +288,7 @@ Inferred types:
 
 'list' @ [169:90] ==> public open fun <T : (Any..Any?)> list(p0: (Enumeration<(T..T?)>..Enumeration<(T..T?)>?)): (ArrayList<(T..T?)>..ArrayList<(T..T?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'this' @ [169:95] ==> <this> defined in kotlin.collections.toList[ReceiverParameterDescriptorImpl]
 
@@ -338,10 +338,10 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [192:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'toArray' @ [194:47] ==> public open fun <T : (Any..Any?), E : (Any..Any?)> toArray(p0: (MutableCollection<(Any..Any?)>..Collection<(Any..Any?)>?), p1: (Array<(T..T?)>..Array<out (T..T?)>?)): (Array<(T..T?)>..Array<out (T..T?)>?) defined in kotlin.jvm.internal.CollectionToArray[JavaMethodDescriptor]
+'toArray' @ [194:47] ==> public open fun <T : (Any..Any?), E : (Any..Any?)> toArray(p0: (MutableCollection<Any?>..Collection<Any?>?), p1: (Array<(T..T?)>..Array<out (T..T?)>?)): (Array<(T..T?)>..Array<out (T..T?)>?) defined in kotlin.jvm.internal.CollectionToArray[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
-    <E : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> (T..T?)
+    <E : (Any..Any?)> -> Any?
 
 'collection' @ [194:55] ==> value-parameter collection: Collection<*> defined in kotlin.collections.copyToArrayImpl[ValueParameterDescriptorImpl]
 
@@ -365,9 +365,9 @@ Inferred types:
 Inferred types:
     <T : Any> -> Array<out T>
 
-'Array' @ [199:44] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [199:44] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@3b0cf0de
 
 'java' @ [199:63] ==> public val <T> KClass<Array<Any?>>.java: Class<Array<Any?>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -377,10 +377,10 @@ Inferred types:
 
 'this' @ [201:42] ==> <this> defined in kotlin.collections.copyToArrayOfAny[ReceiverParameterDescriptorImpl]
 
-'copyOf' @ [203:30] ==> public open fun <T : (Any..Any?), U : (Any..Any?)> copyOf(p0: (Array<(T..T?)>..Array<out (T..T?)>?), p1: Int, p2: (Class<out (Array<(Any..Any?)>..Array<out (Any..Any?)>?)>..Class<out (Array<(Any..Any?)>..Array<out (Any..Any?)>?)>?)): (Array<(Any..Any?)>..Array<out (Any..Any?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
+'copyOf' @ [203:30] ==> public open fun <T : (Any..Any?), U : (Any..Any?)> copyOf(p0: (Array<(T..T?)>..Array<out (T..T?)>?), p1: Int, p2: (Class<out (Array<Any?>..Array<out Any?>?)>..Class<out (Array<Any?>..Array<out Any?>?)>?)): (Array<Any?>..Array<out Any?>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
-    <U : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> Any?
+    <U : (Any..Any?)> -> (T..T?)
 
 'this' @ [203:37] ==> <this> defined in kotlin.collections.copyToArrayOfAny[ReceiverParameterDescriptorImpl]
 
@@ -388,9 +388,9 @@ Inferred types:
 
 'size' @ [203:48] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
-'Array' @ [203:54] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [203:54] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6724d5cb
 
 'java' @ [203:73] ==> public val <T> KClass<Array<Any?>>.java: Class<Array<Any?>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -496,7 +496,7 @@ Inferred types:
 
 'comparator' @ [263:19] ==> value-parameter comparator: Comparator<in T> /* = Comparator<in T> */ defined in kotlin.collections.binarySearch[ValueParameterDescriptorImpl]
 
-'compare' @ [263:30] ==> public abstract fun compare(p0: (Any..Any?), p1: (Any..Any?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
+'compare' @ [263:30] ==> public abstract fun compare(p0: (T..T?), p1: (T..T?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
 
 'midVal' @ [263:38] ==> val midVal: T defined in kotlin.collections.binarySearch[LocalVariableDescriptor]
 

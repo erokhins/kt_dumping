@@ -8,10 +8,14 @@ Inferred types:
 
 'String' @ [29:40] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isBlank' @ [29:48] ==> public fun CharSequence.isBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'let' @ [29:58] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> File): File defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [29:64] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'takeIf' @ [29:71] ==> @InlineOnly @SinceKotlin public inline fun <T> File.takeIf(predicate: (File) -> Boolean): File? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -66,6 +70,8 @@ Inferred types:
 
 'String' @ [40:40] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isBlank' @ [40:48] ==> public fun CharSequence.isBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'let' @ [40:58] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> File): File defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -114,10 +120,14 @@ Inferred types:
 
 'String' @ [44:45] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isBlank' @ [44:53] ==> public fun CharSequence.isBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'let' @ [44:63] ==> @InlineOnly public inline fun <T, R> String.let(block: (String) -> File): File defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [44:69] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'takeIf' @ [44:76] ==> @InlineOnly @SinceKotlin public inline fun <T> File.takeIf(predicate: (File) -> Boolean): File? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -135,4 +145,6 @@ Inferred types:
 Inferred types:
     <T> -> File
     <R> -> FlatLibDirectoryResolver
+
+'FlatLibDirectoryResolver' @ [44:124] ==> public constructor FlatLibDirectoryResolver(path: File) defined in org.jetbrains.kotlin.script.util.resolvers.FlatLibDirectoryResolver[ClassConstructorDescriptorImpl]
 

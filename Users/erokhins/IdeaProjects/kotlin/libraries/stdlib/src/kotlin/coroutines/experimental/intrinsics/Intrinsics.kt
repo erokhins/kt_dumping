@@ -98,7 +98,7 @@ Inferred types:
 
 'context' @ [114:40] ==> public abstract val context: CoroutineContext defined in kotlin.coroutines.experimental.Continuation[PropertyDescriptorImpl]
 
-'processBareContinuationResume' @ [117:21] ==> @InlineOnly internal inline fun processBareContinuationResume(completion: Continuation<*>, block: () -> Any?): Unit defined in kotlin.coroutines.experimental[SimpleFunctionDescriptorImpl]
+'processBareContinuationResume' @ [117:21] ==> @InlineOnly internal inline fun processBareContinuationResume(completion: Continuation<*>, block: () -> Any?): Unit defined in kotlin.coroutines.experimental in file CoroutinesLibrary.kt[SimpleFunctionDescriptorImpl]
 
 'completion' @ [117:51] ==> value-parameter completion: Continuation<T> defined in kotlin.coroutines.experimental.intrinsics.buildContinuationByInvokeCall[ValueParameterDescriptorImpl]
 

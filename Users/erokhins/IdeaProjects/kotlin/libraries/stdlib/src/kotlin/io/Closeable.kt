@@ -51,7 +51,7 @@ Inferred types:
 
 'cause' @ [65:13] ==> value-parameter cause: Throwable? defined in kotlin.io.closeFinally[ValueParameterDescriptorImpl]
 
-'addSuppressed' @ [65:19] ==> public fun Throwable.addSuppressed(exception: Throwable): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'addSuppressed' @ [65:19] ==> public fun Throwable.addSuppressed(exception: Throwable): Unit defined in kotlin in file Exceptions.kt[SimpleFunctionDescriptorImpl]
 
 'closeException' @ [65:33] ==> val closeException: Throwable defined in kotlin.io.closeFinally[LocalVariableDescriptor]
 

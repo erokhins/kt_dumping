@@ -30,7 +30,7 @@ Inferred types:
 
 'current' @ [37:20] ==> var current: DeclarationDescriptor? defined in org.jetbrains.kotlin.renderer.ClassifierNamePolicy.SHORT.renderClassifier[LocalVariableDescriptor]
 
-'renderFqName' @ [39:20] ==> public fun renderFqName(pathSegments: List<Name>): String defined in org.jetbrains.kotlin.renderer[SimpleFunctionDescriptorImpl]
+'renderFqName' @ [39:20] ==> public fun renderFqName(pathSegments: List<Name>): String defined in org.jetbrains.kotlin.renderer in file RenderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'qualifiedNameElements' @ [39:33] ==> val qualifiedNameElements: ArrayList<Name> defined in org.jetbrains.kotlin.renderer.ClassifierNamePolicy.SHORT.renderClassifier[LocalVariableDescriptor]
 

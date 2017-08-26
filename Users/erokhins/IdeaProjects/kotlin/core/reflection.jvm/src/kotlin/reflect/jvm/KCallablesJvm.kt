@@ -97,9 +97,9 @@ Inferred types:
 
 'this' @ [58:77] ==> <this> defined in kotlin.reflect.jvm.isAccessible[ReceiverParameterDescriptorImpl]
 
-'javaClass' @ [58:84] ==> public val <T : Any> KCallable<Any?>.javaClass: Class<KCallable<Any?>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [58:84] ==> public val <T : Any> KCallable<*>.javaClass: Class<KCallable<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> KCallable<Any?>
+    <T : Any> -> KCallable<*>
 
 'when (this) {
             is KMutableProperty -> {
@@ -221,7 +221,7 @@ Inferred types:
 
 'this' @ [85:77] ==> <this> defined in kotlin.reflect.jvm.isAccessible[ReceiverParameterDescriptorImpl]
 
-'javaClass' @ [85:84] ==> public val <T : Any> KCallable<Any?>.javaClass: Class<KCallable<Any?>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [85:84] ==> public val <T : Any> KCallable<*>.javaClass: Class<KCallable<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> KCallable<Any?>
+    <T : Any> -> KCallable<*>
 

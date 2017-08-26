@@ -81,7 +81,7 @@ Inferred types:
 
 'this' @ [59:12] ==> <this> defined in kotlin.text.trim[ReceiverParameterDescriptorImpl]
 
-'trim' @ [59:34] ==> public inline fun CharSequence.trim(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trim' @ [59:34] ==> public inline fun CharSequence.trim(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [59:39] ==> value-parameter predicate: (Char) -> Boolean defined in kotlin.text.trim[ValueParameterDescriptorImpl]
 
@@ -107,7 +107,7 @@ Inferred types:
 
 'this' @ [76:12] ==> <this> defined in kotlin.text.trimStart[ReceiverParameterDescriptorImpl]
 
-'trimStart' @ [76:34] ==> public inline fun CharSequence.trimStart(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trimStart' @ [76:34] ==> public inline fun CharSequence.trimStart(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [76:44] ==> value-parameter predicate: (Char) -> Boolean defined in kotlin.text.trimStart[ValueParameterDescriptorImpl]
 
@@ -133,51 +133,53 @@ Inferred types:
 
 'this' @ [93:12] ==> <this> defined in kotlin.text.trimEnd[ReceiverParameterDescriptorImpl]
 
-'trimEnd' @ [93:34] ==> public inline fun CharSequence.trimEnd(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trimEnd' @ [93:34] ==> public inline fun CharSequence.trimEnd(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [93:42] ==> value-parameter predicate: (Char) -> Boolean defined in kotlin.text.trimEnd[ValueParameterDescriptorImpl]
 
 'toString' @ [93:53] ==> public open fun toString(): String defined in kotlin.CharSequence[DeserializedSimpleFunctionDescriptor]
 
-'trim' @ [98:66] ==> public inline fun CharSequence.trim(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trim' @ [98:66] ==> public inline fun CharSequence.trim(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [98:73] ==> value-parameter it: Char defined in kotlin.text.trim.<anonymous>[ValueParameterDescriptorImpl]
 
 'chars' @ [98:79] ==> value-parameter vararg chars: Char defined in kotlin.text.trim[ValueParameterDescriptorImpl]
 
-'trim' @ [103:54] ==> public inline fun String.trim(predicate: (Char) -> Boolean): String defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trim' @ [103:54] ==> public inline fun String.trim(predicate: (Char) -> Boolean): String defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [103:61] ==> value-parameter it: Char defined in kotlin.text.trim.<anonymous>[ValueParameterDescriptorImpl]
 
 'chars' @ [103:67] ==> value-parameter vararg chars: Char defined in kotlin.text.trim[ValueParameterDescriptorImpl]
 
-'trimStart' @ [108:71] ==> public inline fun CharSequence.trimStart(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trimStart' @ [108:71] ==> public inline fun CharSequence.trimStart(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [108:83] ==> value-parameter it: Char defined in kotlin.text.trimStart.<anonymous>[ValueParameterDescriptorImpl]
 
 'chars' @ [108:89] ==> value-parameter vararg chars: Char defined in kotlin.text.trimStart[ValueParameterDescriptorImpl]
 
-'trimStart' @ [113:59] ==> public inline fun String.trimStart(predicate: (Char) -> Boolean): String defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trimStart' @ [113:59] ==> public inline fun String.trimStart(predicate: (Char) -> Boolean): String defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [113:71] ==> value-parameter it: Char defined in kotlin.text.trimStart.<anonymous>[ValueParameterDescriptorImpl]
 
 'chars' @ [113:77] ==> value-parameter vararg chars: Char defined in kotlin.text.trimStart[ValueParameterDescriptorImpl]
 
-'trimEnd' @ [118:69] ==> public inline fun CharSequence.trimEnd(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trimEnd' @ [118:69] ==> public inline fun CharSequence.trimEnd(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [118:79] ==> value-parameter it: Char defined in kotlin.text.trimEnd.<anonymous>[ValueParameterDescriptorImpl]
 
 'chars' @ [118:85] ==> value-parameter vararg chars: Char defined in kotlin.text.trimEnd[ValueParameterDescriptorImpl]
 
-'trimEnd' @ [123:57] ==> public inline fun String.trimEnd(predicate: (Char) -> Boolean): String defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trimEnd' @ [123:57] ==> public inline fun String.trimEnd(predicate: (Char) -> Boolean): String defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [123:67] ==> value-parameter it: Char defined in kotlin.text.trimEnd.<anonymous>[ValueParameterDescriptorImpl]
 
 'chars' @ [123:73] ==> value-parameter vararg chars: Char defined in kotlin.text.trimEnd[ValueParameterDescriptorImpl]
 
-'trim' @ [128:48] ==> public inline fun CharSequence.trim(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trim' @ [128:48] ==> public inline fun CharSequence.trim(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'Char' @ [128:53] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
+
+'isWhitespace' @ [128:59] ==> public fun Char.isWhitespace(): Boolean defined in kotlin.text in file CharJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [133:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -187,9 +189,11 @@ Inferred types:
 
 'toString' @ [134:73] ==> public open fun toString(): String defined in kotlin.CharSequence[DeserializedSimpleFunctionDescriptor]
 
-'trimStart' @ [139:53] ==> public inline fun CharSequence.trimStart(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trimStart' @ [139:53] ==> public inline fun CharSequence.trimStart(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'Char' @ [139:63] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
+
+'isWhitespace' @ [139:69] ==> public fun Char.isWhitespace(): Boolean defined in kotlin.text in file CharJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [144:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -199,9 +203,11 @@ Inferred types:
 
 'toString' @ [145:83] ==> public open fun toString(): String defined in kotlin.CharSequence[DeserializedSimpleFunctionDescriptor]
 
-'trimEnd' @ [150:51] ==> public inline fun CharSequence.trimEnd(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'trimEnd' @ [150:51] ==> public inline fun CharSequence.trimEnd(predicate: (Char) -> Boolean): CharSequence defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'Char' @ [150:59] ==> public companion object defined in kotlin.Char[FakeCallableDescriptorForObject]
+
+'isWhitespace' @ [150:65] ==> public fun Char.isWhitespace(): Boolean defined in kotlin.text in file CharJVM.kt[SimpleFunctionDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [155:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
@@ -1504,7 +1510,7 @@ Inferred types:
 
 'chars' @ [800:33] ==> value-parameter chars: CharArray defined in kotlin.text.findAnyOf[ValueParameterDescriptorImpl]
 
-'indexOfFirst' @ [800:39] ==> public inline fun CharArray.indexOfFirst(predicate: (Char) -> Boolean): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'indexOfFirst' @ [800:39] ==> public inline fun CharArray.indexOfFirst(predicate: (Char) -> Boolean): Int defined in kotlin.collections in file _Arrays.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [800:54] ==> value-parameter it: Char defined in kotlin.text.findAnyOf.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1522,7 +1528,7 @@ Inferred types:
 
 'matchingCharIndex' @ [802:35] ==> val matchingCharIndex: Int defined in kotlin.text.findAnyOf[LocalVariableDescriptor]
 
-'findAnyOf' @ [817:5] ==> private fun CharSequence.findAnyOf(chars: CharArray, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, Char>? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'findAnyOf' @ [817:5] ==> private fun CharSequence.findAnyOf(chars: CharArray, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, Char>? defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'chars' @ [817:15] ==> value-parameter chars: CharArray defined in kotlin.text.indexOfAny[ValueParameterDescriptorImpl]
 
@@ -1536,7 +1542,7 @@ Inferred types:
 
 'lastIndex' @ [828:76] ==> public val CharSequence.lastIndex: Int defined in kotlin.text in file Strings.kt[PropertyDescriptorImpl]
 
-'findAnyOf' @ [829:5] ==> private fun CharSequence.findAnyOf(chars: CharArray, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, Char>? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'findAnyOf' @ [829:5] ==> private fun CharSequence.findAnyOf(chars: CharArray, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, Char>? defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'chars' @ [829:15] ==> value-parameter chars: CharArray defined in kotlin.text.lastIndexOfAny[ValueParameterDescriptorImpl]
 
@@ -1773,7 +1779,7 @@ Inferred types:
 
 'matchingString' @ [871:33] ==> val matchingString: String? defined in kotlin.text.findAnyOf[LocalVariableDescriptor]
 
-'findAnyOf' @ [891:5] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'findAnyOf' @ [891:5] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'strings' @ [891:15] ==> value-parameter strings: Collection<String> defined in kotlin.text.findAnyOf[ValueParameterDescriptorImpl]
 
@@ -1783,7 +1789,7 @@ Inferred types:
 
 'lastIndex' @ [905:86] ==> public val CharSequence.lastIndex: Int defined in kotlin.text in file Strings.kt[PropertyDescriptorImpl]
 
-'findAnyOf' @ [906:5] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'findAnyOf' @ [906:5] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'strings' @ [906:15] ==> value-parameter strings: Collection<String> defined in kotlin.text.findLastAnyOf[ValueParameterDescriptorImpl]
 
@@ -1791,7 +1797,7 @@ Inferred types:
 
 'ignoreCase' @ [906:36] ==> value-parameter ignoreCase: Boolean = ... defined in kotlin.text.findLastAnyOf[ValueParameterDescriptorImpl]
 
-'findAnyOf' @ [920:5] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'findAnyOf' @ [920:5] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'strings' @ [920:15] ==> value-parameter strings: Collection<String> defined in kotlin.text.indexOfAny[ValueParameterDescriptorImpl]
 
@@ -1805,7 +1811,7 @@ Inferred types:
 
 'lastIndex' @ [934:87] ==> public val CharSequence.lastIndex: Int defined in kotlin.text in file Strings.kt[PropertyDescriptorImpl]
 
-'findAnyOf' @ [935:5] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'findAnyOf' @ [935:5] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'strings' @ [935:15] ==> value-parameter strings: Collection<String> defined in kotlin.text.lastIndexOfAny[ValueParameterDescriptorImpl]
 
@@ -2150,7 +2156,7 @@ Inferred types:
 
 'nextState' @ [1081:20] ==> public final var nextState: Int defined in kotlin.text.DelimitedRangesSequence.iterator.<no name provided>[PropertyDescriptorImpl]
 
-'require' @ [1097:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [1097:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'limit' @ [1097:13] ==> value-parameter limit: Int = ... defined in kotlin.text.rangesDelimitedBy[ValueParameterDescriptorImpl]
 
@@ -2164,7 +2170,7 @@ Inferred types:
 
 'limit' @ [1099:54] ==> value-parameter limit: Int = ... defined in kotlin.text.rangesDelimitedBy[ValueParameterDescriptorImpl]
 
-'findAnyOf' @ [1099:77] ==> private fun CharSequence.findAnyOf(chars: CharArray, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, Char>? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'findAnyOf' @ [1099:77] ==> private fun CharSequence.findAnyOf(chars: CharArray, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, Char>? defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'delimiters' @ [1099:87] ==> value-parameter delimiters: CharArray defined in kotlin.text.rangesDelimitedBy[ValueParameterDescriptorImpl]
 
@@ -2181,7 +2187,7 @@ Inferred types:
 
 'first' @ [1099:160] ==> public final val first: Int defined in kotlin.Pair[PropertyDescriptorImpl]
 
-'require' @ [1118:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [1118:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'limit' @ [1118:13] ==> value-parameter limit: Int = ... defined in kotlin.text.rangesDelimitedBy[ValueParameterDescriptorImpl]
 
@@ -2201,7 +2207,7 @@ Inferred types:
 
 'limit' @ [1121:54] ==> value-parameter limit: Int = ... defined in kotlin.text.rangesDelimitedBy[ValueParameterDescriptorImpl]
 
-'findAnyOf' @ [1121:77] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'findAnyOf' @ [1121:77] ==> private fun CharSequence.findAnyOf(strings: Collection<String>, startIndex: Int, ignoreCase: Boolean, last: Boolean): Pair<Int, String>? defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'delimitersList' @ [1121:87] ==> val delimitersList: List<String> defined in kotlin.text.rangesDelimitedBy[LocalVariableDescriptor]
 
@@ -2224,7 +2230,7 @@ Inferred types:
 
 'length' @ [1121:183] ==> public open val length: Int defined in kotlin.String[DeserializedPropertyDescriptor]
 
-'rangesDelimitedBy' @ [1140:9] ==> private fun CharSequence.rangesDelimitedBy(delimiters: Array<out String>, startIndex: Int = ..., ignoreCase: Boolean = ..., limit: Int = ...): Sequence<IntRange> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'rangesDelimitedBy' @ [1140:9] ==> private fun CharSequence.rangesDelimitedBy(delimiters: Array<out String>, startIndex: Int = ..., ignoreCase: Boolean = ..., limit: Int = ...): Sequence<IntRange> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'delimiters' @ [1140:27] ==> value-parameter vararg delimiters: String defined in kotlin.text.splitToSequence[ValueParameterDescriptorImpl]
 
@@ -2241,7 +2247,7 @@ Inferred types:
 
 'it' @ [1140:95] ==> value-parameter it: IntRange defined in kotlin.text.splitToSequence.<anonymous>[ValueParameterDescriptorImpl]
 
-'rangesDelimitedBy' @ [1154:9] ==> private fun CharSequence.rangesDelimitedBy(delimiters: Array<out String>, startIndex: Int = ..., ignoreCase: Boolean = ..., limit: Int = ...): Sequence<IntRange> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'rangesDelimitedBy' @ [1154:9] ==> private fun CharSequence.rangesDelimitedBy(delimiters: Array<out String>, startIndex: Int = ..., ignoreCase: Boolean = ..., limit: Int = ...): Sequence<IntRange> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'delimiters' @ [1154:27] ==> value-parameter vararg delimiters: String defined in kotlin.text.split[ValueParameterDescriptorImpl]
 
@@ -2262,7 +2268,7 @@ Inferred types:
 
 'it' @ [1154:108] ==> value-parameter it: IntRange defined in kotlin.text.split.<anonymous>[ValueParameterDescriptorImpl]
 
-'rangesDelimitedBy' @ [1164:9] ==> private fun CharSequence.rangesDelimitedBy(delimiters: CharArray, startIndex: Int = ..., ignoreCase: Boolean = ..., limit: Int = ...): Sequence<IntRange> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'rangesDelimitedBy' @ [1164:9] ==> private fun CharSequence.rangesDelimitedBy(delimiters: CharArray, startIndex: Int = ..., ignoreCase: Boolean = ..., limit: Int = ...): Sequence<IntRange> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'delimiters' @ [1164:27] ==> value-parameter vararg delimiters: Char defined in kotlin.text.splitToSequence[ValueParameterDescriptorImpl]
 
@@ -2279,7 +2285,7 @@ Inferred types:
 
 'it' @ [1164:95] ==> value-parameter it: IntRange defined in kotlin.text.splitToSequence.<anonymous>[ValueParameterDescriptorImpl]
 
-'rangesDelimitedBy' @ [1174:9] ==> private fun CharSequence.rangesDelimitedBy(delimiters: CharArray, startIndex: Int = ..., ignoreCase: Boolean = ..., limit: Int = ...): Sequence<IntRange> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'rangesDelimitedBy' @ [1174:9] ==> private fun CharSequence.rangesDelimitedBy(delimiters: CharArray, startIndex: Int = ..., ignoreCase: Boolean = ..., limit: Int = ...): Sequence<IntRange> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'delimiters' @ [1174:27] ==> value-parameter vararg delimiters: Char defined in kotlin.text.split[ValueParameterDescriptorImpl]
 
@@ -2310,9 +2316,9 @@ Inferred types:
 
 'limit' @ [1183:102] ==> value-parameter limit: Int = ... defined in kotlin.text.split[ValueParameterDescriptorImpl]
 
-'splitToSequence' @ [1188:60] ==> public fun CharSequence.splitToSequence(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): Sequence<String> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'splitToSequence' @ [1188:60] ==> public fun CharSequence.splitToSequence(vararg delimiters: String, ignoreCase: Boolean = ..., limit: Int = ...): Sequence<String> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
-'lineSequence' @ [1193:49] ==> public fun CharSequence.lineSequence(): Sequence<String> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'lineSequence' @ [1193:49] ==> public fun CharSequence.lineSequence(): Sequence<String> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'toList' @ [1193:64] ==> public fun <T> Sequence<String>.toList(): List<String> defined in kotlin.sequences[SimpleFunctionDescriptorImpl]
 Inferred types:

@@ -64,17 +64,17 @@ Inferred types:
 
 'kotlin' @ [100:31] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
-'memberProperties' @ [100:38] ==> @SinceKotlin public val <T : Any> KClass<out Any>.memberProperties: Collection<KProperty1<out Any, *>> defined in kotlin.reflect.full[PropertyDescriptorImpl]
+'memberProperties' @ [100:38] ==> @SinceKotlin public val <T : Any> KClass<out (Any..Any?)>.memberProperties: Collection<KProperty1<out (Any..Any?), Any?>> defined in kotlin.reflect.full[PropertyDescriptorImpl]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> Captured(out (kotlin.Any..kotlin.Any?))
 
-'firstOrNull' @ [100:55] ==> public inline fun <T> Iterable<KProperty1<out Any, *>>.firstOrNull(predicate: (KProperty1<out Any, *>) -> Boolean): KProperty1<out Any, *>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'firstOrNull' @ [100:55] ==> public inline fun <T> Iterable<KProperty1<out (Any..Any?), Any?>>.firstOrNull(predicate: (KProperty1<out (Any..Any?), Any?>) -> Boolean): KProperty1<out (Any..Any?), Any?>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KProperty1<out Any, *>
+    <T> -> KProperty1<out (kotlin.Any..kotlin.Any?), Any?>
 
-'it' @ [100:69] ==> value-parameter it: KProperty1<out Any, *> defined in kotlin.reflect.jvm.<get-kotlinProperty>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [100:69] ==> value-parameter it: KProperty1<out (Any..Any?), Any?> defined in kotlin.reflect.jvm.<get-kotlinProperty>.<anonymous>[ValueParameterDescriptorImpl]
 
 'javaField' @ [100:72] ==> public val KProperty<*>.javaField: Field? defined in kotlin.reflect.jvm in file ReflectJvmMapping.kt[PropertyDescriptorImpl]
 
@@ -140,7 +140,7 @@ Inferred types:
 
 'kotlin' @ [127:44] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'companionObject' @ [127:51] ==> @SinceKotlin public val KClass<*>.companionObject: KClass<*>? defined in kotlin.reflect.full in file KClasses.kt[PropertyDescriptorImpl]
 
@@ -186,18 +186,18 @@ Inferred types:
 
 'returnType' @ [132:98] ==> public final val Method.returnType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 
-'let' @ [133:20] ==> @InlineOnly public inline fun <T, R> KFunction<Any?>.let(block: (KFunction<Any?>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [133:20] ==> @InlineOnly public inline fun <T, R> KFunction<*>.let(block: (KFunction<*>) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KFunction<Any?>
+    <T> -> KFunction<*>
     <R> -> Nothing
 
-'it' @ [133:33] ==> value-parameter it: KFunction<Any?> defined in kotlin.reflect.jvm.<get-kotlinFunction>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [133:33] ==> value-parameter it: KFunction<*> defined in kotlin.reflect.jvm.<get-kotlinFunction>.<anonymous>[ValueParameterDescriptorImpl]
 
 'declaringClass' @ [137:16] ==> public final val Method.declaringClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 
 'kotlin' @ [137:31] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'functions' @ [137:38] ==> @SinceKotlin public val KClass<*>.functions: Collection<KFunction<*>> defined in kotlin.reflect.full in file KClasses.kt[PropertyDescriptorImpl]
 

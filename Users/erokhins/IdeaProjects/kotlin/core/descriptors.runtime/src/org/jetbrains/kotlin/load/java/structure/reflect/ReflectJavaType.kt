@@ -13,7 +13,7 @@ Inferred types:
 
 'isPrimitive' @ [30:42] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'ReflectJavaPrimitiveType' @ [30:57] ==> public constructor ReflectJavaPrimitiveType(reflectType: Class<*>) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaPrimitiveType[ClassConstructorDescriptorImpl]
 
@@ -27,7 +27,7 @@ Inferred types:
 
 'isArray' @ [31:70] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'ReflectJavaArrayType' @ [31:81] ==> public constructor ReflectJavaArrayType(reflectType: Type) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaArrayType[ClassConstructorDescriptorImpl]
 
@@ -59,11 +59,11 @@ Inferred types:
 
 'java' @ [42:43] ==> public val <T> KClass<out ReflectJavaType>.java: Class<out ReflectJavaType> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReflectJavaType
+    <T> -> Captured(out ReflectJavaType)
 
 'name' @ [42:48] ==> public final val <T : (Any..Any?)> Class<out ReflectJavaType>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReflectJavaType
+    <T : (Any..Any?)> -> Captured(out ReflectJavaType)
 
 'reflectType' @ [42:62] ==> protected abstract val reflectType: Type defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaType[PropertyDescriptorImpl]
 

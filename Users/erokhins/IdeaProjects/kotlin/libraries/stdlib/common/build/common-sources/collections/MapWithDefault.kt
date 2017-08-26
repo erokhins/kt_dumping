@@ -38,14 +38,14 @@ Inferred types:
 
 'map' @ [32:39] ==> public abstract val map: Map<K, V> defined in kotlin.collections.MapWithDefault[PropertyDescriptorImpl]
 
-'withDefault' @ [32:43] ==> public fun <K, V> Map<K, V>.withDefault(defaultValue: (K) -> V): Map<K, V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'withDefault' @ [32:43] ==> public fun <K, V> Map<K, V>.withDefault(defaultValue: (key: K) -> V): Map<K, V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <K> -> K
     <V> -> V
 
 'defaultValue' @ [32:55] ==> value-parameter defaultValue: (key: K) -> V defined in kotlin.collections.withDefault[ValueParameterDescriptorImpl]
 
-'MapWithDefaultImpl' @ [33:21] ==> public constructor MapWithDefaultImpl<K, out V>(map: Map<K, V>, default: (K) -> V) defined in kotlin.collections.MapWithDefaultImpl[ClassConstructorDescriptorImpl]
+'MapWithDefaultImpl' @ [33:21] ==> public constructor MapWithDefaultImpl<K, out V>(map: Map<K, V>, default: (key: K) -> V) defined in kotlin.collections.MapWithDefaultImpl[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> K
     <out V> -> V
@@ -69,14 +69,14 @@ Inferred types:
 
 'map' @ [47:46] ==> public abstract val map: MutableMap<K, V> defined in kotlin.collections.MutableMapWithDefault[PropertyDescriptorImpl]
 
-'withDefault' @ [47:50] ==> @JvmName public fun <K, V> MutableMap<K, V>.withDefault(defaultValue: (K) -> V): MutableMap<K, V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'withDefault' @ [47:50] ==> @JvmName public fun <K, V> MutableMap<K, V>.withDefault(defaultValue: (key: K) -> V): MutableMap<K, V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <K> -> K
     <V> -> V
 
 'defaultValue' @ [47:62] ==> value-parameter defaultValue: (key: K) -> V defined in kotlin.collections.withDefault[ValueParameterDescriptorImpl]
 
-'MutableMapWithDefaultImpl' @ [48:21] ==> public constructor MutableMapWithDefaultImpl<K, V>(map: MutableMap<K, V>, default: (K) -> V) defined in kotlin.collections.MutableMapWithDefaultImpl[ClassConstructorDescriptorImpl]
+'MutableMapWithDefaultImpl' @ [48:21] ==> public constructor MutableMapWithDefaultImpl<K, V>(map: MutableMap<K, V>, default: (key: K) -> V) defined in kotlin.collections.MutableMapWithDefaultImpl[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> K
     <V> -> V

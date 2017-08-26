@@ -64,7 +64,7 @@ Inferred types:
 
 'currentAdapter' @ [75:18] ==> internal var currentAdapter: FrameworkAdapter? defined in kotlin.test in file TestApi.kt[PropertyDescriptorImpl]
 
-'detectAdapter' @ [75:36] ==> internal fun detectAdapter(): FrameworkAdapter defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'detectAdapter' @ [75:36] ==> internal fun detectAdapter(): FrameworkAdapter defined in kotlin.test in file TestApi.kt[SimpleFunctionDescriptorImpl]
 
 'currentAdapter' @ [76:5] ==> internal var currentAdapter: FrameworkAdapter? defined in kotlin.test in file TestApi.kt[PropertyDescriptorImpl]
 
@@ -80,11 +80,11 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> FrameworkAdapter
 
-'isQUnit' @ [82:5] ==> internal fun isQUnit(): Boolean defined in kotlin.test.adapters[SimpleFunctionDescriptorImpl]
+'isQUnit' @ [82:5] ==> internal fun isQUnit(): Boolean defined in kotlin.test.adapters in file Externals.kt[SimpleFunctionDescriptorImpl]
 
 'QUnitAdapter' @ [82:18] ==> public constructor QUnitAdapter() defined in kotlin.test.adapters.QUnitAdapter[ClassConstructorDescriptorImpl]
 
-'isJasmine' @ [83:5] ==> internal fun isJasmine(): dynamic defined in kotlin.test.adapters[SimpleFunctionDescriptorImpl]
+'isJasmine' @ [83:5] ==> internal fun isJasmine(): dynamic defined in kotlin.test.adapters in file Externals.kt[SimpleFunctionDescriptorImpl]
 
 'JasmineLikeAdapter' @ [83:20] ==> public constructor JasmineLikeAdapter() defined in kotlin.test.adapters.JasmineLikeAdapter[ClassConstructorDescriptorImpl]
 
@@ -100,23 +100,33 @@ Inferred types:
     <A> -> String
     <B> -> KFunction0<QUnitAdapter>
 
+'QUnitAdapter' @ [88:22] ==> public constructor QUnitAdapter() defined in kotlin.test.adapters.QUnitAdapter[ClassConstructorDescriptorImpl]
+
 'to' @ [89:9] ==> public infix fun <A, B> String.to(that: KFunction0<JasmineLikeAdapter>): Pair<String, KFunction0<JasmineLikeAdapter>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> KFunction0<JasmineLikeAdapter>
+
+'JasmineLikeAdapter' @ [89:24] ==> public constructor JasmineLikeAdapter() defined in kotlin.test.adapters.JasmineLikeAdapter[ClassConstructorDescriptorImpl]
 
 'to' @ [90:9] ==> public infix fun <A, B> String.to(that: KFunction0<JasmineLikeAdapter>): Pair<String, KFunction0<JasmineLikeAdapter>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> KFunction0<JasmineLikeAdapter>
 
+'JasmineLikeAdapter' @ [90:22] ==> public constructor JasmineLikeAdapter() defined in kotlin.test.adapters.JasmineLikeAdapter[ClassConstructorDescriptorImpl]
+
 'to' @ [91:9] ==> public infix fun <A, B> String.to(that: KFunction0<JasmineLikeAdapter>): Pair<String, KFunction0<JasmineLikeAdapter>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> KFunction0<JasmineLikeAdapter>
 
+'JasmineLikeAdapter' @ [91:21] ==> public constructor JasmineLikeAdapter() defined in kotlin.test.adapters.JasmineLikeAdapter[ClassConstructorDescriptorImpl]
+
 'to' @ [92:9] ==> public infix fun <A, B> String.to(that: KFunction0<FrameworkAdapter>): Pair<String, KFunction0<FrameworkAdapter>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
     <B> -> KFunction0<FrameworkAdapter>
+
+'detectAdapter' @ [92:21] ==> internal fun detectAdapter(): FrameworkAdapter defined in kotlin.test in file TestApi.kt[SimpleFunctionDescriptorImpl]
 

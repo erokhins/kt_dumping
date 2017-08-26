@@ -16,7 +16,7 @@ Inferred types:
 Inferred types:
     <T> -> RemoteRepository
 
-'if (repos.isEmpty()) arrayListOf(mavenCentral) else repos' @ [42:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: ArrayList<RemoteRepository>, elseBranch: ArrayList<RemoteRepository>): ArrayList<RemoteRepository>[SimpleFunctionDescriptorImpl]
+'if (repos.isEmpty()) arrayListOf(mavenCentral) else repos' @ [42:34] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: ArrayList<RemoteRepository> /* = ArrayList<RemoteRepository> */, elseBranch: ArrayList<RemoteRepository> /* = ArrayList<RemoteRepository> */): ArrayList<RemoteRepository> /* = ArrayList<RemoteRepository> */[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> ArrayList<RemoteRepository>
 
@@ -51,6 +51,8 @@ Inferred types:
     <T> -> String
 
 'String' @ [52:65] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'isBlank' @ [52:73] ==> public fun CharSequence.isBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'when {
             dependsOn.groupId.isValidParam() || dependsOn.artifactId.isValidParam() -> {
@@ -127,7 +129,7 @@ Inferred types:
 
 'Aether' @ [68:24] ==> public constructor Aether(@NotNull p0: (MutableCollection<(RemoteRepository..RemoteRepository?)>..Collection<(RemoteRepository..RemoteRepository?)>?), @NotNull p1: (File..File?)) defined in com.jcabi.aether.Aether[JavaClassConstructorDescriptor]
 
-'currentRepos' @ [68:31] ==> private final fun currentRepos(): ArrayList<RemoteRepository> defined in org.jetbrains.kotlin.script.util.resolvers.MavenResolver[SimpleFunctionDescriptorImpl]
+'currentRepos' @ [68:31] ==> private final fun currentRepos(): ArrayList<RemoteRepository> /* = ArrayList<RemoteRepository> */ defined in org.jetbrains.kotlin.script.util.resolvers.MavenResolver[SimpleFunctionDescriptorImpl]
 
 'localRepo' @ [68:47] ==> public final val localRepo: File defined in org.jetbrains.kotlin.script.util.resolvers.MavenResolver[PropertyDescriptorImpl]
 

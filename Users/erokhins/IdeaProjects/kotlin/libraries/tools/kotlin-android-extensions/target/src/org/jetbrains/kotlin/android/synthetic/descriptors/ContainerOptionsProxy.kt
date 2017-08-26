@@ -24,8 +24,6 @@ Inferred types:
 
 'ContainerOptionsProxy' @ [38:24] ==> public constructor ContainerOptionsProxy(containerType: AndroidContainerType, cache: CacheImplementation?) defined in org.jetbrains.kotlin.android.synthetic.descriptors.ContainerOptionsProxy[ClassConstructorDescriptorImpl]
 
-'AndroidContainerType' @ [38:46] ==> public companion object defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
-
 'UNKNOWN' @ [38:67] ==> enum entry UNKNOWN defined in org.jetbrains.kotlin.android.synthetic.codegen.AndroidContainerType[FakeCallableDescriptorForObject]
 
 'NO_CACHE' @ [38:76] ==> enum entry NO_CACHE defined in kotlinx.android.extensions.CacheImplementation[FakeCallableDescriptorForObject]

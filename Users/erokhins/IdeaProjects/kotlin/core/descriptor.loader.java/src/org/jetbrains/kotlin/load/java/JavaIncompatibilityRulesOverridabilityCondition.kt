@@ -92,13 +92,13 @@ Inferred types:
 
 'subDescriptor' @ [104:17] ==> value-parameter subDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.load.java.JavaIncompatibilityRulesOverridabilityCondition.isIncompatibleInAccordanceWithBuiltInOverridabilityRules[ValueParameterDescriptorImpl]
 
-'computeJvmDescriptor' @ [104:31] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [104:31] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'superDescriptor' @ [104:79] ==> value-parameter superDescriptor: CallableDescriptor defined in org.jetbrains.kotlin.load.java.JavaIncompatibilityRulesOverridabilityCondition.isIncompatibleInAccordanceWithBuiltInOverridabilityRules[ValueParameterDescriptorImpl]
 
 'original' @ [104:95] ==> public final val FunctionDescriptor.original: FunctionDescriptor[MyPropertyDescriptor]
 
-'computeJvmDescriptor' @ [104:104] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [104:104] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'CONFLICTS_ONLY' @ [114:75] ==> enum entry CONFLICTS_ONLY defined in org.jetbrains.kotlin.resolve.ExternalOverridabilityCondition.Contract[FakeCallableDescriptorForObject]
 
@@ -176,15 +176,15 @@ Inferred types:
 
 'type' @ [145:46] ==> public final val ValueParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'makeNullable' @ [145:51] ==> public fun KotlinType.makeNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil[SimpleFunctionDescriptorImpl]
+'makeNullable' @ [145:51] ==> public fun KotlinType.makeNullable(): KotlinType defined in org.jetbrains.kotlin.types.typeUtil in file TypeUtils.kt[SimpleFunctionDescriptorImpl]
 
-'mapToJvmType' @ [145:66] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'mapToJvmType' @ [145:66] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'valueParameterDescriptor' @ [147:21] ==> value-parameter valueParameterDescriptor: ValueParameterDescriptor defined in org.jetbrains.kotlin.load.java.JavaIncompatibilityRulesOverridabilityCondition.Companion.mapValueParameterType[ValueParameterDescriptorImpl]
 
 'type' @ [147:46] ==> public final val ValueParameterDescriptor.type: KotlinType[MyPropertyDescriptor]
 
-'mapToJvmType' @ [147:51] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'mapToJvmType' @ [147:51] ==> internal fun KotlinType.mapToJvmType(): JvmType defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'f' @ [153:17] ==> value-parameter f: FunctionDescriptor defined in org.jetbrains.kotlin.load.java.JavaIncompatibilityRulesOverridabilityCondition.Companion.isPrimitiveCompareTo[ValueParameterDescriptorImpl]
 

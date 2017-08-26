@@ -12,9 +12,9 @@
 
 'getConstructor' @ [69:33] ==> @CallerSensitive public open fun getConstructor(vararg p0: (Class<*>..Class<*>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 
-'Array' @ [69:48] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [69:48] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@34bcf7ff
 
 'java' @ [69:69] ==> public val <T> KClass<Array<String>>.java: Class<Array<String>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -132,7 +132,7 @@ Inferred types:
 
 'println' @ [104:24] ==> public open fun println(p0: (String..String?)): Unit defined in java.io.PrintStream[JavaMethodDescriptor]
 
-'contextClasspath' @ [104:32] ==> private fun contextClasspath(keyName: String, classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.util[SimpleFunctionDescriptorImpl]
+'contextClasspath' @ [104:32] ==> private fun contextClasspath(keyName: String, classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.util in file ScriptUtilIT.kt[SimpleFunctionDescriptorImpl]
 
 'KOTLIN_JAVA_RUNTIME_JAR' @ [104:49] ==> public const val KOTLIN_JAVA_RUNTIME_JAR: String defined in org.jetbrains.kotlin.script.util in file ScriptUtilIT.kt[PropertyDescriptorImpl]
 
@@ -154,9 +154,9 @@ Inferred types:
 
 'getConstructor' @ [108:27] ==> @CallerSensitive public open fun getConstructor(vararg p0: (Class<*>..Class<*>?)): (Constructor<out (Any..Any?)>..Constructor<out (Any..Any?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 
-'Array' @ [108:42] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [108:42] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@5549ea5e
 
 'java' @ [108:63] ==> public val <T> KClass<Array<String>>.java: Class<Array<String>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -204,8 +204,6 @@ Inferred types:
 
 'suppressOutput' @ [129:21] ==> value-parameter suppressOutput: Boolean defined in org.jetbrains.kotlin.script.util.ScriptUtilIT.compileScriptImpl[ValueParameterDescriptorImpl]
 
-'MessageCollector' @ [129:37] ==> public companion object defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector[FakeCallableDescriptorForObject]
-
 'NONE' @ [129:54] ==> public final val NONE: MessageCollector defined in org.jetbrains.kotlin.cli.common.messages.MessageCollector.Companion[DeserializedPropertyDescriptor]
 
 'PrintingMessageCollector' @ [130:22] ==> public constructor PrintingMessageCollector(@NotNull p0: PrintStream, @NotNull p1: MessageRenderer, p2: Boolean) defined in org.jetbrains.kotlin.cli.common.messages.PrintingMessageCollector[JavaClassConstructorDescriptor]
@@ -224,11 +222,9 @@ Inferred types:
 
 'addJvmClasspathRoots' @ [135:17] ==> public fun CompilerConfiguration.addJvmClasspathRoots(files: List<File>): Unit defined in org.jetbrains.kotlin.cli.jvm.config[DeserializedSimpleFunctionDescriptor]
 
-'PathUtil' @ [135:38] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'getJdkClassesRootsFromCurrentJre' @ [135:47] ==> @JvmStatic public final fun getJdkClassesRootsFromCurrentJre(): List<File> defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedSimpleFunctionDescriptor]
 
-'contextClasspath' @ [136:17] ==> private fun contextClasspath(keyName: String, classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.util[SimpleFunctionDescriptorImpl]
+'contextClasspath' @ [136:17] ==> private fun contextClasspath(keyName: String, classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.util in file ScriptUtilIT.kt[SimpleFunctionDescriptorImpl]
 
 'KOTLIN_JAVA_RUNTIME_JAR' @ [136:34] ==> public const val KOTLIN_JAVA_RUNTIME_JAR: String defined in org.jetbrains.kotlin.script.util in file ScriptUtilIT.kt[PropertyDescriptorImpl]
 
@@ -247,7 +243,7 @@ Inferred types:
 
 'put' @ [140:17] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(MessageCollector..MessageCollector?)>, @NotNull p1: MessageCollector): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> MessageCollector
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.cli.common.messages.MessageCollector..org.jetbrains.kotlin.cli.common.messages.MessageCollector?)
 
 'MESSAGE_COLLECTOR_KEY' @ [140:42] ==> public final val MESSAGE_COLLECTOR_KEY: (CompilerConfigurationKey<(MessageCollector..MessageCollector?)>..CompilerConfigurationKey<(MessageCollector..MessageCollector?)>?) defined in org.jetbrains.kotlin.cli.common.CLIConfigurationKeys[JavaPropertyDescriptor]
 
@@ -320,15 +316,13 @@ Inferred types:
 
 'put' @ [154:17] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(String..String?)>, @NotNull p1: String): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
-
-'CommonConfigurationKeys' @ [154:21] ==> public object CommonConfigurationKeys defined in org.jetbrains.kotlin.config[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'MODULE_NAME' @ [154:45] ==> @field:JvmField public final val MODULE_NAME: CompilerConfigurationKey<String> defined in org.jetbrains.kotlin.config.CommonConfigurationKeys[DeserializedPropertyDescriptor]
 
 'add' @ [155:17] ==> public open fun <T : (Any..Any?)> add(@NotNull p0: CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>, @NotNull p1: KotlinScriptDefinition): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KotlinScriptDefinition
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.script.KotlinScriptDefinition..org.jetbrains.kotlin.script.KotlinScriptDefinition?)
 
 'SCRIPT_DEFINITIONS' @ [155:42] ==> public final val SCRIPT_DEFINITIONS: (CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>..CompilerConfigurationKey<(MutableList<(KotlinScriptDefinition..KotlinScriptDefinition?)>..List<(KotlinScriptDefinition..KotlinScriptDefinition?)>?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -336,7 +330,7 @@ Inferred types:
 
 'put' @ [156:17] ==> public open fun <T : (Any..Any?)> put(@NotNull p0: CompilerConfigurationKey<(Boolean..Boolean?)>, @NotNull p1: Boolean): Unit defined in org.jetbrains.kotlin.config.CompilerConfiguration[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'RETAIN_OUTPUT_IN_MEMORY' @ [156:42] ==> public final val RETAIN_OUTPUT_IN_MEMORY: (CompilerConfigurationKey<(Boolean..Boolean?)>..CompilerConfigurationKey<(Boolean..Boolean?)>?) defined in org.jetbrains.kotlin.config.JVMConfigurationKeys[JavaPropertyDescriptor]
 
@@ -397,11 +391,15 @@ Inferred types:
 
 'String' @ [187:34] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'trim' @ [187:42] ==> @InlineOnly public inline fun String.trim(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'filter' @ [187:48] ==> public inline fun <T> Iterable<String>.filter(predicate: (String) -> Boolean): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
 'String' @ [187:55] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'isNotBlank' @ [187:63] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'ByteArrayOutputStream' @ [190:25] ==> public constructor ByteArrayOutputStream() defined in java.io.ByteArrayOutputStream[JavaClassConstructorDescriptor]
 
@@ -469,7 +467,7 @@ Inferred types:
 
 'it' @ [218:62] ==> value-parameter it: File defined in org.jetbrains.kotlin.script.util.contextClasspath.<anonymous>[ValueParameterDescriptorImpl]
 
-'matchMaybeVersionedFile' @ [218:65] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.util[SimpleFunctionDescriptorImpl]
+'matchMaybeVersionedFile' @ [218:65] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.util in file ScriptUtilIT.kt[SimpleFunctionDescriptorImpl]
 
 'keyName' @ [218:89] ==> value-parameter keyName: String defined in org.jetbrains.kotlin.script.util.contextClasspath[ValueParameterDescriptorImpl]
 
@@ -483,7 +481,7 @@ Inferred types:
 
 'it' @ [219:58] ==> value-parameter it: File defined in org.jetbrains.kotlin.script.util.contextClasspath.<anonymous>[ValueParameterDescriptorImpl]
 
-'matchMaybeVersionedFile' @ [219:61] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.util[SimpleFunctionDescriptorImpl]
+'matchMaybeVersionedFile' @ [219:61] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.util in file ScriptUtilIT.kt[SimpleFunctionDescriptorImpl]
 
 'keyName' @ [219:85] ==> value-parameter keyName: String defined in org.jetbrains.kotlin.script.util.contextClasspath[ValueParameterDescriptorImpl]
 

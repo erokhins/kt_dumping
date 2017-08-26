@@ -32,11 +32,11 @@ Inferred types:
 
 'it' @ [31:105] ==> value-parameter it: Char defined in org.jetbrains.kotlin.renderer.shouldBeEscaped.<anonymous>[ValueParameterDescriptorImpl]
 
-'renderFqName' @ [35:12] ==> public fun renderFqName(pathSegments: List<Name>): String defined in org.jetbrains.kotlin.renderer[SimpleFunctionDescriptorImpl]
+'renderFqName' @ [35:12] ==> public fun renderFqName(pathSegments: List<Name>): String defined in org.jetbrains.kotlin.renderer in file RenderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'pathSegments' @ [35:25] ==> @NotNull public open fun pathSegments(): (MutableList<(Name..Name?)>..List<(Name..Name?)>) defined in org.jetbrains.kotlin.name.FqNameUnsafe[JavaMethodDescriptor]
 
-'renderFqName' @ [39:12] ==> public fun renderFqName(pathSegments: List<Name>): String defined in org.jetbrains.kotlin.renderer[SimpleFunctionDescriptorImpl]
+'renderFqName' @ [39:12] ==> public fun renderFqName(pathSegments: List<Name>): String defined in org.jetbrains.kotlin.renderer in file RenderingUtils.kt[SimpleFunctionDescriptorImpl]
 
 'pathSegments' @ [39:25] ==> @NotNull public open fun pathSegments(): (MutableList<(Name..Name?)>..List<(Name..Name?)>) defined in org.jetbrains.kotlin.name.FqName[JavaMethodDescriptor]
 

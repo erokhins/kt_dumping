@@ -10,7 +10,7 @@
 
 'outerContext' @ [39:21] ==> value-parameter outerContext: LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaPackageFragment.<init>[ValueParameterDescriptorImpl]
 
-'childForClassOrPackage' @ [39:34] ==> public fun LazyJavaResolverContext.childForClassOrPackage(containingDeclaration: ClassOrPackageFragmentDescriptor, typeParameterOwner: JavaTypeParameterListOwner? = ..., typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy[SimpleFunctionDescriptorImpl]
+'childForClassOrPackage' @ [39:34] ==> public fun LazyJavaResolverContext.childForClassOrPackage(containingDeclaration: ClassOrPackageFragmentDescriptor, typeParameterOwner: JavaTypeParameterListOwner? = ..., typeParametersIndexOffset: Int = ...): LazyJavaResolverContext defined in org.jetbrains.kotlin.load.java.lazy in file context.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [39:57] ==> <this> defined in org.jetbrains.kotlin.load.java.lazy.descriptors.LazyJavaPackageFragment[LazyClassReceiverParameterDescriptor]
 
@@ -96,6 +96,8 @@ Inferred types:
     <T> -> JavaPackage
     <R> -> FqName
 
+'fqName' @ [51:53] ==> public abstract val fqName: FqName defined in org.jetbrains.kotlin.load.java.structure.JavaPackage[PropertyDescriptorImpl]
+
 'listOf' @ [53:31] ==> @InlineOnly public inline fun <T> listOf(): List<FqName> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FqName
@@ -114,8 +116,6 @@ Inferred types:
 'jsr305State' @ [58:62] ==> public final val jsr305State: Jsr305State defined in org.jetbrains.kotlin.load.java.AnnotationTypeQualifierResolver[PropertyDescriptorImpl]
 
 'isIgnored' @ [58:74] ==> public final fun isIgnored(): Boolean defined in org.jetbrains.kotlin.utils.Jsr305State[SimpleFunctionDescriptorImpl]
-
-'Annotations' @ [58:87] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [58:99] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 

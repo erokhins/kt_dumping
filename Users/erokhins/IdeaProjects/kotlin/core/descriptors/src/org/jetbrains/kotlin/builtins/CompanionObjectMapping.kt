@@ -11,6 +11,8 @@ Inferred types:
 
 'KotlinBuiltIns' @ [27:45] ==> protected/*protected and package*/ constructor KotlinBuiltIns(@NotNull storageManager: StorageManager) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaClassConstructorDescriptor]
 
+'getPrimitiveFqName' @ [27:61] ==> public open fun getPrimitiveFqName(@NotNull primitiveType: PrimitiveType): (FqName..FqName?) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
+
 'FQ_NAMES' @ [28:29] ==> public final val FQ_NAMES: (KotlinBuiltIns.FqNames..KotlinBuiltIns.FqNames?) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaPropertyDescriptor]
 
 'string' @ [28:38] ==> public final val string: (FqNameUnsafe..FqNameUnsafe?) defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns.FqNames[JavaPropertyDescriptor]
@@ -33,9 +35,11 @@ Inferred types:
 Inferred types:
     <T> -> ClassId
 
+'topLevel' @ [29:93] ==> @NotNull public open fun topLevel(@NotNull topLevelFqName: FqName): ClassId defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
+
 'unmodifiableSet' @ [32:25] ==> public open fun <T : (Any..Any?)> unmodifiableSet(p0: (MutableSet<out (ClassId..ClassId?)>..Set<(ClassId..ClassId?)>?)): (MutableSet<(ClassId..ClassId?)>..Set<(ClassId..ClassId?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ClassId
+    <T : (Any..Any?)> -> (org.jetbrains.kotlin.name.ClassId..org.jetbrains.kotlin.name.ClassId?)
 
 'classIds' @ [32:41] ==> private final val classIds: LinkedHashSet<ClassId> /* = LinkedHashSet<ClassId> */ defined in org.jetbrains.kotlin.builtins.CompanionObjectMapping[PropertyDescriptorImpl]
 

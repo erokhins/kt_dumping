@@ -308,8 +308,6 @@ Inferred types:
 
 'acceptsKinds' @ [144:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [144:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'SINGLETON_CLASSIFIERS_MASK' @ [144:58] ==> public final val SINGLETON_CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
 'addEnumEntryDescriptors' @ [145:13] ==> protected abstract fun addEnumEntryDescriptors(result: MutableCollection<DeclarationDescriptor>, nameFilter: (Name) -> Boolean): Unit defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedMemberScope[SimpleFunctionDescriptorImpl]
@@ -332,8 +330,6 @@ Inferred types:
 
 'acceptsKinds' @ [150:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [150:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'CLASSIFIERS_MASK' @ [150:58] ==> public final val CLASSIFIERS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
 'classNames' @ [151:31] ==> internal final val classNames: Set<Name> defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedMemberScope[PropertyDescriptorImpl]
@@ -355,8 +351,6 @@ Inferred types:
 'kindFilter' @ [158:13] ==> value-parameter kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedMemberScope.computeDescriptors[ValueParameterDescriptorImpl]
 
 'acceptsKinds' @ [158:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
-
-'DescriptorKindFilter' @ [158:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'TYPE_ALIASES_MASK' @ [158:58] ==> public final val TYPE_ALIASES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
@@ -386,8 +380,6 @@ Inferred types:
 
 'acceptsKinds' @ [175:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
 
-'DescriptorKindFilter' @ [175:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
-
 'VARIABLES_MASK' @ [175:58] ==> public final val VARIABLES_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
 'addMembers' @ [176:13] ==> private final inline fun addMembers(names: Collection<Name>, nameFilter: (Name) -> Boolean, result: MutableCollection<DeclarationDescriptor>, descriptorsByName: (Name) -> Collection<DeclarationDescriptor>): Unit defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedMemberScope[SimpleFunctionDescriptorImpl]
@@ -407,8 +399,6 @@ Inferred types:
 'kindFilter' @ [183:13] ==> value-parameter kindFilter: DescriptorKindFilter defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedMemberScope.addFunctionsAndProperties[ValueParameterDescriptorImpl]
 
 'acceptsKinds' @ [183:24] ==> public final fun acceptsKinds(kinds: Int): Boolean defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[SimpleFunctionDescriptorImpl]
-
-'DescriptorKindFilter' @ [183:37] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter[FakeCallableDescriptorForObject]
 
 'FUNCTIONS_MASK' @ [183:58] ==> public final val FUNCTIONS_MASK: Int defined in org.jetbrains.kotlin.resolve.scopes.DescriptorKindFilter.Companion[PropertyDescriptorImpl]
 
@@ -504,11 +494,11 @@ Inferred types:
 
 'java' @ [230:31] ==> public val <T> KClass<out DeserializedMemberScope>.java: Class<out DeserializedMemberScope> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> DeserializedMemberScope
+    <T> -> Captured(out DeserializedMemberScope)
 
 'simpleName' @ [230:36] ==> public final val <T : (Any..Any?)> Class<out DeserializedMemberScope>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DeserializedMemberScope
+    <T : (Any..Any?)> -> Captured(out DeserializedMemberScope)
 
 'p' @ [231:9] ==> value-parameter p: Printer defined in org.jetbrains.kotlin.serialization.deserialization.descriptors.DeserializedMemberScope.printScopeStructure[ValueParameterDescriptorImpl]
 

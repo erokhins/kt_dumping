@@ -8,7 +8,7 @@
 
 'this' @ [42:21] ==> <this> defined in org.jetbrains.kotlin.script.jsr223.KotlinJsr223JvmLocalScriptEngineFactory[LazyClassReceiverParameterDescriptor]
 
-'scriptCompilationClasspathFromContext' @ [43:21] ==> private fun scriptCompilationClasspathFromContext(keyName: String, classLoader: ClassLoader = ...): List<File> defined in org.jetbrains.kotlin.script.jsr223[SimpleFunctionDescriptorImpl]
+'scriptCompilationClasspathFromContext' @ [43:21] ==> private fun scriptCompilationClasspathFromContext(keyName: String, classLoader: ClassLoader = ...): List<File> defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinStandardJsr223ScriptTemplate' @ [44:21] ==> public constructor KotlinStandardJsr223ScriptTemplate(jsr223Bindings: Bindings) defined in org.jetbrains.kotlin.script.jsr223.KotlinStandardJsr223ScriptTemplate[ClassConstructorDescriptorImpl]
 
@@ -46,7 +46,7 @@ Inferred types:
 
 'kotlinCompilerJar' @ [56:21] ==> private val kotlinCompilerJar: File defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[PropertyDescriptorImpl]
 
-'scriptCompilationClasspathFromContext' @ [57:21] ==> private fun scriptCompilationClasspathFromContext(keyName: String, classLoader: ClassLoader = ...): List<File> defined in org.jetbrains.kotlin.script.jsr223[SimpleFunctionDescriptorImpl]
+'scriptCompilationClasspathFromContext' @ [57:21] ==> private fun scriptCompilationClasspathFromContext(keyName: String, classLoader: ClassLoader = ...): List<File> defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
 'KotlinStandardJsr223ScriptTemplate' @ [58:21] ==> public constructor KotlinStandardJsr223ScriptTemplate(jsr223Bindings: Bindings) defined in org.jetbrains.kotlin.script.jsr223.KotlinStandardJsr223ScriptTemplate[ClassConstructorDescriptorImpl]
 
@@ -74,7 +74,7 @@ Inferred types:
 Inferred types:
     <reified @PureReifiable T> -> KClass<Bindings>
 
-'existsAndCheckOrNull' @ [68:42] ==> private inline fun File.existsAndCheckOrNull(check: File.() -> Boolean): File? defined in org.jetbrains.kotlin.script.jsr223[SimpleFunctionDescriptorImpl]
+'existsAndCheckOrNull' @ [68:42] ==> private inline fun File.existsAndCheckOrNull(check: File.() -> Boolean): File? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
 'if (exists() && check()) this else null' @ [69:84] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: File?, elseBranch: File?): File?[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -116,7 +116,7 @@ Inferred types:
 
 'removeSuffix' @ [76:34] ==> public fun String.removeSuffix(suffix: CharSequence): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'classpathFromClassloader' @ [79:10] ==> public fun classpathFromClassloader(classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.util[SimpleFunctionDescriptorImpl]
+'classpathFromClassloader' @ [79:10] ==> public fun classpathFromClassloader(classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.util in file context.kt[SimpleFunctionDescriptorImpl]
 
 'classLoader' @ [79:35] ==> value-parameter classLoader: ClassLoader defined in org.jetbrains.kotlin.script.jsr223.contextClasspath[ValueParameterDescriptorImpl]
 
@@ -126,11 +126,11 @@ Inferred types:
 
 'it' @ [79:61] ==> value-parameter it: File defined in org.jetbrains.kotlin.script.jsr223.contextClasspath.<anonymous>[ValueParameterDescriptorImpl]
 
-'matchMaybeVersionedFile' @ [79:64] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.jsr223[SimpleFunctionDescriptorImpl]
+'matchMaybeVersionedFile' @ [79:64] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
 'keyName' @ [79:88] ==> value-parameter keyName: String defined in org.jetbrains.kotlin.script.jsr223.contextClasspath[ValueParameterDescriptorImpl]
 
-'manifestClassPath' @ [80:13] ==> public fun manifestClassPath(classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.util[SimpleFunctionDescriptorImpl]
+'manifestClassPath' @ [80:13] ==> public fun manifestClassPath(classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.util in file context.kt[SimpleFunctionDescriptorImpl]
 
 'classLoader' @ [80:31] ==> value-parameter classLoader: ClassLoader defined in org.jetbrains.kotlin.script.jsr223.contextClasspath[ValueParameterDescriptorImpl]
 
@@ -140,7 +140,7 @@ Inferred types:
 
 'it' @ [80:57] ==> value-parameter it: File defined in org.jetbrains.kotlin.script.jsr223.contextClasspath.<anonymous>[ValueParameterDescriptorImpl]
 
-'matchMaybeVersionedFile' @ [80:60] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.jsr223[SimpleFunctionDescriptorImpl]
+'matchMaybeVersionedFile' @ [80:60] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
 'keyName' @ [80:84] ==> value-parameter keyName: String defined in org.jetbrains.kotlin.script.jsr223.contextClasspath[ValueParameterDescriptorImpl]
 
@@ -171,7 +171,9 @@ Inferred types:
     <T> -> String
     <R> -> File
 
-'contextClasspath' @ [87:14] ==> private fun contextClasspath(keyName: String, classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.jsr223[SimpleFunctionDescriptorImpl]
+'File' @ [86:90] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
+'contextClasspath' @ [87:14] ==> private fun contextClasspath(keyName: String, classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
 'keyName' @ [87:31] ==> value-parameter keyName: String defined in org.jetbrains.kotlin.script.jsr223.scriptCompilationClasspathFromContext[ValueParameterDescriptorImpl]
 
@@ -229,9 +231,9 @@ Inferred types:
 
 'exists' @ [93:109] ==> public open fun exists(): Boolean defined in java.io.File[JavaMethodDescriptor]
 
-'lazy' @ [95:40] ==> public fun <T> lazy(initializer: () -> File): Lazy<File> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [95:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> File
+    <T> -> T
 
 '?:' @ [97:5] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: File?, right: File?): File?[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -244,9 +246,11 @@ Inferred types:
     <T> -> String
     <R> -> File
 
+'File' @ [97:54] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
+
 'existsOrNull' @ [97:61] ==> private fun File.existsOrNull(): File? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
-'classpathFromClass' @ [99:9] ==> public fun classpathFromClass(classLoader: ClassLoader, klass: KClass<out Any>): List<File>? defined in org.jetbrains.kotlin.script.util[SimpleFunctionDescriptorImpl]
+'classpathFromClass' @ [99:9] ==> public fun classpathFromClass(classLoader: ClassLoader, klass: KClass<out Any>): List<File>? defined in org.jetbrains.kotlin.script.util in file context.kt[SimpleFunctionDescriptorImpl]
 
 'currentThread' @ [99:35] ==> public open fun currentThread(): (Thread..Thread?) defined in java.lang.Thread[JavaMethodDescriptor]
 
@@ -254,7 +258,7 @@ Inferred types:
 
 'K2JVMCompiler' @ [99:71] ==> public companion object defined in org.jetbrains.kotlin.cli.jvm.K2JVMCompiler[FakeCallableDescriptorForObject]
 
-'contextClasspath' @ [100:12] ==> private fun contextClasspath(keyName: String, classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.jsr223[SimpleFunctionDescriptorImpl]
+'contextClasspath' @ [100:12] ==> private fun contextClasspath(keyName: String, classLoader: ClassLoader): List<File>? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
 'KOTLIN_COMPILER_JAR' @ [100:29] ==> private const val KOTLIN_COMPILER_JAR: String defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[PropertyDescriptorImpl]
 
@@ -262,7 +266,7 @@ Inferred types:
 
 'contextClassLoader' @ [100:73] ==> public final var Thread.contextClassLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 
-'classpathFromClasspathProperty' @ [101:12] ==> public fun classpathFromClasspathProperty(): List<File>? defined in org.jetbrains.kotlin.script.util[SimpleFunctionDescriptorImpl]
+'classpathFromClasspathProperty' @ [101:12] ==> public fun classpathFromClasspathProperty(): List<File>? defined in org.jetbrains.kotlin.script.util in file context.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [102:11] ==> public inline fun <T> Iterable<File>.firstOrNull(predicate: (File) -> Boolean): File? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -270,15 +274,15 @@ Inferred types:
 
 'it' @ [102:25] ==> value-parameter it: File defined in org.jetbrains.kotlin.script.jsr223.kotlinCompilerJar.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'matchMaybeVersionedFile' @ [102:28] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.jsr223[SimpleFunctionDescriptorImpl]
+'matchMaybeVersionedFile' @ [102:28] ==> private fun File.matchMaybeVersionedFile(baseName: String): Boolean defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
 'KOTLIN_COMPILER_JAR' @ [102:52] ==> private const val KOTLIN_COMPILER_JAR: String defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[PropertyDescriptorImpl]
 
 'FileNotFoundException' @ [103:14] ==> public constructor FileNotFoundException(p0: (String..String?)) defined in java.io.FileNotFoundException[JavaClassConstructorDescriptor]
 
-'lazy' @ [106:39] ==> public fun <T> lazy(initializer: () -> File?): Lazy<File?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [106:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> File?
+    <T> -> T
 
 '?:' @ [107:5] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: File?, right: File?): File?[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -290,6 +294,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [107:58] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'existsOrNull' @ [107:65] ==> private fun File.existsOrNull(): File? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
@@ -310,8 +316,6 @@ Inferred types:
 
 'existsOrNull' @ [108:78] ==> private fun File.existsOrNull(): File? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
-'PathUtil' @ [109:8] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'getResourcePathForClass' @ [109:17] ==> @JvmStatic public final fun getResourcePathForClass(aClass: Class<*>): File defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedSimpleFunctionDescriptor]
 
 'JvmStatic' @ [109:41] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
@@ -322,9 +326,9 @@ Inferred types:
 
 'existsOrNull' @ [109:64] ==> private fun File.existsOrNull(): File? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [112:46] ==> public fun <T> lazy(initializer: () -> File?): Lazy<File?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [112:46] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> File?
+    <T> -> T
 
 '?:' @ [113:5] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: File?, right: File?): File?[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -336,6 +340,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [113:60] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'existsOrNull' @ [113:67] ==> private fun File.existsOrNull(): File? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
@@ -356,8 +362,6 @@ Inferred types:
 
 'existsOrNull' @ [114:86] ==> private fun File.existsOrNull(): File? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
-'PathUtil' @ [115:8] ==> public object PathUtil defined in org.jetbrains.kotlin.utils[FakeCallableDescriptorForObject]
-
 'getResourcePathForClass' @ [115:17] ==> @JvmStatic public final fun getResourcePathForClass(aClass: Class<*>): File defined in org.jetbrains.kotlin.utils.PathUtil[DeserializedSimpleFunctionDescriptor]
 
 'ScriptTemplateWithArgs' @ [115:41] ==> public constructor ScriptTemplateWithArgs(args: Array<String>) defined in kotlin.script.templates.standard.ScriptTemplateWithArgs[DeserializedClassConstructorDescriptor]
@@ -368,9 +372,9 @@ Inferred types:
 
 'existsOrNull' @ [115:77] ==> private fun File.existsOrNull(): File? defined in org.jetbrains.kotlin.script.jsr223 in file KotlinJsr223ScriptEngineFactoryExamples.kt[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [118:41] ==> public fun <T> lazy(initializer: () -> List<File?>): Lazy<List<File?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [118:41] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<File?>
+    <T> -> T
 
 'listOf' @ [118:48] ==> public fun <T> listOf(vararg elements: File?): List<File?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -1,16 +1,16 @@
 'lazySoft' @ [41:50] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (List<Annotation>..List<Annotation>?)): ReflectProperties.LazySoftVal<(List<Annotation>..List<Annotation>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<Annotation>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.Annotation>..kotlin.collections.List<kotlin.Annotation>?)
 
 'descriptor' @ [41:61] ==> public abstract val descriptor: CallableMemberDescriptor defined in kotlin.reflect.jvm.internal.KCallableImpl[PropertyDescriptorImpl]
 
-'computeAnnotations' @ [41:72] ==> internal fun Annotated.computeAnnotations(): List<Annotation> defined in kotlin.reflect.jvm.internal[SimpleFunctionDescriptorImpl]
+'computeAnnotations' @ [41:72] ==> internal fun Annotated.computeAnnotations(): List<Annotation> defined in kotlin.reflect.jvm.internal in file util.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [43:56] ==> @Override public open fun invoke(): (List<Annotation>..List<Annotation>?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [45:49] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (ArrayList<KParameter>..ArrayList<KParameter>?)): ReflectProperties.LazySoftVal<(ArrayList<KParameter>..ArrayList<KParameter>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ArrayList<KParameter>
+    <T : (Any..Any?)> -> (java.util.ArrayList<kotlin.reflect.KParameter>..java.util.ArrayList<kotlin.reflect.KParameter>?)
 
 'descriptor' @ [46:26] ==> public abstract val descriptor: CallableMemberDescriptor defined in kotlin.reflect.jvm.internal.KCallableImpl[PropertyDescriptorImpl]
 
@@ -115,7 +115,7 @@ Inferred types:
 
 'lazySoft' @ [76:49] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (KTypeImpl..KTypeImpl?)): ReflectProperties.LazySoftVal<(KTypeImpl..KTypeImpl?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KTypeImpl
+    <T : (Any..Any?)> -> (kotlin.reflect.jvm.internal.KTypeImpl..kotlin.reflect.jvm.internal.KTypeImpl?)
 
 'KTypeImpl' @ [77:9] ==> public constructor KTypeImpl(type: KotlinType, computeJavaType: () -> Type) defined in kotlin.reflect.jvm.internal.KTypeImpl[ClassConstructorDescriptorImpl]
 
@@ -131,7 +131,7 @@ Inferred types:
 
 'lazySoft' @ [83:53] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (List<KTypeParameterImpl>..List<KTypeParameterImpl>?)): ReflectProperties.LazySoftVal<(List<KTypeParameterImpl>..List<KTypeParameterImpl>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<KTypeParameterImpl>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.reflect.jvm.internal.KTypeParameterImpl>..kotlin.collections.List<kotlin.reflect.jvm.internal.KTypeParameterImpl>?)
 
 'descriptor' @ [84:9] ==> public abstract val descriptor: CallableMemberDescriptor defined in kotlin.reflect.jvm.internal.KCallableImpl[PropertyDescriptorImpl]
 
@@ -141,6 +141,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
     <R> -> KTypeParameterImpl
+
+'KTypeParameterImpl' @ [84:41] ==> public constructor KTypeParameterImpl(descriptor: TypeParameterDescriptor) defined in kotlin.reflect.jvm.internal.KTypeParameterImpl[ClassConstructorDescriptorImpl]
 
 'invoke' @ [88:17] ==> @Override public open fun invoke(): (List<KTypeParameterImpl>..List<KTypeParameterImpl>?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
@@ -154,23 +156,17 @@ Inferred types:
 
 'modality' @ [94:28] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [94:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [94:49] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'descriptor' @ [97:17] ==> public abstract val descriptor: CallableMemberDescriptor defined in kotlin.reflect.jvm.internal.KCallableImpl[PropertyDescriptorImpl]
 
 'modality' @ [97:28] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
 
-'Modality' @ [97:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'OPEN' @ [97:49] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'descriptor' @ [100:17] ==> public abstract val descriptor: CallableMemberDescriptor defined in kotlin.reflect.jvm.internal.KCallableImpl[PropertyDescriptorImpl]
 
 'modality' @ [100:28] ==> public final val CallableMemberDescriptor.modality: Modality[MyPropertyDescriptor]
-
-'Modality' @ [100:40] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [100:49] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
@@ -182,13 +178,13 @@ Inferred types:
 
 'isAnnotation' @ [103:54] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isAnnotation: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'Suppress' @ [105:5] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'reflectionCall' @ [106:47] ==> internal inline fun <R> reflectionCall(block: () -> R): R defined in kotlin.reflect.jvm.internal[SimpleFunctionDescriptorImpl]
+'reflectionCall' @ [106:47] ==> internal inline fun <R> reflectionCall(block: () -> Nothing): Nothing defined in kotlin.reflect.jvm.internal[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <R> -> R
+    <R> -> Nothing
 
 'caller' @ [107:16] ==> public abstract val caller: FunctionCaller<*> defined in kotlin.reflect.jvm.internal.KCallableImpl[PropertyDescriptorImpl]
 
@@ -350,7 +346,7 @@ Inferred types:
 Inferred types:
     <R> -> R
 
-'caller' @ [163:13] ==> val caller: FunctionCaller<Member?> defined in kotlin.reflect.jvm.internal.KCallableImpl.callDefaultMethod[LocalVariableDescriptor]
+'caller' @ [163:13] ==> val caller: FunctionCaller<*> defined in kotlin.reflect.jvm.internal.KCallableImpl.callDefaultMethod[LocalVariableDescriptor]
 
 'call' @ [163:20] ==> public abstract fun call(args: Array<*>): Any? defined in kotlin.reflect.jvm.internal.FunctionCaller[SimpleFunctionDescriptorImpl]
 
@@ -411,7 +407,7 @@ Inferred types:
 Inferred types:
     <R> -> R
 
-'caller' @ [182:13] ==> val caller: FunctionCaller<Member?> defined in kotlin.reflect.jvm.internal.KCallableImpl.callAnnotationConstructor[LocalVariableDescriptor]
+'caller' @ [182:13] ==> val caller: FunctionCaller<*> defined in kotlin.reflect.jvm.internal.KCallableImpl.callAnnotationConstructor[LocalVariableDescriptor]
 
 'call' @ [182:20] ==> public abstract fun call(args: Array<*>): Any? defined in kotlin.reflect.jvm.internal.FunctionCaller[SimpleFunctionDescriptorImpl]
 
@@ -435,9 +431,9 @@ Inferred types:
                     else -> throw UnsupportedOperationException("Unknown primitive: $type")
                 }
             }
-            else null' @ [187:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {Comparable<{Long & Boolean & Byte & Char & Double & Short & Float}> & java.io.Serializable}?, elseBranch: {Comparable<{Long & Boolean & Byte & Char & Double & Short & Float}> & java.io.Serializable}?): {Comparable<{Long & Boolean & Byte & Char & Double & Short & Float}> & java.io.Serializable}?[SimpleFunctionDescriptorImpl]
+            else null' @ [187:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Any?, elseBranch: Any?): Any?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {Comparable<{Long & Boolean & Byte & Char & Double & Short & Float}> & java.io.Serializable}?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Any?
 
 'type' @ [187:17] ==> value-parameter type: Type defined in kotlin.reflect.jvm.internal.KCallableImpl.defaultPrimitiveValue[ValueParameterDescriptorImpl]
 
@@ -445,7 +441,7 @@ Inferred types:
 
 'isPrimitive' @ [187:42] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'when (type) {
                     Boolean::class.java -> false
@@ -458,9 +454,9 @@ Inferred types:
                     Double::class.java -> 0.0
                     Void.TYPE -> throw IllegalStateException("Parameter with void type is illegal")
                     else -> throw UnsupportedOperationException("Unknown primitive: $type")
-                }' @ [188:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}, entry1: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}, entry2: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}, entry3: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}, entry4: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}, entry5: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}, entry6: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}, entry7: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}, entry8: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}, entry9: {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}): {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
+                }' @ [188:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any, entry3: Any, entry4: Any, entry5: Any, entry6: Any, entry7: Any, entry8: Any, entry9: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float}> & java.io.Serializable}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
 
 'type' @ [188:23] ==> value-parameter type: Type defined in kotlin.reflect.jvm.internal.KCallableImpl.defaultPrimitiveValue[ValueParameterDescriptorImpl]
 

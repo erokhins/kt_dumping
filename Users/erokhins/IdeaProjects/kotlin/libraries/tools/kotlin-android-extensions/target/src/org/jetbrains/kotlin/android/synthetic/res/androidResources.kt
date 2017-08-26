@@ -28,13 +28,13 @@
 
 'java' @ [51:43] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'this' @ [51:51] ==> <this> defined in org.jetbrains.kotlin.android.synthetic.res.ResourceIdentifier[LazyClassReceiverParameterDescriptor]
 
 'java' @ [51:63] ==> public val <T> KClass<out ResourceIdentifier>.java: Class<out ResourceIdentifier> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ResourceIdentifier
+    <T> -> Captured(out ResourceIdentifier)
 
 'other' @ [53:9] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.android.synthetic.res.ResourceIdentifier.equals[ValueParameterDescriptorImpl]
 
@@ -90,7 +90,7 @@ Inferred types:
 
 'createCachedValue' @ [93:52] ==> @NotNull public final fun <T : (Any..Any?)> createCachedValue(@NotNull p0: () -> CachedValueProvider.Result<(T..T?)>?, p1: Boolean): CachedValue<(T..T?)> defined in org.jetbrains.kotlin.com.intellij.psi.util.CachedValuesManager[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'result' @ [93:70] ==> value-parameter result: () -> CachedValueProvider.Result<T> defined in org.jetbrains.kotlin.android.synthetic.res.cachedValue[ValueParameterDescriptorImpl]
 

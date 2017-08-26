@@ -1,14 +1,14 @@
 'JavaToKotlinClassMap' @ [61:31] ==> public object JavaToKotlinClassMap : PlatformToKotlinClassMap defined in org.jetbrains.kotlin.platform in file JavaToKotlinClassMap.kt[FakeCallableDescriptorForObject]
 
-'lazy' @ [63:60] ==> public fun <T> lazy(initializer: () -> ModuleDescriptor): Lazy<ModuleDescriptor> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [63:60] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ModuleDescriptor
+    <T> -> T
 
 'deferredOwnerModuleDescriptor' @ [63:65] ==> value-parameter deferredOwnerModuleDescriptor: () -> ModuleDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [64:66] ==> public fun <T> lazy(initializer: () -> Boolean): Lazy<Boolean> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [64:66] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Boolean
+    <T> -> T
 
 'isAdditionalBuiltInsFeatureSupported' @ [64:71] ==> value-parameter isAdditionalBuiltInsFeatureSupported: () -> Boolean defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.<init>[ValueParameterDescriptorImpl]
 
@@ -25,8 +25,6 @@ Inferred types:
 'ownerModuleDescriptor' @ [68:9] ==> private final val ownerModuleDescriptor: ModuleDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings[PropertyDescriptorImpl]
 
 'findNonGenericClassAcrossDependencies' @ [68:31] ==> public fun ModuleDescriptor.findNonGenericClassAcrossDependencies(classId: ClassId, notFoundClasses: NotFoundClasses): ClassDescriptor defined in org.jetbrains.kotlin.descriptors in file findClassInModule.kt[SimpleFunctionDescriptorImpl]
-
-'JvmBuiltInClassDescriptorFactory' @ [69:17] ==> public companion object defined in org.jetbrains.kotlin.builtins.JvmBuiltInClassDescriptorFactory[FakeCallableDescriptorForObject]
 
 'CLONEABLE_CLASS_ID' @ [69:50] ==> public final val CLONEABLE_CLASS_ID: ClassId defined in org.jetbrains.kotlin.builtins.JvmBuiltInClassDescriptorFactory.Companion[PropertyDescriptorImpl]
 
@@ -100,8 +98,6 @@ Inferred types:
 
 'identifier' @ [92:49] ==> @NotNull public open fun identifier(@NotNull name: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'Modality' @ [92:77] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [92:86] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'INTERFACE' @ [92:106] ==> enum entry INTERFACE defined in org.jetbrains.kotlin.descriptors.ClassKind[FakeCallableDescriptorForObject]
@@ -113,8 +109,6 @@ Inferred types:
 'mockSerializableClass' @ [96:9] ==> val mockSerializableClass: ClassDescriptorImpl defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.createMockJavaIoSerializableType[LocalVariableDescriptor]
 
 'initialize' @ [96:31] ==> public final fun initialize(@NotNull unsubstitutedMemberScope: MemberScope, @NotNull constructors: (MutableSet<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>..Set<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>), @Nullable primaryConstructor: ClassConstructorDescriptor?): Unit defined in org.jetbrains.kotlin.descriptors.impl.ClassDescriptorImpl[JavaMethodDescriptor]
-
-'MemberScope' @ [96:42] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'Empty' @ [96:54] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
@@ -166,8 +160,6 @@ Inferred types:
 
 'name' @ [110:13] ==> value-parameter name: Name defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getFunctions[ValueParameterDescriptorImpl]
 
-'CloneableClassScope' @ [110:21] ==> public companion object defined in org.jetbrains.kotlin.builtins.CloneableClassScope[FakeCallableDescriptorForObject]
-
 'CLONE_NAME' @ [110:41] ==> internal final val CLONE_NAME: Name defined in org.jetbrains.kotlin.builtins.CloneableClassScope.Companion[PropertyDescriptorImpl]
 
 'classDescriptor' @ [110:55] ==> value-parameter classDescriptor: ClassDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getFunctions[ValueParameterDescriptorImpl]
@@ -197,8 +189,6 @@ Inferred types:
 'functionProto' @ [114:56] ==> value-parameter functionProto: (ProtoBuf.Function..ProtoBuf.Function?) defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getFunctions.<anonymous>[ValueParameterDescriptorImpl]
 
 'name' @ [114:70] ==> public final val ProtoBuf.Function.name: Int[MyPropertyDescriptor]
-
-'CloneableClassScope' @ [114:79] ==> public companion object defined in org.jetbrains.kotlin.builtins.CloneableClassScope[FakeCallableDescriptorForObject]
 
 'CLONE_NAME' @ [114:99] ==> internal final val CLONE_NAME: Name defined in org.jetbrains.kotlin.builtins.CloneableClassScope.Companion[PropertyDescriptorImpl]
 
@@ -377,8 +367,6 @@ Inferred types:
 
 'fqNameSafe' @ [175:90] ==> public val DeclarationDescriptor.fqNameSafe: FqName defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[PropertyDescriptorImpl]
 
-'FallbackBuiltIns' @ [175:102] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.FallbackBuiltIns[FakeCallableDescriptorForObject]
-
 'Instance' @ [175:119] ==> @JvmStatic public final val Instance: KotlinBuiltIns defined in org.jetbrains.kotlin.load.kotlin.FallbackBuiltIns.Companion[PropertyDescriptorImpl]
 
 'kotlinClassDescriptors' @ [176:45] ==> val kotlinClassDescriptors: Collection<ClassDescriptor> defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getAdditionalFunctions[LocalVariableDescriptor]
@@ -516,11 +504,11 @@ Inferred types:
 
 'containingDeclaration' @ [214:21] ==> public final val SimpleFunctionDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'computeJvmDescriptor' @ [215:29] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [215:29] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'xor' @ [217:13] ==> public final infix fun xor(other: Boolean): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'SignatureBuildingComponents' @ [217:14] ==> public object SignatureBuildingComponents defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureBuilding.kt[FakeCallableDescriptorForObject]
+'in' @ [217:14] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'signature' @ [217:42] ==> public final fun signature(classDescriptor: ClassDescriptor, jvmDescriptor: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
@@ -532,7 +520,7 @@ Inferred types:
 
 'isMutable' @ [217:108] ==> value-parameter isMutable: Boolean defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.isMutabilityViolation[ValueParameterDescriptorImpl]
 
-'ifAny' @ [219:20] ==> public final fun <N : (Any..Any?)> ifAny(@NotNull nodes: (MutableCollection<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>), @NotNull neighbors: ((CallableMemberDescriptor..CallableMemberDescriptor?)) -> (MutableIterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Iterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>), @NotNull predicate: ((CallableMemberDescriptor..CallableMemberDescriptor?)) -> (Boolean..Boolean?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
+'ifAny' @ [219:20] ==> public final fun <N : (Any..Any?)> ifAny(@NotNull nodes: (MutableCollection<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Collection<(CallableMemberDescriptor..CallableMemberDescriptor?)>), @NotNull neighbors: (current: (CallableMemberDescriptor..CallableMemberDescriptor?)) -> (MutableIterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>..Iterable<(CallableMemberDescriptor..CallableMemberDescriptor?)>), @NotNull predicate: ((CallableMemberDescriptor..CallableMemberDescriptor?)) -> (Boolean..Boolean?)): (Boolean..Boolean?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
     <N : (Any..Any?)> -> CallableMemberDescriptor
 
@@ -564,9 +552,9 @@ Inferred types:
 
 'containingDeclaration' @ [230:21] ==> public final val FunctionDescriptor.containingDeclaration: DeclarationDescriptor[MyPropertyDescriptor]
 
-'computeJvmDescriptor' @ [231:29] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [231:29] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
-'dfs' @ [233:20] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull nodes: (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>), @NotNull neighbors: ((ClassDescriptor..ClassDescriptor?)) -> (MutableIterable<(ClassDescriptor..ClassDescriptor?)>..Iterable<(ClassDescriptor..ClassDescriptor?)>), @NotNull handler: DFS.NodeHandler<(ClassDescriptor..ClassDescriptor?), (JvmBuiltInsSettings.JDKMemberStatus..JvmBuiltInsSettings.JDKMemberStatus?)>): (JvmBuiltInsSettings.JDKMemberStatus..JvmBuiltInsSettings.JDKMemberStatus?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
+'dfs' @ [233:20] ==> public final fun <N : (Any..Any?), R : (Any..Any?)> dfs(@NotNull nodes: (MutableCollection<(ClassDescriptor..ClassDescriptor?)>..Collection<(ClassDescriptor..ClassDescriptor?)>), @NotNull neighbors: (current: (ClassDescriptor..ClassDescriptor?)) -> (MutableIterable<(ClassDescriptor..ClassDescriptor?)>..Iterable<(ClassDescriptor..ClassDescriptor?)>), @NotNull handler: DFS.NodeHandler<(ClassDescriptor..ClassDescriptor?), (JvmBuiltInsSettings.JDKMemberStatus..JvmBuiltInsSettings.JDKMemberStatus?)>): (JvmBuiltInsSettings.JDKMemberStatus..JvmBuiltInsSettings.JDKMemberStatus?) defined in org.jetbrains.kotlin.utils.DFS[SamAdapterFunctionDescriptor]
 Inferred types:
     <N : (Any..Any?)> -> ClassDescriptor
     <R : (Any..Any?)> -> JDKMemberStatus
@@ -715,8 +703,6 @@ Inferred types:
 
 'fqNameSafe' @ [284:68] ==> public val DeclarationDescriptor.fqNameSafe: FqName defined in org.jetbrains.kotlin.resolve.descriptorUtil in file DescriptorUtils.kt[PropertyDescriptorImpl]
 
-'FallbackBuiltIns' @ [284:80] ==> public companion object defined in org.jetbrains.kotlin.load.kotlin.FallbackBuiltIns[FakeCallableDescriptorForObject]
-
 'Instance' @ [284:97] ==> @JvmStatic public final val Instance: KotlinBuiltIns defined in org.jetbrains.kotlin.load.kotlin.FallbackBuiltIns.Companion[PropertyDescriptorImpl]
 
 'emptyList' @ [284:117] ==> public fun <T> emptyList(): List<ClassConstructorDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -747,13 +733,13 @@ Inferred types:
 
 'javaAnalogueDescriptor' @ [292:16] ==> val javaAnalogueDescriptor: LazyJavaClassDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors[LocalVariableDescriptor]
 
-'constructors' @ [292:39] ==> public final val LazyJavaClassDescriptor.constructors: List<ClassConstructorDescriptor>[MyPropertyDescriptor]
+'constructors' @ [292:39] ==> public final val LazyJavaClassDescriptor.constructors: List<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>[MyPropertyDescriptor]
 
-'filter' @ [292:52] ==> public inline fun <T> Iterable<ClassConstructorDescriptor>.filter(predicate: (ClassConstructorDescriptor) -> Boolean): List<ClassConstructorDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filter' @ [292:52] ==> public inline fun <T> Iterable<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>.filter(predicate: ((ClassConstructorDescriptor..ClassConstructorDescriptor?)) -> Boolean): List<(ClassConstructorDescriptor..ClassConstructorDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ClassConstructorDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor..org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor?)
 
-'javaConstructor' @ [294:13] ==> value-parameter javaConstructor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
+'javaConstructor' @ [294:13] ==> value-parameter javaConstructor: (ClassConstructorDescriptor..ClassConstructorDescriptor?) defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
 
 'visibility' @ [294:29] ==> public final val ClassConstructorDescriptor.visibility: Visibility[MyPropertyDescriptor]
 
@@ -771,11 +757,11 @@ Inferred types:
 
 'isEffectivelyTheSameAs' @ [295:61] ==> local final fun ConstructorDescriptor.isEffectivelyTheSameAs(javaConstructor: ConstructorDescriptor): Boolean defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors[SimpleFunctionDescriptorImpl]
 
-'javaConstructor' @ [295:84] ==> value-parameter javaConstructor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
+'javaConstructor' @ [295:84] ==> value-parameter javaConstructor: (ClassConstructorDescriptor..ClassConstructorDescriptor?) defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
 
 '!' @ [296:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'javaConstructor' @ [296:18] ==> value-parameter javaConstructor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
+'javaConstructor' @ [296:18] ==> value-parameter javaConstructor: (ClassConstructorDescriptor..ClassConstructorDescriptor?) defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
 
 'isTrivialCopyConstructorFor' @ [296:34] ==> private final fun ConstructorDescriptor.isTrivialCopyConstructorFor(classDescriptor: ClassDescriptor): Boolean defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings[SimpleFunctionDescriptorImpl]
 
@@ -785,26 +771,26 @@ Inferred types:
 
 'isDeprecated' @ [297:33] ==> public open fun isDeprecated(@NotNull declarationDescriptor: DeclarationDescriptor): Boolean defined in org.jetbrains.kotlin.builtins.KotlinBuiltIns[JavaMethodDescriptor]
 
-'javaConstructor' @ [297:46] ==> value-parameter javaConstructor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
+'javaConstructor' @ [297:46] ==> value-parameter javaConstructor: (ClassConstructorDescriptor..ClassConstructorDescriptor?) defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
 
-'SignatureBuildingComponents' @ [298:17] ==> public object SignatureBuildingComponents defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureBuilding.kt[FakeCallableDescriptorForObject]
+'!in' @ [298:17] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'signature' @ [298:45] ==> public final fun signature(classDescriptor: ClassDescriptor, jvmDescriptor: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
 'javaAnalogueDescriptor' @ [298:55] ==> val javaAnalogueDescriptor: LazyJavaClassDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors[LocalVariableDescriptor]
 
-'javaConstructor' @ [298:79] ==> value-parameter javaConstructor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
+'javaConstructor' @ [298:79] ==> value-parameter javaConstructor: (ClassConstructorDescriptor..ClassConstructorDescriptor?) defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
 
-'computeJvmDescriptor' @ [298:95] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [298:95] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'BLACK_LIST_CONSTRUCTOR_SIGNATURES' @ [298:123] ==> public final val BLACK_LIST_CONSTRUCTOR_SIGNATURES: Set<String> defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.Companion[PropertyDescriptorImpl]
 
-'map' @ [299:11] ==> public inline fun <T, R> Iterable<ClassConstructorDescriptor>.map(transform: (ClassConstructorDescriptor) -> ClassConstructorDescriptor): List<ClassConstructorDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [299:11] ==> public inline fun <T, R> Iterable<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>.map(transform: ((ClassConstructorDescriptor..ClassConstructorDescriptor?)) -> ClassConstructorDescriptor): List<ClassConstructorDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ClassConstructorDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor..org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor?)
     <R> -> ClassConstructorDescriptor
 
-'javaConstructor' @ [301:13] ==> value-parameter javaConstructor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
+'javaConstructor' @ [301:13] ==> value-parameter javaConstructor: (ClassConstructorDescriptor..ClassConstructorDescriptor?) defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
 
 'newCopyBuilder' @ [301:29] ==> @NotNull @Override public abstract fun newCopyBuilder(): FunctionDescriptor.CopyBuilder<out (FunctionDescriptor..FunctionDescriptor?)> defined in org.jetbrains.kotlin.descriptors.ClassConstructorDescriptor[JavaMethodDescriptor]
 
@@ -830,15 +816,15 @@ Inferred types:
 
 'substitution' @ [305:45] ==> public final val TypeSubstitutor.substitution: TypeSubstitution[MyPropertyDescriptor]
 
-'SignatureBuildingComponents' @ [306:21] ==> public object SignatureBuildingComponents defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureBuilding.kt[FakeCallableDescriptorForObject]
+'!in' @ [306:21] ==> public abstract fun contains(element: String): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
 'signature' @ [306:49] ==> public final fun signature(classDescriptor: ClassDescriptor, jvmDescriptor: String): String defined in org.jetbrains.kotlin.load.kotlin.SignatureBuildingComponents[SimpleFunctionDescriptorImpl]
 
 'javaAnalogueDescriptor' @ [306:59] ==> val javaAnalogueDescriptor: LazyJavaClassDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors[LocalVariableDescriptor]
 
-'javaConstructor' @ [306:83] ==> value-parameter javaConstructor: ClassConstructorDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
+'javaConstructor' @ [306:83] ==> value-parameter javaConstructor: (ClassConstructorDescriptor..ClassConstructorDescriptor?) defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.getConstructors.<anonymous>[ValueParameterDescriptorImpl]
 
-'computeJvmDescriptor' @ [306:99] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [306:99] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'WHITE_LIST_CONSTRUCTOR_SIGNATURES' @ [306:127] ==> public final val WHITE_LIST_CONSTRUCTOR_SIGNATURES: Set<String> defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.Companion[PropertyDescriptorImpl]
 
@@ -868,7 +854,7 @@ Inferred types:
 
 'functionDescriptor' @ [320:29] ==> value-parameter functionDescriptor: SimpleFunctionDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.isFunctionAvailable[ValueParameterDescriptorImpl]
 
-'computeJvmDescriptor' @ [320:48] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [320:48] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'javaAnalogueClassDescriptor' @ [321:16] ==> val javaAnalogueClassDescriptor: LazyJavaClassDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.isFunctionAvailable[LocalVariableDescriptor]
 
@@ -888,7 +874,7 @@ Inferred types:
 
 'it' @ [324:28] ==> value-parameter it: SimpleFunctionDescriptor defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.isFunctionAvailable.<anonymous>[ValueParameterDescriptorImpl]
 
-'computeJvmDescriptor' @ [324:31] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin[SimpleFunctionDescriptorImpl]
+'computeJvmDescriptor' @ [324:31] ==> public fun FunctionDescriptor.computeJvmDescriptor(withReturnType: Boolean = ...): String defined in org.jetbrains.kotlin.load.kotlin in file methodSignatureMapping.kt[SimpleFunctionDescriptorImpl]
 
 'jvmDescriptor' @ [324:57] ==> val jvmDescriptor: String defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.isFunctionAvailable[LocalVariableDescriptor]
 
@@ -918,7 +904,9 @@ Inferred types:
 
 'fqName' @ [333:41] ==> value-parameter fqName: FqNameUnsafe defined in org.jetbrains.kotlin.load.kotlin.JvmBuiltInsSettings.Companion.isSerializableInJava[ValueParameterDescriptorImpl]
 
-'JavaToKotlinClassMap' @ [336:31] ==> public object JavaToKotlinClassMap : PlatformToKotlinClassMap defined in org.jetbrains.kotlin.platform in file JavaToKotlinClassMap.kt[FakeCallableDescriptorForObject]
+'?:' @ [336:31] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: ClassId?, right: ClassId): ClassId[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> ClassId
 
 'mapKotlinToJava' @ [336:52] ==> public final fun mapKotlinToJava(kotlinFqName: FqNameUnsafe): ClassId? defined in org.jetbrains.kotlin.platform.JavaToKotlinClassMap[SimpleFunctionDescriptorImpl]
 

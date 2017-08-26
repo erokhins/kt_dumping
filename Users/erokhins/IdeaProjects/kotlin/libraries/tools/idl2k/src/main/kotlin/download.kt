@@ -162,7 +162,7 @@ Inferred types:
 
 'readText' @ [58:41] ==> @InlineOnly public inline fun URL.readText(charset: Charset = ...): String defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
-'extractIDLText' @ [60:21] ==> private fun extractIDLText(url: String, out: Appendable /* = Appendable */): Unit defined in org.jetbrains.idl2k.dl[SimpleFunctionDescriptorImpl]
+'extractIDLText' @ [60:21] ==> private fun extractIDLText(url: String, out: Appendable /* = Appendable */): Unit defined in org.jetbrains.idl2k.dl in file download.kt[SimpleFunctionDescriptorImpl]
 
 'url' @ [60:36] ==> val url: String defined in org.jetbrains.idl2k.dl.main.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -248,6 +248,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jsoup.nodes.Element..org.jsoup.nodes.Element?)
 
+'append' @ [86:71] ==> local final fun append(it: Element): Unit defined in org.jetbrains.idl2k.dl.extractIDLText[SimpleFunctionDescriptorImpl]
+
 'soup' @ [87:5] ==> val soup: (Document..Document?) defined in org.jetbrains.idl2k.dl.extractIDLText[LocalVariableDescriptor]
 
 'select' @ [87:10] ==> public open fun select(p0: (String..String?)): (Elements..Elements?) defined in org.jsoup.nodes.Document[JavaMethodDescriptor]
@@ -256,6 +258,8 @@ Inferred types:
 Inferred types:
     <T> -> (org.jsoup.nodes.Element..org.jsoup.nodes.Element?)
 
+'append' @ [87:44] ==> local final fun append(it: Element): Unit defined in org.jetbrains.idl2k.dl.extractIDLText[SimpleFunctionDescriptorImpl]
+
 'soup' @ [88:5] ==> val soup: (Document..Document?) defined in org.jetbrains.idl2k.dl.extractIDLText[LocalVariableDescriptor]
 
 'select' @ [88:10] ==> public open fun select(p0: (String..String?)): (Elements..Elements?) defined in org.jsoup.nodes.Document[JavaMethodDescriptor]
@@ -263,4 +267,6 @@ Inferred types:
 'forEach' @ [88:29] ==> @HidesMembers public inline fun <T> Iterable<(Element..Element?)>.forEach(action: ((Element..Element?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (org.jsoup.nodes.Element..org.jsoup.nodes.Element?)
+
+'append' @ [88:39] ==> local final fun append(it: Element): Unit defined in org.jetbrains.idl2k.dl.extractIDLText[SimpleFunctionDescriptorImpl]
 

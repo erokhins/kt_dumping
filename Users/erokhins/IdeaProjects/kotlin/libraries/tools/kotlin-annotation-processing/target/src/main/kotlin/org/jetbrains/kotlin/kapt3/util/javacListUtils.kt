@@ -2,7 +2,7 @@
 
 'nil' @ [22:42] ==> public open fun <A : (Any..Any?)> nil(): (List<(R..R?)>..List<(R..R?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> R
+    <A : (Any..Any?)> -> (R..R?)
 
 'nil' @ [24:28] ==> public open fun <A : (Any..Any?)> nil(): (List<(R..R?)>..List<(R..R?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
@@ -33,7 +33,7 @@ Inferred types:
 
 'nil' @ [32:42] ==> public open fun <A : (Any..Any?)> nil(): (List<(R..R?)>..List<(R..R?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> R
+    <A : (Any..Any?)> -> (R..R?)
 
 'nil' @ [34:28] ==> public open fun <A : (Any..Any?)> nil(): (List<(R..R?)>..List<(R..R?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
@@ -74,7 +74,7 @@ Inferred types:
 
 'nil' @ [42:70] ==> public open fun <A : (Any..Any?)> nil(): (List<(T..T?)>..List<(T..T?)>?) defined in com.sun.tools.javac.util.List[JavaMethodDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> T
+    <A : (Any..Any?)> -> (T..T?)
 
 'valuePairs' @ [44:16] ==> value-parameter valuePairs: List<Any>? defined in org.jetbrains.kotlin.kapt3.mapPairedValuesJList[ValueParameterDescriptorImpl]
 

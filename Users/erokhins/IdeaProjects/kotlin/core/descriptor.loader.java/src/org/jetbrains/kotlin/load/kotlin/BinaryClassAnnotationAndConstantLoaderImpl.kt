@@ -54,9 +54,9 @@ Inferred types:
                 "C" -> intValue.toChar()
                 "S" -> intValue.toShort()
                 else -> throw AssertionError(desc)
-            }' @ [56:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {Comparable<{Boolean & Byte & Char & Short}> & java.io.Serializable}, entry1: {Comparable<{Boolean & Byte & Char & Short}> & java.io.Serializable}, entry2: {Comparable<{Boolean & Byte & Char & Short}> & java.io.Serializable}, entry3: {Comparable<{Boolean & Byte & Char & Short}> & java.io.Serializable}, entry4: {Comparable<{Boolean & Byte & Char & Short}> & java.io.Serializable}): {Comparable<{Boolean & Byte & Char & Short}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
+            }' @ [56:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any, entry3: Any, entry4: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {Comparable<{Boolean & Byte & Char & Short}> & java.io.Serializable}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
 
 'desc' @ [56:19] ==> value-parameter desc: String defined in org.jetbrains.kotlin.load.kotlin.BinaryClassAnnotationAndConstantLoaderImpl.loadConstant[ValueParameterDescriptorImpl]
 

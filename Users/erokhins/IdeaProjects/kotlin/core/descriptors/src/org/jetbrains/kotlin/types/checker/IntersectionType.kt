@@ -1,4 +1,4 @@
-'intersectTypes' @ [24:60] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'intersectTypes' @ [24:60] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker in file IntersectionType.kt[SimpleFunctionDescriptorImpl]
 
 'types' @ [24:75] ==> value-parameter types: Collection<KotlinType> defined in org.jetbrains.kotlin.types.checker.intersectWrappedTypes[ValueParameterDescriptorImpl]
 
@@ -11,7 +11,7 @@ Inferred types:
 
 'unwrap' @ [24:90] ==> public abstract fun unwrap(): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinType[SimpleFunctionDescriptorImpl]
 
-'intersectTypes' @ [27:47] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker[SimpleFunctionDescriptorImpl]
+'intersectTypes' @ [27:47] ==> public fun intersectTypes(types: List<UnwrappedType>): UnwrappedType defined in org.jetbrains.kotlin.types.checker in file IntersectionType.kt[SimpleFunctionDescriptorImpl]
 
 'types' @ [27:62] ==> value-parameter types: List<SimpleType> defined in org.jetbrains.kotlin.types.checker.intersectTypes[ValueParameterDescriptorImpl]
 
@@ -108,13 +108,9 @@ Inferred types:
 
 'flexibleType' @ [64:30] ==> @JvmStatic public final fun flexibleType(lowerBound: SimpleType, upperBound: SimpleType): UnwrappedType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
-'TypeIntersector' @ [64:43] ==> public object TypeIntersector defined in org.jetbrains.kotlin.types.checker in file IntersectionType.kt[FakeCallableDescriptorForObject]
-
 'intersectTypes' @ [64:59] ==> internal final fun intersectTypes(types: List<SimpleType>): SimpleType defined in org.jetbrains.kotlin.types.checker.TypeIntersector[SimpleFunctionDescriptorImpl]
 
 'lowerBounds' @ [64:74] ==> val lowerBounds: List<SimpleType> defined in org.jetbrains.kotlin.types.checker.intersectTypes[LocalVariableDescriptor]
-
-'TypeIntersector' @ [64:88] ==> public object TypeIntersector defined in org.jetbrains.kotlin.types.checker in file IntersectionType.kt[FakeCallableDescriptorForObject]
 
 'intersectTypes' @ [64:104] ==> internal final fun intersectTypes(types: List<SimpleType>): SimpleType defined in org.jetbrains.kotlin.types.checker.TypeIntersector[SimpleFunctionDescriptorImpl]
 
@@ -197,7 +193,7 @@ Inferred types:
 
 'inputTypes' @ [85:33] ==> val inputTypes: ArrayList<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypes[LocalVariableDescriptor]
 
-'fold' @ [85:44] ==> public inline fun <T, R> Iterable<SimpleType>.fold(initial: TypeIntersector.ResultNullability, operation: (TypeIntersector.ResultNullability, SimpleType) -> TypeIntersector.ResultNullability): TypeIntersector.ResultNullability defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [85:44] ==> public inline fun <T, R> Iterable<SimpleType>.fold(initial: TypeIntersector.ResultNullability, operation: (acc: TypeIntersector.ResultNullability, SimpleType) -> TypeIntersector.ResultNullability): TypeIntersector.ResultNullability defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> SimpleType
     <R> -> ResultNullability
@@ -205,6 +201,8 @@ Inferred types:
 'START' @ [85:67] ==> enum entry START defined in org.jetbrains.kotlin.types.checker.TypeIntersector.ResultNullability[FakeCallableDescriptorForObject]
 
 'ResultNullability' @ [85:74] ==> private constructor ResultNullability() defined in org.jetbrains.kotlin.types.checker.TypeIntersector.ResultNullability[ClassConstructorDescriptorImpl]
+
+'combine' @ [85:93] ==> public abstract fun combine(nextType: UnwrappedType): TypeIntersector.ResultNullability defined in org.jetbrains.kotlin.types.checker.TypeIntersector.ResultNullability[SimpleFunctionDescriptorImpl]
 
 'inputTypes' @ [93:34] ==> val inputTypes: ArrayList<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypes[LocalVariableDescriptor]
 
@@ -248,59 +246,59 @@ Inferred types:
 
 'ArrayList' @ [106:42] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (SimpleType..SimpleType?)>..Collection<(SimpleType..SimpleType?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> SimpleType
+    <E : (Any..Any?)> -> (org.jetbrains.kotlin.types.SimpleType..org.jetbrains.kotlin.types.SimpleType?)
 
 'inputTypes' @ [106:52] ==> value-parameter inputTypes: Set<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[ValueParameterDescriptorImpl]
 
-'filteredSuperAndEqualTypes' @ [107:24] ==> val filteredSuperAndEqualTypes: ArrayList<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'filteredSuperAndEqualTypes' @ [107:24] ==> val filteredSuperAndEqualTypes: ArrayList<(SimpleType..SimpleType?)> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
-'iterator' @ [107:51] ==> public open fun iterator(): MutableIterator<SimpleType> defined in java.util.ArrayList[JavaMethodDescriptor]
+'iterator' @ [107:51] ==> public open fun iterator(): MutableIterator<(SimpleType..SimpleType?)> defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'iterator' @ [108:16] ==> val iterator: MutableIterator<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'iterator' @ [108:16] ==> val iterator: MutableIterator<(SimpleType..SimpleType?)> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
 'hasNext' @ [108:25] ==> public abstract fun hasNext(): Boolean defined in kotlin.collections.MutableIterator[DeserializedSimpleFunctionDescriptor]
 
-'iterator' @ [109:25] ==> val iterator: MutableIterator<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'iterator' @ [109:25] ==> val iterator: MutableIterator<(SimpleType..SimpleType?)> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
-'next' @ [109:34] ==> public abstract fun next(): SimpleType defined in kotlin.collections.MutableIterator[DeserializedSimpleFunctionDescriptor]
+'next' @ [109:34] ==> public abstract fun next(): (SimpleType..SimpleType?) defined in kotlin.collections.MutableIterator[DeserializedSimpleFunctionDescriptor]
 
-'filteredSuperAndEqualTypes' @ [110:45] ==> val filteredSuperAndEqualTypes: ArrayList<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'filteredSuperAndEqualTypes' @ [110:45] ==> val filteredSuperAndEqualTypes: ArrayList<(SimpleType..SimpleType?)> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
-'any' @ [110:72] ==> public inline fun <T> Iterable<SimpleType>.any(predicate: (SimpleType) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'any' @ [110:72] ==> public inline fun <T> Iterable<(SimpleType..SimpleType?)>.any(predicate: ((SimpleType..SimpleType?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SimpleType
+    <T> -> (org.jetbrains.kotlin.types.SimpleType..org.jetbrains.kotlin.types.SimpleType?)
 
-'lower' @ [111:17] ==> value-parameter lower: SimpleType defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType.<anonymous>[ValueParameterDescriptorImpl]
+'lower' @ [111:17] ==> value-parameter lower: (SimpleType..SimpleType?) defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType.<anonymous>[ValueParameterDescriptorImpl]
 
-'upper' @ [111:27] ==> val upper: SimpleType defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'upper' @ [111:27] ==> val upper: (SimpleType..SimpleType?) defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
 'isStrictSupertype' @ [111:37] ==> private final fun isStrictSupertype(subtype: KotlinType, supertype: KotlinType): Boolean defined in org.jetbrains.kotlin.types.checker.TypeIntersector[SimpleFunctionDescriptorImpl]
 
-'lower' @ [111:55] ==> value-parameter lower: SimpleType defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType.<anonymous>[ValueParameterDescriptorImpl]
+'lower' @ [111:55] ==> value-parameter lower: (SimpleType..SimpleType?) defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType.<anonymous>[ValueParameterDescriptorImpl]
 
-'upper' @ [111:62] ==> val upper: SimpleType defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'upper' @ [111:62] ==> val upper: (SimpleType..SimpleType?) defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
 'NewKotlinTypeChecker' @ [111:72] ==> public object NewKotlinTypeChecker : KotlinTypeChecker defined in org.jetbrains.kotlin.types.checker in file NewKotlinTypeChecker.kt[FakeCallableDescriptorForObject]
 
 'equalTypes' @ [111:93] ==> public open fun equalTypes(a: KotlinType, b: KotlinType): Boolean defined in org.jetbrains.kotlin.types.checker.NewKotlinTypeChecker[SimpleFunctionDescriptorImpl]
 
-'lower' @ [111:104] ==> value-parameter lower: SimpleType defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType.<anonymous>[ValueParameterDescriptorImpl]
+'lower' @ [111:104] ==> value-parameter lower: (SimpleType..SimpleType?) defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType.<anonymous>[ValueParameterDescriptorImpl]
 
-'upper' @ [111:111] ==> val upper: SimpleType defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'upper' @ [111:111] ==> val upper: (SimpleType..SimpleType?) defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
 'strictSupertypeOrHasEqual' @ [114:17] ==> val strictSupertypeOrHasEqual: Boolean defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
-'iterator' @ [114:44] ==> val iterator: MutableIterator<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'iterator' @ [114:44] ==> val iterator: MutableIterator<(SimpleType..SimpleType?)> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
 'remove' @ [114:53] ==> public abstract fun remove(): Unit defined in kotlin.collections.MutableIterator[DeserializedSimpleFunctionDescriptor]
 
 'assert' @ [117:9] ==> @InlineOnly public inline fun assert(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'filteredSuperAndEqualTypes' @ [117:16] ==> val filteredSuperAndEqualTypes: ArrayList<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'filteredSuperAndEqualTypes' @ [117:16] ==> val filteredSuperAndEqualTypes: ArrayList<(SimpleType..SimpleType?)> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
-'isNotEmpty' @ [117:43] ==> @InlineOnly public inline fun <T> Collection<SimpleType>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'isNotEmpty' @ [117:43] ==> @InlineOnly public inline fun <T> Collection<(SimpleType..SimpleType?)>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SimpleType
+    <T> -> (org.jetbrains.kotlin.types.SimpleType..org.jetbrains.kotlin.types.SimpleType?)
 
 'inputTypes' @ [118:63] ==> value-parameter inputTypes: Set<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[ValueParameterDescriptorImpl]
 
@@ -308,15 +306,15 @@ Inferred types:
 Inferred types:
     <T> -> SimpleType
 
-'filteredSuperAndEqualTypes' @ [121:13] ==> val filteredSuperAndEqualTypes: ArrayList<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'filteredSuperAndEqualTypes' @ [121:13] ==> val filteredSuperAndEqualTypes: ArrayList<(SimpleType..SimpleType?)> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
 'size' @ [121:40] ==> public open val size: Int defined in java.util.ArrayList[JavaPropertyDescriptor]
 
-'filteredSuperAndEqualTypes' @ [121:57] ==> val filteredSuperAndEqualTypes: ArrayList<SimpleType> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
+'filteredSuperAndEqualTypes' @ [121:57] ==> val filteredSuperAndEqualTypes: ArrayList<(SimpleType..SimpleType?)> defined in org.jetbrains.kotlin.types.checker.TypeIntersector.intersectTypesWithoutIntersectionType[LocalVariableDescriptor]
 
-'single' @ [121:84] ==> public fun <T> List<SimpleType>.single(): SimpleType defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'single' @ [121:84] ==> public fun <T> List<(SimpleType..SimpleType?)>.single(): (SimpleType..SimpleType?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SimpleType
+    <T> -> (org.jetbrains.kotlin.types.SimpleType..org.jetbrains.kotlin.types.SimpleType?)
 
 'IntersectionTypeConstructor' @ [123:27] ==> public constructor IntersectionTypeConstructor(typesToIntersect: (MutableCollection<(KotlinType..KotlinType?)>..Collection<(KotlinType..KotlinType?)>?)) defined in org.jetbrains.kotlin.types.IntersectionTypeConstructor[JavaClassConstructorDescriptor]
 
@@ -325,8 +323,6 @@ Inferred types:
 'KotlinTypeFactory' @ [124:16] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
 'simpleType' @ [124:34] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean, memberScope: MemberScope): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
-
-'Annotations' @ [124:45] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [124:57] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 

@@ -35,19 +35,19 @@ Inferred types:
 
 'typeSignature' @ [49:27] ==> public val Type.typeSignature: String defined in org.jetbrains.idl2k in file model.kt[PropertyDescriptorImpl]
 
-'standardTypes' @ [51:96] ==> public fun standardTypes(): Set<Type> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'standardTypes' @ [51:96] ==> public fun standardTypes(): Set<Type> defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'copy' @ [51:115] ==> public final fun copy(name: String = ..., type: Type = ..., initializer: String? = ..., getterSetterNoImpl: Boolean = ..., kind: AttributeKind = ..., override: Boolean = ..., vararg: Boolean = ..., static: Boolean = ..., required: Boolean = ...): GenerateAttribute defined in org.jetbrains.idl2k.GenerateAttribute[SimpleFunctionDescriptorImpl]
 
 'type' @ [51:127] ==> public final val type: Type defined in org.jetbrains.idl2k.GenerateAttribute[PropertyDescriptorImpl]
 
-'dynamicIfUnknownType' @ [51:132] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [51:132] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [51:153] ==> value-parameter allTypes: Set<String> defined in org.jetbrains.idl2k.dynamicIfUnknownType[ValueParameterDescriptorImpl]
 
 'standardTypes' @ [51:163] ==> value-parameter standardTypes: Set<Type> = ... defined in org.jetbrains.idl2k.dynamicIfUnknownType[ValueParameterDescriptorImpl]
 
-'standardTypes' @ [52:102] ==> public fun standardTypes(): Set<Type> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'standardTypes' @ [52:102] ==> public fun standardTypes(): Set<Type> defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [52:121] ==> public inline fun <T, R> Iterable<GenerateAttribute>.map(transform: (GenerateAttribute) -> GenerateAttribute): List<GenerateAttribute> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -56,7 +56,7 @@ Inferred types:
 
 'it' @ [52:127] ==> value-parameter it: GenerateAttribute defined in org.jetbrains.idl2k.dynamicIfUnknownType.<anonymous>[ValueParameterDescriptorImpl]
 
-'dynamicIfUnknownType' @ [52:130] ==> public fun GenerateAttribute.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): GenerateAttribute defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [52:130] ==> public fun GenerateAttribute.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): GenerateAttribute defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [52:151] ==> value-parameter allTypes: Set<String> defined in org.jetbrains.idl2k.dynamicIfUnknownType[ValueParameterDescriptorImpl]
 
@@ -81,7 +81,7 @@ Inferred types:
 
 'name' @ [91:74] ==> public final val name: String defined in org.jetbrains.idl2k.GenerateFunction[PropertyDescriptorImpl]
 
-'standardTypes' @ [93:69] ==> public fun standardTypes(): Set<Type> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'standardTypes' @ [93:69] ==> public fun standardTypes(): Set<Type> defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'let' @ [93:85] ==> @InlineOnly public inline fun <T, R> Set<Type>.let(block: (Set<Type>) -> GenerateFunction): GenerateFunction defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -92,7 +92,7 @@ Inferred types:
 
 'returnType' @ [94:23] ==> public final val returnType: Type defined in org.jetbrains.idl2k.GenerateFunction[PropertyDescriptorImpl]
 
-'dynamicIfUnknownType' @ [94:34] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [94:34] ==> public fun Type.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): Type defined in org.jetbrains.idl2k in file typeMappings.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [94:55] ==> value-parameter allTypes: Set<String> defined in org.jetbrains.idl2k.dynamicIfUnknownType[ValueParameterDescriptorImpl]
 
@@ -107,7 +107,7 @@ Inferred types:
 
 'it' @ [94:109] ==> value-parameter it: GenerateAttribute defined in org.jetbrains.idl2k.dynamicIfUnknownType.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'dynamicIfUnknownType' @ [94:112] ==> public fun GenerateAttribute.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): GenerateAttribute defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'dynamicIfUnknownType' @ [94:112] ==> public fun GenerateAttribute.dynamicIfUnknownType(allTypes: Set<String>, standardTypes: Set<Type> = ...): GenerateAttribute defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
 'allTypes' @ [94:133] ==> value-parameter allTypes: Set<String> defined in org.jetbrains.idl2k.dynamicIfUnknownType[ValueParameterDescriptorImpl]
 
@@ -127,7 +127,7 @@ Inferred types:
 
 'this' @ [98:63] ==> <this> defined in org.jetbrains.idl2k.hasExtendedAttribute[ReceiverParameterDescriptorImpl]
 
-'findExtendedAttributes' @ [98:69] ==> public fun InterfaceDefinition.findExtendedAttributes(name: String): List<ExtendedAttribute> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'findExtendedAttributes' @ [98:69] ==> public fun InterfaceDefinition.findExtendedAttributes(name: String): List<ExtendedAttribute> defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [98:92] ==> value-parameter name: String defined in org.jetbrains.idl2k.hasExtendedAttribute[ValueParameterDescriptorImpl]
 
@@ -135,5 +135,5 @@ Inferred types:
 Inferred types:
     <T> -> ExtendedAttribute
 
-'findExtendedAttributes' @ [99:46] ==> public fun InterfaceDefinition.findExtendedAttributes(name: String): List<ExtendedAttribute> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'findExtendedAttributes' @ [99:46] ==> public fun InterfaceDefinition.findExtendedAttributes(name: String): List<ExtendedAttribute> defined in org.jetbrains.idl2k in file model.kt[SimpleFunctionDescriptorImpl]
 

@@ -6,7 +6,7 @@ Inferred types:
 
 'getAnnotation' @ [39:32] ==> public open fun <A : (Annotation..Annotation?)> getAnnotation(p0: (Class<(Metadata..Metadata?)>..Class<(Metadata..Metadata?)>?)): (Metadata..Metadata?) defined in java.lang.Class[JavaMethodDescriptor]
 Inferred types:
-    <A : (Annotation..Annotation?)> -> Metadata
+    <A : (Annotation..Annotation?)> -> (kotlin.Metadata..kotlin.Metadata?)
 
 'Metadata' @ [39:46] ==> public constructor Metadata(k: Int = ..., mv: IntArray = ..., bv: IntArray = ..., d1: Array<String> = ..., d2: Array<String> = ..., xs: String = ..., xi: Int = ...) defined in kotlin.Metadata[DeserializedClassConstructorDescriptor]
 
@@ -22,9 +22,13 @@ Inferred types:
 Inferred types:
     <T> -> Array<String>
 
-'Array' @ [40:41] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [40:41] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@51f29518
+
+'isEmpty' @ [40:56] ==> @InlineOnly public inline fun <T> Array<out String>.isEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> String
 
 'decodeBytes' @ [41:29] ==> @NotNull public open fun decodeBytes(@NotNull data: (Array<(String..String?)>..Array<out (String..String?)>)): ByteArray defined in org.jetbrains.kotlin.serialization.jvm.BitEncoding[JavaMethodDescriptor]
 
@@ -35,8 +39,6 @@ Inferred types:
 'parseDelimitedFrom' @ [42:57] ==> public open fun parseDelimitedFrom(input: (InputStream..InputStream?), extensionRegistry: (ExtensionRegistryLite..ExtensionRegistryLite?)): (JvmProtoBuf.StringTableTypes..JvmProtoBuf.StringTableTypes?) defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBuf.StringTableTypes[JavaMethodDescriptor]
 
 'input' @ [42:76] ==> val input: ByteArrayInputStream defined in kotlin.reflect.jvm.reflect[LocalVariableDescriptor]
-
-'JvmProtoBufUtil' @ [42:83] ==> public object JvmProtoBufUtil defined in org.jetbrains.kotlin.serialization.jvm in file JvmProtoBufUtil.kt[FakeCallableDescriptorForObject]
 
 'EXTENSION_REGISTRY' @ [42:99] ==> public final val EXTENSION_REGISTRY: ExtensionRegistryLite defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil[PropertyDescriptorImpl]
 
@@ -51,8 +53,6 @@ Inferred types:
 'parseFrom' @ [44:35] ==> public open fun parseFrom(input: (InputStream..InputStream?), extensionRegistry: (ExtensionRegistryLite..ExtensionRegistryLite?)): (ProtoBuf.Function..ProtoBuf.Function?) defined in org.jetbrains.kotlin.serialization.ProtoBuf.Function[JavaMethodDescriptor]
 
 'input' @ [44:45] ==> val input: ByteArrayInputStream defined in kotlin.reflect.jvm.reflect[LocalVariableDescriptor]
-
-'JvmProtoBufUtil' @ [44:52] ==> public object JvmProtoBufUtil defined in org.jetbrains.kotlin.serialization.jvm in file JvmProtoBufUtil.kt[FakeCallableDescriptorForObject]
 
 'EXTENSION_REGISTRY' @ [44:68] ==> public final val EXTENSION_REGISTRY: ExtensionRegistryLite defined in org.jetbrains.kotlin.serialization.jvm.JvmProtoBufUtil[PropertyDescriptorImpl]
 
@@ -76,6 +76,8 @@ Inferred types:
 'typeTable' @ [46:94] ==> public final val ProtoBuf.Function.typeTable: (ProtoBuf.TypeTable..ProtoBuf.TypeTable?)[MyPropertyDescriptor]
 
 'MemberDeserializer' @ [46:106] ==> public constructor MemberDeserializer(c: DeserializationContext) defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer[ClassConstructorDescriptorImpl]
+
+'loadFunction' @ [46:126] ==> public final fun loadFunction(proto: ProtoBuf.Function): SimpleFunctionDescriptor defined in org.jetbrains.kotlin.serialization.deserialization.MemberDeserializer[SimpleFunctionDescriptorImpl]
 
 'Suppress' @ [49:5] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 

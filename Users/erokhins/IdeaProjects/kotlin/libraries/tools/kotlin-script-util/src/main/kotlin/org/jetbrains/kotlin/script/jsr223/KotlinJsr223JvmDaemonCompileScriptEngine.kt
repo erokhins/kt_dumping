@@ -4,17 +4,17 @@
 
 'factory' @ [48:37] ==> value-parameter factory: ScriptEngineFactory defined in org.jetbrains.kotlin.script.jsr223.KotlinJsr223JvmDaemonCompileScriptEngine.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [50:27] ==> public fun <T> lazy(initializer: () -> CompileService): Lazy<CompileService> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [50:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompileService
+    <T> -> T
 
 'connectToCompileService' @ [50:34] ==> private final fun connectToCompileService(compilerJar: File): CompileService defined in org.jetbrains.kotlin.script.jsr223.KotlinJsr223JvmDaemonCompileScriptEngine[SimpleFunctionDescriptorImpl]
 
 'compilerJar' @ [50:58] ==> value-parameter compilerJar: File defined in org.jetbrains.kotlin.script.jsr223.KotlinJsr223JvmDaemonCompileScriptEngine.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [52:34] ==> public fun <T> lazy(initializer: () -> KotlinRemoteReplCompilerClient): Lazy<KotlinRemoteReplCompilerClient> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [52:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KotlinRemoteReplCompilerClient
+    <T> -> T
 
 'daemon' @ [53:9] ==> private final val daemon: CompileService defined in org.jetbrains.kotlin.script.jsr223.KotlinJsr223JvmDaemonCompileScriptEngine[PropertyDescriptorImpl]
 
@@ -28,8 +28,6 @@ Inferred types:
 'it' @ [55:21] ==> value-parameter it: CompileService defined in org.jetbrains.kotlin.script.jsr223.KotlinJsr223JvmDaemonCompileScriptEngine.replCompiler.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'makeAutodeletingFlagFile' @ [56:21] ==> public fun makeAutodeletingFlagFile(keyword: String = ..., baseDir: File? = ...): File defined in org.jetbrains.kotlin.daemon.common[DeserializedSimpleFunctionDescriptor]
-
-'CompileService' @ [57:21] ==> public companion object defined in org.jetbrains.kotlin.daemon.common.CompileService[FakeCallableDescriptorForObject]
 
 'JVM' @ [57:51] ==> enum entry JVM defined in org.jetbrains.kotlin.daemon.common.CompileService.TargetPlatform[FakeCallableDescriptorForObject]
 
@@ -49,9 +47,9 @@ Inferred types:
 
 'templateClassName' @ [61:21] ==> value-parameter templateClassName: String defined in org.jetbrains.kotlin.script.jsr223.KotlinJsr223JvmDaemonCompileScriptEngine.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [66:27] ==> public fun <T> lazy(initializer: () -> GenericReplCompilingEvaluator): Lazy<GenericReplCompilingEvaluator> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [66:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> GenericReplCompilingEvaluator
+    <T> -> T
 
 'GenericReplCompilingEvaluator' @ [66:34] ==> public constructor GenericReplCompilingEvaluator(compiler: ReplCompiler, baseClasspath: Iterable<File>, baseClassloader: ClassLoader? = ..., fallbackScriptArgs: ScriptArgsWithTypes? = ..., repeatingMode: ReplRepeatingMode = ...) defined in org.jetbrains.kotlin.cli.common.repl.GenericReplCompilingEvaluator[DeserializedClassConstructorDescriptor]
 
@@ -101,7 +99,9 @@ Inferred types:
 Inferred types:
     <T> -> DaemonReportMessage
 
-'KotlinCompilerClient' @ [83:16] ==> public object KotlinCompilerClient defined in org.jetbrains.kotlin.daemon.client[FakeCallableDescriptorForObject]
+'?:' @ [83:16] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: CompileService?, right: CompileService): CompileService[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> CompileService
 
 'connectToCompileService' @ [83:37] ==> public final fun connectToCompileService(compilerId: CompilerId, daemonJVMOptions: DaemonJVMOptions, daemonOptions: DaemonOptions, reportingTargets: DaemonReportingTargets, autostart: Boolean = ..., checkId: Boolean = ...): CompileService? defined in org.jetbrains.kotlin.daemon.client.KotlinCompilerClient[DeserializedSimpleFunctionDescriptor]
 

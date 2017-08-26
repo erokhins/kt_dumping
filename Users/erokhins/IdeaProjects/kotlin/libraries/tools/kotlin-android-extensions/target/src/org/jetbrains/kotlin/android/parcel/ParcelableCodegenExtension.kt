@@ -651,8 +651,6 @@ Inferred types:
 
 'newField' @ [214:19] ==> @NotNull public abstract fun newField(@NotNull p0: JvmDeclarationOrigin, p1: Int, @NotNull p2: String, @NotNull p3: String, @Nullable p4: String?, @Nullable p5: Any?): FieldVisitor defined in org.jetbrains.kotlin.codegen.ClassBuilder[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [214:28] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [214:49] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'ACC_STATIC' @ [214:60] ==> public const final val ACC_STATIC: Int defined in org.jetbrains.org.objectweb.asm.Opcodes[JavaPropertyDescriptor]
@@ -689,8 +687,6 @@ Inferred types:
 
 'identifier' @ [230:61] ==> @NotNull public open fun identifier(@NotNull p0: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
 
-'Modality' @ [230:84] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [230:93] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'CLASS' @ [230:110] ==> enum entry CLASS defined in org.jetbrains.kotlin.descriptors.ClassKind[FakeCallableDescriptorForObject]
@@ -706,8 +702,6 @@ Inferred types:
 'creatorClass' @ [233:9] ==> val creatorClass: ClassDescriptorImpl defined in org.jetbrains.kotlin.android.parcel.ParcelableCodegenExtension.writeCreatorClass[LocalVariableDescriptor]
 
 'initialize' @ [233:22] ==> public final fun initialize(@NotNull p0: MemberScope, @NotNull p1: (MutableSet<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>..Set<(ClassConstructorDescriptor..ClassConstructorDescriptor?)>), @Nullable p2: ClassConstructorDescriptor?): Unit defined in org.jetbrains.kotlin.descriptors.impl.ClassDescriptorImpl[JavaMethodDescriptor]
-
-'MemberScope' @ [234:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
 'Empty' @ [234:29] ==> public object Empty : MemberScopeImpl defined in org.jetbrains.kotlin.resolve.scopes.MemberScope[FakeCallableDescriptorForObject]
 
@@ -731,8 +725,6 @@ Inferred types:
 
 'newVisitor' @ [237:60] ==> @NotNull public open fun newVisitor(@NotNull p0: JvmDeclarationOrigin, @NotNull p1: Type, @NotNull p2: PsiFile): ClassBuilder defined in org.jetbrains.kotlin.codegen.ClassFileFactory[JavaMethodDescriptor]
 
-'JvmDeclarationOrigin' @ [238:17] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
-
 'NO_ORIGIN' @ [238:38] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 
 'getObjectType' @ [239:22] ==> public open fun getObjectType(p0: (String..String?)): (Type..Type?) defined in org.jetbrains.org.objectweb.asm.Type[JavaMethodDescriptor]
@@ -755,8 +747,6 @@ Inferred types:
 
 'creatorClass' @ [243:37] ==> val creatorClass: ClassDescriptorImpl defined in org.jetbrains.kotlin.android.parcel.ParcelableCodegenExtension.writeCreatorClass[LocalVariableDescriptor]
 
-'OwnerKind' @ [243:51] ==> public companion object defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
-
 'IMPLEMENTATION' @ [243:61] ==> enum entry IMPLEMENTATION defined in org.jetbrains.kotlin.codegen.OwnerKind[FakeCallableDescriptorForObject]
 
 'codegen' @ [243:77] ==> value-parameter codegen: ImplementationBodyCodegen defined in org.jetbrains.kotlin.android.parcel.ParcelableCodegenExtension.writeCreatorClass[ValueParameterDescriptorImpl]
@@ -765,7 +755,7 @@ Inferred types:
 
 'parentContext' @ [243:93] ==> public final val <T : (DeclarationDescriptor..DeclarationDescriptor?)> FieldOwnerContext<out (DeclarationDescriptor..DeclarationDescriptor?)>.parentContext: raw (CodegenContext<(DeclarationDescriptor..DeclarationDescriptor?)>?..CodegenContext<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> (org.jetbrains.kotlin.descriptors.DeclarationDescriptor..org.jetbrains.kotlin.descriptors.DeclarationDescriptor?)
+    <T : (DeclarationDescriptor..DeclarationDescriptor?)> -> Captured(*)
 
 'ImplementationBodyCodegen' @ [244:33] ==> public constructor ImplementationBodyCodegen(@NotNull p0: KtPureClassOrObject, @NotNull p1: ClassContext, @NotNull p2: ClassBuilder, @NotNull p3: GenerationState, @Nullable p4: MemberCodegen<*>?, p5: Boolean) defined in org.jetbrains.kotlin.codegen.ImplementationBodyCodegen[JavaClassConstructorDescriptor]
 
@@ -1071,8 +1061,6 @@ Inferred types:
 'functionCodegen' @ [314:17] ==> public final val functionCodegen: (FunctionCodegen..FunctionCodegen?) defined in org.jetbrains.kotlin.codegen.ImplementationBodyCodegen[JavaPropertyDescriptor]
 
 'generateMethod' @ [314:33] ==> public open fun generateMethod(@NotNull p0: JvmDeclarationOrigin, @NotNull p1: FunctionDescriptor, @NotNull p2: FunctionGenerationStrategy): Unit defined in org.jetbrains.kotlin.codegen.FunctionCodegen[JavaMethodDescriptor]
-
-'JvmDeclarationOrigin' @ [314:48] ==> public companion object defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin[FakeCallableDescriptorForObject]
 
 'NO_ORIGIN' @ [314:69] ==> @field:JvmField public final val NO_ORIGIN: JvmDeclarationOrigin defined in org.jetbrains.kotlin.resolve.jvm.diagnostics.JvmDeclarationOrigin.Companion[DeserializedPropertyDescriptor]
 

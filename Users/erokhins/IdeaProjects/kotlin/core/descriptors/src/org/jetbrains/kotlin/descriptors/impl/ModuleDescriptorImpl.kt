@@ -1,13 +1,11 @@
 'JvmOverloads' @ [31:28] ==> public constructor JvmOverloads() defined in kotlin.jvm.JvmOverloads[DeserializedClassConstructorDescriptor]
 
-'emptyMap' @ [37:67] ==> public fun <K, V> emptyMap(): Map<ModuleDescriptor.Capability<*>, Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [37:67] ==> public fun <K, V> emptyMap(): Map<ModuleDescriptor.Capability<*>, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Capability<*>
-    <V> -> Nothing
+    <V> -> Any?
 
 'DeclarationDescriptorImpl' @ [38:5] ==> public constructor DeclarationDescriptorImpl(@NotNull annotations: Annotations, @NotNull name: Name) defined in org.jetbrains.kotlin.descriptors.impl.DeclarationDescriptorImpl[JavaClassConstructorDescriptor]
-
-'Annotations' @ [38:31] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
 'EMPTY' @ [38:43] ==> public final val EMPTY: Annotations defined in org.jetbrains.kotlin.descriptors.annotations.Annotations.Companion[PropertyDescriptorImpl]
 
@@ -43,10 +41,10 @@ Inferred types:
 
 'it' @ [45:115] ==> value-parameter it: MultiTargetPlatform defined in org.jetbrains.kotlin.descriptors.impl.ModuleDescriptorImpl.capabilities.<anonymous>[ValueParameterDescriptorImpl]
 
-'emptyMap' @ [45:124] ==> public fun <K, V> emptyMap(): Map<ModuleDescriptor.Capability<*>, MultiTargetPlatform> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [45:124] ==> public fun <K, V> emptyMap(): Map<ModuleDescriptor.Capability<out Any?>, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> Capability<*>
-    <V> -> MultiTargetPlatform
+    <K> -> Capability<out Any?>
+    <V> -> Any?
 
 'field' @ [52:13] ==> var field: Boolean defined in org.jetbrains.kotlin.descriptors.impl.ModuleDescriptorImpl.<set-isValid>[SyntheticFieldDescriptor]
 
@@ -131,9 +129,9 @@ Inferred types:
 
 'nameFilter' @ [81:65] ==> value-parameter nameFilter: (Name) -> Boolean defined in org.jetbrains.kotlin.descriptors.impl.ModuleDescriptorImpl.getSubPackagesOf[ValueParameterDescriptorImpl]
 
-'lazy' @ [84:74] ==> public fun <T> lazy(initializer: () -> CompositePackageFragmentProvider): Lazy<CompositePackageFragmentProvider> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [84:74] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CompositePackageFragmentProvider
+    <T> -> T
 
 'dependencies' @ [85:34] ==> private final var dependencies: ModuleDependencies? defined in org.jetbrains.kotlin.descriptors.impl.ModuleDescriptorImpl[PropertyDescriptorImpl]
 
@@ -264,7 +262,7 @@ Inferred types:
 
 'Suppress' @ [140:5] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'capabilities' @ [141:82] ==> private final val capabilities: Map<ModuleDescriptor.Capability<*>, Any?> defined in org.jetbrains.kotlin.descriptors.impl.ModuleDescriptorImpl[PropertyDescriptorImpl]
+'capabilities' @ [141:82] ==> private final val capabilities: Map<ModuleDescriptor.Capability<out Any?>, Any?> defined in org.jetbrains.kotlin.descriptors.impl.ModuleDescriptorImpl[PropertyDescriptorImpl]
 
 'capability' @ [141:95] ==> value-parameter capability: ModuleDescriptor.Capability<T> defined in org.jetbrains.kotlin.descriptors.impl.ModuleDescriptorImpl.getCapability[ValueParameterDescriptorImpl]
 

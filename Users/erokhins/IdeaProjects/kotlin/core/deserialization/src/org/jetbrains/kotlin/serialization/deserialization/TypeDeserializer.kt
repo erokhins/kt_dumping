@@ -33,9 +33,9 @@ Inferred types:
                 result[proto.id] = DeserializedTypeParameterDescriptor(c, proto, index)
             }
             result
-        }' @ [47:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<Int, TypeParameterDescriptor>, elseBranch: Map<Int, TypeParameterDescriptor>): Map<Int, TypeParameterDescriptor>[SimpleFunctionDescriptorImpl]
+        }' @ [47:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<(Int..Int?), (TypeParameterDescriptor..TypeParameterDescriptor?)>, elseBranch: Map<(Int..Int?), (TypeParameterDescriptor..TypeParameterDescriptor?)>): Map<(Int..Int?), (TypeParameterDescriptor..TypeParameterDescriptor?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<Int, TypeParameterDescriptor>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<(kotlin.Int..kotlin.Int?), (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)>
 
 'typeParameterProtos' @ [47:13] ==> value-parameter typeParameterProtos: List<ProtoBuf.TypeParameter> defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.<init>[ValueParameterDescriptorImpl]
 
@@ -77,13 +77,13 @@ Inferred types:
 
 'result' @ [55:13] ==> val result: LinkedHashMap<Int, TypeParameterDescriptor> defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.typeParameterDescriptors[LocalVariableDescriptor]
 
-'typeParameterDescriptors' @ [59:21] ==> private final val typeParameterDescriptors: Map<Int, TypeParameterDescriptor> defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer[PropertyDescriptorImpl]
+'typeParameterDescriptors' @ [59:21] ==> private final val typeParameterDescriptors: Map<(Int..Int?), (TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer[PropertyDescriptorImpl]
 
-'values' @ [59:46] ==> public abstract val values: Collection<TypeParameterDescriptor> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
+'values' @ [59:46] ==> public abstract val values: Collection<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
-'toList' @ [59:53] ==> public fun <T> Iterable<TypeParameterDescriptor>.toList(): List<TypeParameterDescriptor> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toList' @ [59:53] ==> public fun <T> Iterable<(TypeParameterDescriptor..TypeParameterDescriptor?)>.toList(): List<(TypeParameterDescriptor..TypeParameterDescriptor?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TypeParameterDescriptor
+    <T> -> (org.jetbrains.kotlin.descriptors.TypeParameterDescriptor..org.jetbrains.kotlin.descriptors.TypeParameterDescriptor?)
 
 'Annotations' @ [62:73] ==> public companion object defined in org.jetbrains.kotlin.descriptors.annotations.Annotations[FakeCallableDescriptorForObject]
 
@@ -308,8 +308,6 @@ Inferred types:
 
 'nullable' @ [102:82] ==> public final val ProtoBuf.Type.nullable: Boolean[MyPropertyDescriptor]
 
-'KotlinTypeFactory' @ [105:13] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
-
 'simpleType' @ [105:31] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
 'annotations' @ [105:42] ==> val annotations: DeserializedAnnotationsWithPossibleTargets defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.simpleType[LocalVariableDescriptor]
@@ -382,6 +380,8 @@ Inferred types:
     <T : Any> -> ClassId
 
 'classId' @ [116:54] ==> val classId: ClassId defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.typeConstructor.notFoundClass[LocalVariableDescriptor]
+
+'getOuterClassId' @ [116:72] ==> @Nullable public open fun getOuterClassId(): ClassId? defined in org.jetbrains.kotlin.name.ClassId[JavaMethodDescriptor]
 
 'count' @ [116:89] ==> public fun <T> Sequence<ClassId>.count(): Int defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -579,6 +579,8 @@ Inferred types:
     <T> -> SimpleType
     <R> -> SimpleType?
 
+'transformRuntimeFunctionTypeToSuspendFunction' @ [148:66] ==> public fun transformRuntimeFunctionTypeToSuspendFunction(funType: KotlinType): SimpleType? defined in org.jetbrains.kotlin.builtins in file suspendFunctionTypes.kt[SimpleFunctionDescriptorImpl]
+
 'arguments' @ [152:29] ==> value-parameter arguments: List<TypeProjection> defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.createSuspendFunctionType[ValueParameterDescriptorImpl]
 
 'size' @ [152:39] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
@@ -593,8 +595,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SimpleType?
 
 'arity' @ [153:21] ==> val arity: Int defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.createSuspendFunctionType[LocalVariableDescriptor]
-
-'KotlinTypeFactory' @ [154:21] ==> public object KotlinTypeFactory defined in org.jetbrains.kotlin.types in file KotlinTypeFactory.kt[FakeCallableDescriptorForObject]
 
 'simpleType' @ [154:39] ==> @JvmStatic public final fun simpleType(annotations: Annotations, constructor: TypeConstructor, arguments: List<TypeProjection>, nullable: Boolean): SimpleType defined in org.jetbrains.kotlin.types.KotlinTypeFactory[SimpleFunctionDescriptorImpl]
 
@@ -622,9 +622,9 @@ Inferred types:
 
 'arguments' @ [162:145] ==> value-parameter arguments: List<TypeProjection> defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.createSuspendFunctionType[ValueParameterDescriptorImpl]
 
-'typeParameterDescriptors' @ [166:13] ==> private final val typeParameterDescriptors: Map<Int, TypeParameterDescriptor> defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer[PropertyDescriptorImpl]
+'typeParameterDescriptors' @ [166:13] ==> private final val typeParameterDescriptors: Map<(Int..Int?), (TypeParameterDescriptor..TypeParameterDescriptor?)> defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer[PropertyDescriptorImpl]
 
-'get' @ [166:38] ==> public abstract operator fun get(key: Int): TypeParameterDescriptor? defined in kotlin.collections.Map[DeserializedSimpleFunctionDescriptor]
+'get' @ [166:38] ==> public abstract operator fun get(key: (Int..Int?)): TypeParameterDescriptor? defined in kotlin.collections.Map[DeserializedSimpleFunctionDescriptor]
 
 'typeParameterId' @ [166:42] ==> value-parameter typeParameterId: Int defined in org.jetbrains.kotlin.serialization.deserialization.TypeDeserializer.typeParameterTypeConstructor[ValueParameterDescriptorImpl]
 

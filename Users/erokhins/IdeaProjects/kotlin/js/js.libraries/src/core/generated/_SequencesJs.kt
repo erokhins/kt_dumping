@@ -354,7 +354,7 @@ Inferred types:
 
 'single' @ [329:12] ==> var single: T? defined in kotlin.sequences.singleOrNull[LocalVariableDescriptor]
 
-'require' @ [338:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [338:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [338:13] ==> value-parameter n: Int defined in kotlin.sequences.drop[ValueParameterDescriptorImpl]
 
@@ -531,7 +531,7 @@ Inferred types:
 
 'destination' @ [456:12] ==> value-parameter destination: C defined in kotlin.sequences.filterTo[ValueParameterDescriptorImpl]
 
-'require' @ [465:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [465:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [465:13] ==> value-parameter n: Int defined in kotlin.sequences.take[ValueParameterDescriptorImpl]
 
@@ -838,9 +838,9 @@ Inferred types:
 
 'destination' @ [741:20] ==> value-parameter destination: M defined in kotlin.sequences.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [741:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<T>>.getOrPut(key: Any?, defaultValue: () -> MutableList<T>): MutableList<T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [741:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<T>>.getOrPut(key: K, defaultValue: () -> MutableList<T>): MutableList<T> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<T>
 
 'key' @ [741:41] ==> val key: K defined in kotlin.sequences.groupByTo[LocalVariableDescriptor]
@@ -865,9 +865,9 @@ Inferred types:
 
 'destination' @ [761:20] ==> value-parameter destination: M defined in kotlin.sequences.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [761:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [761:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [761:41] ==> val key: K defined in kotlin.sequences.groupByTo[LocalVariableDescriptor]
@@ -1308,7 +1308,7 @@ Inferred types:
 
 'comparator' @ [1111:13] ==> value-parameter comparator: Comparator<in T> defined in kotlin.sequences.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [1111:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [1111:24] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'max' @ [1111:32] ==> var max: T defined in kotlin.sequences.maxWith[LocalVariableDescriptor]
 
@@ -1502,7 +1502,7 @@ Inferred types:
 
 'comparator' @ [1206:13] ==> value-parameter comparator: Comparator<in T> defined in kotlin.sequences.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [1206:24] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [1206:24] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'min' @ [1206:32] ==> var min: T defined in kotlin.sequences.minWith[LocalVariableDescriptor]
 
@@ -1879,10 +1879,10 @@ Inferred types:
 
 't2' @ [1476:59] ==> value-parameter t2: R defined in kotlin.sequences.zip.<anonymous>[ValueParameterDescriptorImpl]
 
-'MergingSequence' @ [1485:12] ==> public constructor MergingSequence<T1, T2, V>(sequence1: Sequence<@ParameterName T>, sequence2: Sequence<@ParameterName R>, transform: (a: T, b: R) -> V) defined in kotlin.sequences.MergingSequence[ClassConstructorDescriptorImpl]
+'MergingSequence' @ [1485:12] ==> public constructor MergingSequence<T1, T2, V>(sequence1: Sequence<T>, sequence2: Sequence<R>, transform: (T, R) -> V) defined in kotlin.sequences.MergingSequence[ClassConstructorDescriptorImpl]
 Inferred types:
-    <T1> -> [@kotlin.ParameterName] T
-    <T2> -> [@kotlin.ParameterName] R
+    <T1> -> T
+    <T2> -> R
     <V> -> V
 
 'this' @ [1485:28] ==> <this> defined in kotlin.sequences.zip[ReceiverParameterDescriptorImpl]
@@ -2004,8 +2004,6 @@ Inferred types:
 
 'count' @ [1550:16] ==> var count: Int defined in kotlin.sequences.average[LocalVariableDescriptor]
 
-'Double' @ [1550:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [1550:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [1550:44] ==> var sum: Double defined in kotlin.sequences.average[LocalVariableDescriptor]
@@ -2027,8 +2025,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [1566:16] ==> var count: Int defined in kotlin.sequences.average[LocalVariableDescriptor]
-
-'Double' @ [1566:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [1566:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
@@ -2052,8 +2048,6 @@ Inferred types:
 
 'count' @ [1582:16] ==> var count: Int defined in kotlin.sequences.average[LocalVariableDescriptor]
 
-'Double' @ [1582:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [1582:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [1582:44] ==> var sum: Double defined in kotlin.sequences.average[LocalVariableDescriptor]
@@ -2075,8 +2069,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [1598:16] ==> var count: Int defined in kotlin.sequences.average[LocalVariableDescriptor]
-
-'Double' @ [1598:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [1598:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
@@ -2100,8 +2092,6 @@ Inferred types:
 
 'count' @ [1614:16] ==> var count: Int defined in kotlin.sequences.average[LocalVariableDescriptor]
 
-'Double' @ [1614:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
-
 'NaN' @ [1614:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 
 'sum' @ [1614:44] ==> var sum: Double defined in kotlin.sequences.average[LocalVariableDescriptor]
@@ -2123,8 +2113,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Double
 
 'count' @ [1630:16] ==> var count: Int defined in kotlin.sequences.average[LocalVariableDescriptor]
-
-'Double' @ [1630:28] ==> public companion object defined in kotlin.Double[FakeCallableDescriptorForObject]
 
 'NaN' @ [1630:35] ==> public final val NaN: Double defined in kotlin.Double.Companion[DeserializedPropertyDescriptor]
 

@@ -58,7 +58,7 @@ Inferred types:
 
 'children' @ [90:20] ==> public final var children: (MutableList<(ParseTree..ParseTree?)>..List<(ParseTree..ParseTree?)>?) defined in org.antlr.webidl.WebIDLParser.ExtendedAttributeContext[JavaPropertyDescriptor]
 
-'filterIdentifiers' @ [90:29] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'filterIdentifiers' @ [90:29] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [90:49] ==> public fun <T> List<ParseTree>.firstOrNull(): ParseTree? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -118,7 +118,7 @@ Inferred types:
 
 'name' @ [114:9] ==> private final var name: String? defined in org.jetbrains.idl2k.ExtendedAttributeParser[PropertyDescriptorImpl]
 
-'getName' @ [114:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getName' @ [114:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [114:24] ==> value-parameter ctx: WebIDLParser.ExtendedAttributeNamePartContext defined in org.jetbrains.idl2k.ExtendedAttributeParser.visitExtendedAttributeNamePart[ValueParameterDescriptorImpl]
 
@@ -527,7 +527,7 @@ Inferred types:
 
 'name' @ [281:9] ==> private final var name: String defined in org.jetbrains.idl2k.AttributeVisitor[PropertyDescriptorImpl]
 
-'getNameOrNull' @ [281:16] ==> private fun getNameOrNull(ctx: ParserRuleContext): String? defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getNameOrNull' @ [281:16] ==> private fun getNameOrNull(ctx: ParserRuleContext): String? defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [281:30] ==> value-parameter ctx: WebIDLParser.AttributeRestContext defined in org.jetbrains.idl2k.AttributeVisitor.visitAttributeRest[ValueParameterDescriptorImpl]
 
@@ -559,7 +559,7 @@ Inferred types:
 
 'name' @ [286:9] ==> private final var name: String defined in org.jetbrains.idl2k.AttributeVisitor[PropertyDescriptorImpl]
 
-'getNameOrNull' @ [286:16] ==> private fun getNameOrNull(ctx: ParserRuleContext): String? defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getNameOrNull' @ [286:16] ==> private fun getNameOrNull(ctx: ParserRuleContext): String? defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [286:30] ==> value-parameter ctx: WebIDLParser.ArgumentNameContext defined in org.jetbrains.idl2k.AttributeVisitor.visitArgumentName[ValueParameterDescriptorImpl]
 
@@ -605,7 +605,7 @@ Inferred types:
 
 'name' @ [309:9] ==> private final var name: String defined in org.jetbrains.idl2k.ConstantVisitor[PropertyDescriptorImpl]
 
-'getName' @ [309:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getName' @ [309:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [309:24] ==> value-parameter ctx: WebIDLParser.Const_Context defined in org.jetbrains.idl2k.ConstantVisitor.visitConst_[ValueParameterDescriptorImpl]
 
@@ -761,7 +761,7 @@ Inferred types:
 
 'name' @ [357:9] ==> private final var name: String defined in org.jetbrains.idl2k.DefinitionVisitor[PropertyDescriptorImpl]
 
-'getName' @ [357:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getName' @ [357:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [357:24] ==> value-parameter ctx: WebIDLParser.CallbackRestContext defined in org.jetbrains.idl2k.DefinitionVisitor.visitCallbackRest[ValueParameterDescriptorImpl]
 
@@ -799,7 +799,7 @@ Inferred types:
 
 'defaultResult' @ [363:16] ==> protected open fun defaultResult(): Definition defined in org.jetbrains.idl2k.DefinitionVisitor[SimpleFunctionDescriptorImpl]
 
-'getName' @ [367:26] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getName' @ [367:26] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [367:34] ==> value-parameter ctx: WebIDLParser.ModuleContext defined in org.jetbrains.idl2k.DefinitionVisitor.visitModule[ValueParameterDescriptorImpl]
 
@@ -839,7 +839,7 @@ Inferred types:
 
 'name' @ [376:9] ==> private final var name: String defined in org.jetbrains.idl2k.DefinitionVisitor[PropertyDescriptorImpl]
 
-'getName' @ [376:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getName' @ [376:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [376:24] ==> value-parameter ctx: WebIDLParser.Interface_Context defined in org.jetbrains.idl2k.DefinitionVisitor.visitInterface_[ValueParameterDescriptorImpl]
 
@@ -851,7 +851,7 @@ Inferred types:
 
 'name' @ [382:9] ==> private final var name: String defined in org.jetbrains.idl2k.DefinitionVisitor[PropertyDescriptorImpl]
 
-'getName' @ [382:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getName' @ [382:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [382:24] ==> value-parameter ctx: WebIDLParser.PartialInterfaceContext defined in org.jetbrains.idl2k.DefinitionVisitor.visitPartialInterface[ValueParameterDescriptorImpl]
 
@@ -873,7 +873,7 @@ Inferred types:
 
 'name' @ [395:9] ==> private final var name: String defined in org.jetbrains.idl2k.DefinitionVisitor[PropertyDescriptorImpl]
 
-'getName' @ [395:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getName' @ [395:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [395:24] ==> value-parameter ctx: WebIDLParser.TypedefContext defined in org.jetbrains.idl2k.DefinitionVisitor.visitTypedef[ValueParameterDescriptorImpl]
 
@@ -883,7 +883,7 @@ Inferred types:
 
 'accept' @ [397:27] ==> @Override public open fun <T : (Any..Any?)> accept(visitor: (ParseTreeVisitor<out (Type..Type?)>..ParseTreeVisitor<out (Type..Type?)>?)): (Type..Type?) defined in org.antlr.webidl.WebIDLParser.TypedefContext[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Type
+    <T : (Any..Any?)> -> (org.jetbrains.idl2k.Type..org.jetbrains.idl2k.Type?)
 
 'WebIDLBaseVisitor<Type>' @ [397:43] ==> public constructor WebIDLBaseVisitor<T : (Any..Any?)>() defined in org.antlr.webidl.WebIDLBaseVisitor[JavaClassConstructorDescriptor]
 Inferred types:
@@ -915,7 +915,7 @@ Inferred types:
 
 'name' @ [414:9] ==> private final var name: String defined in org.jetbrains.idl2k.DefinitionVisitor[PropertyDescriptorImpl]
 
-'getName' @ [414:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getName' @ [414:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [414:24] ==> value-parameter ctx: WebIDLParser.Enum_Context defined in org.jetbrains.idl2k.DefinitionVisitor.visitEnum_[ValueParameterDescriptorImpl]
 
@@ -961,7 +961,7 @@ Inferred types:
 
 'name' @ [431:9] ==> private final var name: String defined in org.jetbrains.idl2k.DefinitionVisitor[PropertyDescriptorImpl]
 
-'getName' @ [431:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'getName' @ [431:16] ==> private fun getName(ctx: ParserRuleContext): (String..String?) defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'ctx' @ [431:24] ==> value-parameter ctx: WebIDLParser.DictionaryContext defined in org.jetbrains.idl2k.DefinitionVisitor.visitDictionary[ValueParameterDescriptorImpl]
 
@@ -973,7 +973,7 @@ Inferred types:
 
 'children' @ [437:24] ==> public final var children: (MutableList<(ParseTree..ParseTree?)>..List<(ParseTree..ParseTree?)>?) defined in org.antlr.webidl.WebIDLParser.DictionaryMemberContext[JavaPropertyDescriptor]
 
-'filterIdentifiers' @ [438:18] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'filterIdentifiers' @ [438:18] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [439:18] ==> public inline fun <T> Iterable<ParseTree>.firstOrNull(predicate: (ParseTree) -> Boolean): ParseTree? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1063,7 +1063,7 @@ Inferred types:
 
 'children' @ [468:31] ==> public final var children: (MutableList<(ParseTree..ParseTree?)>..List<(ParseTree..ParseTree?)>?) defined in org.antlr.webidl.WebIDLParser.ImplementsStatementContext[JavaPropertyDescriptor]
 
-'filterIdentifiers' @ [468:40] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'filterIdentifiers' @ [468:40] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [468:60] ==> public inline fun <T, R> Iterable<ParseTree>.map(transform: (ParseTree) -> (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1138,7 +1138,7 @@ Inferred types:
 
 'children' @ [492:34] ==> public final var children: (MutableList<(ParseTree..ParseTree?)>..List<(ParseTree..ParseTree?)>?) defined in org.antlr.webidl.WebIDLParser.InheritanceContext[JavaPropertyDescriptor]
 
-'filterIdentifiers' @ [492:43] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'filterIdentifiers' @ [492:43] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [492:63] ==> public inline fun <T, R> Iterable<ParseTree>.map(transform: (ParseTree) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1359,7 +1359,7 @@ Inferred types:
 
 'children' @ [577:51] ==> public final var children: (MutableList<(ParseTree..ParseTree?)>..List<(ParseTree..ParseTree?)>?) defined in org.antlr.v4.runtime.ParserRuleContext[JavaPropertyDescriptor]
 
-'filterIdentifiers' @ [577:60] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'filterIdentifiers' @ [577:60] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'first' @ [577:80] ==> public fun <T> List<ParseTree>.first(): ParseTree defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1371,7 +1371,7 @@ Inferred types:
 
 'children' @ [578:57] ==> public final var children: (MutableList<(ParseTree..ParseTree?)>..List<(ParseTree..ParseTree?)>?) defined in org.antlr.v4.runtime.ParserRuleContext[JavaPropertyDescriptor]
 
-'filterIdentifiers' @ [578:66] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k[SimpleFunctionDescriptorImpl]
+'filterIdentifiers' @ [578:66] ==> private fun List<ParseTree>?.filterIdentifiers(): List<ParseTree> defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'firstOrNull' @ [578:86] ==> public fun <T> List<ParseTree>.firstOrNull(): ParseTree? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1444,10 +1444,12 @@ Inferred types:
 
 'value' @ [589:136] ==> public abstract val value: List<InterfaceDefinition> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'reduce' @ [589:142] ==> public inline fun <S, T : InterfaceDefinition> Iterable<InterfaceDefinition>.reduce(operation: (InterfaceDefinition, InterfaceDefinition) -> InterfaceDefinition): InterfaceDefinition defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [589:142] ==> public inline fun <S, T : InterfaceDefinition> Iterable<InterfaceDefinition>.reduce(operation: (acc: InterfaceDefinition, InterfaceDefinition) -> InterfaceDefinition): InterfaceDefinition defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> InterfaceDefinition
     <T : S> -> InterfaceDefinition
+
+'merge' @ [589:151] ==> public fun merge(i1: InterfaceDefinition, i2: InterfaceDefinition): InterfaceDefinition defined in org.jetbrains.idl2k in file idl.kt[SimpleFunctionDescriptorImpl]
 
 'declarations' @ [590:13] ==> val declarations: ArrayList<Definition> defined in org.jetbrains.idl2k.parseIDL[LocalVariableDescriptor]
 
@@ -1537,7 +1539,7 @@ Inferred types:
 
 'value' @ [592:96] ==> public abstract val value: List<EnumDefinition> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'reduce' @ [592:102] ==> public inline fun <S, T : EnumDefinition> Iterable<EnumDefinition>.reduce(operation: (EnumDefinition, EnumDefinition) -> EnumDefinition): EnumDefinition defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [592:102] ==> public inline fun <S, T : EnumDefinition> Iterable<EnumDefinition>.reduce(operation: (acc: EnumDefinition, EnumDefinition) -> EnumDefinition): EnumDefinition defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> EnumDefinition
     <T : S> -> EnumDefinition

@@ -1,16 +1,16 @@
-'getValue' @ [42:36] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (Type..Type?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [42:36] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [42:54] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (Type..Type?)): ReflectProperties.LazySoftVal<(Type..Type?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Type
+    <T : (Any..Any?)> -> (java.lang.reflect.Type..java.lang.reflect.Type?)
 
 'computeJavaType' @ [42:63] ==> value-parameter computeJavaType: () -> Type defined in kotlin.reflect.jvm.internal.KTypeImpl.<init>[ValueParameterDescriptorImpl]
 
-'getValue' @ [44:46] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (KClassifier..KClassifier?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [44:46] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
-'lazySoft' @ [44:64] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (KClassifier..KClassifier?)): ReflectProperties.LazySoftVal<(KClassifier..KClassifier?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
+'lazySoft' @ [44:64] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> KClassifier?): ReflectProperties.LazySoftVal<KClassifier?> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KClassifier
+    <T : (Any..Any?)> -> KClassifier?
 
 'convert' @ [44:75] ==> private final fun convert(type: KotlinType): KClassifier? defined in kotlin.reflect.jvm.internal.KTypeImpl[SimpleFunctionDescriptorImpl]
 
@@ -54,11 +54,11 @@ Inferred types:
 
 'toJavaClass' @ [50:41] ==> internal fun ClassDescriptor.toJavaClass(): Class<*>? defined in kotlin.reflect.jvm.internal in file util.kt[SimpleFunctionDescriptorImpl]
 
-'jClass' @ [51:21] ==> val jClass: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
+'jClass' @ [51:21] ==> val jClass: Class<*> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
 
 'isArray' @ [51:28] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'type' @ [53:36] ==> value-parameter type: KotlinType defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[ValueParameterDescriptorImpl]
 
@@ -72,9 +72,9 @@ Inferred types:
 
 'KClassImpl' @ [53:82] ==> public constructor KClassImpl<T : Any>(jClass: Class<out (Any..Any?)>) defined in kotlin.reflect.jvm.internal.KClassImpl[ClassConstructorDescriptorImpl]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
-'jClass' @ [53:93] ==> val jClass: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
+'jClass' @ [53:93] ==> val jClass: Class<*> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
 
 'convert' @ [55:29] ==> private final fun convert(type: KotlinType): KClassifier? defined in kotlin.reflect.jvm.internal.KTypeImpl[SimpleFunctionDescriptorImpl]
 
@@ -86,7 +86,7 @@ Inferred types:
 
 'KClassImpl' @ [57:28] ==> public constructor KClassImpl<T : Any>(jClass: Class<out (Any..Any?)>) defined in kotlin.reflect.jvm.internal.KClassImpl[ClassConstructorDescriptorImpl]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'elementClassifier' @ [57:39] ==> val elementClassifier: KClassifier defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
 
@@ -94,7 +94,7 @@ Inferred types:
 
 'java' @ [57:68] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'createArrayType' @ [57:73] ==> public fun Class<*>.createArrayType(): Class<*> defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[SimpleFunctionDescriptorImpl]
 
@@ -104,23 +104,23 @@ Inferred types:
 
 'type' @ [60:47] ==> value-parameter type: KotlinType defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[ValueParameterDescriptorImpl]
 
-'jClass' @ [61:45] ==> val jClass: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
+'jClass' @ [61:45] ==> val jClass: Class<*> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
 
 'primitiveByWrapper' @ [61:52] ==> public val Class<*>.primitiveByWrapper: Class<*>? defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[PropertyDescriptorImpl]
 
-'jClass' @ [61:74] ==> val jClass: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
+'jClass' @ [61:74] ==> val jClass: Class<*> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
 
 'KClassImpl' @ [62:28] ==> public constructor KClassImpl<T : Any>(jClass: Class<out (Any..Any?)>) defined in kotlin.reflect.jvm.internal.KClassImpl[ClassConstructorDescriptorImpl]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'jClass1' @ [62:39] ==> val jClass1: Class<*> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
 
 'KClassImpl' @ [65:24] ==> public constructor KClassImpl<T : Any>(jClass: Class<out (Any..Any?)>) defined in kotlin.reflect.jvm.internal.KClassImpl[ClassConstructorDescriptorImpl]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
-'jClass' @ [65:35] ==> val jClass: Class<out (Any..Any?)> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
+'jClass' @ [65:35] ==> val jClass: Class<*> defined in kotlin.reflect.jvm.internal.KTypeImpl.convert[LocalVariableDescriptor]
 
 'KTypeParameterImpl' @ [67:50] ==> public constructor KTypeParameterImpl(descriptor: TypeParameterDescriptor) defined in kotlin.reflect.jvm.internal.KTypeParameterImpl[ClassConstructorDescriptorImpl]
 
@@ -128,11 +128,11 @@ Inferred types:
 
 'TODO' @ [68:39] ==> @InlineOnly public inline fun TODO(reason: String): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'getValue' @ [73:54] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (List<KTypeProjection>..List<KTypeProjection>?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
+'getValue' @ [73:54] ==> @SuppressWarnings public final fun getValue(instance: (Any..Any?), metadata: (Any..Any?)): (T..T?) defined in kotlin.reflect.jvm.internal.ReflectProperties.LazySoftVal[JavaMethodDescriptor]
 
 'lazySoft' @ [73:72] ==> @NotNull public open fun <T : (Any..Any?)> lazySoft(@NotNull initializer: () -> (List<KTypeProjection>..List<KTypeProjection>?)): ReflectProperties.LazySoftVal<(List<KTypeProjection>..List<KTypeProjection>?)> defined in kotlin.reflect.jvm.internal.ReflectProperties[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> List<KTypeProjection>
+    <T : (Any..Any?)> -> (kotlin.collections.List<kotlin.reflect.KTypeProjection>..kotlin.collections.List<kotlin.reflect.KTypeProjection>?)
 
 'type' @ [74:29] ==> public final val type: KotlinType defined in kotlin.reflect.jvm.internal.KTypeImpl[PropertyDescriptorImpl]
 
@@ -146,9 +146,9 @@ Inferred types:
 Inferred types:
     <T> -> KTypeProjection
 
-'lazy' @ [77:43] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> List<Type>): Lazy<List<Type>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [77:43] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<Type>
+    <T> -> T
 
 'PUBLICATION' @ [77:48] ==> enum entry PUBLICATION defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -201,8 +201,6 @@ Inferred types:
 
 'isStarProjection' @ [80:32] ==> public final val TypeProjection.isStarProjection: Boolean[MyPropertyDescriptor]
 
-'KTypeProjection' @ [81:17] ==> public companion object defined in kotlin.reflect.KTypeProjection[FakeCallableDescriptorForObject]
-
 'STAR' @ [81:33] ==> public final val STAR: KTypeProjection defined in kotlin.reflect.KTypeProjection.Companion[DeserializedPropertyDescriptor]
 
 'KTypeImpl' @ [84:28] ==> public constructor KTypeImpl(type: KotlinType, computeJavaType: () -> Type) defined in kotlin.reflect.jvm.internal.KTypeImpl[ClassConstructorDescriptorImpl]
@@ -236,21 +234,21 @@ Inferred types:
 
 'javaType' @ [86:27] ==> val javaType: Type defined in kotlin.reflect.jvm.internal.KTypeImpl.arguments.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'if (javaType.isArray) javaType.componentType else Any::class.java' @ [90:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out Any>, elseBranch: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
+'if (javaType.isArray) javaType.componentType else Any::class.java' @ [90:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?), elseBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out Any>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.Class<out (kotlin.Any..kotlin.Any?)>..java.lang.Class<out (kotlin.Any..kotlin.Any?)>?)
 
 'javaType' @ [90:33] ==> val javaType: Type defined in kotlin.reflect.jvm.internal.KTypeImpl.arguments.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'isArray' @ [90:42] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'javaType' @ [90:51] ==> val javaType: Type defined in kotlin.reflect.jvm.internal.KTypeImpl.arguments.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'componentType' @ [90:60] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'Any' @ [90:79] ==> public constructor Any() defined in kotlin.Any[DeserializedClassConstructorDescriptor]
 
@@ -273,9 +271,9 @@ Inferred types:
 'i' @ [97:71] ==> value-parameter i: Int defined in kotlin.reflect.jvm.internal.KTypeImpl.arguments.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'if (argument !is WildcardType) argument
-                            else argument.lowerBounds.firstOrNull() ?: argument.upperBounds.first()' @ [99:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Type, elseBranch: Type): Type[SimpleFunctionDescriptorImpl]
+                            else argument.lowerBounds.firstOrNull() ?: argument.upperBounds.first()' @ [99:29] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Type..Type?), elseBranch: (Type..Type?)): (Type..Type?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Type
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.reflect.Type..java.lang.reflect.Type?)
 
 'argument' @ [99:33] ==> val argument: Type defined in kotlin.reflect.jvm.internal.KTypeImpl.arguments.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -315,23 +313,17 @@ Inferred types:
 
 'INVARIANT' @ [106:30] ==> enum entry INVARIANT defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
-'KTypeProjection' @ [106:43] ==> public companion object defined in kotlin.reflect.KTypeProjection[FakeCallableDescriptorForObject]
-
 'invariant' @ [106:59] ==> public final fun invariant(type: KType): KTypeProjection defined in kotlin.reflect.KTypeProjection.Companion[DeserializedSimpleFunctionDescriptor]
 
 'type' @ [106:69] ==> val type: KTypeImpl defined in kotlin.reflect.jvm.internal.KTypeImpl.arguments.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'IN_VARIANCE' @ [107:30] ==> enum entry IN_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
 
-'KTypeProjection' @ [107:45] ==> public companion object defined in kotlin.reflect.KTypeProjection[FakeCallableDescriptorForObject]
-
 'contravariant' @ [107:61] ==> public final fun contravariant(type: KType): KTypeProjection defined in kotlin.reflect.KTypeProjection.Companion[DeserializedSimpleFunctionDescriptor]
 
 'type' @ [107:75] ==> val type: KTypeImpl defined in kotlin.reflect.jvm.internal.KTypeImpl.arguments.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'OUT_VARIANCE' @ [108:30] ==> enum entry OUT_VARIANCE defined in org.jetbrains.kotlin.types.Variance[FakeCallableDescriptorForObject]
-
-'KTypeProjection' @ [108:46] ==> public companion object defined in kotlin.reflect.KTypeProjection[FakeCallableDescriptorForObject]
 
 'covariant' @ [108:62] ==> public final fun covariant(type: KType): KTypeProjection defined in kotlin.reflect.KTypeProjection.Companion[DeserializedSimpleFunctionDescriptor]
 

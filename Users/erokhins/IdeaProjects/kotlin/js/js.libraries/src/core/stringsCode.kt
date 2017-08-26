@@ -105,7 +105,7 @@ Inferred types:
 
 'this' @ [43:18] ==> <this> defined in kotlin.text.matches[ReceiverParameterDescriptorImpl]
 
-'match' @ [43:23] ==> @InlineOnly public inline fun String.match(regex: String): Array<String>? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'match' @ [43:23] ==> @InlineOnly public inline fun String.match(regex: String): Array<String>? defined in kotlin.text in file string.kt[SimpleFunctionDescriptorImpl]
 
 'regex' @ [43:29] ==> value-parameter regex: String defined in kotlin.text.matches[ValueParameterDescriptorImpl]
 
@@ -209,7 +209,7 @@ Inferred types:
 
 'this' @ [77:80] ==> <this> defined in kotlin.text.decapitalize[ReceiverParameterDescriptorImpl]
 
-'require' @ [85:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [85:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [85:13] ==> value-parameter n: Int defined in kotlin.text.repeat[ValueParameterDescriptorImpl]
 
@@ -280,8 +280,6 @@ Inferred types:
 
 'RegExp' @ [111:23] ==> public constructor RegExp(pattern: String, flags: String? = ...) defined in kotlin.js.RegExp[ClassConstructorDescriptorImpl]
 
-'Regex' @ [111:30] ==> public companion object defined in kotlin.text.Regex[FakeCallableDescriptorForObject]
-
 'escape' @ [111:36] ==> public final fun escape(literal: String): String defined in kotlin.text.Regex.Companion[SimpleFunctionDescriptorImpl]
 
 'oldValue' @ [111:43] ==> value-parameter oldValue: String defined in kotlin.text.replace[ValueParameterDescriptorImpl]
@@ -292,8 +290,6 @@ Inferred types:
 
 'ignoreCase' @ [111:58] ==> value-parameter ignoreCase: Boolean = ... defined in kotlin.text.replace[ValueParameterDescriptorImpl]
 
-'Regex' @ [111:86] ==> public companion object defined in kotlin.text.Regex[FakeCallableDescriptorForObject]
-
 'escapeReplacement' @ [111:92] ==> public final fun escapeReplacement(literal: String): String defined in kotlin.text.Regex.Companion[SimpleFunctionDescriptorImpl]
 
 'newValue' @ [111:110] ==> value-parameter newValue: String defined in kotlin.text.replace[ValueParameterDescriptorImpl]
@@ -301,8 +297,6 @@ Inferred types:
 'nativeReplace' @ [114:9] ==> @InlineOnly internal inline fun String.nativeReplace(pattern: RegExp, replacement: String): String defined in kotlin.text in file string.kt[SimpleFunctionDescriptorImpl]
 
 'RegExp' @ [114:23] ==> public constructor RegExp(pattern: String, flags: String? = ...) defined in kotlin.js.RegExp[ClassConstructorDescriptorImpl]
-
-'Regex' @ [114:30] ==> public companion object defined in kotlin.text.Regex[FakeCallableDescriptorForObject]
 
 'escape' @ [114:36] ==> public final fun escape(literal: String): String defined in kotlin.text.Regex.Companion[SimpleFunctionDescriptorImpl]
 
@@ -324,8 +318,6 @@ Inferred types:
 
 'RegExp' @ [117:23] ==> public constructor RegExp(pattern: String, flags: String? = ...) defined in kotlin.js.RegExp[ClassConstructorDescriptorImpl]
 
-'Regex' @ [117:30] ==> public companion object defined in kotlin.text.Regex[FakeCallableDescriptorForObject]
-
 'escape' @ [117:36] ==> public final fun escape(literal: String): String defined in kotlin.text.Regex.Companion[SimpleFunctionDescriptorImpl]
 
 'oldValue' @ [117:43] ==> value-parameter oldValue: String defined in kotlin.text.replaceFirst[ValueParameterDescriptorImpl]
@@ -336,8 +328,6 @@ Inferred types:
 
 'ignoreCase' @ [117:58] ==> value-parameter ignoreCase: Boolean = ... defined in kotlin.text.replaceFirst[ValueParameterDescriptorImpl]
 
-'Regex' @ [117:84] ==> public companion object defined in kotlin.text.Regex[FakeCallableDescriptorForObject]
-
 'escapeReplacement' @ [117:90] ==> public final fun escapeReplacement(literal: String): String defined in kotlin.text.Regex.Companion[SimpleFunctionDescriptorImpl]
 
 'newValue' @ [117:108] ==> value-parameter newValue: String defined in kotlin.text.replaceFirst[ValueParameterDescriptorImpl]
@@ -345,8 +335,6 @@ Inferred types:
 'nativeReplace' @ [120:9] ==> @InlineOnly internal inline fun String.nativeReplace(pattern: RegExp, replacement: String): String defined in kotlin.text in file string.kt[SimpleFunctionDescriptorImpl]
 
 'RegExp' @ [120:23] ==> public constructor RegExp(pattern: String, flags: String? = ...) defined in kotlin.js.RegExp[ClassConstructorDescriptorImpl]
-
-'Regex' @ [120:30] ==> public companion object defined in kotlin.text.Regex[FakeCallableDescriptorForObject]
 
 'escape' @ [120:36] ==> public final fun escape(literal: String): String defined in kotlin.text.Regex.Companion[SimpleFunctionDescriptorImpl]
 

@@ -63,8 +63,8 @@ Inferred types:
 
 'singletonMap' @ [66:78] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> singletonMap(p0: (K..K?), p1: (V..V?)): (MutableMap<(K..K?), (V..V?)>..Map<(K..K?), (V..V?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> V
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (V..V?)
 
 'pair' @ [66:91] ==> value-parameter pair: Pair<K, V> defined in kotlin.collections.mapOf[ValueParameterDescriptorImpl]
 
@@ -205,9 +205,9 @@ Inferred types:
 
 'kotlin.internal.OnlyInputTypes' @ [162:29] ==> public constructor OnlyInputTypes() defined in kotlin.internal.OnlyInputTypes[ClassConstructorDescriptorImpl]
 
-'containsKey' @ [162:110] ==> @InlineOnly public inline fun <@OnlyInputTypes K> Map<out K?, *>.containsKey(key: K?): Boolean defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'containsKey' @ [162:110] ==> @InlineOnly public inline fun <@OnlyInputTypes K> Map<out K, *>.containsKey(key: K): Boolean defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <@OnlyInputTypes K> -> K?
+    <@OnlyInputTypes K> -> K
 
 'key' @ [162:122] ==> value-parameter key: K defined in kotlin.collections.contains[ValueParameterDescriptorImpl]
 
@@ -1173,10 +1173,10 @@ Inferred types:
 
 'kotlin.jvm.JvmVersion' @ [709:1] ==> public constructor JvmVersion(minimum: Int = ..., maximum: Int = ...) defined in kotlin.jvm.JvmVersion[ClassConstructorDescriptorImpl]
 
-'with' @ [711:7] ==> @InlineOnly public inline fun <T, R> with(receiver: Map.Entry<K, V>, block: Map.Entry<K, V>.() -> (MutableMap<K, V>..Map<K, V>?)): (MutableMap<K, V>..Map<K, V>?) defined in kotlin[SimpleFunctionDescriptorImpl]
+'with' @ [711:7] ==> @InlineOnly public inline fun <T, R> with(receiver: Map.Entry<K, V>, block: Map.Entry<K, V>.() -> (MutableMap<(K..K?), (V..V?)>..Map<(K..K?), (V..V?)>?)): (MutableMap<(K..K?), (V..V?)>..Map<(K..K?), (V..V?)>?) defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> Entry<K, V>
-    <R> -> (kotlin.collections.MutableMap<K, V>..kotlin.collections.Map<K, V>?)
+    <R> -> (kotlin.collections.MutableMap<(K..K?), (V..V?)>..kotlin.collections.Map<(K..K?), (V..V?)>?)
 
 'entries' @ [711:13] ==> public abstract val entries: Set<Map.Entry<K, V>> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 

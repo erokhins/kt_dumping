@@ -31,8 +31,6 @@ Inferred types:
 
 'ignoredSuite' @ [37:24] ==> public final var ignoredSuite: Boolean defined in kotlin.test.adapters.QUnitAdapter[PropertyDescriptorImpl]
 
-'QUnit' @ [38:13] ==> internal external object QUnit defined in kotlin.test.adapters in file Externals.kt[FakeCallableDescriptorForObject]
-
 'skip' @ [38:19] ==> public final fun skip(name: String, testFn: (dynamic) -> Unit): Unit defined in kotlin.test.adapters.QUnit[SimpleFunctionDescriptorImpl]
 
 'name' @ [38:24] ==> value-parameter name: String defined in kotlin.test.adapters.QUnitAdapter.test[ValueParameterDescriptorImpl]
@@ -40,8 +38,6 @@ Inferred types:
 'wrapTest' @ [38:30] ==> private final fun wrapTest(testFn: () -> Unit): (dynamic) -> Unit defined in kotlin.test.adapters.QUnitAdapter[SimpleFunctionDescriptorImpl]
 
 'testFn' @ [38:39] ==> value-parameter testFn: () -> Unit defined in kotlin.test.adapters.QUnitAdapter.test[ValueParameterDescriptorImpl]
-
-'QUnit' @ [41:13] ==> internal external object QUnit defined in kotlin.test.adapters in file Externals.kt[FakeCallableDescriptorForObject]
 
 'test' @ [41:19] ==> public final fun test(name: String, testFn: (dynamic) -> Unit): Unit defined in kotlin.test.adapters.QUnit[SimpleFunctionDescriptorImpl]
 

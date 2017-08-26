@@ -205,9 +205,9 @@ Inferred types:
 
 'key' @ [144:91] ==> value-parameter key: K defined in kotlin.collections.AbstractMap.implFindEntry[ValueParameterDescriptorImpl]
 
-'with' @ [148:63] ==> @InlineOnly public inline fun <T, R> with(receiver: Map.Entry<Any?, Any?>, block: Map.Entry<Any?, Any?>.() -> Int): Int defined in kotlin[SimpleFunctionDescriptorImpl]
+'with' @ [148:63] ==> @InlineOnly public inline fun <T, R> with(receiver: Map.Entry<*, *>, block: Map.Entry<*, *>.() -> Int): Int defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> Entry<Any?, Any?>
+    <T> -> Entry<*, *>
     <R> -> Int
 
 'e' @ [148:68] ==> value-parameter e: Map.Entry<*, *> defined in kotlin.collections.AbstractMap.Companion.entryHashCode[ValueParameterDescriptorImpl]
@@ -222,9 +222,9 @@ Inferred types:
 
 'hashCode' @ [148:108] ==> public open fun hashCode(): Int defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
 
-'with' @ [149:66] ==> @InlineOnly public inline fun <T, R> with(receiver: Map.Entry<Any?, Any?>, block: Map.Entry<Any?, Any?>.() -> String): String defined in kotlin[SimpleFunctionDescriptorImpl]
+'with' @ [149:66] ==> @InlineOnly public inline fun <T, R> with(receiver: Map.Entry<*, *>, block: Map.Entry<*, *>.() -> String): String defined in kotlin[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> Entry<Any?, Any?>
+    <T> -> Entry<*, *>
     <R> -> String
 
 'e' @ [149:71] ==> value-parameter e: Map.Entry<*, *> defined in kotlin.collections.AbstractMap.Companion.entryToString[ValueParameterDescriptorImpl]

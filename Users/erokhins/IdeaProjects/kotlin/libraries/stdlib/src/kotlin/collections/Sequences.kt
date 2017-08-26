@@ -335,19 +335,19 @@ Inferred types:
 
 'nextItemIterator' @ [254:40] ==> val nextItemIterator: Iterator<E> defined in kotlin.sequences.FlatteningSequence.iterator.<no name provided>.ensureItemIterator[LocalVariableDescriptor]
 
-'require' @ [283:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [283:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'startIndex' @ [283:17] ==> private final val startIndex: Int defined in kotlin.sequences.SubSequence[PropertyDescriptorImpl]
 
 'startIndex' @ [283:80] ==> private final val startIndex: Int defined in kotlin.sequences.SubSequence[PropertyDescriptorImpl]
 
-'require' @ [284:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [284:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'endIndex' @ [284:17] ==> private final val endIndex: Int defined in kotlin.sequences.SubSequence[PropertyDescriptorImpl]
 
 'endIndex' @ [284:76] ==> private final val endIndex: Int defined in kotlin.sequences.SubSequence[PropertyDescriptorImpl]
 
-'require' @ [285:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [285:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'endIndex' @ [285:17] ==> private final val endIndex: Int defined in kotlin.sequences.SubSequence[PropertyDescriptorImpl]
 
@@ -449,7 +449,7 @@ Inferred types:
 
 'next' @ [316:29] ==> public abstract operator fun next(): T defined in kotlin.collections.Iterator[DeserializedSimpleFunctionDescriptor]
 
-'require' @ [331:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [331:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'count' @ [331:18] ==> private final val count: Int defined in kotlin.sequences.TakeSequence[PropertyDescriptorImpl]
 
@@ -573,7 +573,7 @@ Inferred types:
 
 'nextState' @ [396:20] ==> public final var nextState: Int defined in kotlin.sequences.TakeWhileSequence.iterator.<no name provided>[PropertyDescriptorImpl]
 
-'require' @ [410:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [410:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'count' @ [410:18] ==> private final val count: Int defined in kotlin.sequences.DropSequence[PropertyDescriptorImpl]
 
@@ -802,11 +802,11 @@ Inferred types:
 
 'AtomicReference' @ [557:59] ==> public constructor AtomicReference<V : (Any..Any?)>(p0: (Sequence<T>..Sequence<T>?)) defined in java.util.concurrent.atomic.AtomicReference[JavaClassConstructorDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Sequence<T>
+    <V : (Any..Any?)> -> (kotlin.sequences.Sequence<T>..kotlin.sequences.Sequence<T>?)
 
 'sequence' @ [557:75] ==> value-parameter sequence: Sequence<T> defined in kotlin.sequences.ConstrainedOnceSequence.<init>[ValueParameterDescriptorImpl]
 
-'sequenceRef' @ [560:24] ==> private final val sequenceRef: AtomicReference<Sequence<T>> defined in kotlin.sequences.ConstrainedOnceSequence[PropertyDescriptorImpl]
+'sequenceRef' @ [560:24] ==> private final val sequenceRef: AtomicReference<(Sequence<T>..Sequence<T>?)> defined in kotlin.sequences.ConstrainedOnceSequence[PropertyDescriptorImpl]
 
 'getAndSet' @ [560:36] ==> public final fun getAndSet(p0: (Sequence<T>..Sequence<T>?)): (Sequence<T>..Sequence<T>?) defined in java.util.concurrent.atomic.AtomicReference[JavaMethodDescriptor]
 

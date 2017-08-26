@@ -46,29 +46,19 @@ Inferred types:
 
 'FINAL' @ [39:27] ==> enum entry FINAL defined in org.jetbrains.kotlin.serialization.ProtoBuf.Modality[FakeCallableDescriptorForObject]
 
-'Modality' @ [39:36] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'FINAL' @ [39:45] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [40:27] ==> enum entry OPEN defined in org.jetbrains.kotlin.serialization.ProtoBuf.Modality[FakeCallableDescriptorForObject]
-
-'Modality' @ [40:35] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'OPEN' @ [40:44] ==> enum entry OPEN defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'ABSTRACT' @ [41:27] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.serialization.ProtoBuf.Modality[FakeCallableDescriptorForObject]
 
-'Modality' @ [41:39] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'ABSTRACT' @ [41:48] ==> enum entry ABSTRACT defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'SEALED' @ [42:27] ==> enum entry SEALED defined in org.jetbrains.kotlin.serialization.ProtoBuf.Modality[FakeCallableDescriptorForObject]
 
-'Modality' @ [42:37] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
 'SEALED' @ [42:46] ==> enum entry SEALED defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
-
-'Modality' @ [43:17] ==> public companion object defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 
 'FINAL' @ [43:26] ==> enum entry FINAL defined in org.jetbrains.kotlin.descriptors.Modality[FakeCallableDescriptorForObject]
 

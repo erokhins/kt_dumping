@@ -190,9 +190,9 @@ Inferred types:
 
 'kotlin.internal.OnlyInputTypes' @ [162:29] ==> public constructor OnlyInputTypes() defined in kotlin.internal.OnlyInputTypes[ClassConstructorDescriptorImpl]
 
-'containsKey' @ [162:110] ==> @InlineOnly public inline fun <@OnlyInputTypes K> Map<out K?, *>.containsKey(key: K?): Boolean defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'containsKey' @ [162:110] ==> @InlineOnly public inline fun <@OnlyInputTypes K> Map<out K, *>.containsKey(key: K): Boolean defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <@OnlyInputTypes K> -> K?
+    <@OnlyInputTypes K> -> K
 
 'key' @ [162:122] ==> value-parameter key: K defined in kotlin.collections.contains[ValueParameterDescriptorImpl]
 

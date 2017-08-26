@@ -2,7 +2,7 @@
 
 'SinceKotlin' @ [40:1] ==> public constructor SinceKotlin(version: String) defined in kotlin.SinceKotlin[DeserializedClassConstructorDescriptor]
 
-'aggregateTo' @ [44:12] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, R>> Grouping<T, K>.aggregateTo(destination: MutableMap<K, R>, operation: (K, R?, T, first: Boolean) -> R): MutableMap<K, R> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'aggregateTo' @ [44:12] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, R>> Grouping<T, K>.aggregateTo(destination: MutableMap<K, R>, operation: (key: K, accumulator: R?, element: T, first: Boolean) -> R): MutableMap<K, R> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <K> -> K
@@ -58,7 +58,7 @@ Inferred types:
 
 'Suppress' @ [100:9] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'aggregate' @ [101:9] ==> @SinceKotlin public inline fun <T, K, R> Grouping<T, K>.aggregate(operation: (K, R?, T, first: Boolean) -> R): Map<K, R> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'aggregate' @ [101:9] ==> @SinceKotlin public inline fun <T, K, R> Grouping<T, K>.aggregate(operation: (key: K, accumulator: R?, element: T, first: Boolean) -> R): Map<K, R> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <K> -> K
@@ -68,9 +68,9 @@ Inferred types:
 
 'key' @ [101:53] ==> value-parameter key: K defined in kotlin.collections.fold.<anonymous>[ValueParameterDescriptorImpl]
 
-'if (first) initialValueSelector(key, e) else acc as R' @ [101:58] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: @ParameterName R, elseBranch: @ParameterName R): @ParameterName R[SimpleFunctionDescriptorImpl]
+'if (first) initialValueSelector(key, e) else acc as R' @ [101:58] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: R, elseBranch: R): R[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> [@kotlin.ParameterName] R
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> R
 
 'first' @ [101:62] ==> value-parameter first: Boolean defined in kotlin.collections.fold.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -88,7 +88,7 @@ Inferred types:
 
 'Suppress' @ [130:9] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'aggregateTo' @ [131:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, R>> Grouping<T, K>.aggregateTo(destination: M, operation: (K, R?, T, first: Boolean) -> R): M defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'aggregateTo' @ [131:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, R>> Grouping<T, K>.aggregateTo(destination: M, operation: (key: K, accumulator: R?, element: T, first: Boolean) -> R): M defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <K> -> K
@@ -101,9 +101,9 @@ Inferred types:
 
 'key' @ [131:68] ==> value-parameter key: K defined in kotlin.collections.foldTo.<anonymous>[ValueParameterDescriptorImpl]
 
-'if (first) initialValueSelector(key, e) else acc as R' @ [131:73] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: @ParameterName R, elseBranch: @ParameterName R): @ParameterName R[SimpleFunctionDescriptorImpl]
+'if (first) initialValueSelector(key, e) else acc as R' @ [131:73] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: R, elseBranch: R): R[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> [@kotlin.ParameterName] R
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> R
 
 'first' @ [131:77] ==> value-parameter first: Boolean defined in kotlin.collections.foldTo.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -121,7 +121,7 @@ Inferred types:
 
 'Suppress' @ [150:9] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'aggregate' @ [151:9] ==> @SinceKotlin public inline fun <T, K, R> Grouping<T, K>.aggregate(operation: (K, R?, T, first: Boolean) -> R): Map<K, R> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'aggregate' @ [151:9] ==> @SinceKotlin public inline fun <T, K, R> Grouping<T, K>.aggregate(operation: (key: K, accumulator: R?, element: T, first: Boolean) -> R): Map<K, R> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <K> -> K
@@ -129,9 +129,9 @@ Inferred types:
 
 'invoke' @ [151:41] ==> public abstract operator fun invoke(accumulator: @ParameterName R, element: @ParameterName T): R defined in kotlin.Function2[FunctionInvokeDescriptor]
 
-'if (first) initialValue else acc as R' @ [151:51] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: @ParameterName R, elseBranch: @ParameterName R): @ParameterName R[SimpleFunctionDescriptorImpl]
+'if (first) initialValue else acc as R' @ [151:51] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: R, elseBranch: R): R[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> [@kotlin.ParameterName] R
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> R
 
 'first' @ [151:55] ==> value-parameter first: Boolean defined in kotlin.collections.fold.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -145,7 +145,7 @@ Inferred types:
 
 'Suppress' @ [174:9] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'aggregateTo' @ [175:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, R>> Grouping<T, K>.aggregateTo(destination: M, operation: (K, R?, T, first: Boolean) -> R): M defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'aggregateTo' @ [175:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, R>> Grouping<T, K>.aggregateTo(destination: M, operation: (key: K, accumulator: R?, element: T, first: Boolean) -> R): M defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <K> -> K
@@ -156,9 +156,9 @@ Inferred types:
 
 'invoke' @ [175:56] ==> public abstract operator fun invoke(accumulator: @ParameterName R, element: @ParameterName T): R defined in kotlin.Function2[FunctionInvokeDescriptor]
 
-'if (first) initialValue else acc as R' @ [175:66] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: @ParameterName R, elseBranch: @ParameterName R): @ParameterName R[SimpleFunctionDescriptorImpl]
+'if (first) initialValue else acc as R' @ [175:66] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: R, elseBranch: R): R[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> [@kotlin.ParameterName] R
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> R
 
 'first' @ [175:70] ==> value-parameter first: Boolean defined in kotlin.collections.foldTo.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -170,7 +170,7 @@ Inferred types:
 
 'SinceKotlin' @ [192:1] ==> public constructor SinceKotlin(version: String) defined in kotlin.SinceKotlin[DeserializedClassConstructorDescriptor]
 
-'aggregate' @ [196:9] ==> @SinceKotlin public inline fun <T, K, R> Grouping<T, K>.aggregate(operation: (K, S?, T, first: Boolean) -> S): Map<K, S> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'aggregate' @ [196:9] ==> @SinceKotlin public inline fun <T, K, R> Grouping<T, K>.aggregate(operation: (key: K, accumulator: S?, element: T, first: Boolean) -> S): Map<K, S> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <K> -> K
@@ -196,7 +196,7 @@ Inferred types:
 
 'SinceKotlin' @ [218:1] ==> public constructor SinceKotlin(version: String) defined in kotlin.SinceKotlin[DeserializedClassConstructorDescriptor]
 
-'aggregateTo' @ [223:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, S>> Grouping<T, K>.aggregateTo(destination: M, operation: (K, S?, T, first: Boolean) -> S): M defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'aggregateTo' @ [223:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, S>> Grouping<T, K>.aggregateTo(destination: M, operation: (key: K, accumulator: S?, element: T, first: Boolean) -> S): M defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <K> -> K
@@ -227,7 +227,7 @@ Inferred types:
 
 'JvmVersion' @ [237:1] ==> public constructor JvmVersion(minimum: Int = ..., maximum: Int = ...) defined in kotlin.jvm.JvmVersion[ClassConstructorDescriptorImpl]
 
-'foldTo' @ [240:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, Ref.IntRef>> Grouping<T, K>.foldTo(destination: MutableMap<K, Ref.IntRef>, initialValueSelector: (K, T) -> Ref.IntRef, operation: (K, Ref.IntRef, T) -> Ref.IntRef): MutableMap<K, Ref.IntRef> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'foldTo' @ [240:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, Ref.IntRef>> Grouping<T, K>.foldTo(destination: MutableMap<K, Ref.IntRef>, initialValueSelector: (key: K, element: T) -> Ref.IntRef, operation: (key: K, accumulator: Ref.IntRef, element: T) -> Ref.IntRef): MutableMap<K, Ref.IntRef> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <K> -> K
@@ -263,7 +263,7 @@ Inferred types:
 
 'SinceKotlin' @ [255:1] ==> public constructor SinceKotlin(version: String) defined in kotlin.SinceKotlin[DeserializedClassConstructorDescriptor]
 
-'foldTo' @ [257:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, Int>> Grouping<T, K>.foldTo(destination: M, initialValue: Int, operation: (Int, T) -> Int): M defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'foldTo' @ [257:9] ==> @SinceKotlin public inline fun <T, K, R, M : MutableMap<in K, Int>> Grouping<T, K>.foldTo(destination: M, initialValue: Int, operation: (accumulator: Int, element: T) -> Int): M defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> T
     <K> -> K

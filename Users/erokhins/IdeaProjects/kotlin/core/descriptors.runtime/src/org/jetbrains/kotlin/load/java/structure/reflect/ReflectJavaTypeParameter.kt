@@ -4,12 +4,14 @@
 
 'bounds' @ [29:39] ==> public final val <D : (GenericDeclaration..GenericDeclaration?)> TypeVariable<out (GenericDeclaration..GenericDeclaration?)>.bounds: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (GenericDeclaration..GenericDeclaration?)> -> (java.lang.reflect.GenericDeclaration..java.lang.reflect.GenericDeclaration?)
+    <D : (GenericDeclaration..GenericDeclaration?)> -> Captured(*)
 
 'map' @ [29:46] ==> public inline fun <T, R> Array<out (Type..Type?)>.map(transform: ((Type..Type?)) -> ReflectJavaClassifierType): List<ReflectJavaClassifierType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.lang.reflect.Type..java.lang.reflect.Type?)
     <R> -> ReflectJavaClassifierType
+
+'ReflectJavaClassifierType' @ [29:52] ==> public constructor ReflectJavaClassifierType(reflectType: Type) defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaClassifierType[ClassConstructorDescriptorImpl]
 
 'bounds' @ [30:17] ==> val bounds: List<ReflectJavaClassifierType> defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaTypeParameter.<get-upperBounds>[LocalVariableDescriptor]
 
@@ -39,7 +41,7 @@ Inferred types:
 
 'name' @ [39:46] ==> public final val <D : (GenericDeclaration..GenericDeclaration?)> TypeVariable<out (GenericDeclaration..GenericDeclaration?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (GenericDeclaration..GenericDeclaration?)> -> (java.lang.reflect.GenericDeclaration..java.lang.reflect.GenericDeclaration?)
+    <D : (GenericDeclaration..GenericDeclaration?)> -> Captured(*)
 
 'other' @ [41:40] ==> value-parameter other: Any? defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaTypeParameter.equals[ValueParameterDescriptorImpl]
 
@@ -57,11 +59,11 @@ Inferred types:
 
 'java' @ [45:43] ==> public val <T> KClass<out ReflectJavaTypeParameter>.java: Class<out ReflectJavaTypeParameter> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReflectJavaTypeParameter
+    <T> -> Captured(out ReflectJavaTypeParameter)
 
 'name' @ [45:48] ==> public final val <T : (Any..Any?)> Class<out ReflectJavaTypeParameter>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReflectJavaTypeParameter
+    <T : (Any..Any?)> -> Captured(out ReflectJavaTypeParameter)
 
 'typeVariable' @ [45:62] ==> public final val typeVariable: TypeVariable<*> defined in org.jetbrains.kotlin.load.java.structure.reflect.ReflectJavaTypeParameter[PropertyDescriptorImpl]
 

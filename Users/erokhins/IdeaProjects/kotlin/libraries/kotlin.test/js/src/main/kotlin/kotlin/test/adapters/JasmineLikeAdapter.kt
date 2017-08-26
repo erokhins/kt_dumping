@@ -9,13 +9,13 @@ Inferred types:
 
 'ignored' @ [27:13] ==> value-parameter ignored: Boolean defined in kotlin.test.adapters.JasmineLikeAdapter.suite[ValueParameterDescriptorImpl]
 
-'xdescribe' @ [28:13] ==> internal external fun xdescribe(name: String, fn: () -> Unit): Unit defined in kotlin.test.adapters[SimpleFunctionDescriptorImpl]
+'xdescribe' @ [28:13] ==> internal external fun xdescribe(name: String, fn: () -> Unit): Unit defined in kotlin.test.adapters in file Externals.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [28:23] ==> value-parameter name: String defined in kotlin.test.adapters.JasmineLikeAdapter.suite[ValueParameterDescriptorImpl]
 
 'suiteFn' @ [28:29] ==> value-parameter suiteFn: () -> Unit defined in kotlin.test.adapters.JasmineLikeAdapter.suite[ValueParameterDescriptorImpl]
 
-'describe' @ [31:13] ==> internal external fun describe(name: String, fn: () -> Unit): Unit defined in kotlin.test.adapters[SimpleFunctionDescriptorImpl]
+'describe' @ [31:13] ==> internal external fun describe(name: String, fn: () -> Unit): Unit defined in kotlin.test.adapters in file Externals.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [31:22] ==> value-parameter name: String defined in kotlin.test.adapters.JasmineLikeAdapter.suite[ValueParameterDescriptorImpl]
 
@@ -32,13 +32,13 @@ Inferred types:
 
 'ignored' @ [36:13] ==> value-parameter ignored: Boolean defined in kotlin.test.adapters.JasmineLikeAdapter.test[ValueParameterDescriptorImpl]
 
-'xit' @ [37:13] ==> internal external fun xit(name: String, fn: () -> Unit): Unit defined in kotlin.test.adapters[SimpleFunctionDescriptorImpl]
+'xit' @ [37:13] ==> internal external fun xit(name: String, fn: () -> Unit): Unit defined in kotlin.test.adapters in file Externals.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [37:17] ==> value-parameter name: String defined in kotlin.test.adapters.JasmineLikeAdapter.test[ValueParameterDescriptorImpl]
 
 'testFn' @ [37:23] ==> value-parameter testFn: () -> Unit defined in kotlin.test.adapters.JasmineLikeAdapter.test[ValueParameterDescriptorImpl]
 
-'it' @ [40:13] ==> internal external fun it(name: String, fn: () -> Unit): Unit defined in kotlin.test.adapters[SimpleFunctionDescriptorImpl]
+'it' @ [40:13] ==> internal external fun it(name: String, fn: () -> Unit): Unit defined in kotlin.test.adapters in file Externals.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [40:16] ==> value-parameter name: String defined in kotlin.test.adapters.JasmineLikeAdapter.test[ValueParameterDescriptorImpl]
 

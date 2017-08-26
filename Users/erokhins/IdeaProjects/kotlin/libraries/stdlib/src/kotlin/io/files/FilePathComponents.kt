@@ -153,7 +153,7 @@ Inferred types:
 
 'subPath' @ [129:53] ==> val subPath: String defined in kotlin.io.toComponents[LocalVariableDescriptor]
 
-'split' @ [129:61] ==> public fun CharSequence.split(vararg delimiters: Char, ignoreCase: Boolean = ..., limit: Int = ...): List<String> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'split' @ [129:61] ==> public fun CharSequence.split(vararg delimiters: Char, ignoreCase: Boolean = ..., limit: Int = ...): List<String> defined in kotlin.text in file Strings.kt[SimpleFunctionDescriptorImpl]
 
 'separatorChar' @ [129:72] ==> public const final val separatorChar: Char defined in java.io.File[JavaPropertyDescriptor]
 
@@ -161,6 +161,8 @@ Inferred types:
 Inferred types:
     <T> -> String
     <R> -> File
+
+'File' @ [129:93] ==> public constructor File(p0: (String..String?)) defined in java.io.File[JavaClassConstructorDescriptor]
 
 'FilePathComponents' @ [130:12] ==> internal constructor FilePathComponents(root: File, segments: List<File>) defined in kotlin.io.FilePathComponents[ClassConstructorDescriptorImpl]
 

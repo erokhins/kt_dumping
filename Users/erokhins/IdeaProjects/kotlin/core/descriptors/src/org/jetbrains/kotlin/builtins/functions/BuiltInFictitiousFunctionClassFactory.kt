@@ -110,8 +110,6 @@ Inferred types:
 
 'kind' @ [84:13] ==> val kind: FunctionClassDescriptor.Kind defined in org.jetbrains.kotlin.builtins.functions.BuiltInFictitiousFunctionClassFactory.createClass[LocalVariableDescriptor]
 
-'Kind' @ [84:21] ==> public companion object defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.Kind[FakeCallableDescriptorForObject]
-
 'SuspendFunction' @ [84:26] ==> enum entry SuspendFunction defined in org.jetbrains.kotlin.builtins.functions.FunctionClassDescriptor.Kind[FakeCallableDescriptorForObject]
 
 'module' @ [86:41] ==> private final val module: ModuleDescriptor defined in org.jetbrains.kotlin.builtins.functions.BuiltInFictitiousFunctionClassFactory[PropertyDescriptorImpl]

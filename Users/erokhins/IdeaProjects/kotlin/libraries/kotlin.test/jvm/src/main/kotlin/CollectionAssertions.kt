@@ -57,7 +57,7 @@ Inferred types:
 
 'Deprecated' @ [42:1] ==> public constructor Deprecated(message: String, replaceWith: ReplaceWith = ..., level: DeprecationLevel = ...) defined in kotlin.Deprecated[DeserializedClassConstructorDescriptor]
 
-'assertTrue' @ [44:5] ==> public fun assertTrue(message: String? = ..., block: () -> Boolean): Unit defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'assertTrue' @ [44:5] ==> public fun assertTrue(message: String? = ..., block: () -> Boolean): Unit defined in kotlin.test in file Assertions.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [44:16] ==> value-parameter message: String? = ... defined in kotlin.test.elementAtShouldComply[ValueParameterDescriptorImpl]
 
@@ -93,7 +93,7 @@ Inferred types:
 
 'elements' @ [54:15] ==> value-parameter vararg elements: T defined in kotlin.test.containsAll[ValueParameterDescriptorImpl]
 
-'assertTrue' @ [55:9] ==> public fun assertTrue(message: String? = ..., block: () -> Boolean): Unit defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'assertTrue' @ [55:9] ==> public fun assertTrue(message: String? = ..., block: () -> Boolean): Unit defined in kotlin.test in file Assertions.kt[SimpleFunctionDescriptorImpl]
 
 'e' @ [55:40] ==> val e: T defined in kotlin.test.containsAll[LocalVariableDescriptor]
 

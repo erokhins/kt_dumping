@@ -111,7 +111,7 @@ Inferred types:
 
 'WeakReference' @ [58:26] ==> public constructor WeakReference<T : (Any..Any?)>(p0: (KClassImpl<*>..KClassImpl<*>?)) defined in java.lang.ref.WeakReference[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KClassImpl<T>
+    <T : (Any..Any?)> -> KClassImpl<*>
 
 'newKClass' @ [58:40] ==> val newKClass: KClassImpl<T> defined in kotlin.reflect.jvm.internal.getOrCreateKotlinClass[LocalVariableDescriptor]
 
@@ -143,7 +143,7 @@ Inferred types:
 
 'WeakReference' @ [64:46] ==> public constructor WeakReference<T : (Any..Any?)>(p0: (KClassImpl<T>..KClassImpl<T>?)) defined in java.lang.ref.WeakReference[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> KClassImpl<T>
+    <T : (Any..Any?)> -> (kotlin.reflect.jvm.internal.KClassImpl<T>..kotlin.reflect.jvm.internal.KClassImpl<T>?)
 
 'newKClass' @ [64:60] ==> val newKClass: KClassImpl<T> defined in kotlin.reflect.jvm.internal.getOrCreateKotlinClass[LocalVariableDescriptor]
 
@@ -153,6 +153,6 @@ Inferred types:
 
 'empty' @ [69:30] ==> @SuppressWarnings @NotNull public open fun <K : (Any..Any?), V : (Any..Any?)> empty(): HashPMap<(String..String?), (Any..Any?)> defined in kotlin.reflect.jvm.internal.pcollections.HashPMap[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> Any
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 

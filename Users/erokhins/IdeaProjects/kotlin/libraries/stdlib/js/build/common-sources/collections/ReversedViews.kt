@@ -12,7 +12,7 @@ Inferred types:
 
 'delegate' @ [24:39] ==> private final val delegate: List<T> defined in kotlin.collections.ReversedListReadOnly[PropertyDescriptorImpl]
 
-'reverseElementIndex' @ [24:48] ==> private fun List<*>.reverseElementIndex(index: Int): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reverseElementIndex' @ [24:48] ==> private fun List<*>.reverseElementIndex(index: Int): Int defined in kotlin.collections in file ReversedViews.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [24:68] ==> value-parameter index: Int defined in kotlin.collections.ReversedListReadOnly.get[ValueParameterDescriptorImpl]
 
@@ -26,7 +26,7 @@ Inferred types:
 
 'delegate' @ [29:39] ==> private final val delegate: MutableList<T> defined in kotlin.collections.ReversedList[PropertyDescriptorImpl]
 
-'reverseElementIndex' @ [29:48] ==> private fun List<*>.reverseElementIndex(index: Int): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reverseElementIndex' @ [29:48] ==> private fun List<*>.reverseElementIndex(index: Int): Int defined in kotlin.collections in file ReversedViews.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [29:68] ==> value-parameter index: Int defined in kotlin.collections.ReversedList.get[ValueParameterDescriptorImpl]
 
@@ -38,7 +38,7 @@ Inferred types:
 
 'removeAt' @ [32:53] ==> public abstract fun removeAt(index: Int): T defined in kotlin.collections.MutableList[SimpleFunctionDescriptorImpl]
 
-'reverseElementIndex' @ [32:62] ==> private fun List<*>.reverseElementIndex(index: Int): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reverseElementIndex' @ [32:62] ==> private fun List<*>.reverseElementIndex(index: Int): Int defined in kotlin.collections in file ReversedViews.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [32:82] ==> value-parameter index: Int defined in kotlin.collections.ReversedList.removeAt[ValueParameterDescriptorImpl]
 
@@ -46,7 +46,7 @@ Inferred types:
 
 'set' @ [34:60] ==> public abstract operator fun set(index: Int, element: T): T defined in kotlin.collections.MutableList[SimpleFunctionDescriptorImpl]
 
-'reverseElementIndex' @ [34:64] ==> private fun List<*>.reverseElementIndex(index: Int): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reverseElementIndex' @ [34:64] ==> private fun List<*>.reverseElementIndex(index: Int): Int defined in kotlin.collections in file ReversedViews.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [34:84] ==> value-parameter index: Int defined in kotlin.collections.ReversedList.set[ValueParameterDescriptorImpl]
 
@@ -56,7 +56,7 @@ Inferred types:
 
 'add' @ [36:18] ==> public abstract fun add(index: Int, element: T): Unit defined in kotlin.collections.MutableList[SimpleFunctionDescriptorImpl]
 
-'reversePositionIndex' @ [36:22] ==> private fun List<*>.reversePositionIndex(index: Int): Int defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'reversePositionIndex' @ [36:22] ==> private fun List<*>.reversePositionIndex(index: Int): Int defined in kotlin.collections in file ReversedViews.kt[SimpleFunctionDescriptorImpl]
 
 'index' @ [36:43] ==> value-parameter index: Int defined in kotlin.collections.ReversedList.add[ValueParameterDescriptorImpl]
 

@@ -40,13 +40,13 @@ Inferred types:
 
 'kotlin.internal.InlineOnly' @ [41:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'firstOrNull' @ [43:12] ==> public inline fun CharSequence.firstOrNull(predicate: (Char) -> Boolean): Char? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'firstOrNull' @ [43:12] ==> public inline fun CharSequence.firstOrNull(predicate: (Char) -> Boolean): Char? defined in kotlin.text in file _Strings.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [43:24] ==> value-parameter predicate: (Char) -> Boolean defined in kotlin.text.find[ValueParameterDescriptorImpl]
 
 'kotlin.internal.InlineOnly' @ [49:1] ==> public constructor InlineOnly() defined in kotlin.internal.InlineOnly[ClassConstructorDescriptorImpl]
 
-'lastOrNull' @ [51:12] ==> public inline fun CharSequence.lastOrNull(predicate: (Char) -> Boolean): Char? defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'lastOrNull' @ [51:12] ==> public inline fun CharSequence.lastOrNull(predicate: (Char) -> Boolean): Char? defined in kotlin.text in file _Strings.kt[SimpleFunctionDescriptorImpl]
 
 'predicate' @ [51:23] ==> value-parameter predicate: (Char) -> Boolean defined in kotlin.text.findLast[ValueParameterDescriptorImpl]
 
@@ -264,7 +264,7 @@ Inferred types:
 
 'single' @ [217:12] ==> var single: Char? defined in kotlin.text.singleOrNull[LocalVariableDescriptor]
 
-'require' @ [224:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [224:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [224:13] ==> value-parameter n: Int defined in kotlin.text.drop[ValueParameterDescriptorImpl]
 
@@ -280,7 +280,7 @@ Inferred types:
 
 'length' @ [225:48] ==> public abstract val length: Int defined in kotlin.CharSequence[DeserializedPropertyDescriptor]
 
-'require' @ [232:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [232:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [232:13] ==> value-parameter n: Int defined in kotlin.text.drop[ValueParameterDescriptorImpl]
 
@@ -294,7 +294,7 @@ Inferred types:
 
 'length' @ [233:37] ==> public open val length: Int defined in kotlin.String[DeserializedPropertyDescriptor]
 
-'require' @ [240:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [240:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [240:13] ==> value-parameter n: Int defined in kotlin.text.dropLast[ValueParameterDescriptorImpl]
 
@@ -308,7 +308,7 @@ Inferred types:
 
 'coerceAtLeast' @ [241:30] ==> public fun Int.coerceAtLeast(minimumValue: Int): Int defined in kotlin.ranges in file _Ranges.kt[SimpleFunctionDescriptorImpl]
 
-'require' @ [248:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [248:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [248:13] ==> value-parameter n: Int defined in kotlin.text.dropLast[ValueParameterDescriptorImpl]
 
@@ -428,7 +428,7 @@ Inferred types:
 
 'toString' @ [321:56] ==> public open fun toString(): String defined in java.lang.StringBuilder[JavaMethodDescriptor]
 
-'forEachIndexed' @ [330:5] ==> public inline fun CharSequence.forEachIndexed(action: (index: Int, Char) -> Unit): Unit defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [330:5] ==> public inline fun CharSequence.forEachIndexed(action: (index: Int, Char) -> Unit): Unit defined in kotlin.text in file _Strings.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [331:13] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Char): Boolean defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -542,13 +542,13 @@ Inferred types:
 
 'this' @ [403:13] ==> <this> defined in kotlin.text.slice[ReceiverParameterDescriptorImpl]
 
-'slice' @ [403:35] ==> public fun CharSequence.slice(indices: Iterable<Int>): CharSequence defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'slice' @ [403:35] ==> public fun CharSequence.slice(indices: Iterable<Int>): CharSequence defined in kotlin.text in file _Strings.kt[SimpleFunctionDescriptorImpl]
 
 'indices' @ [403:41] ==> value-parameter indices: Iterable<Int> defined in kotlin.text.slice[ValueParameterDescriptorImpl]
 
 'toString' @ [403:50] ==> public open fun toString(): String defined in kotlin.CharSequence[DeserializedSimpleFunctionDescriptor]
 
-'require' @ [410:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [410:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [410:13] ==> value-parameter n: Int defined in kotlin.text.take[ValueParameterDescriptorImpl]
 
@@ -562,7 +562,7 @@ Inferred types:
 
 'length' @ [411:42] ==> public abstract val length: Int defined in kotlin.CharSequence[DeserializedPropertyDescriptor]
 
-'require' @ [418:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [418:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [418:13] ==> value-parameter n: Int defined in kotlin.text.take[ValueParameterDescriptorImpl]
 
@@ -576,7 +576,7 @@ Inferred types:
 
 'length' @ [419:40] ==> public open val length: Int defined in kotlin.String[DeserializedPropertyDescriptor]
 
-'require' @ [426:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [426:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [426:13] ==> value-parameter n: Int defined in kotlin.text.takeLast[ValueParameterDescriptorImpl]
 
@@ -596,7 +596,7 @@ Inferred types:
 
 'length' @ [428:57] ==> val length: Int defined in kotlin.text.takeLast[LocalVariableDescriptor]
 
-'require' @ [435:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'require' @ [435:5] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin in file Preconditions.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [435:13] ==> value-parameter n: Int defined in kotlin.text.takeLast[ValueParameterDescriptorImpl]
 
@@ -850,7 +850,7 @@ Inferred types:
 
 'this' @ [604:17] ==> <this> defined in kotlin.text.toList[ReceiverParameterDescriptorImpl]
 
-'toMutableList' @ [604:22] ==> public fun CharSequence.toMutableList(): MutableList<Char> defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'toMutableList' @ [604:22] ==> public fun CharSequence.toMutableList(): MutableList<Char> defined in kotlin.text in file _Strings.kt[SimpleFunctionDescriptorImpl]
 
 'toCollection' @ [612:12] ==> public fun <C : MutableCollection<in Char>> CharSequence.toCollection(destination: ArrayList<Char> /* = ArrayList<Char> */): ArrayList<Char> /* = ArrayList<Char> */ defined in kotlin.text[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -966,9 +966,9 @@ Inferred types:
 
 'destination' @ [690:20] ==> value-parameter destination: M defined in kotlin.text.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [690:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Char>>.getOrPut(key: Any?, defaultValue: () -> MutableList<Char>): MutableList<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [690:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<Char>>.getOrPut(key: K, defaultValue: () -> MutableList<Char>): MutableList<Char> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<Char>
 
 'key' @ [690:41] ==> val key: K defined in kotlin.text.groupByTo[LocalVariableDescriptor]
@@ -993,9 +993,9 @@ Inferred types:
 
 'destination' @ [708:20] ==> value-parameter destination: M defined in kotlin.text.groupByTo[ValueParameterDescriptorImpl]
 
-'getOrPut' @ [708:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: Any?, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'getOrPut' @ [708:32] ==> public inline fun <K, V> MutableMap<in K, MutableList<V>>.getOrPut(key: K, defaultValue: () -> MutableList<V>): MutableList<V> defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <K> -> Any?
+    <K> -> Captured(in K)
     <V> -> MutableList<V>
 
 'key' @ [708:41] ==> val key: K defined in kotlin.text.groupByTo[LocalVariableDescriptor]
@@ -1061,7 +1061,7 @@ Inferred types:
 
 'transform' @ [753:48] ==> value-parameter transform: (index: Int, Char) -> R? defined in kotlin.text.mapIndexedNotNull[ValueParameterDescriptorImpl]
 
-'forEachIndexed' @ [763:5] ==> public inline fun CharSequence.forEachIndexed(action: (index: Int, Char) -> Unit): Unit defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'forEachIndexed' @ [763:5] ==> public inline fun CharSequence.forEachIndexed(action: (index: Int, Char) -> Unit): Unit defined in kotlin.text in file _Strings.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [763:40] ==> public abstract operator fun invoke(index: @ParameterName Int, p2: Char): R? defined in kotlin.Function2[FunctionInvokeDescriptor]
 
@@ -1107,7 +1107,7 @@ Inferred types:
 
 'transform' @ [785:41] ==> value-parameter transform: (Char) -> R? defined in kotlin.text.mapNotNull[ValueParameterDescriptorImpl]
 
-'forEach' @ [793:5] ==> public inline fun CharSequence.forEach(action: (Char) -> Unit): Unit defined in kotlin.text[SimpleFunctionDescriptorImpl]
+'forEach' @ [793:5] ==> public inline fun CharSequence.forEach(action: (Char) -> Unit): Unit defined in kotlin.text in file _Strings.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [793:26] ==> public abstract operator fun invoke(p1: Char): R? defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -1332,7 +1332,7 @@ Inferred types:
 
 'comparator' @ [960:13] ==> value-parameter comparator: Comparator<in Char> /* = Comparator<in Char> */ defined in kotlin.text.maxWith[ValueParameterDescriptorImpl]
 
-'compare' @ [960:24] ==> public abstract fun compare(p0: (Any..Any?), p1: (Any..Any?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
+'compare' @ [960:24] ==> public abstract fun compare(p0: (Char..Char?), p1: (Char..Char?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
 
 'max' @ [960:32] ==> var max: Char defined in kotlin.text.maxWith[LocalVariableDescriptor]
 
@@ -1414,7 +1414,7 @@ Inferred types:
 
 'comparator' @ [1004:13] ==> value-parameter comparator: Comparator<in Char> /* = Comparator<in Char> */ defined in kotlin.text.minWith[ValueParameterDescriptorImpl]
 
-'compare' @ [1004:24] ==> public abstract fun compare(p0: (Any..Any?), p1: (Any..Any?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
+'compare' @ [1004:24] ==> public abstract fun compare(p0: (Char..Char?), p1: (Char..Char?)): Int defined in java.util.Comparator[JavaMethodDescriptor]
 
 'min' @ [1004:32] ==> var min: Char defined in kotlin.text.minWith[LocalVariableDescriptor]
 

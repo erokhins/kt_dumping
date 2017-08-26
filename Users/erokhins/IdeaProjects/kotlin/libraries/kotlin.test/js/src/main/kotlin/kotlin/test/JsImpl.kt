@@ -4,7 +4,7 @@
 
 'block' @ [27:26] ==> value-parameter block: () -> Unit defined in kotlin.test.todo[ValueParameterDescriptorImpl]
 
-'assertFails' @ [33:21] ==> @SinceKotlin public fun assertFails(message: String?, block: () -> Unit): Throwable defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'assertFails' @ [33:21] ==> @SinceKotlin public fun assertFails(message: String?, block: () -> Unit): Throwable defined in kotlin.test in file Assertions.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [33:33] ==> value-parameter message: String? defined in kotlin.test.assertFailsWith[ValueParameterDescriptorImpl]
 
@@ -20,7 +20,7 @@
 
 'exception' @ [35:42] ==> val exception: Throwable defined in kotlin.test.assertFailsWith[LocalVariableDescriptor]
 
-'messagePrefix' @ [35:54] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test[SimpleFunctionDescriptorImpl]
+'messagePrefix' @ [35:54] ==> internal fun messagePrefix(message: String?): String defined in kotlin.test in file Utils.kt[SimpleFunctionDescriptorImpl]
 
 'message' @ [35:68] ==> value-parameter message: String? defined in kotlin.test.assertFailsWith[ValueParameterDescriptorImpl]
 

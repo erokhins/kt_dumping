@@ -40,9 +40,7 @@ Inferred types:
 
 'c' @ [55:20] ==> value-parameter c: Set<*> defined in kotlin.collections.AbstractSet.Companion.setEquals[ValueParameterDescriptorImpl]
 
-'containsAll' @ [55:22] ==> @Suppress @InlineOnly public inline fun <@OnlyInputTypes T> Collection<Any?>.containsAll(elements: Collection<Any?>): Boolean defined in kotlin.collections[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <@OnlyInputTypes T> -> Any?
+'containsAll' @ [55:22] ==> public abstract fun containsAll(elements: Collection<Any?>): Boolean defined in kotlin.collections.Set[SimpleFunctionDescriptorImpl]
 
 'other' @ [55:34] ==> value-parameter other: Set<*> defined in kotlin.collections.AbstractSet.Companion.setEquals[ValueParameterDescriptorImpl]
 

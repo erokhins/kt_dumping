@@ -443,7 +443,7 @@ Inferred types:
 
 'type' @ [161:17] ==> val type: KotlinType defined in org.jetbrains.kotlin.android.parcel.ParcelableDeclarationChecker.checkParcelableClass[LocalVariableDescriptor]
 
-'isParcelable' @ [161:22] ==> internal fun KotlinType.isParcelable(): Boolean defined in org.jetbrains.kotlin.android.parcel.serializers[SimpleFunctionDescriptorImpl]
+'isParcelable' @ [161:22] ==> internal fun KotlinType.isParcelable(): Boolean defined in org.jetbrains.kotlin.android.parcel.serializers in file ParcelSerializer.kt[SimpleFunctionDescriptorImpl]
 
 'supertypeEntry' @ [162:37] ==> val supertypeEntry: KtSuperTypeListEntry defined in org.jetbrains.kotlin.android.parcel.ParcelableDeclarationChecker.checkParcelableClass[LocalVariableDescriptor]
 

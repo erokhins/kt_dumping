@@ -72,7 +72,7 @@ Inferred types:
 
 'Class' @ [40:9] ==> private constructor Class<T : (Any..Any?)>() defined in java.lang.Class[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@4676a8b5
 
 'java' @ [40:22] ==> public val <T> KClass<Class<*>>.java: Class<Class<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -106,7 +106,7 @@ Inferred types:
 
 'name' @ [58:23] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'replace' @ [58:28] ==> public fun String.replace(oldChar: Char, newChar: Char, ignoreCase: Boolean = ...): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -146,11 +146,11 @@ Inferred types:
 
 'java' @ [75:43] ==> public val <T> KClass<out ReflectKotlinClass>.java: Class<out ReflectKotlinClass> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> ReflectKotlinClass
+    <T> -> Captured(out ReflectKotlinClass)
 
 'name' @ [75:48] ==> public final val <T : (Any..Any?)> Class<out ReflectKotlinClass>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ReflectKotlinClass
+    <T : (Any..Any?)> -> Captured(out ReflectKotlinClass)
 
 'klass' @ [75:62] ==> public final val klass: Class<*> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClass[PropertyDescriptorImpl]
 
@@ -158,7 +158,7 @@ Inferred types:
 
 'declaredAnnotations' @ [80:34] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredAnnotations: (Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'processAnnotation' @ [81:13] ==> private final fun processAnnotation(visitor: KotlinJvmBinaryClass.AnnotationVisitor, annotation: Annotation): Unit defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure[SimpleFunctionDescriptorImpl]
 
@@ -192,7 +192,7 @@ Inferred types:
 
 'declaredMethods' @ [93:30] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredMethods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'memberVisitor' @ [94:27] ==> value-parameter memberVisitor: KotlinJvmBinaryClass.MemberVisitor defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[ValueParameterDescriptorImpl]
 
@@ -203,8 +203,6 @@ Inferred types:
 'method' @ [94:69] ==> val method: (Method..Method?) defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[LocalVariableDescriptor]
 
 'name' @ [94:76] ==> public final val Method.name: (String..String?)[MyPropertyDescriptor]
-
-'SignatureSerializer' @ [94:83] ==> private object SignatureSerializer defined in org.jetbrains.kotlin.load.kotlin.reflect in file ReflectKotlinClass.kt[FakeCallableDescriptorForObject]
 
 'methodDesc' @ [94:103] ==> public final fun methodDesc(method: Method): String defined in org.jetbrains.kotlin.load.kotlin.reflect.SignatureSerializer[SimpleFunctionDescriptorImpl]
 
@@ -240,9 +238,9 @@ Inferred types:
 Inferred types:
     <T : Annotation> -> (kotlin.Annotation..kotlin.Annotation?)
 
-'java' @ [102:69] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [102:69] ==> public val <T> KClass<out (Annotation..Annotation?)>.java: Class<out (Annotation..Annotation?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out (kotlin.Annotation..kotlin.Annotation?))
 
 'visitor' @ [103:21] ==> val visitor: KotlinJvmBinaryClass.MethodAnnotationVisitor defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[LocalVariableDescriptor]
 
@@ -250,7 +248,7 @@ Inferred types:
 
 'parameterIndex' @ [103:54] ==> val parameterIndex: Int defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[LocalVariableDescriptor]
 
-'annotationType' @ [103:70] ==> val annotationType: Class<out Annotation> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[LocalVariableDescriptor]
+'annotationType' @ [103:70] ==> val annotationType: Class<out (Annotation..Annotation?)> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[LocalVariableDescriptor]
 
 'classId' @ [103:85] ==> public val Class<*>.classId: ClassId defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[PropertyDescriptorImpl]
 
@@ -269,7 +267,7 @@ Inferred types:
 
 'annotation' @ [104:56] ==> val annotation: (Annotation..Annotation?) defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[LocalVariableDescriptor]
 
-'annotationType' @ [104:68] ==> val annotationType: Class<out Annotation> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[LocalVariableDescriptor]
+'annotationType' @ [104:68] ==> val annotationType: Class<out (Annotation..Annotation?)> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[LocalVariableDescriptor]
 
 'visitor' @ [109:13] ==> val visitor: KotlinJvmBinaryClass.MethodAnnotationVisitor defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadMethodAnnotations[LocalVariableDescriptor]
 
@@ -279,15 +277,13 @@ Inferred types:
 
 'declaredConstructors' @ [114:35] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredConstructors: (Array<(Constructor<*>..Constructor<*>?)>..Array<out (Constructor<*>..Constructor<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'memberVisitor' @ [115:27] ==> value-parameter memberVisitor: KotlinJvmBinaryClass.MemberVisitor defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[ValueParameterDescriptorImpl]
 
 'visitMethod' @ [115:41] ==> public abstract fun visitMethod(name: Name, desc: String): KotlinJvmBinaryClass.MethodAnnotationVisitor? defined in org.jetbrains.kotlin.load.kotlin.KotlinJvmBinaryClass.MemberVisitor[SimpleFunctionDescriptorImpl]
 
 'special' @ [115:58] ==> @NotNull public open fun special(@NotNull name: String): Name defined in org.jetbrains.kotlin.name.Name[JavaMethodDescriptor]
-
-'SignatureSerializer' @ [115:77] ==> private object SignatureSerializer defined in org.jetbrains.kotlin.load.kotlin.reflect in file ReflectKotlinClass.kt[FakeCallableDescriptorForObject]
 
 'constructorDesc' @ [115:97] ==> public final fun constructorDesc(constructor: Constructor<*>): String defined in org.jetbrains.kotlin.load.kotlin.reflect.SignatureSerializer[SimpleFunctionDescriptorImpl]
 
@@ -297,7 +293,7 @@ Inferred types:
 
 'declaredAnnotations' @ [117:44] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.declaredAnnotations: (Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'processAnnotation' @ [118:17] ==> private final fun processAnnotation(visitor: KotlinJvmBinaryClass.AnnotationVisitor, annotation: Annotation): Unit defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure[SimpleFunctionDescriptorImpl]
 
@@ -309,7 +305,7 @@ Inferred types:
 
 'parameterAnnotations' @ [121:52] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterAnnotations: (Array<(Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)>..Array<out (Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'parameterAnnotations' @ [122:17] ==> val parameterAnnotations: (Array<(Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)>..Array<out (Array<(Annotation..Annotation?)>..Array<out (Annotation..Annotation?)>?)>?) defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[LocalVariableDescriptor]
 
@@ -321,7 +317,7 @@ Inferred types:
 
 'parameterTypes' @ [129:41] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'size' @ [129:56] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
@@ -347,9 +343,9 @@ Inferred types:
 Inferred types:
     <T : Annotation> -> (kotlin.Annotation..kotlin.Annotation?)
 
-'java' @ [133:73] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [133:73] ==> public val <T> KClass<out (Annotation..Annotation?)>.java: Class<out (Annotation..Annotation?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out (kotlin.Annotation..kotlin.Annotation?))
 
 'visitor' @ [134:25] ==> val visitor: KotlinJvmBinaryClass.MethodAnnotationVisitor defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[LocalVariableDescriptor]
 
@@ -359,7 +355,7 @@ Inferred types:
 
 'shift' @ [135:50] ==> val shift: Int defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[LocalVariableDescriptor]
 
-'annotationType' @ [135:57] ==> val annotationType: Class<out Annotation> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[LocalVariableDescriptor]
+'annotationType' @ [135:57] ==> val annotationType: Class<out (Annotation..Annotation?)> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[LocalVariableDescriptor]
 
 'classId' @ [135:72] ==> public val Class<*>.classId: ClassId defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[PropertyDescriptorImpl]
 
@@ -378,7 +374,7 @@ Inferred types:
 
 'annotation' @ [137:60] ==> val annotation: (Annotation..Annotation?) defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[LocalVariableDescriptor]
 
-'annotationType' @ [137:72] ==> val annotationType: Class<out Annotation> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[LocalVariableDescriptor]
+'annotationType' @ [137:72] ==> val annotationType: Class<out (Annotation..Annotation?)> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[LocalVariableDescriptor]
 
 'visitor' @ [143:13] ==> val visitor: KotlinJvmBinaryClass.MethodAnnotationVisitor defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadConstructorAnnotations[LocalVariableDescriptor]
 
@@ -388,7 +384,7 @@ Inferred types:
 
 'declaredFields' @ [148:29] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredFields: (Array<(Field..Field?)>..Array<out (Field..Field?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'memberVisitor' @ [149:27] ==> value-parameter memberVisitor: KotlinJvmBinaryClass.MemberVisitor defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadFieldAnnotations[ValueParameterDescriptorImpl]
 
@@ -399,8 +395,6 @@ Inferred types:
 'field' @ [149:68] ==> val field: (Field..Field?) defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.loadFieldAnnotations[LocalVariableDescriptor]
 
 'name' @ [149:74] ==> public final val Field.name: (String..String?)[MyPropertyDescriptor]
-
-'SignatureSerializer' @ [149:81] ==> private object SignatureSerializer defined in org.jetbrains.kotlin.load.kotlin.reflect in file ReflectKotlinClass.kt[FakeCallableDescriptorForObject]
 
 'fieldDesc' @ [149:101] ==> public final fun fieldDesc(field: Field): String defined in org.jetbrains.kotlin.load.kotlin.reflect.SignatureSerializer[SimpleFunctionDescriptorImpl]
 
@@ -428,7 +422,7 @@ Inferred types:
 
 'java' @ [160:57] ==> public val <T> KClass<out Annotation>.java: Class<out Annotation> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Annotation
+    <T> -> Captured(out Annotation)
 
 'visitor' @ [161:9] ==> value-parameter visitor: KotlinJvmBinaryClass.AnnotationVisitor defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.processAnnotation[ValueParameterDescriptorImpl]
 
@@ -459,7 +453,7 @@ Inferred types:
 
 'declaredMethods' @ [171:39] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.declaredMethods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'invoke' @ [173:17] ==> public open operator fun invoke(p0: (Any..Any?), vararg p1: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Method[JavaMethodDescriptor]
 
@@ -485,7 +479,7 @@ Inferred types:
 
 'java' @ [187:34] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'when {
             clazz in TYPES_ELIGIBLE_FOR_SIMPLE_VISIT -> {
@@ -540,15 +534,15 @@ Inferred types:
 
 'isEnumClassOrSpecializedEnumEntryClass' @ [192:19] ==> public fun Class<*>.isEnumClassOrSpecializedEnumEntryClass(): Boolean defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[SimpleFunctionDescriptorImpl]
 
-'if (clazz.isEnum) clazz else clazz.enclosingClass' @ [194:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Class<out Any>, elseBranch: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
+'if (clazz.isEnum) clazz else clazz.enclosingClass' @ [194:32] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?), elseBranch: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Class<out Any>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.lang.Class<out (kotlin.Any..kotlin.Any?)>..java.lang.Class<out (kotlin.Any..kotlin.Any?)>?)
 
 'clazz' @ [194:36] ==> val clazz: Class<out Any> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.processAnnotationArgumentValue[LocalVariableDescriptor]
 
 'isEnum' @ [194:42] ==> public final val <T : (Any..Any?)> Class<out Any>.isEnum: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'clazz' @ [194:50] ==> val clazz: Class<out Any> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.processAnnotationArgumentValue[LocalVariableDescriptor]
 
@@ -556,7 +550,7 @@ Inferred types:
 
 'enclosingClass' @ [194:67] ==> public final val <T : (Any..Any?)> Class<out Any>.enclosingClass: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'classId' @ [194:83] ==> public val Class<*>.classId: ClassId defined in org.jetbrains.kotlin.load.java.structure.reflect in file reflectClassUtil.kt[PropertyDescriptorImpl]
 
@@ -586,7 +580,7 @@ Inferred types:
 
 'interfaces' @ [198:45] ==> public final val <T : (Any..Any?)> Class<out Any>.interfaces: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'single' @ [198:56] ==> public fun <T> Array<out (Class<*>..Class<*>?)>.single(): (Class<*>..Class<*>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -614,7 +608,7 @@ Inferred types:
 
 'isArray' @ [202:19] ==> public final val <T : (Any..Any?)> Class<out Any>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'visitor' @ [203:25] ==> value-parameter visitor: KotlinJvmBinaryClass.AnnotationArgumentVisitor defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.processAnnotationArgumentValue[ValueParameterDescriptorImpl]
 
@@ -626,7 +620,7 @@ Inferred types:
 
 'componentType' @ [204:43] ==> public final val <T : (Any..Any?)> Class<out Any>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'if (componentType.isEnum) {
                     val enumClassId = componentType.classId
@@ -646,7 +640,7 @@ Inferred types:
 
 'isEnum' @ [205:35] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isEnum: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'componentType' @ [206:39] ==> val componentType: (Class<*>..Class<*>?) defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectClassStructure.processAnnotationArgumentValue[LocalVariableDescriptor]
 
@@ -730,7 +724,7 @@ Inferred types:
 
 'parameterTypes' @ [240:43] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'sb' @ [241:13] ==> val sb: StringBuilder /* = StringBuilder */ defined in org.jetbrains.kotlin.load.kotlin.reflect.SignatureSerializer.constructorDesc[LocalVariableDescriptor]
 

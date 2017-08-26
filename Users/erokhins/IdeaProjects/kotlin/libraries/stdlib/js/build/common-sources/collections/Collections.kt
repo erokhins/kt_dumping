@@ -72,9 +72,9 @@ Inferred types:
 
 'values' @ [69:50] ==> public final val values: Array<out T> defined in kotlin.collections.ArrayAsCollection[PropertyDescriptorImpl]
 
-'contains' @ [69:57] ==> public operator fun <@OnlyInputTypes T> Array<out T?>.contains(element: T?): Boolean defined in kotlin.collections[SimpleFunctionDescriptorImpl]
+'contains' @ [69:57] ==> public operator fun <@OnlyInputTypes T> Array<out T>.contains(element: T): Boolean defined in kotlin.collections[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <@OnlyInputTypes T> -> T?
+    <@OnlyInputTypes T> -> T
 
 'element' @ [69:66] ==> value-parameter element: T defined in kotlin.collections.ArrayAsCollection.contains[ValueParameterDescriptorImpl]
 
@@ -230,7 +230,7 @@ Inferred types:
 
 'size' @ [132:29] ==> value-parameter size: Int defined in kotlin.collections.MutableList[ValueParameterDescriptorImpl]
 
-'repeat' @ [133:5] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin[SimpleFunctionDescriptorImpl]
+'repeat' @ [133:5] ==> @InlineOnly public inline fun repeat(times: Int, action: (Int) -> Unit): Unit defined in kotlin in file Standard.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [133:12] ==> value-parameter size: Int defined in kotlin.collections.MutableList[ValueParameterDescriptorImpl]
 
@@ -408,7 +408,7 @@ Inferred types:
 
 'comparator' @ [263:19] ==> value-parameter comparator: Comparator<in T> defined in kotlin.collections.binarySearch[ValueParameterDescriptorImpl]
 
-'compare' @ [263:30] ==> @JsName public abstract fun compare(a: Any?, b: Any?): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
+'compare' @ [263:30] ==> @JsName public abstract fun compare(a: T, b: T): Int defined in kotlin.Comparator[SimpleFunctionDescriptorImpl]
 
 'midVal' @ [263:38] ==> val midVal: T defined in kotlin.collections.binarySearch[LocalVariableDescriptor]
 

@@ -96,7 +96,9 @@ Inferred types:
 
 'annotation' @ [56:19] ==> value-parameter annotation: Annotation defined in org.jetbrains.kotlin.script.util.KotlinAnnotatedScriptDependenciesResolver.resolveFromAnnotations.<anonymous>[ValueParameterDescriptorImpl]
 
-'FlatLibDirectoryResolver' @ [57:34] ==> public companion object defined in org.jetbrains.kotlin.script.util.resolvers.FlatLibDirectoryResolver[FakeCallableDescriptorForObject]
+'?:' @ [57:34] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Any?, right: Any?): Any?[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> Any?
 
 'tryCreate' @ [57:59] ==> public final fun tryCreate(annotation: Repository): FlatLibDirectoryResolver? defined in org.jetbrains.kotlin.script.util.resolvers.FlatLibDirectoryResolver.Companion[SimpleFunctionDescriptorImpl]
 

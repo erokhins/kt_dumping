@@ -30,7 +30,7 @@ Inferred types:
 
 'load' @ [31:32] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(AsserterContributor..AsserterContributor?)>..Class<(AsserterContributor..AsserterContributor?)>?)): (ServiceLoader<(AsserterContributor..AsserterContributor?)>..ServiceLoader<(AsserterContributor..AsserterContributor?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> AsserterContributor
+    <S : (Any..Any?)> -> (kotlin.test.AsserterContributor..kotlin.test.AsserterContributor?)
 
 'java' @ [31:64] ==> public val <T> KClass<AsserterContributor>.java: Class<AsserterContributor> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

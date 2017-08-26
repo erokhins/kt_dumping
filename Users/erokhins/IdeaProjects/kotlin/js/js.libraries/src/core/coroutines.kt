@@ -34,7 +34,7 @@ Inferred types:
 
 'doResumeWrapper' @ [40:9] ==> protected final fun doResumeWrapper(): Unit defined in kotlin.coroutines.experimental.CoroutineImpl[SimpleFunctionDescriptorImpl]
 
-'processBareContinuationResume' @ [44:9] ==> @InlineOnly internal inline fun processBareContinuationResume(completion: Continuation<*>, block: () -> Any?): Unit defined in kotlin.coroutines.experimental[SimpleFunctionDescriptorImpl]
+'processBareContinuationResume' @ [44:9] ==> @InlineOnly internal inline fun processBareContinuationResume(completion: Continuation<*>, block: () -> Any?): Unit defined in kotlin.coroutines.experimental in file CoroutinesLibrary.kt[SimpleFunctionDescriptorImpl]
 
 'resultContinuation' @ [44:39] ==> private final val resultContinuation: Continuation<Any?> defined in kotlin.coroutines.experimental.CoroutineImpl[PropertyDescriptorImpl]
 

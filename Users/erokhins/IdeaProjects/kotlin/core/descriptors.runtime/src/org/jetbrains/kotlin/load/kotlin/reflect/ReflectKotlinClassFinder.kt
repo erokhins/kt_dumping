@@ -1,19 +1,19 @@
 'classLoader' @ [29:16] ==> private final val classLoader: ClassLoader defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClassFinder[PropertyDescriptorImpl]
 
-'tryLoadClass' @ [29:28] ==> public fun ClassLoader.tryLoadClass(fqName: String): Class<*>? defined in org.jetbrains.kotlin.load.java.reflect[SimpleFunctionDescriptorImpl]
+'tryLoadClass' @ [29:28] ==> public fun ClassLoader.tryLoadClass(fqName: String): Class<*>? defined in org.jetbrains.kotlin.load.java.reflect in file ReflectJavaClassFinder.kt[SimpleFunctionDescriptorImpl]
 
 'fqName' @ [29:41] ==> value-parameter fqName: String defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClassFinder.findKotlinClass[ValueParameterDescriptorImpl]
 
-'let' @ [29:50] ==> @InlineOnly public inline fun <T, R> Class<out (Any..Any?)>.let(block: (Class<out (Any..Any?)>) -> ReflectKotlinClass?): ReflectKotlinClass? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [29:50] ==> @InlineOnly public inline fun <T, R> Class<*>.let(block: (Class<*>) -> ReflectKotlinClass?): ReflectKotlinClass? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <T> -> Class<*>
     <R> -> ReflectKotlinClass?
 
 'ReflectKotlinClass' @ [29:56] ==> public companion object Factory defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClass[FakeCallableDescriptorForObject]
 
 'create' @ [29:75] ==> public final fun create(klass: Class<*>): ReflectKotlinClass? defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClass.Factory[SimpleFunctionDescriptorImpl]
 
-'it' @ [29:82] ==> value-parameter it: Class<out (Any..Any?)> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClassFinder.findKotlinClass.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [29:82] ==> value-parameter it: Class<*> defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClassFinder.findKotlinClass.<anonymous>[ValueParameterDescriptorImpl]
 
 'findKotlinClass' @ [32:54] ==> private final fun findKotlinClass(fqName: String): KotlinJvmBinaryClass? defined in org.jetbrains.kotlin.load.kotlin.reflect.ReflectKotlinClassFinder[SimpleFunctionDescriptorImpl]
 
