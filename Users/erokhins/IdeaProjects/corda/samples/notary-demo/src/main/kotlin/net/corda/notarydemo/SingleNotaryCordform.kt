@@ -1,6 +1,6 @@
 'SingleNotaryCordform' @ [18:33] ==> public object SingleNotaryCordform : CordformDefinition defined in net.corda.notarydemo in file SingleNotaryCordform.kt[FakeCallableDescriptorForObject]
 
-'runNodes' @ [18:54] ==> public fun CordformDefinition.runNodes(): Unit defined in net.corda.demorun[SimpleFunctionDescriptorImpl]
+'runNodes' @ [18:54] ==> public fun CordformDefinition.runNodes(): Unit defined in net.corda.demorun in file DemoRunner.kt[SimpleFunctionDescriptorImpl]
 
 'User' @ [20:22] ==> public constructor User(username: String, password: String, permissions: Set<String>) defined in net.corda.nodeapi.User[DeserializedClassConstructorDescriptor]
 
@@ -24,9 +24,9 @@ Inferred types:
 
 'name' @ [22:94] ==> public final val name: X500Name defined in net.corda.core.identity.Party[DeserializedPropertyDescriptor]
 
-'node' @ [24:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'node' @ [24:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
-'name' @ [25:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'name' @ [25:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'ALICE' @ [25:18] ==> public val ALICE: Party defined in net.corda.testing[DeserializedPropertyDescriptor]
 
@@ -36,13 +36,13 @@ Inferred types:
 
 'rpcPort' @ [27:13] ==> public open fun rpcPort(p0: (Int..Int?)): Unit defined in net.corda.cordform.CordformNode[JavaMethodDescriptor]
 
-'rpcUsers' @ [28:13] ==> public fun CordformNode.rpcUsers(vararg users: User): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'rpcUsers' @ [28:13] ==> public fun CordformNode.rpcUsers(vararg users: User): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'notaryDemoUser' @ [28:22] ==> public val notaryDemoUser: User defined in net.corda.notarydemo in file SingleNotaryCordform.kt[PropertyDescriptorImpl]
 
-'node' @ [30:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'node' @ [30:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
-'name' @ [31:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'name' @ [31:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'BOB' @ [31:18] ==> public val BOB: Party defined in net.corda.testing[DeserializedPropertyDescriptor]
 
@@ -52,9 +52,9 @@ Inferred types:
 
 'rpcPort' @ [33:13] ==> public open fun rpcPort(p0: (Int..Int?)): Unit defined in net.corda.cordform.CordformNode[JavaMethodDescriptor]
 
-'node' @ [35:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'node' @ [35:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
-'name' @ [36:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'name' @ [36:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'DUMMY_NOTARY' @ [36:18] ==> public val DUMMY_NOTARY: Party defined in net.corda.testing[DeserializedPropertyDescriptor]
 
@@ -64,11 +64,9 @@ Inferred types:
 
 'rpcPort' @ [38:13] ==> public open fun rpcPort(p0: (Int..Int?)): Unit defined in net.corda.cordform.CordformNode[JavaMethodDescriptor]
 
-'advertisedServices' @ [39:13] ==> public fun CordformNode.advertisedServices(vararg services: ServiceInfo): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'advertisedServices' @ [39:13] ==> public fun CordformNode.advertisedServices(vararg services: ServiceInfo): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'ServiceInfo' @ [39:32] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'ValidatingNotaryService' @ [39:44] ==> public companion object defined in net.corda.node.services.transactions.ValidatingNotaryService[FakeCallableDescriptorForObject]
 
 'type' @ [39:68] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.ValidatingNotaryService.Companion[DeserializedPropertyDescriptor]
 

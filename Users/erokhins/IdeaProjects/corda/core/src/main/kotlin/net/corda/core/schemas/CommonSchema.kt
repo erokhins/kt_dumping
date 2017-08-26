@@ -1,7 +1,5 @@
 'MappedSchema' @ [20:25] ==> public constructor MappedSchema(schemaFamily: Class<*>, version: Int, mappedTypes: Iterable<Class<*>>) defined in net.corda.core.schemas.MappedSchema[ClassConstructorDescriptorImpl]
 
-'CommonSchema' @ [20:53] ==> public object CommonSchema defined in net.corda.core.schemas in file CommonSchema.kt[FakeCallableDescriptorForObject]
-
 'javaClass' @ [20:66] ==> public val <T : Any> CommonSchema.javaClass: Class<CommonSchema> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> CommonSchema

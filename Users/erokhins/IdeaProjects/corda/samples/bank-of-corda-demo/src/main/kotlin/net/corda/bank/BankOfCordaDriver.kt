@@ -16,7 +16,7 @@
 
 'ofType' @ [42:64] ==> public final fun <T : (Any..Any?)> ofType(p0: (Class<(BankOfCordaDriver.Role..BankOfCordaDriver.Role?)>..Class<(BankOfCordaDriver.Role..BankOfCordaDriver.Role?)>?)): (ArgumentAcceptingOptionSpec<(BankOfCordaDriver.Role..BankOfCordaDriver.Role?)>..ArgumentAcceptingOptionSpec<(BankOfCordaDriver.Role..BankOfCordaDriver.Role?)>?) defined in joptsimple.ArgumentAcceptingOptionSpec[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Role
+    <T : (Any..Any?)> -> (net.corda.bank.BankOfCordaDriver.Role..net.corda.bank.BankOfCordaDriver.Role?)
 
 'Role' @ [42:71] ==> private constructor Role() defined in net.corda.bank.BankOfCordaDriver.Role[ClassConstructorDescriptorImpl]
 
@@ -34,7 +34,7 @@ Inferred types:
 
 'ofType' @ [43:69] ==> public final fun <T : (Any..Any?)> ofType(p0: (Class<(Long..Long?)>..Class<(Long..Long?)>?)): (ArgumentAcceptingOptionSpec<(Long..Long?)>..ArgumentAcceptingOptionSpec<(Long..Long?)>?) defined in joptsimple.ArgumentAcceptingOptionSpec[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'Long' @ [43:76] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
@@ -50,7 +50,7 @@ Inferred types:
 
 'ofType' @ [44:69] ==> public final fun <T : (Any..Any?)> ofType(p0: (Class<(String..String?)>..Class<(String..String?)>?)): (ArgumentAcceptingOptionSpec<(String..String?)>..ArgumentAcceptingOptionSpec<(String..String?)>?) defined in joptsimple.ArgumentAcceptingOptionSpec[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'String' @ [44:76] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
@@ -82,7 +82,7 @@ Inferred types:
 
 'valueOf' @ [56:28] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(BankOfCordaDriver.Role..BankOfCordaDriver.Role?)>..OptionSpec<(BankOfCordaDriver.Role..BankOfCordaDriver.Role?)>?)): (BankOfCordaDriver.Role..BankOfCordaDriver.Role?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Role
+    <V : (Any..Any?)> -> (net.corda.bank.BankOfCordaDriver.Role..net.corda.bank.BankOfCordaDriver.Role?)
 
 'roleArg' @ [56:36] ==> val roleArg: (ArgumentAcceptingOptionSpec<(BankOfCordaDriver.Role..BankOfCordaDriver.Role?)>..ArgumentAcceptingOptionSpec<(BankOfCordaDriver.Role..BankOfCordaDriver.Role?)>?) defined in net.corda.bank.BankOfCordaDriver.main[LocalVariableDescriptor]
 
@@ -92,7 +92,7 @@ Inferred types:
 
 'valueOf' @ [59:56] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(Long..Long?)>..OptionSpec<(Long..Long?)>?)): (Long..Long?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Long
+    <V : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'quantity' @ [59:64] ==> val quantity: (ArgumentAcceptingOptionSpec<(Long..Long?)>..ArgumentAcceptingOptionSpec<(Long..Long?)>?) defined in net.corda.bank.BankOfCordaDriver.main[LocalVariableDescriptor]
 
@@ -100,7 +100,7 @@ Inferred types:
 
 'valueOf' @ [59:83] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(String..String?)>..OptionSpec<(String..String?)>?)): (String..String?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> String
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'currency' @ [59:91] ==> val currency: (ArgumentAcceptingOptionSpec<(String..String?)>..ArgumentAcceptingOptionSpec<(String..String?)>?) defined in net.corda.bank.BankOfCordaDriver.main[LocalVariableDescriptor]
 
@@ -201,8 +201,6 @@ Inferred types:
 
 'ServiceInfo' @ [74:60] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
 
-'SimpleNotaryService' @ [74:72] ==> public companion object defined in net.corda.node.services.transactions.SimpleNotaryService[FakeCallableDescriptorForObject]
-
 'type' @ [74:92] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.SimpleNotaryService.Companion[DeserializedPropertyDescriptor]
 
 'startNode' @ [75:43] ==> public abstract fun startNode(providedName: X500Name? = ..., advertisedServices: Set<ServiceInfo> = ..., rpcUsers: List<User> = ..., verifierType: VerifierType = ..., customOverrides: Map<String, Any?> = ..., startInSameProcess: Boolean? = ...): CordaFuture<NodeHandle> defined in net.corda.testing.driver.DriverDSLExposedInterface[DeserializedSimpleFunctionDescriptor]
@@ -222,8 +220,6 @@ Inferred types:
     <T> -> ServiceInfo
 
 'ServiceInfo' @ [78:60] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'ServiceType' @ [78:72] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
 
 'corda' @ [78:84] ==> public final val corda: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
 

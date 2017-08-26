@@ -6,7 +6,7 @@
 
 'factory' @ [12:82] ==> value-parameter factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.SingletonSerializer.<init>[ValueParameterDescriptorImpl]
 
-'interfacesForSerialization' @ [13:30] ==> internal fun interfacesForSerialization(type: Type, serializerFactory: SerializerFactory): List<Type> defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'interfacesForSerialization' @ [13:30] ==> internal fun interfacesForSerialization(type: Type, serializerFactory: SerializerFactory): List<Type> defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [13:57] ==> public open val type: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SingletonSerializer[PropertyDescriptorImpl]
 
@@ -29,7 +29,7 @@ Inferred types:
 
 'typeName' @ [17:67] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.typeName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'generateProvides' @ [17:90] ==> private final fun generateProvides(): List<String> defined in net.corda.nodeapi.internal.serialization.amqp.SingletonSerializer[SimpleFunctionDescriptorImpl]
 
@@ -49,7 +49,7 @@ Inferred types:
 
 'data' @ [24:9] ==> value-parameter data: Data defined in net.corda.nodeapi.internal.serialization.amqp.SingletonSerializer.writeObject[ValueParameterDescriptorImpl]
 
-'withDescribed' @ [24:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withDescribed' @ [24:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'typeNotation' @ [24:28] ==> internal final val typeNotation: TypeNotation defined in net.corda.nodeapi.internal.serialization.amqp.SingletonSerializer[PropertyDescriptorImpl]
 

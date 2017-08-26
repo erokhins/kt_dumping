@@ -26,7 +26,7 @@ Inferred types:
 
 'random63BitValue' @ [95:92] ==> public fun random63BitValue(): Long defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'AppendOnlyPersistentMap' @ [100:20] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (UUID) -> String, fromPersistentEntity: (NodeMessagingClient.ProcessedMessage) -> Pair<UUID, Instant>, toPersistentEntity: (UUID, Instant) -> NodeMessagingClient.ProcessedMessage, persistentEntityClass: Class<NodeMessagingClient.ProcessedMessage>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
+'AppendOnlyPersistentMap' @ [100:20] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (UUID) -> String, fromPersistentEntity: (NodeMessagingClient.ProcessedMessage) -> Pair<UUID, Instant>, toPersistentEntity: (key: UUID, value: Instant) -> NodeMessagingClient.ProcessedMessage, persistentEntityClass: Class<NodeMessagingClient.ProcessedMessage>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> UUID
     <V> -> Instant
@@ -74,7 +74,7 @@ Inferred types:
 Inferred types:
     <T> -> ProcessedMessage
 
-'PersistentMap' @ [114:20] ==> public constructor PersistentMap<K, V, E, out EK>(toPersistentEntityKey: (Long) -> Long, fromPersistentEntity: (NodeMessagingClient.RetryMessage) -> Pair<Long, Pair<Message, MessageRecipients>>, toPersistentEntity: (Long, Pair<Message, MessageRecipients>) -> NodeMessagingClient.RetryMessage, persistentEntityClass: Class<NodeMessagingClient.RetryMessage>) defined in net.corda.node.utilities.PersistentMap[ClassConstructorDescriptorImpl]
+'PersistentMap' @ [114:20] ==> public constructor PersistentMap<K, V, E, out EK>(toPersistentEntityKey: (Long) -> Long, fromPersistentEntity: (NodeMessagingClient.RetryMessage) -> Pair<Long, Pair<Message, MessageRecipients>>, toPersistentEntity: (key: Long, value: Pair<Message, MessageRecipients>) -> NodeMessagingClient.RetryMessage, persistentEntityClass: Class<NodeMessagingClient.RetryMessage>) defined in net.corda.node.utilities.PersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> Long
     <V> -> Pair<Message, MessageRecipients>
@@ -105,8 +105,6 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> Message
 
-'SerializationDefaults' @ [117:68] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'STORAGE_CONTEXT' @ [117:90] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
 'it' @ [118:37] ==> value-parameter it: NodeMessagingClient.RetryMessage defined in net.corda.node.services.messaging.NodeMessagingClient.Companion.createMessageToRedeliver.<anonymous>[ValueParameterDescriptorImpl]
@@ -116,8 +114,6 @@ Inferred types:
 'deserialize' @ [118:51] ==> public inline fun <reified T : Any> ByteArray.deserialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): MessageRecipients defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> MessageRecipients
-
-'SerializationDefaults' @ [118:74] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'STORAGE_CONTEXT' @ [118:96] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
@@ -143,8 +139,6 @@ Inferred types:
 Inferred types:
     <T : Any> -> Message
 
-'SerializationDefaults' @ [123:68] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'STORAGE_CONTEXT' @ [123:90] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
 'bytes' @ [123:107] ==> public open val bytes: ByteArray defined in net.corda.core.serialization.SerializedBytes[DeserializedPropertyDescriptor]
@@ -156,8 +150,6 @@ Inferred types:
 'serialize' @ [124:53] ==> public fun <T : Any> MessageRecipients.serialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): SerializedBytes<MessageRecipients> defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> MessageRecipients
-
-'SerializationDefaults' @ [124:73] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'STORAGE_CONTEXT' @ [124:95] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
@@ -224,8 +216,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SingleMessageRecipient
 
 'myIdentity' @ [167:58] ==> private final val myIdentity: PublicKey? defined in net.corda.node.services.messaging.NodeMessagingClient[PropertyDescriptorImpl]
-
-'NodeAddress' @ [168:9] ==> public companion object defined in net.corda.nodeapi.ArtemisMessagingComponent.NodeAddress[FakeCallableDescriptorForObject]
 
 'asPeer' @ [168:21] ==> public final fun asPeer(peerIdentity: PublicKey, hostAndPort: NetworkHostAndPort): ArtemisMessagingComponent.NodeAddress defined in net.corda.nodeapi.ArtemisMessagingComponent.NodeAddress.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -455,8 +445,6 @@ Inferred types:
 
 'createQueueIfAbsent' @ [256:17] ==> private final fun createQueueIfAbsent(queueName: String): Unit defined in net.corda.node.services.messaging.NodeMessagingClient[SimpleFunctionDescriptorImpl]
 
-'VerifierApi' @ [256:37] ==> public object VerifierApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'VERIFICATION_REQUESTS_QUEUE_NAME' @ [256:49] ==> public final val VERIFICATION_REQUESTS_QUEUE_NAME: String defined in net.corda.nodeapi.VerifierApi[DeserializedPropertyDescriptor]
 
 'createQueueIfAbsent' @ [257:17] ==> private final fun createQueueIfAbsent(queueName: String): Unit defined in net.corda.node.services.messaging.NodeMessagingClient[SimpleFunctionDescriptorImpl]
@@ -474,6 +462,8 @@ Inferred types:
 'messagingExecutor' @ [259:17] ==> private final val messagingExecutor: AffinityExecutor.ServiceAffinityExecutor defined in net.corda.node.services.messaging.NodeMessagingClient[PropertyDescriptorImpl]
 
 'scheduleAtFixedRate' @ [259:35] ==> public final fun scheduleAtFixedRate(p0: (() -> Unit..(() -> Unit)?), p1: Long, p2: Long, p3: (TimeUnit..TimeUnit?)): (ScheduledFuture<*>..ScheduledFuture<*>?) defined in net.corda.node.utilities.AffinityExecutor.ServiceAffinityExecutor[MyFunctionDescriptor]
+
+'checkVerifierCount' @ [259:57] ==> local final fun checkVerifierCount(): Unit defined in net.corda.node.services.messaging.NodeMessagingClient.start.<anonymous>[SimpleFunctionDescriptorImpl]
 
 'SECONDS' @ [259:93] ==> enum entry SECONDS defined in java.util.concurrent.TimeUnit[FakeCallableDescriptorForObject]
 
@@ -757,9 +747,9 @@ Inferred types:
 
 'key' @ [388:26] ==> value-parameter key: SimpleString defined in net.corda.node.services.messaging.NodeMessagingClient.required[ValueParameterDescriptorImpl]
 
-'lazy' @ [396:41] ==> public fun <T> lazy(initializer: () -> ByteArray): Lazy<ByteArray> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [396:41] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ByteArray
+    <T> -> T
 
 'ByteArray' @ [396:48] ==> public constructor ByteArray(size: Int) defined in kotlin.ByteArray[DeserializedClassConstructorDescriptor]
 
@@ -1075,8 +1065,6 @@ Inferred types:
 
 'topic' @ [493:68] ==> public final val topic: String defined in net.corda.node.services.messaging.TopicSession[PropertyDescriptorImpl]
 
-'StateMachineManager' @ [493:77] ==> public companion object defined in net.corda.node.services.statemachine.StateMachineManager[FakeCallableDescriptorForObject]
-
 'sessionTopic' @ [493:97] ==> internal final val sessionTopic: TopicSession defined in net.corda.node.services.statemachine.StateMachineManager.Companion[PropertyDescriptorImpl]
 
 'topic' @ [493:110] ==> public final val topic: String defined in net.corda.node.services.messaging.TopicSession[PropertyDescriptorImpl]
@@ -1285,10 +1273,10 @@ Inferred types:
 
 'retryId' @ [544:38] ==> value-parameter retryId: Long defined in net.corda.node.services.messaging.NodeMessagingClient.cancelRedelivery[ValueParameterDescriptorImpl]
 
-'let' @ [544:48] ==> @InlineOnly public inline fun <T, R> ScheduledFuture<out (Any..Any?)>.let(block: (ScheduledFuture<out (Any..Any?)>) -> ScheduledFuture<out (Any..Any?)>?): ScheduledFuture<out (Any..Any?)>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [544:48] ==> @InlineOnly public inline fun <T, R> ScheduledFuture<*>.let(block: (ScheduledFuture<*>) -> ScheduledFuture<*>?): ScheduledFuture<*>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ScheduledFuture<out (kotlin.Any..kotlin.Any?)>
-    <R> -> ScheduledFuture<out (kotlin.Any..kotlin.Any?)>?
+    <T> -> ScheduledFuture<*>
+    <R> -> ScheduledFuture<*>?
 
 'log' @ [545:13] ==> private final val log: Logger defined in net.corda.node.services.messaging.NodeMessagingClient.Companion[PropertyDescriptorImpl]
 
@@ -1298,13 +1286,13 @@ Inferred types:
 
 '!' @ [546:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [546:18] ==> value-parameter it: ScheduledFuture<out (Any..Any?)> defined in net.corda.node.services.messaging.NodeMessagingClient.cancelRedelivery.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [546:18] ==> value-parameter it: ScheduledFuture<*> defined in net.corda.node.services.messaging.NodeMessagingClient.cancelRedelivery.<anonymous>[ValueParameterDescriptorImpl]
 
 'isDone' @ [546:21] ==> public final val <V : (Any..Any?)> ScheduledFuture<out (Any..Any?)>.isDone: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <V : (Any..Any?)> -> Captured(*)
 
-'it' @ [546:29] ==> value-parameter it: ScheduledFuture<out (Any..Any?)> defined in net.corda.node.services.messaging.NodeMessagingClient.cancelRedelivery.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [546:29] ==> value-parameter it: ScheduledFuture<*> defined in net.corda.node.services.messaging.NodeMessagingClient.cancelRedelivery.<anonymous>[ValueParameterDescriptorImpl]
 
 'cancel' @ [546:32] ==> public abstract fun cancel(p0: Boolean): Boolean defined in java.util.concurrent.ScheduledFuture[JavaMethodDescriptor]
 

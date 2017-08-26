@@ -16,7 +16,7 @@
 
 'by' @ [25:42] ==> public final val by: PublicKey defined in net.corda.core.crypto.DigitalSignature.WithKey[PropertyDescriptorImpl]
 
-'verify' @ [25:45] ==> @Throws public fun PublicKey.verify(content: ByteArray, signature: DigitalSignature): Boolean defined in net.corda.core.crypto[SimpleFunctionDescriptorImpl]
+'verify' @ [25:45] ==> @Throws public fun PublicKey.verify(content: ByteArray, signature: DigitalSignature): Boolean defined in net.corda.core.crypto in file CryptoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'content' @ [25:52] ==> value-parameter content: ByteArray defined in net.corda.core.crypto.DigitalSignature.WithKey.verify[ValueParameterDescriptorImpl]
 
@@ -30,7 +30,7 @@
 
 'by' @ [34:44] ==> public final val by: PublicKey defined in net.corda.core.crypto.DigitalSignature.WithKey[PropertyDescriptorImpl]
 
-'verify' @ [34:47] ==> @Throws public fun PublicKey.verify(content: ByteArray, signature: DigitalSignature): Boolean defined in net.corda.core.crypto[SimpleFunctionDescriptorImpl]
+'verify' @ [34:47] ==> @Throws public fun PublicKey.verify(content: ByteArray, signature: DigitalSignature): Boolean defined in net.corda.core.crypto in file CryptoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'content' @ [34:54] ==> value-parameter content: OpaqueBytes defined in net.corda.core.crypto.DigitalSignature.WithKey.verify[ValueParameterDescriptorImpl]
 

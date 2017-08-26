@@ -20,26 +20,23 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> BorderPane
 
-'observableValue' @ [43:31] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (NetworkIdentityModel) -> ObservableValue<NodeInfo?>): TrackedDelegate.ObservableValueDelegate<NetworkIdentityModel, NodeInfo?> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo?
+'getValue' @ [43:31] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [43:47] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
 
-'objectProperty' @ [44:33] ==> public inline fun <reified M : Any, T> objectProperty(noinline objectProperty: (CordaViewModel) -> ObjectProperty<(CordaView..CordaView?)>): TrackedDelegate.ObjectPropertyDelegate<CordaViewModel, (CordaView..CordaView?)> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> CordaViewModel
-    <T> -> (net.corda.explorer.model.CordaView..net.corda.explorer.model.CordaView?)
+'myIdentity' @ [43:69] ==> public final val myIdentity: ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [44:33] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObjectProperty<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObjectPropertyDelegate[DeserializedSimpleFunctionDescriptor]
 
 'CordaViewModel' @ [44:48] ==> public constructor CordaViewModel() defined in net.corda.explorer.model.CordaViewModel[ClassConstructorDescriptorImpl]
 
-'observableList' @ [45:36] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (CordaViewModel) -> ObservableList<CordaView>): TrackedDelegate.ObservableListDelegate<CordaViewModel, CordaView> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> CordaViewModel
-    <T> -> CordaView
+'selectedView' @ [44:64] ==> public final val selectedView: SimpleObjectProperty<CordaView> defined in net.corda.explorer.model.CordaViewModel[PropertyDescriptorImpl]
+
+'getValue' @ [45:36] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'CordaViewModel' @ [45:51] ==> public constructor CordaViewModel() defined in net.corda.explorer.model.CordaViewModel[ClassConstructorDescriptorImpl]
+
+'registeredViews' @ [45:67] ==> public final val registeredViews: ObservableList<CordaView> defined in net.corda.explorer.model.CordaViewModel[PropertyDescriptorImpl]
 
 'menuItemCSS' @ [49:41] ==> private final val menuItemCSS: String defined in net.corda.explorer.views.MainView[PropertyDescriptorImpl]
 
@@ -181,7 +178,7 @@ Inferred types:
 
 'bindContent' @ [70:30] ==> public open fun <E : (Any..Any?)> bindContent(p0: (MutableList<(String..String?)>..List<(String..String?)>?), p1: (ObservableList<out (String..String?)>..ObservableList<out (String..String?)>?)): Unit defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'styleClass' @ [70:42] ==> public final val Button.styleClass: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)[MyPropertyDescriptor]
 
@@ -351,7 +348,7 @@ Inferred types:
 
 'bindContent' @ [93:18] ==> public open fun <E : (Any..Any?)> bindContent(p0: (MutableList<(Node..Node?)>..List<(Node..Node?)>?), p1: (ObservableList<out (Node..Node?)>..ObservableList<out (Node..Node?)>?)): Unit defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Node
+    <E : (Any..Any?)> -> (javafx.scene.Node..javafx.scene.Node?)
 
 'sidebar' @ [93:30] ==> private final val sidebar: VBox defined in net.corda.explorer.views.MainView[PropertyDescriptorImpl]
 

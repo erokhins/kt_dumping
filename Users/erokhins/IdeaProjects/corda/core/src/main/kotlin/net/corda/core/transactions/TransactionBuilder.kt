@@ -138,25 +138,25 @@ Inferred types:
 
 'ArrayList' @ [73:47] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (StateRef..StateRef?)>..Collection<(StateRef..StateRef?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> StateRef
+    <E : (Any..Any?)> -> (net.corda.core.contracts.StateRef..net.corda.core.contracts.StateRef?)
 
 'inputs' @ [73:57] ==> protected final val inputs: MutableList<StateRef> defined in net.corda.core.transactions.TransactionBuilder[PropertyDescriptorImpl]
 
 'ArrayList' @ [73:66] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (SecureHash..SecureHash?)>..Collection<(SecureHash..SecureHash?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> SecureHash
+    <E : (Any..Any?)> -> (net.corda.core.crypto.SecureHash..net.corda.core.crypto.SecureHash?)
 
 'attachments' @ [73:76] ==> protected final val attachments: MutableList<SecureHash> defined in net.corda.core.transactions.TransactionBuilder[PropertyDescriptorImpl]
 
 'ArrayList' @ [74:13] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (TransactionState<ContractState>..TransactionState<ContractState>?)>..Collection<(TransactionState<ContractState>..TransactionState<ContractState>?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> TransactionState<ContractState>
+    <E : (Any..Any?)> -> (net.corda.core.contracts.TransactionState<net.corda.core.contracts.ContractState>..net.corda.core.contracts.TransactionState<net.corda.core.contracts.ContractState>?)
 
 'outputs' @ [74:23] ==> protected final val outputs: MutableList<TransactionState<ContractState>> defined in net.corda.core.transactions.TransactionBuilder[PropertyDescriptorImpl]
 
 'ArrayList' @ [74:33] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (Command<*>..Command<*>?)>..Collection<(Command<*>..Command<*>?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Command<*>
+    <E : (Any..Any?)> -> (net.corda.core.contracts.Command<*>..net.corda.core.contracts.Command<*>?)
 
 'commands' @ [74:43] ==> protected final val commands: MutableList<Command<*>> defined in net.corda.core.transactions.TransactionBuilder[PropertyDescriptorImpl]
 
@@ -310,8 +310,6 @@ Inferred types:
 
 'setTimeWindow' @ [139:65] ==> public final fun setTimeWindow(timeWindow: TimeWindow): TransactionBuilder defined in net.corda.core.transactions.TransactionBuilder[SimpleFunctionDescriptorImpl]
 
-'TimeWindow' @ [139:79] ==> public companion object defined in net.corda.core.contracts.TimeWindow[FakeCallableDescriptorForObject]
-
 'withTolerance' @ [139:90] ==> @JvmStatic public final fun withTolerance(instant: Instant, tolerance: Duration): TimeWindow defined in net.corda.core.contracts.TimeWindow.Companion[SimpleFunctionDescriptorImpl]
 
 'time' @ [139:104] ==> value-parameter time: Instant defined in net.corda.core.transactions.TransactionBuilder.setTimeWindow[ValueParameterDescriptorImpl]
@@ -328,25 +326,25 @@ Inferred types:
 
 'ArrayList' @ [147:41] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (StateRef..StateRef?)>..Collection<(StateRef..StateRef?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> StateRef
+    <E : (Any..Any?)> -> (net.corda.core.contracts.StateRef..net.corda.core.contracts.StateRef?)
 
 'inputs' @ [147:51] ==> protected final val inputs: MutableList<StateRef> defined in net.corda.core.transactions.TransactionBuilder[PropertyDescriptorImpl]
 
 'ArrayList' @ [148:43] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (SecureHash..SecureHash?)>..Collection<(SecureHash..SecureHash?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> SecureHash
+    <E : (Any..Any?)> -> (net.corda.core.crypto.SecureHash..net.corda.core.crypto.SecureHash?)
 
 'attachments' @ [148:53] ==> protected final val attachments: MutableList<SecureHash> defined in net.corda.core.transactions.TransactionBuilder[PropertyDescriptorImpl]
 
 'ArrayList' @ [149:53] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (TransactionState<ContractState>..TransactionState<ContractState>?)>..Collection<(TransactionState<ContractState>..TransactionState<ContractState>?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> TransactionState<ContractState>
+    <E : (Any..Any?)> -> (net.corda.core.contracts.TransactionState<net.corda.core.contracts.ContractState>..net.corda.core.contracts.TransactionState<net.corda.core.contracts.ContractState>?)
 
 'outputs' @ [149:63] ==> protected final val outputs: MutableList<TransactionState<ContractState>> defined in net.corda.core.transactions.TransactionBuilder[PropertyDescriptorImpl]
 
 'ArrayList' @ [150:40] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (Command<*>..Command<*>?)>..Collection<(Command<*>..Command<*>?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Command<*>
+    <E : (Any..Any?)> -> (net.corda.core.contracts.Command<*>..net.corda.core.contracts.Command<*>?)
 
 'commands' @ [150:50] ==> protected final val commands: MutableList<Command<*>> defined in net.corda.core.transactions.TransactionBuilder[PropertyDescriptorImpl]
 

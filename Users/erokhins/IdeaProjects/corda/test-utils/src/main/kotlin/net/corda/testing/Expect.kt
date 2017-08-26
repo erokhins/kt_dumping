@@ -173,7 +173,7 @@ Inferred types:
 
 'simpleName' @ [165:55] ==> public final val <T : (Any..Any?)> Class<out E>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> Captured(out E)
 
 'next' @ [165:74] ==> val next: Pair<() -> Unit, ExpectComposeState<E>>? defined in net.corda.testing.genericExpectEvents.<anonymous>[LocalVariableDescriptor]
 
@@ -190,7 +190,7 @@ Inferred types:
 
 'simpleName' @ [165:118] ==> public final val <T : (Any..Any?)> Class<out E>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> Captured(out E)
 
 'if (next == null) {
             val message = "Got $event, did not match any expectations of type ${expectedStates.map { it.simpleName }}"
@@ -231,7 +231,7 @@ Inferred types:
 
 'simpleName' @ [167:105] ==> public final val <T : (Any..Any?)> Class<out E>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> Captured(out E)
 
 'if (isStrict) {
                 finishFuture.setException(Exception(message))
@@ -358,9 +358,9 @@ Inferred types:
                         Pair({ single.expect.expectClosure(coercedEvent) }, Finished())
                     } else {
                         null
-                    }' @ [218:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Pair<() -> Unit, ExpectComposeState.Finished<E>>?, elseBranch: Pair<() -> Unit, ExpectComposeState.Finished<E>>?): Pair<() -> Unit, ExpectComposeState.Finished<E>>?[SimpleFunctionDescriptorImpl]
+                    }' @ [218:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Pair<() -> Unit, ExpectComposeState<E>>?, elseBranch: Pair<() -> Unit, ExpectComposeState<E>>?): Pair<() -> Unit, ExpectComposeState<E>>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Pair<Function0<Unit>, Finished<E>>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Pair<Function0<Unit>, ExpectComposeState<E>>?
 
 'single' @ [218:25] ==> public final val single: ExpectCompose.Single<E, T> defined in net.corda.testing.ExpectComposeState.Single[PropertyDescriptorImpl]
 
@@ -370,10 +370,10 @@ Inferred types:
 
 'event' @ [218:45] ==> value-parameter event: E defined in net.corda.testing.ExpectComposeState.Single.nextState[ValueParameterDescriptorImpl]
 
-'Pair' @ [219:25] ==> public constructor Pair<out A, out B>(first: () -> Unit, second: ExpectComposeState.Finished<E>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [219:25] ==> public constructor Pair<out A, out B>(first: () -> Unit, second: ExpectComposeState<E>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> Function0<Unit>
-    <out B> -> Finished<E>
+    <out B> -> ExpectComposeState<E>
 
 'single' @ [219:32] ==> public final val single: ExpectCompose.Single<E, T> defined in net.corda.testing.ExpectComposeState.Single[PropertyDescriptorImpl]
 
@@ -615,10 +615,10 @@ Inferred types:
 
 'it' @ [269:42] ==> value-parameter it: ExpectComposeState<E> defined in net.corda.testing.ExpectComposeState.Parallel.nextState.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'Pair' @ [270:32] ==> public constructor Pair<out A, out B>(first: () -> Unit, second: ExpectComposeState.Finished<E>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [270:32] ==> public constructor Pair<out A, out B>(first: () -> Unit, second: ExpectComposeState<E>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> Function0<Unit>
-    <out B> -> Finished<E>
+    <out B> -> ExpectComposeState<E>
 
 'next' @ [270:37] ==> val next: Pair<() -> Unit, ExpectComposeState<E>>? defined in net.corda.testing.ExpectComposeState.Parallel.nextState.<anonymous>[LocalVariableDescriptor]
 

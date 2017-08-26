@@ -102,7 +102,7 @@ Inferred types:
 
 'keyStore' @ [72:12] ==> val keyStore: (KeyStore..KeyStore?) defined in net.corda.node.utilities.loadKeyStore[LocalVariableDescriptor]
 
-'addOrReplaceKey' @ [84:5] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out Certificate>): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'addOrReplaceKey' @ [84:5] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out Certificate>): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'alias' @ [84:21] ==> value-parameter alias: String defined in net.corda.node.utilities.addOrReplaceKey[ValueParameterDescriptorImpl]
 
@@ -169,7 +169,7 @@ Inferred types:
 
 'write' @ [120:85] ==> public inline fun Path.write(createDirs: Boolean = ..., vararg options: OpenOption = ..., block: (OutputStream) -> Unit): Unit defined in net.corda.core.internal[DeserializedSimpleFunctionDescriptor]
 
-'store' @ [120:93] ==> public fun KeyStore.store(out: OutputStream, password: String): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'store' @ [120:93] ==> public fun KeyStore.store(out: OutputStream, password: String): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [120:99] ==> value-parameter it: OutputStream defined in net.corda.node.utilities.save.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -261,13 +261,9 @@ Inferred types:
 
 'getCertificateChain' @ [179:39] ==> public final fun getCertificateChain(p0: (String..String?)): (Array<(Certificate..Certificate?)>..Array<out (Certificate..Certificate?)>?) defined in java.security.KeyStore[JavaMethodDescriptor]
 
-'X509Utilities' @ [179:59] ==> public object X509Utilities defined in net.corda.node.utilities in file X509Utilities.kt[FakeCallableDescriptorForObject]
-
 'CORDA_CLIENT_CA' @ [179:73] ==> public final val CORDA_CLIENT_CA: String defined in net.corda.node.utilities.X509Utilities[PropertyDescriptorImpl]
 
 'certificateAndKeyPair' @ [181:24] ==> public final fun certificateAndKeyPair(alias: String): CertificateAndKeyPair defined in net.corda.node.utilities.KeyStoreWrapper[SimpleFunctionDescriptorImpl]
-
-'X509Utilities' @ [181:46] ==> public object X509Utilities defined in net.corda.node.utilities in file X509Utilities.kt[FakeCallableDescriptorForObject]
 
 'CORDA_CLIENT_CA' @ [181:60] ==> public final val CORDA_CLIENT_CA: String defined in net.corda.node.utilities.X509Utilities[PropertyDescriptorImpl]
 
@@ -325,7 +321,7 @@ Inferred types:
 
 'keyStore' @ [192:9] ==> private final val keyStore: KeyStore defined in net.corda.node.utilities.KeyStoreWrapper[PropertyDescriptorImpl]
 
-'addOrReplaceKey' @ [192:18] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out Certificate>): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'addOrReplaceKey' @ [192:18] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out Certificate>): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'privateKeyAlias' @ [192:34] ==> value-parameter privateKeyAlias: String defined in net.corda.node.utilities.KeyStoreWrapper.saveNewKeyPair[ValueParameterDescriptorImpl]
 
@@ -347,7 +343,7 @@ Inferred types:
 
 'keyStore' @ [193:9] ==> private final val keyStore: KeyStore defined in net.corda.node.utilities.KeyStoreWrapper[PropertyDescriptorImpl]
 
-'save' @ [193:18] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'save' @ [193:18] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'storePath' @ [193:23] ==> private final val storePath: Path defined in net.corda.node.utilities.KeyStoreWrapper[PropertyDescriptorImpl]
 
@@ -375,7 +371,7 @@ Inferred types:
 
 'keyStore' @ [200:9] ==> private final val keyStore: KeyStore defined in net.corda.node.utilities.KeyStoreWrapper[PropertyDescriptorImpl]
 
-'save' @ [200:18] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'save' @ [200:18] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'storePath' @ [200:23] ==> private final val storePath: Path defined in net.corda.node.utilities.KeyStoreWrapper[PropertyDescriptorImpl]
 

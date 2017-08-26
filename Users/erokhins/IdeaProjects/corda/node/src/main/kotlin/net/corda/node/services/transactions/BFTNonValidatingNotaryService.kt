@@ -239,7 +239,7 @@ Inferred types:
 
 'party' @ [98:98] ==> value-parameter party: PersistentUniquenessProvider.PersistentParty defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService.PersistedCommittedState.<init>[ValueParameterDescriptorImpl]
 
-'AppendOnlyPersistentMap' @ [101:13] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (StateRef) -> PersistentStateRef, fromPersistentEntity: (BFTNonValidatingNotaryService.PersistedCommittedState) -> Pair<StateRef, UniquenessProvider.ConsumingTx>, toPersistentEntity: (StateRef, UniquenessProvider.ConsumingTx) -> BFTNonValidatingNotaryService.PersistedCommittedState, persistentEntityClass: Class<BFTNonValidatingNotaryService.PersistedCommittedState>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
+'AppendOnlyPersistentMap' @ [101:13] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (StateRef) -> PersistentStateRef, fromPersistentEntity: (BFTNonValidatingNotaryService.PersistedCommittedState) -> Pair<StateRef, UniquenessProvider.ConsumingTx>, toPersistentEntity: (key: StateRef, value: UniquenessProvider.ConsumingTx) -> BFTNonValidatingNotaryService.PersistedCommittedState, persistentEntityClass: Class<BFTNonValidatingNotaryService.PersistedCommittedState>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> StateRef
     <V> -> ConsumingTx
@@ -281,8 +281,6 @@ Inferred types:
 
 'StateRef' @ [107:30] ==> public constructor StateRef(txhash: SecureHash, index: Int) defined in net.corda.core.contracts.StateRef[DeserializedClassConstructorDescriptor]
 
-'SecureHash' @ [107:48] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
-
 'parse' @ [107:59] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
 'txId' @ [107:65] ==> var txId: String defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService.createMap.<anonymous>[LocalVariableDescriptor]
@@ -290,8 +288,6 @@ Inferred types:
 'index' @ [107:80] ==> var index: Int defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService.createMap.<anonymous>[LocalVariableDescriptor]
 
 'ConsumingTx' @ [108:48] ==> public constructor ConsumingTx(id: SecureHash, inputIndex: Int, requestingParty: Party) defined in net.corda.core.node.services.UniquenessProvider.ConsumingTx[DeserializedClassConstructorDescriptor]
-
-'SecureHash' @ [109:42] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
 'parse' @ [109:53] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -346,8 +342,6 @@ Inferred types:
 'toString' @ [118:54] ==> public open fun toString(): String defined in net.corda.core.crypto.SecureHash[DeserializedSimpleFunctionDescriptor]
 
 'inputIndex' @ [119:50] ==> val inputIndex: Int defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService.createMap.<anonymous>[LocalVariableDescriptor]
-
-'PersistentUniquenessProvider' @ [120:41] ==> public companion object defined in net.corda.node.services.transactions.PersistentUniquenessProvider[FakeCallableDescriptorForObject]
 
 'PersistentParty' @ [120:70] ==> public constructor PersistentParty(name: String = ..., owningKey: String = ...) defined in net.corda.node.services.transactions.PersistentUniquenessProvider.PersistentParty[ClassConstructorDescriptorImpl]
 
@@ -450,8 +444,6 @@ Inferred types:
 'myInfo' @ [149:80] ==> public abstract val myInfo: NodeInfo defined in net.corda.node.services.api.ServiceHubInternal[DeserializedPropertyDescriptor]
 
 'platformVersion' @ [149:87] ==> public final val platformVersion: Int defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
-
-'Crypto' @ [149:104] ==> public object Crypto defined in net.corda.core.crypto[FakeCallableDescriptorForObject]
 
 'findSignatureScheme' @ [149:111] ==> @JvmStatic public final fun findSignatureScheme(key: PublicKey): SignatureScheme defined in net.corda.core.crypto.Crypto[DeserializedSimpleFunctionDescriptor]
 

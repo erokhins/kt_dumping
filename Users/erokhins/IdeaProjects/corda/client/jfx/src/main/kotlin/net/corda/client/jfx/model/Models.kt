@@ -168,8 +168,6 @@ Inferred types:
 
 'invoke' @ [130:20] ==> public abstract operator fun invoke(p1: M): Observable<T> defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'Models' @ [130:39] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
-
 'get' @ [130:46] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:
     <M : Any> -> M
@@ -193,8 +191,6 @@ Inferred types:
 'klass' @ [134:121] ==> value-parameter klass: KClass<M> defined in net.corda.client.jfx.model.TrackedDelegate.ObserverDelegate.<init>[ValueParameterDescriptorImpl]
 
 'invoke' @ [136:20] ==> public abstract operator fun invoke(p1: M): Observer<T> defined in kotlin.Function1[FunctionInvokeDescriptor]
-
-'Models' @ [136:37] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
 
 'get' @ [136:44] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -220,8 +216,6 @@ Inferred types:
 
 'invoke' @ [142:20] ==> public abstract operator fun invoke(p1: M): Subject<T, T> defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'Models' @ [142:36] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
-
 'get' @ [142:43] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:
     <M : Any> -> M
@@ -245,8 +239,6 @@ Inferred types:
 'klass' @ [146:142] ==> value-parameter klass: KClass<M> defined in net.corda.client.jfx.model.TrackedDelegate.EventStreamDelegate.<init>[ValueParameterDescriptorImpl]
 
 'invoke' @ [148:20] ==> public abstract operator fun invoke(p1: M): EventStream<T> defined in kotlin.Function1[FunctionInvokeDescriptor]
-
-'Models' @ [148:40] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
 
 'get' @ [148:47] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -272,8 +264,6 @@ Inferred types:
 
 'invoke' @ [154:20] ==> public abstract operator fun invoke(p1: M): EventSink<T> defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'Models' @ [154:38] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
-
 'get' @ [154:45] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:
     <M : Any> -> M
@@ -297,8 +287,6 @@ Inferred types:
 'klass' @ [158:142] ==> value-parameter klass: KClass<M> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate.<init>[ValueParameterDescriptorImpl]
 
 'invoke' @ [160:20] ==> public abstract operator fun invoke(p1: M): ObservableValue<T> defined in kotlin.Function1[FunctionInvokeDescriptor]
-
-'Models' @ [160:44] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
 
 'get' @ [160:51] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -324,8 +312,6 @@ Inferred types:
 
 'invoke' @ [166:20] ==> public abstract operator fun invoke(p1: M): WritableValue<T> defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'Models' @ [166:42] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
-
 'get' @ [166:49] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:
     <M : Any> -> M
@@ -349,8 +335,6 @@ Inferred types:
 'klass' @ [170:139] ==> value-parameter klass: KClass<M> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate.<init>[ValueParameterDescriptorImpl]
 
 'invoke' @ [172:20] ==> public abstract operator fun invoke(p1: M): ObservableList<T> defined in kotlin.Function1[FunctionInvokeDescriptor]
-
-'Models' @ [172:43] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
 
 'get' @ [172:50] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -376,8 +360,6 @@ Inferred types:
 
 'invoke' @ [178:20] ==> public abstract operator fun invoke(p1: M): ObservableList<out T> defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'Models' @ [178:51] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
-
 'get' @ [178:58] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:
     <M : Any> -> M
@@ -401,8 +383,6 @@ Inferred types:
 'klass' @ [182:139] ==> value-parameter klass: KClass<M> defined in net.corda.client.jfx.model.TrackedDelegate.ObjectPropertyDelegate.<init>[ValueParameterDescriptorImpl]
 
 'invoke' @ [184:20] ==> public abstract operator fun invoke(p1: M): ObjectProperty<T> defined in kotlin.Function1[FunctionInvokeDescriptor]
-
-'Models' @ [184:43] ==> public object Models defined in net.corda.client.jfx.model in file Models.kt[FakeCallableDescriptorForObject]
 
 'get' @ [184:50] ==> public final fun <M : Any> get(klass: KClass<M>, origin: KClass<*>): M defined in net.corda.client.jfx.model.Models[SimpleFunctionDescriptorImpl]
 Inferred types:

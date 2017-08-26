@@ -24,8 +24,8 @@ Inferred types:
 
 'synchronizedSetMultimap' @ [104:56] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> synchronizedSetMultimap(p0: (SetMultimap<(SimpleString..SimpleString?), (RPCApi.ObservableId..RPCApi.ObservableId?)>..SetMultimap<(SimpleString..SimpleString?), (RPCApi.ObservableId..RPCApi.ObservableId?)>?)): (SetMultimap<(SimpleString..SimpleString?), (RPCApi.ObservableId..RPCApi.ObservableId?)>..SetMultimap<(SimpleString..SimpleString?), (RPCApi.ObservableId..RPCApi.ObservableId?)>?) defined in com.google.common.collect.Multimaps[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> SimpleString
-    <V : (Any..Any?)> -> ObservableId
+    <K : (Any..Any?)> -> (org.apache.activemq.artemis.api.core.SimpleString..org.apache.activemq.artemis.api.core.SimpleString?)
+    <V : (Any..Any?)> -> (net.corda.nodeapi.RPCApi.ObservableId..net.corda.nodeapi.RPCApi.ObservableId?)
 
 'create' @ [104:93] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> create(): (HashMultimap<(SimpleString..SimpleString?), (RPCApi.ObservableId..RPCApi.ObservableId?)>..HashMultimap<(SimpleString..SimpleString?), (RPCApi.ObservableId..RPCApi.ObservableId?)>?) defined in com.google.common.collect.HashMultimap[JavaMethodDescriptor]
 Inferred types:
@@ -132,7 +132,7 @@ Inferred types:
     <V> -> List<(java.lang.reflect.Method..java.lang.reflect.Method?)>
     <R> -> (java.lang.reflect.Method..java.lang.reflect.Method?)
 
-'it' @ [132:50] ==> value-parameter it: Map.Entry<String, List<(Method..Method?)>> defined in net.corda.node.services.messaging.RPCServer.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [132:50] ==> value-parameter it: Map.Entry<(String..String?), List<(Method..Method?)>> defined in net.corda.node.services.messaging.RPCServer.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
 'value' @ [132:53] ==> public abstract val value: List<(Method..Method?)> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
@@ -172,15 +172,15 @@ Inferred types:
 
 'removalListener' @ [140:42] ==> @CheckReturnValue public open fun <K1 : (Any..Any?), V1 : (Any..Any?)> removalListener(p0: (RemovalListener<in (RPCApi.ObservableId..RPCApi.ObservableId?), in (ObservableSubscription..ObservableSubscription?)>..RemovalListener<in (RPCApi.ObservableId..RPCApi.ObservableId?), in (ObservableSubscription..ObservableSubscription?)>?)): (CacheBuilder<(RPCApi.ObservableId..RPCApi.ObservableId?), (ObservableSubscription..ObservableSubscription?)>..CacheBuilder<(RPCApi.ObservableId..RPCApi.ObservableId?), (ObservableSubscription..ObservableSubscription?)>?) defined in com.google.common.cache.CacheBuilder[JavaMethodDescriptor]
 Inferred types:
-    <K1 : (Any..Any?)> -> ObservableId
-    <V1 : (Any..Any?)> -> ObservableSubscription
+    <K1 : (Any..Any?)> -> (net.corda.nodeapi.RPCApi.ObservableId..net.corda.nodeapi.RPCApi.ObservableId?)
+    <V1 : (Any..Any?)> -> (net.corda.node.services.messaging.ObservableSubscription..net.corda.node.services.messaging.ObservableSubscription?)
 
 'onObservableRemove' @ [140:58] ==> val onObservableRemove: RemovalListener<RPCApi.ObservableId, ObservableSubscription> defined in net.corda.node.services.messaging.RPCServer.createObservableSubscriptionMap[LocalVariableDescriptor]
 
 'build' @ [140:78] ==> public open fun <K1 : (RPCApi.ObservableId..RPCApi.ObservableId?), V1 : (ObservableSubscription..ObservableSubscription?)> build(): (Cache<(RPCApi.ObservableId..RPCApi.ObservableId?), (ObservableSubscription..ObservableSubscription?)>..Cache<(RPCApi.ObservableId..RPCApi.ObservableId?), (ObservableSubscription..ObservableSubscription?)>?) defined in com.google.common.cache.CacheBuilder[JavaMethodDescriptor]
 Inferred types:
-    <K1 : (RPCApi.ObservableId..RPCApi.ObservableId?)> -> ObservableId
-    <V1 : (ObservableSubscription..ObservableSubscription?)> -> ObservableSubscription
+    <K1 : (RPCApi.ObservableId..RPCApi.ObservableId?)> -> (net.corda.nodeapi.RPCApi.ObservableId..net.corda.nodeapi.RPCApi.ObservableId?)
+    <V1 : (ObservableSubscription..ObservableSubscription?)> -> (net.corda.node.services.messaging.ObservableSubscription..net.corda.node.services.messaging.ObservableSubscription?)
 
 'lifeCycle' @ [145:13] ==> private final val lifeCycle: LifeCycle<RPCServer.State> defined in net.corda.node.services.messaging.RPCServer[PropertyDescriptorImpl]
 
@@ -235,6 +235,8 @@ Inferred types:
 'scheduleAtFixedRate' @ [159:54] ==> public final fun scheduleAtFixedRate(p0: (() -> Unit..(() -> Unit)?), p1: Long, p2: Long, p3: (TimeUnit..TimeUnit?)): (ScheduledFuture<*>..ScheduledFuture<*>?) defined in java.util.concurrent.ScheduledExecutorService[MyFunctionDescriptor]
 
 'this' @ [160:21] ==> <this> defined in net.corda.node.services.messaging.RPCServer[LazyClassReceiverParameterDescriptor]
+
+'reapSubscriptions' @ [160:27] ==> private final fun reapSubscriptions(): Unit defined in net.corda.node.services.messaging.RPCServer[SimpleFunctionDescriptorImpl]
 
 'rpcConfiguration' @ [161:21] ==> private final val rpcConfiguration: RPCServerConfiguration defined in net.corda.node.services.messaging.RPCServer[PropertyDescriptorImpl]
 
@@ -308,8 +310,6 @@ Inferred types:
 
 'createConsumer' @ [185:36] ==> public abstract fun createConsumer(p0: (String..String?)): (ClientConsumer..ClientConsumer?) defined in org.apache.activemq.artemis.api.core.client.ClientSession[JavaMethodDescriptor]
 
-'RPCApi' @ [185:51] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'RPC_SERVER_QUEUE_NAME' @ [185:58] ==> public final val RPC_SERVER_QUEUE_NAME: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
 'consumer' @ [186:13] ==> val consumer: (ClientConsumer..ClientConsumer?) defined in net.corda.node.services.messaging.RPCServer.createConsumerSessions[LocalVariableDescriptor]
@@ -317,6 +317,8 @@ Inferred types:
 'setMessageHandler' @ [186:22] ==> public final fun setMessageHandler(p0: (((ClientMessage..ClientMessage?)) -> Unit..(((ClientMessage..ClientMessage?)) -> Unit)?)): (ClientConsumer..ClientConsumer?) defined in org.apache.activemq.artemis.api.core.client.ClientConsumer[MyFunctionDescriptor]
 
 'this@RPCServer' @ [186:40] ==> <this> defined in net.corda.node.services.messaging.RPCServer[LazyClassReceiverParameterDescriptor]
+
+'clientArtemisMessageHandler' @ [186:56] ==> private final fun clientArtemisMessageHandler(artemisMessage: ClientMessage): Unit defined in net.corda.node.services.messaging.RPCServer[SimpleFunctionDescriptorImpl]
 
 'sessionAndConsumers' @ [187:13] ==> private final val sessionAndConsumers: ArrayList<ArtemisConsumer> /* = ArrayList<ArtemisConsumer> */ defined in net.corda.node.services.messaging.RPCServer[PropertyDescriptorImpl]
 
@@ -346,8 +348,6 @@ Inferred types:
 
 'createConsumer' @ [194:71] ==> public abstract fun createConsumer(p0: (String..String?)): (ClientConsumer..ClientConsumer?) defined in org.apache.activemq.artemis.api.core.client.ClientSession[JavaMethodDescriptor]
 
-'RPCApi' @ [194:86] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'RPC_CLIENT_BINDING_REMOVALS' @ [194:93] ==> public final val RPC_CLIENT_BINDING_REMOVALS: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
 'clientBindingRemovalConsumer' @ [195:9] ==> private final var clientBindingRemovalConsumer: ClientConsumer? defined in net.corda.node.services.messaging.RPCServer[PropertyDescriptorImpl]
@@ -355,6 +355,8 @@ Inferred types:
 'setMessageHandler' @ [195:40] ==> public final fun setMessageHandler(p0: (((ClientMessage..ClientMessage?)) -> Unit..(((ClientMessage..ClientMessage?)) -> Unit)?)): (ClientConsumer..ClientConsumer?) defined in org.apache.activemq.artemis.api.core.client.ClientConsumer[MyFunctionDescriptor]
 
 'this' @ [195:58] ==> <this> defined in net.corda.node.services.messaging.RPCServer[LazyClassReceiverParameterDescriptor]
+
+'bindingRemovalArtemisMessageHandler' @ [195:64] ==> private final fun bindingRemovalArtemisMessageHandler(artemisMessage: ClientMessage): Unit defined in net.corda.node.services.messaging.RPCServer[SimpleFunctionDescriptorImpl]
 
 'clientBindingAdditionConsumer' @ [196:9] ==> private final var clientBindingAdditionConsumer: ClientConsumer? defined in net.corda.node.services.messaging.RPCServer[PropertyDescriptorImpl]
 
@@ -364,8 +366,6 @@ Inferred types:
 
 'createConsumer' @ [196:72] ==> public abstract fun createConsumer(p0: (String..String?)): (ClientConsumer..ClientConsumer?) defined in org.apache.activemq.artemis.api.core.client.ClientSession[JavaMethodDescriptor]
 
-'RPCApi' @ [196:87] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'RPC_CLIENT_BINDING_ADDITIONS' @ [196:94] ==> public final val RPC_CLIENT_BINDING_ADDITIONS: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
 'clientBindingAdditionConsumer' @ [197:9] ==> private final var clientBindingAdditionConsumer: ClientConsumer? defined in net.corda.node.services.messaging.RPCServer[PropertyDescriptorImpl]
@@ -373,6 +373,8 @@ Inferred types:
 'setMessageHandler' @ [197:41] ==> public final fun setMessageHandler(p0: (((ClientMessage..ClientMessage?)) -> Unit..(((ClientMessage..ClientMessage?)) -> Unit)?)): (ClientConsumer..ClientConsumer?) defined in org.apache.activemq.artemis.api.core.client.ClientConsumer[MyFunctionDescriptor]
 
 'this' @ [197:59] ==> <this> defined in net.corda.node.services.messaging.RPCServer[LazyClassReceiverParameterDescriptor]
+
+'bindingAdditionArtemisMessageHandler' @ [197:65] ==> private final fun bindingAdditionArtemisMessageHandler(artemisMessage: ClientMessage): Unit defined in net.corda.node.services.messaging.RPCServer[SimpleFunctionDescriptorImpl]
 
 'reaperScheduledFuture' @ [201:9] ==> private final var reaperScheduledFuture: ScheduledFuture<*>? defined in net.corda.node.services.messaging.RPCServer[PropertyDescriptorImpl]
 
@@ -590,9 +592,9 @@ Inferred types:
             is RPCApi.ClientToServer.ObservablesClosed -> {
                 observableMap.invalidateAll(clientToServer.ids)
             }
-        }' @ [262:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any): Any[SimpleFunctionDescriptorImpl]
+        }' @ [262:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Any..Any?), entry1: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
 
 'clientToServer' @ [262:15] ==> val clientToServer: RPCApi.ClientToServer defined in net.corda.node.services.messaging.RPCServer.clientArtemisMessageHandler[LocalVariableDescriptor]
 
@@ -940,8 +942,6 @@ Inferred types:
 
 'withProperty' @ [414:35] ==> public abstract fun withProperty(property: Any, value: Any): SerializationContext defined in net.corda.core.serialization.SerializationContext[DeserializedSimpleFunctionDescriptor]
 
-'RpcServerObservableSerializer' @ [414:48] ==> public object RpcServerObservableSerializer : Serializer<Observable<*>> defined in net.corda.node.services.messaging in file RPCServer.kt[FakeCallableDescriptorForObject]
-
 'RpcObservableContextKey' @ [414:78] ==> private object RpcObservableContextKey defined in net.corda.node.services.messaging.RpcServerObservableSerializer[FakeCallableDescriptorForObject]
 
 'observableContext' @ [414:103] ==> value-parameter observableContext: ObservableContext defined in net.corda.node.services.messaging.RpcServerObservableSerializer.createContext[ValueParameterDescriptorImpl]
@@ -974,7 +974,7 @@ Inferred types:
 
 'materialize' @ [428:43] ==> public final fun materialize(): (Observable<out (Notification<out (Any..Any?)>..Notification<out (Any..Any?)>?)>..Observable<out (Notification<out (Any..Any?)>..Notification<out (Any..Any?)>?)>?) defined in rx.Observable[JavaMethodDescriptor]
 
-'subscribe' @ [428:57] ==> public final fun subscribe(p0: (Subscriber<in (Nothing..Nothing?)>..Subscriber<in (Nothing..Nothing?)>?)): (Subscription..Subscription?) defined in rx.Observable[JavaMethodDescriptor]
+'subscribe' @ [428:57] ==> public final fun subscribe(p0: (Subscriber<in (Notification<out (Any..Any?)>..Notification<out (Any..Any?)>?)>..Subscriber<in (Notification<out (Any..Any?)>..Notification<out (Any..Any?)>?)>?)): (Subscription..Subscription?) defined in rx.Observable[JavaMethodDescriptor]
 
 'Subscriber<Notification<*>>' @ [429:34] ==> protected/*protected and package*/ constructor Subscriber<T : (Any..Any?)>() defined in rx.Subscriber[JavaClassConstructorDescriptor]
 Inferred types:
@@ -993,8 +993,6 @@ Inferred types:
 'observableContext' @ [433:41] ==> val observableContext: ObservableContext defined in net.corda.node.services.messaging.RpcServerObservableSerializer.write[LocalVariableDescriptor]
 
 'sendMessage' @ [433:59] ==> public final fun sendMessage(serverToClient: RPCApi.ServerToClient): Unit defined in net.corda.node.services.messaging.ObservableContext[SimpleFunctionDescriptorImpl]
-
-'RPCApi' @ [433:71] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
 
 'Observation' @ [433:93] ==> public constructor Observation(id: RPCApi.ObservableId, content: Notification<*>) defined in net.corda.nodeapi.RPCApi.ServerToClient.Observation[DeserializedClassConstructorDescriptor]
 

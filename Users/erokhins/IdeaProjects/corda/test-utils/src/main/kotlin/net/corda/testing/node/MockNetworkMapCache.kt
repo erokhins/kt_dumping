@@ -40,8 +40,6 @@ Inferred types:
 
 'BANK_C' @ [32:55] ==> public final val BANK_C: PartyAndCertificate defined in net.corda.testing.node.MockNetworkMapCache.Companion[PropertyDescriptorImpl]
 
-'NonEmptySet' @ [32:63] ==> public companion object defined in net.corda.core.utilities.NonEmptySet[FakeCallableDescriptorForObject]
-
 'of' @ [32:75] ==> @JvmStatic public final fun <T> of(element: PartyAndCertificate): NonEmptySet<PartyAndCertificate> defined in net.corda.core.utilities.NonEmptySet.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PartyAndCertificate
@@ -57,8 +55,6 @@ Inferred types:
 'BANK_D_ADDR' @ [33:41] ==> public final val BANK_D_ADDR: NetworkHostAndPort defined in net.corda.testing.node.MockNetworkMapCache.Companion[PropertyDescriptorImpl]
 
 'BANK_D' @ [33:55] ==> public final val BANK_D: PartyAndCertificate defined in net.corda.testing.node.MockNetworkMapCache.Companion[PropertyDescriptorImpl]
-
-'NonEmptySet' @ [33:63] ==> public companion object defined in net.corda.core.utilities.NonEmptySet[FakeCallableDescriptorForObject]
 
 'of' @ [33:75] ==> @JvmStatic public final fun <T> of(element: PartyAndCertificate): NonEmptySet<PartyAndCertificate> defined in net.corda.core.utilities.NonEmptySet.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:

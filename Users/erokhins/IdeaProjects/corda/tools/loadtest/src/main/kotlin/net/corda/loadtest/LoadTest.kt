@@ -166,7 +166,7 @@ Inferred types:
 
 'commands' @ [102:36] ==> val commands: List<T> defined in net.corda.loadtest.LoadTest.run.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'fold' @ [102:45] ==> public inline fun <T, R> Iterable<T>.fold(initial: S, operation: (S, T) -> S): S defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [102:45] ==> public inline fun <T, R> Iterable<T>.fold(initial: S, operation: (acc: S, T) -> S): S defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> T
     <R> -> S
@@ -179,7 +179,7 @@ Inferred types:
 
 'invokeAll' @ [104:30] ==> public abstract fun <T : (Any..Any?)> invokeAll(p0: (MutableCollection<out (Callable<(Unit..Unit?)>..Callable<(Unit..Unit?)>?)>..Collection<(Callable<(Unit..Unit?)>..Callable<(Unit..Unit?)>?)>?)): (MutableList<(Future<(Unit..Unit?)>..Future<(Unit..Unit?)>?)>..List<(Future<(Unit..Unit?)>..Future<(Unit..Unit?)>?)>?) defined in java.util.concurrent.ExecutorService[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'commands' @ [105:29] ==> val commands: List<T> defined in net.corda.loadtest.LoadTest.run.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -285,7 +285,7 @@ Inferred types:
 
 'info' @ [129:21] ==> public abstract fun info(p0: (String..String?)): Unit defined in org.slf4j.Logger[JavaMethodDescriptor]
 
-'poll' @ [130:17] ==> public fun poll(intervalMilliseconds: Long = ..., function: () -> Boolean): Unit defined in net.corda.loadtest[SimpleFunctionDescriptorImpl]
+'poll' @ [130:17] ==> public fun poll(intervalMilliseconds: Long = ..., function: () -> Boolean): Unit defined in net.corda.loadtest in file ConnectionManager.kt[SimpleFunctionDescriptorImpl]
 
 'state' @ [131:21] ==> var state: S defined in net.corda.loadtest.LoadTest.run.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -333,9 +333,9 @@ Inferred types:
 
 'exception' @ [149:36] ==> value-parameter exception: Throwable defined in net.corda.loadtest.LoadTest.Companion.executeDiagnostic[ValueParameterDescriptorImpl]
 
-'lazy' @ [159:21] ==> public fun <T> lazy(initializer: () -> Collection<NodeConnection>): Lazy<Collection<NodeConnection>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [159:21] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Collection<NodeConnection>
+    <T> -> T
 
 'listOf' @ [159:29] ==> public fun <T> listOf(vararg elements: NodeConnection): List<NodeConnection> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -566,8 +566,6 @@ Inferred types:
 
 'type' @ [193:99] ==> public final val type: ServiceType defined in net.corda.core.node.services.ServiceInfo[DeserializedPropertyDescriptor]
 
-'NetworkMapService' @ [193:107] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
-
 'type' @ [193:125] ==> public final val type: ServiceType defined in net.corda.node.services.network.NetworkMapService.Companion[DeserializedPropertyDescriptor]
 
 'hostNodeMap' @ [194:26] ==> val hostNodeMap: ConcurrentHashMap<String, NodeConnection> defined in net.corda.loadtest.runLoadTests.<anonymous>[LocalVariableDescriptor]
@@ -625,8 +623,6 @@ Inferred types:
 'info' @ [200:28] ==> public final val info: ServiceInfo defined in net.corda.core.node.ServiceEntry[DeserializedPropertyDescriptor]
 
 'type' @ [200:33] ==> public final val type: ServiceType defined in net.corda.core.node.services.ServiceInfo[DeserializedPropertyDescriptor]
-
-'NetworkMapService' @ [200:41] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
 
 'type' @ [200:59] ==> public final val type: ServiceType defined in net.corda.node.services.network.NetworkMapService.Companion[DeserializedPropertyDescriptor]
 

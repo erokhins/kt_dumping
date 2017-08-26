@@ -1,8 +1,6 @@
 'CordaView' @ [44:20] ==> public constructor CordaView(title: String? = ...) defined in net.corda.explorer.model.CordaView[ClassConstructorDescriptorImpl]
 
-'fxml' @ [46:38] ==> public final fun <T : Node> fxml(location: String?, hasControllerAttribute: Boolean): ReadOnlyProperty<UIComponent, BorderPane> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <T : Node> -> BorderPane
+'getValue' @ [46:38] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
 'MONEY' @ [47:58] ==> enum entry MONEY defined in de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon[FakeCallableDescriptorForObject]
 
@@ -20,70 +18,47 @@ Inferred types:
 Inferred types:
     <T> -> CordaWidget
 
-'fxid' @ [51:35] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, VBox> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> VBox
+'getValue' @ [51:35] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [52:41] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, SplitPane> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> SplitPane
+'getValue' @ [52:41] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [53:46] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, Label> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> Label
+'getValue' @ [53:46] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [54:63] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TreeTableView<CashViewer.ViewerNode>> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> TreeTableView<ViewerNode>
+'getValue' @ [54:63] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [55:87] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TreeTableColumn<CashViewer.ViewerNode, String>> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> TreeTableColumn<ViewerNode, String>
+'getValue' @ [55:87] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [56:97] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TreeTableColumn<CashViewer.ViewerNode, Amount<Currency>?>> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> TreeTableColumn<ViewerNode, Amount<Currency>?>
+'getValue' @ [56:97] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [57:89] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TreeTableColumn<CashViewer.ViewerNode, Amount<Currency>?>> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> TreeTableColumn<ViewerNode, Amount<Currency>?>
+'getValue' @ [57:89] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [59:36] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, VBox> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> VBox
+'getValue' @ [59:36] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [60:47] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, Label> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> Label
+'getValue' @ [60:47] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [61:55] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, ListView<CashViewer.StateRow>> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> ListView<StateRow>
+'getValue' @ [61:55] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
 'fxid' @ [62:33] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, Button> defined in net.corda.explorer.views.cordapps.cash.CashViewer[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> Button
 
-'observableList' @ [64:31] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (ContractStateModel) -> ObservableList<StateAndRef<Cash.State>>): TrackedDelegate.ObservableListDelegate<ContractStateModel, StateAndRef<Cash.State>> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ContractStateModel
-    <T> -> StateAndRef<State>
+'getValue' @ [64:31] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ContractStateModel' @ [64:46] ==> public companion object defined in net.corda.client.jfx.model.ContractStateModel[FakeCallableDescriptorForObject]
 
-'observableValue' @ [65:38] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (SettingsModel) -> ObservableValue<(Currency..Currency?)>): TrackedDelegate.ObservableValueDelegate<SettingsModel, (Currency..Currency?)> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> SettingsModel
-    <T> -> (java.util.Currency..java.util.Currency?)
+'cashStates' @ [64:66] ==> public final val cashStates: ObservableList<StateAndRef<Cash.State>> defined in net.corda.client.jfx.model.ContractStateModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [65:38] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'SettingsModel' @ [65:54] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
 
-'observableValue' @ [66:38] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (ReportingCurrencyModel) -> ObservableValue<Pair<Currency, (Amount<Currency>) -> Amount<Currency>>>): TrackedDelegate.ObservableValueDelegate<ReportingCurrencyModel, Pair<Currency, (Amount<Currency>) -> Amount<Currency>>> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ReportingCurrencyModel
-    <T> -> Pair<Currency, Function1<Amount<Currency>, Amount<Currency>>>
+'reportingCurrencyProperty' @ [65:69] ==> public final val reportingCurrencyProperty: ObjectProperty<Currency> defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
+
+'getValue' @ [66:38] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ReportingCurrencyModel' @ [66:54] ==> public constructor ReportingCurrencyModel() defined in net.corda.explorer.model.ReportingCurrencyModel[ClassConstructorDescriptorImpl]
+
+'reportingExchange' @ [66:78] ==> public final val reportingExchange: ObservableValue<Pair<Currency, (Amount<Currency>) -> Amount<Currency>>> defined in net.corda.explorer.model.ReportingCurrencyModel[PropertyDescriptorImpl]
 
 'cashViewerTable' @ [68:32] ==> private final val cashViewerTable: TreeTableView<CashViewer.ViewerNode> defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
 
@@ -109,35 +84,35 @@ Inferred types:
 
 'node' @ [70:50] ==> public final val node: CashViewer.ViewerNode defined in net.corda.explorer.ui.SingleRowSelection.Selected[PropertyDescriptorImpl]
 
-'ChosenList' @ [75:24] ==> public constructor ChosenList<E>(chosenListObservable: ObservableValue<out ObservableList<out VBox>>) defined in net.corda.client.jfx.utils.ChosenList[DeserializedClassConstructorDescriptor]
+'ChosenList' @ [75:24] ==> public constructor ChosenList<E>(chosenListObservable: ObservableValue<out ObservableList<out (VBox..VBox?)>>) defined in net.corda.client.jfx.utils.ChosenList[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <E> -> VBox
+    <E> -> (javafx.scene.layout.VBox..javafx.scene.layout.VBox?)
 
 'selectedNode' @ [75:35] ==> private final val selectedNode: ObservableValue<CashViewer.ViewerNode?> defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
 
-'map' @ [75:48] ==> public fun <A, B> ObservableValue<out CashViewer.ViewerNode?>.map(function: (CashViewer.ViewerNode?) -> (ObservableList<VBox>..ObservableList<VBox>?)): ObservableValue<(ObservableList<VBox>..ObservableList<VBox>?)> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [75:48] ==> public fun <A, B> ObservableValue<out CashViewer.ViewerNode?>.map(function: (CashViewer.ViewerNode?) -> (ObservableList<(VBox..VBox?)>..ObservableList<(VBox..VBox?)>?)): ObservableValue<(ObservableList<(VBox..VBox?)>..ObservableList<(VBox..VBox?)>?)> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> ViewerNode?
-    <B> -> (javafx.collections.ObservableList<javafx.scene.layout.VBox>..javafx.collections.ObservableList<javafx.scene.layout.VBox>?)
+    <B> -> (javafx.collections.ObservableList<(javafx.scene.layout.VBox..javafx.scene.layout.VBox?)>..javafx.collections.ObservableList<(javafx.scene.layout.VBox..javafx.scene.layout.VBox?)>?)
 
 'when (it) {
             null -> FXCollections.observableArrayList(leftPane)
             else -> FXCollections.observableArrayList(leftPane, rightPane)
-        }' @ [76:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (ObservableList<VBox>..ObservableList<VBox>?), entry1: (ObservableList<VBox>..ObservableList<VBox>?)): (ObservableList<VBox>..ObservableList<VBox>?)[SimpleFunctionDescriptorImpl]
+        }' @ [76:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (ObservableList<(VBox..VBox?)>..ObservableList<(VBox..VBox?)>?), entry1: (ObservableList<(VBox..VBox?)>..ObservableList<(VBox..VBox?)>?)): (ObservableList<(VBox..VBox?)>..ObservableList<(VBox..VBox?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (javafx.collections.ObservableList<javafx.scene.layout.VBox>..javafx.collections.ObservableList<javafx.scene.layout.VBox>?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (javafx.collections.ObservableList<(javafx.scene.layout.VBox..javafx.scene.layout.VBox?)>..javafx.collections.ObservableList<(javafx.scene.layout.VBox..javafx.scene.layout.VBox?)>?)
 
 'it' @ [76:15] ==> value-parameter it: CashViewer.ViewerNode? defined in net.corda.explorer.views.cordapps.cash.CashViewer.view.<anonymous>[ValueParameterDescriptorImpl]
 
 'observableArrayList' @ [77:35] ==> public open fun <E : (Any..Any?)> observableArrayList(vararg p0: (VBox..VBox?)): (ObservableList<(VBox..VBox?)>..ObservableList<(VBox..VBox?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> VBox
+    <E : (Any..Any?)> -> (javafx.scene.layout.VBox..javafx.scene.layout.VBox?)
 
 'leftPane' @ [77:55] ==> private final val leftPane: VBox defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
 
 'observableArrayList' @ [78:35] ==> public open fun <E : (Any..Any?)> observableArrayList(vararg p0: (VBox..VBox?)): (ObservableList<(VBox..VBox?)>..ObservableList<(VBox..VBox?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> VBox
+    <E : (Any..Any?)> -> (javafx.scene.layout.VBox..javafx.scene.layout.VBox?)
 
 'leftPane' @ [78:55] ==> private final val leftPane: VBox defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
 
@@ -157,33 +132,19 @@ Inferred types:
 
 'UIComponent' @ [104:59] ==> public constructor UIComponent(viewTitle: String? = ...) defined in tornadofx.UIComponent[DeserializedClassConstructorDescriptor]
 
-'fxml' @ [105:38] ==> public final fun <T : Node> fxml(location: String?, hasControllerAttribute: Boolean): ReadOnlyProperty<UIComponent, Parent> defined in net.corda.explorer.views.cordapps.cash.CashViewer.StateRowGraphic[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <T : Node> -> Parent
+'getValue' @ [105:38] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [107:34] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, Label> defined in net.corda.explorer.views.cordapps.cash.CashViewer.StateRowGraphic[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> Label
+'getValue' @ [107:34] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [108:41] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, Label> defined in net.corda.explorer.views.cordapps.cash.CashViewer.StateRowGraphic[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> Label
+'getValue' @ [108:41] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [109:40] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, Label> defined in net.corda.explorer.views.cordapps.cash.CashViewer.StateRowGraphic[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> Label
+'getValue' @ [109:40] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [110:44] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, Label> defined in net.corda.explorer.views.cordapps.cash.CashViewer.StateRowGraphic[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> Label
+'getValue' @ [110:44] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [111:40] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, Label> defined in net.corda.explorer.views.cordapps.cash.CashViewer.StateRowGraphic[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> Label
+'getValue' @ [111:40] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [112:39] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, Label> defined in net.corda.explorer.views.cordapps.cash.CashViewer.StateRowGraphic[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> Label
+'getValue' @ [112:39] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
 'reportingExchange' @ [114:66] ==> private final val reportingExchange: ObservableValue<Pair<Currency, (Amount<Currency>) -> Amount<Currency>>> defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
 
@@ -236,7 +197,7 @@ Inferred types:
 
 'stateAndRef' @ [122:58] ==> public final val stateAndRef: StateAndRef<Cash.State> defined in net.corda.explorer.views.cordapps.cash.CashViewer.StateRow[PropertyDescriptorImpl]
 
-'resolveIssuer' @ [122:70] ==> public fun StateAndRef<Cash.State>.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'resolveIssuer' @ [122:70] ==> public fun StateAndRef<Cash.State>.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [122:86] ==> public final val <T : (Any..Any?)> ObservableValue<Party?>.value: Party?[MyPropertyDescriptor]
 Inferred types:
@@ -420,13 +381,13 @@ Inferred types:
 
 'bindContent' @ [143:18] ==> public open fun <E : (Any..Any?)> bindContent(p0: (MutableList<(Node..Node?)>..List<(Node..Node?)>?), p1: (ObservableList<out (Node..Node?)>..ObservableList<out (Node..Node?)>?)): Unit defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Node
+    <E : (Any..Any?)> -> (javafx.scene.Node..javafx.scene.Node?)
 
 'splitPane' @ [143:30] ==> private final val splitPane: SplitPane defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
 
 'items' @ [143:40] ==> public final val SplitPane.items: (ObservableList<(Node..Node?)>..ObservableList<(Node..Node?)>?)[MyPropertyDescriptor]
 
-'view' @ [143:47] ==> private final val view: ChosenList<VBox> defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
+'view' @ [143:47] ==> private final val view: ChosenList<(VBox..VBox?)> defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
 
 'SearchField' @ [149:27] ==> public constructor SearchField<T>(data: ObservableList<StateAndRef<Cash.State>>, vararg filterCriteria: Pair<String, (StateAndRef<Cash.State>, String) -> Boolean>) defined in net.corda.explorer.views.SearchField[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -464,7 +425,7 @@ Inferred types:
 
 'state' @ [151:46] ==> value-parameter state: StateAndRef<Cash.State> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'resolveIssuer' @ [151:52] ==> public fun StateAndRef<Cash.State>.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'resolveIssuer' @ [151:52] ==> public fun StateAndRef<Cash.State>.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [151:68] ==> public final val <T : (Any..Any?)> ObservableValue<Party?>.value: Party?[MyPropertyDescriptor]
 Inferred types:
@@ -526,9 +487,9 @@ Inferred types:
 
 'root' @ [162:29] ==> public open val root: Parent defined in net.corda.explorer.views.SearchField[PropertyDescriptorImpl]
 
-'AggregatedList' @ [172:17] ==> public constructor AggregatedList<A, E : Any, K : Any>(list: ObservableList<out (StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>, toKey: ((StateAndRef<Cash.State>..StateAndRef<Cash.State>?)) -> AbstractParty, assemble: (AbstractParty, ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>) -> TreeItem<out CashViewer.ViewerNode.IssuerNode>) defined in net.corda.client.jfx.utils.AggregatedList[DeserializedClassConstructorDescriptor]
+'AggregatedList' @ [172:17] ==> public constructor AggregatedList<A, E : Any, K : Any>(list: ObservableList<out (StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>, toKey: ((StateAndRef<Cash.State>..StateAndRef<Cash.State>?)) -> AbstractParty, assemble: (AbstractParty, ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>) -> (TreeItem<out CashViewer.ViewerNode.IssuerNode>..TreeItem<out CashViewer.ViewerNode.IssuerNode>?)) defined in net.corda.client.jfx.utils.AggregatedList[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <A> -> TreeItem<out IssuerNode>
+    <A> -> (javafx.scene.control.TreeItem<out net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode>..javafx.scene.control.TreeItem<out net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode>?)
     <E : Any> -> (net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>..net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>?)
     <K : Any> -> AbstractParty
 
@@ -550,9 +511,9 @@ Inferred types:
 
 'party' @ [172:94] ==> public final val party: AbstractParty defined in net.corda.core.contracts.PartyAndReference[DeserializedPropertyDescriptor]
 
-'AggregatedList' @ [177:41] ==> public constructor AggregatedList<A, E : Any, K : Any>(list: ObservableList<out (StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>, toKey: ((StateAndRef<Cash.State>..StateAndRef<Cash.State>?)) -> Currency, assemble: (Currency, ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>) -> TreeItem<CashViewer.ViewerNode.CurrencyNode>) defined in net.corda.client.jfx.utils.AggregatedList[DeserializedClassConstructorDescriptor]
+'AggregatedList' @ [177:41] ==> public constructor AggregatedList<A, E : Any, K : Any>(list: ObservableList<out (StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>, toKey: ((StateAndRef<Cash.State>..StateAndRef<Cash.State>?)) -> Currency, assemble: (Currency, ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>) -> TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>) defined in net.corda.client.jfx.utils.AggregatedList[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <A> -> TreeItem<CurrencyNode>
+    <A> -> TreeItem<(net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode?)>
     <E : Any> -> (net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>..net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>?)
     <K : Any> -> Currency
 
@@ -604,11 +565,13 @@ Inferred types:
 
 'Amount' @ [182:85] ==> public companion object defined in net.corda.core.contracts.Amount[FakeCallableDescriptorForObject]
 
+'plus' @ [182:103] ==> public final operator fun plus(other: Amount<Currency>): Amount<Currency> defined in net.corda.core.contracts.Amount[DeserializedSimpleFunctionDescriptor]
+
 'combine' @ [187:55] ==> public final fun <A : (Any..Any?), B : (Any..Any?), R : (Any..Any?)> combine(p0: (ObservableValue<(Amount<Currency>..Amount<Currency>?)>..ObservableValue<(Amount<Currency>..Amount<Currency>?)>?), p1: (ObservableValue<(Pair<Currency, (Amount<Currency>) -> Amount<Currency>>..Pair<Currency, (Amount<Currency>) -> Amount<Currency>>?)>..ObservableValue<(Pair<Currency, (Amount<Currency>) -> Amount<Currency>>..Pair<Currency, (Amount<Currency>) -> Amount<Currency>>?)>?), p2: (((Amount<Currency>..Amount<Currency>?), (Pair<Currency, (Amount<Currency>) -> Amount<Currency>>..Pair<Currency, (Amount<Currency>) -> Amount<Currency>>?)) -> (Amount<Currency>..Amount<Currency>?)..(((Amount<Currency>..Amount<Currency>?), (Pair<Currency, (Amount<Currency>) -> Amount<Currency>>..Pair<Currency, (Amount<Currency>) -> Amount<Currency>>?)) -> (Amount<Currency>..Amount<Currency>?))?)): (MonadicBinding<(Amount<Currency>..Amount<Currency>?)>..MonadicBinding<(Amount<Currency>..Amount<Currency>?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> Amount<Currency>
-    <B : (Any..Any?)> -> Pair<Currency, Function1<Amount<Currency>, Amount<Currency>>>
-    <R : (Any..Any?)> -> Amount<Currency>
+    <A : (Any..Any?)> -> (net.corda.core.contracts.Amount<java.util.Currency>..net.corda.core.contracts.Amount<java.util.Currency>?)
+    <B : (Any..Any?)> -> (kotlin.Pair<java.util.Currency, (net.corda.core.contracts.Amount<java.util.Currency>) -> net.corda.core.contracts.Amount<java.util.Currency>>..kotlin.Pair<java.util.Currency, (net.corda.core.contracts.Amount<java.util.Currency>) -> net.corda.core.contracts.Amount<java.util.Currency>>?)
+    <R : (Any..Any?)> -> (net.corda.core.contracts.Amount<java.util.Currency>..net.corda.core.contracts.Amount<java.util.Currency>?)
 
 'sumAmount' @ [187:63] ==> val sumAmount: ObservableValue<Amount<Currency>> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -622,7 +585,7 @@ Inferred types:
 
 'TreeItem' @ [193:25] ==> public constructor TreeItem<T : (Any..Any?)>(p0: (CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)) defined in javafx.scene.control.TreeItem[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CurrencyNode
+    <T : (Any..Any?)> -> (net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode?)
 
 'CurrencyNode' @ [193:45] ==> public constructor CurrencyNode(amount: ObservableValue<Amount<Currency>>, equivAmount: ObservableValue<Amount<Currency>>, states: ObservableList<StateAndRef<Cash.State>>) defined in net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode[ClassConstructorDescriptorImpl]
 
@@ -632,18 +595,18 @@ Inferred types:
 
 'memberStates' @ [193:85] ==> value-parameter memberStates: ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'currencyNodes' @ [200:40] ==> val currencyNodes: AggregatedList<TreeItem<CashViewer.ViewerNode.CurrencyNode>, (StateAndRef<Cash.State>..StateAndRef<Cash.State>?), Currency> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'currencyNodes' @ [200:40] ==> val currencyNodes: AggregatedList<TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>, (StateAndRef<Cash.State>..StateAndRef<Cash.State>?), Currency> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
 
-'map' @ [200:54] ==> public fun <A, B> ObservableList<out (TreeItem<CashViewer.ViewerNode.CurrencyNode>..TreeItem<CashViewer.ViewerNode.CurrencyNode>?)>.map(cached: Boolean = ..., function: ((TreeItem<CashViewer.ViewerNode.CurrencyNode>..TreeItem<CashViewer.ViewerNode.CurrencyNode>?)) -> ObservableValue<out Amount<Currency>>): ObservableList<ObservableValue<out Amount<Currency>>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [200:54] ==> public fun <A, B> ObservableList<out (TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>..TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>?)>.map(cached: Boolean = ..., function: ((TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>..TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>?)) -> ObservableValue<out Amount<Currency>>): ObservableList<ObservableValue<out Amount<Currency>>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <A> -> (javafx.scene.control.TreeItem<net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode>..javafx.scene.control.TreeItem<net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode>?)
+    <A> -> (javafx.scene.control.TreeItem<(net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode?)>..javafx.scene.control.TreeItem<(net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode?)>?)
     <B> -> ObservableValue<out Amount<Currency>>
 
-'it' @ [200:60] ==> value-parameter it: (TreeItem<CashViewer.ViewerNode.CurrencyNode>..TreeItem<CashViewer.ViewerNode.CurrencyNode>?) defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [200:60] ==> value-parameter it: (TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>..TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>?) defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'value' @ [200:63] ==> public final var <T : (Any..Any?)> TreeItem<CashViewer.ViewerNode.CurrencyNode>.value: (CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)[MyPropertyDescriptor]
+'value' @ [200:63] ==> public final var <T : (Any..Any?)> TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>.value: (CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CurrencyNode
+    <T : (Any..Any?)> -> (net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode?)
 
 'equivAmount' @ [200:69] ==> public final val equivAmount: ObservableValue<out Amount<Currency>> defined in net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.CurrencyNode[PropertyDescriptorImpl]
 
@@ -673,15 +636,17 @@ Inferred types:
 
 'Amount' @ [202:74] ==> public companion object defined in net.corda.core.contracts.Amount[FakeCallableDescriptorForObject]
 
+'plus' @ [202:92] ==> public final operator fun plus(other: Amount<Currency>): Amount<Currency> defined in net.corda.core.contracts.Amount[DeserializedSimpleFunctionDescriptor]
+
 'TreeItem' @ [208:36] ==> public constructor TreeItem<T : (Any..Any?)>(p0: (CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)) defined in javafx.scene.control.TreeItem[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IssuerNode
+    <T : (Any..Any?)> -> (net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode?)
 
 'IssuerNode' @ [208:56] ==> public constructor IssuerNode(issuer: AbstractParty, sumEquivAmount: ObservableValue<out Amount<Currency>>, states: ObservableList<StateAndRef<Cash.State>>) defined in net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode[ClassConstructorDescriptorImpl]
 
 'issuer' @ [208:67] ==> value-parameter issuer: AbstractParty defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'resolveIssuer' @ [208:74] ==> public fun AbstractParty.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'resolveIssuer' @ [208:74] ==> public fun AbstractParty.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'value' @ [208:90] ==> public final val <T : (Any..Any?)> ObservableValue<Party?>.value: Party?[MyPropertyDescriptor]
 Inferred types:
@@ -693,27 +658,27 @@ Inferred types:
 
 'memberStates' @ [208:123] ==> value-parameter memberStates: ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'treeItem' @ [215:21] ==> val treeItem: TreeItem<CashViewer.ViewerNode.IssuerNode> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'treeItem' @ [215:21] ==> val treeItem: TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
 
-'isExpanded' @ [215:30] ==> public final var <T : (Any..Any?)> TreeItem<CashViewer.ViewerNode.IssuerNode>.isExpanded: Boolean[MyPropertyDescriptor]
+'isExpanded' @ [215:30] ==> public final var <T : (Any..Any?)> TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>.isExpanded: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IssuerNode
+    <T : (Any..Any?)> -> (net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode?)
 
-'treeItem' @ [216:79] ==> val treeItem: TreeItem<CashViewer.ViewerNode.IssuerNode> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'treeItem' @ [216:79] ==> val treeItem: TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
 
-'children' @ [216:88] ==> public final val <T : (Any..Any?)> TreeItem<CashViewer.ViewerNode.IssuerNode>.children: (ObservableList<(TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>..TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>?)>..ObservableList<(TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>..TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>?)>?)[MyPropertyDescriptor]
+'children' @ [216:88] ==> public final val <T : (Any..Any?)> TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>.children: (ObservableList<(TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>..TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>?)>..ObservableList<(TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>..TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> IssuerNode
+    <T : (Any..Any?)> -> (net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode?)
 
-'bindContent' @ [217:30] ==> public open fun <E : (Any..Any?)> bindContent(p0: (MutableList<(TreeItem<out CashViewer.ViewerNode>..TreeItem<out CashViewer.ViewerNode>?)>..List<(TreeItem<out CashViewer.ViewerNode>..TreeItem<out CashViewer.ViewerNode>?)>?), p1: (ObservableList<out (TreeItem<out CashViewer.ViewerNode>..TreeItem<out CashViewer.ViewerNode>?)>..ObservableList<out (TreeItem<out CashViewer.ViewerNode>..TreeItem<out CashViewer.ViewerNode>?)>?)): Unit defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
+'bindContent' @ [217:30] ==> public open fun <E : (Any..Any?)> bindContent(p0: (MutableList<(TreeItem<out (CashViewer.ViewerNode..CashViewer.ViewerNode?)>..TreeItem<out (CashViewer.ViewerNode..CashViewer.ViewerNode?)>?)>..List<(TreeItem<out (CashViewer.ViewerNode..CashViewer.ViewerNode?)>..TreeItem<out (CashViewer.ViewerNode..CashViewer.ViewerNode?)>?)>?), p1: (ObservableList<out (TreeItem<out (CashViewer.ViewerNode..CashViewer.ViewerNode?)>..TreeItem<out (CashViewer.ViewerNode..CashViewer.ViewerNode?)>?)>..ObservableList<out (TreeItem<out (CashViewer.ViewerNode..CashViewer.ViewerNode?)>..TreeItem<out (CashViewer.ViewerNode..CashViewer.ViewerNode?)>?)>?)): Unit defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> TreeItem<out ViewerNode>
+    <E : (Any..Any?)> -> (javafx.scene.control.TreeItem<out (net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode?)>..javafx.scene.control.TreeItem<out (net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode..net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode?)>?)
 
 'children' @ [217:42] ==> val children: List<TreeItem<out CashViewer.ViewerNode.IssuerNode>> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
 
-'currencyNodes' @ [217:52] ==> val currencyNodes: AggregatedList<TreeItem<CashViewer.ViewerNode.CurrencyNode>, (StateAndRef<Cash.State>..StateAndRef<Cash.State>?), Currency> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'currencyNodes' @ [217:52] ==> val currencyNodes: AggregatedList<TreeItem<(CashViewer.ViewerNode.CurrencyNode..CashViewer.ViewerNode.CurrencyNode?)>, (StateAndRef<Cash.State>..StateAndRef<Cash.State>?), Currency> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
 
-'treeItem' @ [218:21] ==> val treeItem: TreeItem<CashViewer.ViewerNode.IssuerNode> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'treeItem' @ [218:21] ==> val treeItem: TreeItem<(CashViewer.ViewerNode.IssuerNode..CashViewer.ViewerNode.IssuerNode?)> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
 
 'cashViewerTable' @ [221:9] ==> private final val cashViewerTable: TreeTableView<CashViewer.ViewerNode> defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
 
@@ -739,7 +704,7 @@ Inferred types:
 
 'bindContent' @ [224:22] ==> public open fun <E : (Any..Any?)> bindContent(p0: (MutableList<(TreeItem<out CashViewer.ViewerNode>..TreeItem<out CashViewer.ViewerNode>?)>..List<(TreeItem<out CashViewer.ViewerNode>..TreeItem<out CashViewer.ViewerNode>?)>?), p1: (ObservableList<out (TreeItem<out CashViewer.ViewerNode>..TreeItem<out CashViewer.ViewerNode>?)>..ObservableList<out (TreeItem<out CashViewer.ViewerNode>..TreeItem<out CashViewer.ViewerNode>?)>?)): Unit defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> TreeItem<out ViewerNode>
+    <E : (Any..Any?)> -> (javafx.scene.control.TreeItem<out net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode>..javafx.scene.control.TreeItem<out net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode>?)
 
 'children' @ [224:34] ==> val children: List<TreeItem<out CashViewer.ViewerNode>> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>[LocalVariableDescriptor]
 
@@ -989,19 +954,19 @@ Inferred types:
 
 'selectedNode' @ [273:34] ==> private final val selectedNode: ObservableValue<CashViewer.ViewerNode?> defined in net.corda.explorer.views.cordapps.cash.CashViewer[PropertyDescriptorImpl]
 
-'map' @ [273:47] ==> public fun <A, B> ObservableValue<out CashViewer.ViewerNode?>.map(function: (CashViewer.ViewerNode?) -> ObservableList<(CashViewer.StateRow..CashViewer.StateRow?)>): ObservableValue<ObservableList<(CashViewer.StateRow..CashViewer.StateRow?)>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [273:47] ==> public fun <A, B> ObservableValue<out CashViewer.ViewerNode?>.map(function: (CashViewer.ViewerNode?) -> ObservableList<CashViewer.StateRow>): ObservableValue<ObservableList<CashViewer.StateRow>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> ViewerNode?
-    <B> -> ObservableList<(net.corda.explorer.views.cordapps.cash.CashViewer.StateRow..net.corda.explorer.views.cordapps.cash.CashViewer.StateRow?)>
+    <B> -> ObservableList<StateRow>
 
 'it' @ [273:53] ==> value-parameter it: CashViewer.ViewerNode? defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'states' @ [273:57] ==> public final val states: ObservableList<StateAndRef<Cash.State>> defined in net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode[PropertyDescriptorImpl]
 
-'map' @ [273:65] ==> public fun <A, B> ObservableList<out StateAndRef<Cash.State>>.map(cached: Boolean = ..., function: (StateAndRef<Cash.State>) -> (CashViewer.StateRow..CashViewer.StateRow?)): ObservableList<(CashViewer.StateRow..CashViewer.StateRow?)> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [273:65] ==> public fun <A, B> ObservableList<out StateAndRef<Cash.State>>.map(cached: Boolean = ..., function: (StateAndRef<Cash.State>) -> CashViewer.StateRow): ObservableList<CashViewer.StateRow> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> StateAndRef<State>
-    <B> -> (net.corda.explorer.views.cordapps.cash.CashViewer.StateRow..net.corda.explorer.views.cordapps.cash.CashViewer.StateRow?)
+    <B> -> StateRow
 
 'StateRow' @ [273:71] ==> public constructor StateRow(originated: LocalDateTime, stateAndRef: StateAndRef<Cash.State>) defined in net.corda.explorer.views.cordapps.cash.CashViewer.StateRow[ClassConstructorDescriptorImpl]
 
@@ -1011,11 +976,11 @@ Inferred types:
 
 'ObservableListWrapper' @ [273:110] ==> public constructor ObservableListWrapper<E : (Any..Any?)>(p0: (MutableList<(CashViewer.StateRow..CashViewer.StateRow?)>..List<(CashViewer.StateRow..CashViewer.StateRow?)>?)) defined in com.sun.javafx.collections.ObservableListWrapper[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> StateRow
+    <E : (Any..Any?)> -> (net.corda.explorer.views.cordapps.cash.CashViewer.StateRow..net.corda.explorer.views.cordapps.cash.CashViewer.StateRow?)
 
-'emptyList' @ [273:132] ==> public fun <T> emptyList(): List<CashViewer.StateRow> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyList' @ [273:132] ==> public fun <T> emptyList(): List<(CashViewer.StateRow..CashViewer.StateRow?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> StateRow
+    <T> -> (net.corda.explorer.views.cordapps.cash.CashViewer.StateRow..net.corda.explorer.views.cordapps.cash.CashViewer.StateRow?)
 
 'setCustomCellFactory' @ [274:13] ==> public fun <T> ListView<CashViewer.StateRow>.setCustomCellFactory(toNode: (CashViewer.StateRow) -> Node): Unit defined in net.corda.explorer.ui[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1035,7 +1000,7 @@ Inferred types:
 
 'size' @ [278:57] ==> public open fun <E : (Any..Any?)> size(p0: (ObservableList<(TreeItem<out CashViewer.ViewerNode.IssuerNode>..TreeItem<out CashViewer.ViewerNode.IssuerNode>?)>..ObservableList<(TreeItem<out CashViewer.ViewerNode.IssuerNode>..TreeItem<out CashViewer.ViewerNode.IssuerNode>?)>?)): (IntegerBinding..IntegerBinding?) defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> TreeItem<out IssuerNode>
+    <E : (Any..Any?)> -> (javafx.scene.control.TreeItem<out net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode>..javafx.scene.control.TreeItem<out net.corda.explorer.views.cordapps.cash.CashViewer.ViewerNode.IssuerNode>?)
 
 'cashViewerIssueNodes' @ [278:62] ==> val cashViewerIssueNodes: ObservableList<TreeItem<out CashViewer.ViewerNode.IssuerNode>> defined in net.corda.explorer.views.cordapps.cash.CashViewer.<init>[LocalVariableDescriptor]
 
@@ -1068,26 +1033,23 @@ Inferred types:
 
 'VBox' @ [288:32] ==> public constructor VBox() defined in javafx.scene.layout.VBox[JavaClassConstructorDescriptor]
 
-'observableValue' @ [290:42] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (SettingsModel) -> ObservableValue<(Currency..Currency?)>): TrackedDelegate.ObservableValueDelegate<SettingsModel, (Currency..Currency?)> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> SettingsModel
-    <T> -> (java.util.Currency..java.util.Currency?)
+'getValue' @ [290:42] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'SettingsModel' @ [290:58] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
 
-'observableList' @ [291:35] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (ContractStateModel) -> ObservableList<StateAndRef<Cash.State>>): TrackedDelegate.ObservableListDelegate<ContractStateModel, StateAndRef<Cash.State>> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ContractStateModel
-    <T> -> StateAndRef<State>
+'reportingCurrencyProperty' @ [290:73] ==> public final val reportingCurrencyProperty: ObjectProperty<Currency> defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
+
+'getValue' @ [291:35] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ContractStateModel' @ [291:50] ==> public companion object defined in net.corda.client.jfx.model.ContractStateModel[FakeCallableDescriptorForObject]
 
-'observableValue' @ [292:68] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (ExchangeRateModel) -> ObservableValue<ExchangeRate>): TrackedDelegate.ObservableValueDelegate<ExchangeRateModel, ExchangeRate> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ExchangeRateModel
-    <T> -> ExchangeRate
+'cashStates' @ [291:70] ==> public final val cashStates: ObservableList<StateAndRef<Cash.State>> defined in net.corda.client.jfx.model.ContractStateModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [292:68] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ExchangeRateModel' @ [292:84] ==> public constructor ExchangeRateModel() defined in net.corda.client.jfx.model.ExchangeRateModel[DeserializedClassConstructorDescriptor]
+
+'exchangeRate' @ [292:103] ==> public final val exchangeRate: ObservableValue<ExchangeRate> defined in net.corda.client.jfx.model.ExchangeRateModel[DeserializedPropertyDescriptor]
 
 'AmountBindings' @ [293:33] ==> public object AmountBindings defined in net.corda.client.jfx.utils[FakeCallableDescriptorForObject]
 
@@ -1240,7 +1202,7 @@ Inferred types:
 
 'quantity' @ [319:78] ==> public final val quantity: Long defined in net.corda.core.contracts.Amount[DeserializedPropertyDescriptor]
 
-'runInFxApplicationThread' @ [320:29] ==> public fun runInFxApplicationThread(block: () -> Unit): Unit defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'runInFxApplicationThread' @ [320:29] ==> public fun runInFxApplicationThread(block: () -> Unit): Unit defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'data' @ [322:37] ==> public final var <X : (Any..Any?), Y : (Any..Any?)> XYChart.Series<(Number..Number?), (Number..Number?)>.data: (ObservableList<(XYChart.Data<(Number..Number?), (Number..Number?)>..XYChart.Data<(Number..Number?), (Number..Number?)>?)>..ObservableList<(XYChart.Data<(Number..Number?), (Number..Number?)>..XYChart.Data<(Number..Number?), (Number..Number?)>?)>?)[MyPropertyDescriptor]
 Inferred types:

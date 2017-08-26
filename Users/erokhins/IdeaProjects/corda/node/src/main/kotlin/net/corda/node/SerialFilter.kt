@@ -8,8 +8,6 @@
 
 'getFilterInterface' @ [28:20] ==> local final fun getFilterInterface(packageName: String): Class<*>? defined in net.corda.node.SerialFilter.<init>[SimpleFunctionDescriptorImpl]
 
-'Node' @ [29:20] ==> public companion object defined in net.corda.node.internal.Node[FakeCallableDescriptorForObject]
-
 'failStartUp' @ [29:25] ==> internal final fun failStartUp(message: String): Nothing defined in net.corda.node.internal.Node.Companion[SimpleFunctionDescriptorImpl]
 
 'serialClassGetter' @ [30:9] ==> private final val serialClassGetter: Method defined in net.corda.node.SerialFilter[PropertyDescriptorImpl]
@@ -20,7 +18,7 @@
 
 'name' @ [30:62] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'getMethod' @ [30:82] ==> @CallerSensitive public open fun getMethod(p0: (String..String?), vararg p1: (Class<*>..Class<*>?)): (Method..Method?) defined in java.lang.Class[JavaMethodDescriptor]
 
@@ -28,9 +26,9 @@ Inferred types:
 
 'filterInterface' @ [31:43] ==> private final val filterInterface: Class<*> defined in net.corda.node.SerialFilter[PropertyDescriptorImpl]
 
-'name' @ [31:59] ==> public final val <T : (Any..Any?)> Class<out Any>.name: (String..String?)[MyPropertyDescriptor]
+'name' @ [31:59] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(*)
 
 'undecided' @ [32:9] ==> private final val undecided: Any defined in net.corda.node.SerialFilter[PropertyDescriptorImpl]
 
@@ -52,9 +50,9 @@ Inferred types:
 
 'filterInterface' @ [34:44] ==> private final val filterInterface: Class<*> defined in net.corda.node.SerialFilter[PropertyDescriptorImpl]
 
-'name' @ [34:60] ==> public final val <T : (Any..Any?)> Class<out Any>.name: (String..String?)[MyPropertyDescriptor]
+'name' @ [34:60] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(*)
 
 'serialFilterLock' @ [35:9] ==> private final val serialFilterLock: Any defined in net.corda.node.SerialFilter[PropertyDescriptorImpl]
 
@@ -84,9 +82,9 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> SerialFilter
 
-'arrayOf' @ [40:68] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: Class<out (Any..Any?)>): Array<Class<out (Any..Any?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [40:68] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: Class<*>): Array<Class<*>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <reified @PureReifiable T> -> Class<*>
 
 'filterInterface' @ [40:76] ==> private final val filterInterface: Class<*> defined in net.corda.node.SerialFilter[PropertyDescriptorImpl]
 
@@ -136,7 +134,7 @@ Inferred types:
 
 'isArray' @ [58:30] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'componentType' @ [58:39] ==> var componentType: Class<*> defined in net.corda.node.SerialFilter.applyPredicate[LocalVariableDescriptor]
 
@@ -144,13 +142,13 @@ Inferred types:
 
 'componentType' @ [58:69] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'componentType' @ [59:13] ==> var componentType: Class<*> defined in net.corda.node.SerialFilter.applyPredicate[LocalVariableDescriptor]
 
 'isPrimitive' @ [59:27] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'invoke' @ [60:16] ==> public abstract operator fun invoke(p1: Class<*>): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 

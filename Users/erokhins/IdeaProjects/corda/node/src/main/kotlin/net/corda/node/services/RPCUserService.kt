@@ -12,7 +12,7 @@ Inferred types:
 
 'className' @ [23:58] ==> value-parameter className: String defined in net.corda.node.services.startFlowPermission[ValueParameterDescriptorImpl]
 
-'startFlowPermission' @ [24:63] ==> public fun startFlowPermission(className: String): String defined in net.corda.node.services[SimpleFunctionDescriptorImpl]
+'startFlowPermission' @ [24:63] ==> public fun startFlowPermission(className: String): String defined in net.corda.node.services in file RPCUserService.kt[SimpleFunctionDescriptorImpl]
 
 'clazz' @ [24:83] ==> value-parameter clazz: Class<P> defined in net.corda.node.services.startFlowPermission[ValueParameterDescriptorImpl]
 

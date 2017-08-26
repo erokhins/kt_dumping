@@ -56,9 +56,9 @@
 
 'UnsupportedOperationException' @ [67:61] ==> public final fun <init>(): UnsupportedOperationException /* = UnsupportedOperationException */ defined in kotlin.UnsupportedOperationException[TypeAliasConstructorDescriptorImpl]
 
-'lazy' @ [70:32] ==> public fun <T> lazy(initializer: () -> SimpleModule): Lazy<SimpleModule> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [70:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SimpleModule
+    <T> -> T
 
 'SimpleModule' @ [71:9] ==> public constructor SimpleModule(p0: (String..String?)) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaClassConstructorDescriptor]
 
@@ -68,7 +68,7 @@ Inferred types:
 
 'addSerializer' @ [72:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (AnonymousParty..AnonymousParty?)>..Class<out (AnonymousParty..AnonymousParty?)>?), p1: (JsonSerializer<(AnonymousParty..AnonymousParty?)>..JsonSerializer<(AnonymousParty..AnonymousParty?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AnonymousParty
+    <T : (Any..Any?)> -> (net.corda.core.identity.AnonymousParty..net.corda.core.identity.AnonymousParty?)
 
 'AnonymousParty' @ [72:27] ==> public constructor AnonymousParty(owningKey: PublicKey) defined in net.corda.core.identity.AnonymousParty[DeserializedClassConstructorDescriptor]
 
@@ -80,7 +80,7 @@ Inferred types:
 
 'addDeserializer' @ [73:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(AnonymousParty..AnonymousParty?)>..Class<(AnonymousParty..AnonymousParty?)>?), p1: (JsonDeserializer<out (AnonymousParty..AnonymousParty?)>..JsonDeserializer<out (AnonymousParty..AnonymousParty?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AnonymousParty
+    <T : (Any..Any?)> -> (net.corda.core.identity.AnonymousParty..net.corda.core.identity.AnonymousParty?)
 
 'AnonymousParty' @ [73:29] ==> public constructor AnonymousParty(owningKey: PublicKey) defined in net.corda.core.identity.AnonymousParty[DeserializedClassConstructorDescriptor]
 
@@ -92,7 +92,7 @@ Inferred types:
 
 'addSerializer' @ [74:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (Party..Party?)>..Class<out (Party..Party?)>?), p1: (JsonSerializer<(Party..Party?)>..JsonSerializer<(Party..Party?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Party
+    <T : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
 'java' @ [74:40] ==> public val <T> KClass<Party>.java: Class<Party> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -102,7 +102,7 @@ Inferred types:
 
 'addDeserializer' @ [75:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(Party..Party?)>..Class<(Party..Party?)>?), p1: (JsonDeserializer<out (Party..Party?)>..JsonDeserializer<out (Party..Party?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Party
+    <T : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
 'java' @ [75:42] ==> public val <T> KClass<Party>.java: Class<Party> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -112,7 +112,7 @@ Inferred types:
 
 'addDeserializer' @ [76:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(AbstractParty..AbstractParty?)>..Class<(AbstractParty..AbstractParty?)>?), p1: (JsonDeserializer<out (AbstractParty..AbstractParty?)>..JsonDeserializer<out (AbstractParty..AbstractParty?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> AbstractParty
+    <T : (Any..Any?)> -> (net.corda.core.identity.AbstractParty..net.corda.core.identity.AbstractParty?)
 
 'AbstractParty' @ [76:29] ==> public constructor AbstractParty(owningKey: PublicKey) defined in net.corda.core.identity.AbstractParty[DeserializedClassConstructorDescriptor]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'addSerializer' @ [77:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?), p1: (JsonSerializer<(Any..Any?)>..JsonSerializer<(Any..Any?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'java' @ [77:45] ==> public val <T> KClass<BigDecimal>.java: Class<BigDecimal> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -134,7 +134,7 @@ Inferred types:
 
 'addDeserializer' @ [78:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(BigDecimal..BigDecimal?)>..Class<(BigDecimal..BigDecimal?)>?), p1: (JsonDeserializer<out (BigDecimal..BigDecimal?)>..JsonDeserializer<out (BigDecimal..BigDecimal?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> BigDecimal
+    <T : (Any..Any?)> -> (java.math.BigDecimal..java.math.BigDecimal?)
 
 'java' @ [78:47] ==> public val <T> KClass<BigDecimal>.java: Class<BigDecimal> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -144,7 +144,7 @@ Inferred types:
 
 'addSerializer' @ [79:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (SecureHash..SecureHash?)>..Class<out (SecureHash..SecureHash?)>?), p1: (JsonSerializer<(SecureHash..SecureHash?)>..JsonSerializer<(SecureHash..SecureHash?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SecureHash
+    <T : (Any..Any?)> -> (net.corda.core.crypto.SecureHash..net.corda.core.crypto.SecureHash?)
 
 'SecureHash' @ [79:27] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
@@ -156,7 +156,7 @@ Inferred types:
 
 'addSerializer' @ [80:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (SecureHash..SecureHash?)>..Class<out (SecureHash..SecureHash?)>?), p1: (JsonSerializer<(SecureHash..SecureHash?)>..JsonSerializer<(SecureHash..SecureHash?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SecureHash
+    <T : (Any..Any?)> -> (net.corda.core.crypto.SecureHash..net.corda.core.crypto.SecureHash?)
 
 'SecureHash' @ [80:27] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
@@ -170,7 +170,7 @@ Inferred types:
 
 'addDeserializer' @ [81:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(SecureHash..SecureHash?)>..Class<(SecureHash..SecureHash?)>?), p1: (JsonDeserializer<out (SecureHash..SecureHash?)>..JsonDeserializer<out (SecureHash..SecureHash?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SecureHash
+    <T : (Any..Any?)> -> (net.corda.core.crypto.SecureHash..net.corda.core.crypto.SecureHash?)
 
 'SecureHash' @ [81:29] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
@@ -184,7 +184,7 @@ Inferred types:
 
 'addDeserializer' @ [82:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(SecureHash.SHA256..SecureHash.SHA256?)>..Class<(SecureHash.SHA256..SecureHash.SHA256?)>?), p1: (JsonDeserializer<out (SecureHash.SHA256..SecureHash.SHA256?)>..JsonDeserializer<out (SecureHash.SHA256..SecureHash.SHA256?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SHA256
+    <T : (Any..Any?)> -> (net.corda.core.crypto.SecureHash.SHA256..net.corda.core.crypto.SecureHash.SHA256?)
 
 'SecureHash' @ [82:29] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
@@ -200,7 +200,7 @@ Inferred types:
 
 'addSerializer' @ [85:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (EdDSAPublicKey..EdDSAPublicKey?)>..Class<out (EdDSAPublicKey..EdDSAPublicKey?)>?), p1: (JsonSerializer<(EdDSAPublicKey..EdDSAPublicKey?)>..JsonSerializer<(EdDSAPublicKey..EdDSAPublicKey?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> EdDSAPublicKey
+    <T : (Any..Any?)> -> (net.i2p.crypto.eddsa.EdDSAPublicKey..net.i2p.crypto.eddsa.EdDSAPublicKey?)
 
 'java' @ [85:49] ==> public val <T> KClass<EdDSAPublicKey>.java: Class<EdDSAPublicKey> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -210,7 +210,7 @@ Inferred types:
 
 'addDeserializer' @ [86:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(EdDSAPublicKey..EdDSAPublicKey?)>..Class<(EdDSAPublicKey..EdDSAPublicKey?)>?), p1: (JsonDeserializer<out (EdDSAPublicKey..EdDSAPublicKey?)>..JsonDeserializer<out (EdDSAPublicKey..EdDSAPublicKey?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> EdDSAPublicKey
+    <T : (Any..Any?)> -> (net.i2p.crypto.eddsa.EdDSAPublicKey..net.i2p.crypto.eddsa.EdDSAPublicKey?)
 
 'java' @ [86:51] ==> public val <T> KClass<EdDSAPublicKey>.java: Class<EdDSAPublicKey> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -220,7 +220,7 @@ Inferred types:
 
 'addSerializer' @ [89:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (CompositeKey..CompositeKey?)>..Class<out (CompositeKey..CompositeKey?)>?), p1: (JsonSerializer<(CompositeKey..CompositeKey?)>..JsonSerializer<(CompositeKey..CompositeKey?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CompositeKey
+    <T : (Any..Any?)> -> (net.corda.core.crypto.composite.CompositeKey..net.corda.core.crypto.composite.CompositeKey?)
 
 'CompositeKey' @ [89:27] ==> public companion object defined in net.corda.core.crypto.composite.CompositeKey[FakeCallableDescriptorForObject]
 
@@ -232,7 +232,7 @@ Inferred types:
 
 'addDeserializer' @ [90:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(CompositeKey..CompositeKey?)>..Class<(CompositeKey..CompositeKey?)>?), p1: (JsonDeserializer<out (CompositeKey..CompositeKey?)>..JsonDeserializer<out (CompositeKey..CompositeKey?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> CompositeKey
+    <T : (Any..Any?)> -> (net.corda.core.crypto.composite.CompositeKey..net.corda.core.crypto.composite.CompositeKey?)
 
 'CompositeKey' @ [90:29] ==> public companion object defined in net.corda.core.crypto.composite.CompositeKey[FakeCallableDescriptorForObject]
 
@@ -244,7 +244,7 @@ Inferred types:
 
 'addSerializer' @ [94:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (NodeInfo..NodeInfo?)>..Class<out (NodeInfo..NodeInfo?)>?), p1: (JsonSerializer<(NodeInfo..NodeInfo?)>..JsonSerializer<(NodeInfo..NodeInfo?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> NodeInfo
+    <T : (Any..Any?)> -> (net.corda.core.node.NodeInfo..net.corda.core.node.NodeInfo?)
 
 'NodeInfo' @ [94:27] ==> public constructor NodeInfo(addresses: List<NetworkHostAndPort>, legalIdentityAndCert: PartyAndCertificate, legalIdentitiesAndCerts: NonEmptySet<PartyAndCertificate>, platformVersion: Int, advertisedServices: List<ServiceEntry> = ..., worldMapLocation: WorldMapLocation? = ...) defined in net.corda.core.node.NodeInfo[DeserializedClassConstructorDescriptor]
 
@@ -256,7 +256,7 @@ Inferred types:
 
 'addDeserializer' @ [95:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(NodeInfo..NodeInfo?)>..Class<(NodeInfo..NodeInfo?)>?), p1: (JsonDeserializer<out (NodeInfo..NodeInfo?)>..JsonDeserializer<out (NodeInfo..NodeInfo?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> NodeInfo
+    <T : (Any..Any?)> -> (net.corda.core.node.NodeInfo..net.corda.core.node.NodeInfo?)
 
 'NodeInfo' @ [95:29] ==> public constructor NodeInfo(addresses: List<NetworkHostAndPort>, legalIdentityAndCert: PartyAndCertificate, legalIdentitiesAndCerts: NonEmptySet<PartyAndCertificate>, platformVersion: Int, advertisedServices: List<ServiceEntry> = ..., worldMapLocation: WorldMapLocation? = ...) defined in net.corda.core.node.NodeInfo[DeserializedClassConstructorDescriptor]
 
@@ -268,7 +268,7 @@ Inferred types:
 
 'addSerializer' @ [98:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (Amount<*>..Amount<*>?)>..Class<out (Amount<*>..Amount<*>?)>?), p1: (JsonSerializer<(Amount<*>..Amount<*>?)>..JsonSerializer<(Amount<*>..Amount<*>?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Amount<*>
+    <T : (Any..Any?)> -> (net.corda.core.contracts.Amount<*>..net.corda.core.contracts.Amount<*>?)
 
 'Amount' @ [98:27] ==> public companion object defined in net.corda.core.contracts.Amount[FakeCallableDescriptorForObject]
 
@@ -280,7 +280,7 @@ Inferred types:
 
 'addDeserializer' @ [99:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(Amount<*>..Amount<*>?)>..Class<(Amount<*>..Amount<*>?)>?), p1: (JsonDeserializer<out (Amount<*>..Amount<*>?)>..JsonDeserializer<out (Amount<*>..Amount<*>?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Amount<*>
+    <T : (Any..Any?)> -> (net.corda.core.contracts.Amount<*>..net.corda.core.contracts.Amount<*>?)
 
 'Amount' @ [99:29] ==> public companion object defined in net.corda.core.contracts.Amount[FakeCallableDescriptorForObject]
 
@@ -292,7 +292,7 @@ Inferred types:
 
 'addDeserializer' @ [102:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(OpaqueBytes..OpaqueBytes?)>..Class<(OpaqueBytes..OpaqueBytes?)>?), p1: (JsonDeserializer<out (OpaqueBytes..OpaqueBytes?)>..JsonDeserializer<out (OpaqueBytes..OpaqueBytes?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> OpaqueBytes
+    <T : (Any..Any?)> -> (net.corda.core.utilities.OpaqueBytes..net.corda.core.utilities.OpaqueBytes?)
 
 'OpaqueBytes' @ [102:29] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
 
@@ -304,7 +304,7 @@ Inferred types:
 
 'addSerializer' @ [103:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (OpaqueBytes..OpaqueBytes?)>..Class<out (OpaqueBytes..OpaqueBytes?)>?), p1: (JsonSerializer<(OpaqueBytes..OpaqueBytes?)>..JsonSerializer<(OpaqueBytes..OpaqueBytes?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> OpaqueBytes
+    <T : (Any..Any?)> -> (net.corda.core.utilities.OpaqueBytes..net.corda.core.utilities.OpaqueBytes?)
 
 'OpaqueBytes' @ [103:27] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
 
@@ -316,7 +316,7 @@ Inferred types:
 
 'addDeserializer' @ [106:13] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(X500Name..X500Name?)>..Class<(X500Name..X500Name?)>?), p1: (JsonDeserializer<out (X500Name..X500Name?)>..JsonDeserializer<out (X500Name..X500Name?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> X500Name
+    <T : (Any..Any?)> -> (org.bouncycastle.asn1.x500.X500Name..org.bouncycastle.asn1.x500.X500Name?)
 
 'java' @ [106:45] ==> public val <T> KClass<X500Name>.java: Class<X500Name> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -326,7 +326,7 @@ Inferred types:
 
 'addSerializer' @ [107:13] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (X500Name..X500Name?)>..Class<out (X500Name..X500Name?)>?), p1: (JsonSerializer<(X500Name..X500Name?)>..JsonSerializer<(X500Name..X500Name?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> X500Name
+    <T : (Any..Any?)> -> (org.bouncycastle.asn1.x500.X500Name..org.bouncycastle.asn1.x500.X500Name?)
 
 'java' @ [107:43] ==> public val <T> KClass<X500Name>.java: Class<X500Name> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -816,8 +816,6 @@ Inferred types:
 'obj' @ [276:19] ==> value-parameter obj: EdDSAPublicKey defined in net.corda.jackson.JacksonSupport.PublicKeySerializer.serialize[ValueParameterDescriptorImpl]
 
 'params' @ [276:23] ==> public final val EdDSAPublicKey.params: (EdDSAParameterSpec..EdDSAParameterSpec?)[MyPropertyDescriptor]
-
-'Crypto' @ [276:33] ==> public object Crypto defined in net.corda.core.crypto[FakeCallableDescriptorForObject]
 
 'EDDSA_ED25519_SHA512' @ [276:40] ==> @field:JvmField public final val EDDSA_ED25519_SHA512: SignatureScheme defined in net.corda.core.crypto.Crypto[DeserializedPropertyDescriptor]
 

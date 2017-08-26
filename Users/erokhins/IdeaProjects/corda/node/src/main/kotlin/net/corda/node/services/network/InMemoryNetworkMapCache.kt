@@ -20,8 +20,6 @@ Inferred types:
 
 'getNodesWithService' @ [51:58] ==> public open fun getNodesWithService(serviceType: ServiceType): List<NodeInfo> defined in net.corda.node.services.network.InMemoryNetworkMapCache[DeserializedSimpleFunctionDescriptor]
 
-'NetworkMapService' @ [51:78] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
-
 'type' @ [51:96] ==> public final val type: ServiceType defined in net.corda.node.services.network.NetworkMapService.Companion[PropertyDescriptorImpl]
 
 'create' @ [52:43] ==> public open fun <T : (Any..Any?)> create(): (PublishSubject<(NetworkMapCache.MapChange..NetworkMapCache.MapChange?)>..PublishSubject<(NetworkMapCache.MapChange..NetworkMapCache.MapChange?)>?) defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
@@ -48,13 +46,13 @@ Inferred types:
 
 'synchronizedMap' @ [61:82] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> synchronizedMap(p0: (MutableMap<(PublicKey..PublicKey?), (NodeInfo..NodeInfo?)>..Map<(PublicKey..PublicKey?), (NodeInfo..NodeInfo?)>?)): (MutableMap<(PublicKey..PublicKey?), (NodeInfo..NodeInfo?)>..Map<(PublicKey..PublicKey?), (NodeInfo..NodeInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PublicKey
-    <V : (Any..Any?)> -> NodeInfo
+    <K : (Any..Any?)> -> (java.security.PublicKey..java.security.PublicKey?)
+    <V : (Any..Any?)> -> (net.corda.core.node.NodeInfo..net.corda.core.node.NodeInfo?)
 
 'HashMap' @ [61:98] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PublicKey
-    <V : (Any..Any?)> -> NodeInfo
+    <K : (Any..Any?)> -> (java.security.PublicKey..java.security.PublicKey?)
+    <V : (Any..Any?)> -> (net.corda.core.node.NodeInfo..net.corda.core.node.NodeInfo?)
 
 'registeredNodes' @ [64:20] ==> protected final var registeredNodes: MutableMap<PublicKey, NodeInfo> defined in net.corda.node.services.network.InMemoryNetworkMapCache[PropertyDescriptorImpl]
 
@@ -166,8 +164,6 @@ Inferred types:
 
 'addMessageHandler' @ [101:21] ==> public abstract fun addMessageHandler(topic: String = ..., sessionID: Long = ..., callback: (ReceivedMessage, MessageHandlerRegistration) -> Unit): MessageHandlerRegistration defined in net.corda.node.services.messaging.MessagingService[SimpleFunctionDescriptorImpl]
 
-'NetworkMapService' @ [101:39] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
-
 'PUSH_TOPIC' @ [101:57] ==> public final val PUSH_TOPIC: String defined in net.corda.node.services.network.NetworkMapService.Companion[PropertyDescriptorImpl]
 
 'message' @ [103:31] ==> value-parameter message: ReceivedMessage defined in net.corda.node.services.network.InMemoryNetworkMapCache.addMapService.<anonymous>[ValueParameterDescriptorImpl]
@@ -182,11 +178,7 @@ Inferred types:
 
 'createMessage' @ [104:46] ==> public fun MessagingService.createMessage(topic: String, sessionID: Long = ..., data: ByteArray): Message defined in net.corda.node.services.messaging in file Messaging.kt[SimpleFunctionDescriptorImpl]
 
-'NetworkMapService' @ [104:60] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
-
 'PUSH_ACK_TOPIC' @ [104:78] ==> public final val PUSH_ACK_TOPIC: String defined in net.corda.node.services.network.NetworkMapService.Companion[PropertyDescriptorImpl]
-
-'NetworkMapService' @ [105:36] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
 
 'UpdateAcknowledge' @ [105:54] ==> public constructor UpdateAcknowledge(mapVersion: Int, replyTo: MessageRecipients) defined in net.corda.node.services.network.NetworkMapService.UpdateAcknowledge[ClassConstructorDescriptorImpl]
 
@@ -257,8 +249,6 @@ Inferred types:
 'sendRequest' @ [119:30] ==> public fun <R : Any> MessagingService.sendRequest(topic: String, request: ServiceRequestMessage, target: MessageRecipients): CordaFuture<NetworkMapService.FetchMapResponse> defined in net.corda.node.services.messaging[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R : Any> -> FetchMapResponse
-
-'NetworkMapService' @ [119:60] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
 
 'FETCH_TOPIC' @ [119:78] ==> public final val FETCH_TOPIC: String defined in net.corda.node.services.network.NetworkMapService.Companion[PropertyDescriptorImpl]
 
@@ -393,8 +383,6 @@ Inferred types:
 'sendRequest' @ [156:30] ==> public fun <R : Any> MessagingService.sendRequest(topic: String, request: ServiceRequestMessage, target: MessageRecipients): CordaFuture<NetworkMapService.SubscribeResponse> defined in net.corda.node.services.messaging[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R : Any> -> SubscribeResponse
-
-'NetworkMapService' @ [156:61] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
 
 'SUBSCRIPTION_TOPIC' @ [156:79] ==> public final val SUBSCRIPTION_TOPIC: String defined in net.corda.node.services.network.NetworkMapService.Companion[PropertyDescriptorImpl]
 

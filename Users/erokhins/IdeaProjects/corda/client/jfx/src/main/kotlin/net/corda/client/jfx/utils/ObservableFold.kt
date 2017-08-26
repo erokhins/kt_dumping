@@ -38,7 +38,7 @@ Inferred types:
 
 'it' @ [46:17] ==> value-parameter it: (MutableList<(T..T?)>..List<(T..T?)>?) defined in net.corda.client.jfx.utils.fold.<anonymous>[ValueParameterDescriptorImpl]
 
-'fold' @ [46:20] ==> public inline fun <T, R> Iterable<(T..T?)>.fold(initial: R, operation: (R, (T..T?)) -> R): R defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [46:20] ==> public inline fun <T, R> Iterable<(T..T?)>.fold(initial: R, operation: (acc: R, (T..T?)) -> R): R defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (T..T?)
     <R> -> R
@@ -57,16 +57,16 @@ Inferred types:
 
 'accumulator' @ [53:12] ==> value-parameter accumulator: R defined in net.corda.client.jfx.utils.fold[ValueParameterDescriptorImpl]
 
-'fold' @ [60:12] ==> public fun <T, R> Observable<A>.fold(accumulator: (ObservableList<A>..ObservableList<A>?), folderFun: ((ObservableList<A>..ObservableList<A>?), A) -> Unit): (ObservableList<A>..ObservableList<A>?) defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
+'fold' @ [60:12] ==> public fun <T, R> Observable<A>.fold(accumulator: (ObservableList<(A..A?)>..ObservableList<(A..A?)>?), folderFun: ((ObservableList<(A..A?)>..ObservableList<(A..A?)>?), A) -> Unit): (ObservableList<(A..A?)>..ObservableList<(A..A?)>?) defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> A
-    <R> -> (javafx.collections.ObservableList<A>..javafx.collections.ObservableList<A>?)
+    <R> -> (javafx.collections.ObservableList<(A..A?)>..javafx.collections.ObservableList<(A..A?)>?)
 
 'observableArrayList' @ [60:31] ==> public open fun <E : (Any..Any?)> observableArrayList(): (ObservableList<(A..A?)>..ObservableList<(A..A?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> A
+    <E : (Any..Any?)> -> (A..A?)
 
-'list' @ [61:9] ==> value-parameter list: (ObservableList<A>..ObservableList<A>?) defined in net.corda.client.jfx.utils.recordInSequence.<anonymous>[ValueParameterDescriptorImpl]
+'list' @ [61:9] ==> value-parameter list: (ObservableList<(A..A?)>..ObservableList<(A..A?)>?) defined in net.corda.client.jfx.utils.recordInSequence.<anonymous>[ValueParameterDescriptorImpl]
 
 'add' @ [61:14] ==> public abstract fun add(element: (A..A?)): Boolean defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
 
@@ -74,10 +74,10 @@ Inferred types:
 
 'newValue' @ [70:127] ==> value-parameter newValue: A defined in net.corda.client.jfx.utils.recordAsAssociation.<anonymous>[ValueParameterDescriptorImpl]
 
-'fold' @ [71:12] ==> public fun <T, R> Observable<A>.fold(accumulator: (ObservableMap<K, A>..ObservableMap<K, A>?), folderFun: ((ObservableMap<K, A>..ObservableMap<K, A>?), A) -> Unit): (ObservableMap<K, A>..ObservableMap<K, A>?) defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
+'fold' @ [71:12] ==> public fun <T, R> Observable<A>.fold(accumulator: (ObservableMap<(K..K?), (A..A?)>..ObservableMap<(K..K?), (A..A?)>?), folderFun: ((ObservableMap<(K..K?), (A..A?)>..ObservableMap<(K..K?), (A..A?)>?), A) -> Unit): (ObservableMap<(K..K?), (A..A?)>..ObservableMap<(K..K?), (A..A?)>?) defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> A
-    <R> -> (javafx.collections.ObservableMap<K, A>..javafx.collections.ObservableMap<K, A>?)
+    <R> -> (javafx.collections.ObservableMap<(K..K?), (A..A?)>..javafx.collections.ObservableMap<(K..K?), (A..A?)>?)
 
 'observableHashMap' @ [71:31] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> observableHashMap(): (ObservableMap<(K..K?), (A..A?)>..ObservableMap<(K..K?), (A..A?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
@@ -88,11 +88,11 @@ Inferred types:
 
 'item' @ [72:25] ==> value-parameter item: A defined in net.corda.client.jfx.utils.recordAsAssociation.<anonymous>[ValueParameterDescriptorImpl]
 
-'map' @ [73:9] ==> value-parameter map: (ObservableMap<K, A>..ObservableMap<K, A>?) defined in net.corda.client.jfx.utils.recordAsAssociation.<anonymous>[ValueParameterDescriptorImpl]
+'map' @ [73:9] ==> value-parameter map: (ObservableMap<(K..K?), (A..A?)>..ObservableMap<(K..K?), (A..A?)>?) defined in net.corda.client.jfx.utils.recordAsAssociation.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [73:13] ==> val key: K defined in net.corda.client.jfx.utils.recordAsAssociation.<anonymous>[LocalVariableDescriptor]
 
-'map' @ [73:20] ==> value-parameter map: (ObservableMap<K, A>..ObservableMap<K, A>?) defined in net.corda.client.jfx.utils.recordAsAssociation.<anonymous>[ValueParameterDescriptorImpl]
+'map' @ [73:20] ==> value-parameter map: (ObservableMap<(K..K?), (A..A?)>..ObservableMap<(K..K?), (A..A?)>?) defined in net.corda.client.jfx.utils.recordAsAssociation.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [73:24] ==> val key: K defined in net.corda.client.jfx.utils.recordAsAssociation.<anonymous>[LocalVariableDescriptor]
 

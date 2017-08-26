@@ -2,7 +2,7 @@
 Inferred types:
     <T : Any> -> Currency
 
-'exchangeDouble' @ [14:16] ==> public fun ExchangeRate.exchangeDouble(amount: Amount<Currency>, to: Currency): Double defined in net.corda.client.jfx.model[SimpleFunctionDescriptorImpl]
+'exchangeDouble' @ [14:16] ==> public fun ExchangeRate.exchangeDouble(amount: Amount<Currency>, to: Currency): Double defined in net.corda.client.jfx.model in file ExchangeRateModel.kt[SimpleFunctionDescriptorImpl]
 
 'amount' @ [14:31] ==> value-parameter amount: Amount<Currency> defined in net.corda.client.jfx.model.exchangeAmount[ValueParameterDescriptorImpl]
 

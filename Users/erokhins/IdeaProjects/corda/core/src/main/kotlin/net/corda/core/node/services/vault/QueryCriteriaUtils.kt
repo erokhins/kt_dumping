@@ -302,27 +302,27 @@ Inferred types:
 
 'value' @ [208:128] ==> value-parameter value: R defined in net.corda.core.node.services.vault.Builder.comparePredicate[ValueParameterDescriptorImpl]
 
-'predicate' @ [210:52] ==> public final fun <O, R> KProperty1<O, R?>.predicate(predicate: ColumnPredicate<R?>): CriteriaExpression.ColumnPredicateExpression<O, R?> defined in net.corda.core.node.services.vault.Builder[SimpleFunctionDescriptorImpl]
+'predicate' @ [210:52] ==> public final fun <O, R> KProperty1<O, R?>.predicate(predicate: ColumnPredicate<R>): CriteriaExpression.ColumnPredicateExpression<O, R> defined in net.corda.core.node.services.vault.Builder[SimpleFunctionDescriptorImpl]
 Inferred types:
     <O> -> O
-    <R> -> R?
+    <R> -> R
 
-'EqualityComparison' @ [210:78] ==> public constructor EqualityComparison<C>(operator: EqualityComparisonOperator, rightLiteral: R?) defined in net.corda.core.node.services.vault.ColumnPredicate.EqualityComparison[ClassConstructorDescriptorImpl]
+'EqualityComparison' @ [210:78] ==> public constructor EqualityComparison<C>(operator: EqualityComparisonOperator, rightLiteral: R) defined in net.corda.core.node.services.vault.ColumnPredicate.EqualityComparison[ClassConstructorDescriptorImpl]
 Inferred types:
-    <C> -> R?
+    <C> -> R
 
 'EQUAL' @ [210:124] ==> enum entry EQUAL defined in net.corda.core.node.services.vault.EqualityComparisonOperator[FakeCallableDescriptorForObject]
 
 'value' @ [210:131] ==> value-parameter value: R defined in net.corda.core.node.services.vault.Builder.equal[ValueParameterDescriptorImpl]
 
-'predicate' @ [211:55] ==> public final fun <O, R> KProperty1<O, R?>.predicate(predicate: ColumnPredicate<R?>): CriteriaExpression.ColumnPredicateExpression<O, R?> defined in net.corda.core.node.services.vault.Builder[SimpleFunctionDescriptorImpl]
+'predicate' @ [211:55] ==> public final fun <O, R> KProperty1<O, R?>.predicate(predicate: ColumnPredicate<R>): CriteriaExpression.ColumnPredicateExpression<O, R> defined in net.corda.core.node.services.vault.Builder[SimpleFunctionDescriptorImpl]
 Inferred types:
     <O> -> O
-    <R> -> R?
+    <R> -> R
 
-'EqualityComparison' @ [211:81] ==> public constructor EqualityComparison<C>(operator: EqualityComparisonOperator, rightLiteral: R?) defined in net.corda.core.node.services.vault.ColumnPredicate.EqualityComparison[ClassConstructorDescriptorImpl]
+'EqualityComparison' @ [211:81] ==> public constructor EqualityComparison<C>(operator: EqualityComparisonOperator, rightLiteral: R) defined in net.corda.core.node.services.vault.ColumnPredicate.EqualityComparison[ClassConstructorDescriptorImpl]
 Inferred types:
-    <C> -> R?
+    <C> -> R
 
 'NOT_EQUAL' @ [211:127] ==> enum entry NOT_EQUAL defined in net.corda.core.node.services.vault.EqualityComparisonOperator[FakeCallableDescriptorForObject]
 

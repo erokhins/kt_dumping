@@ -379,7 +379,7 @@ Inferred types:
 
 'condition' @ [161:30] ==> value-parameter condition: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.ActionBuilder.givenThat[ValueParameterDescriptorImpl]
 
-'signedByOneOf' @ [161:44] ==> public fun signedByOneOf(actors: Collection<Party>): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signedByOneOf' @ [161:44] ==> public fun signedByOneOf(actors: Collection<Party>): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Perceivable.kt[SimpleFunctionDescriptorImpl]
 
 'actors' @ [161:58] ==> public final val actors: Set<Party> defined in net.corda.finance.contracts.universal.ActionBuilder[PropertyDescriptorImpl]
 
@@ -407,7 +407,7 @@ Inferred types:
 
 'condition' @ [170:42] ==> value-parameter condition: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.ActionBuilder.givenThat[ValueParameterDescriptorImpl]
 
-'signedByOneOf' @ [170:56] ==> public fun signedByOneOf(actors: Collection<Party>): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signedByOneOf' @ [170:56] ==> public fun signedByOneOf(actors: Collection<Party>): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Perceivable.kt[SimpleFunctionDescriptorImpl]
 
 'actors' @ [170:70] ==> public final val actors: Set<Party> defined in net.corda.finance.contracts.universal.ActionBuilder[PropertyDescriptorImpl]
 
@@ -423,7 +423,7 @@ Inferred types:
 
 'this' @ [178:24] ==> <this> defined in net.corda.finance.contracts.universal.ActionBuilder.anytime[ReceiverParameterDescriptorImpl]
 
-'signedByOneOf' @ [178:30] ==> public fun signedByOneOf(actors: Collection<Party>): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signedByOneOf' @ [178:30] ==> public fun signedByOneOf(actors: Collection<Party>): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Perceivable.kt[SimpleFunctionDescriptorImpl]
 
 'actors' @ [178:44] ==> public final val actors: Set<Party> defined in net.corda.finance.contracts.universal.ActionBuilder[PropertyDescriptorImpl]
 

@@ -32,7 +32,7 @@ Inferred types:
 
 'it' @ [22:14] ==> value-parameter it: Field defined in net.corda.nodeapi.internal.serialization.carpenter.validatePropertyTypes.<anonymous>[ValueParameterDescriptorImpl]
 
-'validateType' @ [22:17] ==> public fun Field.validateType(classloader: ClassLoader): Boolean defined in net.corda.nodeapi.internal.serialization.carpenter[SimpleFunctionDescriptorImpl]
+'validateType' @ [22:17] ==> public fun Field.validateType(classloader: ClassLoader): Boolean defined in net.corda.nodeapi.internal.serialization.carpenter in file AMQPSchemaExtensions.kt[SimpleFunctionDescriptorImpl]
 
 'classloader' @ [22:30] ==> value-parameter classloader: ClassLoader defined in net.corda.nodeapi.internal.serialization.carpenter.validatePropertyTypes[ValueParameterDescriptorImpl]
 
@@ -60,7 +60,7 @@ Inferred types:
 
 'classloader' @ [43:9] ==> value-parameter classloader: ClassLoader defined in net.corda.nodeapi.internal.serialization.carpenter.carpenterSchema[ValueParameterDescriptorImpl]
 
-'exists' @ [43:21] ==> private fun ClassLoader.exists(clazz: String): Boolean defined in net.corda.nodeapi.internal.serialization.carpenter[SimpleFunctionDescriptorImpl]
+'exists' @ [43:21] ==> private fun ClassLoader.exists(clazz: String): Boolean defined in net.corda.nodeapi.internal.serialization.carpenter in file AMQPSchemaExtensions.kt[SimpleFunctionDescriptorImpl]
 
 'name' @ [43:28] ==> public open val name: String defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType[PropertyDescriptorImpl]
 
@@ -127,8 +127,6 @@ Inferred types:
 
 'name' @ [70:18] ==> public final val name: String defined in net.corda.nodeapi.internal.serialization.amqp.Field[PropertyDescriptorImpl]
 
-'FieldFactory' @ [70:26] ==> public object FieldFactory defined in net.corda.nodeapi.internal.serialization.carpenter in file Schema.kt[FakeCallableDescriptorForObject]
-
 'newInstance' @ [70:39] ==> public final fun newInstance(mandatory: Boolean, name: String, field: Class<out Any?>): Field defined in net.corda.nodeapi.internal.serialization.carpenter.FieldFactory[SimpleFunctionDescriptorImpl]
 
 'it' @ [70:51] ==> value-parameter it: Field defined in net.corda.nodeapi.internal.serialization.carpenter.carpenterSchema.<anonymous>[ValueParameterDescriptorImpl]
@@ -141,7 +139,7 @@ Inferred types:
 
 'it' @ [70:74] ==> value-parameter it: Field defined in net.corda.nodeapi.internal.serialization.carpenter.carpenterSchema.<anonymous>[ValueParameterDescriptorImpl]
 
-'getTypeAsClass' @ [70:77] ==> public fun Field.getTypeAsClass(classloader: ClassLoader): Class<out Any> defined in net.corda.nodeapi.internal.serialization.carpenter[SimpleFunctionDescriptorImpl]
+'getTypeAsClass' @ [70:77] ==> public fun Field.getTypeAsClass(classloader: ClassLoader): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in net.corda.nodeapi.internal.serialization.carpenter in file AMQPSchemaExtensions.kt[SimpleFunctionDescriptorImpl]
 
 'classloader' @ [70:92] ==> value-parameter classloader: ClassLoader defined in net.corda.nodeapi.internal.serialization.carpenter.carpenterSchema[ValueParameterDescriptorImpl]
 
@@ -155,7 +153,7 @@ Inferred types:
 
 'it' @ [72:53] ==> value-parameter it: Field defined in net.corda.nodeapi.internal.serialization.carpenter.carpenterSchema.<anonymous>[ValueParameterDescriptorImpl]
 
-'typeAsString' @ [72:56] ==> public fun Field.typeAsString(): String defined in net.corda.nodeapi.internal.serialization.carpenter[SimpleFunctionDescriptorImpl]
+'typeAsString' @ [72:56] ==> public fun Field.typeAsString(): String defined in net.corda.nodeapi.internal.serialization.carpenter in file AMQPSchemaExtensions.kt[SimpleFunctionDescriptorImpl]
 
 'isCreatable' @ [73:13] ==> var isCreatable: Boolean defined in net.corda.nodeapi.internal.serialization.carpenter.carpenterSchema[LocalVariableDescriptor]
 
@@ -167,8 +165,6 @@ Inferred types:
 
 'add' @ [78:43] ==> public abstract fun add(element: Schema): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'CarpenterSchemaFactory' @ [78:47] ==> public object CarpenterSchemaFactory defined in net.corda.nodeapi.internal.serialization.carpenter in file Schema.kt[FakeCallableDescriptorForObject]
-
 'newInstance' @ [78:70] ==> public final fun newInstance(name: String, fields: Map<String, Field>, superclass: Schema? = ..., interfaces: List<Class<*>> = ..., isInterface: Boolean = ...): Schema defined in net.corda.nodeapi.internal.serialization.carpenter.CarpenterSchemaFactory[SimpleFunctionDescriptorImpl]
 
 'name' @ [79:24] ==> public open val name: String defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType[PropertyDescriptorImpl]
@@ -179,10 +175,10 @@ Inferred types:
 
 'isInterface' @ [82:31] ==> var isInterface: Boolean defined in net.corda.nodeapi.internal.serialization.carpenter.carpenterSchema[LocalVariableDescriptor]
 
-'mapOf' @ [88:66] ==> public fun <K, V> mapOf(vararg pairs: Pair<Pair<String, Boolean>, Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>>): Map<Pair<String, Boolean>, Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [88:66] ==> public fun <K, V> mapOf(vararg pairs: Pair<Pair<String, Boolean>, Class<out Any>>): Map<Pair<String, Boolean>, Class<out Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Pair<String, Boolean>
-    <V> -> Class<out {Comparable<{Long & Boolean & Byte & Char & Short & Double & Float & Int}> & java.io.Serializable}>
+    <V> -> Class<out Any>
 
 'Pair' @ [89:9] ==> public constructor Pair<out A, out B>(first: String, second: Boolean) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -373,9 +369,9 @@ Inferred types:
     "string" -> String::class.java
     "*" -> classloader.loadClass(requires[0])
     else -> classloader.loadClass(type)
-}' @ [107:98] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Class<out Any>, entry1: Class<out Any>, entry2: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
+}' @ [107:98] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?), entry1: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?), entry2: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Class<out Any>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (java.lang.Class<out (kotlin.Any..kotlin.Any?)>..java.lang.Class<out (kotlin.Any..kotlin.Any?)>?)
 
 'type' @ [107:104] ==> public final val type: String defined in net.corda.nodeapi.internal.serialization.amqp.Field[PropertyDescriptorImpl]
 
@@ -409,13 +405,13 @@ Inferred types:
 
 'classloader' @ [115:12] ==> value-parameter classloader: ClassLoader defined in net.corda.nodeapi.internal.serialization.carpenter.validateType[ValueParameterDescriptorImpl]
 
-'exists' @ [115:24] ==> private fun ClassLoader.exists(clazz: String): Boolean defined in net.corda.nodeapi.internal.serialization.carpenter[SimpleFunctionDescriptorImpl]
+'exists' @ [115:24] ==> private fun ClassLoader.exists(clazz: String): Boolean defined in net.corda.nodeapi.internal.serialization.carpenter in file AMQPSchemaExtensions.kt[SimpleFunctionDescriptorImpl]
 
 'requires' @ [115:31] ==> public final val requires: List<String> defined in net.corda.nodeapi.internal.serialization.amqp.Field[PropertyDescriptorImpl]
 
 'classloader' @ [116:13] ==> value-parameter classloader: ClassLoader defined in net.corda.nodeapi.internal.serialization.carpenter.validateType[ValueParameterDescriptorImpl]
 
-'exists' @ [116:25] ==> private fun ClassLoader.exists(clazz: String): Boolean defined in net.corda.nodeapi.internal.serialization.carpenter[SimpleFunctionDescriptorImpl]
+'exists' @ [116:25] ==> private fun ClassLoader.exists(clazz: String): Boolean defined in net.corda.nodeapi.internal.serialization.carpenter in file AMQPSchemaExtensions.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [116:32] ==> public final val type: String defined in net.corda.nodeapi.internal.serialization.amqp.Field[PropertyDescriptorImpl]
 

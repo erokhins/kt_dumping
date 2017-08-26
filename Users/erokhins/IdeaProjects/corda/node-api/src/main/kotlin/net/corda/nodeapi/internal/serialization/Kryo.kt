@@ -137,7 +137,7 @@ Inferred types:
 
 'name' @ [126:47] ==> public abstract val name: String? defined in kotlin.reflect.KParameter[DeserializedPropertyDescriptor]
 
-'kProperty' @ [127:13] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [127:13] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'isAccessible' @ [127:23] ==> public var KCallable<*>.isAccessible: Boolean defined in kotlin.reflect.jvm[DeserializedPropertyDescriptor]
 
@@ -171,7 +171,7 @@ Inferred types:
 
 'writeVarInt' @ [129:33] ==> public open fun writeVarInt(p0: Int, p1: Boolean): Int defined in com.esotericsoftware.kryo.io.Output[JavaMethodDescriptor]
 
-'kProperty' @ [129:45] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [129:45] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'get' @ [129:55] ==> public abstract fun get(receiver: T): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
@@ -181,7 +181,7 @@ Inferred types:
 
 'writeVarLong' @ [130:34] ==> public open fun writeVarLong(p0: Long, p1: Boolean): Int defined in com.esotericsoftware.kryo.io.Output[JavaMethodDescriptor]
 
-'kProperty' @ [130:47] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [130:47] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'get' @ [130:57] ==> public abstract fun get(receiver: T): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
@@ -191,7 +191,7 @@ Inferred types:
 
 'writeShort' @ [131:35] ==> public open fun writeShort(p0: Int): Unit defined in com.esotericsoftware.kryo.io.Output[JavaMethodDescriptor]
 
-'kProperty' @ [131:46] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [131:46] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'get' @ [131:56] ==> public abstract fun get(receiver: T): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
@@ -201,7 +201,7 @@ Inferred types:
 
 'writeChar' @ [132:34] ==> public open fun writeChar(p0: Char): Unit defined in com.esotericsoftware.kryo.io.Output[JavaMethodDescriptor]
 
-'kProperty' @ [132:44] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [132:44] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'get' @ [132:54] ==> public abstract fun get(receiver: T): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
@@ -211,7 +211,7 @@ Inferred types:
 
 'writeByte' @ [133:34] ==> public open fun writeByte(p0: Byte): Unit defined in com.esotericsoftware.kryo.io.Output[JavaMethodDescriptor]
 
-'kProperty' @ [133:44] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [133:44] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'get' @ [133:54] ==> public abstract fun get(receiver: T): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
@@ -221,7 +221,7 @@ Inferred types:
 
 'writeDouble' @ [134:36] ==> public open fun writeDouble(p0: Double): Unit defined in com.esotericsoftware.kryo.io.Output[JavaMethodDescriptor]
 
-'kProperty' @ [134:48] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [134:48] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'get' @ [134:58] ==> public abstract fun get(receiver: T): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
@@ -231,7 +231,7 @@ Inferred types:
 
 'writeFloat' @ [135:35] ==> public open fun writeFloat(p0: Float): Unit defined in com.esotericsoftware.kryo.io.Output[JavaMethodDescriptor]
 
-'kProperty' @ [135:46] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [135:46] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'get' @ [135:56] ==> public abstract fun get(receiver: T): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
@@ -241,7 +241,7 @@ Inferred types:
 
 'writeBoolean' @ [136:37] ==> public open fun writeBoolean(p0: Boolean): Unit defined in com.esotericsoftware.kryo.io.Output[JavaMethodDescriptor]
 
-'kProperty' @ [136:50] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [136:50] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'get' @ [136:60] ==> public abstract fun get(receiver: T): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
@@ -253,7 +253,7 @@ Inferred types:
 
 'output' @ [138:46] ==> value-parameter output: Output defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[ValueParameterDescriptorImpl]
 
-'kProperty' @ [138:54] ==> val kProperty: KProperty1<T, Any?> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
+'kProperty' @ [138:54] ==> val kProperty: KProperty1<T, *> defined in net.corda.nodeapi.internal.serialization.ImmutableClassSerializer.write[LocalVariableDescriptor]
 
 'get' @ [138:64] ==> public abstract fun get(receiver: T): Any? defined in kotlin.reflect.KProperty1[DeserializedSimpleFunctionDescriptor]
 
@@ -903,8 +903,6 @@ Inferred types:
 
 'params' @ [325:19] ==> public final val EdDSAPrivateKey.params: (EdDSAParameterSpec..EdDSAParameterSpec?)[MyPropertyDescriptor]
 
-'Crypto' @ [325:29] ==> public object Crypto defined in net.corda.core.crypto[FakeCallableDescriptorForObject]
-
 'EDDSA_ED25519_SHA512' @ [325:36] ==> @field:JvmField public final val EDDSA_ED25519_SHA512: SignatureScheme defined in net.corda.core.crypto.Crypto[DeserializedPropertyDescriptor]
 
 'algSpec' @ [325:57] ==> public final val algSpec: AlgorithmParameterSpec? defined in net.corda.core.crypto.SignatureScheme[DeserializedPropertyDescriptor]
@@ -944,8 +942,6 @@ Inferred types:
 'obj' @ [339:15] ==> value-parameter obj: EdDSAPublicKey defined in net.corda.nodeapi.internal.serialization.Ed25519PublicKeySerializer.write[ValueParameterDescriptorImpl]
 
 'params' @ [339:19] ==> public final val EdDSAPublicKey.params: (EdDSAParameterSpec..EdDSAParameterSpec?)[MyPropertyDescriptor]
-
-'Crypto' @ [339:29] ==> public object Crypto defined in net.corda.core.crypto[FakeCallableDescriptorForObject]
 
 'EDDSA_ED25519_SHA512' @ [339:36] ==> @field:JvmField public final val EDDSA_ED25519_SHA512: SignatureScheme defined in net.corda.core.crypto.Crypto[DeserializedPropertyDescriptor]
 
@@ -1364,7 +1360,7 @@ Inferred types:
 
 'name' @ [524:34] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'ThreadSafe' @ [531:1] ==> public constructor ThreadSafe() defined in javax.annotation.concurrent.ThreadSafe[JavaClassConstructorDescriptor]
 

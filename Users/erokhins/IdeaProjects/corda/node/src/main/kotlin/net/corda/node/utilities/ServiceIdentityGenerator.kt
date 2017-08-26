@@ -54,7 +54,7 @@ Inferred types:
 
 'keyPairs' @ [37:9] ==> val keyPairs: List<KeyPair> defined in net.corda.node.utilities.ServiceIdentityGenerator.generateToDisk[LocalVariableDescriptor]
 
-'zip' @ [37:18] ==> public inline fun <T, R, V> Iterable<KeyPair>.zip(other: Iterable<Path>, transform: (KeyPair, Path) -> (Path..Path?)): List<(Path..Path?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'zip' @ [37:18] ==> public inline fun <T, R, V> Iterable<KeyPair>.zip(other: Iterable<Path>, transform: (a: KeyPair, b: Path) -> (Path..Path?)): List<(Path..Path?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KeyPair
     <R> -> Path

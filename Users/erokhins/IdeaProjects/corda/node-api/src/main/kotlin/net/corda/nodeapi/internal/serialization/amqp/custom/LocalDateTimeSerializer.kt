@@ -17,9 +17,9 @@ Inferred types:
 
 'factory' @ [12:202] ==> value-parameter factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.custom.LocalDateTimeSerializer.<init>[ValueParameterDescriptorImpl]
 
-'listOf' @ [13:79] ==> public fun <T> listOf(vararg elements: CustomSerializer.Proxy<out {Comparable<({ChronoLocalDate & LocalTime}..{ChronoLocalDate? & LocalTime?})> & Serializable & Temporal & TemporalAdjuster}, out Any>): List<CustomSerializer.Proxy<out {Comparable<({ChronoLocalDate & LocalTime}..{ChronoLocalDate? & LocalTime?})> & Serializable & Temporal & TemporalAdjuster}, out Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [13:79] ==> public fun <T> listOf(vararg elements: CustomSerializer.Proxy<out Any, out Any>): List<CustomSerializer.Proxy<out Any, out Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Proxy<out {Comparable<({ChronoLocalDate & LocalTime}..{ChronoLocalDate? & LocalTime?})> & Serializable & Temporal & TemporalAdjuster}, out Any>
+    <T> -> Proxy<out Any, out Any>
 
 'LocalDateSerializer' @ [13:86] ==> public constructor LocalDateSerializer(factory: SerializerFactory) defined in net.corda.nodeapi.internal.serialization.amqp.custom.LocalDateSerializer[ClassConstructorDescriptorImpl]
 

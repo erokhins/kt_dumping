@@ -12,7 +12,7 @@
 
 'Column' @ [31:13] ==> public constructor Column(name: String = ..., unique: Boolean = ..., nullable: Boolean = ..., insertable: Boolean = ..., updatable: Boolean = ..., columnDefinition: String = ..., table: String = ..., length: Int = ..., precision: Int = ..., scale: Int = ...) defined in javax.persistence.Column[JavaClassConstructorDescriptor]
 
-'AppendOnlyPersistentMap' @ [37:20] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (SecureHash) -> String, fromPersistentEntity: (DBTransactionMappingStorage.DBTransactionMapping) -> Pair<SecureHash, StateMachineRunId>, toPersistentEntity: (SecureHash, StateMachineRunId) -> DBTransactionMappingStorage.DBTransactionMapping, persistentEntityClass: Class<DBTransactionMappingStorage.DBTransactionMapping>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
+'AppendOnlyPersistentMap' @ [37:20] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (SecureHash) -> String, fromPersistentEntity: (DBTransactionMappingStorage.DBTransactionMapping) -> Pair<SecureHash, StateMachineRunId>, toPersistentEntity: (key: SecureHash, value: StateMachineRunId) -> DBTransactionMappingStorage.DBTransactionMapping, persistentEntityClass: Class<DBTransactionMappingStorage.DBTransactionMapping>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> SecureHash
     <V> -> StateMachineRunId
@@ -27,8 +27,6 @@ Inferred types:
 Inferred types:
     <out A> -> SHA256
     <out B> -> StateMachineRunId
-
-'SecureHash' @ [39:51] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
 'parse' @ [39:62] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -74,7 +72,7 @@ Inferred types:
 
 'create' @ [52:82] ==> public open fun <T : (Any..Any?)> create(): (PublishSubject<(StateMachineTransactionMapping..StateMachineTransactionMapping?)>..PublishSubject<(StateMachineTransactionMapping..StateMachineTransactionMapping?)>?) defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> StateMachineTransactionMapping
+    <T : (Any..Any?)> -> (net.corda.core.messaging.StateMachineTransactionMapping..net.corda.core.messaging.StateMachineTransactionMapping?)
 
 'stateMachineTransactionMap' @ [55:9] ==> public final val stateMachineTransactionMap: AppendOnlyPersistentMap<SecureHash, StateMachineRunId, DBTransactionMappingStorage.DBTransactionMapping, String> defined in net.corda.node.services.persistence.DBTransactionMappingStorage[PropertyDescriptorImpl]
 

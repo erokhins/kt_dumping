@@ -531,8 +531,8 @@ Inferred types:
 
 'HashMap' @ [215:30] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (String..String?), out (PackageTree..PackageTree?)>..Map<out (String..String?), (PackageTree..PackageTree?)>?)) defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> PackageTree
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (net.corda.quasarhook.PackageTree..net.corda.quasarhook.PackageTree?)
 
 'branches' @ [215:38] ==> public final val branches: Map<String, PackageTree> defined in net.corda.quasarhook.PackageTree[PropertyDescriptorImpl]
 
@@ -555,9 +555,9 @@ Inferred types:
     <K> -> String
     <V> -> PackageTree
 
-'mergedBranches' @ [217:13] ==> val mergedBranches: HashMap<String, PackageTree> defined in net.corda.quasarhook.PackageTree.merge[LocalVariableDescriptor]
+'mergedBranches' @ [217:13] ==> val mergedBranches: HashMap<(String..String?), (PackageTree..PackageTree?)> defined in net.corda.quasarhook.PackageTree.merge[LocalVariableDescriptor]
 
-'compute' @ [217:28] ==> public final fun compute(p0: String, p1: (String, PackageTree?) -> PackageTree?): PackageTree? defined in java.util.HashMap[MyFunctionDescriptor]
+'compute' @ [217:28] ==> public final fun compute(p0: (String..String?), p1: ((String..String?), PackageTree?) -> PackageTree?): PackageTree? defined in java.util.HashMap[MyFunctionDescriptor]
 
 'key' @ [217:36] ==> val key: String defined in net.corda.quasarhook.PackageTree.merge.<anonymous>[LocalVariableDescriptor]
 
@@ -571,7 +571,7 @@ Inferred types:
 
 'PackageTree' @ [221:16] ==> public constructor PackageTree(branches: Map<String, PackageTree>) defined in net.corda.quasarhook.PackageTree[ClassConstructorDescriptorImpl]
 
-'mergedBranches' @ [221:28] ==> val mergedBranches: HashMap<String, PackageTree> defined in net.corda.quasarhook.PackageTree.merge[LocalVariableDescriptor]
+'mergedBranches' @ [221:28] ==> val mergedBranches: HashMap<(String..String?), (PackageTree..PackageTree?)> defined in net.corda.quasarhook.PackageTree.merge[LocalVariableDescriptor]
 
 'if (other.isEmpty()) {
             return empty
@@ -595,8 +595,8 @@ Inferred types:
 
 'HashMap' @ [231:37] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (String..String?), out (PackageTree..PackageTree?)>..Map<out (String..String?), (PackageTree..PackageTree?)>?)) defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> PackageTree
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (net.corda.quasarhook.PackageTree..net.corda.quasarhook.PackageTree?)
 
 'branches' @ [231:45] ==> public final val branches: Map<String, PackageTree> defined in net.corda.quasarhook.PackageTree[PropertyDescriptorImpl]
 
@@ -619,9 +619,9 @@ Inferred types:
     <K> -> String
     <V> -> PackageTree
 
-'truncatedBranches' @ [233:17] ==> val truncatedBranches: HashMap<String, PackageTree> defined in net.corda.quasarhook.PackageTree.truncate[LocalVariableDescriptor]
+'truncatedBranches' @ [233:17] ==> val truncatedBranches: HashMap<(String..String?), (PackageTree..PackageTree?)> defined in net.corda.quasarhook.PackageTree.truncate[LocalVariableDescriptor]
 
-'compute' @ [233:35] ==> public final fun compute(p0: String, p1: (String, PackageTree?) -> PackageTree?): PackageTree? defined in java.util.HashMap[MyFunctionDescriptor]
+'compute' @ [233:35] ==> public final fun compute(p0: (String..String?), p1: ((String..String?), PackageTree?) -> PackageTree?): PackageTree? defined in java.util.HashMap[MyFunctionDescriptor]
 
 'key' @ [233:43] ==> val key: String defined in net.corda.quasarhook.PackageTree.truncate.<anonymous>[LocalVariableDescriptor]
 
@@ -635,7 +635,7 @@ Inferred types:
 
 'PackageTree' @ [237:20] ==> public constructor PackageTree(branches: Map<String, PackageTree>) defined in net.corda.quasarhook.PackageTree[ClassConstructorDescriptorImpl]
 
-'truncatedBranches' @ [237:32] ==> val truncatedBranches: HashMap<String, PackageTree> defined in net.corda.quasarhook.PackageTree.truncate[LocalVariableDescriptor]
+'truncatedBranches' @ [237:32] ==> val truncatedBranches: HashMap<(String..String?), (PackageTree..PackageTree?)> defined in net.corda.quasarhook.PackageTree.truncate[LocalVariableDescriptor]
 
 'PackageTree' @ [242:21] ==> public constructor PackageTree(branches: Map<String, PackageTree>) defined in net.corda.quasarhook.PackageTree[ClassConstructorDescriptorImpl]
 
@@ -694,20 +694,20 @@ Inferred types:
 
 'trees' @ [256:20] ==> value-parameter trees: List<PackageTree> defined in net.corda.quasarhook.PackageTree.Companion.mergeAll[ValueParameterDescriptorImpl]
 
-'foldRight' @ [256:26] ==> public inline fun <T, R> List<PackageTree>.foldRight(initial: PackageTree, operation: (PackageTree, PackageTree) -> PackageTree): PackageTree defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'foldRight' @ [256:26] ==> public inline fun <T, R> List<PackageTree>.foldRight(initial: PackageTree, operation: (PackageTree, acc: PackageTree) -> PackageTree): PackageTree defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PackageTree
     <R> -> PackageTree
-
-'PackageTree' @ [256:36] ==> public companion object defined in net.corda.quasarhook.PackageTree[FakeCallableDescriptorForObject]
 
 'empty' @ [256:48] ==> public final val empty: PackageTree defined in net.corda.quasarhook.PackageTree.Companion[PropertyDescriptorImpl]
 
 'PackageTree' @ [256:55] ==> public companion object defined in net.corda.quasarhook.PackageTree[FakeCallableDescriptorForObject]
 
+'merge' @ [256:68] ==> public final fun merge(other: PackageTree): PackageTree defined in net.corda.quasarhook.PackageTree[SimpleFunctionDescriptorImpl]
+
 'LinkedList' @ [269:28] ==> public constructor LinkedList<E : (Any..Any?)>(p0: (MutableCollection<out (State..State?)>..Collection<(State..State?)>?)) defined in java.util.LinkedList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> State
+    <E : (Any..Any?)> -> (net.corda.quasarhook.PackageTree.toGlobs.State..net.corda.quasarhook.PackageTree.toGlobs.State?)
 
 'listOf' @ [269:39] ==> public fun <T> listOf(element: State): List<State> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -727,7 +727,7 @@ Inferred types:
 Inferred types:
     <E : (Any..Any?)> -> Glob
 
-'toExpandList' @ [272:25] ==> val toExpandList: LinkedList<State> defined in net.corda.quasarhook.PackageTree.toGlobs[LocalVariableDescriptor]
+'toExpandList' @ [272:25] ==> val toExpandList: LinkedList<(State..State?)> defined in net.corda.quasarhook.PackageTree.toGlobs[LocalVariableDescriptor]
 
 'pollFirst' @ [272:38] ==> public open fun pollFirst(): (State..State?) defined in java.util.LinkedList[JavaMethodDescriptor]
 
@@ -809,7 +809,7 @@ Inferred types:
 
 'excludeSubTree' @ [278:25] ==> val excludeSubTree: PackageTree? defined in net.corda.quasarhook.PackageTree.toGlobs.<anonymous>[LocalVariableDescriptor]
 
-'toExpandList' @ [279:25] ==> val toExpandList: LinkedList<State> defined in net.corda.quasarhook.PackageTree.toGlobs[LocalVariableDescriptor]
+'toExpandList' @ [279:25] ==> val toExpandList: LinkedList<(State..State?)> defined in net.corda.quasarhook.PackageTree.toGlobs[LocalVariableDescriptor]
 
 'addLast' @ [279:38] ==> public open fun addLast(p0: (State..State?)): Unit defined in java.util.LinkedList[JavaMethodDescriptor]
 

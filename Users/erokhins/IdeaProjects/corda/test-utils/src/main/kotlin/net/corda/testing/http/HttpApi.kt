@@ -55,8 +55,6 @@ Inferred types:
 
 'any' @ [27:36] ==> value-parameter any: Any defined in net.corda.testing.http.HttpApi.toJson[ValueParameterDescriptorImpl]
 
-'HttpUtils' @ [27:54] ==> public object HttpUtils defined in net.corda.testing.http in file HttpUtils.kt[FakeCallableDescriptorForObject]
-
 'defaultMapper' @ [27:64] ==> public final val defaultMapper: ObjectMapper defined in net.corda.testing.http.HttpUtils[PropertyDescriptorImpl]
 
 'writeValueAsString' @ [27:78] ==> public open fun writeValueAsString(p0: (Any..Any?)): (String..String?) defined in com.fasterxml.jackson.databind.ObjectMapper[JavaMethodDescriptor]
@@ -77,9 +75,9 @@ Inferred types:
 
 'mapper' @ [31:67] ==> value-parameter mapper: ObjectMapper = ... defined in net.corda.testing.http.HttpApi.Companion.fromHostAndPort[ValueParameterDescriptorImpl]
 
-'lazy' @ [32:52] ==> public fun <T> lazy(initializer: () -> ObjectMapper): Lazy<ObjectMapper> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [32:52] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ObjectMapper
+    <T> -> T
 
 'createNonRpcMapper' @ [33:46] ==> @JvmStatic @JvmOverloads public final fun createNonRpcMapper(factory: JsonFactory = ...): ObjectMapper defined in net.corda.jackson.JacksonSupport[DeserializedSimpleFunctionDescriptor]
 

@@ -40,8 +40,6 @@ Inferred types:
 
 'list' @ [44:39] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Envelope.Companion.get[LocalVariableDescriptor]
 
-'Schema' @ [44:48] ==> public companion object : DescribedTypeConstructor<Schema> defined in net.corda.nodeapi.internal.serialization.amqp.Schema[FakeCallableDescriptorForObject]
-
 'get' @ [44:55] ==> public final fun get(obj: Any): Schema defined in net.corda.nodeapi.internal.serialization.amqp.Schema.Companion[SimpleFunctionDescriptorImpl]
 
 'list' @ [44:59] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Envelope.Companion.get[LocalVariableDescriptor]
@@ -58,9 +56,9 @@ Inferred types:
 
 'Envelope' @ [51:20] ==> public constructor Envelope(obj: Any?, schema: Schema) defined in net.corda.nodeapi.internal.serialization.amqp.Envelope[ClassConstructorDescriptorImpl]
 
-'list' @ [51:29] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Envelope.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [51:29] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Envelope.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [51:38] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Envelope.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [51:38] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Envelope.Companion.newInstance[LocalVariableDescriptor]
 
 'DESCRIPTOR' @ [55:41] ==> public final val DESCRIPTOR: UnsignedLong defined in net.corda.nodeapi.internal.serialization.amqp.Envelope.Companion[PropertyDescriptorImpl]
 
@@ -129,7 +127,7 @@ Inferred types:
 
 'Schema' @ [82:20] ==> public constructor Schema(types: List<TypeNotation>) defined in net.corda.nodeapi.internal.serialization.amqp.Schema[ClassConstructorDescriptorImpl]
 
-'list' @ [82:27] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Schema.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [82:27] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Schema.Companion.newInstance[LocalVariableDescriptor]
 
 'DESCRIPTOR' @ [86:41] ==> public final val DESCRIPTOR: UnsignedLong defined in net.corda.nodeapi.internal.serialization.amqp.Schema.Companion[PropertyDescriptorImpl]
 
@@ -183,15 +181,15 @@ Inferred types:
 
 'Descriptor' @ [109:20] ==> public constructor Descriptor(name: String?, code: UnsignedLong? = ...) defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor[ClassConstructorDescriptorImpl]
 
-'list' @ [109:31] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [109:31] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [109:51] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [109:51] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor.Companion.newInstance[LocalVariableDescriptor]
 
 'DESCRIPTOR' @ [113:41] ==> public final val DESCRIPTOR: UnsignedLong defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor.Companion[PropertyDescriptorImpl]
 
-'listOf' @ [115:40] ==> public fun <T> listOf(vararg elements: {java.io.Serializable & Comparable<{UnsignedLong & String}>}?): List<{java.io.Serializable & Comparable<{UnsignedLong & String}>}?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [115:40] ==> public fun <T> listOf(vararg elements: Any?): List<Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {java.io.Serializable & Comparable<{UnsignedLong & String}>}?
+    <T> -> Any?
 
 'name' @ [115:47] ==> public final val name: String? defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor[PropertyDescriptorImpl]
 
@@ -279,19 +277,19 @@ Inferred types:
 
 'Field' @ [148:20] ==> public constructor Field(name: String, type: String, requires: List<String>, default: String?, label: String?, mandatory: Boolean, multiple: Boolean) defined in net.corda.nodeapi.internal.serialization.amqp.Field[ClassConstructorDescriptorImpl]
 
-'list' @ [148:26] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [148:26] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [148:45] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [148:45] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [148:64] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [148:64] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [148:89] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [148:89] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [148:109] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [148:109] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [148:129] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [148:129] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [148:149] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [148:149] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion.newInstance[LocalVariableDescriptor]
 
 'DESCRIPTOR' @ [152:41] ==> public final val DESCRIPTOR: UnsignedLong defined in net.corda.nodeapi.internal.serialization.amqp.Field.Companion[PropertyDescriptorImpl]
 
@@ -391,8 +389,6 @@ Inferred types:
 
 'descriptor' @ [178:31] ==> public final val DescribedType.descriptor: (Any..Any?)[MyPropertyDescriptor]
 
-'CompositeType' @ [178:45] ==> public companion object : DescribedTypeConstructor<CompositeType> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType[FakeCallableDescriptorForObject]
-
 'DESCRIPTOR' @ [178:59] ==> public final val DESCRIPTOR: UnsignedLong defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion[PropertyDescriptorImpl]
 
 'CompositeType' @ [179:24] ==> public companion object : DescribedTypeConstructor<CompositeType> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType[FakeCallableDescriptorForObject]
@@ -412,8 +408,6 @@ Inferred types:
 'describedType' @ [180:24] ==> val describedType: DescribedType defined in net.corda.nodeapi.internal.serialization.amqp.TypeNotation.Companion.get[LocalVariableDescriptor]
 
 'descriptor' @ [180:38] ==> public final val DescribedType.descriptor: (Any..Any?)[MyPropertyDescriptor]
-
-'RestrictedType' @ [180:52] ==> public companion object : DescribedTypeConstructor<RestrictedType> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType[FakeCallableDescriptorForObject]
 
 'DESCRIPTOR' @ [180:67] ==> public final val DESCRIPTOR: UnsignedLong defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion[PropertyDescriptorImpl]
 
@@ -465,8 +459,6 @@ Inferred types:
 
 'list' @ [203:57] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.get[LocalVariableDescriptor]
 
-'Descriptor' @ [203:66] ==> public companion object : DescribedTypeConstructor<Descriptor> defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor[FakeCallableDescriptorForObject]
-
 'get' @ [203:77] ==> public final fun get(obj: Any): Descriptor defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor.Companion[SimpleFunctionDescriptorImpl]
 
 'list' @ [203:81] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.get[LocalVariableDescriptor]
@@ -498,15 +490,15 @@ Inferred types:
 
 'CompositeType' @ [211:20] ==> public constructor CompositeType(name: String, label: String?, provides: List<String>, descriptor: Descriptor, fields: List<Field>) defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType[ClassConstructorDescriptorImpl]
 
-'list' @ [211:34] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [211:34] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [211:53] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [211:53] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [211:73] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [211:73] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [211:98] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [211:98] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [211:121] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [211:121] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion.newInstance[LocalVariableDescriptor]
 
 'DESCRIPTOR' @ [215:41] ==> public final val DESCRIPTOR: UnsignedLong defined in net.corda.nodeapi.internal.serialization.amqp.CompositeType.Companion[PropertyDescriptorImpl]
 
@@ -628,8 +620,6 @@ Inferred types:
 
 'list' @ [248:66] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.get[LocalVariableDescriptor]
 
-'Descriptor' @ [248:75] ==> public companion object : DescribedTypeConstructor<Descriptor> defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor[FakeCallableDescriptorForObject]
-
 'get' @ [248:86] ==> public final fun get(obj: Any): Descriptor defined in net.corda.nodeapi.internal.serialization.amqp.Descriptor.Companion[SimpleFunctionDescriptorImpl]
 
 'list' @ [248:90] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.get[LocalVariableDescriptor]
@@ -661,17 +651,17 @@ Inferred types:
 
 'RestrictedType' @ [256:20] ==> public constructor RestrictedType(name: String, label: String?, provides: List<String>, source: String, descriptor: Descriptor, choices: List<Choice>) defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType[ClassConstructorDescriptorImpl]
 
-'list' @ [256:35] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [256:35] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [256:54] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [256:54] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [256:74] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [256:74] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [256:99] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [256:99] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [256:118] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [256:118] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [256:141] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [256:141] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion.newInstance[LocalVariableDescriptor]
 
 'DESCRIPTOR' @ [260:41] ==> public final val DESCRIPTOR: UnsignedLong defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType.Companion[PropertyDescriptorImpl]
 
@@ -793,9 +783,9 @@ Inferred types:
 
 'Choice' @ [298:20] ==> public constructor Choice(name: String, value: String) defined in net.corda.nodeapi.internal.serialization.amqp.Choice[ClassConstructorDescriptorImpl]
 
-'list' @ [298:27] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Choice.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [298:27] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Choice.Companion.newInstance[LocalVariableDescriptor]
 
-'list' @ [298:46] ==> val list: List<Any?> defined in net.corda.nodeapi.internal.serialization.amqp.Choice.Companion.newInstance[LocalVariableDescriptor]
+'list' @ [298:46] ==> val list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.Choice.Companion.newInstance[LocalVariableDescriptor]
 
 'DESCRIPTOR' @ [302:41] ==> public final val DESCRIPTOR: UnsignedLong defined in net.corda.nodeapi.internal.serialization.amqp.Choice.Companion[PropertyDescriptorImpl]
 
@@ -811,15 +801,15 @@ Inferred types:
 
 'value' @ [307:49] ==> public final val value: String defined in net.corda.nodeapi.internal.serialization.amqp.Choice[PropertyDescriptorImpl]
 
-'lazy' @ [319:23] ==> public fun <T> lazy(initializer: () -> Logger): Lazy<Logger> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [319:23] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Logger
+    <T> -> T
 
 'loggerFor' @ [319:30] ==> public inline fun <reified T : Any> loggerFor(): Logger defined in net.corda.core.utilities[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> Schema
 
-'fingerprintForType' @ [331:12] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintForType' @ [331:12] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [331:31] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
@@ -1083,15 +1073,15 @@ Inferred types:
 
 'isArray' @ [363:26] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'fingerprintForType' @ [364:21] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintForType' @ [364:21] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [364:40] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
 'componentType' @ [364:45] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'contextType' @ [364:60] ==> value-parameter contextType: Type? defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
@@ -1137,7 +1127,7 @@ Inferred types:
 
 'name' @ [366:51] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'if (isCollectionOrMap(type)) {
                     hasher.putUnencodedChars(type.name)
@@ -1155,7 +1145,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.google.common.hash.Hasher..com.google.common.hash.Hasher?)
 
-'isCollectionOrMap' @ [367:28] ==> private fun isCollectionOrMap(type: Class<*>): Boolean defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'isCollectionOrMap' @ [367:28] ==> private fun isCollectionOrMap(type: Class<*>): Boolean defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [367:46] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
@@ -1167,11 +1157,11 @@ Inferred types:
 
 'name' @ [368:51] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'hasher' @ [370:21] ==> value-parameter hasher: Hasher defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
-'fingerprintWithCustomSerializerOrElse' @ [370:28] ==> private fun Hasher.fingerprintWithCustomSerializerOrElse(factory: SerializerFactory, clazz: Class<*>, declaredType: Type, block: () -> Hasher): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintWithCustomSerializerOrElse' @ [370:28] ==> private fun Hasher.fingerprintWithCustomSerializerOrElse(factory: SerializerFactory, clazz: Class<*>, declaredType: Type, block: () -> Hasher): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'factory' @ [370:66] ==> value-parameter factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
@@ -1193,7 +1183,7 @@ Inferred types:
 
 'kotlin' @ [371:34] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'objectInstance' @ [371:41] ==> public abstract val objectInstance: Any? defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
@@ -1205,9 +1195,9 @@ Inferred types:
 
 'name' @ [374:59] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'fingerprintForObject' @ [376:29] ==> private fun fingerprintForObject(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintForObject' @ [376:29] ==> private fun fingerprintForObject(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [376:50] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
@@ -1262,7 +1252,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (com.google.common.hash.Hasher..com.google.common.hash.Hasher?)
 
-'isCollectionOrMap' @ [383:40] ==> private fun isCollectionOrMap(type: Class<*>): Boolean defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'isCollectionOrMap' @ [383:40] ==> private fun isCollectionOrMap(type: Class<*>): Boolean defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'clazz' @ [383:58] ==> val clazz: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[LocalVariableDescriptor]
 
@@ -1274,11 +1264,11 @@ Inferred types:
 
 'name' @ [384:52] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'hasher' @ [386:21] ==> value-parameter hasher: Hasher defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
-'fingerprintWithCustomSerializerOrElse' @ [386:28] ==> private fun Hasher.fingerprintWithCustomSerializerOrElse(factory: SerializerFactory, clazz: Class<*>, declaredType: Type, block: () -> Hasher): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintWithCustomSerializerOrElse' @ [386:28] ==> private fun Hasher.fingerprintWithCustomSerializerOrElse(factory: SerializerFactory, clazz: Class<*>, declaredType: Type, block: () -> Hasher): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'factory' @ [386:66] ==> value-parameter factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
@@ -1286,7 +1276,7 @@ Inferred types:
 
 'type' @ [386:82] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
-'fingerprintForObject' @ [387:25] ==> private fun fingerprintForObject(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintForObject' @ [387:25] ==> private fun fingerprintForObject(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [387:46] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
@@ -1302,14 +1292,14 @@ Inferred types:
 
 'actualTypeArguments' @ [391:22] ==> public final val ParameterizedType.actualTypeArguments: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 
-'fold' @ [391:42] ==> public inline fun <T, R> Array<out (Type..Type?)>.fold(initial: (Hasher..Hasher?), operation: ((Hasher..Hasher?), (Type..Type?)) -> (Hasher..Hasher?)): (Hasher..Hasher?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [391:42] ==> public inline fun <T, R> Array<out (Type..Type?)>.fold(initial: (Hasher..Hasher?), operation: (acc: (Hasher..Hasher?), (Type..Type?)) -> (Hasher..Hasher?)): (Hasher..Hasher?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.lang.reflect.Type..java.lang.reflect.Type?)
     <R> -> (com.google.common.hash.Hasher..com.google.common.hash.Hasher?)
 
 'startingHash' @ [391:47] ==> val startingHash: (Hasher..Hasher?) defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[LocalVariableDescriptor]
 
-'fingerprintForType' @ [391:82] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintForType' @ [391:82] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'paramType' @ [391:101] ==> value-parameter paramType: (Type..Type?) defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1338,7 +1328,7 @@ Inferred types:
 
 'type' @ [392:24] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
-'fingerprintForType' @ [394:17] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintForType' @ [394:17] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [394:36] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForType[ValueParameterDescriptorImpl]
 
@@ -1378,7 +1368,7 @@ Inferred types:
 
 'name' @ [397:47] ==> public final val <D : (GenericDeclaration..GenericDeclaration?)> TypeVariable<out (GenericDeclaration..GenericDeclaration?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <D : (GenericDeclaration..GenericDeclaration?)> -> (java.lang.reflect.GenericDeclaration..java.lang.reflect.GenericDeclaration?)
+    <D : (GenericDeclaration..GenericDeclaration?)> -> Captured(*)
 
 'putUnencodedChars' @ [397:53] ==> public abstract fun putUnencodedChars(p0: (CharSequence..CharSequence?)): (Hasher..Hasher?) defined in com.google.common.hash.Hasher[JavaMethodDescriptor]
 
@@ -1449,7 +1439,7 @@ Inferred types:
 
 'name' @ [416:32] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'NotSerializableException' @ [416:46] ==> public constructor NotSerializableException(p0: (String..String?)) defined in java.io.NotSerializableException[JavaClassConstructorDescriptor]
 
@@ -1459,7 +1449,7 @@ Inferred types:
 Inferred types:
     <T : Any> -> Any
 
-'constructorForDeserialization' @ [417:32] ==> internal fun constructorForDeserialization(type: Type): KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'constructorForDeserialization' @ [417:32] ==> internal fun constructorForDeserialization(type: Type): KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [417:62] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForObject[ValueParameterDescriptorImpl]
 
@@ -1469,7 +1459,7 @@ Inferred types:
 
 'factory' @ [417:90] ==> value-parameter factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForObject[ValueParameterDescriptorImpl]
 
-'fold' @ [417:99] ==> public inline fun <T, R> Iterable<PropertySerializer>.fold(initial: (Hasher..Hasher?), operation: ((Hasher..Hasher?), PropertySerializer) -> (Hasher..Hasher?)): (Hasher..Hasher?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [417:99] ==> public inline fun <T, R> Iterable<PropertySerializer>.fold(initial: (Hasher..Hasher?), operation: (acc: (Hasher..Hasher?), PropertySerializer) -> (Hasher..Hasher?)): (Hasher..Hasher?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PropertySerializer
     <R> -> (com.google.common.hash.Hasher..com.google.common.hash.Hasher?)
@@ -1480,7 +1470,7 @@ Inferred types:
 
 'name' @ [417:129] ==> val name: String defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForObject[LocalVariableDescriptor]
 
-'fingerprintForType' @ [418:9] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintForType' @ [418:9] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'prop' @ [418:28] ==> value-parameter prop: PropertySerializer defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForObject.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1514,7 +1504,7 @@ Inferred types:
 
 'NULLABLE_HASH' @ [418:171] ==> private val NULLABLE_HASH: String defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[PropertyDescriptorImpl]
 
-'interfacesForSerialization' @ [420:5] ==> internal fun interfacesForSerialization(type: Type, serializerFactory: SerializerFactory): List<Type> defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'interfacesForSerialization' @ [420:5] ==> internal fun interfacesForSerialization(type: Type, serializerFactory: SerializerFactory): List<Type> defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [420:32] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForObject[ValueParameterDescriptorImpl]
 
@@ -1525,7 +1515,7 @@ Inferred types:
     <T> -> Type
     <R> -> Hasher
 
-'fingerprintForType' @ [420:53] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintForType' @ [420:53] ==> private fun fingerprintForType(type: Type, contextType: Type?, alreadySeen: MutableSet<Type>, hasher: Hasher, factory: SerializerFactory): Hasher defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [420:72] ==> value-parameter it: Type defined in net.corda.nodeapi.internal.serialization.amqp.fingerprintForObject.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -140,7 +140,7 @@ Inferred types:
 
 'logger' @ [165:9] ==> public final val logger: Logger defined in net.corda.core.flows.FlowLogic[PropertyDescriptorImpl]
 
-'debug' @ [165:16] ==> public inline fun Logger.debug(msg: () -> String): Unit defined in net.corda.core.utilities[SimpleFunctionDescriptorImpl]
+'debug' @ [165:16] ==> public inline fun Logger.debug(msg: () -> String): Unit defined in net.corda.core.utilities in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'subLogic' @ [165:43] ==> value-parameter subLogic: FlowLogic<R> defined in net.corda.core.flows.FlowLogic.subFlow[ValueParameterDescriptorImpl]
 
@@ -150,7 +150,7 @@ Inferred types:
 
 'logger' @ [167:9] ==> public final val logger: Logger defined in net.corda.core.flows.FlowLogic[PropertyDescriptorImpl]
 
-'debug' @ [167:16] ==> public inline fun Logger.debug(msg: () -> String): Unit defined in net.corda.core.utilities[SimpleFunctionDescriptorImpl]
+'debug' @ [167:16] ==> public inline fun Logger.debug(msg: () -> String): Unit defined in net.corda.core.utilities in file KotlinUtils.kt[SimpleFunctionDescriptorImpl]
 
 'result' @ [167:56] ==> val result: R defined in net.corda.core.flows.FlowLogic.subFlow[LocalVariableDescriptor]
 
@@ -198,15 +198,15 @@ Inferred types:
 
 'progressTracker' @ [225:16] ==> public open val progressTracker: ProgressTracker? defined in net.corda.core.flows.FlowLogic[PropertyDescriptorImpl]
 
-'let' @ [225:33] ==> @InlineOnly public inline fun <T, R> ProgressTracker.let(block: (ProgressTracker) -> DataFeed<String, String>): DataFeed<String, String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [225:33] ==> @InlineOnly public inline fun <T, R> ProgressTracker.let(block: (ProgressTracker) -> DataFeed<String, (String..String?)>): DataFeed<String, (String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ProgressTracker
-    <R> -> DataFeed<String, String>
+    <R> -> DataFeed<String, (kotlin.String..kotlin.String?)>
 
-'DataFeed' @ [226:13] ==> public constructor DataFeed<out A, B>(snapshot: String, updates: Observable<String>) defined in net.corda.core.messaging.DataFeed[ClassConstructorDescriptorImpl]
+'DataFeed' @ [226:13] ==> public constructor DataFeed<out A, B>(snapshot: String, updates: Observable<(String..String?)>) defined in net.corda.core.messaging.DataFeed[ClassConstructorDescriptorImpl]
 Inferred types:
     <out A> -> String
-    <B> -> String
+    <B> -> (kotlin.String..kotlin.String?)
 
 'it' @ [226:22] ==> value-parameter it: ProgressTracker defined in net.corda.core.flows.FlowLogic.track.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -220,7 +220,7 @@ Inferred types:
 
 'map' @ [226:55] ==> public final fun <R : (Any..Any?)> map(p0: (((ProgressTracker.Change..ProgressTracker.Change?)) -> (String..String?)..(((ProgressTracker.Change..ProgressTracker.Change?)) -> (String..String?))?)): (Observable<(String..String?)>..Observable<(String..String?)>?) defined in rx.Observable[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> String
+    <R : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'it' @ [226:61] ==> value-parameter it: (ProgressTracker.Change..ProgressTracker.Change?) defined in net.corda.core.flows.FlowLogic.track.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -246,7 +246,7 @@ Inferred types:
 
 'java' @ [245:94] ==> public val <T> KClass<out FlowLogic<T>>.java: Class<out FlowLogic<T>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> FlowLogic<T>
+    <T> -> Captured(out FlowLogic<T>)
 
 'Suspendable' @ [258:5] ==> public constructor Suspendable() defined in co.paralleluniverse.fibers.Suspendable[JavaClassConstructorDescriptor]
 
@@ -258,7 +258,7 @@ Inferred types:
 
 'java' @ [259:88] ==> public val <T> KClass<out FlowLogic<T>>.java: Class<out FlowLogic<T>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> FlowLogic<T>
+    <T> -> Captured(out FlowLogic<T>)
 
 '_stateMachine' @ [271:17] ==> private final var _stateMachine: FlowStateMachine<*>? defined in net.corda.core.flows.FlowLogic[PropertyDescriptorImpl]
 

@@ -85,11 +85,11 @@ Inferred types:
 
 'java' @ [32:45] ==> public val <T> KClass<out WebServerPluginRegistry>.java: Class<out WebServerPluginRegistry> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> WebServerPluginRegistry
+    <T> -> Captured(out WebServerPluginRegistry)
 
 'name' @ [32:50] ==> public final val <T : (Any..Any?)> Class<out WebServerPluginRegistry>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> WebServerPluginRegistry
+    <T : (Any..Any?)> -> Captured(out WebServerPluginRegistry)
 
 'plugin' @ [33:29] ==> value-parameter plugin: WebServerPluginRegistry defined in net.corda.webserver.servlets.CorDappInfoServlet.doGet.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -119,7 +119,7 @@ Inferred types:
 
 'java' @ [36:88] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'p' @ [37:37] ==> public fun FlowContent.p(classes: String? = ..., block: P.() -> Unit = ...): Unit defined in kotlinx.html[DeserializedSimpleFunctionDescriptor]
 

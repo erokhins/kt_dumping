@@ -2,8 +2,6 @@
 
 'MappedSchema' @ [27:24] ==> public constructor MappedSchema(schemaFamily: Class<*>, version: Int, mappedTypes: Iterable<Class<*>>) defined in net.corda.core.schemas.MappedSchema[DeserializedClassConstructorDescriptor]
 
-'VaultSchema' @ [27:52] ==> public object VaultSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
-
 'javaClass' @ [27:64] ==> public val <T : Any> VaultSchema.javaClass: Class<VaultSchema> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> VaultSchema
@@ -18,13 +16,9 @@ Inferred types:
 Inferred types:
     <T> -> VaultStates
 
-'VaultLinearStates' @ [28:83] ==> public constructor VaultLinearStates(uid: UniqueIdentifier, _participants: List<AbstractParty>) defined in net.corda.node.services.vault.VaultSchemaV1.VaultLinearStates[ClassConstructorDescriptorImpl]
-
 'java' @ [28:108] ==> public val <T> KClass<VaultSchemaV1.VaultLinearStates>.java: Class<VaultSchemaV1.VaultLinearStates> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> VaultLinearStates
-
-'VaultFungibleStates' @ [28:114] ==> public constructor VaultFungibleStates(_owner: AbstractParty, _quantity: Long, _issuerParty: AbstractParty, _issuerRef: OpaqueBytes, _participants: List<AbstractParty>) defined in net.corda.node.services.vault.VaultSchemaV1.VaultFungibleStates[ClassConstructorDescriptorImpl]
 
 'java' @ [28:141] ==> public val <T> KClass<VaultSchemaV1.VaultFungibleStates>.java: Class<VaultSchemaV1.VaultFungibleStates> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

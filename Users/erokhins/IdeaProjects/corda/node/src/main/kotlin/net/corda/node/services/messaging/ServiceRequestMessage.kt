@@ -10,11 +10,9 @@ Inferred types:
 
 'sessionID' @ [24:51] ==> public abstract val sessionID: Long defined in net.corda.node.services.messaging.ServiceRequestMessage[PropertyDescriptorImpl]
 
-'send' @ [25:5] ==> public fun MessagingService.send(topic: String, sessionID: Long, payload: Any, to: MessageRecipients, uuid: UUID = ...): Unit defined in net.corda.node.services.messaging[SimpleFunctionDescriptorImpl]
+'send' @ [25:5] ==> public fun MessagingService.send(topic: String, sessionID: Long, payload: Any, to: MessageRecipients, uuid: UUID = ...): Unit defined in net.corda.node.services.messaging in file Messaging.kt[SimpleFunctionDescriptorImpl]
 
 'topic' @ [25:10] ==> value-parameter topic: String defined in net.corda.node.services.messaging.sendRequest[ValueParameterDescriptorImpl]
-
-'MessagingService' @ [25:17] ==> public companion object defined in net.corda.node.services.messaging.MessagingService[FakeCallableDescriptorForObject]
 
 'DEFAULT_SESSION_ID' @ [25:34] ==> public final val DEFAULT_SESSION_ID: Long defined in net.corda.node.services.messaging.MessagingService.Companion[PropertyDescriptorImpl]
 

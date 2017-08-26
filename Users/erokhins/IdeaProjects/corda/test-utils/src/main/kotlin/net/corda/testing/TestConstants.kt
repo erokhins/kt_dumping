@@ -2,21 +2,21 @@
 
 'parse' @ [26:43] ==> public open fun parse(p0: (CharSequence..CharSequence?)): (Instant..Instant?) defined in java.time.Instant[JavaMethodDescriptor]
 
-'lazy' @ [28:29] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [28:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'generateKeyPair' @ [28:36] ==> public fun generateKeyPair(): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [29:29] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [29:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'generateKeyPair' @ [29:36] ==> public fun generateKeyPair(): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [31:34] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [31:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [31:41] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -34,9 +34,9 @@ Inferred types:
 
 'public' @ [34:115] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [36:31] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [36:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [36:38] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -50,9 +50,9 @@ Inferred types:
 
 'public' @ [38:117] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [40:34] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [40:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [40:41] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -66,9 +66,9 @@ Inferred types:
 
 'public' @ [42:102] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [44:34] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [44:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [44:41] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -82,9 +82,9 @@ Inferred types:
 
 'public' @ [46:104] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [48:34] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [48:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [48:41] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -98,9 +98,9 @@ Inferred types:
 
 'public' @ [50:101] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [52:27] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [52:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [52:34] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -118,9 +118,9 @@ Inferred types:
 
 'public' @ [55:96] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [57:25] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [57:25] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [57:32] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -138,9 +138,9 @@ Inferred types:
 
 'public' @ [60:84] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [62:29] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [62:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [62:36] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -158,9 +158,9 @@ Inferred types:
 
 'public' @ [65:102] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [67:37] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [67:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [67:44] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -174,17 +174,17 @@ Inferred types:
 
 'public' @ [69:118] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [71:30] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [71:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [71:37] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
 'valueOf' @ [71:65] ==> public open fun valueOf(p0: Long): (BigInteger..BigInteger?) defined in java.math.BigInteger[JavaMethodDescriptor]
 
-'lazy' @ [72:40] ==> public fun <T> lazy(initializer: () -> CertificateAndKeyPair): Lazy<CertificateAndKeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [72:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CertificateAndKeyPair
+    <T> -> T
 
 'X509Utilities' @ [74:16] ==> public object X509Utilities defined in net.corda.node.utilities[FakeCallableDescriptorForObject]
 
@@ -244,9 +244,9 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'lazy' @ [96:23] ==> public fun <T> lazy(initializer: () -> CordaFuture<NodeHandle>): Lazy<CordaFuture<NodeHandle>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [96:23] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CordaFuture<NodeHandle>
+    <T> -> T
 
 'driver' @ [96:30] ==> value-parameter driver: DriverDSLExposedInterface defined in net.corda.testing.PredefinedTestNode.<init>[ValueParameterDescriptorImpl]
 
@@ -260,17 +260,17 @@ Inferred types:
 
 'services' @ [96:101] ==> value-parameter services: Set<ServiceInfo> defined in net.corda.testing.PredefinedTestNode.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [97:17] ==> public fun <T> lazy(initializer: () -> NodeHandle): Lazy<NodeHandle> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [97:17] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> NodeHandle
+    <T> -> T
 
 'nodeFuture' @ [97:24] ==> public final val nodeFuture: CordaFuture<NodeHandle> defined in net.corda.testing.PredefinedTestNode[PropertyDescriptorImpl]
 
 'get' @ [97:35] ==> public abstract fun get(): (NodeHandle..NodeHandle?) defined in net.corda.core.concurrent.CordaFuture[JavaMethodDescriptor]
 
-'lazy' @ [98:16] ==> public fun <T> lazy(initializer: () -> CordaRPCClient): Lazy<CordaRPCClient> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [98:16] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CordaRPCClient
+    <T> -> T
 
 'node' @ [98:23] ==> public final val node: NodeHandle defined in net.corda.testing.PredefinedTestNode[PropertyDescriptorImpl]
 
@@ -327,8 +327,6 @@ Inferred types:
     <T> -> ServiceInfo
 
 'ServiceInfo' @ [119:107] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'ValidatingNotaryService' @ [119:119] ==> public companion object defined in net.corda.node.services.transactions.ValidatingNotaryService[FakeCallableDescriptorForObject]
 
 'type' @ [119:143] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.ValidatingNotaryService.Companion[DeserializedPropertyDescriptor]
 

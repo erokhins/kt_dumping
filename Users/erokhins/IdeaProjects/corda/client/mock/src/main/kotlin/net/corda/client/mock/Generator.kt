@@ -217,7 +217,7 @@ Inferred types:
 
 'error' @ [64:69] ==> value-parameter error: Exception /* = Exception */ defined in net.corda.client.mock.Generator.Companion.fail[ValueParameterDescriptorImpl]
 
-'intRange' @ [67:58] ==> public fun Generator.Companion.intRange(from: Int, to: Int): Generator<Int> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'intRange' @ [67:58] ==> public fun Generator.Companion.intRange(from: Int, to: Int): Generator<Int> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'generators' @ [67:70] ==> value-parameter generators: List<Generator<A>> defined in net.corda.client.mock.Generator.Companion.choice[ValueParameterDescriptorImpl]
 
@@ -278,7 +278,7 @@ Inferred types:
 
 'next' @ [76:27] ==> val next: Double defined in net.corda.client.mock.Generator.Companion.frequency.<anonymous>[LocalVariableDescriptor]
 
-'doubleRange' @ [78:20] ==> public fun Generator.Companion.doubleRange(from: Double, to: Double): Generator<Double> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'doubleRange' @ [78:20] ==> public fun Generator.Companion.doubleRange(from: Double, to: Double): Generator<Double> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'current' @ [78:37] ==> var current: Double defined in net.corda.client.mock.Generator.Companion.frequency[LocalVariableDescriptor]
 
@@ -432,6 +432,8 @@ Inferred types:
 
 'SplittableRandom' @ [123:51] ==> public constructor SplittableRandom() defined in java.util.SplittableRandom[JavaClassConstructorDescriptor]
 
+'nextInt' @ [123:69] ==> public open fun nextInt(): Int defined in java.util.SplittableRandom[JavaMethodDescriptor]
+
 'Generator' @ [124:34] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
 'success' @ [124:44] ==> public final fun <A> success(generate: (SplittableRandom) -> Long): Generator<Long> defined in net.corda.client.mock.Generator.Companion[SimpleFunctionDescriptorImpl]
@@ -439,6 +441,8 @@ Inferred types:
     <A> -> Long
 
 'SplittableRandom' @ [124:52] ==> public constructor SplittableRandom() defined in java.util.SplittableRandom[JavaClassConstructorDescriptor]
+
+'nextLong' @ [124:70] ==> public open fun nextLong(): Long defined in java.util.SplittableRandom[JavaMethodDescriptor]
 
 'Generator' @ [125:66] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
@@ -456,7 +460,7 @@ Inferred types:
 
 'toByte' @ [126:40] ==> public open fun toByte(): Byte defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'intRange' @ [129:53] ==> public fun Generator.Companion.intRange(from: Int, to: Int): Generator<Int> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'intRange' @ [129:53] ==> public fun Generator.Companion.intRange(from: Int, to: Int): Generator<Int> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'range' @ [129:62] ==> value-parameter range: IntRange defined in net.corda.client.mock.intRange[ValueParameterDescriptorImpl]
 
@@ -488,7 +492,7 @@ Inferred types:
 
 'toInt' @ [131:55] ==> public open fun toInt(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'longRange' @ [134:55] ==> public fun Generator.Companion.longRange(from: Long, to: Long): Generator<Long> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'longRange' @ [134:55] ==> public fun Generator.Companion.longRange(from: Long, to: Long): Generator<Long> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'range' @ [134:65] ==> value-parameter range: LongRange defined in net.corda.client.mock.longRange[ValueParameterDescriptorImpl]
 
@@ -584,8 +588,6 @@ Inferred types:
 
 'toChar' @ [147:48] ==> public open fun toChar(): Char defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'Try' @ [149:9] ==> public companion object defined in net.corda.core.utilities.Try[FakeCallableDescriptorForObject]
-
 'Failure' @ [149:13] ==> public constructor Failure(exception: Throwable) defined in net.corda.core.utilities.Try.Failure[DeserializedClassConstructorDescriptor]
 
 'IllegalStateException' @ [149:21] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
@@ -596,7 +598,7 @@ Inferred types:
 
 'meanSize' @ [153:76] ==> value-parameter meanSize: Double = ... defined in net.corda.client.mock.string[ValueParameterDescriptorImpl]
 
-'char' @ [153:86] ==> public fun Generator.Companion.char(): Generator<Char> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'char' @ [153:86] ==> public fun Generator.Companion.char(): Generator<Char> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [153:94] ==> public final fun <B> map(function: (List<Char>) -> String): Generator<String> defined in net.corda.client.mock.Generator[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -660,7 +662,7 @@ Inferred types:
 
 'Generator' @ [175:19] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
-'doubleRange' @ [175:29] ==> public fun Generator.Companion.doubleRange(from: Double, to: Double): Generator<Double> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'doubleRange' @ [175:29] ==> public fun Generator.Companion.doubleRange(from: Double, to: Double): Generator<Double> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [175:51] ==> public abstract operator fun invoke(p1: SplittableRandom): Try<Double> defined in kotlin.Function1[FunctionInvokeDescriptor]
 
@@ -731,8 +733,6 @@ Inferred types:
 
 'it' @ [181:61] ==> value-parameter it: A defined in net.corda.client.mock.replicatePoisson.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'Try' @ [182:24] ==> public companion object defined in net.corda.core.utilities.Try[FakeCallableDescriptorForObject]
-
 'Success' @ [182:28] ==> public constructor Success<out A>(value: Unit) defined in net.corda.core.utilities.Try.Success[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> Unit
@@ -753,7 +753,7 @@ Inferred types:
 
 'Generator' @ [192:54] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
-'intRange' @ [192:64] ==> public fun Generator.Companion.intRange(from: Int, to: Int): Generator<Int> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'intRange' @ [192:64] ==> public fun Generator.Companion.intRange(from: Int, to: Int): Generator<Int> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'list' @ [192:76] ==> value-parameter list: List<A> defined in net.corda.client.mock.pickOne[ValueParameterDescriptorImpl]
 
@@ -875,9 +875,7 @@ Inferred types:
 
 'size' @ [219:30] ==> public abstract val size: Int defined in kotlin.collections.Collection[DeserializedPropertyDescriptor]
 
-'Generator' @ [219:36] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
-
-'doubleRange' @ [219:46] ==> public fun Generator.Companion.doubleRange(from: Double, to: Double): Generator<Double> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'doubleRange' @ [219:46] ==> public fun Generator.Companion.doubleRange(from: Double, to: Double): Generator<Double> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [219:69] ==> public final fun <B> map(function: (List<Double>) -> MutableList<A>): Generator<MutableList<A>> defined in net.corda.client.mock.Generator[SimpleFunctionDescriptorImpl]
 Inferred types:

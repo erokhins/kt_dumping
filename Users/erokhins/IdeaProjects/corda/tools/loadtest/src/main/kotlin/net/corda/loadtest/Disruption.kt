@@ -22,8 +22,6 @@ Inferred types:
 
 'type' @ [46:89] ==> public final val type: ServiceType defined in net.corda.core.node.services.ServiceInfo[DeserializedPropertyDescriptor]
 
-'NetworkMapService' @ [46:97] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
-
 'type' @ [46:115] ==> public final val type: ServiceType defined in net.corda.node.services.network.NetworkMapService.Companion[DeserializedPropertyDescriptor]
 
 'node' @ [47:42] ==> value-parameter node: NodeConnection defined in net.corda.loadtest.isNotary.<anonymous>[ValueParameterDescriptorImpl]
@@ -124,10 +122,10 @@ Inferred types:
 
 'disruptions' @ [77:5] ==> value-parameter disruptions: List<DisruptionSpec> defined in net.corda.loadtest.withDisruptions[ValueParameterDescriptorImpl]
 
-'map' @ [77:17] ==> public inline fun <T, R> Iterable<DisruptionSpec>.map(transform: (DisruptionSpec) -> Future<out (Any..Any?)>): List<Future<out (Any..Any?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [77:17] ==> public inline fun <T, R> Iterable<DisruptionSpec>.map(transform: (DisruptionSpec) -> (Future<*>..Future<*>?)): List<(Future<*>..Future<*>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> DisruptionSpec
-    <R> -> Future<out (kotlin.Any..kotlin.Any?)>
+    <R> -> (java.util.concurrent.Future<*>..java.util.concurrent.Future<*>?)
 
 'mainRandom' @ [78:22] ==> value-parameter mainRandom: SplittableRandom defined in net.corda.loadtest.withDisruptions[ValueParameterDescriptorImpl]
 
@@ -195,8 +193,6 @@ Inferred types:
 Inferred types:
     <T> -> NodeConnection
 
-'Generator' @ [86:28] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
-
 'pickOne' @ [86:38] ==> public fun <A> Generator.Companion.pickOne(list: List<NodeConnection>): Generator<NodeConnection> defined in net.corda.client.mock[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> NodeConnection
@@ -215,22 +211,22 @@ Inferred types:
 
 'invokeAll' @ [90:26] ==> public abstract fun <T : (Any..Any?)> invokeAll(p0: (MutableCollection<out (Callable<(Unit..Unit?)>..Callable<(Unit..Unit?)>?)>..Collection<(Callable<(Unit..Unit?)>..Callable<(Unit..Unit?)>?)>?)): (MutableList<(Future<(Unit..Unit?)>..Future<(Unit..Unit?)>?)>..List<(Future<(Unit..Unit?)>..Future<(Unit..Unit?)>?)>?) defined in java.util.concurrent.ExecutorService[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'nodes' @ [90:36] ==> val nodes: List<NodeConnection> defined in net.corda.loadtest.withDisruptions.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'map' @ [90:42] ==> public inline fun <T, R> Iterable<NodeConnection>.map(transform: (NodeConnection) -> Callable<Unit>): List<Callable<Unit>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [90:42] ==> public inline fun <T, R> Iterable<NodeConnection>.map(transform: (NodeConnection) -> Callable<(Unit..Unit?)>): List<Callable<(Unit..Unit?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> NodeConnection
-    <R> -> Callable<Unit>
+    <R> -> Callable<(kotlin.Unit..kotlin.Unit?)>
 
 'random' @ [91:38] ==> val random: (SplittableRandom..SplittableRandom?) defined in net.corda.loadtest.withDisruptions.<anonymous>[LocalVariableDescriptor]
 
 'split' @ [91:45] ==> public open fun split(): (SplittableRandom..SplittableRandom?) defined in java.util.SplittableRandom[JavaMethodDescriptor]
 
-'Callable' @ [92:21] ==> @FunctionalInterface public fun <V : (Any..Any?)> Callable(function: () -> (Unit..Unit?)): Callable<Unit> defined in java.util.concurrent[SimpleFunctionDescriptorImpl]
+'Callable' @ [92:21] ==> @FunctionalInterface public fun <V : (Any..Any?)> Callable(function: () -> (Unit..Unit?)): Callable<(Unit..Unit?)> defined in java.util.concurrent[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <V : (Any..Any?)> -> Unit
+    <V : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'log' @ [93:25] ==> private val log: (Logger..Logger?) defined in net.corda.loadtest in file Disruption.kt[PropertyDescriptorImpl]
 

@@ -20,15 +20,15 @@
 
 'inputs' @ [38:41] ==> public open val inputs: List<StateRef> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'map' @ [38:48] ==> public inline fun <T, R> Iterable<StateRef>.map(transform: (StateRef) -> (MonadicBinding<PartiallyResolvedTransaction.InputResolution>..MonadicBinding<PartiallyResolvedTransaction.InputResolution>?)): List<(MonadicBinding<PartiallyResolvedTransaction.InputResolution>..MonadicBinding<PartiallyResolvedTransaction.InputResolution>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [38:48] ==> public inline fun <T, R> Iterable<StateRef>.map(transform: (StateRef) -> (MonadicBinding<(PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)>..MonadicBinding<(PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)>?)): List<(MonadicBinding<(PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)>..MonadicBinding<(PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateRef
-    <R> -> (org.fxmisc.easybind.monadic.MonadicBinding<net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution>..org.fxmisc.easybind.monadic.MonadicBinding<net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution>?)
+    <R> -> (org.fxmisc.easybind.monadic.MonadicBinding<(net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution..net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution?)>..org.fxmisc.easybind.monadic.MonadicBinding<(net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution..net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution?)>?)
 
-'map' @ [39:30] ==> public final fun <T : (Any..Any?), U : (Any..Any?)> map(p0: (ObservableValue<(SignedTransaction..SignedTransaction?)>..ObservableValue<(SignedTransaction..SignedTransaction?)>?), p1: (((SignedTransaction..SignedTransaction?)) -> (PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)..(((SignedTransaction..SignedTransaction?)) -> (PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?))?)): (MonadicBinding<(PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)>..MonadicBinding<(PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
+'map' @ [39:30] ==> public final fun <T : (Any..Any?), U : (Any..Any?)> map(p0: (ObservableValue<SignedTransaction?>..ObservableValue<SignedTransaction?>?), p1: ((SignedTransaction?) -> (PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)..((SignedTransaction?) -> (PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?))?)): (MonadicBinding<(PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)>..MonadicBinding<(PartiallyResolvedTransaction.InputResolution..PartiallyResolvedTransaction.InputResolution?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SignedTransaction
-    <U : (Any..Any?)> -> InputResolution
+    <T : (Any..Any?)> -> SignedTransaction?
+    <U : (Any..Any?)> -> (net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution..net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution?)
 
 'transactions' @ [39:34] ==> value-parameter transactions: ObservableMap<SecureHash, SignedTransaction> defined in net.corda.client.jfx.model.PartiallyResolvedTransaction.Companion.fromSignedTransaction[ValueParameterDescriptorImpl]
 
@@ -49,7 +49,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> InputResolution
 
-'it' @ [40:29] ==> value-parameter it: (SignedTransaction..SignedTransaction?) defined in net.corda.client.jfx.model.PartiallyResolvedTransaction.Companion.fromSignedTransaction.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [40:29] ==> value-parameter it: SignedTransaction? defined in net.corda.client.jfx.model.PartiallyResolvedTransaction.Companion.fromSignedTransaction.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'Unresolved' @ [41:45] ==> public constructor Unresolved(stateRef: StateRef) defined in net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution.Unresolved[ClassConstructorDescriptorImpl]
 
@@ -57,7 +57,7 @@ Inferred types:
 
 'Resolved' @ [43:45] ==> public constructor Resolved(stateAndRef: StateAndRef<ContractState>) defined in net.corda.client.jfx.model.PartiallyResolvedTransaction.InputResolution.Resolved[ClassConstructorDescriptorImpl]
 
-'it' @ [43:54] ==> value-parameter it: (SignedTransaction..SignedTransaction?) defined in net.corda.client.jfx.model.PartiallyResolvedTransaction.Companion.fromSignedTransaction.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [43:54] ==> value-parameter it: SignedTransaction? defined in net.corda.client.jfx.model.PartiallyResolvedTransaction.Companion.fromSignedTransaction.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'tx' @ [43:57] ==> public final val tx: WireTransaction defined in net.corda.core.transactions.SignedTransaction[DeserializedPropertyDescriptor]
 
@@ -69,12 +69,11 @@ Inferred types:
 
 'index' @ [43:76] ==> public final val index: Int defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
 
-'observable' @ [55:33] ==> public inline fun <reified M : Any, T> observable(noinline observableProperty: (NodeMonitorModel) -> Observable<SignedTransaction>): TrackedDelegate.ObservableDelegate<NodeMonitorModel, SignedTransaction> defined in net.corda.client.jfx.model[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <reified M : Any> -> NodeMonitorModel
-    <T> -> SignedTransaction
+'getValue' @ [55:33] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): Observable<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableDelegate[SimpleFunctionDescriptorImpl]
 
 'NodeMonitorModel' @ [55:44] ==> public constructor NodeMonitorModel() defined in net.corda.client.jfx.model.NodeMonitorModel[ClassConstructorDescriptorImpl]
+
+'transactions' @ [55:62] ==> public final val transactions: Observable<SignedTransaction> defined in net.corda.client.jfx.model.NodeMonitorModel[PropertyDescriptorImpl]
 
 'transactions' @ [56:41] ==> private final val transactions: Observable<SignedTransaction> defined in net.corda.client.jfx.model.TransactionDataModel[PropertyDescriptorImpl]
 
@@ -88,6 +87,8 @@ Inferred types:
 Inferred types:
     <K> -> SecureHash
     <A> -> SignedTransaction
+
+'id' @ [57:87] ==> public open val id: SecureHash defined in net.corda.core.transactions.SignedTransaction[DeserializedPropertyDescriptor]
 
 'collectedTransactions' @ [59:41] ==> private final val collectedTransactions: ObservableList<SignedTransaction> defined in net.corda.client.jfx.model.TransactionDataModel[PropertyDescriptorImpl]
 

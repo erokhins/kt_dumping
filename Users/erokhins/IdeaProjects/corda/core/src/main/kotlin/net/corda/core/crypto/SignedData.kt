@@ -8,7 +8,7 @@
 
 'by' @ [25:13] ==> public final val by: PublicKey defined in net.corda.core.crypto.DigitalSignature.WithKey[PropertyDescriptorImpl]
 
-'verify' @ [25:16] ==> @Throws public fun PublicKey.verify(content: ByteArray, signature: DigitalSignature): Boolean defined in net.corda.core.crypto[SimpleFunctionDescriptorImpl]
+'verify' @ [25:16] ==> @Throws public fun PublicKey.verify(content: ByteArray, signature: DigitalSignature): Boolean defined in net.corda.core.crypto in file CryptoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'raw' @ [25:23] ==> public final val raw: SerializedBytes<T> defined in net.corda.core.crypto.SignedData[PropertyDescriptorImpl]
 

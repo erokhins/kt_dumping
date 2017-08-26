@@ -8,7 +8,7 @@ Inferred types:
 
 'singleton' @ [17:74] ==> public open fun <T : (Any..Any?)> singleton(p0: (T..T?)): (MutableSet<(T..T?)>..Set<(T..T?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'element' @ [17:84] ==> value-parameter element: T defined in net.corda.core.utilities.NonEmptySet.Companion.of[ValueParameterDescriptorImpl]
 

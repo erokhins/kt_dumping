@@ -59,8 +59,6 @@ Inferred types:
 
 'add' @ [40:30] ==> public open fun add(element: SecureHash): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'SecureHash' @ [40:34] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
-
 'zeroHash' @ [40:45] ==> public final val zeroHash: SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[PropertyDescriptorImpl]
 
 'paddedHashes' @ [42:20] ==> val paddedHashes: ArrayList<SecureHash> defined in net.corda.core.crypto.MerkleTree.Companion.padWithZeros[LocalVariableDescriptor]

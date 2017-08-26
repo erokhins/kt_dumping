@@ -1,26 +1,14 @@
-'WriteOnceProperty' @ [99:56] ==> public constructor WriteOnceProperty<T : Any>(defaultValue: SerializationFactory? = ...) defined in net.corda.core.internal.WriteOnceProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <T : Any> -> SerializationFactory
+'getValue' @ [99:56] ==> public final operator fun getValue(thisRef: Any?, property: KProperty<*>): T defined in net.corda.core.internal.WriteOnceProperty[SimpleFunctionDescriptorImpl]
 
-'WriteOnceProperty' @ [100:46] ==> public constructor WriteOnceProperty<T : Any>(defaultValue: SerializationContext? = ...) defined in net.corda.core.internal.WriteOnceProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <T : Any> -> SerializationContext
+'getValue' @ [100:46] ==> public final operator fun getValue(thisRef: Any?, property: KProperty<*>): T defined in net.corda.core.internal.WriteOnceProperty[SimpleFunctionDescriptorImpl]
 
-'WriteOnceProperty' @ [101:53] ==> public constructor WriteOnceProperty<T : Any>(defaultValue: SerializationContext? = ...) defined in net.corda.core.internal.WriteOnceProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <T : Any> -> SerializationContext
+'getValue' @ [101:53] ==> public final operator fun getValue(thisRef: Any?, property: KProperty<*>): T defined in net.corda.core.internal.WriteOnceProperty[SimpleFunctionDescriptorImpl]
 
-'WriteOnceProperty' @ [102:53] ==> public constructor WriteOnceProperty<T : Any>(defaultValue: SerializationContext? = ...) defined in net.corda.core.internal.WriteOnceProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <T : Any> -> SerializationContext
+'getValue' @ [102:53] ==> public final operator fun getValue(thisRef: Any?, property: KProperty<*>): T defined in net.corda.core.internal.WriteOnceProperty[SimpleFunctionDescriptorImpl]
 
-'WriteOnceProperty' @ [103:50] ==> public constructor WriteOnceProperty<T : Any>(defaultValue: SerializationContext? = ...) defined in net.corda.core.internal.WriteOnceProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <T : Any> -> SerializationContext
+'getValue' @ [103:50] ==> public final operator fun getValue(thisRef: Any?, property: KProperty<*>): T defined in net.corda.core.internal.WriteOnceProperty[SimpleFunctionDescriptorImpl]
 
-'WriteOnceProperty' @ [104:53] ==> public constructor WriteOnceProperty<T : Any>(defaultValue: SerializationContext? = ...) defined in net.corda.core.internal.WriteOnceProperty[ClassConstructorDescriptorImpl]
-Inferred types:
-    <T : Any> -> SerializationContext
+'getValue' @ [104:53] ==> public final operator fun getValue(thisRef: Any?, property: KProperty<*>): T defined in net.corda.core.internal.WriteOnceProperty[SimpleFunctionDescriptorImpl]
 
 'SERIALIZATION_FACTORY' @ [110:100] ==> public final var SERIALIZATION_FACTORY: SerializationFactory defined in net.corda.core.serialization.SerializationDefaults[PropertyImportedFromObject]
 
@@ -64,7 +52,7 @@ Inferred types:
 
 'this' @ [124:170] ==> <this> defined in net.corda.core.serialization.deserialize[ReceiverParameterDescriptorImpl]
 
-'sequence' @ [124:175] ==> public fun ByteArray.sequence(offset: Int = ..., size: Int = ...): ByteSequence defined in net.corda.core.utilities[SimpleFunctionDescriptorImpl]
+'sequence' @ [124:175] ==> public fun ByteArray.sequence(offset: Int = ..., size: Int = ...): ByteSequence defined in net.corda.core.utilities in file ByteArrays.kt[SimpleFunctionDescriptorImpl]
 
 'deserialize' @ [124:186] ==> public inline fun <reified T : Any> ByteSequence.deserialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): T defined in net.corda.core.serialization[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -94,9 +82,9 @@ Inferred types:
 
 'bytes' @ [138:64] ==> value-parameter bytes: ByteArray defined in net.corda.core.serialization.SerializedBytes.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [140:29] ==> public fun <T> lazy(initializer: () -> SecureHash.SHA256): Lazy<SecureHash.SHA256> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [140:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SHA256
+    <T> -> T
 
 'bytes' @ [140:36] ==> value-parameter bytes: ByteArray defined in net.corda.core.serialization.SerializedBytes.<init>[ValueParameterDescriptorImpl]
 

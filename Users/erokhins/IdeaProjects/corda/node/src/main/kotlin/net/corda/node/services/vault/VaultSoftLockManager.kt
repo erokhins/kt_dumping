@@ -26,9 +26,9 @@ Inferred types:
 
 'logic' @ [24:56] ==> public abstract val logic: FlowLogic<*> defined in net.corda.node.services.statemachine.StateMachineManager.Change[PropertyDescriptorImpl]
 
-'javaClass' @ [24:62] ==> public val <T : Any> FlowLogic<Any?>.javaClass: Class<FlowLogic<Any?>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [24:62] ==> public val <T : Any> FlowLogic<*>.javaClass: Class<FlowLogic<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> FlowLogic<Any?>
+    <T : Any> -> FlowLogic<*>
 
 'change' @ [24:82] ==> value-parameter change: (StateMachineManager.Change..StateMachineManager.Change?) defined in net.corda.node.services.vault.VaultSoftLockManager.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -106,13 +106,13 @@ Inferred types:
 
 'logic' @ [56:29] ==> value-parameter logic: FlowLogic<*> defined in net.corda.node.services.vault.VaultSoftLockManager.unregisterSoftLocks[ValueParameterDescriptorImpl]
 
-'javaClass' @ [56:35] ==> public val <T : Any> FlowLogic<Any?>.javaClass: Class<FlowLogic<Any?>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [56:35] ==> public val <T : Any> FlowLogic<*>.javaClass: Class<FlowLogic<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> FlowLogic<Any?>
+    <T : Any> -> FlowLogic<*>
 
-'simpleName' @ [56:45] ==> public final val <T : (Any..Any?)> Class<FlowLogic<Any?>>.simpleName: (String..String?)[MyPropertyDescriptor]
+'simpleName' @ [56:45] ==> public final val <T : (Any..Any?)> Class<FlowLogic<*>>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<Any?>
+    <T : (Any..Any?)> -> FlowLogic<*>
 
 'log' @ [57:9] ==> public final val log: Logger defined in net.corda.node.services.vault.VaultSoftLockManager.Companion[PropertyDescriptorImpl]
 

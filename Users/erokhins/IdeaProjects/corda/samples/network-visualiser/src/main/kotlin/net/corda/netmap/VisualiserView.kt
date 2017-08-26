@@ -682,21 +682,21 @@ Inferred types:
 
 'ChoiceBox' @ [221:23] ==> public constructor ChoiceBox<T : (Any..Any?)>(p0: (ObservableList<(VisualiserViewModel.Style..VisualiserViewModel.Style?)>..ObservableList<(VisualiserViewModel.Style..VisualiserViewModel.Style?)>?)) defined in javafx.scene.control.ChoiceBox[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Style
+    <T : (Any..Any?)> -> (net.corda.netmap.VisualiserViewModel.Style..net.corda.netmap.VisualiserViewModel.Style?)
 
 'displayStyles' @ [221:33] ==> val displayStyles: (ObservableList<(VisualiserViewModel.Style..VisualiserViewModel.Style?)>..ObservableList<(VisualiserViewModel.Style..VisualiserViewModel.Style?)>?) defined in net.corda.netmap.VisualiserView.makeTopBar[LocalVariableDescriptor]
 
-'apply' @ [221:48] ==> @InlineOnly public inline fun <T> ChoiceBox<VisualiserViewModel.Style>.apply(block: ChoiceBox<VisualiserViewModel.Style>.() -> Unit): ChoiceBox<VisualiserViewModel.Style> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [221:48] ==> @InlineOnly public inline fun <T> ChoiceBox<(VisualiserViewModel.Style..VisualiserViewModel.Style?)>.apply(block: ChoiceBox<(VisualiserViewModel.Style..VisualiserViewModel.Style?)>.() -> Unit): ChoiceBox<(VisualiserViewModel.Style..VisualiserViewModel.Style?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ChoiceBox<Style>
+    <T> -> ChoiceBox<(net.corda.netmap.VisualiserViewModel.Style..net.corda.netmap.VisualiserViewModel.Style?)>
 
-'styleClass' @ [222:13] ==> public final val <T : (Any..Any?)> ChoiceBox<VisualiserViewModel.Style>.styleClass: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)[MyPropertyDescriptor]
+'styleClass' @ [222:13] ==> public final val <T : (Any..Any?)> ChoiceBox<(VisualiserViewModel.Style..VisualiserViewModel.Style?)>.styleClass: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Style
+    <T : (Any..Any?)> -> (net.corda.netmap.VisualiserViewModel.Style..net.corda.netmap.VisualiserViewModel.Style?)
 
-'styleClass' @ [223:13] ==> public final val <T : (Any..Any?)> ChoiceBox<VisualiserViewModel.Style>.styleClass: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)[MyPropertyDescriptor]
+'styleClass' @ [223:13] ==> public final val <T : (Any..Any?)> ChoiceBox<(VisualiserViewModel.Style..VisualiserViewModel.Style?)>.styleClass: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Style
+    <T : (Any..Any?)> -> (net.corda.netmap.VisualiserViewModel.Style..net.corda.netmap.VisualiserViewModel.Style?)
 
 'styleChoice' @ [225:9] ==> public final lateinit var styleChoice: ChoiceBox<VisualiserViewModel.Style> defined in net.corda.netmap.VisualiserView[PropertyDescriptorImpl]
 

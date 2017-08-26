@@ -6,13 +6,13 @@ Inferred types:
 
 'sourceList' @ [22:9] ==> public final val sourceList: ObservableList<out A> defined in net.corda.client.jfx.utils.AssociatedList[PropertyDescriptorImpl]
 
-'forEach' @ [22:20] ==> @HidesMembers public inline fun <T> Iterable<A>.forEach(action: (A) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [22:20] ==> @HidesMembers public inline fun <T> Iterable<(A..A?)>.forEach(action: ((A..A?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> A
+    <T> -> (A..A?)
 
 'invoke' @ [23:23] ==> public abstract operator fun invoke(p1: A): K defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'it' @ [23:29] ==> value-parameter it: A defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [23:29] ==> value-parameter it: (A..A?) defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
 'backingMap' @ [24:13] ==> protected final val backingMap: HashMap<K, Pair<B, Unit>> defined in net.corda.client.jfx.utils.AssociatedList[PropertyDescriptorImpl]
 
@@ -32,13 +32,13 @@ Inferred types:
 
 'key' @ [24:47] ==> val key: K defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'it' @ [24:52] ==> value-parameter it: A defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [24:52] ==> value-parameter it: (A..A?) defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
 'Unit' @ [24:57] ==> public object Unit defined in kotlin[FakeCallableDescriptorForObject]
 
 'sourceList' @ [26:9] ==> public final val sourceList: ObservableList<out A> defined in net.corda.client.jfx.utils.AssociatedList[PropertyDescriptorImpl]
 
-'addListener' @ [26:20] ==> public final fun addListener(p0: (((ListChangeListener.Change<out (Nothing..Nothing?)>..ListChangeListener.Change<out (Nothing..Nothing?)>?)) -> Unit..(((ListChangeListener.Change<out (Nothing..Nothing?)>..ListChangeListener.Change<out (Nothing..Nothing?)>?)) -> Unit)?)): Unit defined in javafx.collections.ObservableList[MyFunctionDescriptor]
+'addListener' @ [26:20] ==> public final fun addListener(p0: (((ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?)) -> Unit..(((ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?)) -> Unit)?)): Unit defined in javafx.collections.ObservableList[MyFunctionDescriptor]
 
 'change' @ [27:20] ==> value-parameter change: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -113,26 +113,26 @@ Inferred types:
 
 'change' @ [31:44] ==> value-parameter change: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'removed' @ [31:51] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.removed: (MutableList<out ({Any & A}..A?)>..List<({Any & A}..A?)>?)[MyPropertyDescriptor]
+'removed' @ [31:51] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.removed: (MutableList<out (A..A?)>..List<(A..A?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
-'associateBy' @ [31:59] ==> public inline fun <T, K> Iterable<A>.associateBy(keySelector: (A) -> K): Map<K, A> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'associateBy' @ [31:59] ==> public inline fun <T, K> Iterable<(A..A?)>.associateBy(keySelector: ((A..A?)) -> K): Map<K, (A..A?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> A
+    <T> -> (A..A?)
     <K> -> K
 
 'toKey' @ [31:71] ==> value-parameter toKey: (A) -> K defined in net.corda.client.jfx.utils.AssociatedList.<init>[ValueParameterDescriptorImpl]
 
 'change' @ [32:42] ==> value-parameter change: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'addedSubList' @ [32:49] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.addedSubList: (MutableList<out ({Any & A}..A?)>..List<({Any & A}..A?)>?)[MyPropertyDescriptor]
+'addedSubList' @ [32:49] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.addedSubList: (MutableList<out (A..A?)>..List<(A..A?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
-'associateBy' @ [32:62] ==> public inline fun <T, K> Iterable<A>.associateBy(keySelector: (A) -> K): Map<K, A> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'associateBy' @ [32:62] ==> public inline fun <T, K> Iterable<(A..A?)>.associateBy(keySelector: ((A..A?)) -> K): Map<K, (A..A?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> A
+    <T> -> (A..A?)
     <K> -> K
 
 'toKey' @ [32:74] ==> value-parameter toKey: (A) -> K defined in net.corda.client.jfx.utils.AssociatedList.<init>[ValueParameterDescriptorImpl]
@@ -147,18 +147,18 @@ Inferred types:
     <K : (Any..Any?)> -> K
     <V : (Any..Any?)> -> B
 
-'removedSourceMap' @ [35:21] ==> val removedSourceMap: Map<K, A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[LocalVariableDescriptor]
+'removedSourceMap' @ [35:21] ==> val removedSourceMap: Map<K, (A..A?)> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'forEach' @ [35:38] ==> @HidesMembers public inline fun <K, V> Map<out K, A>.forEach(action: (Map.Entry<K, A>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [35:38] ==> @HidesMembers public inline fun <K, V> Map<out K, (A..A?)>.forEach(action: (Map.Entry<K, (A..A?)>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> K
-    <V> -> A
+    <V> -> (A..A?)
 
 'backingMap' @ [36:39] ==> protected final val backingMap: HashMap<K, Pair<B, Unit>> defined in net.corda.client.jfx.utils.AssociatedList[PropertyDescriptorImpl]
 
 'remove' @ [36:50] ==> public open fun remove(key: K): Pair<B, Unit>? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'it' @ [36:57] ==> value-parameter it: Map.Entry<K, A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [36:57] ==> value-parameter it: Map.Entry<K, (A..A?)> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [36:60] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
@@ -172,24 +172,24 @@ Inferred types:
 
 'put' @ [38:36] ==> public open fun put(key: K, value: B): B? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'it' @ [38:40] ==> value-parameter it: Map.Entry<K, A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [38:40] ==> value-parameter it: Map.Entry<K, (A..A?)> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [38:43] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
 'removed' @ [38:48] ==> val removed: B? defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'addedSourceMap' @ [40:21] ==> val addedSourceMap: Map<K, A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[LocalVariableDescriptor]
+'addedSourceMap' @ [40:21] ==> val addedSourceMap: Map<K, (A..A?)> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'forEach' @ [40:36] ==> @HidesMembers public inline fun <K, V> Map<out K, A>.forEach(action: (Map.Entry<K, A>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [40:36] ==> @HidesMembers public inline fun <K, V> Map<out K, (A..A?)>.forEach(action: (Map.Entry<K, (A..A?)>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> K
-    <V> -> A
+    <V> -> (A..A?)
 
 'backingMap' @ [41:40] ==> protected final val backingMap: HashMap<K, Pair<B, Unit>> defined in net.corda.client.jfx.utils.AssociatedList[PropertyDescriptorImpl]
 
 'get' @ [41:51] ==> public open fun get(key: K): Pair<B, Unit>? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'it' @ [41:55] ==> value-parameter it: Map.Entry<K, A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [41:55] ==> value-parameter it: Map.Entry<K, (A..A?)> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [41:58] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
@@ -205,13 +205,13 @@ Inferred types:
 
 'invoke' @ [43:29] ==> public abstract operator fun invoke(p1: K, p2: A): B defined in kotlin.Function2[FunctionInvokeDescriptor]
 
-'it' @ [43:38] ==> value-parameter it: Map.Entry<K, A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [43:38] ==> value-parameter it: Map.Entry<K, (A..A?)> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [43:41] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'it' @ [43:46] ==> value-parameter it: Map.Entry<K, A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [43:46] ==> value-parameter it: Map.Entry<K, (A..A?)> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'value' @ [43:49] ==> public abstract val value: A defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'value' @ [43:49] ==> public abstract val value: (A..A?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
 'IllegalStateException' @ [45:35] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
 
@@ -219,7 +219,7 @@ Inferred types:
 
 'put' @ [47:36] ==> public open fun put(key: K, value: Pair<B, Unit>): Pair<B, Unit>? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'it' @ [47:40] ==> value-parameter it: Map.Entry<K, A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [47:40] ==> value-parameter it: Map.Entry<K, (A..A?)> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [47:43] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
@@ -236,7 +236,7 @@ Inferred types:
 
 'put' @ [48:34] ==> public open fun put(key: K, value: B): B? defined in java.util.HashMap[JavaMethodDescriptor]
 
-'it' @ [48:38] ==> value-parameter it: Map.Entry<K, A> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [48:38] ==> value-parameter it: Map.Entry<K, (A..A?)> defined in net.corda.client.jfx.utils.AssociatedList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [48:41] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 

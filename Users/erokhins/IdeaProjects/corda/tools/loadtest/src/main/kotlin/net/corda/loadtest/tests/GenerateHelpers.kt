@@ -4,8 +4,6 @@ Inferred types:
 
 'max' @ [23:30] ==> value-parameter max: Long defined in net.corda.loadtest.tests.generateIssue[ValueParameterDescriptorImpl]
 
-'Generator' @ [23:35] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
-
 'pure' @ [23:45] ==> public final fun <A> pure(value: Currency): Generator<Currency> defined in net.corda.client.mock.Generator.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> Currency
@@ -18,17 +16,11 @@ Inferred types:
     <C> -> Party
     <R> -> IssueAndPaymentRequest
 
-'Generator' @ [24:13] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
-
 'pure' @ [24:23] ==> public final fun <A> pure(value: OpaqueBytes): Generator<OpaqueBytes> defined in net.corda.client.mock.Generator.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> OpaqueBytes
 
-'OpaqueBytes' @ [24:28] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
-
 'of' @ [24:40] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[DeserializedSimpleFunctionDescriptor]
-
-'Generator' @ [25:13] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
 'pickOne' @ [25:23] ==> public fun <A> Generator.Companion.pickOne(list: List<Party>): Generator<Party> defined in net.corda.client.mock[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -54,8 +46,6 @@ Inferred types:
 
 'max' @ [38:30] ==> value-parameter max: Long defined in net.corda.loadtest.tests.generateMove[ValueParameterDescriptorImpl]
 
-'Generator' @ [38:35] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
-
 'pure' @ [38:45] ==> public final fun <A> pure(value: Issued<Currency>): Generator<Issued<Currency>> defined in net.corda.client.mock.Generator.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> Issued<Currency>
@@ -68,8 +58,6 @@ Inferred types:
 
 'issuer' @ [38:75] ==> value-parameter issuer: Party defined in net.corda.loadtest.tests.generateMove[ValueParameterDescriptorImpl]
 
-'OpaqueBytes' @ [38:83] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
-
 'of' @ [38:95] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[DeserializedSimpleFunctionDescriptor]
 
 'currency' @ [38:103] ==> value-parameter currency: Currency defined in net.corda.loadtest.tests.generateMove[ValueParameterDescriptorImpl]
@@ -78,8 +66,6 @@ Inferred types:
 Inferred types:
     <B> -> Party
     <R> -> PaymentRequest
-
-'Generator' @ [39:13] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
 'pickOne' @ [39:23] ==> public fun <A> Generator.Companion.pickOne(list: List<Party>): Generator<Party> defined in net.corda.client.mock[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -111,8 +97,6 @@ Inferred types:
 
 'max' @ [49:30] ==> value-parameter max: Long defined in net.corda.loadtest.tests.generateExit[ValueParameterDescriptorImpl]
 
-'Generator' @ [49:35] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
-
 'pure' @ [49:45] ==> public final fun <A> pure(value: Currency): Generator<Currency> defined in net.corda.client.mock.Generator.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> Currency
@@ -126,8 +110,6 @@ Inferred types:
 'ExitRequest' @ [50:9] ==> public constructor ExitRequest(amount: Amount<Currency>, issueRef: OpaqueBytes) defined in net.corda.finance.flows.CashExitFlow.ExitRequest[DeserializedClassConstructorDescriptor]
 
 'amount' @ [50:21] ==> value-parameter amount: Amount<Currency> defined in net.corda.loadtest.tests.generateExit.<anonymous>[ValueParameterDescriptorImpl]
-
-'OpaqueBytes' @ [50:29] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
 
 'of' @ [50:41] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[DeserializedSimpleFunctionDescriptor]
 

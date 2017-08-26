@@ -1,4 +1,4 @@
-'involvedParties' @ [12:19] ==> public fun involvedParties(arrangement: Arrangement): Set<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'involvedParties' @ [12:19] ==> public fun involvedParties(arrangement: Arrangement): Set<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'arr' @ [12:35] ==> value-parameter arr: Arrangement defined in net.corda.finance.contracts.universal.PrettyPrint.<init>[ValueParameterDescriptorImpl]
 
@@ -91,7 +91,7 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'fold' @ [53:39] ==> public inline fun <T, R> Iterable<String>.fold(initial: String, operation: (String, String) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [53:39] ==> public inline fun <T, R> Iterable<String>.fold(initial: String, operation: (acc: String, String) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
     <R> -> String

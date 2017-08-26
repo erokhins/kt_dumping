@@ -205,8 +205,6 @@ Inferred types:
 
 'InArrears' @ [36:47] ==> enum entry InArrears defined in net.corda.finance.contracts.PaymentRule[FakeCallableDescriptorForObject]
 
-'BusinessCalendar' @ [38:39] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
-
 'getInstance' @ [38:56] ==> public final fun getInstance(vararg calname: String): BusinessCalendar defined in net.corda.finance.contracts.BusinessCalendar.Companion[DeserializedSimpleFunctionDescriptor]
 
 'Adjusted' @ [39:66] ==> enum entry Adjusted defined in net.corda.finance.contracts.AccrualAdjustment[FakeCallableDescriptorForObject]
@@ -233,8 +231,6 @@ Inferred types:
 
 'InArrears' @ [56:47] ==> enum entry InArrears defined in net.corda.finance.contracts.PaymentRule[FakeCallableDescriptorForObject]
 
-'BusinessCalendar' @ [58:39] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
-
 'getInstance' @ [58:56] ==> public final fun getInstance(vararg calname: String): BusinessCalendar defined in net.corda.finance.contracts.BusinessCalendar.Companion[DeserializedSimpleFunctionDescriptor]
 
 'Adjusted' @ [59:66] ==> enum entry Adjusted defined in net.corda.finance.contracts.AccrualAdjustment[FakeCallableDescriptorForObject]
@@ -242,8 +238,6 @@ Inferred types:
 'InAdvance' @ [61:45] ==> enum entry InAdvance defined in net.corda.finance.contracts.PaymentRule[FakeCallableDescriptorForObject]
 
 'Quarterly' @ [62:51] ==> enum entry Quarterly defined in net.corda.finance.contracts.Frequency[FakeCallableDescriptorForObject]
-
-'BusinessCalendar' @ [63:38] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
 
 'getInstance' @ [63:55] ==> public final fun getInstance(vararg calname: String): BusinessCalendar defined in net.corda.finance.contracts.BusinessCalendar.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -305,8 +299,6 @@ Inferred types:
 
 'UnknownType' @ [98:32] ==> public constructor UnknownType() defined in net.corda.irs.contract.UnknownType[DeserializedClassConstructorDescriptor]
 
-'BusinessCalendar' @ [99:40] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
-
 'getInstance' @ [99:57] ==> public final fun getInstance(vararg calname: String): BusinessCalendar defined in net.corda.finance.contracts.BusinessCalendar.Companion[DeserializedSimpleFunctionDescriptor]
 
 'Expression' @ [102:43] ==> public constructor Expression(expr: String) defined in net.corda.finance.contracts.Expression[DeserializedClassConstructorDescriptor]
@@ -345,8 +337,6 @@ Inferred types:
 
 'InArrears' @ [124:47] ==> enum entry InArrears defined in net.corda.finance.contracts.PaymentRule[FakeCallableDescriptorForObject]
 
-'BusinessCalendar' @ [126:39] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
-
 'getInstance' @ [126:56] ==> public final fun getInstance(vararg calname: String): BusinessCalendar defined in net.corda.finance.contracts.BusinessCalendar.Companion[DeserializedSimpleFunctionDescriptor]
 
 'Adjusted' @ [127:66] ==> enum entry Adjusted defined in net.corda.finance.contracts.AccrualAdjustment[FakeCallableDescriptorForObject]
@@ -373,8 +363,6 @@ Inferred types:
 
 'InArrears' @ [144:47] ==> enum entry InArrears defined in net.corda.finance.contracts.PaymentRule[FakeCallableDescriptorForObject]
 
-'BusinessCalendar' @ [146:39] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
-
 'getInstance' @ [146:56] ==> public final fun getInstance(vararg calname: String): BusinessCalendar defined in net.corda.finance.contracts.BusinessCalendar.Companion[DeserializedSimpleFunctionDescriptor]
 
 'Adjusted' @ [147:66] ==> enum entry Adjusted defined in net.corda.finance.contracts.AccrualAdjustment[FakeCallableDescriptorForObject]
@@ -382,8 +370,6 @@ Inferred types:
 'InAdvance' @ [149:45] ==> enum entry InAdvance defined in net.corda.finance.contracts.PaymentRule[FakeCallableDescriptorForObject]
 
 'Quarterly' @ [150:51] ==> enum entry Quarterly defined in net.corda.finance.contracts.Frequency[FakeCallableDescriptorForObject]
-
-'BusinessCalendar' @ [151:38] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
 
 'getInstance' @ [151:55] ==> public final fun getInstance(vararg calname: String): BusinessCalendar defined in net.corda.finance.contracts.BusinessCalendar.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -444,8 +430,6 @@ Inferred types:
 'Tenor' @ [184:59] ==> public constructor Tenor(name: String) defined in net.corda.finance.contracts.Tenor[DeserializedClassConstructorDescriptor]
 
 'UnknownType' @ [186:32] ==> public constructor UnknownType() defined in net.corda.irs.contract.UnknownType[DeserializedClassConstructorDescriptor]
-
-'BusinessCalendar' @ [187:40] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
 
 'getInstance' @ [187:57] ==> public final fun getInstance(vararg calname: String): BusinessCalendar defined in net.corda.finance.contracts.BusinessCalendar.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -883,9 +867,9 @@ Inferred types:
 
 'input' @ [379:17] ==> public final fun input(stateLabel: String): Unit defined in net.corda.testing.TransactionDSL[DeserializedSimpleFunctionDescriptor]
 
-'output' @ [380:58] ==> public final inline fun <reified S : ContractState> String.output(): ContractState defined in net.corda.testing.LedgerDSL[DeserializedSimpleFunctionDescriptor]
+'output' @ [380:58] ==> public final inline fun <reified S : ContractState> String.output(): InterestRateSwap.State defined in net.corda.testing.LedgerDSL[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified S : ContractState> -> ContractState
+    <reified S : ContractState> -> State
 
 'output' @ [381:17] ==> @JvmOverloads public final fun output(label: String? = ..., notary: Party = ..., encumbrance: Int? = ..., contractStateClosure: () -> ContractState): Unit defined in net.corda.testing.TransactionDSL[DeserializedSimpleFunctionDescriptor]
 
@@ -1840,9 +1824,9 @@ Inferred types:
 
 'input' @ [686:17] ==> public final fun input(stateLabel: String): Unit defined in net.corda.testing.TransactionDSL[DeserializedSimpleFunctionDescriptor]
 
-'output' @ [687:60] ==> public final inline fun <reified S : ContractState> String.output(): ContractState defined in net.corda.testing.LedgerDSL[DeserializedSimpleFunctionDescriptor]
+'output' @ [687:60] ==> public final inline fun <reified S : ContractState> String.output(): InterestRateSwap.State defined in net.corda.testing.LedgerDSL[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified S : ContractState> -> ContractState
+    <reified S : ContractState> -> State
 
 'output' @ [688:17] ==> @JvmOverloads public final fun output(label: String? = ..., notary: Party = ..., encumbrance: Int? = ..., contractStateClosure: () -> ContractState): Unit defined in net.corda.testing.TransactionDSL[DeserializedSimpleFunctionDescriptor]
 
@@ -1878,9 +1862,9 @@ Inferred types:
 
 'copy' @ [693:51] ==> public final fun copy(baseCurrency: Currency = ..., eligibleCurrency: Currency = ..., eligibleCreditSupport: String = ..., independentAmounts: Amount<Currency> = ..., threshold: Amount<Currency> = ..., minimumTransferAmount: Amount<Currency> = ..., rounding: Amount<Currency> = ..., valuationDateDescription: String = ..., notificationTime: String = ..., resolutionTime: String = ..., interestRate: ReferenceRate = ..., addressForTransfers: String = ..., exposure: UnknownType = ..., localBusinessDay: BusinessCalendar = ..., dailyInterestAmount: Expression = ..., tradeID: String = ..., hashLegalDocs: String = ...): InterestRateSwap.Common defined in net.corda.irs.contract.InterestRateSwap.Common[DeserializedSimpleFunctionDescriptor]
 
-'output' @ [696:60] ==> public final inline fun <reified S : ContractState> String.output(): ContractState defined in net.corda.testing.LedgerDSL[DeserializedSimpleFunctionDescriptor]
+'output' @ [696:60] ==> public final inline fun <reified S : ContractState> String.output(): InterestRateSwap.State defined in net.corda.testing.LedgerDSL[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified S : ContractState> -> ContractState
+    <reified S : ContractState> -> State
 
 'output' @ [697:17] ==> @JvmOverloads public final fun output(label: String? = ..., notary: Party = ..., encumbrance: Int? = ..., contractStateClosure: () -> ContractState): Unit defined in net.corda.testing.TransactionDSL[DeserializedSimpleFunctionDescriptor]
 

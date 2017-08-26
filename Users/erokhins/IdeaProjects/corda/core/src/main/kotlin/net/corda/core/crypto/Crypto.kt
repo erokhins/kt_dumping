@@ -136,23 +136,15 @@ Inferred types:
 
 'AlgorithmIdentifier' @ [161:13] ==> public constructor AlgorithmIdentifier(p0: (ASN1ObjectIdentifier..ASN1ObjectIdentifier?)) defined in org.bouncycastle.asn1.x509.AlgorithmIdentifier[JavaClassConstructorDescriptor]
 
-'CordaObjectIdentifier' @ [161:33] ==> public object CordaObjectIdentifier defined in net.corda.core.crypto.provider in file CordaSecurityProvider.kt[FakeCallableDescriptorForObject]
-
 'COMPOSITE_KEY' @ [161:55] ==> @JvmField public final val COMPOSITE_KEY: ASN1ObjectIdentifier defined in net.corda.core.crypto.provider.CordaObjectIdentifier[PropertyDescriptorImpl]
 
 'emptyList' @ [162:13] ==> public fun <T> emptyList(): List<AlgorithmIdentifier> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AlgorithmIdentifier
 
-'CordaSecurityProvider' @ [163:13] ==> public companion object defined in net.corda.core.crypto.provider.CordaSecurityProvider[FakeCallableDescriptorForObject]
-
 'PROVIDER_NAME' @ [163:35] ==> public const final val PROVIDER_NAME: String defined in net.corda.core.crypto.provider.CordaSecurityProvider.Companion[PropertyDescriptorImpl]
 
-'CompositeKey' @ [164:13] ==> public companion object defined in net.corda.core.crypto.composite.CompositeKey[FakeCallableDescriptorForObject]
-
 'KEY_ALGORITHM' @ [164:26] ==> public final val KEY_ALGORITHM: String defined in net.corda.core.crypto.composite.CompositeKey.Companion[PropertyDescriptorImpl]
-
-'CompositeSignature' @ [165:13] ==> public companion object defined in net.corda.core.crypto.composite.CompositeSignature[FakeCallableDescriptorForObject]
 
 'SIGNATURE_ALGORITHM' @ [165:32] ==> public const final val SIGNATURE_ALGORITHM: String defined in net.corda.core.crypto.composite.CompositeSignature.Companion[PropertyDescriptorImpl]
 
@@ -288,9 +280,9 @@ Inferred types:
 
 'JvmStatic' @ [211:5] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
-'ArrayList' @ [212:62] ==> public final fun <E> <init>(p0: (MutableCollection<out (SignatureScheme..SignatureScheme?)>..Collection<(SignatureScheme..SignatureScheme?)>?)): ArrayList<SignatureScheme> /* = ArrayList<SignatureScheme> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
+'ArrayList' @ [212:62] ==> public final fun <E> <init>(p0: (MutableCollection<out (SignatureScheme..SignatureScheme?)>..Collection<(SignatureScheme..SignatureScheme?)>?)): ArrayList<(SignatureScheme..SignatureScheme?)> /* = ArrayList<(SignatureScheme..SignatureScheme?)> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> SignatureScheme
+    <E> -> (net.corda.core.crypto.SignatureScheme..net.corda.core.crypto.SignatureScheme?)
 
 'signatureSchemeMap' @ [212:72] ==> private final val signatureSchemeMap: Map<String, SignatureScheme> defined in net.corda.core.crypto.Crypto[PropertyDescriptorImpl]
 

@@ -6,47 +6,41 @@ Inferred types:
 
 'COGS' @ [22:41] ==> enum entry COGS defined in de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon[FakeCallableDescriptorForObject]
 
-'observableList' @ [25:31] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (ReportingCurrencyModel) -> ObservableList<Currency>): TrackedDelegate.ObservableListDelegate<ReportingCurrencyModel, Currency> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ReportingCurrencyModel
-    <T> -> Currency
+'getValue' @ [25:31] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ReportingCurrencyModel' @ [25:46] ==> public constructor ReportingCurrencyModel() defined in net.corda.explorer.model.ReportingCurrencyModel[ClassConstructorDescriptorImpl]
 
-'objectProperty' @ [26:40] ==> public inline fun <reified M : Any, T> objectProperty(noinline objectProperty: (SettingsModel) -> ObjectProperty<Currency>): TrackedDelegate.ObjectPropertyDelegate<SettingsModel, Currency> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> SettingsModel
-    <T> -> Currency
+'supportedCurrencies' @ [25:70] ==> public final val supportedCurrencies: ObservableList<Currency> defined in net.corda.explorer.model.ReportingCurrencyModel[PropertyDescriptorImpl]
+
+'getValue' @ [26:40] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObjectProperty<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObjectPropertyDelegate[DeserializedSimpleFunctionDescriptor]
 
 'SettingsModel' @ [26:55] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
 
-'objectProperty' @ [27:31] ==> public inline fun <reified M : Any, T> objectProperty(noinline objectProperty: (SettingsModel) -> ObjectProperty<Boolean>): TrackedDelegate.ObjectPropertyDelegate<SettingsModel, Boolean> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> SettingsModel
-    <T> -> Boolean
+'reportingCurrencyProperty' @ [26:70] ==> public final val reportingCurrencyProperty: ObjectProperty<Currency> defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
+
+'getValue' @ [27:31] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObjectProperty<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObjectPropertyDelegate[DeserializedSimpleFunctionDescriptor]
 
 'SettingsModel' @ [27:46] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
 
-'objectProperty' @ [28:31] ==> public inline fun <reified M : Any, T> objectProperty(noinline objectProperty: (SettingsModel) -> ObjectProperty<Boolean>): TrackedDelegate.ObjectPropertyDelegate<SettingsModel, Boolean> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> SettingsModel
-    <T> -> Boolean
+'rememberMeProperty' @ [27:61] ==> public final val rememberMeProperty: ObjectProperty<Boolean> defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
+
+'getValue' @ [28:31] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObjectProperty<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObjectPropertyDelegate[DeserializedSimpleFunctionDescriptor]
 
 'SettingsModel' @ [28:46] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
 
-'objectProperty' @ [29:25] ==> public inline fun <reified M : Any, T> objectProperty(noinline objectProperty: (SettingsModel) -> ObjectProperty<String>): TrackedDelegate.ObjectPropertyDelegate<SettingsModel, String> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> SettingsModel
-    <T> -> String
+'fullscreenProperty' @ [28:61] ==> public final val fullscreenProperty: ObjectProperty<Boolean> defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
+
+'getValue' @ [29:25] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObjectProperty<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObjectPropertyDelegate[DeserializedSimpleFunctionDescriptor]
 
 'SettingsModel' @ [29:40] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
 
-'objectProperty' @ [30:25] ==> public inline fun <reified M : Any, T> objectProperty(noinline objectProperty: (SettingsModel) -> ObjectProperty<String>): TrackedDelegate.ObjectPropertyDelegate<SettingsModel, String> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> SettingsModel
-    <T> -> String
+'hostProperty' @ [29:55] ==> public final val hostProperty: ObjectProperty<String> defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
+
+'getValue' @ [30:25] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObjectProperty<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObjectPropertyDelegate[DeserializedSimpleFunctionDescriptor]
 
 'SettingsModel' @ [30:40] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
+
+'portProperty' @ [30:55] ==> public final val portProperty: ObjectProperty<String> defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
 
 'fxid' @ [33:48] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, ComboBox<Currency>> defined in net.corda.explorer.views.Settings[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -124,7 +118,7 @@ Inferred types:
 
 'textFormatter' @ [50:23] ==> public final var TextField.textFormatter: (TextFormatter<*>..TextFormatter<*>?)[MyPropertyDescriptor]
 
-'intFormatter' @ [50:39] ==> public fun intFormatter(): TextFormatter<Int> defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'intFormatter' @ [50:39] ==> public fun intFormatter(): TextFormatter<Int> defined in net.corda.explorer.views in file Formatter.kt[SimpleFunctionDescriptorImpl]
 
 'portTextField' @ [51:9] ==> private final val portTextField: TextField defined in net.corda.explorer.views.Settings[PropertyDescriptorImpl]
 

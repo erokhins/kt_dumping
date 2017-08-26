@@ -1,4 +1,6 @@
-'SerializerFactory' @ [13:43] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
+'!!' @ [13:43] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: String?): String[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> String
 
 'primitiveTypeName' @ [13:61] ==> public final fun primitiveTypeName(type: Type): String? defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 

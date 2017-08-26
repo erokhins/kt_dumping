@@ -5,7 +5,7 @@ Inferred types:
 
 'Class' @ [9:114] ==> private constructor Class<T : (Any..Any?)>(p0: (ClassLoader..ClassLoader?)) defined in java.lang.Class[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@5afae577
 
 'java' @ [9:127] ==> public val <T> KClass<Class<*>>.java: Class<Class<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -25,7 +25,7 @@ Inferred types:
 
 'name' @ [10:70] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'forName' @ [12:65] ==> @CallerSensitive public open fun forName(p0: (String..String?), p1: Boolean, p2: (ClassLoader..ClassLoader?)): (Class<*>..Class<*>?) defined in java.lang.Class[JavaMethodDescriptor]
 

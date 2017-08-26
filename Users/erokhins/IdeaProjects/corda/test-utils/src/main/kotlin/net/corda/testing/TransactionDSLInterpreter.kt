@@ -108,8 +108,6 @@ Inferred types:
 
 'timeWindow' @ [124:13] ==> public open fun timeWindow(data: TimeWindow): Unit defined in net.corda.testing.TransactionDSL[SimpleFunctionDescriptorImpl]
 
-'TimeWindow' @ [124:24] ==> public companion object defined in net.corda.core.contracts.TimeWindow[FakeCallableDescriptorForObject]
-
 'withTolerance' @ [124:35] ==> @JvmStatic public final fun withTolerance(instant: Instant, tolerance: Duration): TimeWindow defined in net.corda.core.contracts.TimeWindow.Companion[DeserializedSimpleFunctionDescriptor]
 
 'time' @ [124:49] ==> value-parameter time: Instant defined in net.corda.testing.TransactionDSL.timeWindow[ValueParameterDescriptorImpl]

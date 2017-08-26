@@ -6,7 +6,7 @@
 
 'doPrivileged' @ [16:26] ==> @CallerSensitive public open fun <T : (Any..Any?)> doPrivileged(p0: (PrivilegedAction<(Unit..Unit?)>..PrivilegedAction<(Unit..Unit?)>?)): (Unit..Unit?) defined in java.security.AccessController[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Unit
+    <T : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'PrivilegedAction' @ [16:39] ==> public fun <T : (Any..Any?)> PrivilegedAction(function: () -> (Unit..Unit?)): PrivilegedAction<Unit> defined in java.security[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -36,15 +36,11 @@ Inferred types:
 
 'compositeKeyOID' @ [24:36] ==> val compositeKeyOID: (String..String?) defined in net.corda.core.crypto.provider.CordaSecurityProvider.setup[LocalVariableDescriptor]
 
-'CompositeKey' @ [24:54] ==> public companion object defined in net.corda.core.crypto.composite.CompositeKey[FakeCallableDescriptorForObject]
-
 'KEY_ALGORITHM' @ [24:67] ==> public final val KEY_ALGORITHM: String defined in net.corda.core.crypto.composite.CompositeKey.Companion[PropertyDescriptorImpl]
 
 'put' @ [25:9] ==> public open fun put(key: (Any..Any?), value: (Any..Any?)): Any? defined in net.corda.core.crypto.provider.CordaSecurityProvider[JavaMethodDescriptor]
 
 'compositeKeyOID' @ [25:40] ==> val compositeKeyOID: (String..String?) defined in net.corda.core.crypto.provider.CordaSecurityProvider.setup[LocalVariableDescriptor]
-
-'CompositeKey' @ [25:58] ==> public companion object defined in net.corda.core.crypto.composite.CompositeKey[FakeCallableDescriptorForObject]
 
 'KEY_ALGORITHM' @ [25:71] ==> public final val KEY_ALGORITHM: String defined in net.corda.core.crypto.composite.CompositeKey.Companion[PropertyDescriptorImpl]
 
@@ -52,15 +48,11 @@ Inferred types:
 
 'compositeKeyOID' @ [26:35] ==> val compositeKeyOID: (String..String?) defined in net.corda.core.crypto.provider.CordaSecurityProvider.setup[LocalVariableDescriptor]
 
-'CompositeSignature' @ [26:53] ==> public companion object defined in net.corda.core.crypto.composite.CompositeSignature[FakeCallableDescriptorForObject]
-
 'SIGNATURE_ALGORITHM' @ [26:72] ==> public const final val SIGNATURE_ALGORITHM: String defined in net.corda.core.crypto.composite.CompositeSignature.Companion[PropertyDescriptorImpl]
 
 'put' @ [27:9] ==> public open fun put(key: (Any..Any?), value: (Any..Any?)): Any? defined in net.corda.core.crypto.provider.CordaSecurityProvider[JavaMethodDescriptor]
 
 'compositeKeyOID' @ [27:39] ==> val compositeKeyOID: (String..String?) defined in net.corda.core.crypto.provider.CordaSecurityProvider.setup[LocalVariableDescriptor]
-
-'CompositeSignature' @ [27:57] ==> public companion object defined in net.corda.core.crypto.composite.CompositeSignature[FakeCallableDescriptorForObject]
 
 'SIGNATURE_ALGORITHM' @ [27:76] ==> public const final val SIGNATURE_ALGORITHM: String defined in net.corda.core.crypto.composite.CompositeSignature.Companion[PropertyDescriptorImpl]
 

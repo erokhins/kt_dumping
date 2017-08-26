@@ -18,8 +18,6 @@
 
 'ref' @ [30:35] ==> public abstract fun ref(bytes: OpaqueBytes): PartyAndReference defined in net.corda.core.identity.AbstractParty[SimpleFunctionDescriptorImpl]
 
-'OpaqueBytes' @ [30:39] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
-
 'of' @ [30:51] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[SimpleFunctionDescriptorImpl]
 
 'bytes' @ [30:55] ==> value-parameter vararg bytes: Byte defined in net.corda.core.identity.AbstractParty.ref[ValueParameterDescriptorImpl]

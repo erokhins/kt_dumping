@@ -121,13 +121,9 @@ Inferred types:
 Inferred types:
     <R> -> SignedTransaction
 
-'TwoPartyDealFlow' @ [41:28] ==> public object TwoPartyDealFlow defined in net.corda.finance.flows[FakeCallableDescriptorForObject]
-
 'Instigator' @ [41:45] ==> public constructor Instigator(otherParty: Party, payload: TwoPartyDealFlow.AutoOffer, myKey: PublicKey, progressTracker: ProgressTracker = ...) defined in net.corda.finance.flows.TwoPartyDealFlow.Instigator[DeserializedClassConstructorDescriptor]
 
 'otherParty' @ [42:21] ==> public final val otherParty: Party defined in net.corda.vega.flows.IRSTradeFlow.Requester[PropertyDescriptorImpl]
-
-'TwoPartyDealFlow' @ [43:21] ==> public object TwoPartyDealFlow defined in net.corda.finance.flows[FakeCallableDescriptorForObject]
 
 'AutoOffer' @ [43:38] ==> public constructor AutoOffer(notary: Party, dealBeingOffered: DealState) defined in net.corda.finance.flows.TwoPartyDealFlow.AutoOffer[DeserializedClassConstructorDescriptor]
 
@@ -200,8 +196,6 @@ Inferred types:
 'subFlow' @ [60:13] ==> @Suspendable public open fun <R> subFlow(subLogic: FlowLogic<SignedTransaction>): SignedTransaction defined in net.corda.vega.flows.IRSTradeFlow.Receiver[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <R> -> SignedTransaction
-
-'TwoPartyDealFlow' @ [60:21] ==> public object TwoPartyDealFlow defined in net.corda.finance.flows[FakeCallableDescriptorForObject]
 
 'Acceptor' @ [60:38] ==> public constructor Acceptor(otherParty: Party, progressTracker: ProgressTracker = ...) defined in net.corda.finance.flows.TwoPartyDealFlow.Acceptor[DeserializedClassConstructorDescriptor]
 

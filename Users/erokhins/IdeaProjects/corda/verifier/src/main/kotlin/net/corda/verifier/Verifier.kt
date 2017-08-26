@@ -78,11 +78,7 @@ Inferred types:
 
 'createSession' @ [57:42] ==> public abstract fun createSession(p0: (String..String?), p1: (String..String?), p2: Boolean, p3: Boolean, p4: Boolean, p5: Boolean, p6: Int): (ClientSession..ClientSession?) defined in org.apache.activemq.artemis.api.core.client.ClientSessionFactory[JavaMethodDescriptor]
 
-'VerifierApi' @ [58:21] ==> public object VerifierApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'VERIFIER_USERNAME' @ [58:33] ==> public final val VERIFIER_USERNAME: String defined in net.corda.nodeapi.VerifierApi[DeserializedPropertyDescriptor]
-
-'VerifierApi' @ [58:52] ==> public object VerifierApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
 
 'VERIFIER_USERNAME' @ [58:64] ==> public final val VERIFIER_USERNAME: String defined in net.corda.nodeapi.VerifierApi[DeserializedPropertyDescriptor]
 
@@ -195,8 +191,6 @@ Inferred types:
 'info' @ [85:17] ==> public abstract fun info(p0: (String..String?)): Unit defined in org.slf4j.Logger[JavaMethodDescriptor]
 
 'sleep' @ [86:20] ==> public open fun sleep(p0: Long): Unit defined in java.lang.Thread[JavaMethodDescriptor]
-
-'Long' @ [86:26] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
 'MAX_VALUE' @ [86:31] ==> public const final val MAX_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 

@@ -122,8 +122,6 @@ Inferred types:
 
 'User' @ [129:48] ==> public constructor User(username: String, password: String, permissions: Set<String>) defined in net.corda.nodeapi.User[DeserializedClassConstructorDescriptor]
 
-'ArtemisMessagingComponent' @ [129:53] ==> public companion object defined in net.corda.nodeapi.ArtemisMessagingComponent[FakeCallableDescriptorForObject]
-
 'NODE_USER' @ [129:79] ==> public const final val NODE_USER: String defined in net.corda.nodeapi.ArtemisMessagingComponent.Companion[DeserializedPropertyDescriptor]
 
 'setOf' @ [129:94] ==> @InlineOnly public inline fun <T> setOf(): Set<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -297,9 +295,9 @@ Inferred types:
 
 'getPlugin' @ [180:28] ==> public open fun <T : (Any..Any?)> getPlugin(p0: (Class<(ShellFactory..ShellFactory?)>..Class<(ShellFactory..ShellFactory?)>?)): (ShellFactory..ShellFactory?) defined in org.crsh.plugin.PluginContext[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ShellFactory
+    <T : (Any..Any?)> -> (org.crsh.shell.ShellFactory..org.crsh.shell.ShellFactory?)
 
-'ShellFactory' @ [180:38] ==> public fun ShellFactory(function: ((Principal..Principal?)) -> (Shell..Shell?)): ShellFactory defined in org.crsh.shell[SimpleFunctionDescriptorImpl]
+'ShellFactory' @ [180:38] ==> public fun ShellFactory(function: ((Principal..Principal?)) -> (Shell..Shell?)): ShellFactory defined in org.crsh.shell[SamConstructorDescriptorImpl]
 
 'java' @ [180:58] ==> public val <T> KClass<ShellFactory>.java: Class<ShellFactory> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -307,9 +305,9 @@ Inferred types:
 
 'create' @ [180:64] ==> public abstract fun create(p0: (Principal..Principal?)): (Shell..Shell?) defined in org.crsh.shell.ShellFactory[JavaMethodDescriptor]
 
-'lazy' @ [184:50] ==> public fun <T> lazy(initializer: () -> ObjectMapper): Lazy<ObjectMapper> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [184:50] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ObjectMapper
+    <T> -> T
 
 'JacksonSupport' @ [187:9] ==> public object JacksonSupport defined in net.corda.jackson[FakeCallableDescriptorForObject]
 
@@ -333,7 +331,7 @@ Inferred types:
 
 'addDeserializer' @ [189:23] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(InputStream..InputStream?)>..Class<(InputStream..InputStream?)>?), p1: (JsonDeserializer<out (InputStream..InputStream?)>..JsonDeserializer<out (InputStream..InputStream?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> InputStream
+    <T : (Any..Any?)> -> (java.io.InputStream..java.io.InputStream?)
 
 'InputStream' @ [189:39] ==> public constructor InputStream() defined in java.io.InputStream[JavaClassConstructorDescriptor]
 
@@ -347,7 +345,7 @@ Inferred types:
 
 'addDeserializer' @ [190:23] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(UniqueIdentifier..UniqueIdentifier?)>..Class<(UniqueIdentifier..UniqueIdentifier?)>?), p1: (JsonDeserializer<out (UniqueIdentifier..UniqueIdentifier?)>..JsonDeserializer<out (UniqueIdentifier..UniqueIdentifier?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UniqueIdentifier
+    <T : (Any..Any?)> -> (net.corda.core.contracts.UniqueIdentifier..net.corda.core.contracts.UniqueIdentifier?)
 
 'UniqueIdentifier' @ [190:39] ==> public companion object defined in net.corda.core.contracts.UniqueIdentifier[FakeCallableDescriptorForObject]
 
@@ -361,7 +359,7 @@ Inferred types:
 
 'addDeserializer' @ [191:23] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(UUID..UUID?)>..Class<(UUID..UUID?)>?), p1: (JsonDeserializer<out (UUID..UUID?)>..JsonDeserializer<out (UUID..UUID?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UUID
+    <T : (Any..Any?)> -> (java.util.UUID..java.util.UUID?)
 
 'java' @ [191:51] ==> public val <T> KClass<UUID>.java: Class<UUID> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -389,7 +387,7 @@ Inferred types:
 
 'addSerializer' @ [201:23] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (Observable<*>..Observable<*>?)>..Class<out (Observable<*>..Observable<*>?)>?), p1: (JsonSerializer<(Observable<*>..Observable<*>?)>..JsonSerializer<(Observable<*>..Observable<*>?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Observable<*>
+    <T : (Any..Any?)> -> (rx.Observable<*>..rx.Observable<*>?)
 
 'Observable' @ [201:37] ==> public constructor Observable() defined in java.util.Observable[JavaClassConstructorDescriptor]
 
@@ -403,7 +401,7 @@ Inferred types:
 
 'addSerializer' @ [202:23] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (InputStream..InputStream?)>..Class<out (InputStream..InputStream?)>?), p1: (JsonSerializer<(InputStream..InputStream?)>..JsonSerializer<(InputStream..InputStream?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> InputStream
+    <T : (Any..Any?)> -> (java.io.InputStream..java.io.InputStream?)
 
 'InputStream' @ [202:37] ==> public constructor InputStream() defined in java.io.InputStream[JavaClassConstructorDescriptor]
 
@@ -425,9 +423,9 @@ Inferred types:
 
 'INDENT_OUTPUT' @ [206:41] ==> enum entry INDENT_OUTPUT defined in com.fasterxml.jackson.databind.SerializationFeature[FakeCallableDescriptorForObject]
 
-'lazy' @ [211:31] ==> public fun <T> lazy(initializer: () -> ObjectMapper): Lazy<ObjectMapper> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [211:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ObjectMapper
+    <T> -> T
 
 'createOutputMapper' @ [211:38] ==> private final fun createOutputMapper(factory: JsonFactory): ObjectMapper defined in net.corda.node.shell.InteractiveShell[SimpleFunctionDescriptorImpl]
 
@@ -451,7 +449,7 @@ Inferred types:
 
 'name' @ [221:74] ==> public final val <T : (Any..Any?)> Class<out FlowLogic<*>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<*>
+    <T : (Any..Any?)> -> Captured(out FlowLogic<*>)
 
 'if (matches.isEmpty()) {
             output.println("No matching flow found, run 'flow list' to see your options.", Color.red)
@@ -598,9 +596,9 @@ Inferred types:
 
 'yamlInputMapper' @ [275:46] ==> private final val yamlInputMapper: ObjectMapper defined in net.corda.node.shell.InteractiveShell[PropertyDescriptorImpl]
 
-'StringToMethodCallParser' @ [278:22] ==> @JvmOverloads public constructor StringToMethodCallParser<in T : Any>(targetType: Class<out Any>, om: ObjectMapper = ...) defined in net.corda.jackson.StringToMethodCallParser[DeserializedClassConstructorDescriptor]
+'StringToMethodCallParser' @ [278:22] ==> @JvmOverloads public constructor StringToMethodCallParser<in T : Any>(targetType: Class<out FlowLogic<*>>, om: ObjectMapper = ...) defined in net.corda.jackson.StringToMethodCallParser[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <in T : Any> -> Any
+    <in T : Any> -> FlowLogic<*>
 
 'clazz' @ [278:47] ==> value-parameter clazz: Class<out FlowLogic<*>> defined in net.corda.node.shell.InteractiveShell.runFlowFromString[ValueParameterDescriptorImpl]
 
@@ -614,13 +612,13 @@ Inferred types:
 
 'constructors' @ [280:28] ==> public final val <T : (Any..Any?)> Class<out FlowLogic<*>>.constructors: (Array<(Constructor<*>..Constructor<*>?)>..Array<out (Constructor<*>..Constructor<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<*>
+    <T : (Any..Any?)> -> Captured(out FlowLogic<*>)
 
 'ctor' @ [283:32] ==> val ctor: (Constructor<*>..Constructor<*>?) defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
 
 'parameterTypes' @ [283:37] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'map' @ [283:52] ==> public inline fun <T, R> Array<out (Class<*>..Class<*>?)>.map(transform: ((Class<*>..Class<*>?)) -> (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -631,7 +629,7 @@ Inferred types:
 
 'simpleName' @ [283:61] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'paramNamesFromConstructor' @ [284:24] ==> var paramNamesFromConstructor: List<String>? defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
 
@@ -657,13 +655,13 @@ Inferred types:
 
 'paramNamesFromConstructor' @ [289:17] ==> var paramNamesFromConstructor: List<String>? defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
 
-'parser' @ [289:45] ==> val parser: StringToMethodCallParser<Any> defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
+'parser' @ [289:45] ==> val parser: StringToMethodCallParser<FlowLogic<*>> defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
 
 'paramNamesFromConstructor' @ [289:52] ==> public open fun paramNamesFromConstructor(ctor: Constructor<*>): List<String> defined in net.corda.jackson.StringToMethodCallParser[DeserializedSimpleFunctionDescriptor]
 
 'ctor' @ [289:78] ==> val ctor: (Constructor<*>..Constructor<*>?) defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
 
-'parser' @ [290:28] ==> val parser: StringToMethodCallParser<Any> defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
+'parser' @ [290:28] ==> val parser: StringToMethodCallParser<FlowLogic<*>> defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
 
 'parseArguments' @ [290:35] ==> public final fun parseArguments(methodNameHint: String, parameters: List<Pair<String, Class<*>>>, args: String): Array<Any?> defined in net.corda.jackson.StringToMethodCallParser[DeserializedSimpleFunctionDescriptor]
 
@@ -671,7 +669,7 @@ Inferred types:
 
 'name' @ [290:56] ==> public final val <T : (Any..Any?)> Class<out FlowLogic<*>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<*>
+    <T : (Any..Any?)> -> Captured(out FlowLogic<*>)
 
 'paramNamesFromConstructor' @ [290:62] ==> var paramNamesFromConstructor: List<String>? defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
 
@@ -684,7 +682,7 @@ Inferred types:
 
 'parameterTypes' @ [290:97] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'inputData' @ [290:114] ==> value-parameter inputData: String defined in net.corda.node.shell.InteractiveShell.runFlowFromString[ValueParameterDescriptorImpl]
 
@@ -696,7 +694,7 @@ Inferred types:
 
 'parameterTypes' @ [291:39] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'size' @ [291:54] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
@@ -714,7 +712,7 @@ Inferred types:
 
 'parameterTypes' @ [292:109] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'size' @ [292:124] ==> public final val size: Int defined in kotlin.Array[DeserializedPropertyDescriptor]
 
@@ -748,7 +746,7 @@ Inferred types:
 
 'parameterTypes' @ [302:37] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'map' @ [302:52] ==> public inline fun <T, R> Array<out (Class<*>..Class<*>?)>.map(transform: ((Class<*>..Class<*>?)) -> (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -759,7 +757,7 @@ Inferred types:
 
 'simpleName' @ [302:61] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'errors' @ [303:17] ==> val errors: ArrayList<String> defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
 
@@ -771,7 +769,7 @@ Inferred types:
 
 'parameterTypes' @ [305:37] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameterTypes: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'map' @ [305:52] ==> public inline fun <T, R> Array<out (Class<*>..Class<*>?)>.map(transform: ((Class<*>..Class<*>?)) -> (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -782,7 +780,7 @@ Inferred types:
 
 'simpleName' @ [305:61] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'errors' @ [306:17] ==> val errors: ArrayList<String> defined in net.corda.node.shell.InteractiveShell.runFlowFromString[LocalVariableDescriptor]
 
@@ -849,7 +847,7 @@ Inferred types:
 
 'isDone' @ [322:25] ==> public final val <V : (Any..Any?)> Future<out (Any..Any?)>.isDone: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <V : (Any..Any?)> -> Captured(*)
 
 'out' @ [323:17] ==> value-parameter out: RenderPrintWriter defined in net.corda.node.shell.InteractiveShell.runStateMachinesView[ValueParameterDescriptorImpl]
 
@@ -885,9 +883,9 @@ Inferred types:
 
 'JvmStatic' @ [340:5] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
-'StringToMethodCallParser' @ [342:22] ==> @JvmOverloads public constructor StringToMethodCallParser<in T : Any>(targetType: Class<out Any>, om: ObjectMapper = ...) defined in net.corda.jackson.StringToMethodCallParser[DeserializedClassConstructorDescriptor]
+'StringToMethodCallParser' @ [342:22] ==> @JvmOverloads public constructor StringToMethodCallParser<in T : Any>(targetType: Class<out CordaRPCOps>, om: ObjectMapper = ...) defined in net.corda.jackson.StringToMethodCallParser[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <in T : Any> -> Any
+    <in T : Any> -> CordaRPCOps
 
 'java' @ [342:66] ==> public val <T> KClass<CordaRPCOps>.java: Class<CordaRPCOps> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -897,7 +895,7 @@ Inferred types:
 
 'attributes' @ [342:80] ==> public final val <P : (Any..Any?)> InvocationContext<out Any>.attributes: (MutableMap<(String..String?), (Any..Any?)>..Map<(String..String?), (Any..Any?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <P : (Any..Any?)> -> Any
+    <P : (Any..Any?)> -> Captured(out Any)
 
 'input' @ [344:19] ==> value-parameter input: List<String> defined in net.corda.node.shell.InteractiveShell.runRPCFromString[ValueParameterDescriptorImpl]
 
@@ -927,21 +925,21 @@ Inferred types:
 
 'context' @ [355:51] ==> value-parameter context: InvocationContext<out Any> defined in net.corda.node.shell.InteractiveShell.runRPCFromString[ValueParameterDescriptorImpl]
 
-'parser' @ [356:24] ==> val parser: StringToMethodCallParser<Any> defined in net.corda.node.shell.InteractiveShell.runRPCFromString[LocalVariableDescriptor]
+'parser' @ [356:24] ==> val parser: StringToMethodCallParser<CordaRPCOps> defined in net.corda.node.shell.InteractiveShell.runRPCFromString[LocalVariableDescriptor]
 
-'parse' @ [356:31] ==> public final fun parse(target: Any?, command: String): StringToMethodCallParser<Any>.ParsedMethodCall defined in net.corda.jackson.StringToMethodCallParser[DeserializedSimpleFunctionDescriptor]
+'parse' @ [356:31] ==> public final fun parse(target: CordaRPCOps?, command: String): StringToMethodCallParser<CordaRPCOps>.ParsedMethodCall defined in net.corda.jackson.StringToMethodCallParser[DeserializedSimpleFunctionDescriptor]
 
 'context' @ [356:37] ==> value-parameter context: InvocationContext<out Any> defined in net.corda.node.shell.InteractiveShell.runRPCFromString[ValueParameterDescriptorImpl]
 
 'attributes' @ [356:45] ==> public final val <P : (Any..Any?)> InvocationContext<out Any>.attributes: (MutableMap<(String..String?), (Any..Any?)>..Map<(String..String?), (Any..Any?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <P : (Any..Any?)> -> Any
+    <P : (Any..Any?)> -> Captured(out Any)
 
 'cmd' @ [356:79] ==> val cmd: String defined in net.corda.node.shell.InteractiveShell.runRPCFromString[LocalVariableDescriptor]
 
 'result' @ [357:13] ==> var result: Any? defined in net.corda.node.shell.InteractiveShell.runRPCFromString[LocalVariableDescriptor]
 
-'call' @ [357:22] ==> val call: StringToMethodCallParser<Any>.ParsedMethodCall defined in net.corda.node.shell.InteractiveShell.runRPCFromString[LocalVariableDescriptor]
+'call' @ [357:22] ==> val call: StringToMethodCallParser<CordaRPCOps>.ParsedMethodCall defined in net.corda.node.shell.InteractiveShell.runRPCFromString[LocalVariableDescriptor]
 
 'call' @ [357:27] ==> public open fun call(): Any? defined in net.corda.jackson.StringToMethodCallParser.ParsedMethodCall[DeserializedSimpleFunctionDescriptor]
 
@@ -967,7 +965,7 @@ Inferred types:
 
 'isDone' @ [362:29] ==> public final val <V : (Any..Any?)> Future<out (Any..Any?)>.isDone: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <V : (Any..Any?)> -> Captured(*)
 
 'out' @ [363:21] ==> value-parameter out: RenderPrintWriter defined in net.corda.node.shell.InteractiveShell.runRPCFromString[ValueParameterDescriptorImpl]
 
@@ -1131,9 +1129,9 @@ Inferred types:
                 else -> null
             }
             else -> null
-        }' @ [435:41] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Observable<out Any>?, entry1: Observable<out Any>?, entry2: Observable<out Any>?): Observable<out Any>?[SimpleFunctionDescriptorImpl]
+        }' @ [435:41] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Observable<*>?, entry1: Observable<*>?, entry2: Observable<*>?): Observable<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Observable<out Any>?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Observable<*>?
 
 'response' @ [435:47] ==> value-parameter response: Any? defined in net.corda.node.shell.InteractiveShell.maybeFollow[ValueParameterDescriptorImpl]
 
@@ -1143,9 +1141,9 @@ Inferred types:
                 response.first is Observable<*> -> response.first as Observable<*>
                 response.second is Observable<*> -> response.second as Observable<*>
                 else -> null
-            }' @ [437:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Observable<out Any>?, entry1: Observable<out Any>?, entry2: Observable<out Any>?): Observable<out Any>?[SimpleFunctionDescriptorImpl]
+            }' @ [437:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Observable<*>?, entry1: Observable<*>?, entry2: Observable<*>?): Observable<*>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Observable<out Any>?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Observable<*>?
 
 'response' @ [438:17] ==> value-parameter response: Any? defined in net.corda.node.shell.InteractiveShell.maybeFollow[ValueParameterDescriptorImpl]
 
@@ -1193,7 +1191,7 @@ Inferred types:
 
 'synchronizedSet' @ [464:43] ==> public open fun <T : (Any..Any?)> synchronizedSet(p0: (MutableSet<(InputStream..InputStream?)>..Set<(InputStream..InputStream?)>?)): (MutableSet<(InputStream..InputStream?)>..Set<(InputStream..InputStream?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> InputStream
+    <T : (Any..Any?)> -> (java.io.InputStream..java.io.InputStream?)
 
 'HashSet' @ [464:59] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:

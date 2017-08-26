@@ -5,9 +5,9 @@ Inferred types:
     <K : (Any..Any?)> -> StateMachineRunId
     <V : (Any..Any?)> -> HashSet<SecureHash>
 
-'!!' @ [23:23] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: PublishSubject<StateMachineTransactionMapping>?): PublishSubject<StateMachineTransactionMapping>[SimpleFunctionDescriptorImpl]
+'!!' @ [23:23] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: PublishSubject<(StateMachineTransactionMapping..StateMachineTransactionMapping?)>?): PublishSubject<(StateMachineTransactionMapping..StateMachineTransactionMapping?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> PublishSubject<StateMachineTransactionMapping>
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> PublishSubject<(net.corda.core.messaging.StateMachineTransactionMapping..net.corda.core.messaging.StateMachineTransactionMapping?)>
 
 'create' @ [23:38] ==> public open fun <T : (Any..Any?)> create(): (PublishSubject<(StateMachineTransactionMapping..StateMachineTransactionMapping?)>..PublishSubject<(StateMachineTransactionMapping..StateMachineTransactionMapping?)>?) defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 Inferred types:
@@ -42,7 +42,7 @@ Inferred types:
 
 'transactionId' @ [29:86] ==> value-parameter transactionId: SecureHash defined in net.corda.node.services.persistence.InMemoryStateMachineRecordedTransactionMappingStorage.addMapping[ValueParameterDescriptorImpl]
 
-'updates' @ [30:13] ==> public final val updates: PublishSubject<StateMachineTransactionMapping> defined in net.corda.node.services.persistence.InMemoryStateMachineRecordedTransactionMappingStorage.InnerState[PropertyDescriptorImpl]
+'updates' @ [30:13] ==> public final val updates: PublishSubject<(StateMachineTransactionMapping..StateMachineTransactionMapping?)> defined in net.corda.node.services.persistence.InMemoryStateMachineRecordedTransactionMappingStorage.InnerState[PropertyDescriptorImpl]
 
 'onNext' @ [30:21] ==> public open fun onNext(p0: (StateMachineTransactionMapping..StateMachineTransactionMapping?)): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
@@ -88,7 +88,7 @@ Inferred types:
 
 'it' @ [40:71] ==> value-parameter it: SecureHash defined in net.corda.node.services.persistence.InMemoryStateMachineRecordedTransactionMappingStorage.track.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'updates' @ [43:21] ==> public final val updates: PublishSubject<StateMachineTransactionMapping> defined in net.corda.node.services.persistence.InMemoryStateMachineRecordedTransactionMappingStorage.InnerState[PropertyDescriptorImpl]
+'updates' @ [43:21] ==> public final val updates: PublishSubject<(StateMachineTransactionMapping..StateMachineTransactionMapping?)> defined in net.corda.node.services.persistence.InMemoryStateMachineRecordedTransactionMappingStorage.InnerState[PropertyDescriptorImpl]
 
 'bufferUntilSubscribed' @ [43:29] ==> public fun <T> Observable<(StateMachineTransactionMapping..StateMachineTransactionMapping?)>.bufferUntilSubscribed(): Observable<(StateMachineTransactionMapping..StateMachineTransactionMapping?)> defined in net.corda.core.internal[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -8,7 +8,7 @@
 
 'ofType' @ [47:60] ==> public final fun <T : (Any..Any?)> ofType(p0: (Class<(Role..Role?)>..Class<(Role..Role?)>?)): (ArgumentAcceptingOptionSpec<(Role..Role?)>..ArgumentAcceptingOptionSpec<(Role..Role?)>?) defined in joptsimple.ArgumentAcceptingOptionSpec[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Role
+    <T : (Any..Any?)> -> (net.corda.attachmentdemo.Role..net.corda.attachmentdemo.Role?)
 
 'Role' @ [47:67] ==> private constructor Role() defined in net.corda.attachmentdemo.Role[ClassConstructorDescriptorImpl]
 
@@ -40,7 +40,7 @@ Inferred types:
 
 'valueOf' @ [56:24] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(Role..Role?)>..OptionSpec<(Role..Role?)>?)): (Role..Role?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Role
+    <V : (Any..Any?)> -> (net.corda.attachmentdemo.Role..net.corda.attachmentdemo.Role?)
 
 'roleArg' @ [56:32] ==> val roleArg: (ArgumentAcceptingOptionSpec<(Role..Role?)>..ArgumentAcceptingOptionSpec<(Role..Role?)>?) defined in net.corda.attachmentdemo.main[LocalVariableDescriptor]
 
@@ -230,6 +230,8 @@ Inferred types:
     <C> -> SHA256
     <reified R : FlowLogic<T>> -> AttachmentDemoFlow
 
+'AttachmentDemoFlow' @ [101:45] ==> public constructor AttachmentDemoFlow(otherSide: Party, notary: Party, hash: SecureHash.SHA256) defined in net.corda.attachmentdemo.AttachmentDemoFlow[ClassConstructorDescriptorImpl]
+
 'otherSideFuture' @ [101:65] ==> val otherSideFuture: CordaFuture<Party> defined in net.corda.attachmentdemo.sender[LocalVariableDescriptor]
 
 'get' @ [101:81] ==> public abstract fun get(): (Party..Party?) defined in net.corda.core.concurrent.CordaFuture[JavaMethodDescriptor]
@@ -245,6 +247,8 @@ Inferred types:
 'progress' @ [102:16] ==> public abstract val progress: Observable<String> defined in net.corda.core.messaging.FlowProgressHandle[DeserializedPropertyDescriptor]
 
 'subscribe' @ [102:25] ==> public final fun subscribe(p0: (((String..String?)) -> Unit..(((String..String?)) -> Unit)?)): (Subscription..Subscription?) defined in rx.Observable[MyFunctionDescriptor]
+
+'println' @ [102:37] ==> @InlineOnly public inline fun println(message: Any?): Unit defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
 'flowHandle' @ [103:15] ==> val flowHandle: FlowProgressHandle<SignedTransaction> defined in net.corda.attachmentdemo.sender[LocalVariableDescriptor]
 

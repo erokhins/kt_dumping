@@ -1,16 +1,14 @@
-'observableValue' @ [18:64] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (ExchangeRateModel) -> ObservableValue<ExchangeRate>): TrackedDelegate.ObservableValueDelegate<ExchangeRateModel, ExchangeRate> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ExchangeRateModel
-    <T> -> ExchangeRate
+'getValue' @ [18:64] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ExchangeRateModel' @ [18:80] ==> public constructor ExchangeRateModel() defined in net.corda.client.jfx.model.ExchangeRateModel[DeserializedClassConstructorDescriptor]
 
-'observableValue' @ [19:30] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (SettingsModel) -> ObservableValue<(Currency..Currency?)>): TrackedDelegate.ObservableValueDelegate<SettingsModel, (Currency..Currency?)> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> SettingsModel
-    <T> -> (java.util.Currency..java.util.Currency?)
+'exchangeRate' @ [18:99] ==> public final val exchangeRate: ObservableValue<ExchangeRate> defined in net.corda.client.jfx.model.ExchangeRateModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [19:30] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'SettingsModel' @ [19:46] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
+
+'reportingCurrencyProperty' @ [19:61] ==> public final val reportingCurrencyProperty: ObjectProperty<Currency> defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
 
 'setOf' @ [20:31] ==> public fun <T> setOf(vararg elements: Currency): Set<Currency> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -34,10 +32,8 @@ Inferred types:
 
 'map' @ [27:22] ==> public final fun <T : (Any..Any?), U : (Any..Any?)> map(p0: (ObservableValue<(Pair<Currency, (Amount<Currency>) -> Long>..Pair<Currency, (Amount<Currency>) -> Long>?)>..ObservableValue<(Pair<Currency, (Amount<Currency>) -> Long>..Pair<Currency, (Amount<Currency>) -> Long>?)>?), p1: (((Pair<Currency, (Amount<Currency>) -> Long>..Pair<Currency, (Amount<Currency>) -> Long>?)) -> (Pair<Currency, (Amount<Currency>) -> Amount<Currency>>..Pair<Currency, (Amount<Currency>) -> Amount<Currency>>?)..(((Pair<Currency, (Amount<Currency>) -> Long>..Pair<Currency, (Amount<Currency>) -> Long>?)) -> (Pair<Currency, (Amount<Currency>) -> Amount<Currency>>..Pair<Currency, (Amount<Currency>) -> Amount<Currency>>?))?)): (MonadicBinding<(Pair<Currency, (Amount<Currency>) -> Amount<Currency>>..Pair<Currency, (Amount<Currency>) -> Amount<Currency>>?)>..MonadicBinding<(Pair<Currency, (Amount<Currency>) -> Amount<Currency>>..Pair<Currency, (Amount<Currency>) -> Amount<Currency>>?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Pair<Currency, Function1<Amount<Currency>, Long>>
-    <U : (Any..Any?)> -> Pair<Currency, Function1<Amount<Currency>, Amount<Currency>>>
-
-'AmountBindings' @ [27:26] ==> public object AmountBindings defined in net.corda.client.jfx.utils[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> (kotlin.Pair<java.util.Currency, (net.corda.core.contracts.Amount<java.util.Currency>) -> kotlin.Long>..kotlin.Pair<java.util.Currency, (net.corda.core.contracts.Amount<java.util.Currency>) -> kotlin.Long>?)
+    <U : (Any..Any?)> -> (kotlin.Pair<java.util.Currency, (net.corda.core.contracts.Amount<java.util.Currency>) -> net.corda.core.contracts.Amount<java.util.Currency>>..kotlin.Pair<java.util.Currency, (net.corda.core.contracts.Amount<java.util.Currency>) -> net.corda.core.contracts.Amount<java.util.Currency>>?)
 
 'exchange' @ [27:41] ==> public final fun exchange(observableCurrency: ObservableValue<Currency>, observableExchangeRate: ObservableValue<ExchangeRate>): ObservableValue<Pair<Currency, (Amount<Currency>) -> Long>> defined in net.corda.client.jfx.utils.AmountBindings[DeserializedSimpleFunctionDescriptor]
 

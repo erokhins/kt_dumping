@@ -72,94 +72,85 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> Byte
 
-'observableList' @ [71:28] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (NetworkIdentityModel) -> ObservableList<NodeInfo>): TrackedDelegate.ObservableListDelegate<NetworkIdentityModel, NodeInfo> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo
+'getValue' @ [71:28] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [71:43] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
 
-'observableList' @ [72:28] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (IssuerModel) -> ObservableList<NodeInfo>): TrackedDelegate.ObservableListDelegate<IssuerModel, NodeInfo> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> IssuerModel
-    <T> -> NodeInfo
+'parties' @ [71:65] ==> public final val parties: ObservableList<NodeInfo> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [72:28] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'IssuerModel' @ [72:43] ==> public constructor IssuerModel() defined in net.corda.explorer.model.IssuerModel[ClassConstructorDescriptorImpl]
 
-'observableValue' @ [73:29] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (NodeMonitorModel) -> ObservableValue<CordaRPCOps?>): TrackedDelegate.ObservableValueDelegate<NodeMonitorModel, CordaRPCOps?> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NodeMonitorModel
-    <T> -> CordaRPCOps?
+'issuers' @ [72:56] ==> public final val issuers: ObservableList<NodeInfo> defined in net.corda.explorer.model.IssuerModel[PropertyDescriptorImpl]
+
+'getValue' @ [73:29] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NodeMonitorModel' @ [73:45] ==> public constructor NodeMonitorModel() defined in net.corda.client.jfx.model.NodeMonitorModel[DeserializedClassConstructorDescriptor]
 
-'observableValue' @ [74:31] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (NetworkIdentityModel) -> ObservableValue<NodeInfo?>): TrackedDelegate.ObservableValueDelegate<NetworkIdentityModel, NodeInfo?> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo?
+'proxyObservable' @ [73:63] ==> public final val proxyObservable: SimpleObjectProperty<CordaRPCOps?> defined in net.corda.client.jfx.model.NodeMonitorModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [74:31] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [74:47] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
 
-'observableList' @ [75:29] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (NetworkIdentityModel) -> ObservableList<NodeInfo>): TrackedDelegate.ObservableListDelegate<NetworkIdentityModel, NodeInfo> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo
+'myIdentity' @ [74:69] ==> public final val myIdentity: ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [75:29] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [75:44] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
 
-'observableList' @ [76:25] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (ContractStateModel) -> ObservableList<Amount<Issued<Currency>>>): TrackedDelegate.ObservableListDelegate<ContractStateModel, Amount<Issued<Currency>>> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ContractStateModel
-    <T> -> Amount<Issued<Currency>>
+'notaries' @ [75:66] ==> public final val notaries: ObservableList<NodeInfo> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [76:25] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ContractStateModel' @ [76:40] ==> public companion object defined in net.corda.client.jfx.model.ContractStateModel[FakeCallableDescriptorForObject]
+
+'cash' @ [76:60] ==> public final val cash: ObservableList<Amount<Issued<Currency>>> defined in net.corda.client.jfx.model.ContractStateModel[DeserializedPropertyDescriptor]
 
 'ButtonType' @ [77:33] ==> public constructor ButtonType(@NamedArg p0: (String..String?), @NamedArg p1: (ButtonBar.ButtonData..ButtonBar.ButtonData?)) defined in javafx.scene.control.ButtonType[JavaClassConstructorDescriptor]
 
 'APPLY' @ [77:76] ==> enum entry APPLY defined in javafx.scene.control.ButtonBar.ButtonData[FakeCallableDescriptorForObject]
 
-'observableList' @ [78:34] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (IssuerModel) -> ObservableList<(Currency..Currency?)>): TrackedDelegate.ObservableListDelegate<IssuerModel, (Currency..Currency?)> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> IssuerModel
-    <T> -> (java.util.Currency..java.util.Currency?)
+'getValue' @ [78:34] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'IssuerModel' @ [78:49] ==> public constructor IssuerModel() defined in net.corda.explorer.model.IssuerModel[ClassConstructorDescriptorImpl]
 
-'observableList' @ [79:40] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (ReportingCurrencyModel) -> ObservableList<Currency>): TrackedDelegate.ObservableListDelegate<ReportingCurrencyModel, Currency> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ReportingCurrencyModel
-    <T> -> Currency
+'currencyTypes' @ [78:62] ==> public final val currencyTypes: ChosenList<Currency> defined in net.corda.explorer.model.IssuerModel[PropertyDescriptorImpl]
+
+'getValue' @ [79:40] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ReportingCurrencyModel' @ [79:55] ==> public constructor ReportingCurrencyModel() defined in net.corda.explorer.model.ReportingCurrencyModel[ClassConstructorDescriptorImpl]
 
-'observableList' @ [80:37] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (IssuerModel) -> ObservableList<(CashTransaction..CashTransaction?)>): TrackedDelegate.ObservableListDelegate<IssuerModel, (CashTransaction..CashTransaction?)> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> IssuerModel
-    <T> -> (net.corda.explorer.model.CashTransaction..net.corda.explorer.model.CashTransaction?)
+'supportedCurrencies' @ [79:79] ==> public final val supportedCurrencies: ObservableList<Currency> defined in net.corda.explorer.model.ReportingCurrencyModel[PropertyDescriptorImpl]
+
+'getValue' @ [80:37] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'IssuerModel' @ [80:52] ==> public constructor IssuerModel() defined in net.corda.explorer.model.IssuerModel[ClassConstructorDescriptorImpl]
 
-'ChosenList' @ [82:33] ==> public constructor ChosenList<E>(chosenListObservable: ObservableValue<out ObservableList<out (Currency..Currency?)>>) defined in net.corda.client.jfx.utils.ChosenList[DeserializedClassConstructorDescriptor]
+'transactionTypes' @ [80:65] ==> public final val transactionTypes: ChosenList<CashTransaction> defined in net.corda.explorer.model.IssuerModel[PropertyDescriptorImpl]
+
+'ChosenList' @ [82:33] ==> public constructor ChosenList<E>(chosenListObservable: ObservableValue<out ObservableList<out Currency>>) defined in net.corda.client.jfx.utils.ChosenList[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <E> -> (java.util.Currency..java.util.Currency?)
+    <E> -> Currency
 
 'transactionTypeCB' @ [82:44] ==> private final val transactionTypeCB: ChoiceBox<CashTransaction> defined in net.corda.explorer.views.cordapps.cash.NewTransaction[PropertyDescriptorImpl]
 
 'valueProperty' @ [82:62] ==> public open fun valueProperty(): (ObjectProperty<(CashTransaction..CashTransaction?)>..ObjectProperty<(CashTransaction..CashTransaction?)>?) defined in javafx.scene.control.ChoiceBox[JavaMethodDescriptor]
 
-'map' @ [82:78] ==> public fun <A, B> ObservableValue<out (CashTransaction..CashTransaction?)>.map(function: ((CashTransaction..CashTransaction?)) -> (ObservableList<(Currency..Currency?)>..ObservableList<(Currency..Currency?)>?)): ObservableValue<(ObservableList<(Currency..Currency?)>..ObservableList<(Currency..Currency?)>?)> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [82:78] ==> public fun <A, B> ObservableValue<out (CashTransaction..CashTransaction?)>.map(function: ((CashTransaction..CashTransaction?)) -> ObservableList<Currency>): ObservableValue<ObservableList<Currency>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> (net.corda.explorer.model.CashTransaction..net.corda.explorer.model.CashTransaction?)
-    <B> -> (javafx.collections.ObservableList<(java.util.Currency..java.util.Currency?)>..javafx.collections.ObservableList<(java.util.Currency..java.util.Currency?)>?)
+    <B> -> ObservableList<Currency>
 
 'when (it) {
             CashTransaction.Pay -> supportedCurrencies
             CashTransaction.Issue,
             CashTransaction.Exit -> currencyTypes
             else -> FXCollections.emptyObservableList()
-        }' @ [83:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (ObservableList<(Currency..Currency?)>..ObservableList<(Currency..Currency?)>?), entry1: (ObservableList<(Currency..Currency?)>..ObservableList<(Currency..Currency?)>?), entry2: (ObservableList<(Currency..Currency?)>..ObservableList<(Currency..Currency?)>?)): (ObservableList<(Currency..Currency?)>..ObservableList<(Currency..Currency?)>?)[SimpleFunctionDescriptorImpl]
+        }' @ [83:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: ObservableList<Currency>, entry1: ObservableList<Currency>, entry2: ObservableList<Currency>): ObservableList<Currency>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (javafx.collections.ObservableList<(java.util.Currency..java.util.Currency?)>..javafx.collections.ObservableList<(java.util.Currency..java.util.Currency?)>?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> ObservableList<Currency>
 
 'it' @ [83:15] ==> value-parameter it: (CashTransaction..CashTransaction?) defined in net.corda.explorer.views.cordapps.cash.NewTransaction.currencyItems.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -230,6 +221,8 @@ Inferred types:
     <A> -> IssueAndPaymentRequest
     <reified R : FlowLogic<T>> -> CashIssueAndPaymentFlow
 
+'CashIssueAndPaymentFlow' @ [101:75] ==> public constructor CashIssueAndPaymentFlow(request: CashIssueAndPaymentFlow.IssueAndPaymentRequest) defined in net.corda.finance.flows.CashIssueAndPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'request' @ [101:100] ==> value-parameter request: AbstractCashFlow.AbstractRequest defined in net.corda.explorer.views.cordapps.cash.NewTransaction.show.<anonymous>[ValueParameterDescriptorImpl]
 
 'rpcProxy' @ [102:38] ==> private final val rpcProxy: ObservableValue<CordaRPCOps?> defined in net.corda.explorer.views.cordapps.cash.NewTransaction[PropertyDescriptorImpl]
@@ -244,6 +237,8 @@ Inferred types:
     <A> -> PaymentRequest
     <reified R : FlowLogic<T>> -> CashPaymentFlow
 
+'CashPaymentFlow' @ [102:67] ==> public constructor CashPaymentFlow(request: CashPaymentFlow.PaymentRequest) defined in net.corda.finance.flows.CashPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'request' @ [102:84] ==> value-parameter request: AbstractCashFlow.AbstractRequest defined in net.corda.explorer.views.cordapps.cash.NewTransaction.show.<anonymous>[ValueParameterDescriptorImpl]
 
 'rpcProxy' @ [103:35] ==> private final val rpcProxy: ObservableValue<CordaRPCOps?> defined in net.corda.explorer.views.cordapps.cash.NewTransaction[PropertyDescriptorImpl]
@@ -257,6 +252,8 @@ Inferred types:
     <T : Any> -> Result
     <A> -> ExitRequest
     <reified R : FlowLogic<T>> -> CashExitFlow
+
+'CashExitFlow' @ [103:64] ==> public constructor CashExitFlow(request: CashExitFlow.ExitRequest) defined in net.corda.finance.flows.CashExitFlow[DeserializedClassConstructorDescriptor]
 
 'request' @ [103:78] ==> value-parameter request: AbstractCashFlow.AbstractRequest defined in net.corda.explorer.views.cordapps.cash.NewTransaction.show.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -474,8 +471,6 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> Byte
 
-'OpaqueBytes' @ [155:56] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
-
 'of' @ [155:68] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[DeserializedSimpleFunctionDescriptor]
 
 'issueRef' @ [155:71] ==> private final val issueRef: SimpleObjectProperty<Byte> defined in net.corda.explorer.views.cordapps.cash.NewTransaction[PropertyDescriptorImpl]
@@ -521,8 +516,6 @@ Inferred types:
 
 'IssueAndPaymentRequest' @ [158:46] ==> public constructor IssueAndPaymentRequest(amount: Amount<Currency>, issueRef: OpaqueBytes, recipient: Party, notary: Party, anonymous: Boolean) defined in net.corda.finance.flows.CashIssueAndPaymentFlow.IssueAndPaymentRequest[DeserializedClassConstructorDescriptor]
 
-'Amount' @ [158:69] ==> public companion object defined in net.corda.core.contracts.Amount[FakeCallableDescriptorForObject]
-
 'fromDecimal' @ [158:76] ==> @JvmStatic @JvmOverloads public final fun <T : Any> fromDecimal(displayQuantity: BigDecimal, token: Currency, rounding: RoundingMode = ...): Amount<Currency> defined in net.corda.core.contracts.Amount.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> Currency
@@ -563,8 +556,6 @@ Inferred types:
 
 'PaymentRequest' @ [159:44] ==> public constructor PaymentRequest(amount: Amount<Currency>, recipient: Party, anonymous: Boolean, issuerConstraint: Set<Party> = ...) defined in net.corda.finance.flows.CashPaymentFlow.PaymentRequest[DeserializedClassConstructorDescriptor]
 
-'Amount' @ [159:59] ==> public companion object defined in net.corda.core.contracts.Amount[FakeCallableDescriptorForObject]
-
 'fromDecimal' @ [159:66] ==> @JvmStatic @JvmOverloads public final fun <T : Any> fromDecimal(displayQuantity: BigDecimal, token: Currency, rounding: RoundingMode = ...): Amount<Currency> defined in net.corda.core.contracts.Amount.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> Currency
@@ -594,8 +585,6 @@ Inferred types:
 'Exit' @ [160:37] ==> enum entry Exit defined in net.corda.explorer.model.CashTransaction[FakeCallableDescriptorForObject]
 
 'ExitRequest' @ [160:45] ==> public constructor ExitRequest(amount: Amount<Currency>, issueRef: OpaqueBytes) defined in net.corda.finance.flows.CashExitFlow.ExitRequest[DeserializedClassConstructorDescriptor]
-
-'Amount' @ [160:57] ==> public companion object defined in net.corda.core.contracts.Amount[FakeCallableDescriptorForObject]
 
 'fromDecimal' @ [160:64] ==> @JvmStatic @JvmOverloads public final fun <T : Any> fromDecimal(displayQuantity: BigDecimal, token: Currency, rounding: RoundingMode = ...): Amount<Currency> defined in net.corda.core.contracts.Amount.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -996,7 +985,7 @@ Inferred types:
 
 'textFormatter' @ [206:13] ==> public final var TextField.textFormatter: (TextFormatter<*>..TextFormatter<*>?)[MyPropertyDescriptor]
 
-'byteFormatter' @ [206:29] ==> public fun byteFormatter(): TextFormatter<Byte> defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'byteFormatter' @ [206:29] ==> public fun byteFormatter(): TextFormatter<Byte> defined in net.corda.explorer.views in file Formatter.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [206:45] ==> @InlineOnly public inline fun <T> TextFormatter<Byte>.apply(block: TextFormatter<Byte>.() -> Unit): TextFormatter<Byte> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1051,7 +1040,7 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> Currency
 
-'currencyItems' @ [212:35] ==> private final val currencyItems: ChosenList<(Currency..Currency?)> defined in net.corda.explorer.views.cordapps.cash.NewTransaction[PropertyDescriptorImpl]
+'currencyItems' @ [212:35] ==> private final val currencyItems: ChosenList<Currency> defined in net.corda.explorer.views.cordapps.cash.NewTransaction[PropertyDescriptorImpl]
 
 'currencyChoiceBox' @ [213:9] ==> private final val currencyChoiceBox: ChoiceBox<Currency> defined in net.corda.explorer.views.cordapps.cash.NewTransaction[PropertyDescriptorImpl]
 
@@ -1067,9 +1056,9 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> (net.corda.explorer.model.CashTransaction..net.corda.explorer.model.CashTransaction?)
 
-'createObjectBinding' @ [214:31] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> (Party..Party?)..(() -> (Party..Party?))?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<(Party..Party?)>..ObjectBinding<(Party..Party?)>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
+'createObjectBinding' @ [214:31] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> Party?..(() -> Party?)?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<Party?>..ObjectBinding<Party?>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Party
+    <T : (Any..Any?)> -> Party?
 
 'if (issuerChoiceBox.isVisible) issuerChoiceBox.value else myIdentity.value?.legalIdentity' @ [214:53] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Party?, elseBranch: Party?): Party?[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1115,11 +1104,11 @@ Inferred types:
 
 'bind' @ [215:43] ==> public abstract fun bind(p0: (ObservableValue<out (Boolean..Boolean?)>..ObservableValue<out (Boolean..Boolean?)>?)): Unit defined in javafx.beans.property.BooleanProperty[JavaMethodDescriptor]
 
-'issuer' @ [216:17] ==> val issuer: (ObjectBinding<(Party..Party?)>..ObjectBinding<(Party..Party?)>?) defined in net.corda.explorer.views.cordapps.cash.NewTransaction.<init>[LocalVariableDescriptor]
+'issuer' @ [216:17] ==> val issuer: (ObjectBinding<Party?>..ObjectBinding<Party?>?) defined in net.corda.explorer.views.cordapps.cash.NewTransaction.<init>[LocalVariableDescriptor]
 
-'isNotNull' @ [216:24] ==> public final val <T : (Any..Any?)> ObjectBinding<(Party..Party?)>.isNotNull: (BooleanBinding..BooleanBinding?)[MyPropertyDescriptor]
+'isNotNull' @ [216:24] ==> public final val <T : (Any..Any?)> ObjectBinding<Party?>.isNotNull: (BooleanBinding..BooleanBinding?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
+    <T : (Any..Any?)> -> Party?
 
 'and' @ [216:34] ==> public open fun and(p0: (ObservableBooleanValue..ObservableBooleanValue?)): (BooleanBinding..BooleanBinding?) defined in javafx.beans.binding.BooleanBinding[JavaMethodDescriptor]
 
@@ -1169,11 +1158,11 @@ Inferred types:
 
 'party' @ [220:72] ==> public final val party: AbstractParty defined in net.corda.core.contracts.PartyAndReference[DeserializedPropertyDescriptor]
 
-'issuer' @ [220:81] ==> val issuer: (ObjectBinding<(Party..Party?)>..ObjectBinding<(Party..Party?)>?) defined in net.corda.explorer.views.cordapps.cash.NewTransaction.<init>[LocalVariableDescriptor]
+'issuer' @ [220:81] ==> val issuer: (ObjectBinding<Party?>..ObjectBinding<Party?>?) defined in net.corda.explorer.views.cordapps.cash.NewTransaction.<init>[LocalVariableDescriptor]
 
-'value' @ [220:88] ==> public final val <T : (Any..Any?)> ObjectBinding<(Party..Party?)>.value: (Party..Party?)[MyPropertyDescriptor]
+'value' @ [220:88] ==> public final val <T : (Any..Any?)> ObjectBinding<Party?>.value: Party?[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
+    <T : (Any..Any?)> -> Party?
 
 'it' @ [220:97] ==> value-parameter it: (Amount<Issued<Currency>>..Amount<Issued<Currency>>?) defined in net.corda.explorer.views.cordapps.cash.NewTransaction.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1234,7 +1223,7 @@ Inferred types:
 
 'textFormatter' @ [226:25] ==> public final var TextField.textFormatter: (TextFormatter<*>..TextFormatter<*>?)[MyPropertyDescriptor]
 
-'bigDecimalFormatter' @ [226:41] ==> public fun bigDecimalFormatter(): TextFormatter<BigDecimal> defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'bigDecimalFormatter' @ [226:41] ==> public fun bigDecimalFormatter(): TextFormatter<BigDecimal> defined in net.corda.explorer.views in file Formatter.kt[SimpleFunctionDescriptorImpl]
 
 'apply' @ [226:63] ==> @InlineOnly public inline fun <T> TextFormatter<BigDecimal>.apply(block: TextFormatter<BigDecimal>.() -> Unit): TextFormatter<BigDecimal> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1324,12 +1313,14 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> (java.util.Currency..java.util.Currency?)
 
-'reduce' @ [237:11] ==> public inline fun <S, T : (BooleanBinding..BooleanBinding?)> Array<out (BooleanBinding..BooleanBinding?)>.reduce(operation: ((BooleanBinding..BooleanBinding?), (BooleanBinding..BooleanBinding?)) -> (BooleanBinding..BooleanBinding?)): (BooleanBinding..BooleanBinding?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [237:11] ==> public inline fun <S, T : (BooleanBinding..BooleanBinding?)> Array<out (BooleanBinding..BooleanBinding?)>.reduce(operation: (acc: (BooleanBinding..BooleanBinding?), (BooleanBinding..BooleanBinding?)) -> (BooleanBinding..BooleanBinding?)): (BooleanBinding..BooleanBinding?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> (javafx.beans.binding.BooleanBinding..javafx.beans.binding.BooleanBinding?)
     <T : S> -> (javafx.beans.binding.BooleanBinding..javafx.beans.binding.BooleanBinding?)
 
 'BooleanBinding' @ [237:18] ==> public constructor BooleanBinding() defined in javafx.beans.binding.BooleanBinding[JavaClassConstructorDescriptor]
+
+'and' @ [237:34] ==> public open fun and(p0: (ObservableBooleanValue..ObservableBooleanValue?)): (BooleanBinding..BooleanBinding?) defined in javafx.beans.binding.BooleanBinding[JavaMethodDescriptor]
 
 'root' @ [240:9] ==> public open val root: DialogPane defined in net.corda.explorer.views.cordapps.cash.NewTransaction[PropertyDescriptorImpl]
 

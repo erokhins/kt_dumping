@@ -2,13 +2,13 @@
 
 'AtomicLong' @ [32:28] ==> public constructor AtomicLong(p0: Long) defined in java.util.concurrent.atomic.AtomicLong[JavaClassConstructorDescriptor]
 
-'lazy' @ [37:40] ==> public fun <T> lazy(initializer: () -> (Observable<Long>..Observable<Long>?)): Lazy<(Observable<Long>..Observable<Long>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [37:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (rx.Observable<kotlin.Long>..rx.Observable<kotlin.Long>?)
+    <T> -> T
 
 'create' @ [38:20] ==> public final fun <T : (Any..Any?)> create(p0: (((Subscriber<in (Long..Long?)>..Subscriber<in (Long..Long?)>?)) -> Unit..(((Subscriber<in (Long..Long?)>..Subscriber<in (Long..Long?)>?)) -> Unit)?)): (Observable<(Long..Long?)>..Observable<(Long..Long?)>?) defined in rx.Observable[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 '!' @ [39:17] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -16,7 +16,7 @@ Inferred types:
 
 'isUnsubscribed' @ [39:29] ==> public final val <T : (Any..Any?)> Subscriber<in Long>.isUnsubscribed: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(in Long)
 
 'mutationObservers' @ [40:17] ==> private final val mutationObservers: CopyOnWriteArraySet<Subscriber<in Long>> defined in net.corda.node.utilities.MutableClock[PropertyDescriptorImpl]
 
@@ -52,11 +52,11 @@ Inferred types:
 
 'isUnsubscribed' @ [55:27] ==> public final val <T : (Any..Any?)> Subscriber<in Long>.isUnsubscribed: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(in Long)
 
 'observer' @ [56:17] ==> val observer: (Subscriber<in Long>..Subscriber<in Long>?) defined in net.corda.node.utilities.MutableClock.notifyMutationObservers[LocalVariableDescriptor]
 
-'onNext' @ [56:26] ==> public abstract fun onNext(p0: (Any..Any?)): Unit defined in rx.Subscriber[JavaMethodDescriptor]
+'onNext' @ [56:26] ==> public abstract fun onNext(p0: (Long..Long?)): Unit defined in rx.Subscriber[JavaMethodDescriptor]
 
 'version' @ [56:33] ==> val version: Long defined in net.corda.node.utilities.MutableClock.notifyMutationObservers[LocalVariableDescriptor]
 
@@ -68,7 +68,7 @@ Inferred types:
 
 'makeStrandFriendlySettableFuture' @ [73:39] ==> private fun <T : Any> makeStrandFriendlySettableFuture(future: Future<out (Any..Any?)>): SettableFuture<Boolean> defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'future' @ [73:72] ==> value-parameter future: Future<*> = ... defined in net.corda.node.utilities.awaitWithDeadline[ValueParameterDescriptorImpl]
 
@@ -128,13 +128,13 @@ Inferred types:
 
 'isDone' @ [96:35] ==> public final val <V : (Any..Any?)> Future<out (Any..Any?)>.isDone: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <V : (Any..Any?)> -> Captured(*)
 
 'future' @ [97:12] ==> value-parameter future: Future<*> = ... defined in net.corda.node.utilities.awaitWithDeadline[ValueParameterDescriptorImpl]
 
 'isDone' @ [97:19] ==> public final val <V : (Any..Any?)> Future<out (Any..Any?)>.isDone: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <V : (Any..Any?)> -> Captured(*)
 
 'SettableFuture' @ [107:77] ==> public constructor SettableFuture<V : (Any..Any?)>() defined in co.paralleluniverse.strands.SettableFuture[JavaClassConstructorDescriptor]
 Inferred types:
@@ -148,9 +148,9 @@ Inferred types:
         is ListenableFuture -> future.addListener(Runnable { g.set(true) }, Executor { it.run() })
         is CompletionStage<*> -> future.whenComplete { _, _ -> g.set(true) }
         else -> throw IllegalArgumentException("Cannot make future $future Fiber friendly.")
-    }' @ [108:5] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any, entry2: Any): Any[SimpleFunctionDescriptorImpl]
+    }' @ [108:5] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Any..Any?), entry1: (Any..Any?), entry2: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
 
 'future' @ [108:11] ==> value-parameter future: Future<T> defined in net.corda.node.utilities.makeStrandFriendlySettableFuture[ValueParameterDescriptorImpl]
 
@@ -158,13 +158,13 @@ Inferred types:
 
 'addListener' @ [109:39] ==> public abstract fun addListener(p0: (Runnable..Runnable?), p1: (Executor..Executor?)): Unit defined in com.google.common.util.concurrent.ListenableFuture[JavaMethodDescriptor]
 
-'Runnable' @ [109:51] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [109:51] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'g' @ [109:62] ==> value-parameter g: SettableFuture<Boolean> defined in net.corda.node.utilities.makeStrandFriendlySettableFuture.<anonymous>[ValueParameterDescriptorImpl]
 
 'set' @ [109:64] ==> public open fun set(p0: (Boolean..Boolean?)): Boolean defined in co.paralleluniverse.strands.SettableFuture[JavaMethodDescriptor]
 
-'Executor' @ [109:77] ==> public fun Executor(function: ((Runnable..Runnable?)) -> Unit): Executor defined in java.util.concurrent[SimpleFunctionDescriptorImpl]
+'Executor' @ [109:77] ==> public fun Executor(function: ((Runnable..Runnable?)) -> Unit): Executor defined in java.util.concurrent[SamConstructorDescriptorImpl]
 
 'it' @ [109:88] ==> value-parameter it: (Runnable..Runnable?) defined in net.corda.node.utilities.makeStrandFriendlySettableFuture.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -172,7 +172,7 @@ Inferred types:
 
 'future' @ [110:34] ==> value-parameter future: Future<T> defined in net.corda.node.utilities.makeStrandFriendlySettableFuture[ValueParameterDescriptorImpl]
 
-'whenComplete' @ [110:41] ==> public final fun whenComplete(p0: (((Nothing..Nothing?), (Throwable..Throwable?)) -> Unit..(((Nothing..Nothing?), (Throwable..Throwable?)) -> Unit)?)): (CompletionStage<out (Any..Any?)>..CompletionStage<out (Any..Any?)>?) defined in java.util.concurrent.CompletionStage[MyFunctionDescriptor]
+'whenComplete' @ [110:41] ==> public final fun whenComplete(p0: (((Any..Any?), (Throwable..Throwable?)) -> Unit..(((Any..Any?), (Throwable..Throwable?)) -> Unit)?)): (CompletionStage<out (Any..Any?)>..CompletionStage<out (Any..Any?)>?) defined in java.util.concurrent.CompletionStage[MyFunctionDescriptor]
 
 'g' @ [110:64] ==> value-parameter g: SettableFuture<Boolean> defined in net.corda.node.utilities.makeStrandFriendlySettableFuture.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -157,9 +157,9 @@ Inferred types:
 
 'ys' @ [59:93] ==> value-parameter ys: DoubleArray defined in net.corda.finance.contracts.math.CubicSplineInterpolator.Factory.create[ValueParameterDescriptorImpl]
 
-'lazy' @ [62:35] ==> public fun <T> lazy(initializer: () -> SplineFunction): Lazy<SplineFunction> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [62:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SplineFunction
+    <T> -> T
 
 'computeSplineFunction' @ [62:42] ==> private final fun computeSplineFunction(): SplineFunction defined in net.corda.finance.contracts.math.CubicSplineInterpolator[SimpleFunctionDescriptorImpl]
 
@@ -446,7 +446,7 @@ Inferred types:
 
 'reversedCoefficients' @ [116:31] ==> private final val reversedCoefficients: List<Double> defined in net.corda.finance.contracts.math.Polynomial[PropertyDescriptorImpl]
 
-'fold' @ [116:52] ==> public inline fun <T, R> Iterable<Double>.fold(initial: Double, operation: (Double, Double) -> Double): Double defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [116:52] ==> public inline fun <T, R> Iterable<Double>.fold(initial: Double, operation: (acc: Double, Double) -> Double): Double defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Double
     <R> -> Double

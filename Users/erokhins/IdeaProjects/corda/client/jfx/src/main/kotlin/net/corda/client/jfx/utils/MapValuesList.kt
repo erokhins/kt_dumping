@@ -44,16 +44,14 @@ Inferred types:
 
 'addListener' @ [31:19] ==> public final fun addListener(p0: (((MapChangeListener.Change<out (K..K?), out (A..A?)>..MapChangeListener.Change<out (K..K?), out (A..A?)>?)) -> Unit..(((MapChangeListener.Change<out (K..K?), out (A..A?)>..MapChangeListener.Change<out (K..K?), out (A..A?)>?)) -> Unit)?)): Unit defined in javafx.collections.ObservableMap[MyFunctionDescriptor]
 
-'change' @ [32:27] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'change' @ [32:31] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [32:34] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out ({Any & K}..K), out ({Any & A}..A)>.key: ({Any & K}..K?)[MyPropertyDescriptor]
+'key' @ [32:38] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ({Any & K}..K)
-    <V : (Any..Any?)> -> ({Any & A}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
-'key1' @ [33:31] ==> val key1: K defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
-
-'hashCode' @ [33:38] ==> public open fun hashCode(): Int defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
+'hashCode' @ [32:44] ==> public open fun hashCode(): Int defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
 
 'if (change.wasRemoved()) {
                 val removeIndex = backingList.binarySearch(
@@ -64,8 +62,8 @@ Inferred types:
                 }
                 if (change.wasAdded()) {
                     backingList[removeIndex] = object : Map.Entry<K, A> {
-                        override val key: K = change.key
-                        override val value: A = change.valueAdded
+                        override val key = change.key
+                        override val value = change.valueAdded
                     }
                 } else {
                     backingList.removeAt(removeIndex)
@@ -76,121 +74,121 @@ Inferred types:
                 )
                 val addIndex = -index - 1
                 backingList.add(addIndex, object : Map.Entry<K, A> {
-                    override val key: K = change.key
-                    override val value: A = change.valueAdded
+                    override val key = change.key
+                    override val value = change.valueAdded
                 })
-            }' @ [34:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Any..Any?), elseBranch: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
+            }' @ [33:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Any..Any?), elseBranch: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
 
-'change' @ [34:17] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'change' @ [33:17] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'wasRemoved' @ [34:24] ==> public abstract fun wasRemoved(): Boolean defined in javafx.collections.MapChangeListener.Change[JavaMethodDescriptor]
+'wasRemoved' @ [33:24] ==> public abstract fun wasRemoved(): Boolean defined in javafx.collections.MapChangeListener.Change[JavaMethodDescriptor]
 
-'backingList' @ [35:35] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
+'backingList' @ [34:35] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
 
-'binarySearch' @ [35:47] ==> public fun <T> List<(Map.Entry<K, A>..Map.Entry<K, A>?)>.binarySearch(fromIndex: Int = ..., toIndex: Int = ..., comparison: ((Map.Entry<K, A>..Map.Entry<K, A>?)) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'binarySearch' @ [34:47] ==> public fun <T> List<(Map.Entry<K, A>..Map.Entry<K, A>?)>.binarySearch(fromIndex: Int = ..., toIndex: Int = ..., comparison: ((Map.Entry<K, A>..Map.Entry<K, A>?)) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.collections.Map.Entry<K, A>..kotlin.collections.Map.Entry<K, A>?)
 
-'compareValues' @ [36:49] ==> public fun <T : Comparable<*>> compareValues(a: Int?, b: Int?): Int defined in kotlin.comparisons[DeserializedSimpleFunctionDescriptor]
+'compareValues' @ [35:49] ==> public fun <T : Comparable<*>> compareValues(a: Int?, b: Int?): Int defined in kotlin.comparisons[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Comparable<*>> -> Int
 
-'keyHashCode' @ [36:63] ==> val keyHashCode: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
+'keyHashCode' @ [35:63] ==> val keyHashCode: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'entry' @ [36:76] ==> value-parameter entry: (Map.Entry<K, A>..Map.Entry<K, A>?) defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'entry' @ [35:76] ==> value-parameter entry: (Map.Entry<K, A>..Map.Entry<K, A>?) defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [36:82] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'key' @ [35:82] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'hashCode' @ [36:88] ==> public open fun hashCode(): Int defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
+'hashCode' @ [35:88] ==> public open fun hashCode(): Int defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
 
-'removeIndex' @ [38:21] ==> val removeIndex: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
+'removeIndex' @ [37:21] ==> val removeIndex: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'IllegalStateException' @ [39:27] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
+'IllegalStateException' @ [38:27] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
 
 'if (change.wasAdded()) {
                     backingList[removeIndex] = object : Map.Entry<K, A> {
-                        override val key: K = change.key
-                        override val value: A = change.valueAdded
+                        override val key = change.key
+                        override val value = change.valueAdded
                     }
                 } else {
                     backingList.removeAt(removeIndex)
-                }' @ [41:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Any..Any?), elseBranch: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
+                }' @ [40:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Any..Any?), elseBranch: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
 
-'change' @ [41:21] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'change' @ [40:21] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'wasAdded' @ [41:28] ==> public abstract fun wasAdded(): Boolean defined in javafx.collections.MapChangeListener.Change[JavaMethodDescriptor]
+'wasAdded' @ [40:28] ==> public abstract fun wasAdded(): Boolean defined in javafx.collections.MapChangeListener.Change[JavaMethodDescriptor]
 
-'backingList' @ [42:21] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
+'backingList' @ [41:21] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
 
-'removeIndex' @ [42:33] ==> val removeIndex: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
+'removeIndex' @ [41:33] ==> val removeIndex: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'change' @ [43:47] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'change' @ [42:44] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [43:54] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out ({Any & K}..K), out ({Any & A}..A)>.key: ({Any & K}..K?)[MyPropertyDescriptor]
+'key' @ [42:51] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ({Any & K}..K)
-    <V : (Any..Any?)> -> ({Any & A}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
-'change' @ [44:49] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'change' @ [43:46] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'valueAdded' @ [44:56] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out ({Any & K}..K), out ({Any & A}..A)>.valueAdded: ({Any & A}..A?)[MyPropertyDescriptor]
+'valueAdded' @ [43:53] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.valueAdded: (A..A?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ({Any & K}..K)
-    <V : (Any..Any?)> -> ({Any & A}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
-'backingList' @ [47:21] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
+'backingList' @ [46:21] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
 
-'removeAt' @ [47:33] ==> public abstract fun removeAt(index: Int): (Map.Entry<K, A>..Map.Entry<K, A>?) defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
+'removeAt' @ [46:33] ==> public abstract fun removeAt(index: Int): (Map.Entry<K, A>..Map.Entry<K, A>?) defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
 
-'removeIndex' @ [47:42] ==> val removeIndex: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
+'removeIndex' @ [46:42] ==> val removeIndex: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'change' @ [49:24] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'change' @ [48:24] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'wasAdded' @ [49:31] ==> public abstract fun wasAdded(): Boolean defined in javafx.collections.MapChangeListener.Change[JavaMethodDescriptor]
+'wasAdded' @ [48:31] ==> public abstract fun wasAdded(): Boolean defined in javafx.collections.MapChangeListener.Change[JavaMethodDescriptor]
 
-'backingList' @ [50:29] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
+'backingList' @ [49:29] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
 
-'binarySearch' @ [50:41] ==> public fun <T> List<(Map.Entry<K, A>..Map.Entry<K, A>?)>.binarySearch(fromIndex: Int = ..., toIndex: Int = ..., comparison: ((Map.Entry<K, A>..Map.Entry<K, A>?)) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'binarySearch' @ [49:41] ==> public fun <T> List<(Map.Entry<K, A>..Map.Entry<K, A>?)>.binarySearch(fromIndex: Int = ..., toIndex: Int = ..., comparison: ((Map.Entry<K, A>..Map.Entry<K, A>?)) -> Int): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.collections.Map.Entry<K, A>..kotlin.collections.Map.Entry<K, A>?)
 
-'compareValues' @ [51:49] ==> public fun <T : Comparable<*>> compareValues(a: Int?, b: Int?): Int defined in kotlin.comparisons[DeserializedSimpleFunctionDescriptor]
+'compareValues' @ [50:49] ==> public fun <T : Comparable<*>> compareValues(a: Int?, b: Int?): Int defined in kotlin.comparisons[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Comparable<*>> -> Int
 
-'keyHashCode' @ [51:63] ==> val keyHashCode: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
+'keyHashCode' @ [50:63] ==> val keyHashCode: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'entry' @ [51:76] ==> value-parameter entry: (Map.Entry<K, A>..Map.Entry<K, A>?) defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'entry' @ [50:76] ==> value-parameter entry: (Map.Entry<K, A>..Map.Entry<K, A>?) defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [51:82] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'key' @ [50:82] ==> public abstract val key: K defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'hashCode' @ [51:88] ==> public open fun hashCode(): Int defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
+'hashCode' @ [50:88] ==> public open fun hashCode(): Int defined in kotlin.Any[DeserializedSimpleFunctionDescriptor]
 
-'-' @ [53:32] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
+'-' @ [52:32] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'index' @ [53:33] ==> val index: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
+'index' @ [52:33] ==> val index: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'backingList' @ [54:17] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
+'backingList' @ [53:17] ==> private final val backingList: ObservableList<Map.Entry<K, A>> defined in net.corda.client.jfx.utils.MapValuesList[PropertyDescriptorImpl]
 
-'add' @ [54:29] ==> public abstract fun add(index: Int, element: (Map.Entry<K, A>..Map.Entry<K, A>?)): Unit defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
+'add' @ [53:29] ==> public abstract fun add(index: Int, element: (Map.Entry<K, A>..Map.Entry<K, A>?)): Unit defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
 
-'addIndex' @ [54:33] ==> val addIndex: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
+'addIndex' @ [53:33] ==> val addIndex: Int defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[LocalVariableDescriptor]
 
-'change' @ [55:43] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'change' @ [54:40] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [55:50] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out ({Any & K}..K), out ({Any & A}..A)>.key: ({Any & K}..K?)[MyPropertyDescriptor]
+'key' @ [54:47] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ({Any & K}..K)
-    <V : (Any..Any?)> -> ({Any & A}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
-'change' @ [56:45] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'change' @ [55:42] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.MapValuesList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'valueAdded' @ [56:52] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out ({Any & K}..K), out ({Any & A}..A)>.valueAdded: ({Any & A}..A?)[MyPropertyDescriptor]
+'valueAdded' @ [55:49] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.valueAdded: (A..A?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ({Any & K}..K)
-    <V : (Any..Any?)> -> ({Any & A}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 

@@ -8,8 +8,6 @@
 
 'subject' @ [31:72] ==> public final val X509CertificateHolder.subject: (X500Name..X500Name?)[MyPropertyDescriptor]
 
-'Crypto' @ [31:81] ==> public object Crypto defined in net.corda.core.crypto in file Crypto.kt[FakeCallableDescriptorForObject]
-
 'toSupportedPublicKey' @ [31:88] ==> @JvmStatic public final fun toSupportedPublicKey(key: SubjectPublicKeyInfo): PublicKey defined in net.corda.core.crypto.Crypto[SimpleFunctionDescriptorImpl]
 
 'certificate' @ [31:109] ==> value-parameter certificate: X509CertificateHolder defined in net.corda.core.identity.Party.<init>[ValueParameterDescriptorImpl]

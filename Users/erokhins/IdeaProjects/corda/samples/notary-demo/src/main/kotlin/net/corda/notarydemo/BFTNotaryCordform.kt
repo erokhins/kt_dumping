@@ -1,8 +1,8 @@
 'BFTNotaryCordform' @ [20:33] ==> public object BFTNotaryCordform : CordformDefinition defined in net.corda.notarydemo in file BFTNotaryCordform.kt[FakeCallableDescriptorForObject]
 
-'runNodes' @ [20:51] ==> public fun CordformDefinition.runNodes(): Unit defined in net.corda.demorun[SimpleFunctionDescriptorImpl]
+'runNodes' @ [20:51] ==> public fun CordformDefinition.runNodes(): Unit defined in net.corda.demorun in file DemoRunner.kt[SimpleFunctionDescriptorImpl]
 
-'createNotaryNames' @ [23:27] ==> internal fun createNotaryNames(clusterSize: Int): List<X500Name> defined in net.corda.notarydemo[SimpleFunctionDescriptorImpl]
+'createNotaryNames' @ [23:27] ==> internal fun createNotaryNames(clusterSize: Int): List<X500Name> defined in net.corda.notarydemo in file RaftNotaryCordform.kt[SimpleFunctionDescriptorImpl]
 
 'clusterSize' @ [23:45] ==> private val clusterSize: Int defined in net.corda.notarydemo in file BFTNotaryCordform.kt[PropertyDescriptorImpl]
 
@@ -16,15 +16,13 @@
 
 'ServiceInfo' @ [27:37] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
 
-'BFTNonValidatingNotaryService' @ [27:49] ==> public companion object defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService[FakeCallableDescriptorForObject]
-
 'type' @ [27:79] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService.Companion[DeserializedPropertyDescriptor]
 
 'clusterName' @ [27:85] ==> private final val clusterName: X500Name defined in net.corda.notarydemo.BFTNotaryCordform[PropertyDescriptorImpl]
 
-'node' @ [30:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'node' @ [30:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
-'name' @ [31:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'name' @ [31:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'ALICE' @ [31:18] ==> public val ALICE: Party defined in net.corda.testing[DeserializedPropertyDescriptor]
 
@@ -34,13 +32,13 @@
 
 'rpcPort' @ [33:13] ==> public open fun rpcPort(p0: (Int..Int?)): Unit defined in net.corda.cordform.CordformNode[JavaMethodDescriptor]
 
-'rpcUsers' @ [34:13] ==> public fun CordformNode.rpcUsers(vararg users: User): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'rpcUsers' @ [34:13] ==> public fun CordformNode.rpcUsers(vararg users: User): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'notaryDemoUser' @ [34:22] ==> public val notaryDemoUser: User defined in net.corda.notarydemo in file SingleNotaryCordform.kt[PropertyDescriptorImpl]
 
-'node' @ [36:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'node' @ [36:9] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
-'name' @ [37:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'name' @ [37:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'BOB' @ [37:18] ==> public val BOB: Party defined in net.corda.testing[DeserializedPropertyDescriptor]
 
@@ -58,7 +56,7 @@
 
 'mapToObj' @ [41:63] ==> public final fun <U : (Any..Any?)> mapToObj(p0: ((Int) -> (NetworkHostAndPort..NetworkHostAndPort?)..((Int) -> (NetworkHostAndPort..NetworkHostAndPort?))?)): (Stream<(NetworkHostAndPort..NetworkHostAndPort?)>..Stream<(NetworkHostAndPort..NetworkHostAndPort?)>?) defined in java.util.stream.IntStream[MyFunctionDescriptor]
 Inferred types:
-    <U : (Any..Any?)> -> NetworkHostAndPort
+    <U : (Any..Any?)> -> (net.corda.core.utilities.NetworkHostAndPort..net.corda.core.utilities.NetworkHostAndPort?)
 
 'NetworkHostAndPort' @ [41:74] ==> public constructor NetworkHostAndPort(host: String, port: Int) defined in net.corda.core.utilities.NetworkHostAndPort[DeserializedClassConstructorDescriptor]
 
@@ -70,19 +68,19 @@ Inferred types:
 Inferred types:
     <reified T> -> (net.corda.core.utilities.NetworkHostAndPort..net.corda.core.utilities.NetworkHostAndPort?)
 
-'node' @ [42:78] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'node' @ [42:78] ==> public fun CordformDefinition.node(configure: CordformNode.() -> Unit): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
-'name' @ [43:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'name' @ [43:13] ==> public fun CordformNode.name(name: X500Name): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'notaryNames' @ [43:18] ==> private val notaryNames: List<X500Name> defined in net.corda.notarydemo in file BFTNotaryCordform.kt[PropertyDescriptorImpl]
 
 'replicaId' @ [43:30] ==> value-parameter replicaId: Int defined in net.corda.notarydemo.BFTNotaryCordform.<init>.notaryNode[ValueParameterDescriptorImpl]
 
-'advertisedServices' @ [44:13] ==> public fun CordformNode.advertisedServices(vararg services: ServiceInfo): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'advertisedServices' @ [44:13] ==> public fun CordformNode.advertisedServices(vararg services: ServiceInfo): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'advertisedService' @ [44:32] ==> private final val advertisedService: ServiceInfo defined in net.corda.notarydemo.BFTNotaryCordform[PropertyDescriptorImpl]
 
-'notaryClusterAddresses' @ [45:13] ==> public fun CordformNode.notaryClusterAddresses(vararg addresses: NetworkHostAndPort): Unit defined in net.corda.demorun.util[SimpleFunctionDescriptorImpl]
+'notaryClusterAddresses' @ [45:13] ==> public fun CordformNode.notaryClusterAddresses(vararg addresses: NetworkHostAndPort): Unit defined in net.corda.demorun.util in file DemoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'clusterAddresses' @ [45:37] ==> val clusterAddresses: Array<(NetworkHostAndPort..NetworkHostAndPort?)> defined in net.corda.notarydemo.BFTNotaryCordform.<init>[LocalVariableDescriptor]
 

@@ -46,6 +46,8 @@ Inferred types:
 
 'String' @ [90:25] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'isNotBlank' @ [90:33] ==> @InlineOnly public inline fun CharSequence.isNotBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'map' @ [91:18] ==> public inline fun <T, R> Iterable<String>.map(transform: (String) -> ServiceInfo): List<ServiceInfo> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -66,8 +68,6 @@ Inferred types:
 'advertisedServices' @ [93:40] ==> val advertisedServices: MutableSet<ServiceInfo> defined in net.corda.node.services.config.FullNodeConfiguration.calculateServices[LocalVariableDescriptor]
 
 'ServiceInfo' @ [93:62] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'NetworkMapService' @ [93:74] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
 
 'type' @ [93:92] ==> public final val type: ServiceType defined in net.corda.node.services.network.NetworkMapService.Companion[PropertyDescriptorImpl]
 

@@ -2,7 +2,7 @@
 
 'name' @ [43:37] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'this' @ [44:42] ==> <this> defined in net.corda.core.schemas.MappedSchema[LazyClassReceiverParameterDescriptor]
 

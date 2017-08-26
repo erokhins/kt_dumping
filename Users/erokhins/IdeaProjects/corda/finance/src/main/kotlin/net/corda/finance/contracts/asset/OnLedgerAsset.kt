@@ -416,7 +416,7 @@ Inferred types:
 
 'amount' @ [151:115] ==> value-parameter amount: Amount<T> defined in net.corda.finance.contracts.asset.OnLedgerAsset.Companion.gatherCoins[ValueParameterDescriptorImpl]
 
-'Pair' @ [153:20] ==> public constructor Pair<out A, out B>(first: ArrayList<StateAndRef<S>>, second: Amount<T>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [153:20] ==> public constructor Pair<out A, out B>(first: ArrayList<StateAndRef<S>> /* = ArrayList<StateAndRef<S>> */, second: Amount<T>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> ArrayList<StateAndRef<S>>
     <out B> -> Amount<T>

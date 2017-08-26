@@ -200,8 +200,8 @@ Inferred types:
 
 'LinkedHashMap' @ [163:98] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> SecureHash
-    <V : (Any..Any?)> -> WireTransactionWithLocation
+    <K : (Any..Any?)> -> (net.corda.core.crypto.SecureHash..net.corda.core.crypto.SecureHash?)
+    <V : (Any..Any?)> -> (net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation..net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation?)
 
 'HashMap' @ [164:109] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
@@ -323,361 +323,361 @@ Inferred types:
 
 'index' @ [209:75] ==> public final val index: Int defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
 
-'Suppress' @ [210:9] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
-
-'if (S::class.java.isAssignableFrom(output.data.javaClass))  {
+'if (S::class.java.isAssignableFrom(output.data.javaClass)) @Suppress("UNCHECKED_CAST") {
             output as TransactionState<S>
         } else {
             throw TypeMismatch(requested = S::class.java, actual = output.data.javaClass)
-        }' @ [211:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: TransactionState<S>, elseBranch: TransactionState<S>): TransactionState<S>[SimpleFunctionDescriptorImpl]
+        }' @ [210:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: TransactionState<S>, elseBranch: TransactionState<S>): TransactionState<S>[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> TransactionState<S>
 
-'java' @ [211:29] ==> public val <T> KClass<S>.java: Class<S> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'java' @ [210:29] ==> public val <T> KClass<S>.java: Class<S> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> S
 
-'isAssignableFrom' @ [211:34] ==> public open fun isAssignableFrom(p0: (Class<*>..Class<*>?)): Boolean defined in java.lang.Class[JavaMethodDescriptor]
+'isAssignableFrom' @ [210:34] ==> public open fun isAssignableFrom(p0: (Class<*>..Class<*>?)): Boolean defined in java.lang.Class[JavaMethodDescriptor]
 
-'output' @ [211:51] ==> val output: TransactionState<ContractState> defined in net.corda.testing.TestLedgerDSLInterpreter.resolveStateRef[LocalVariableDescriptor]
+'output' @ [210:51] ==> val output: TransactionState<ContractState> defined in net.corda.testing.TestLedgerDSLInterpreter.resolveStateRef[LocalVariableDescriptor]
 
-'data' @ [211:58] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
+'data' @ [210:58] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
 
-'javaClass' @ [211:63] ==> public val <T : Any> ContractState.javaClass: Class<ContractState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [210:63] ==> public val <T : Any> ContractState.javaClass: Class<ContractState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> ContractState
 
-'output' @ [212:13] ==> val output: TransactionState<ContractState> defined in net.corda.testing.TestLedgerDSLInterpreter.resolveStateRef[LocalVariableDescriptor]
+'Suppress' @ [210:75] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'TypeMismatch' @ [214:19] ==> public constructor TypeMismatch(requested: Class<*>, actual: Class<*>) defined in net.corda.testing.TestLedgerDSLInterpreter.TypeMismatch[ClassConstructorDescriptorImpl]
+'output' @ [211:13] ==> val output: TransactionState<ContractState> defined in net.corda.testing.TestLedgerDSLInterpreter.resolveStateRef[LocalVariableDescriptor]
 
-'java' @ [214:53] ==> public val <T> KClass<S>.java: Class<S> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'TypeMismatch' @ [213:19] ==> public constructor TypeMismatch(requested: Class<*>, actual: Class<*>) defined in net.corda.testing.TestLedgerDSLInterpreter.TypeMismatch[ClassConstructorDescriptorImpl]
+
+'java' @ [213:53] ==> public val <T> KClass<S>.java: Class<S> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> S
 
-'output' @ [214:68] ==> val output: TransactionState<ContractState> defined in net.corda.testing.TestLedgerDSLInterpreter.resolveStateRef[LocalVariableDescriptor]
+'output' @ [213:68] ==> val output: TransactionState<ContractState> defined in net.corda.testing.TestLedgerDSLInterpreter.resolveStateRef[LocalVariableDescriptor]
 
-'data' @ [214:75] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
+'data' @ [213:75] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
 
-'javaClass' @ [214:80] ==> public val <T : Any> ContractState.javaClass: Class<ContractState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [213:80] ==> public val <T : Any> ContractState.javaClass: Class<ContractState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> ContractState
 
-'services' @ [219:16] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'services' @ [218:16] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'attachments' @ [219:25] ==> public abstract val attachments: AttachmentStorage defined in net.corda.core.node.ServiceHub[DeserializedPropertyDescriptor]
+'attachments' @ [218:25] ==> public abstract val attachments: AttachmentStorage defined in net.corda.core.node.ServiceHub[DeserializedPropertyDescriptor]
 
-'openAttachment' @ [219:37] ==> public abstract fun openAttachment(id: SecureHash): Attachment? defined in net.corda.core.node.services.AttachmentStorage[DeserializedSimpleFunctionDescriptor]
+'openAttachment' @ [218:37] ==> public abstract fun openAttachment(id: SecureHash): Attachment? defined in net.corda.core.node.services.AttachmentStorage[DeserializedSimpleFunctionDescriptor]
 
-'attachmentId' @ [219:52] ==> value-parameter attachmentId: SecureHash defined in net.corda.testing.TestLedgerDSLInterpreter.resolveAttachment[ValueParameterDescriptorImpl]
+'attachmentId' @ [218:52] ==> value-parameter attachmentId: SecureHash defined in net.corda.testing.TestLedgerDSLInterpreter.resolveAttachment[ValueParameterDescriptorImpl]
 
-'AttachmentResolutionException' @ [219:75] ==> public constructor AttachmentResolutionException(attachmentId: SecureHash) defined in net.corda.testing.AttachmentResolutionException[ClassConstructorDescriptorImpl]
+'AttachmentResolutionException' @ [218:75] ==> public constructor AttachmentResolutionException(attachmentId: SecureHash) defined in net.corda.testing.AttachmentResolutionException[ClassConstructorDescriptorImpl]
 
-'attachmentId' @ [219:105] ==> value-parameter attachmentId: SecureHash defined in net.corda.testing.TestLedgerDSLInterpreter.resolveAttachment[ValueParameterDescriptorImpl]
+'attachmentId' @ [218:105] ==> value-parameter attachmentId: SecureHash defined in net.corda.testing.TestLedgerDSLInterpreter.resolveAttachment[ValueParameterDescriptorImpl]
 
-'TestTransactionDSLInterpreter' @ [226:38] ==> public constructor TestTransactionDSLInterpreter(ledgerInterpreter: TestLedgerDSLInterpreter, transactionBuilder: TransactionBuilder) defined in net.corda.testing.TestTransactionDSLInterpreter[ClassConstructorDescriptorImpl]
+'TestTransactionDSLInterpreter' @ [225:38] ==> public constructor TestTransactionDSLInterpreter(ledgerInterpreter: TestLedgerDSLInterpreter, transactionBuilder: TransactionBuilder) defined in net.corda.testing.TestTransactionDSLInterpreter[ClassConstructorDescriptorImpl]
 
-'this' @ [226:68] ==> <this> defined in net.corda.testing.TestLedgerDSLInterpreter[LazyClassReceiverParameterDescriptor]
+'this' @ [225:68] ==> <this> defined in net.corda.testing.TestLedgerDSLInterpreter[LazyClassReceiverParameterDescriptor]
 
-'transactionBuilder' @ [226:74] ==> value-parameter transactionBuilder: TransactionBuilder defined in net.corda.testing.TestLedgerDSLInterpreter.interpretTransactionDsl[ValueParameterDescriptorImpl]
+'transactionBuilder' @ [225:74] ==> value-parameter transactionBuilder: TransactionBuilder defined in net.corda.testing.TestLedgerDSLInterpreter.interpretTransactionDsl[ValueParameterDescriptorImpl]
 
-'invoke' @ [227:9] ==> public abstract operator fun invoke(p1: TransactionDSL<TestTransactionDSLInterpreter>): R defined in kotlin.Function1[FunctionInvokeDescriptor]
+'invoke' @ [226:9] ==> public abstract operator fun invoke(p1: TransactionDSL<TestTransactionDSLInterpreter>): R defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'TransactionDSL' @ [227:13] ==> public constructor TransactionDSL<out T : TransactionDSLInterpreter>(interpreter: TestTransactionDSLInterpreter) defined in net.corda.testing.TransactionDSL[ClassConstructorDescriptorImpl]
+'TransactionDSL' @ [226:13] ==> public constructor TransactionDSL<out T : TransactionDSLInterpreter>(interpreter: TestTransactionDSLInterpreter) defined in net.corda.testing.TransactionDSL[ClassConstructorDescriptorImpl]
 Inferred types:
     <out T : TransactionDSLInterpreter> -> TestTransactionDSLInterpreter
 
-'transactionInterpreter' @ [227:28] ==> val transactionInterpreter: TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter.interpretTransactionDsl[LocalVariableDescriptor]
+'transactionInterpreter' @ [226:28] ==> val transactionInterpreter: TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter.interpretTransactionDsl[LocalVariableDescriptor]
 
-'transactionInterpreter' @ [228:16] ==> val transactionInterpreter: TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter.interpretTransactionDsl[LocalVariableDescriptor]
+'transactionInterpreter' @ [227:16] ==> val transactionInterpreter: TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter.interpretTransactionDsl[LocalVariableDescriptor]
 
-'transactionWithLocations' @ [232:39] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'transactionWithLocations' @ [231:39] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'transactionHash' @ [232:64] ==> value-parameter transactionHash: SecureHash defined in net.corda.testing.TestLedgerDSLInterpreter.transactionName[ValueParameterDescriptorImpl]
+'transactionHash' @ [231:64] ==> value-parameter transactionHash: SecureHash defined in net.corda.testing.TestLedgerDSLInterpreter.transactionName[ValueParameterDescriptorImpl]
 
 'if (transactionWithLocation != null) {
             transactionWithLocation.label ?: "TX[${transactionWithLocation.location}]"
         } else {
             null
-        }' @ [233:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String?, elseBranch: String?): String?[SimpleFunctionDescriptorImpl]
+        }' @ [232:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String?, elseBranch: String?): String?[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> String?
 
-'transactionWithLocation' @ [233:20] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.transactionName[LocalVariableDescriptor]
+'transactionWithLocation' @ [232:20] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.transactionName[LocalVariableDescriptor]
 
-'transactionWithLocation' @ [234:13] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.transactionName[LocalVariableDescriptor]
+'transactionWithLocation' @ [233:13] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.transactionName[LocalVariableDescriptor]
 
-'label' @ [234:37] ==> public final val label: String? defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
+'label' @ [233:37] ==> public final val label: String? defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
 
-'transactionWithLocation' @ [234:52] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.transactionName[LocalVariableDescriptor]
+'transactionWithLocation' @ [233:52] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.transactionName[LocalVariableDescriptor]
 
-'location' @ [234:76] ==> public final val location: String? defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
+'location' @ [233:76] ==> public final val location: String? defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
 
-'labelToOutputStateAndRefs' @ [241:13] ==> internal final val labelToOutputStateAndRefs: HashMap<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'labelToOutputStateAndRefs' @ [240:13] ==> internal final val labelToOutputStateAndRefs: HashMap<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'filter' @ [241:39] ==> public inline fun <K, V> Map<out String, StateAndRef<ContractState>>.filter(predicate: (Map.Entry<String, StateAndRef<ContractState>>) -> Boolean): Map<String, StateAndRef<ContractState>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filter' @ [240:39] ==> public inline fun <K, V> Map<out String, StateAndRef<ContractState>>.filter(predicate: (Map.Entry<String, StateAndRef<ContractState>>) -> Boolean): Map<String, StateAndRef<ContractState>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
     <V> -> StateAndRef<ContractState>
 
-'it' @ [241:48] ==> value-parameter it: Map.Entry<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter.outputToLabel.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [240:48] ==> value-parameter it: Map.Entry<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter.outputToLabel.<anonymous>[ValueParameterDescriptorImpl]
 
-'value' @ [241:51] ==> public abstract val value: StateAndRef<ContractState> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'value' @ [240:51] ==> public abstract val value: StateAndRef<ContractState> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'state' @ [241:57] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'state' @ [240:57] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'data' @ [241:63] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
+'data' @ [240:63] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
 
-'state' @ [241:71] ==> value-parameter state: ContractState defined in net.corda.testing.TestLedgerDSLInterpreter.outputToLabel[ValueParameterDescriptorImpl]
+'state' @ [240:71] ==> value-parameter state: ContractState defined in net.corda.testing.TestLedgerDSLInterpreter.outputToLabel[ValueParameterDescriptorImpl]
 
-'keys' @ [241:79] ==> public abstract val keys: Set<String> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
+'keys' @ [240:79] ==> public abstract val keys: Set<String> defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
-'firstOrNull' @ [241:84] ==> public fun <T> Iterable<String>.firstOrNull(): String? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'firstOrNull' @ [240:84] ==> public fun <T> Iterable<String>.firstOrNull(): String? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
-'HashMap' @ [247:80] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
+'HashMap' @ [246:80] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
     <K : (Any..Any?)> -> SecureHash
     <V : (Any..Any?)> -> WireTransactionWithLocation
 
-'getCallerLocation' @ [249:35] ==> private final fun getCallerLocation(): String? defined in net.corda.testing.TestLedgerDSLInterpreter.Companion[SimpleFunctionDescriptorImpl]
+'getCallerLocation' @ [248:35] ==> private final fun getCallerLocation(): String? defined in net.corda.testing.TestLedgerDSLInterpreter.Companion[SimpleFunctionDescriptorImpl]
 
-'interpretTransactionDsl' @ [250:38] ==> private final fun <R> interpretTransactionDsl(transactionBuilder: TransactionBuilder, dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> R): TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter[SimpleFunctionDescriptorImpl]
+'interpretTransactionDsl' @ [249:38] ==> private final fun <R> interpretTransactionDsl(transactionBuilder: TransactionBuilder, dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> R): TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> R
 
-'transactionBuilder' @ [250:62] ==> value-parameter transactionBuilder: TransactionBuilder defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[ValueParameterDescriptorImpl]
+'transactionBuilder' @ [249:62] ==> value-parameter transactionBuilder: TransactionBuilder defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[ValueParameterDescriptorImpl]
 
-'dsl' @ [250:82] ==> value-parameter dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> R defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[ValueParameterDescriptorImpl]
+'dsl' @ [249:82] ==> value-parameter dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> R defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[ValueParameterDescriptorImpl]
 
-'transactionInterpreter' @ [252:31] ==> val transactionInterpreter: TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
+'transactionInterpreter' @ [251:31] ==> val transactionInterpreter: TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
 
-'toWireTransaction' @ [252:54] ==> internal final fun toWireTransaction(): WireTransaction defined in net.corda.testing.TestTransactionDSLInterpreter[SimpleFunctionDescriptorImpl]
+'toWireTransaction' @ [251:54] ==> internal final fun toWireTransaction(): WireTransaction defined in net.corda.testing.TestTransactionDSLInterpreter[SimpleFunctionDescriptorImpl]
 
-'transactionInterpreter' @ [254:9] ==> val transactionInterpreter: TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
+'transactionInterpreter' @ [253:9] ==> val transactionInterpreter: TestTransactionDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
 
-'labelToIndexMap' @ [254:32] ==> internal final val labelToIndexMap: HashMap<String, Int> defined in net.corda.testing.TestTransactionDSLInterpreter[PropertyDescriptorImpl]
+'labelToIndexMap' @ [253:32] ==> internal final val labelToIndexMap: HashMap<String, Int> defined in net.corda.testing.TestTransactionDSLInterpreter[PropertyDescriptorImpl]
 
-'forEach' @ [254:48] ==> public final fun forEach(p0: (String, Int) -> Unit): Unit defined in java.util.HashMap[MyFunctionDescriptor]
+'forEach' @ [253:48] ==> public final fun forEach(p0: (String, Int) -> Unit): Unit defined in java.util.HashMap[MyFunctionDescriptor]
 
-'label' @ [255:17] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap.<anonymous>[ValueParameterDescriptorImpl]
+'label' @ [254:17] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap.<anonymous>[ValueParameterDescriptorImpl]
 
-'labelToOutputStateAndRefs' @ [255:26] ==> internal final val labelToOutputStateAndRefs: HashMap<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'labelToOutputStateAndRefs' @ [254:26] ==> internal final val labelToOutputStateAndRefs: HashMap<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'DuplicateOutputLabel' @ [256:23] ==> public constructor DuplicateOutputLabel(label: String) defined in net.corda.testing.DuplicateOutputLabel[ClassConstructorDescriptorImpl]
+'DuplicateOutputLabel' @ [255:23] ==> public constructor DuplicateOutputLabel(label: String) defined in net.corda.testing.DuplicateOutputLabel[ClassConstructorDescriptorImpl]
 
-'label' @ [256:44] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap.<anonymous>[ValueParameterDescriptorImpl]
+'label' @ [255:44] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap.<anonymous>[ValueParameterDescriptorImpl]
 
-'labelToOutputStateAndRefs' @ [258:13] ==> internal final val labelToOutputStateAndRefs: HashMap<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'labelToOutputStateAndRefs' @ [257:13] ==> internal final val labelToOutputStateAndRefs: HashMap<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'label' @ [258:39] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap.<anonymous>[ValueParameterDescriptorImpl]
+'label' @ [257:39] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap.<anonymous>[ValueParameterDescriptorImpl]
 
-'wireTransaction' @ [258:48] ==> val wireTransaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
+'wireTransaction' @ [257:48] ==> val wireTransaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
 
-'outRef' @ [258:64] ==> public final fun <T : ContractState> outRef(index: Int): StateAndRef<ContractState> defined in net.corda.core.transactions.WireTransaction[DeserializedSimpleFunctionDescriptor]
+'outRef' @ [257:64] ==> public final fun <T : ContractState> outRef(index: Int): StateAndRef<ContractState> defined in net.corda.core.transactions.WireTransaction[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : ContractState> -> ContractState
 
-'index' @ [258:71] ==> value-parameter index: Int defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap.<anonymous>[ValueParameterDescriptorImpl]
+'index' @ [257:71] ==> value-parameter index: Int defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap.<anonymous>[ValueParameterDescriptorImpl]
 
-'transactionMap' @ [260:9] ==> value-parameter transactionMap: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> = ... defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[ValueParameterDescriptorImpl]
+'transactionMap' @ [259:9] ==> value-parameter transactionMap: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> = ... defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[ValueParameterDescriptorImpl]
 
-'wireTransaction' @ [260:24] ==> val wireTransaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
+'wireTransaction' @ [259:24] ==> val wireTransaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
 
-'id' @ [260:40] ==> public open val id: SecureHash defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
+'id' @ [259:40] ==> public open val id: SecureHash defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'WireTransactionWithLocation' @ [261:17] ==> public constructor WireTransactionWithLocation(label: String?, transaction: WireTransaction, location: String?) defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[ClassConstructorDescriptorImpl]
+'WireTransactionWithLocation' @ [260:17] ==> public constructor WireTransactionWithLocation(label: String?, transaction: WireTransaction, location: String?) defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[ClassConstructorDescriptorImpl]
 
-'transactionLabel' @ [261:45] ==> value-parameter transactionLabel: String? defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[ValueParameterDescriptorImpl]
+'transactionLabel' @ [260:45] ==> value-parameter transactionLabel: String? defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[ValueParameterDescriptorImpl]
 
-'wireTransaction' @ [261:63] ==> val wireTransaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
+'wireTransaction' @ [260:63] ==> val wireTransaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
 
-'transactionLocation' @ [261:80] ==> val transactionLocation: String? defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
+'transactionLocation' @ [260:80] ==> val transactionLocation: String? defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
 
-'wireTransaction' @ [263:16] ==> val wireTransaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
+'wireTransaction' @ [262:16] ==> val wireTransaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.recordTransactionWithTransactionMap[LocalVariableDescriptor]
 
-'recordTransactionWithTransactionMap' @ [270:9] ==> private final fun <R> recordTransactionWithTransactionMap(transactionLabel: String?, transactionBuilder: TransactionBuilder, dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> EnforceVerifyOrFail, transactionMap: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> = ...): WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter[SimpleFunctionDescriptorImpl]
+'recordTransactionWithTransactionMap' @ [269:9] ==> private final fun <R> recordTransactionWithTransactionMap(transactionLabel: String?, transactionBuilder: TransactionBuilder, dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> EnforceVerifyOrFail, transactionMap: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> = ...): WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> EnforceVerifyOrFail
 
-'transactionLabel' @ [270:45] ==> value-parameter transactionLabel: String? defined in net.corda.testing.TestLedgerDSLInterpreter._transaction[ValueParameterDescriptorImpl]
+'transactionLabel' @ [269:45] ==> value-parameter transactionLabel: String? defined in net.corda.testing.TestLedgerDSLInterpreter._transaction[ValueParameterDescriptorImpl]
 
-'transactionBuilder' @ [270:63] ==> value-parameter transactionBuilder: TransactionBuilder defined in net.corda.testing.TestLedgerDSLInterpreter._transaction[ValueParameterDescriptorImpl]
+'transactionBuilder' @ [269:63] ==> value-parameter transactionBuilder: TransactionBuilder defined in net.corda.testing.TestLedgerDSLInterpreter._transaction[ValueParameterDescriptorImpl]
 
-'dsl' @ [270:83] ==> value-parameter dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> EnforceVerifyOrFail defined in net.corda.testing.TestLedgerDSLInterpreter._transaction[ValueParameterDescriptorImpl]
+'dsl' @ [269:83] ==> value-parameter dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> EnforceVerifyOrFail defined in net.corda.testing.TestLedgerDSLInterpreter._transaction[ValueParameterDescriptorImpl]
 
-'transactionWithLocations' @ [270:88] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'transactionWithLocations' @ [269:88] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'recordTransactionWithTransactionMap' @ [276:9] ==> private final fun <R> recordTransactionWithTransactionMap(transactionLabel: String?, transactionBuilder: TransactionBuilder, dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> Unit, transactionMap: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> = ...): WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter[SimpleFunctionDescriptorImpl]
+'recordTransactionWithTransactionMap' @ [275:9] ==> private final fun <R> recordTransactionWithTransactionMap(transactionLabel: String?, transactionBuilder: TransactionBuilder, dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> Unit, transactionMap: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> = ...): WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter[SimpleFunctionDescriptorImpl]
 Inferred types:
     <R> -> Unit
 
-'transactionLabel' @ [276:45] ==> value-parameter transactionLabel: String? defined in net.corda.testing.TestLedgerDSLInterpreter._unverifiedTransaction[ValueParameterDescriptorImpl]
+'transactionLabel' @ [275:45] ==> value-parameter transactionLabel: String? defined in net.corda.testing.TestLedgerDSLInterpreter._unverifiedTransaction[ValueParameterDescriptorImpl]
 
-'transactionBuilder' @ [276:63] ==> value-parameter transactionBuilder: TransactionBuilder defined in net.corda.testing.TestLedgerDSLInterpreter._unverifiedTransaction[ValueParameterDescriptorImpl]
+'transactionBuilder' @ [275:63] ==> value-parameter transactionBuilder: TransactionBuilder defined in net.corda.testing.TestLedgerDSLInterpreter._unverifiedTransaction[ValueParameterDescriptorImpl]
 
-'dsl' @ [276:83] ==> value-parameter dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> Unit defined in net.corda.testing.TestLedgerDSLInterpreter._unverifiedTransaction[ValueParameterDescriptorImpl]
+'dsl' @ [275:83] ==> value-parameter dsl: TransactionDSL<TestTransactionDSLInterpreter>.() -> Unit defined in net.corda.testing.TestLedgerDSLInterpreter._unverifiedTransaction[ValueParameterDescriptorImpl]
 
-'nonVerifiedTransactionWithLocations' @ [276:88] ==> private final val nonVerifiedTransactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'nonVerifiedTransactionWithLocations' @ [275:88] ==> private final val nonVerifiedTransactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'invoke' @ [281:13] ==> public abstract operator fun invoke(p1: LedgerDSL<TestTransactionDSLInterpreter, LedgerDSLInterpreter<TestTransactionDSLInterpreter>>): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
+'invoke' @ [280:13] ==> public abstract operator fun invoke(p1: LedgerDSL<TestTransactionDSLInterpreter, LedgerDSLInterpreter<TestTransactionDSLInterpreter>>): Unit defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'LedgerDSL' @ [281:17] ==> public constructor LedgerDSL<out T : TransactionDSLInterpreter, out L : LedgerDSLInterpreter<TestTransactionDSLInterpreter>>(interpreter: TestLedgerDSLInterpreter) defined in net.corda.testing.LedgerDSL[ClassConstructorDescriptorImpl]
+'LedgerDSL' @ [280:17] ==> public constructor LedgerDSL<out T : TransactionDSLInterpreter, out L : LedgerDSLInterpreter<TestTransactionDSLInterpreter>>(interpreter: TestLedgerDSLInterpreter) defined in net.corda.testing.LedgerDSL[ClassConstructorDescriptorImpl]
 Inferred types:
     <out T : TransactionDSLInterpreter> -> TestTransactionDSLInterpreter
     <out L : LedgerDSLInterpreter<T>> -> TestLedgerDSLInterpreter
 
-'copy' @ [281:27] ==> internal final fun copy(): TestLedgerDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter[SimpleFunctionDescriptorImpl]
+'copy' @ [280:27] ==> internal final fun copy(): TestLedgerDSLInterpreter defined in net.corda.testing.TestLedgerDSLInterpreter[SimpleFunctionDescriptorImpl]
 
-'services' @ [284:16] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'services' @ [283:16] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'attachments' @ [284:25] ==> public abstract val attachments: AttachmentStorage defined in net.corda.core.node.ServiceHub[DeserializedPropertyDescriptor]
+'attachments' @ [283:25] ==> public abstract val attachments: AttachmentStorage defined in net.corda.core.node.ServiceHub[DeserializedPropertyDescriptor]
 
-'importAttachment' @ [284:37] ==> public abstract fun importAttachment(jar: InputStream): SecureHash defined in net.corda.core.node.services.AttachmentStorage[DeserializedSimpleFunctionDescriptor]
+'importAttachment' @ [283:37] ==> public abstract fun importAttachment(jar: InputStream): SecureHash defined in net.corda.core.node.services.AttachmentStorage[DeserializedSimpleFunctionDescriptor]
 
-'attachment' @ [284:54] ==> value-parameter attachment: InputStream defined in net.corda.testing.TestLedgerDSLInterpreter.attachment[ValueParameterDescriptorImpl]
+'attachment' @ [283:54] ==> value-parameter attachment: InputStream defined in net.corda.testing.TestLedgerDSLInterpreter.attachment[ValueParameterDescriptorImpl]
 
-'mutableSetOf' @ [289:30] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<StateRef> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mutableSetOf' @ [288:30] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<StateRef> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateRef
 
-'services' @ [290:13] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'services' @ [289:13] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'recordTransactions' @ [290:22] ==> public open fun recordTransactions(txs: Iterable<SignedTransaction>): Unit defined in net.corda.core.node.ServiceHub[DeserializedSimpleFunctionDescriptor]
+'recordTransactions' @ [289:22] ==> public open fun recordTransactions(txs: Iterable<SignedTransaction>): Unit defined in net.corda.core.node.ServiceHub[DeserializedSimpleFunctionDescriptor]
 
-'transactionsUnverified' @ [290:41] ==> public final val transactionsUnverified: List<WireTransaction> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'transactionsUnverified' @ [289:41] ==> public final val transactionsUnverified: List<WireTransaction> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'map' @ [290:64] ==> public inline fun <T, R> Iterable<WireTransaction>.map(transform: (WireTransaction) -> SignedTransaction): List<SignedTransaction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [289:64] ==> public inline fun <T, R> Iterable<WireTransaction>.map(transform: (WireTransaction) -> SignedTransaction): List<SignedTransaction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> WireTransaction
     <R> -> SignedTransaction
 
-'SignedTransaction' @ [290:70] ==> public constructor SignedTransaction(ctx: CoreTransaction, sigs: List<TransactionSignature>) defined in net.corda.core.transactions.SignedTransaction[DeserializedClassConstructorDescriptor]
+'SignedTransaction' @ [289:70] ==> public constructor SignedTransaction(ctx: CoreTransaction, sigs: List<TransactionSignature>) defined in net.corda.core.transactions.SignedTransaction[DeserializedClassConstructorDescriptor]
 
-'it' @ [290:88] ==> value-parameter it: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [289:88] ==> value-parameter it: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies.<anonymous>[ValueParameterDescriptorImpl]
 
-'listOf' @ [290:92] ==> public fun <T> listOf(element: TransactionSignature): List<TransactionSignature> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [289:92] ==> public fun <T> listOf(element: TransactionSignature): List<TransactionSignature> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TransactionSignature
 
-'NULL_SIGNATURE' @ [290:99] ==> public val NULL_SIGNATURE: TransactionSignature defined in net.corda.core.crypto.testing[DeserializedPropertyDescriptor]
+'NULL_SIGNATURE' @ [289:99] ==> public val NULL_SIGNATURE: TransactionSignature defined in net.corda.core.crypto.testing[DeserializedPropertyDescriptor]
 
-'component1' @ [291:19] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation>.component1(): SecureHash defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component1' @ [290:19] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation>.component1(): SecureHash defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> SecureHash
     <V> -> WireTransactionWithLocation
 
-'component2' @ [291:22] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation>.component2(): TestLedgerDSLInterpreter.WireTransactionWithLocation defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component2' @ [290:22] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation>.component2(): TestLedgerDSLInterpreter.WireTransactionWithLocation defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> SecureHash
     <V> -> WireTransactionWithLocation
 
-'transactionWithLocations' @ [291:32] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'transactionWithLocations' @ [290:32] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'value' @ [292:27] ==> val value: TestLedgerDSLInterpreter.WireTransactionWithLocation defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'value' @ [291:27] ==> val value: TestLedgerDSLInterpreter.WireTransactionWithLocation defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'transaction' @ [292:33] ==> public final val transaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
+'transaction' @ [291:33] ==> public final val transaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
 
-'wtx' @ [293:27] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'wtx' @ [292:27] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'toLedgerTransaction' @ [293:31] ==> public final fun toLedgerTransaction(services: ServicesForResolution): LedgerTransaction defined in net.corda.core.transactions.WireTransaction[DeserializedSimpleFunctionDescriptor]
+'toLedgerTransaction' @ [292:31] ==> public final fun toLedgerTransaction(services: ServicesForResolution): LedgerTransaction defined in net.corda.core.transactions.WireTransaction[DeserializedSimpleFunctionDescriptor]
 
-'services' @ [293:51] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'services' @ [292:51] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'ltx' @ [294:17] ==> val ltx: LedgerTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'ltx' @ [293:17] ==> val ltx: LedgerTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'verify' @ [294:21] ==> public final fun verify(): Unit defined in net.corda.core.transactions.LedgerTransaction[DeserializedSimpleFunctionDescriptor]
+'verify' @ [293:21] ==> public final fun verify(): Unit defined in net.corda.core.transactions.LedgerTransaction[DeserializedSimpleFunctionDescriptor]
 
-'wtx' @ [295:35] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'wtx' @ [294:35] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'inputs' @ [295:39] ==> public open val inputs: List<StateRef> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
+'inputs' @ [294:39] ==> public open val inputs: List<StateRef> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'intersect' @ [295:46] ==> public infix fun <T> Iterable<StateRef>.intersect(other: Iterable<StateRef>): Set<StateRef> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'intersect' @ [294:46] ==> public infix fun <T> Iterable<StateRef>.intersect(other: Iterable<StateRef>): Set<StateRef> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateRef
 
-'usedInputs' @ [295:56] ==> val usedInputs: MutableSet<StateRef> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'usedInputs' @ [294:56] ==> val usedInputs: MutableSet<StateRef> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'!' @ [296:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
+'!' @ [295:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'doubleSpend' @ [296:22] ==> val doubleSpend: Set<StateRef> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'doubleSpend' @ [295:22] ==> val doubleSpend: Set<StateRef> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'isEmpty' @ [296:34] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
+'isEmpty' @ [295:34] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.Set[DeserializedSimpleFunctionDescriptor]
 
-'mutableListOf' @ [297:33] ==> public fun <T> mutableListOf(vararg elements: SecureHash): MutableList<SecureHash> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mutableListOf' @ [296:33] ==> public fun <T> mutableListOf(vararg elements: SecureHash): MutableList<SecureHash> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> SecureHash
 
-'wtx' @ [297:47] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'wtx' @ [296:47] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'id' @ [297:51] ==> public open val id: SecureHash defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
+'id' @ [296:51] ==> public open val id: SecureHash defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'doubleSpend' @ [298:21] ==> val doubleSpend: Set<StateRef> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'doubleSpend' @ [297:21] ==> val doubleSpend: Set<StateRef> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'mapTo' @ [298:33] ==> public inline fun <T, R, C : MutableCollection<in SecureHash>> Iterable<StateRef>.mapTo(destination: MutableList<SecureHash>, transform: (StateRef) -> SecureHash): MutableList<SecureHash> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapTo' @ [297:33] ==> public inline fun <T, R, C : MutableCollection<in SecureHash>> Iterable<StateRef>.mapTo(destination: MutableList<SecureHash>, transform: (StateRef) -> SecureHash): MutableList<SecureHash> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateRef
     <R> -> SecureHash
     <C : MutableCollection<in R>> -> MutableList<SecureHash>
 
-'txIds' @ [298:39] ==> val txIds: MutableList<SecureHash> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'txIds' @ [297:39] ==> val txIds: MutableList<SecureHash> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'it' @ [298:48] ==> value-parameter it: StateRef defined in net.corda.testing.TestLedgerDSLInterpreter.verifies.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [297:48] ==> value-parameter it: StateRef defined in net.corda.testing.TestLedgerDSLInterpreter.verifies.<anonymous>[ValueParameterDescriptorImpl]
 
-'txhash' @ [298:51] ==> public final val txhash: SecureHash defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
+'txhash' @ [297:51] ==> public final val txhash: SecureHash defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
 
-'DoubleSpentInputs' @ [299:27] ==> public constructor DoubleSpentInputs(ids: List<SecureHash>) defined in net.corda.testing.DoubleSpentInputs[ClassConstructorDescriptorImpl]
+'DoubleSpentInputs' @ [298:27] ==> public constructor DoubleSpentInputs(ids: List<SecureHash>) defined in net.corda.testing.DoubleSpentInputs[ClassConstructorDescriptorImpl]
 
-'txIds' @ [299:45] ==> val txIds: MutableList<SecureHash> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'txIds' @ [298:45] ==> val txIds: MutableList<SecureHash> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'usedInputs' @ [301:17] ==> val usedInputs: MutableSet<StateRef> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'usedInputs' @ [300:17] ==> val usedInputs: MutableSet<StateRef> defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'addAll' @ [301:28] ==> public abstract fun addAll(elements: Collection<StateRef>): Boolean defined in kotlin.collections.MutableSet[DeserializedSimpleFunctionDescriptor]
+'addAll' @ [300:28] ==> public abstract fun addAll(elements: Collection<StateRef>): Boolean defined in kotlin.collections.MutableSet[DeserializedSimpleFunctionDescriptor]
 
-'wtx' @ [301:35] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'wtx' @ [300:35] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'inputs' @ [301:39] ==> public open val inputs: List<StateRef> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
+'inputs' @ [300:39] ==> public open val inputs: List<StateRef> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'services' @ [302:17] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'services' @ [301:17] ==> public final val services: ServiceHub defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'recordTransactions' @ [302:26] ==> public open fun recordTransactions(first: SignedTransaction, vararg remaining: SignedTransaction): Unit defined in net.corda.core.node.ServiceHub[DeserializedSimpleFunctionDescriptor]
+'recordTransactions' @ [301:26] ==> public open fun recordTransactions(first: SignedTransaction, vararg remaining: SignedTransaction): Unit defined in net.corda.core.node.ServiceHub[DeserializedSimpleFunctionDescriptor]
 
-'SignedTransaction' @ [302:45] ==> public constructor SignedTransaction(ctx: CoreTransaction, sigs: List<TransactionSignature>) defined in net.corda.core.transactions.SignedTransaction[DeserializedClassConstructorDescriptor]
+'SignedTransaction' @ [301:45] ==> public constructor SignedTransaction(ctx: CoreTransaction, sigs: List<TransactionSignature>) defined in net.corda.core.transactions.SignedTransaction[DeserializedClassConstructorDescriptor]
 
-'wtx' @ [302:63] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'wtx' @ [301:63] ==> val wtx: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'listOf' @ [302:68] ==> public fun <T> listOf(element: TransactionSignature): List<TransactionSignature> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [301:68] ==> public fun <T> listOf(element: TransactionSignature): List<TransactionSignature> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TransactionSignature
 
-'NULL_SIGNATURE' @ [302:75] ==> public val NULL_SIGNATURE: TransactionSignature defined in net.corda.core.crypto.testing[DeserializedPropertyDescriptor]
+'NULL_SIGNATURE' @ [301:75] ==> public val NULL_SIGNATURE: TransactionSignature defined in net.corda.core.crypto.testing[DeserializedPropertyDescriptor]
 
-'Token' @ [304:40] ==> internal object Token : EnforceVerifyOrFail defined in net.corda.testing.EnforceVerifyOrFail[FakeCallableDescriptorForObject]
+'Token' @ [303:40] ==> internal object Token : EnforceVerifyOrFail defined in net.corda.testing.EnforceVerifyOrFail[FakeCallableDescriptorForObject]
 
-'transactionWithLocations' @ [306:43] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'transactionWithLocations' @ [305:43] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'exception' @ [306:68] ==> val exception: TransactionVerificationException defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'exception' @ [305:68] ==> val exception: TransactionVerificationException defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'txId' @ [306:78] ==> public final val txId: SecureHash defined in net.corda.core.contracts.TransactionVerificationException[DeserializedPropertyDescriptor]
+'txId' @ [305:78] ==> public final val txId: SecureHash defined in net.corda.core.contracts.TransactionVerificationException[DeserializedPropertyDescriptor]
 
-'transactionWithLocation' @ [307:35] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'transactionWithLocation' @ [306:35] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'label' @ [307:60] ==> public final val label: String? defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
+'label' @ [306:60] ==> public final val label: String? defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
 
-'transactionWithLocation' @ [307:69] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'transactionWithLocation' @ [306:69] ==> val transactionWithLocation: TestLedgerDSLInterpreter.WireTransactionWithLocation? defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'location' @ [307:94] ==> public final val location: String? defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
+'location' @ [306:94] ==> public final val location: String? defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
 
-'VerifiesFailed' @ [308:19] ==> public constructor VerifiesFailed(transactionName: String, cause: Throwable) defined in net.corda.testing.TestLedgerDSLInterpreter.VerifiesFailed[ClassConstructorDescriptorImpl]
+'VerifiesFailed' @ [307:19] ==> public constructor VerifiesFailed(transactionName: String, cause: Throwable) defined in net.corda.testing.TestLedgerDSLInterpreter.VerifiesFailed[ClassConstructorDescriptorImpl]
 
-'transactionName' @ [308:34] ==> val transactionName: String defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'transactionName' @ [307:34] ==> val transactionName: String defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'exception' @ [308:51] ==> val exception: TransactionVerificationException defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
+'exception' @ [307:51] ==> val exception: TransactionVerificationException defined in net.corda.testing.TestLedgerDSLInterpreter.verifies[LocalVariableDescriptor]
 
-'labelToOutputStateAndRefs' @ [313:27] ==> internal final val labelToOutputStateAndRefs: HashMap<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'labelToOutputStateAndRefs' @ [312:27] ==> internal final val labelToOutputStateAndRefs: HashMap<String, StateAndRef<ContractState>> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'label' @ [313:53] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[ValueParameterDescriptorImpl]
+'label' @ [312:53] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[ValueParameterDescriptorImpl]
 
 'if (stateAndRef == null) {
             throw IllegalArgumentException("State with label '$label' was not found")
@@ -686,186 +686,184 @@ Inferred types:
         } else {
             @Suppress("UNCHECKED_CAST")
             return stateAndRef as StateAndRef<S>
-        }' @ [314:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Nothing, elseBranch: Nothing): Nothing[SimpleFunctionDescriptorImpl]
+        }' @ [313:9] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Nothing, elseBranch: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Nothing
 
-'stateAndRef' @ [314:13] ==> val stateAndRef: StateAndRef<ContractState>? defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[LocalVariableDescriptor]
+'stateAndRef' @ [313:13] ==> val stateAndRef: StateAndRef<ContractState>? defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[LocalVariableDescriptor]
 
-'IllegalArgumentException' @ [315:19] ==> public final fun <init>(p0: (String..String?)): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
+'IllegalArgumentException' @ [314:19] ==> public final fun <init>(p0: (String..String?)): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
 
-'label' @ [315:64] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[ValueParameterDescriptorImpl]
+'label' @ [314:64] ==> value-parameter label: String defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[ValueParameterDescriptorImpl]
 
 'if (!clazz.isAssignableFrom(stateAndRef.state.data.javaClass)) {
             throw TypeMismatch(requested = clazz, actual = stateAndRef.state.data.javaClass)
         } else {
             @Suppress("UNCHECKED_CAST")
             return stateAndRef as StateAndRef<S>
-        }' @ [316:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Nothing, elseBranch: Nothing): Nothing[SimpleFunctionDescriptorImpl]
+        }' @ [315:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Nothing, elseBranch: Nothing): Nothing[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Nothing
 
-'!' @ [316:20] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
+'!' @ [315:20] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'clazz' @ [316:21] ==> value-parameter clazz: Class<S> defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[ValueParameterDescriptorImpl]
+'clazz' @ [315:21] ==> value-parameter clazz: Class<S> defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[ValueParameterDescriptorImpl]
 
-'isAssignableFrom' @ [316:27] ==> public open fun isAssignableFrom(p0: (Class<*>..Class<*>?)): Boolean defined in java.lang.Class[JavaMethodDescriptor]
+'isAssignableFrom' @ [315:27] ==> public open fun isAssignableFrom(p0: (Class<*>..Class<*>?)): Boolean defined in java.lang.Class[JavaMethodDescriptor]
 
-'stateAndRef' @ [316:44] ==> val stateAndRef: StateAndRef<ContractState>? defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[LocalVariableDescriptor]
+'stateAndRef' @ [315:44] ==> val stateAndRef: StateAndRef<ContractState>? defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[LocalVariableDescriptor]
 
-'state' @ [316:56] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'state' @ [315:56] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'data' @ [316:62] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
+'data' @ [315:62] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
 
-'javaClass' @ [316:67] ==> public val <T : Any> ContractState.javaClass: Class<ContractState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [315:67] ==> public val <T : Any> ContractState.javaClass: Class<ContractState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> ContractState
 
-'TypeMismatch' @ [317:19] ==> public constructor TypeMismatch(requested: Class<*>, actual: Class<*>) defined in net.corda.testing.TestLedgerDSLInterpreter.TypeMismatch[ClassConstructorDescriptorImpl]
+'TypeMismatch' @ [316:19] ==> public constructor TypeMismatch(requested: Class<*>, actual: Class<*>) defined in net.corda.testing.TestLedgerDSLInterpreter.TypeMismatch[ClassConstructorDescriptorImpl]
 
-'clazz' @ [317:44] ==> value-parameter clazz: Class<S> defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[ValueParameterDescriptorImpl]
+'clazz' @ [316:44] ==> value-parameter clazz: Class<S> defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[ValueParameterDescriptorImpl]
 
-'stateAndRef' @ [317:60] ==> val stateAndRef: StateAndRef<ContractState>? defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[LocalVariableDescriptor]
+'stateAndRef' @ [316:60] ==> val stateAndRef: StateAndRef<ContractState>? defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[LocalVariableDescriptor]
 
-'state' @ [317:72] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'state' @ [316:72] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'data' @ [317:78] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
+'data' @ [316:78] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
 
-'javaClass' @ [317:83] ==> public val <T : Any> ContractState.javaClass: Class<ContractState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [316:83] ==> public val <T : Any> ContractState.javaClass: Class<ContractState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> ContractState
 
-'Suppress' @ [319:13] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
+'Suppress' @ [318:13] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'stateAndRef' @ [320:20] ==> val stateAndRef: StateAndRef<ContractState>? defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[LocalVariableDescriptor]
+'stateAndRef' @ [319:20] ==> val stateAndRef: StateAndRef<ContractState>? defined in net.corda.testing.TestLedgerDSLInterpreter.retrieveOutputStateAndRef[LocalVariableDescriptor]
 
-'transactionWithLocations' @ [324:61] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'transactionWithLocations' @ [323:61] ==> private final val transactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'values' @ [324:86] ==> public open val values: MutableCollection<TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in java.util.HashMap[JavaPropertyDescriptor]
+'values' @ [323:86] ==> public open val values: MutableCollection<TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in java.util.HashMap[JavaPropertyDescriptor]
 
-'map' @ [324:93] ==> public inline fun <T, R> Iterable<TestLedgerDSLInterpreter.WireTransactionWithLocation>.map(transform: (TestLedgerDSLInterpreter.WireTransactionWithLocation) -> WireTransaction): List<WireTransaction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [323:93] ==> public inline fun <T, R> Iterable<TestLedgerDSLInterpreter.WireTransactionWithLocation>.map(transform: (TestLedgerDSLInterpreter.WireTransactionWithLocation) -> WireTransaction): List<WireTransaction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> WireTransactionWithLocation
     <R> -> WireTransaction
 
-'it' @ [324:99] ==> value-parameter it: TestLedgerDSLInterpreter.WireTransactionWithLocation defined in net.corda.testing.TestLedgerDSLInterpreter.<get-transactionsToVerify>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [323:99] ==> value-parameter it: TestLedgerDSLInterpreter.WireTransactionWithLocation defined in net.corda.testing.TestLedgerDSLInterpreter.<get-transactionsToVerify>.<anonymous>[ValueParameterDescriptorImpl]
 
-'transaction' @ [324:102] ==> public final val transaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
+'transaction' @ [323:102] ==> public final val transaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
 
-'nonVerifiedTransactionWithLocations' @ [325:63] ==> private final val nonVerifiedTransactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'nonVerifiedTransactionWithLocations' @ [324:63] ==> private final val nonVerifiedTransactionWithLocations: HashMap<SecureHash, TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'values' @ [325:99] ==> public open val values: MutableCollection<TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in java.util.HashMap[JavaPropertyDescriptor]
+'values' @ [324:99] ==> public open val values: MutableCollection<TestLedgerDSLInterpreter.WireTransactionWithLocation> defined in java.util.HashMap[JavaPropertyDescriptor]
 
-'map' @ [325:106] ==> public inline fun <T, R> Iterable<TestLedgerDSLInterpreter.WireTransactionWithLocation>.map(transform: (TestLedgerDSLInterpreter.WireTransactionWithLocation) -> WireTransaction): List<WireTransaction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [324:106] ==> public inline fun <T, R> Iterable<TestLedgerDSLInterpreter.WireTransactionWithLocation>.map(transform: (TestLedgerDSLInterpreter.WireTransactionWithLocation) -> WireTransaction): List<WireTransaction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> WireTransactionWithLocation
     <R> -> WireTransaction
 
-'it' @ [325:112] ==> value-parameter it: TestLedgerDSLInterpreter.WireTransactionWithLocation defined in net.corda.testing.TestLedgerDSLInterpreter.<get-transactionsUnverified>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [324:112] ==> value-parameter it: TestLedgerDSLInterpreter.WireTransactionWithLocation defined in net.corda.testing.TestLedgerDSLInterpreter.<get-transactionsUnverified>.<anonymous>[ValueParameterDescriptorImpl]
 
-'transaction' @ [325:115] ==> public final val transaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
+'transaction' @ [324:115] ==> public final val transaction: WireTransaction defined in net.corda.testing.TestLedgerDSLInterpreter.WireTransactionWithLocation[PropertyDescriptorImpl]
 
-'transactionsToSign' @ [334:84] ==> value-parameter transactionsToSign: List<WireTransaction> defined in net.corda.testing.signAll[ValueParameterDescriptorImpl]
+'transactionsToSign' @ [333:84] ==> value-parameter transactionsToSign: List<WireTransaction> defined in net.corda.testing.signAll[ValueParameterDescriptorImpl]
 
-'map' @ [334:103] ==> public inline fun <T, R> Iterable<WireTransaction>.map(transform: (WireTransaction) -> SignedTransaction): List<SignedTransaction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [333:103] ==> public inline fun <T, R> Iterable<WireTransaction>.map(transform: (WireTransaction) -> SignedTransaction): List<SignedTransaction> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> WireTransaction
     <R> -> SignedTransaction
 
-'check' @ [335:5] ==> @InlineOnly public inline fun check(value: Boolean): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'check' @ [334:5] ==> @InlineOnly public inline fun check(value: Boolean): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
-'wtx' @ [335:11] ==> value-parameter wtx: WireTransaction defined in net.corda.testing.signAll.<anonymous>[ValueParameterDescriptorImpl]
+'wtx' @ [334:11] ==> value-parameter wtx: WireTransaction defined in net.corda.testing.signAll.<anonymous>[ValueParameterDescriptorImpl]
 
-'requiredSigningKeys' @ [335:15] ==> public final val requiredSigningKeys: Set<PublicKey> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
+'requiredSigningKeys' @ [334:15] ==> public final val requiredSigningKeys: Set<PublicKey> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'isNotEmpty' @ [335:35] ==> @InlineOnly public inline fun <T> Collection<PublicKey>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'isNotEmpty' @ [334:35] ==> @InlineOnly public inline fun <T> Collection<PublicKey>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PublicKey
 
-'ArrayList' @ [336:22] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
+'ArrayList' @ [335:22] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
     <E : (Any..Any?)> -> TransactionSignature
 
-'HashMap' @ [337:21] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
+'HashMap' @ [336:21] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
     <K : (Any..Any?)> -> PublicKey
     <V : (Any..Any?)> -> KeyPair
 
-'ALL_TEST_KEYS' @ [339:6] ==> public val ALL_TEST_KEYS: List<KeyPair> defined in net.corda.testing in file CoreTestUtils.kt[PropertyDescriptorImpl]
+'ALL_TEST_KEYS' @ [338:6] ==> public val ALL_TEST_KEYS: List<KeyPair> defined in net.corda.testing in file CoreTestUtils.kt[PropertyDescriptorImpl]
 
-'extraKeys' @ [339:22] ==> value-parameter extraKeys: List<KeyPair> defined in net.corda.testing.signAll[ValueParameterDescriptorImpl]
+'extraKeys' @ [338:22] ==> value-parameter extraKeys: List<KeyPair> defined in net.corda.testing.signAll[ValueParameterDescriptorImpl]
 
-'forEach' @ [339:33] ==> @HidesMembers public inline fun <T> Iterable<KeyPair>.forEach(action: (KeyPair) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [338:33] ==> @HidesMembers public inline fun <T> Iterable<KeyPair>.forEach(action: (KeyPair) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KeyPair
 
-'keyLookup' @ [340:9] ==> val keyLookup: HashMap<PublicKey, KeyPair> defined in net.corda.testing.signAll.<anonymous>[LocalVariableDescriptor]
+'keyLookup' @ [339:9] ==> val keyLookup: HashMap<PublicKey, KeyPair> defined in net.corda.testing.signAll.<anonymous>[LocalVariableDescriptor]
 
-'it' @ [340:19] ==> value-parameter it: KeyPair defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [339:19] ==> value-parameter it: KeyPair defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'public' @ [340:22] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
+'public' @ [339:22] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'it' @ [340:32] ==> value-parameter it: KeyPair defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [339:32] ==> value-parameter it: KeyPair defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'wtx' @ [342:5] ==> value-parameter wtx: WireTransaction defined in net.corda.testing.signAll.<anonymous>[ValueParameterDescriptorImpl]
+'wtx' @ [341:5] ==> value-parameter wtx: WireTransaction defined in net.corda.testing.signAll.<anonymous>[ValueParameterDescriptorImpl]
 
-'requiredSigningKeys' @ [342:9] ==> public final val requiredSigningKeys: Set<PublicKey> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
+'requiredSigningKeys' @ [341:9] ==> public final val requiredSigningKeys: Set<PublicKey> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'expandedCompositeKeys' @ [342:29] ==> public val Iterable<PublicKey>.expandedCompositeKeys: Set<PublicKey> defined in net.corda.core.crypto.composite[DeserializedPropertyDescriptor]
+'expandedCompositeKeys' @ [341:29] ==> public val Iterable<PublicKey>.expandedCompositeKeys: Set<PublicKey> defined in net.corda.core.crypto.composite[DeserializedPropertyDescriptor]
 
-'forEach' @ [342:51] ==> @HidesMembers public inline fun <T> Iterable<PublicKey>.forEach(action: (PublicKey) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [341:51] ==> @HidesMembers public inline fun <T> Iterable<PublicKey>.forEach(action: (PublicKey) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PublicKey
 
-'keyLookup' @ [343:19] ==> val keyLookup: HashMap<PublicKey, KeyPair> defined in net.corda.testing.signAll.<anonymous>[LocalVariableDescriptor]
+'keyLookup' @ [342:19] ==> val keyLookup: HashMap<PublicKey, KeyPair> defined in net.corda.testing.signAll.<anonymous>[LocalVariableDescriptor]
 
-'it' @ [343:29] ==> value-parameter it: PublicKey defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [342:29] ==> value-parameter it: PublicKey defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'IllegalArgumentException' @ [343:42] ==> public final fun <init>(p0: (String..String?)): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
+'IllegalArgumentException' @ [342:42] ==> public final fun <init>(p0: (String..String?)): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
 
-'it' @ [343:95] ==> value-parameter it: PublicKey defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [342:95] ==> value-parameter it: PublicKey defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'toStringShort' @ [343:98] ==> public fun PublicKey.toStringShort(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
+'toStringShort' @ [342:98] ==> public fun PublicKey.toStringShort(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'signatures' @ [344:9] ==> val signatures: ArrayList<TransactionSignature> defined in net.corda.testing.signAll.<anonymous>[LocalVariableDescriptor]
+'signatures' @ [343:9] ==> val signatures: ArrayList<TransactionSignature> defined in net.corda.testing.signAll.<anonymous>[LocalVariableDescriptor]
 
-'key' @ [344:23] ==> val key: KeyPair defined in net.corda.testing.signAll.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'key' @ [343:23] ==> val key: KeyPair defined in net.corda.testing.signAll.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'sign' @ [344:27] ==> public fun KeyPair.sign(signableData: SignableData): TransactionSignature defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
+'sign' @ [343:27] ==> public fun KeyPair.sign(signableData: SignableData): TransactionSignature defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'SignableData' @ [344:32] ==> public constructor SignableData(txId: SecureHash, signatureMetadata: SignatureMetadata) defined in net.corda.core.crypto.SignableData[DeserializedClassConstructorDescriptor]
+'SignableData' @ [343:32] ==> public constructor SignableData(txId: SecureHash, signatureMetadata: SignatureMetadata) defined in net.corda.core.crypto.SignableData[DeserializedClassConstructorDescriptor]
 
-'wtx' @ [344:45] ==> value-parameter wtx: WireTransaction defined in net.corda.testing.signAll.<anonymous>[ValueParameterDescriptorImpl]
+'wtx' @ [343:45] ==> value-parameter wtx: WireTransaction defined in net.corda.testing.signAll.<anonymous>[ValueParameterDescriptorImpl]
 
-'id' @ [344:49] ==> public open val id: SecureHash defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
+'id' @ [343:49] ==> public open val id: SecureHash defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'SignatureMetadata' @ [344:53] ==> public constructor SignatureMetadata(platformVersion: Int, schemeNumberID: Int) defined in net.corda.core.crypto.SignatureMetadata[DeserializedClassConstructorDescriptor]
+'SignatureMetadata' @ [343:53] ==> public constructor SignatureMetadata(platformVersion: Int, schemeNumberID: Int) defined in net.corda.core.crypto.SignatureMetadata[DeserializedClassConstructorDescriptor]
 
-'Crypto' @ [344:74] ==> public object Crypto defined in net.corda.core.crypto[FakeCallableDescriptorForObject]
+'findSignatureScheme' @ [343:81] ==> @JvmStatic public final fun findSignatureScheme(key: PublicKey): SignatureScheme defined in net.corda.core.crypto.Crypto[DeserializedSimpleFunctionDescriptor]
 
-'findSignatureScheme' @ [344:81] ==> @JvmStatic public final fun findSignatureScheme(key: PublicKey): SignatureScheme defined in net.corda.core.crypto.Crypto[DeserializedSimpleFunctionDescriptor]
+'it' @ [343:101] ==> value-parameter it: PublicKey defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'it' @ [344:101] ==> value-parameter it: PublicKey defined in net.corda.testing.signAll.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'schemeNumberID' @ [343:105] ==> public final val schemeNumberID: Int defined in net.corda.core.crypto.SignatureScheme[DeserializedPropertyDescriptor]
 
-'schemeNumberID' @ [344:105] ==> public final val schemeNumberID: Int defined in net.corda.core.crypto.SignatureScheme[DeserializedPropertyDescriptor]
+'SignedTransaction' @ [345:5] ==> public constructor SignedTransaction(ctx: CoreTransaction, sigs: List<TransactionSignature>) defined in net.corda.core.transactions.SignedTransaction[DeserializedClassConstructorDescriptor]
 
-'SignedTransaction' @ [346:5] ==> public constructor SignedTransaction(ctx: CoreTransaction, sigs: List<TransactionSignature>) defined in net.corda.core.transactions.SignedTransaction[DeserializedClassConstructorDescriptor]
+'wtx' @ [345:23] ==> value-parameter wtx: WireTransaction defined in net.corda.testing.signAll.<anonymous>[ValueParameterDescriptorImpl]
 
-'wtx' @ [346:23] ==> value-parameter wtx: WireTransaction defined in net.corda.testing.signAll.<anonymous>[ValueParameterDescriptorImpl]
+'signatures' @ [345:28] ==> val signatures: ArrayList<TransactionSignature> defined in net.corda.testing.signAll.<anonymous>[LocalVariableDescriptor]
 
-'signatures' @ [346:28] ==> val signatures: ArrayList<TransactionSignature> defined in net.corda.testing.signAll.<anonymous>[LocalVariableDescriptor]
+'signAll' @ [354:38] ==> public fun signAll(transactionsToSign: List<WireTransaction>, extraKeys: List<KeyPair>): List<SignedTransaction> defined in net.corda.testing in file TestDSL.kt[SimpleFunctionDescriptorImpl]
 
-'signAll' @ [355:38] ==> public fun signAll(transactionsToSign: List<WireTransaction>, extraKeys: List<KeyPair>): List<SignedTransaction> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'this' @ [354:46] ==> <this> defined in net.corda.testing.signAll[ReceiverParameterDescriptorImpl]
 
-'this' @ [355:46] ==> <this> defined in net.corda.testing.signAll[ReceiverParameterDescriptorImpl]
+'interpreter' @ [354:51] ==> public final val interpreter: TestLedgerDSLInterpreter defined in net.corda.testing.LedgerDSL[PropertyDescriptorImpl]
 
-'interpreter' @ [355:51] ==> public final val interpreter: TestLedgerDSLInterpreter defined in net.corda.testing.LedgerDSL[PropertyDescriptorImpl]
+'wireTransactions' @ [354:63] ==> public final val wireTransactions: List<WireTransaction> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
 
-'wireTransactions' @ [355:63] ==> public final val wireTransactions: List<WireTransaction> defined in net.corda.testing.TestLedgerDSLInterpreter[PropertyDescriptorImpl]
+'extraKeys' @ [354:81] ==> value-parameter vararg extraKeys: KeyPair defined in net.corda.testing.signAll[ValueParameterDescriptorImpl]
 
-'extraKeys' @ [355:81] ==> value-parameter vararg extraKeys: KeyPair defined in net.corda.testing.signAll[ValueParameterDescriptorImpl]
-
-'toList' @ [355:91] ==> public fun <T> Array<out KeyPair>.toList(): List<KeyPair> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toList' @ [354:91] ==> public fun <T> Array<out KeyPair>.toList(): List<KeyPair> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> KeyPair
 

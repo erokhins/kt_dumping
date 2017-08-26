@@ -20,7 +20,7 @@
 
 'certs' @ [21:23] ==> val certs: (MutableList<out (Certificate..Certificate?)>..List<(Certificate..Certificate?)>?) defined in net.corda.core.identity.PartyAndCertificate.<init>[LocalVariableDescriptor]
 
-'toX509CertHolder' @ [21:32] ==> public fun Certificate.toX509CertHolder(): X509CertificateHolder defined in net.corda.core.internal[SimpleFunctionDescriptorImpl]
+'toX509CertHolder' @ [21:32] ==> public fun Certificate.toX509CertHolder(): X509CertificateHolder defined in net.corda.core.internal in file InternalUtils.kt[SimpleFunctionDescriptorImpl]
 
 'Transient' @ [24:5] ==> public constructor Transient() defined in kotlin.jvm.Transient[DeserializedClassConstructorDescriptor]
 

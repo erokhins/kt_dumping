@@ -150,9 +150,9 @@ Inferred types:
 
 'change' @ [72:48] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'to' @ [72:55] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.to: Int[MyPropertyDescriptor]
+'to' @ [72:55] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'startingOffsetOf' @ [73:42] ==> private final fun startingOffsetOf(listIndex: Int): Int defined in net.corda.client.jfx.utils.ConcatenatedList[SimpleFunctionDescriptorImpl]
 
@@ -162,9 +162,9 @@ Inferred types:
 
 'change' @ [75:57] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'from' @ [75:64] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.from: Int[MyPropertyDescriptor]
+'from' @ [75:64] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 '..' @ [77:31] ==> public final operator fun rangeTo(other: Int): IntRange defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
@@ -182,9 +182,9 @@ Inferred types:
 
 'change' @ [81:62] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'to' @ [81:69] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.to: Int[MyPropertyDescriptor]
+'to' @ [81:69] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'permutation' @ [82:25] ==> val permutation: IntArray defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[LocalVariableDescriptor]
 
@@ -206,9 +206,9 @@ Inferred types:
 
 'change' @ [84:68] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'to' @ [84:75] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.to: Int[MyPropertyDescriptor]
+'to' @ [84:75] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'permutation' @ [84:79] ==> val permutation: IntArray defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[LocalVariableDescriptor]
 
@@ -260,15 +260,15 @@ Inferred types:
 
 'change' @ [90:31] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'from' @ [90:38] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.from: Int[MyPropertyDescriptor]
+'from' @ [90:38] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'change' @ [90:44] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'to' @ [90:51] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.to: Int[MyPropertyDescriptor]
+'to' @ [90:51] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'nextUpdate' @ [91:25] ==> protected/*protected and package*/ final fun nextUpdate(p0: Int): Unit defined in net.corda.client.jfx.utils.ConcatenatedList[JavaMethodDescriptor]
 
@@ -294,15 +294,15 @@ Inferred types:
 
 'change' @ [98:52] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'addedSize' @ [98:59] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.addedSize: Int[MyPropertyDescriptor]
+'addedSize' @ [98:59] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.addedSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'change' @ [98:72] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'removedSize' @ [98:79] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.removedSize: Int[MyPropertyDescriptor]
+'removedSize' @ [98:79] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.removedSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'invalidateOffsets' @ [99:29] ==> private final fun invalidateOffsets(index: Int): Unit defined in net.corda.client.jfx.utils.ConcatenatedList[SimpleFunctionDescriptorImpl]
 
@@ -318,15 +318,15 @@ Inferred types:
 
 'change' @ [102:53] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'from' @ [102:60] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.from: Int[MyPropertyDescriptor]
+'from' @ [102:60] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'change' @ [102:66] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'removed' @ [102:73] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.removed: (MutableList<out ({Any & A}..A?)>..List<({Any & A}..A?)>?)[MyPropertyDescriptor]
+'removed' @ [102:73] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.removed: (MutableList<out (A..A?)>..List<(A..A?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'change' @ [104:25] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -346,15 +346,15 @@ Inferred types:
 
 'change' @ [107:54] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'addedSize' @ [107:61] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.addedSize: Int[MyPropertyDescriptor]
+'addedSize' @ [107:61] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.addedSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'change' @ [107:74] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'removedSize' @ [107:81] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.removedSize: Int[MyPropertyDescriptor]
+'removedSize' @ [107:81] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.removedSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'invalidateOffsets' @ [108:29] ==> private final fun invalidateOffsets(index: Int): Unit defined in net.corda.client.jfx.utils.ConcatenatedList[SimpleFunctionDescriptorImpl]
 
@@ -370,17 +370,17 @@ Inferred types:
 
 'change' @ [111:50] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'from' @ [111:57] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.from: Int[MyPropertyDescriptor]
+'from' @ [111:57] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'startingOffset' @ [111:63] ==> val startingOffset: Int defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[LocalVariableDescriptor]
 
 'change' @ [111:80] ==> value-parameter change: (ListChangeListener.Change<out (A..A?)>..ListChangeListener.Change<out (A..A?)>?) defined in net.corda.client.jfx.utils.ConcatenatedList.createListener.<anonymous>[ValueParameterDescriptorImpl]
 
-'to' @ [111:87] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A?)>.to: Int[MyPropertyDescriptor]
+'to' @ [111:87] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out (A..A?)>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A?)
+    <E : (Any..Any?)> -> Captured(out (A..A?))
 
 'recalculateOffsets' @ [114:17] ==> private final fun recalculateOffsets(): Unit defined in net.corda.client.jfx.utils.ConcatenatedList[SimpleFunctionDescriptorImpl]
 
@@ -531,7 +531,7 @@ Inferred types:
 
 'from' @ [139:41] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'index' @ [139:49] ==> val index: Int defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -539,7 +539,7 @@ Inferred types:
 
 'to' @ [139:64] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'entry' @ [140:25] ==> val entry: MutableMap.MutableEntry<ConcatenatedList.WrappedObservableList<out A>, Pair<Int, ListChangeListener<A>>> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -564,13 +564,13 @@ Inferred types:
 
 'to' @ [144:64] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'change' @ [144:69] ==> value-parameter change: ListChangeListener.Change<out ObservableList<A>> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[ValueParameterDescriptorImpl]
 
 'from' @ [144:76] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'if (change.from == 0) 0 else nestedIndexOffsets[change.from - 1]' @ [145:36] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Int, elseBranch: Int): Int[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -580,7 +580,7 @@ Inferred types:
 
 'from' @ [145:47] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'nestedIndexOffsets' @ [145:65] ==> @VisibleForTesting internal final val nestedIndexOffsets: ArrayList<Int> defined in net.corda.client.jfx.utils.ConcatenatedList[PropertyDescriptorImpl]
 
@@ -588,7 +588,7 @@ Inferred types:
 
 'from' @ [145:91] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'firstTouched' @ [146:37] ==> val firstTouched: Int defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -598,13 +598,13 @@ Inferred types:
 
 'to' @ [147:37] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'change' @ [147:42] ==> value-parameter change: ListChangeListener.Change<out ObservableList<A>> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[ValueParameterDescriptorImpl]
 
 'from' @ [147:49] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'currentOffset' @ [148:21] ==> var currentOffset: Int defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -616,7 +616,7 @@ Inferred types:
 
 'from' @ [148:52] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'i' @ [148:59] ==> val i: Int defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -640,7 +640,7 @@ Inferred types:
 
 'from' @ [155:37] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'source' @ [156:38] ==> public final val <A> ConcatenatedList<A>.source: (ObservableList<out (ObservableList<A>..ObservableList<A>?)>..ObservableList<out (ObservableList<A>..ObservableList<A>?)>?)[MyPropertyDescriptor]
 Inferred types:
@@ -680,7 +680,7 @@ Inferred types:
 
 'from' @ [164:66] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'i' @ [164:73] ==> val i: Int defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -692,7 +692,7 @@ Inferred types:
 
 'from' @ [165:74] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'i' @ [165:81] ==> val i: Int defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -738,7 +738,7 @@ Inferred types:
 
 'from' @ [173:47] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'i' @ [173:54] ==> val i: Int defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -851,19 +851,19 @@ Inferred types:
 
 'from' @ [187:45] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'change' @ [188:45] ==> value-parameter change: ListChangeListener.Change<out ObservableList<A>> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[ValueParameterDescriptorImpl]
 
 'from' @ [188:52] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'change' @ [188:59] ==> value-parameter change: ListChangeListener.Change<out ObservableList<A>> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[ValueParameterDescriptorImpl]
 
 'removedSize' @ [188:66] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.removedSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'if (index < removeEnd) {
                                 wrapped.observableList.removeListener(listener)
@@ -882,7 +882,7 @@ Inferred types:
 
 'observableList' @ [190:41] ==> public final val observableList: ObservableList<out A> defined in net.corda.client.jfx.utils.ConcatenatedList.WrappedObservableList[PropertyDescriptorImpl]
 
-'removeListener' @ [190:56] ==> public abstract fun removeListener(p0: (ListChangeListener<in (Nothing..Nothing?)>..ListChangeListener<in (Nothing..Nothing?)>?)): Unit defined in javafx.collections.ObservableList[JavaMethodDescriptor]
+'removeListener' @ [190:56] ==> public abstract fun removeListener(p0: (ListChangeListener<in (A..A?)>..ListChangeListener<in (A..A?)>?)): Unit defined in javafx.collections.ObservableList[JavaMethodDescriptor]
 
 'listener' @ [190:71] ==> val listener: ListChangeListener<A> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -905,7 +905,7 @@ Inferred types:
 
 'removedSize' @ [193:68] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.removedSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'listener' @ [193:81] ==> val listener: ListChangeListener<A> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -915,7 +915,7 @@ Inferred types:
 
 'from' @ [198:46] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'startingOffsetOf' @ [199:39] ==> private final fun startingOffsetOf(listIndex: Int): Int defined in net.corda.client.jfx.utils.ConcatenatedList[SimpleFunctionDescriptorImpl]
 
@@ -923,13 +923,13 @@ Inferred types:
 
 'from' @ [199:63] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'change' @ [200:35] ==> value-parameter change: ListChangeListener.Change<out ObservableList<A>> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[ValueParameterDescriptorImpl]
 
 'removed' @ [200:42] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.removed: (MutableList<out (ObservableList<A>..ObservableList<A>?)>..List<(ObservableList<A>..ObservableList<A>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'flatMap' @ [200:50] ==> public inline fun <T, R> Iterable<(ObservableList<A>..ObservableList<A>?)>.flatMap(transform: ((ObservableList<A>..ObservableList<A>?)) -> Iterable<(A..A?)>): List<(A..A?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -952,7 +952,7 @@ Inferred types:
 
 'from' @ [205:32] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'indexMap' @ [205:40] ==> @VisibleForTesting internal final val indexMap: HashMap<ConcatenatedList.WrappedObservableList<out A>, Pair<Int, ListChangeListener<A>>> defined in net.corda.client.jfx.utils.ConcatenatedList[PropertyDescriptorImpl]
 
@@ -981,7 +981,7 @@ Inferred types:
 
 'from' @ [209:49] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'entry' @ [211:33] ==> val entry: MutableMap.MutableEntry<ConcatenatedList.WrappedObservableList<out A>, Pair<Int, ListChangeListener<A>>> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -998,7 +998,7 @@ Inferred types:
 
 'addedSize' @ [211:68] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.addedSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'listener' @ [211:79] ==> val listener: ListChangeListener<A> defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged[LocalVariableDescriptor]
 
@@ -1006,7 +1006,7 @@ Inferred types:
 
 'addedSubList' @ [215:28] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.addedSubList: (MutableList<out (ObservableList<A>..ObservableList<A>?)>..List<(ObservableList<A>..ObservableList<A>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'forEachIndexed' @ [215:41] ==> public inline fun <T> Iterable<(ObservableList<A>..ObservableList<A>?)>.forEachIndexed(action: (index: Int, (ObservableList<A>..ObservableList<A>?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1031,7 +1031,7 @@ Inferred types:
 
 'from' @ [217:57] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'sublistIndex' @ [217:64] ==> value-parameter sublistIndex: Int defined in net.corda.client.jfx.utils.ConcatenatedList.sourceChanged.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1045,7 +1045,7 @@ Inferred types:
 
 'from' @ [219:46] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'recalculateOffsets' @ [221:21] ==> private final fun recalculateOffsets(): Unit defined in net.corda.client.jfx.utils.ConcatenatedList[SimpleFunctionDescriptorImpl]
 
@@ -1057,7 +1057,7 @@ Inferred types:
 
 'from' @ [222:53] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'nestedIndexOffsets' @ [222:60] ==> @VisibleForTesting internal final val nestedIndexOffsets: ArrayList<Int> defined in net.corda.client.jfx.utils.ConcatenatedList[PropertyDescriptorImpl]
 
@@ -1065,7 +1065,7 @@ Inferred types:
 
 'to' @ [222:86] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableList<A>>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<A>
+    <E : (Any..Any?)> -> Captured(out ObservableList<A>)
 
 'recalculateOffsets' @ [225:13] ==> private final fun recalculateOffsets(): Unit defined in net.corda.client.jfx.utils.ConcatenatedList[SimpleFunctionDescriptorImpl]
 

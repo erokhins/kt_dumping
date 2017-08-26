@@ -155,8 +155,6 @@ Inferred types:
 
 'idsToAttachments' @ [95:26] ==> private final val idsToAttachments: HashMap<SecureHash, Attachment> defined in net.corda.core.serialization.AttachmentsClassLoader[PropertyDescriptorImpl]
 
-'SecureHash' @ [95:43] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
-
 'parse' @ [95:54] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[SimpleFunctionDescriptorImpl]
 
 'url' @ [95:60] ==> val url: URL defined in net.corda.core.serialization.AttachmentsClassLoader.getResourceAsStream[LocalVariableDescriptor]

@@ -2,8 +2,6 @@
 
 'MappedSchema' @ [22:34] ==> public constructor MappedSchema(schemaFamily: Class<*>, version: Int, mappedTypes: Iterable<Class<*>>) defined in net.corda.core.schemas.MappedSchema[DeserializedClassConstructorDescriptor]
 
-'CommercialPaperSchema' @ [22:62] ==> public object CommercialPaperSchema defined in net.corda.finance.schemas in file CommercialPaperSchemaV1.kt[FakeCallableDescriptorForObject]
-
 'javaClass' @ [22:84] ==> public val <T : Any> CommercialPaperSchema.javaClass: Class<CommercialPaperSchema> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> CommercialPaperSchema

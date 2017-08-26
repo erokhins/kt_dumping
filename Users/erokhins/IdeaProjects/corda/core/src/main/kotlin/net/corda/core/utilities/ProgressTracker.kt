@@ -24,7 +24,7 @@
 
 'empty' @ [54:65] ==> public open fun <T : (Any..Any?)> empty(): (Observable<(ProgressTracker.Change..ProgressTracker.Change?)>..Observable<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in rx.Observable[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Change
+    <T : (Any..Any?)> -> (net.corda.core.utilities.ProgressTracker.Change..net.corda.core.utilities.ProgressTracker.Change?)
 
 'emptyMap' @ [61:62] ==> public fun <K, V> emptyMap(): Map<String, String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -49,9 +49,7 @@ Inferred types:
 
 'DONE' @ [74:44] ==> public object DONE : ProgressTracker.Step defined in net.corda.core.utilities.ProgressTracker[FakeCallableDescriptorForObject]
 
-'transient' @ [77:29] ==> @Suppress public fun <T> transient(initializer: () -> (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?)): TransientProperty<(PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?)> defined in net.corda.core.utilities[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T> -> (rx.subjects.PublishSubject<net.corda.core.utilities.ProgressTracker.Change>..rx.subjects.PublishSubject<net.corda.core.utilities.ProgressTracker.Change>?)
+'getValue' @ [77:29] ==> @Suppress @Synchronized public final operator fun getValue(thisRef: Any?, property: KProperty<*>): T defined in net.corda.core.utilities.TransientProperty[SimpleFunctionDescriptorImpl]
 
 'create' @ [77:56] ==> public open fun <T : (Any..Any?)> create(): (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 Inferred types:
@@ -134,7 +132,7 @@ Inferred types:
 
 'index' @ [119:25] ==> val index: Int defined in net.corda.core.utilities.ProgressTracker.<set-currentStep>[LocalVariableDescriptor]
 
-'_changes' @ [120:13] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [120:13] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'onNext' @ [120:22] ==> public open fun onNext(p0: (ProgressTracker.Change..ProgressTracker.Change?)): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
@@ -154,13 +152,13 @@ Inferred types:
 
 'subscribe' @ [121:57] ==> public final fun subscribe(p0: (((ProgressTracker.Change..ProgressTracker.Change?)) -> Unit..(((ProgressTracker.Change..ProgressTracker.Change?)) -> Unit)?), p1: (((Throwable..Throwable?)) -> Unit..(((Throwable..Throwable?)) -> Unit)?)): (Subscription..Subscription?) defined in rx.Observable[MyFunctionDescriptor]
 
-'_changes' @ [121:69] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [121:69] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'onNext' @ [121:78] ==> public open fun onNext(p0: (ProgressTracker.Change..ProgressTracker.Change?)): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
 'it' @ [121:85] ==> value-parameter it: (ProgressTracker.Change..ProgressTracker.Change?) defined in net.corda.core.utilities.ProgressTracker.<set-currentStep>.<anonymous>[ValueParameterDescriptorImpl]
 
-'_changes' @ [121:94] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [121:94] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'onError' @ [121:103] ==> public open fun onError(p0: (Throwable..Throwable?)): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
@@ -170,7 +168,7 @@ Inferred types:
 
 'DONE' @ [123:32] ==> public object DONE : ProgressTracker.Step defined in net.corda.core.utilities.ProgressTracker[FakeCallableDescriptorForObject]
 
-'_changes' @ [123:38] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [123:38] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'onCompleted' @ [123:47] ==> public open fun onCompleted(): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
@@ -194,13 +192,13 @@ Inferred types:
 
 'subscribe' @ [133:57] ==> public final fun subscribe(p0: (((ProgressTracker.Change..ProgressTracker.Change?)) -> Unit..(((ProgressTracker.Change..ProgressTracker.Change?)) -> Unit)?), p1: (((Throwable..Throwable?)) -> Unit..(((Throwable..Throwable?)) -> Unit)?)): (Subscription..Subscription?) defined in rx.Observable[MyFunctionDescriptor]
 
-'_changes' @ [133:69] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [133:69] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'onNext' @ [133:78] ==> public open fun onNext(p0: (ProgressTracker.Change..ProgressTracker.Change?)): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
 'it' @ [133:85] ==> value-parameter it: (ProgressTracker.Change..ProgressTracker.Change?) defined in net.corda.core.utilities.ProgressTracker.setChildProgressTracker.<anonymous>[ValueParameterDescriptorImpl]
 
-'_changes' @ [133:94] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [133:94] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'onError' @ [133:103] ==> public open fun onError(p0: (Throwable..Throwable?)): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
@@ -222,7 +220,7 @@ Inferred types:
 
 'this' @ [135:39] ==> <this> defined in net.corda.core.utilities.ProgressTracker[LazyClassReceiverParameterDescriptor]
 
-'_changes' @ [136:9] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [136:9] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'onNext' @ [136:18] ==> public open fun onNext(p0: (ProgressTracker.Change..ProgressTracker.Change?)): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
@@ -255,7 +253,7 @@ Inferred types:
 
 'unsubscribe' @ [142:30] ==> public abstract fun unsubscribe(): Unit defined in rx.Subscription[JavaMethodDescriptor]
 
-'_changes' @ [144:9] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [144:9] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'onNext' @ [144:18] ==> public open fun onNext(p0: (ProgressTracker.Change..ProgressTracker.Change?)): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
@@ -271,7 +269,7 @@ Inferred types:
 
 'hasEnded' @ [152:16] ==> public final val hasEnded: Boolean defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
-'_changes' @ [153:9] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [153:9] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'onError' @ [153:18] ==> public open fun onError(p0: (Throwable..Throwable?)): Unit defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
@@ -355,13 +353,13 @@ Inferred types:
 
 'currentStep' @ [194:16] ==> public final var currentStep: ProgressTracker.Step defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
-'_changes' @ [201:45] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [201:45] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
-'_changes' @ [204:35] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [204:35] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'hasCompleted' @ [204:44] ==> public open fun hasCompleted(): Boolean defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 
-'_changes' @ [204:62] ==> private final val _changes: (PublishSubject<ProgressTracker.Change>..PublishSubject<ProgressTracker.Change>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
+'_changes' @ [204:62] ==> private final val _changes: (PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>..PublishSubject<(ProgressTracker.Change..ProgressTracker.Change?)>?) defined in net.corda.core.utilities.ProgressTracker[PropertyDescriptorImpl]
 
 'hasThrowable' @ [204:71] ==> public open fun hasThrowable(): Boolean defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 

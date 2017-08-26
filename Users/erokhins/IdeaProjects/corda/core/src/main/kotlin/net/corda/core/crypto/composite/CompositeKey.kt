@@ -18,8 +18,6 @@
 
 'algorithm' @ [45:39] ==> public final val AlgorithmIdentifier.algorithm: (ASN1ObjectIdentifier..ASN1ObjectIdentifier?)[MyPropertyDescriptor]
 
-'CordaObjectIdentifier' @ [45:52] ==> public object CordaObjectIdentifier defined in net.corda.core.crypto.provider in file CordaSecurityProvider.kt[FakeCallableDescriptorForObject]
-
 'COMPOSITE_KEY' @ [45:74] ==> @JvmField public final val COMPOSITE_KEY: ASN1ObjectIdentifier defined in net.corda.core.crypto.provider.CordaObjectIdentifier[PropertyDescriptorImpl]
 
 'getInstance' @ [46:41] ==> public open fun getInstance(p0: (Any..Any?)): (ASN1Sequence..ASN1Sequence?) defined in org.bouncycastle.asn1.ASN1Sequence[JavaMethodDescriptor]
@@ -270,7 +268,7 @@ Inferred types:
 
 'encoded' @ [148:22] ==> public final val PublicKey.encoded: (ByteArray..ByteArray?)[MyPropertyDescriptor]
 
-'sequence' @ [148:30] ==> public fun ByteArray.sequence(offset: Int = ..., size: Int = ...): ByteSequence defined in net.corda.core.utilities[SimpleFunctionDescriptorImpl]
+'sequence' @ [148:30] ==> public fun ByteArray.sequence(offset: Int = ..., size: Int = ...): ByteSequence defined in net.corda.core.utilities in file ByteArrays.kt[SimpleFunctionDescriptorImpl]
 
 'compareTo' @ [148:41] ==> public open fun compareTo(other: ByteSequence): Int defined in net.corda.core.utilities.ByteSequence[SimpleFunctionDescriptorImpl]
 
@@ -280,7 +278,7 @@ Inferred types:
 
 'encoded' @ [148:62] ==> public final val PublicKey.encoded: (ByteArray..ByteArray?)[MyPropertyDescriptor]
 
-'sequence' @ [148:70] ==> public fun ByteArray.sequence(offset: Int = ..., size: Int = ...): ByteSequence defined in net.corda.core.utilities[SimpleFunctionDescriptorImpl]
+'sequence' @ [148:70] ==> public fun ByteArray.sequence(offset: Int = ..., size: Int = ...): ByteSequence defined in net.corda.core.utilities in file ByteArrays.kt[SimpleFunctionDescriptorImpl]
 
 'weight' @ [150:17] ==> public final val weight: Int defined in net.corda.core.crypto.composite.CompositeKey.NodeAndWeight[PropertyDescriptorImpl]
 
@@ -371,8 +369,6 @@ Inferred types:
 'SubjectPublicKeyInfo' @ [180:16] ==> public constructor SubjectPublicKeyInfo(p0: (AlgorithmIdentifier..AlgorithmIdentifier?), p1: (ASN1Encodable..ASN1Encodable?)) defined in org.bouncycastle.asn1.x509.SubjectPublicKeyInfo[JavaClassConstructorDescriptor]
 
 'AlgorithmIdentifier' @ [180:37] ==> public constructor AlgorithmIdentifier(p0: (ASN1ObjectIdentifier..ASN1ObjectIdentifier?)) defined in org.bouncycastle.asn1.x509.AlgorithmIdentifier[JavaClassConstructorDescriptor]
-
-'CordaObjectIdentifier' @ [180:57] ==> public object CordaObjectIdentifier defined in net.corda.core.crypto.provider in file CordaSecurityProvider.kt[FakeCallableDescriptorForObject]
 
 'COMPOSITE_KEY' @ [180:79] ==> @JvmField public final val COMPOSITE_KEY: ASN1ObjectIdentifier defined in net.corda.core.crypto.provider.CordaObjectIdentifier[PropertyDescriptorImpl]
 

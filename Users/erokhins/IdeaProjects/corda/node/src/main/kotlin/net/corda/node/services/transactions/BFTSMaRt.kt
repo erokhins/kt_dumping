@@ -174,7 +174,7 @@ Inferred types:
 
 '-' @ [121:111] ==> public final operator fun unaryMinus(): Int defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'Extractor' @ [127:20] ==> public fun Extractor(function: ((Array<(TOMMessage..TOMMessage?)>..Array<out (TOMMessage..TOMMessage?)>?), Int, Int) -> (TOMMessage..TOMMessage?)): Extractor defined in bftsmart.tom.util[SimpleFunctionDescriptorImpl]
+'Extractor' @ [127:20] ==> public fun Extractor(function: ((Array<(TOMMessage..TOMMessage?)>..Array<out (TOMMessage..TOMMessage?)>?), Int, Int) -> (TOMMessage..TOMMessage?)): Extractor defined in bftsmart.tom.util[SamConstructorDescriptorImpl]
 
 'replies' @ [128:33] ==> value-parameter replies: (Array<(TOMMessage..TOMMessage?)>..Array<out (TOMMessage..TOMMessage?)>?) defined in net.corda.node.services.transactions.BFTSMaRt.Client.buildExtractor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -386,7 +386,7 @@ Inferred types:
 
 'replicaId' @ [186:59] ==> value-parameter replicaId: Int defined in net.corda.node.services.transactions.BFTSMaRt.Replica.<init>[ValueParameterDescriptorImpl]
 
-'maxFaultyReplicas' @ [186:71] ==> public fun maxFaultyReplicas(clusterSize: Int): Int defined in net.corda.node.services.transactions[SimpleFunctionDescriptorImpl]
+'maxFaultyReplicas' @ [186:71] ==> public fun maxFaultyReplicas(clusterSize: Int): Int defined in net.corda.node.services.transactions in file BFTSMaRtConfig.kt[SimpleFunctionDescriptorImpl]
 
 'config' @ [186:89] ==> value-parameter config: BFTSMaRtConfig defined in net.corda.node.services.transactions.BFTSMaRt.Replica.<init>[ValueParameterDescriptorImpl]
 
@@ -445,15 +445,17 @@ Inferred types:
 
 'stream' @ [213:27] ==> public open fun <T : (Any..Any?)> stream(p0: (Array<(ByteArray..ByteArray?)>..Array<out (ByteArray..ByteArray?)>?)): (Stream<(ByteArray..ByteArray?)>..Stream<(ByteArray..ByteArray?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ByteArray
+    <T : (Any..Any?)> -> (kotlin.ByteArray..kotlin.ByteArray?)
 
 'command' @ [213:34] ==> value-parameter command: Array<ByteArray> defined in net.corda.node.services.transactions.BFTSMaRt.Replica.appExecuteBatch[ValueParameterDescriptorImpl]
 
-'map' @ [213:43] ==> public final fun <R : (Any..Any?)> map(p0: (((ByteArray..ByteArray?)) -> (ByteArray..ByteArray?)..(((ByteArray..ByteArray?)) -> (ByteArray..ByteArray?))?)): (Stream<(ByteArray..ByteArray?)>..Stream<(ByteArray..ByteArray?)>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
+'map' @ [213:43] ==> public final fun <R : (Any..Any?)> map(p0: (((ByteArray..ByteArray?)) -> ByteArray?..(((ByteArray..ByteArray?)) -> ByteArray?)?)): (Stream<ByteArray?>..Stream<ByteArray?>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> ByteArray
+    <R : (Any..Any?)> -> ByteArray?
 
 'this' @ [213:47] ==> <this> defined in net.corda.node.services.transactions.BFTSMaRt.Replica[LazyClassReceiverParameterDescriptor]
+
+'executeCommand' @ [213:53] ==> public abstract fun executeCommand(command: ByteArray): ByteArray? defined in net.corda.node.services.transactions.BFTSMaRt.Replica[SimpleFunctionDescriptorImpl]
 
 'toTypedArray' @ [213:69] ==> public inline fun <reified T> Stream<out ByteArray?>.toTypedArray(): Array<ByteArray?> defined in net.corda.core.internal[DeserializedSimpleFunctionDescriptor]
 Inferred types:

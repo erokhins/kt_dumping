@@ -12,7 +12,7 @@
 
 'isInterface' @ [23:70] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isInterface: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'resolvedType' @ [24:49] ==> public final val resolvedType: Type defined in net.corda.nodeapi.internal.serialization.amqp.PropertySerializer[PropertyDescriptorImpl]
 
@@ -20,7 +20,7 @@ Inferred types:
 
 'isPrimitive' @ [24:73] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'if (isInterface || resolvedType == Any::class.java) "*" else SerializerFactory.nameForType(resolvedType)' @ [27:16] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -36,8 +36,6 @@ Inferred types:
 Inferred types:
     <T> -> Any
 
-'SerializerFactory' @ [27:77] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
-
 'nameForType' @ [27:95] ==> public final fun nameForType(type: Type): String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 
 'resolvedType' @ [27:107] ==> public final val resolvedType: Type defined in net.corda.nodeapi.internal.serialization.amqp.PropertySerializer[PropertyDescriptorImpl]
@@ -51,8 +49,6 @@ Inferred types:
 'listOf' @ [31:33] ==> public fun <T> listOf(element: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
-
-'SerializerFactory' @ [31:40] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
 
 'nameForType' @ [31:58] ==> public final fun nameForType(type: Type): String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 
@@ -104,17 +100,17 @@ Inferred types:
 
 'kotlin' @ [51:52] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
-'memberProperties' @ [51:59] ==> @SinceKotlin public val <T : Any> KClass<out Any>.memberProperties: Collection<KProperty1<out Any, *>> defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
+'memberProperties' @ [51:59] ==> @SinceKotlin public val <T : Any> KClass<out (Any..Any?)>.memberProperties: Collection<KProperty1<out (Any..Any?), Any?>> defined in kotlin.reflect.full[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> Captured(out (kotlin.Any..kotlin.Any?))
 
-'firstOrNull' @ [51:76] ==> public inline fun <T> Iterable<KProperty1<out Any, *>>.firstOrNull(predicate: (KProperty1<out Any, *>) -> Boolean): KProperty1<out Any, *>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'firstOrNull' @ [51:76] ==> public inline fun <T> Iterable<KProperty1<out (Any..Any?), Any?>>.firstOrNull(predicate: (KProperty1<out (Any..Any?), Any?>) -> Boolean): KProperty1<out (Any..Any?), Any?>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KProperty1<out Any, *>
+    <T> -> KProperty1<out (kotlin.Any..kotlin.Any?), Any?>
 
-'it' @ [51:90] ==> value-parameter it: KProperty1<out Any, *> defined in net.corda.nodeapi.internal.serialization.amqp.PropertySerializer.returnsNullable.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [51:90] ==> value-parameter it: KProperty1<out (Any..Any?), Any?> defined in net.corda.nodeapi.internal.serialization.amqp.PropertySerializer.returnsNullable.<anonymous>[ValueParameterDescriptorImpl]
 
 'javaGetter' @ [51:93] ==> public val KProperty<*>.javaGetter: Method? defined in kotlin.reflect.jvm[DeserializedPropertyDescriptor]
 
@@ -210,9 +206,9 @@ Inferred types:
 
 'resolvedType' @ [75:109] ==> value-parameter resolvedType: Type defined in net.corda.nodeapi.internal.serialization.amqp.PropertySerializer.DescribedTypePropertySerializer.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [77:58] ==> public fun <T> lazy(initializer: () -> AMQPSerializer<Any?>): Lazy<AMQPSerializer<Any?>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [77:58] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> AMQPSerializer<Any?>
+    <T> -> T
 
 'invoke' @ [77:65] ==> public abstract operator fun invoke(): AMQPSerializer<*> defined in kotlin.Function0[FunctionInvokeDescriptor]
 

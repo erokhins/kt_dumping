@@ -8,13 +8,9 @@
 
 'getNodesWithService' @ [37:45] ==> public open fun getNodesWithService(serviceType: ServiceType): List<NodeInfo> defined in net.corda.core.node.services.NetworkMapCache[SimpleFunctionDescriptorImpl]
 
-'ServiceType' @ [37:65] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
-
 'notary' @ [37:77] ==> public final val notary: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[PropertyDescriptorImpl]
 
 'getNodesWithService' @ [43:48] ==> public open fun getNodesWithService(serviceType: ServiceType): List<NodeInfo> defined in net.corda.core.node.services.NetworkMapCache[SimpleFunctionDescriptorImpl]
-
-'ServiceType' @ [43:68] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
 
 'regulator' @ [43:80] ==> public final val regulator: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[PropertyDescriptorImpl]
 
@@ -108,8 +104,6 @@ Inferred types:
 
 'isSubTypeOf' @ [101:54] ==> public final fun isSubTypeOf(superType: ServiceType): Boolean defined in net.corda.core.node.services.ServiceType[SimpleFunctionDescriptorImpl]
 
-'ServiceType' @ [101:66] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
-
 'notary' @ [101:78] ==> public final val notary: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[PropertyDescriptorImpl]
 
 'it' @ [101:89] ==> value-parameter it: ServiceEntry defined in net.corda.core.node.services.NetworkMapCache.getNotary.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -147,15 +141,11 @@ Inferred types:
 
 'type' @ [114:21] ==> value-parameter type: ServiceType? = ... defined in net.corda.core.node.services.NetworkMapCache.getAnyNotary[ValueParameterDescriptorImpl]
 
-'ServiceType' @ [114:29] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
-
 'notary' @ [114:41] ==> public final val notary: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[PropertyDescriptorImpl]
 
 'type' @ [114:51] ==> value-parameter type: ServiceType? = ... defined in net.corda.core.node.services.NetworkMapCache.getAnyNotary[ValueParameterDescriptorImpl]
 
 'isSubTypeOf' @ [114:56] ==> public final fun isSubTypeOf(superType: ServiceType): Boolean defined in net.corda.core.node.services.ServiceType[SimpleFunctionDescriptorImpl]
-
-'ServiceType' @ [114:68] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
 
 'notary' @ [114:80] ==> public final val notary: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[PropertyDescriptorImpl]
 

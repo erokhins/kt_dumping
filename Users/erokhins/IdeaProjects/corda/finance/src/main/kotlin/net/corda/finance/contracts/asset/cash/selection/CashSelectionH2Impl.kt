@@ -14,7 +14,7 @@ Inferred types:
 
 'onlyFromIssuerParties' @ [64:29] ==> value-parameter onlyFromIssuerParties: Set<AbstractParty> defined in net.corda.finance.contracts.asset.cash.selection.CashSelectionH2Impl.unconsumedCashStatesForSpending[ValueParameterDescriptorImpl]
 
-'fold' @ [64:51] ==> public inline fun <T, R> Iterable<AbstractParty>.fold(initial: String, operation: (String, AbstractParty) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [64:51] ==> public inline fun <T, R> Iterable<AbstractParty>.fold(initial: String, operation: (acc: String, AbstractParty) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AbstractParty
     <R> -> String
@@ -31,7 +31,7 @@ Inferred types:
 
 'withIssuerRefs' @ [65:29] ==> value-parameter withIssuerRefs: Set<OpaqueBytes> defined in net.corda.finance.contracts.asset.cash.selection.CashSelectionH2Impl.unconsumedCashStatesForSpending[ValueParameterDescriptorImpl]
 
-'fold' @ [65:44] ==> public inline fun <T, R> Iterable<OpaqueBytes>.fold(initial: String, operation: (String, OpaqueBytes) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [65:44] ==> public inline fun <T, R> Iterable<OpaqueBytes>.fold(initial: String, operation: (acc: String, OpaqueBytes) -> String): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> OpaqueBytes
     <R> -> String
@@ -164,8 +164,6 @@ Inferred types:
 'deserialize' @ [109:52] ==> public inline fun <reified T : Any> ByteArray.deserialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): TransactionState<Cash.State> defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> TransactionState<State>
-
-'SerializationDefaults' @ [109:104] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'STORAGE_CONTEXT' @ [109:126] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 

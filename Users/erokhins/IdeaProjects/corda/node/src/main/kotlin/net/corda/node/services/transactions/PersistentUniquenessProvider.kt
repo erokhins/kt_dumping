@@ -50,7 +50,7 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> PersistentUniquenessProvider
 
-'AppendOnlyPersistentMap' @ [65:17] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (StateRef) -> PersistentStateRef, fromPersistentEntity: (PersistentUniquenessProvider.PersistentNotaryCommit) -> Pair<StateRef, UniquenessProvider.ConsumingTx>, toPersistentEntity: (StateRef, UniquenessProvider.ConsumingTx) -> PersistentUniquenessProvider.PersistentNotaryCommit, persistentEntityClass: Class<PersistentUniquenessProvider.PersistentNotaryCommit>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
+'AppendOnlyPersistentMap' @ [65:17] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (StateRef) -> PersistentStateRef, fromPersistentEntity: (PersistentUniquenessProvider.PersistentNotaryCommit) -> Pair<StateRef, UniquenessProvider.ConsumingTx>, toPersistentEntity: (key: StateRef, value: UniquenessProvider.ConsumingTx) -> PersistentUniquenessProvider.PersistentNotaryCommit, persistentEntityClass: Class<PersistentUniquenessProvider.PersistentNotaryCommit>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> StateRef
     <V> -> ConsumingTx
@@ -92,8 +92,6 @@ Inferred types:
 
 'StateRef' @ [71:34] ==> public constructor StateRef(txhash: SecureHash, index: Int) defined in net.corda.core.contracts.StateRef[DeserializedClassConstructorDescriptor]
 
-'SecureHash' @ [71:52] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
-
 'parse' @ [71:63] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
 'txId' @ [71:69] ==> var txId: String defined in net.corda.node.services.transactions.PersistentUniquenessProvider.Companion.createMap.<anonymous>[LocalVariableDescriptor]
@@ -101,8 +99,6 @@ Inferred types:
 'index' @ [71:84] ==> var index: Int defined in net.corda.node.services.transactions.PersistentUniquenessProvider.Companion.createMap.<anonymous>[LocalVariableDescriptor]
 
 'ConsumingTx' @ [72:56] ==> public constructor ConsumingTx(id: SecureHash, inputIndex: Int, requestingParty: Party) defined in net.corda.core.node.services.UniquenessProvider.ConsumingTx[DeserializedClassConstructorDescriptor]
-
-'SecureHash' @ [73:50] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
 'parse' @ [73:61] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 

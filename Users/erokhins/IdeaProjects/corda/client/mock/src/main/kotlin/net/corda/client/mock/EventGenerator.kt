@@ -8,7 +8,7 @@ Inferred types:
 
 'Generator' @ [20:39] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
-'intRange' @ [20:49] ==> public fun Generator.Companion.intRange(from: Int, to: Int): Generator<Int> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'intRange' @ [20:49] ==> public fun Generator.Companion.intRange(from: Int, to: Int): Generator<Int> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'map' @ [20:64] ==> public final fun <B> map(function: (Int) -> OpaqueBytes): Generator<OpaqueBytes> defined in net.corda.client.mock.Generator[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -24,7 +24,7 @@ Inferred types:
 
 'Generator' @ [21:37] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
-'longRange' @ [21:47] ==> public fun Generator.Companion.longRange(from: Long, to: Long): Generator<Long> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'longRange' @ [21:47] ==> public fun Generator.Companion.longRange(from: Long, to: Long): Generator<Long> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'Generator' @ [22:39] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 

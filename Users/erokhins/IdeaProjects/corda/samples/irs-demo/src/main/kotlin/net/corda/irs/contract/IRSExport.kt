@@ -1,7 +1,5 @@
 '+' @ [4:9] ==> public final operator fun plus(other: Any?): String defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 
-'FixedRatePaymentEvent' @ [4:25] ==> public companion object defined in net.corda.irs.contract.FixedRatePaymentEvent[FakeCallableDescriptorForObject]
-
 'CSVHeader' @ [4:47] ==> public final val CSVHeader: String defined in net.corda.irs.contract.FixedRatePaymentEvent.Companion[PropertyDescriptorImpl]
 
 'this' @ [5:17] ==> <this> defined in net.corda.irs.contract.exportIRSToCSV[ReceiverParameterDescriptorImpl]
@@ -29,8 +27,6 @@ Inferred types:
 'joinToString' @ [5:98] ==> public fun <T> Iterable<String>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((String) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
-
-'FloatingRatePaymentEvent' @ [6:36] ==> public companion object defined in net.corda.irs.contract.FloatingRatePaymentEvent[FakeCallableDescriptorForObject]
 
 'CSVHeader' @ [6:61] ==> public final val CSVHeader: String defined in net.corda.irs.contract.FloatingRatePaymentEvent.Companion[PropertyDescriptorImpl]
 

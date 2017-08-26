@@ -257,9 +257,9 @@ Inferred types:
 
 'readBytes' @ [407:81] ==> public fun InputStream.readBytes(estimatedSize: Int = ...): ByteArray defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 
-'lazy' @ [412:48] ==> public fun <T> lazy(initializer: () -> ByteArray): Lazy<ByteArray> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [412:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ByteArray
+    <T> -> T
 
 'dataLoader' @ [412:53] ==> value-parameter dataLoader: () -> ByteArray defined in net.corda.core.contracts.AbstractAttachment.<init>[ValueParameterDescriptorImpl]
 

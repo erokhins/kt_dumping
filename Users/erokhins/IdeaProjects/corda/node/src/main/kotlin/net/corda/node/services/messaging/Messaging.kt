@@ -18,7 +18,7 @@
 
 'data' @ [123:57] ==> value-parameter data: ByteArray defined in net.corda.node.services.messaging.createMessage[ValueParameterDescriptorImpl]
 
-'runOnNextMessage' @ [137:11] ==> public inline fun MessagingService.runOnNextMessage(topicSession: TopicSession, crossinline callback: (ReceivedMessage) -> Unit): Unit defined in net.corda.node.services.messaging[SimpleFunctionDescriptorImpl]
+'runOnNextMessage' @ [137:11] ==> public inline fun MessagingService.runOnNextMessage(topicSession: TopicSession, crossinline callback: (ReceivedMessage) -> Unit): Unit defined in net.corda.node.services.messaging in file Messaging.kt[SimpleFunctionDescriptorImpl]
 
 'TopicSession' @ [137:28] ==> public constructor TopicSession(topic: String, sessionID: Long = ...) defined in net.corda.node.services.messaging.TopicSession[ClassConstructorDescriptorImpl]
 
@@ -68,7 +68,7 @@
 Inferred types:
     <V> -> M
 
-'runOnNextMessage' @ [162:5] ==> public fun MessagingService.runOnNextMessage(topic: String, sessionID: Long, callback: (ReceivedMessage) -> Unit): Unit defined in net.corda.node.services.messaging[SimpleFunctionDescriptorImpl]
+'runOnNextMessage' @ [162:5] ==> public fun MessagingService.runOnNextMessage(topic: String, sessionID: Long, callback: (ReceivedMessage) -> Unit): Unit defined in net.corda.node.services.messaging in file Messaging.kt[SimpleFunctionDescriptorImpl]
 
 'topic' @ [162:22] ==> value-parameter topic: String defined in net.corda.node.services.messaging.onNext[ValueParameterDescriptorImpl]
 
@@ -92,7 +92,7 @@ Inferred types:
 
 'randomUUID' @ [171:114] ==> public open fun randomUUID(): (UUID..UUID?) defined in java.util.UUID[JavaMethodDescriptor]
 
-'send' @ [172:11] ==> public fun MessagingService.send(topicSession: TopicSession, payload: Any, to: MessageRecipients, uuid: UUID = ..., retryId: Long? = ...): Unit defined in net.corda.node.services.messaging[SimpleFunctionDescriptorImpl]
+'send' @ [172:11] ==> public fun MessagingService.send(topicSession: TopicSession, payload: Any, to: MessageRecipients, uuid: UUID = ..., retryId: Long? = ...): Unit defined in net.corda.node.services.messaging in file Messaging.kt[SimpleFunctionDescriptorImpl]
 
 'TopicSession' @ [172:16] ==> public constructor TopicSession(topic: String, sessionID: Long = ...) defined in net.corda.node.services.messaging.TopicSession[ClassConstructorDescriptorImpl]
 
@@ -139,8 +139,6 @@ Inferred types:
 'isBlank' @ [202:27] ==> public fun CharSequence.isBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'sessionID' @ [202:40] ==> public final val sessionID: Long defined in net.corda.node.services.messaging.TopicSession[PropertyDescriptorImpl]
-
-'MessagingService' @ [202:53] ==> public companion object defined in net.corda.node.services.messaging.MessagingService[FakeCallableDescriptorForObject]
 
 'DEFAULT_SESSION_ID' @ [202:70] ==> public final val DEFAULT_SESSION_ID: Long defined in net.corda.node.services.messaging.MessagingService.Companion[PropertyDescriptorImpl]
 

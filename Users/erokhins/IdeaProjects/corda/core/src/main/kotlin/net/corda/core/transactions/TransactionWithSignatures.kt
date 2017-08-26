@@ -73,7 +73,7 @@ Inferred types:
 
 'it' @ [78:53] ==> value-parameter it: PublicKey defined in net.corda.core.transactions.TransactionWithSignatures.getMissingSignatures.<anonymous>[ValueParameterDescriptorImpl]
 
-'isFulfilledBy' @ [78:56] ==> public fun PublicKey.isFulfilledBy(otherKeys: Iterable<PublicKey>): Boolean defined in net.corda.core.crypto[SimpleFunctionDescriptorImpl]
+'isFulfilledBy' @ [78:56] ==> public fun PublicKey.isFulfilledBy(otherKeys: Iterable<PublicKey>): Boolean defined in net.corda.core.crypto in file CryptoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'sigKeys' @ [78:70] ==> val sigKeys: Set<PublicKey> defined in net.corda.core.transactions.TransactionWithSignatures.getMissingSignatures[LocalVariableDescriptor]
 

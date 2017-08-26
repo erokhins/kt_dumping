@@ -1,32 +1,24 @@
 'CordaView' @ [19:19] ==> public constructor CordaView(title: String? = ...) defined in net.corda.explorer.model.CordaView[ClassConstructorDescriptorImpl]
 
-'fxml' @ [20:34] ==> public final fun <T : Node> fxml(location: String?, hasControllerAttribute: Boolean): ReadOnlyProperty<UIComponent, Parent> defined in net.corda.explorer.views.Dashboard[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <T : Node> -> Parent
+'getValue' @ [20:34] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
 'DASHBOARD' @ [21:41] ==> enum entry DASHBOARD defined in de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon[FakeCallableDescriptorForObject]
 
-'fxid' @ [22:39] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TilePane> defined in net.corda.explorer.views.Dashboard[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> TilePane
+'getValue' @ [22:39] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'fxid' @ [23:41] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TitledPane> defined in net.corda.explorer.views.Dashboard[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T : Any> -> TitledPane
+'getValue' @ [23:41] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
-'writableValue' @ [25:33] ==> public inline fun <reified M : Any, T> writableValue(noinline writableValueProperty: (CordaViewModel) -> WritableValue<(CordaView..CordaView?)>): TrackedDelegate.WritableValueDelegate<CordaViewModel, (CordaView..CordaView?)> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> CordaViewModel
-    <T> -> (net.corda.explorer.model.CordaView..net.corda.explorer.model.CordaView?)
+'getValue' @ [25:33] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): WritableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.WritableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'CordaViewModel' @ [25:47] ==> public constructor CordaViewModel() defined in net.corda.explorer.model.CordaViewModel[ClassConstructorDescriptorImpl]
 
-'observableList' @ [26:36] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (CordaViewModel) -> ObservableList<CordaView>): TrackedDelegate.ObservableListDelegate<CordaViewModel, CordaView> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> CordaViewModel
-    <T> -> CordaView
+'selectedView' @ [25:63] ==> public final val selectedView: SimpleObjectProperty<CordaView> defined in net.corda.explorer.model.CordaViewModel[PropertyDescriptorImpl]
+
+'getValue' @ [26:36] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'CordaViewModel' @ [26:51] ==> public constructor CordaViewModel() defined in net.corda.explorer.model.CordaViewModel[ClassConstructorDescriptorImpl]
+
+'registeredViews' @ [26:67] ==> public final val registeredViews: ObservableList<CordaView> defined in net.corda.explorer.model.CordaViewModel[PropertyDescriptorImpl]
 
 'registeredViews' @ [28:31] ==> private final val registeredViews: ObservableList<CordaView> defined in net.corda.explorer.views.Dashboard[PropertyDescriptorImpl]
 
@@ -45,7 +37,7 @@ Inferred types:
 
 'bindContent' @ [31:18] ==> public open fun <E : (Any..Any?)> bindContent(p0: (MutableList<(Node..Node?)>..List<(Node..Node?)>?), p1: (ObservableList<out (Node..Node?)>..ObservableList<out (Node..Node?)>?)): Unit defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Node
+    <E : (Any..Any?)> -> (javafx.scene.Node..javafx.scene.Node?)
 
 'tilePane' @ [31:30] ==> private final val tilePane: TilePane defined in net.corda.explorer.views.Dashboard[PropertyDescriptorImpl]
 

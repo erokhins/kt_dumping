@@ -175,8 +175,6 @@ Inferred types:
 
 'or' @ [64:98] ==> public abstract fun or(p0: (Charset..Charset?)): (Charset..Charset?) defined in com.google.common.base.Optional[JavaMethodDescriptor]
 
-'Charsets' @ [64:101] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
-
 'UTF_8' @ [64:110] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 
 'name' @ [64:117] ==> public final fun name(): (String..String?) defined in java.nio.charset.Charset[JavaMethodDescriptor]

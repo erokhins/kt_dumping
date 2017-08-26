@@ -50,7 +50,7 @@ Inferred types:
 
 'toDouble' @ [45:55] ==> public open fun toDouble(): Double defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
-'format' @ [45:68] ==> public fun Double.format(precision: Int): String defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'format' @ [45:68] ==> public fun Double.format(precision: Int): String defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'precision' @ [45:75] ==> value-parameter precision: Int = ... defined in net.corda.explorer.views.toStringWithSuffix[ValueParameterDescriptorImpl]
 
@@ -185,7 +185,7 @@ Inferred types:
 
 'party' @ [92:103] ==> public final val party: AbstractParty defined in net.corda.core.contracts.PartyAndReference[DeserializedPropertyDescriptor]
 
-'resolveIssuer' @ [92:109] ==> public fun AbstractParty.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'resolveIssuer' @ [92:109] ==> public fun AbstractParty.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'Models' @ [94:62] ==> public object Models defined in net.corda.client.jfx.model[FakeCallableDescriptorForObject]
 

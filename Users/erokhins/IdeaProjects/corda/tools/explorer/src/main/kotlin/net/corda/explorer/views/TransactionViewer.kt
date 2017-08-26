@@ -14,33 +14,29 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> Label
 
-'observableListReadOnly' @ [53:33] ==> public inline fun <reified M : Any, T> observableListReadOnly(noinline observableListProperty: (TransactionDataModel) -> ObservableList<out PartiallyResolvedTransaction>): TrackedDelegate.ObservableListReadOnlyDelegate<TransactionDataModel, PartiallyResolvedTransaction> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> TransactionDataModel
-    <T> -> PartiallyResolvedTransaction
+'getValue' @ [53:33] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<out T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListReadOnlyDelegate[DeserializedSimpleFunctionDescriptor]
 
 'TransactionDataModel' @ [53:56] ==> public constructor TransactionDataModel() defined in net.corda.client.jfx.model.TransactionDataModel[DeserializedClassConstructorDescriptor]
 
-'observableValue' @ [54:38] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (ReportingCurrencyModel) -> ObservableValue<Pair<Currency, (Amount<Currency>) -> Amount<Currency>>>): TrackedDelegate.ObservableValueDelegate<ReportingCurrencyModel, Pair<Currency, (Amount<Currency>) -> Amount<Currency>>> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ReportingCurrencyModel
-    <T> -> Pair<Currency, Function1<Amount<Currency>, Amount<Currency>>>
+'partiallyResolvedTransactions' @ [53:78] ==> public final val partiallyResolvedTransactions: ObservableList<PartiallyResolvedTransaction> defined in net.corda.client.jfx.model.TransactionDataModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [54:38] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ReportingCurrencyModel' @ [54:54] ==> public constructor ReportingCurrencyModel() defined in net.corda.explorer.model.ReportingCurrencyModel[ClassConstructorDescriptorImpl]
 
-'observableValue' @ [55:38] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (ReportingCurrencyModel) -> ObservableValue<(Currency..Currency?)>): TrackedDelegate.ObservableValueDelegate<ReportingCurrencyModel, (Currency..Currency?)> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ReportingCurrencyModel
-    <T> -> (java.util.Currency..java.util.Currency?)
+'reportingExchange' @ [54:78] ==> public final val reportingExchange: ObservableValue<Pair<Currency, (Amount<Currency>) -> Amount<Currency>>> defined in net.corda.explorer.model.ReportingCurrencyModel[PropertyDescriptorImpl]
+
+'getValue' @ [55:38] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ReportingCurrencyModel' @ [55:54] ==> public constructor ReportingCurrencyModel() defined in net.corda.explorer.model.ReportingCurrencyModel[ClassConstructorDescriptorImpl]
 
-'observableValue' @ [56:31] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (NetworkIdentityModel) -> ObservableValue<NodeInfo?>): TrackedDelegate.ObservableValueDelegate<NetworkIdentityModel, NodeInfo?> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo?
+'reportingCurrency' @ [55:78] ==> public final val reportingCurrency: ObservableValue<(Currency..Currency?)> defined in net.corda.explorer.model.ReportingCurrencyModel[PropertyDescriptorImpl]
+
+'getValue' @ [56:31] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [56:47] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
+
+'myIdentity' @ [56:69] ==> public final val myIdentity: ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
 
 'listOf' @ [58:28] ==> public fun <T> listOf(element: CordaWidget): List<CordaWidget> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -276,12 +272,12 @@ Inferred types:
 
 'calculateTotalEquiv' @ [127:41] ==> private fun calculateTotalEquiv(identity: NodeInfo?, reportingCurrencyExchange: Pair<Currency, (Amount<Currency>) -> Amount<Currency>>, inputs: List<ContractState>, outputs: List<ContractState>): AmountDiff<Currency> defined in net.corda.explorer.views in file TransactionViewer.kt[SimpleFunctionDescriptorImpl]
 
-'lift' @ [127:61] ==> public fun <A, B, C, D, R> ((NodeInfo?, Pair<Currency, (Amount<Currency>) -> Amount<Currency>>, ObservableList<ContractState>, outputs: List<ContractState>) -> AmountDiff<Currency>).lift(arg0: ObservableValue<NodeInfo?>, arg1: ObservableValue<Pair<Currency, (Amount<Currency>) -> Amount<Currency>>>, arg2: ObservableValue<ObservableList<ContractState>>, arg3: ObservableValue<@ParameterName List<ContractState>>): ObservableValue<AmountDiff<Currency>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'lift' @ [127:61] ==> public fun <A, B, C, D, R> ((NodeInfo?, Pair<Currency, (Amount<Currency>) -> Amount<Currency>>, ObservableList<ContractState>, List<ContractState>) -> AmountDiff<Currency>).lift(arg0: ObservableValue<NodeInfo?>, arg1: ObservableValue<Pair<Currency, (Amount<Currency>) -> Amount<Currency>>>, arg2: ObservableValue<ObservableList<ContractState>>, arg3: ObservableValue<List<ContractState>>): ObservableValue<AmountDiff<Currency>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> NodeInfo?
     <B> -> Pair<Currency, Function1<Amount<Currency>, Amount<Currency>>>
     <C> -> ObservableList<ContractState>
-    <D> -> [@kotlin.ParameterName] List<ContractState>
+    <D> -> List<ContractState>
     <R> -> AmountDiff<Currency>
 
 'myIdentity' @ [127:66] ==> private final val myIdentity: ObservableValue<NodeInfo?> defined in net.corda.explorer.views.TransactionViewer[PropertyDescriptorImpl]
@@ -313,9 +309,9 @@ Inferred types:
 
 'outputStates' @ [130:47] ==> public final val outputStates: List<ContractState> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'lift' @ [130:60] ==> public fun <A> @ParameterName List<ContractState>.lift(): ObservableValue<@ParameterName List<ContractState>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'lift' @ [130:60] ==> public fun <A> List<ContractState>.lift(): ObservableValue<List<ContractState>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <A> -> [@kotlin.ParameterName] List<ContractState>
+    <A> -> List<ContractState>
 
 'SearchField' @ [134:27] ==> public constructor SearchField<T>(data: ObservableList<TransactionViewer.Transaction>, vararg filterCriteria: Pair<String, (TransactionViewer.Transaction, String) -> Boolean>) defined in net.corda.explorer.views.SearchField[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -519,775 +515,754 @@ Inferred types:
 
 'filteredData' @ [145:33] ==> public final val filteredData: ChosenList<(TransactionViewer.Transaction..TransactionViewer.Transaction?)> defined in net.corda.explorer.views.SearchField[PropertyDescriptorImpl]
 
-'Transaction' @ [146:25] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
-
-'id' @ [146:38] ==> public final val id: SecureHash defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
-
-'column' @ [147:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, SecureHash>, noinline op: (TableColumn<TransactionViewer.Transaction, SecureHash>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, SecureHash> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'column' @ [146:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, SecureHash>, noinline op: (TableColumn<TransactionViewer.Transaction, SecureHash>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, SecureHash> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified S> -> Transaction
     <T> -> SecureHash
 
-'value' @ [147:38] ==> val value: KProperty1<TransactionViewer.Transaction, SecureHash> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'Transaction' @ [146:38] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
 
-'minWidth' @ [148:17] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableColumn<TransactionViewer.Transaction, SecureHash>.minWidth: Double[MyPropertyDescriptor]
+'id' @ [146:51] ==> public final val id: SecureHash defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+
+'minWidth' @ [147:17] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableColumn<TransactionViewer.Transaction, SecureHash>.minWidth: Double[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
     <T : (Any..Any?)> -> SecureHash
 
-'maxWidth' @ [149:17] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableColumn<TransactionViewer.Transaction, SecureHash>.maxWidth: Double[MyPropertyDescriptor]
+'maxWidth' @ [148:17] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableColumn<TransactionViewer.Transaction, SecureHash>.maxWidth: Double[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
     <T : (Any..Any?)> -> SecureHash
 
-'setCustomCellFactory' @ [150:15] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, SecureHash>.setCustomCellFactory(toNode: (SecureHash) -> Node): Unit defined in net.corda.explorer.ui[SimpleFunctionDescriptorImpl]
+'setCustomCellFactory' @ [149:15] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, SecureHash>.setCustomCellFactory(toNode: (SecureHash) -> Node): Unit defined in net.corda.explorer.ui[SimpleFunctionDescriptorImpl]
 Inferred types:
     <S> -> Transaction
     <T> -> SecureHash
 
-'label' @ [151:17] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [150:17] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [151:25] ==> value-parameter it: SecureHash defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [150:25] ==> value-parameter it: SecureHash defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'graphic' @ [152:21] ==> public final var Label.graphic: (Node..Node?)[MyPropertyDescriptor]
+'graphic' @ [151:21] ==> public final var Label.graphic: (Node..Node?)[MyPropertyDescriptor]
 
-'identicon' @ [152:31] ==> public fun identicon(secureHash: SecureHash, size: Double): ImageView defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
+'identicon' @ [151:31] ==> public fun identicon(secureHash: SecureHash, size: Double): ImageView defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
 
-'it' @ [152:41] ==> value-parameter it: SecureHash defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [151:41] ==> value-parameter it: SecureHash defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'tooltip' @ [153:21] ==> public final var Label.tooltip: (Tooltip..Tooltip?)[MyPropertyDescriptor]
+'tooltip' @ [152:21] ==> public final var Label.tooltip: (Tooltip..Tooltip?)[MyPropertyDescriptor]
 
-'identiconToolTip' @ [153:31] ==> public fun identiconToolTip(secureHash: SecureHash, description: String? = ...): Tooltip defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
+'identiconToolTip' @ [152:31] ==> public fun identiconToolTip(secureHash: SecureHash, description: String? = ...): Tooltip defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
 
-'it' @ [153:48] ==> value-parameter it: SecureHash defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [152:48] ==> value-parameter it: SecureHash defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'Transaction' @ [156:26] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
-
-'inputs' @ [156:39] ==> public final val inputs: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
-
-'column' @ [157:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, TransactionViewer.Inputs>, noinline op: (TableColumn<TransactionViewer.Transaction, TransactionViewer.Inputs>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, TransactionViewer.Inputs> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'column' @ [155:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, TransactionViewer.Inputs>, noinline op: (TableColumn<TransactionViewer.Transaction, TransactionViewer.Inputs>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, TransactionViewer.Inputs> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified S> -> Transaction
     <T> -> Inputs
 
-'value1' @ [157:29] ==> val value1: KProperty1<TransactionViewer.Transaction, TransactionViewer.Inputs> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'Transaction' @ [155:29] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
 
-'cellFormat' @ [157:37] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, TransactionViewer.Inputs>.cellFormat(formatter: TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.(TransactionViewer.Inputs) -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'inputs' @ [155:42] ==> public final val inputs: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+
+'cellFormat' @ [155:50] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, TransactionViewer.Inputs>.cellFormat(formatter: TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.(TransactionViewer.Inputs) -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> Transaction
     <T> -> Inputs
 
-'text' @ [158:17] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [156:17] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.text: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
     <T : (Any..Any?)> -> Inputs
 
-'it' @ [158:24] ==> value-parameter it: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [156:24] ==> value-parameter it: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'resolved' @ [158:27] ==> public final val resolved: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
+'resolved' @ [156:27] ==> public final val resolved: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
 
-'toText' @ [158:36] ==> private final fun ObservableList<StateAndRef<ContractState>>.toText(): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
+'toText' @ [156:36] ==> private final fun ObservableList<StateAndRef<ContractState>>.toText(): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
 
-'!' @ [159:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
+'!' @ [157:21] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [159:22] ==> value-parameter it: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [157:22] ==> value-parameter it: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'unresolved' @ [159:25] ==> public final val unresolved: ObservableList<StateRef> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
+'unresolved' @ [157:25] ==> public final val unresolved: ObservableList<StateRef> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
 
-'isEmpty' @ [159:36] ==> public abstract fun isEmpty(): Boolean defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
+'isEmpty' @ [157:36] ==> public abstract fun isEmpty(): Boolean defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
 
-'!' @ [160:25] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
+'!' @ [158:25] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'text' @ [160:26] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [158:26] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.text: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
     <T : (Any..Any?)> -> Inputs
 
-'isBlank' @ [160:31] ==> public fun CharSequence.isBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+'isBlank' @ [158:31] ==> public fun CharSequence.isBlank(): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'text' @ [161:25] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [159:25] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.text: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
     <T : (Any..Any?)> -> Inputs
 
-'text' @ [163:21] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [161:21] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, TransactionViewer.Inputs>.text: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
     <T : (Any..Any?)> -> Inputs
 
-'it' @ [163:43] ==> value-parameter it: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [161:43] ==> value-parameter it: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'unresolved' @ [163:46] ==> public final val unresolved: ObservableList<StateRef> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
+'unresolved' @ [161:46] ==> public final val unresolved: ObservableList<StateRef> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
 
-'size' @ [163:57] ==> public abstract val size: Int defined in javafx.collections.ObservableList[DeserializedPropertyDescriptor]
+'size' @ [161:57] ==> public abstract val size: Int defined in javafx.collections.ObservableList[DeserializedPropertyDescriptor]
 
-'Transaction' @ [166:26] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
-
-'outputs' @ [166:39] ==> public final val outputs: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
-
-'column' @ [167:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>, noinline op: (TableColumn<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'column' @ [164:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>, noinline op: (TableColumn<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified S> -> Transaction
     <T> -> ObservableList<StateAndRef<ContractState>>
 
-'value2' @ [167:30] ==> val value2: KProperty1<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'Transaction' @ [164:30] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
 
-'cellFormat' @ [167:38] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>.cellFormat(formatter: TableCell<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>.(ObservableList<StateAndRef<ContractState>>) -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'outputs' @ [164:43] ==> public final val outputs: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+
+'cellFormat' @ [164:52] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>.cellFormat(formatter: TableCell<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>.(ObservableList<StateAndRef<ContractState>>) -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> Transaction
     <T> -> ObservableList<StateAndRef<ContractState>>
 
-'text' @ [167:51] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [164:65] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, ObservableList<StateAndRef<ContractState>>>.text: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
     <T : (Any..Any?)> -> ObservableList<StateAndRef<ContractState>>
 
-'it' @ [167:58] ==> value-parameter it: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [164:72] ==> value-parameter it: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'toText' @ [167:61] ==> private final fun ObservableList<StateAndRef<ContractState>>.toText(): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
+'toText' @ [164:75] ==> private final fun ObservableList<StateAndRef<ContractState>>.toText(): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
 
-'Transaction' @ [168:26] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
-
-'inputParties' @ [168:39] ==> public final val inputParties: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
-
-'column' @ [169:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>, noinline op: (TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'column' @ [165:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>, noinline op: (TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified S> -> Transaction
     <T> -> ObservableList<List<ObservableValue<NodeInfo?>>>
 
-'value4' @ [169:35] ==> val value4: KProperty1<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'Transaction' @ [165:35] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
 
-'setCustomCellFactory' @ [169:43] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>.setCustomCellFactory(toNode: (ObservableList<List<ObservableValue<NodeInfo?>>>) -> Node): Unit defined in net.corda.explorer.ui[SimpleFunctionDescriptorImpl]
+'inputParties' @ [165:48] ==> public final val inputParties: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+
+'setCustomCellFactory' @ [165:62] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>.setCustomCellFactory(toNode: (ObservableList<List<ObservableValue<NodeInfo?>>>) -> Node): Unit defined in net.corda.explorer.ui[SimpleFunctionDescriptorImpl]
 Inferred types:
     <S> -> Transaction
     <T> -> ObservableList<List<ObservableValue<NodeInfo?>>>
 
-'label' @ [170:17] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [166:17] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'text' @ [171:21] ==> public final var Label.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [167:21] ==> public final var Label.text: (String..String?)[MyPropertyDescriptor]
 
-'it' @ [171:28] ==> value-parameter it: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [167:28] ==> value-parameter it: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'formatJoinPartyNames' @ [171:31] ==> private final fun ObservableList<List<ObservableValue<NodeInfo?>>>.formatJoinPartyNames(separator: String = ..., formatter: Formatter<X500Name>): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
+'formatJoinPartyNames' @ [167:31] ==> private final fun ObservableList<List<ObservableValue<NodeInfo?>>>.formatJoinPartyNames(separator: String = ..., formatter: Formatter<X500Name>): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
 
-'PartyNameFormatter' @ [171:64] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
+'short' @ [167:83] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
 
-'short' @ [171:83] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
+'tooltip' @ [168:21] ==> public fun Node.tooltip(text: String? = ..., graphic: Node? = ..., op: (Tooltip.() -> Unit)? = ...): Tooltip defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'tooltip' @ [172:21] ==> public fun Node.tooltip(text: String? = ..., graphic: Node? = ..., op: (Tooltip.() -> Unit)? = ...): Tooltip defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'text' @ [169:25] ==> public final var Tooltip.text: (String..String?)[MyPropertyDescriptor]
 
-'text' @ [173:25] ==> public final var Tooltip.text: (String..String?)[MyPropertyDescriptor]
+'it' @ [169:32] ==> value-parameter it: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'it' @ [173:32] ==> value-parameter it: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'formatJoinPartyNames' @ [169:35] ==> private final fun ObservableList<List<ObservableValue<NodeInfo?>>>.formatJoinPartyNames(separator: String = ..., formatter: Formatter<X500Name>): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
 
-'formatJoinPartyNames' @ [173:35] ==> private final fun ObservableList<List<ObservableValue<NodeInfo?>>>.formatJoinPartyNames(separator: String = ..., formatter: Formatter<X500Name>): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
+'full' @ [169:81] ==> public final val full: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
 
-'PartyNameFormatter' @ [173:62] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
-
-'full' @ [173:81] ==> public final val full: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
-
-'Transaction' @ [177:26] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
-
-'outputParties' @ [177:39] ==> public final val outputParties: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
-
-'column' @ [178:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>, noinline op: (TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'column' @ [173:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>, noinline op: (TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified S> -> Transaction
     <T> -> ObservableList<List<ObservableValue<NodeInfo?>>>
 
-'value3' @ [178:36] ==> val value3: KProperty1<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'Transaction' @ [173:36] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
 
-'setCustomCellFactory' @ [178:44] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>.setCustomCellFactory(toNode: (ObservableList<List<ObservableValue<NodeInfo?>>>) -> Node): Unit defined in net.corda.explorer.ui[SimpleFunctionDescriptorImpl]
+'outputParties' @ [173:49] ==> public final val outputParties: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+
+'setCustomCellFactory' @ [173:64] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, ObservableList<List<ObservableValue<NodeInfo?>>>>.setCustomCellFactory(toNode: (ObservableList<List<ObservableValue<NodeInfo?>>>) -> Node): Unit defined in net.corda.explorer.ui[SimpleFunctionDescriptorImpl]
 Inferred types:
     <S> -> Transaction
     <T> -> ObservableList<List<ObservableValue<NodeInfo?>>>
 
-'label' @ [179:17] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [174:17] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'text' @ [180:21] ==> public final var Label.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [175:21] ==> public final var Label.text: (String..String?)[MyPropertyDescriptor]
 
-'it' @ [180:28] ==> value-parameter it: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [175:28] ==> value-parameter it: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'formatJoinPartyNames' @ [180:31] ==> private final fun ObservableList<List<ObservableValue<NodeInfo?>>>.formatJoinPartyNames(separator: String = ..., formatter: Formatter<X500Name>): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
+'formatJoinPartyNames' @ [175:31] ==> private final fun ObservableList<List<ObservableValue<NodeInfo?>>>.formatJoinPartyNames(separator: String = ..., formatter: Formatter<X500Name>): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
 
-'PartyNameFormatter' @ [180:64] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
+'short' @ [175:83] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
 
-'short' @ [180:83] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
+'tooltip' @ [176:21] ==> public fun Node.tooltip(text: String? = ..., graphic: Node? = ..., op: (Tooltip.() -> Unit)? = ...): Tooltip defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'tooltip' @ [181:21] ==> public fun Node.tooltip(text: String? = ..., graphic: Node? = ..., op: (Tooltip.() -> Unit)? = ...): Tooltip defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'text' @ [177:25] ==> public final var Tooltip.text: (String..String?)[MyPropertyDescriptor]
 
-'text' @ [182:25] ==> public final var Tooltip.text: (String..String?)[MyPropertyDescriptor]
+'it' @ [177:32] ==> value-parameter it: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'it' @ [182:32] ==> value-parameter it: ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'formatJoinPartyNames' @ [177:35] ==> private final fun ObservableList<List<ObservableValue<NodeInfo?>>>.formatJoinPartyNames(separator: String = ..., formatter: Formatter<X500Name>): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
 
-'formatJoinPartyNames' @ [182:35] ==> private final fun ObservableList<List<ObservableValue<NodeInfo?>>>.formatJoinPartyNames(separator: String = ..., formatter: Formatter<X500Name>): String defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
+'full' @ [177:81] ==> public final val full: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
 
-'PartyNameFormatter' @ [182:62] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
-
-'full' @ [182:81] ==> public final val full: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
-
-'Transaction' @ [186:26] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
-
-'commandTypes' @ [186:39] ==> public final val commandTypes: List<Class<CommandData>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
-
-'column' @ [187:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, List<Class<CommandData>>>, noinline op: (TableColumn<TransactionViewer.Transaction, List<Class<CommandData>>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, List<Class<CommandData>>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'column' @ [181:13] ==> public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, List<Class<CommandData>>>, noinline op: (TableColumn<TransactionViewer.Transaction, List<Class<CommandData>>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, List<Class<CommandData>>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified S> -> Transaction
     <T> -> List<Class<CommandData>>
 
-'value6' @ [187:36] ==> val value6: KProperty1<TransactionViewer.Transaction, List<Class<CommandData>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'Transaction' @ [181:36] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
 
-'cellFormat' @ [187:44] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, List<Class<CommandData>>>.cellFormat(formatter: TableCell<TransactionViewer.Transaction, List<Class<CommandData>>>.(List<Class<CommandData>>) -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'commandTypes' @ [181:49] ==> public final val commandTypes: List<Class<CommandData>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+
+'cellFormat' @ [181:63] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, List<Class<CommandData>>>.cellFormat(formatter: TableCell<TransactionViewer.Transaction, List<Class<CommandData>>>.(List<Class<CommandData>>) -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> Transaction
     <T> -> List<Class<CommandData>>
 
-'text' @ [187:57] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, List<Class<CommandData>>>.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [181:76] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, List<Class<CommandData>>>.text: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
     <T : (Any..Any?)> -> List<Class<CommandData>>
 
-'it' @ [187:64] ==> value-parameter it: List<Class<CommandData>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [181:83] ==> value-parameter it: List<Class<CommandData>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'map' @ [187:67] ==> public inline fun <T, R> Iterable<Class<CommandData>>.map(transform: (Class<CommandData>) -> (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [181:86] ==> public inline fun <T, R> Iterable<Class<CommandData>>.map(transform: (Class<CommandData>) -> (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Class<CommandData>
     <R> -> (kotlin.String..kotlin.String?)
 
-'it' @ [187:73] ==> value-parameter it: Class<CommandData> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [181:92] ==> value-parameter it: Class<CommandData> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'simpleName' @ [187:76] ==> public final val <T : (Any..Any?)> Class<CommandData>.simpleName: (String..String?)[MyPropertyDescriptor]
+'simpleName' @ [181:95] ==> public final val <T : (Any..Any?)> Class<CommandData>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> CommandData
 
-'joinToString' @ [187:89] ==> public fun <T> Iterable<(String..String?)>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: (((String..String?)) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'joinToString' @ [181:108] ==> public fun <T> Iterable<(String..String?)>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: (((String..String?)) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
 
-'Transaction' @ [188:26] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
-
-'totalValueEquiv' @ [188:39] ==> public final val totalValueEquiv: ObservableValue<AmountDiff<Currency>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
-
-'column' @ [189:13] ==> @JvmName public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, ObservableValue<AmountDiff<Currency>>>, noinline op: (TableColumn<TransactionViewer.Transaction, AmountDiff<Currency>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, AmountDiff<Currency>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'column' @ [182:13] ==> @JvmName public inline fun <reified S, T> TableView<TransactionViewer.Transaction>.column(title: String, prop: KProperty1<TransactionViewer.Transaction, ObservableValue<AmountDiff<Currency>>>, noinline op: (TableColumn<TransactionViewer.Transaction, AmountDiff<Currency>>.() -> Unit)? = ...): TableColumn<TransactionViewer.Transaction, AmountDiff<Currency>> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified S> -> Transaction
     <T> -> AmountDiff<Currency>
 
-'value5' @ [189:35] ==> val value5: KProperty1<TransactionViewer.Transaction, ObservableValue<AmountDiff<Currency>>> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[LocalVariableDescriptor]
+'Transaction' @ [182:35] ==> public constructor Transaction(tx: PartiallyResolvedTransaction, id: SecureHash, inputs: TransactionViewer.Inputs, outputs: ObservableList<StateAndRef<ContractState>>, inputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, outputParties: ObservableList<List<ObservableValue<NodeInfo?>>>, commandTypes: List<Class<CommandData>>, totalValueEquiv: ObservableValue<AmountDiff<Currency>>) defined in net.corda.explorer.views.TransactionViewer.Transaction[ClassConstructorDescriptorImpl]
 
-'cellFormat' @ [189:43] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, AmountDiff<Currency>>.cellFormat(formatter: TableCell<TransactionViewer.Transaction, AmountDiff<Currency>>.(AmountDiff<Currency>) -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'totalValueEquiv' @ [182:48] ==> public final val totalValueEquiv: ObservableValue<AmountDiff<Currency>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+
+'cellFormat' @ [182:65] ==> public fun <S, T> TableColumn<TransactionViewer.Transaction, AmountDiff<Currency>>.cellFormat(formatter: TableCell<TransactionViewer.Transaction, AmountDiff<Currency>>.(AmountDiff<Currency>) -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> Transaction
     <T> -> AmountDiff<Currency>
 
-'text' @ [190:17] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, AmountDiff<Currency>>.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [183:17] ==> public final var <S : (Any..Any?), T : (Any..Any?)> TableCell<TransactionViewer.Transaction, AmountDiff<Currency>>.text: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
     <T : (Any..Any?)> -> AmountDiff<Currency>
 
-'it' @ [190:27] ==> value-parameter it: AmountDiff<Currency> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [183:27] ==> value-parameter it: AmountDiff<Currency> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'positivity' @ [190:30] ==> public final val positivity: Positivity defined in net.corda.explorer.AmountDiff[PropertyDescriptorImpl]
+'positivity' @ [183:30] ==> public final val positivity: Positivity defined in net.corda.explorer.AmountDiff[PropertyDescriptorImpl]
 
-'sign' @ [190:41] ==> public val Positivity.sign: String defined in net.corda.explorer in file AmountDiff.kt[PropertyDescriptorImpl]
+'sign' @ [183:41] ==> public val Positivity.sign: String defined in net.corda.explorer in file AmountDiff.kt[PropertyDescriptorImpl]
 
-'AmountFormatter' @ [190:48] ==> public object AmountFormatter defined in net.corda.explorer.formatters in file AmountFormatter.kt[FakeCallableDescriptorForObject]
+'AmountFormatter' @ [183:48] ==> public object AmountFormatter defined in net.corda.explorer.formatters in file AmountFormatter.kt[FakeCallableDescriptorForObject]
 
-'boring' @ [190:64] ==> public final val boring: Formatter<Amount<Currency>> defined in net.corda.explorer.formatters.AmountFormatter[PropertyDescriptorImpl]
+'boring' @ [183:64] ==> public final val boring: Formatter<Amount<Currency>> defined in net.corda.explorer.formatters.AmountFormatter[PropertyDescriptorImpl]
 
-'format' @ [190:71] ==> public abstract fun format(value: Amount<Currency>): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
+'format' @ [183:71] ==> public abstract fun format(value: Amount<Currency>): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
 
-'it' @ [190:78] ==> value-parameter it: AmountDiff<Currency> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [183:78] ==> value-parameter it: AmountDiff<Currency> defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'amount' @ [190:81] ==> public final val amount: Amount<Currency> defined in net.corda.explorer.AmountDiff[PropertyDescriptorImpl]
+'amount' @ [183:81] ==> public final val amount: Amount<Currency> defined in net.corda.explorer.AmountDiff[PropertyDescriptorImpl]
 
-'titleProperty' @ [191:17] ==> public final val titleProperty: SimpleStringProperty defined in net.corda.explorer.views.TransactionViewer[DeserializedPropertyDescriptor]
+'titleProperty' @ [184:17] ==> public final val titleProperty: SimpleStringProperty defined in net.corda.explorer.views.TransactionViewer[DeserializedPropertyDescriptor]
 
-'bind' @ [191:31] ==> public open fun bind(p0: (ObservableValue<out (String..String?)>..ObservableValue<out (String..String?)>?)): Unit defined in javafx.beans.property.SimpleStringProperty[JavaMethodDescriptor]
+'bind' @ [184:31] ==> public open fun bind(p0: (ObservableValue<out (String..String?)>..ObservableValue<out (String..String?)>?)): Unit defined in javafx.beans.property.SimpleStringProperty[JavaMethodDescriptor]
 
-'reportingCurrency' @ [191:36] ==> private final val reportingCurrency: ObservableValue<(Currency..Currency?)> defined in net.corda.explorer.views.TransactionViewer[PropertyDescriptorImpl]
+'reportingCurrency' @ [184:36] ==> private final val reportingCurrency: ObservableValue<(Currency..Currency?)> defined in net.corda.explorer.views.TransactionViewer[PropertyDescriptorImpl]
 
-'map' @ [191:54] ==> public fun <A, B> ObservableValue<out (Currency..Currency?)>.map(function: ((Currency..Currency?)) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [184:54] ==> public fun <A, B> ObservableValue<out (Currency..Currency?)>.map(function: ((Currency..Currency?)) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> (java.util.Currency..java.util.Currency?)
     <B> -> String
 
-'it' @ [191:75] ==> value-parameter it: (Currency..Currency?) defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [184:75] ==> value-parameter it: (Currency..Currency?) defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'expander' @ [194:13] ==> private final lateinit var expander: ExpanderColumn<TransactionViewer.Transaction> defined in net.corda.explorer.views.TransactionViewer[PropertyDescriptorImpl]
+'expander' @ [187:13] ==> private final lateinit var expander: ExpanderColumn<TransactionViewer.Transaction> defined in net.corda.explorer.views.TransactionViewer[PropertyDescriptorImpl]
 
-'rowExpander' @ [194:24] ==> public fun <S> TableView<TransactionViewer.Transaction>.rowExpander(expandOnDoubleClick: Boolean = ..., expandedNodeCallback: RowExpanderPane.(TransactionViewer.Transaction) -> Unit): ExpanderColumn<TransactionViewer.Transaction> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'rowExpander' @ [187:24] ==> public fun <S> TableView<TransactionViewer.Transaction>.rowExpander(expandOnDoubleClick: Boolean = ..., expandedNodeCallback: RowExpanderPane.(TransactionViewer.Transaction) -> Unit): ExpanderColumn<TransactionViewer.Transaction> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> Transaction
 
-'add' @ [195:17] ==> public fun EventTarget.add(node: Node): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'add' @ [188:17] ==> public fun EventTarget.add(node: Node): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'ContractStatesView' @ [195:21] ==> public constructor ContractStatesView(transaction: TransactionViewer.Transaction) defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[ClassConstructorDescriptorImpl]
+'ContractStatesView' @ [188:21] ==> public constructor ContractStatesView(transaction: TransactionViewer.Transaction) defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[ClassConstructorDescriptorImpl]
 
-'it' @ [195:40] ==> value-parameter it: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [188:40] ==> value-parameter it: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'root' @ [195:44] ==> public open val root: Parent defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
+'root' @ [188:44] ==> public open val root: Parent defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
 
-'prefHeight' @ [196:17] ==> public final var RowExpanderPane.prefHeight: Double[MyPropertyDescriptor]
+'prefHeight' @ [189:17] ==> public final var RowExpanderPane.prefHeight: Double[MyPropertyDescriptor]
 
-'apply' @ [197:15] ==> @InlineOnly public inline fun <T> ExpanderColumn<TransactionViewer.Transaction>.apply(block: ExpanderColumn<TransactionViewer.Transaction>.() -> Unit): ExpanderColumn<TransactionViewer.Transaction> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [190:15] ==> @InlineOnly public inline fun <T> ExpanderColumn<TransactionViewer.Transaction>.apply(block: ExpanderColumn<TransactionViewer.Transaction>.() -> Unit): ExpanderColumn<TransactionViewer.Transaction> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ExpanderColumn<Transaction>
 
-'minWidth' @ [200:17] ==> public final var <S> ExpanderColumn<TransactionViewer.Transaction>.minWidth: Double[MyPropertyDescriptor]
+'minWidth' @ [193:17] ==> public final var <S> ExpanderColumn<TransactionViewer.Transaction>.minWidth: Double[MyPropertyDescriptor]
 Inferred types:
     <S> -> Transaction
 
-'maxWidth' @ [201:17] ==> public final var <S> ExpanderColumn<TransactionViewer.Transaction>.maxWidth: Double[MyPropertyDescriptor]
+'maxWidth' @ [194:17] ==> public final var <S> ExpanderColumn<TransactionViewer.Transaction>.maxWidth: Double[MyPropertyDescriptor]
 Inferred types:
     <S> -> Transaction
 
-'matchingTransactionsLabel' @ [204:9] ==> private final val matchingTransactionsLabel: Label defined in net.corda.explorer.views.TransactionViewer[PropertyDescriptorImpl]
+'matchingTransactionsLabel' @ [197:9] ==> private final val matchingTransactionsLabel: Label defined in net.corda.explorer.views.TransactionViewer[PropertyDescriptorImpl]
 
-'textProperty' @ [204:35] ==> public final fun textProperty(): (StringProperty..StringProperty?) defined in javafx.scene.control.Label[JavaMethodDescriptor]
+'textProperty' @ [197:35] ==> public final fun textProperty(): (StringProperty..StringProperty?) defined in javafx.scene.control.Label[JavaMethodDescriptor]
 
-'bind' @ [204:50] ==> public abstract fun bind(p0: (ObservableValue<out (String..String?)>..ObservableValue<out (String..String?)>?)): Unit defined in javafx.beans.property.StringProperty[JavaMethodDescriptor]
+'bind' @ [197:50] ==> public abstract fun bind(p0: (ObservableValue<out (String..String?)>..ObservableValue<out (String..String?)>?)): Unit defined in javafx.beans.property.StringProperty[JavaMethodDescriptor]
 
-'size' @ [204:64] ==> public open fun <E : (Any..Any?)> size(p0: (ObservableList<(TransactionViewer.Transaction..TransactionViewer.Transaction?)>..ObservableList<(TransactionViewer.Transaction..TransactionViewer.Transaction?)>?)): (IntegerBinding..IntegerBinding?) defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
+'size' @ [197:64] ==> public open fun <E : (Any..Any?)> size(p0: (ObservableList<(TransactionViewer.Transaction..TransactionViewer.Transaction?)>..ObservableList<(TransactionViewer.Transaction..TransactionViewer.Transaction?)>?)): (IntegerBinding..IntegerBinding?) defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Transaction
+    <E : (Any..Any?)> -> (net.corda.explorer.views.TransactionViewer.Transaction..net.corda.explorer.views.TransactionViewer.Transaction?)
 
-'transactionViewTable' @ [204:69] ==> private final val transactionViewTable: TableView<TransactionViewer.Transaction> defined in net.corda.explorer.views.TransactionViewer[PropertyDescriptorImpl]
+'transactionViewTable' @ [197:69] ==> private final val transactionViewTable: TableView<TransactionViewer.Transaction> defined in net.corda.explorer.views.TransactionViewer[PropertyDescriptorImpl]
 
-'items' @ [204:90] ==> public final var <S : (Any..Any?)> TableView<TransactionViewer.Transaction>.items: (ObservableList<(TransactionViewer.Transaction..TransactionViewer.Transaction?)>..ObservableList<(TransactionViewer.Transaction..TransactionViewer.Transaction?)>?)[MyPropertyDescriptor]
+'items' @ [197:90] ==> public final var <S : (Any..Any?)> TableView<TransactionViewer.Transaction>.items: (ObservableList<(TransactionViewer.Transaction..TransactionViewer.Transaction?)>..ObservableList<(TransactionViewer.Transaction..TransactionViewer.Transaction?)>?)[MyPropertyDescriptor]
 Inferred types:
     <S : (Any..Any?)> -> Transaction
 
-'map' @ [204:97] ==> public fun <A, B> ObservableValue<out (Number..Number?)>.map(function: ((Number..Number?)) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [197:97] ==> public fun <A, B> ObservableValue<out (Number..Number?)>.map(function: ((Number..Number?)) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> (kotlin.Number..kotlin.Number?)
     <B> -> String
 
-'it' @ [205:15] ==> value-parameter it: (Number..Number?) defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [198:15] ==> value-parameter it: (Number..Number?) defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'if (it == 1) "" else "s"' @ [205:40] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
+'if (it == 1) "" else "s"' @ [198:40] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> String
 
-'it' @ [205:44] ==> value-parameter it: (Number..Number?) defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [198:44] ==> value-parameter it: (Number..Number?) defined in net.corda.explorer.views.TransactionViewer.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'flatten' @ [210:16] ==> public fun <T> Iterable<Iterable<ObservableValue<NodeInfo?>>>.flatten(): List<ObservableValue<NodeInfo?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatten' @ [203:16] ==> public fun <T> Iterable<Iterable<ObservableValue<NodeInfo?>>>.flatten(): List<ObservableValue<NodeInfo?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ObservableValue<NodeInfo?>
 
-'map' @ [210:26] ==> public inline fun <T, R> Iterable<ObservableValue<NodeInfo?>>.map(transform: (ObservableValue<NodeInfo?>) -> String?): List<String?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [203:26] ==> public inline fun <T, R> Iterable<ObservableValue<NodeInfo?>>.map(transform: (ObservableValue<NodeInfo?>) -> String?): List<String?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ObservableValue<NodeInfo?>
     <R> -> String?
 
-'it' @ [211:13] ==> value-parameter it: ObservableValue<NodeInfo?> defined in net.corda.explorer.views.TransactionViewer.formatJoinPartyNames.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [204:13] ==> value-parameter it: ObservableValue<NodeInfo?> defined in net.corda.explorer.views.TransactionViewer.formatJoinPartyNames.<anonymous>[ValueParameterDescriptorImpl]
 
-'value' @ [211:16] ==> public final val <T : (Any..Any?)> ObservableValue<NodeInfo?>.value: NodeInfo?[MyPropertyDescriptor]
+'value' @ [204:16] ==> public final val <T : (Any..Any?)> ObservableValue<NodeInfo?>.value: NodeInfo?[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> NodeInfo?
 
-'legalIdentity' @ [211:23] ==> public final val legalIdentity: Party defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
+'legalIdentity' @ [204:23] ==> public final val legalIdentity: Party defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
 
-'let' @ [211:38] ==> @InlineOnly public inline fun <T, R> Party.let(block: (Party) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [204:38] ==> @InlineOnly public inline fun <T, R> Party.let(block: (Party) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Party
     <R> -> String
 
-'formatter' @ [211:44] ==> value-parameter formatter: Formatter<X500Name> defined in net.corda.explorer.views.TransactionViewer.formatJoinPartyNames[ValueParameterDescriptorImpl]
+'formatter' @ [204:44] ==> value-parameter formatter: Formatter<X500Name> defined in net.corda.explorer.views.TransactionViewer.formatJoinPartyNames[ValueParameterDescriptorImpl]
 
-'format' @ [211:54] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
+'format' @ [204:54] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
 
-'it' @ [211:61] ==> value-parameter it: Party defined in net.corda.explorer.views.TransactionViewer.formatJoinPartyNames.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [204:61] ==> value-parameter it: Party defined in net.corda.explorer.views.TransactionViewer.formatJoinPartyNames.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'name' @ [211:64] ==> public final val name: X500Name defined in net.corda.core.identity.Party[DeserializedPropertyDescriptor]
+'name' @ [204:64] ==> public final val name: X500Name defined in net.corda.core.identity.Party[DeserializedPropertyDescriptor]
 
-'filterNotNull' @ [212:11] ==> public fun <T : Any> Iterable<String?>.filterNotNull(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'filterNotNull' @ [205:11] ==> public fun <T : Any> Iterable<String?>.filterNotNull(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> String
 
-'toSet' @ [212:27] ==> public fun <T> Iterable<String>.toSet(): Set<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toSet' @ [205:27] ==> public fun <T> Iterable<String>.toSet(): Set<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
-'joinToString' @ [212:35] ==> public fun <T> Iterable<String>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((String) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'joinToString' @ [205:35] ==> public fun <T> Iterable<String>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((String) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
-'separator' @ [212:48] ==> value-parameter separator: String = ... defined in net.corda.explorer.views.TransactionViewer.formatJoinPartyNames[ValueParameterDescriptorImpl]
+'separator' @ [205:48] ==> value-parameter separator: String = ... defined in net.corda.explorer.views.TransactionViewer.formatJoinPartyNames[ValueParameterDescriptorImpl]
 
-'map' @ [215:75] ==> public fun <A, B> ObservableList<out StateAndRef<ContractState>>.map(cached: Boolean = ..., function: (StateAndRef<ContractState>) -> List<ObservableValue<NodeInfo?>>): ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [208:75] ==> public fun <A, B> ObservableList<out StateAndRef<ContractState>>.map(cached: Boolean = ..., function: (StateAndRef<ContractState>) -> List<ObservableValue<NodeInfo?>>): ObservableList<List<ObservableValue<NodeInfo?>>> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> StateAndRef<ContractState>
     <B> -> List<ObservableValue<NodeInfo?>>
 
-'it' @ [215:81] ==> value-parameter it: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.getParties.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [208:81] ==> value-parameter it: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.getParties.<anonymous>[ValueParameterDescriptorImpl]
 
-'state' @ [215:84] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'state' @ [208:84] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'data' @ [215:90] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
+'data' @ [208:90] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
 
-'participants' @ [215:95] ==> public abstract val participants: List<AbstractParty> defined in net.corda.core.contracts.ContractState[DeserializedPropertyDescriptor]
+'participants' @ [208:95] ==> public abstract val participants: List<AbstractParty> defined in net.corda.core.contracts.ContractState[DeserializedPropertyDescriptor]
 
-'map' @ [215:108] ==> public inline fun <T, R> Iterable<AbstractParty>.map(transform: (AbstractParty) -> ObservableValue<NodeInfo?>): List<ObservableValue<NodeInfo?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [208:108] ==> public inline fun <T, R> Iterable<AbstractParty>.map(transform: (AbstractParty) -> ObservableValue<NodeInfo?>): List<ObservableValue<NodeInfo?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> AbstractParty
     <R> -> ObservableValue<NodeInfo?>
 
-'getModel' @ [215:114] ==> public inline fun <reified M : Any> UIComponent.getModel(): NetworkIdentityModel defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'getModel' @ [208:114] ==> public inline fun <reified M : Any> UIComponent.getModel(): NetworkIdentityModel defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified M : Any> -> NetworkIdentityModel
 
-'lookup' @ [215:147] ==> public final fun lookup(publicKey: PublicKey): ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedSimpleFunctionDescriptor]
+'lookup' @ [208:147] ==> public final fun lookup(publicKey: PublicKey): ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [215:154] ==> value-parameter it: AbstractParty defined in net.corda.explorer.views.TransactionViewer.getParties.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [208:154] ==> value-parameter it: AbstractParty defined in net.corda.explorer.views.TransactionViewer.getParties.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'owningKey' @ [215:157] ==> public final val owningKey: PublicKey defined in net.corda.core.identity.AbstractParty[DeserializedPropertyDescriptor]
+'owningKey' @ [208:157] ==> public final val owningKey: PublicKey defined in net.corda.core.identity.AbstractParty[DeserializedPropertyDescriptor]
 
-'map' @ [216:71] ==> public fun <A, B> ObservableList<out StateAndRef<ContractState>>.map(cached: Boolean = ..., function: (StateAndRef<ContractState>) -> (String..String?)): ObservableList<(String..String?)> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [209:71] ==> public fun <A, B> ObservableList<out StateAndRef<ContractState>>.map(cached: Boolean = ..., function: (StateAndRef<ContractState>) -> (String..String?)): ObservableList<(String..String?)> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> StateAndRef<ContractState>
     <B> -> (kotlin.String..kotlin.String?)
 
-'it' @ [216:77] ==> value-parameter it: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.toText.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [209:77] ==> value-parameter it: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.toText.<anonymous>[ValueParameterDescriptorImpl]
 
-'contract' @ [216:80] ==> private final fun StateAndRef<ContractState>.contract(): Contract defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
+'contract' @ [209:80] ==> private final fun StateAndRef<ContractState>.contract(): Contract defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
 
-'javaClass' @ [216:91] ==> public val <T : Any> Contract.javaClass: Class<Contract> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [209:91] ==> public val <T : Any> Contract.javaClass: Class<Contract> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> Contract
 
-'simpleName' @ [216:101] ==> public final val <T : (Any..Any?)> Class<Contract>.simpleName: (String..String?)[MyPropertyDescriptor]
+'simpleName' @ [209:101] ==> public final val <T : (Any..Any?)> Class<Contract>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> Contract
 
-'groupBy' @ [216:114] ==> public inline fun <T, K> Iterable<(String..String?)>.groupBy(keySelector: ((String..String?)) -> (String..String?)): Map<(String..String?), List<(String..String?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'groupBy' @ [209:114] ==> public inline fun <T, K> Iterable<(String..String?)>.groupBy(keySelector: ((String..String?)) -> (String..String?)): Map<(String..String?), List<(String..String?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
     <K> -> (kotlin.String..kotlin.String?)
 
-'it' @ [216:124] ==> value-parameter it: (String..String?) defined in net.corda.explorer.views.TransactionViewer.toText.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [209:124] ==> value-parameter it: (String..String?) defined in net.corda.explorer.views.TransactionViewer.toText.<anonymous>[ValueParameterDescriptorImpl]
 
-'map' @ [216:129] ==> public inline fun <K, V, R> Map<out (String..String?), List<(String..String?)>>.map(transform: (Map.Entry<(String..String?), List<(String..String?)>>) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [209:129] ==> public inline fun <K, V, R> Map<out (String..String?), List<(String..String?)>>.map(transform: (Map.Entry<(String..String?), List<(String..String?)>>) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> (kotlin.String..kotlin.String?)
     <V> -> List<(kotlin.String..kotlin.String?)>
     <R> -> String
 
-'it' @ [216:138] ==> value-parameter it: Map.Entry<(String..String?), List<(String..String?)>> defined in net.corda.explorer.views.TransactionViewer.toText.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [209:138] ==> value-parameter it: Map.Entry<(String..String?), List<(String..String?)>> defined in net.corda.explorer.views.TransactionViewer.toText.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [216:141] ==> public abstract val key: (String..String?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'key' @ [209:141] ==> public abstract val key: (String..String?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'it' @ [216:149] ==> value-parameter it: Map.Entry<(String..String?), List<(String..String?)>> defined in net.corda.explorer.views.TransactionViewer.toText.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [209:149] ==> value-parameter it: Map.Entry<(String..String?), List<(String..String?)>> defined in net.corda.explorer.views.TransactionViewer.toText.<anonymous>[ValueParameterDescriptorImpl]
 
-'value' @ [216:152] ==> public abstract val value: List<(String..String?)> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'value' @ [209:152] ==> public abstract val value: List<(String..String?)> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'size' @ [216:158] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
+'size' @ [209:158] ==> public abstract val size: Int defined in kotlin.collections.List[DeserializedPropertyDescriptor]
 
-'joinToString' @ [216:168] ==> public fun <T> Iterable<String>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((String) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'joinToString' @ [209:168] ==> public fun <T> Iterable<String>.joinToString(separator: CharSequence = ..., prefix: CharSequence = ..., postfix: CharSequence = ..., limit: Int = ..., truncated: CharSequence = ..., transform: ((String) -> CharSequence)? = ...): String defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
 
-'BorderPane' @ [218:39] ==> public constructor BorderPane() defined in javafx.scene.layout.BorderPane[JavaClassConstructorDescriptor]
+'BorderPane' @ [211:39] ==> public constructor BorderPane() defined in javafx.scene.layout.BorderPane[JavaClassConstructorDescriptor]
 
-'observableListReadOnly' @ [219:54] ==> public inline fun <reified M : Any, T> observableListReadOnly(noinline observableListProperty: (TransactionDataModel) -> ObservableList<out PartiallyResolvedTransaction>): TrackedDelegate.ObservableListReadOnlyDelegate<TransactionDataModel, PartiallyResolvedTransaction> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [212:54] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<out T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListReadOnlyDelegate[DeserializedSimpleFunctionDescriptor]
+
+'TransactionDataModel' @ [212:77] ==> public constructor TransactionDataModel() defined in net.corda.client.jfx.model.TransactionDataModel[DeserializedClassConstructorDescriptor]
+
+'partiallyResolvedTransactions' @ [212:99] ==> public final val partiallyResolvedTransactions: ObservableList<PartiallyResolvedTransaction> defined in net.corda.client.jfx.model.TransactionDataModel[DeserializedPropertyDescriptor]
+
+'right' @ [217:13] ==> public fun BorderPane.right(op: BorderPane.() -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+
+'label' @ [218:17] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+
+'SecureHash' @ [219:32] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
+
+'randomSHA256' @ [219:43] ==> @JvmStatic public final fun randomSHA256(): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
+
+'graphic' @ [220:21] ==> public final var Label.graphic: (Node..Node?)[MyPropertyDescriptor]
+
+'identicon' @ [220:31] ==> public fun identicon(secureHash: SecureHash, size: Double): ImageView defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
+
+'hash' @ [220:41] ==> val hash: SecureHash.SHA256 defined in net.corda.explorer.views.TransactionViewer.TransactionWidget.<init>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+
+'textProperty' @ [221:21] ==> public final fun textProperty(): (StringProperty..StringProperty?) defined in javafx.scene.control.Label[JavaMethodDescriptor]
+
+'bind' @ [221:36] ==> public abstract fun bind(p0: (ObservableValue<out (String..String?)>..ObservableValue<out (String..String?)>?)): Unit defined in javafx.beans.property.StringProperty[JavaMethodDescriptor]
+
+'size' @ [221:50] ==> public open fun <E : (Any..Any?)> size(p0: (ObservableList<out PartiallyResolvedTransaction>..ObservableList<out PartiallyResolvedTransaction>?)): (IntegerBinding..IntegerBinding?) defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <reified M : Any> -> TransactionDataModel
-    <T> -> PartiallyResolvedTransaction
+    <E : (Any..Any?)> -> Captured(out PartiallyResolvedTransaction)
 
-'TransactionDataModel' @ [219:77] ==> public constructor TransactionDataModel() defined in net.corda.client.jfx.model.TransactionDataModel[DeserializedClassConstructorDescriptor]
+'partiallyResolvedTransactions' @ [221:55] ==> private final val partiallyResolvedTransactions: ObservableList<out PartiallyResolvedTransaction> defined in net.corda.explorer.views.TransactionViewer.TransactionWidget[PropertyDescriptorImpl]
 
-'right' @ [224:13] ==> public fun BorderPane.right(op: BorderPane.() -> Unit): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
-
-'label' @ [225:17] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
-
-'SecureHash' @ [226:32] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
-
-'randomSHA256' @ [226:43] ==> @JvmStatic public final fun randomSHA256(): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
-
-'graphic' @ [227:21] ==> public final var Label.graphic: (Node..Node?)[MyPropertyDescriptor]
-
-'identicon' @ [227:31] ==> public fun identicon(secureHash: SecureHash, size: Double): ImageView defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
-
-'hash' @ [227:41] ==> val hash: SecureHash.SHA256 defined in net.corda.explorer.views.TransactionViewer.TransactionWidget.<init>.<anonymous>.<anonymous>[LocalVariableDescriptor]
-
-'textProperty' @ [228:21] ==> public final fun textProperty(): (StringProperty..StringProperty?) defined in javafx.scene.control.Label[JavaMethodDescriptor]
-
-'bind' @ [228:36] ==> public abstract fun bind(p0: (ObservableValue<out (String..String?)>..ObservableValue<out (String..String?)>?)): Unit defined in javafx.beans.property.StringProperty[JavaMethodDescriptor]
-
-'size' @ [228:50] ==> public open fun <E : (Any..Any?)> size(p0: (ObservableList<out (PartiallyResolvedTransaction..PartiallyResolvedTransaction?)>..ObservableList<out (PartiallyResolvedTransaction..PartiallyResolvedTransaction?)>?)): (IntegerBinding..IntegerBinding?) defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
-Inferred types:
-    <E : (Any..Any?)> -> PartiallyResolvedTransaction
-
-'partiallyResolvedTransactions' @ [228:55] ==> private final val partiallyResolvedTransactions: ObservableList<out PartiallyResolvedTransaction> defined in net.corda.explorer.views.TransactionViewer.TransactionWidget[PropertyDescriptorImpl]
-
-'map' @ [228:86] ==> public fun <A, B> ObservableValue<out (Number..Number?)>.map(function: ((Number..Number?)) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [221:86] ==> public fun <A, B> ObservableValue<out (Number..Number?)>.map(function: ((Number..Number?)) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> (kotlin.Number..kotlin.Number?)
     <B> -> String
 
-'Number' @ [228:90] ==> public constructor Number() defined in kotlin.Number[DeserializedClassConstructorDescriptor]
+'Number' @ [221:90] ==> public constructor Number() defined in kotlin.Number[DeserializedClassConstructorDescriptor]
 
-'setAlignment' @ [229:32] ==> public open fun setAlignment(p0: (Node..Node?), p1: (Pos..Pos?)): Unit defined in javafx.scene.layout.BorderPane[JavaMethodDescriptor]
+'toString' @ [221:98] ==> public open fun toString(): String defined in kotlin.Number[DeserializedSimpleFunctionDescriptor]
 
-'this' @ [229:45] ==> <this> defined in net.corda.explorer.views.TransactionViewer.TransactionWidget.<init>.<anonymous>.<anonymous>[ReceiverParameterDescriptorImpl]
+'setAlignment' @ [222:32] ==> public open fun setAlignment(p0: (Node..Node?), p1: (Pos..Pos?)): Unit defined in javafx.scene.layout.BorderPane[JavaMethodDescriptor]
 
-'BOTTOM_RIGHT' @ [229:55] ==> enum entry BOTTOM_RIGHT defined in javafx.geometry.Pos[FakeCallableDescriptorForObject]
+'this' @ [222:45] ==> <this> defined in net.corda.explorer.views.TransactionViewer.TransactionWidget.<init>.<anonymous>.<anonymous>[ReceiverParameterDescriptorImpl]
 
-'Fragment' @ [235:72] ==> public constructor Fragment(title: String? = ...) defined in tornadofx.Fragment[DeserializedClassConstructorDescriptor]
+'BOTTOM_RIGHT' @ [222:55] ==> enum entry BOTTOM_RIGHT defined in javafx.geometry.Pos[FakeCallableDescriptorForObject]
 
-'fxml' @ [236:30] ==> public final fun <T : Node> fxml(location: String?, hasControllerAttribute: Boolean): ReadOnlyProperty<UIComponent, Parent> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
+'Fragment' @ [228:72] ==> public constructor Fragment(title: String? = ...) defined in tornadofx.Fragment[DeserializedClassConstructorDescriptor]
+
+'fxml' @ [229:30] ==> public final fun <T : Node> fxml(location: String?, hasControllerAttribute: Boolean): ReadOnlyProperty<UIComponent, Parent> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Node> -> Parent
 
-'fxid' @ [237:31] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, ListView<StateAndRef<ContractState>>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
+'fxid' @ [230:31] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, ListView<StateAndRef<ContractState>>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> ListView<StateAndRef<ContractState>>
 
-'fxid' @ [238:32] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, ListView<StateAndRef<ContractState>>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
+'fxid' @ [231:32] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, ListView<StateAndRef<ContractState>>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> ListView<StateAndRef<ContractState>>
 
-'fxid' @ [239:35] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, VBox> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
+'fxid' @ [232:35] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, VBox> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> VBox
 
-'fxid' @ [240:34] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TitledPane> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
+'fxid' @ [233:34] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TitledPane> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> TitledPane
 
-'fxid' @ [241:35] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TitledPane> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
+'fxid' @ [234:35] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TitledPane> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> TitledPane
 
-'fxid' @ [242:39] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TitledPane> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
+'fxid' @ [235:39] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TitledPane> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> TitledPane
 
-'transaction' @ [245:33] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
+'transaction' @ [238:33] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
 
-'tx' @ [245:45] ==> public final val tx: PartiallyResolvedTransaction defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+'tx' @ [238:45] ==> public final val tx: PartiallyResolvedTransaction defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
 
-'transaction' @ [245:48] ==> public final val transaction: SignedTransaction defined in net.corda.client.jfx.model.PartiallyResolvedTransaction[DeserializedPropertyDescriptor]
+'transaction' @ [238:48] ==> public final val transaction: SignedTransaction defined in net.corda.client.jfx.model.PartiallyResolvedTransaction[DeserializedPropertyDescriptor]
 
-'sigs' @ [245:60] ==> public open val sigs: List<TransactionSignature> defined in net.corda.core.transactions.SignedTransaction[DeserializedPropertyDescriptor]
+'sigs' @ [238:60] ==> public open val sigs: List<TransactionSignature> defined in net.corda.core.transactions.SignedTransaction[DeserializedPropertyDescriptor]
 
-'map' @ [245:65] ==> public inline fun <T, R> Iterable<TransactionSignature>.map(transform: (TransactionSignature) -> PublicKey): List<PublicKey> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [238:65] ==> public inline fun <T, R> Iterable<TransactionSignature>.map(transform: (TransactionSignature) -> PublicKey): List<PublicKey> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> TransactionSignature
     <R> -> PublicKey
 
-'it' @ [245:71] ==> value-parameter it: TransactionSignature defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [238:71] ==> value-parameter it: TransactionSignature defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'by' @ [245:74] ==> public final val by: PublicKey defined in net.corda.core.crypto.TransactionSignature[DeserializedPropertyDescriptor]
+'by' @ [238:74] ==> public final val by: PublicKey defined in net.corda.core.crypto.TransactionSignature[DeserializedPropertyDescriptor]
 
-'inputPane' @ [247:13] ==> private final val inputPane: TitledPane defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
+'inputPane' @ [240:13] ==> private final val inputPane: TitledPane defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
 
-'text' @ [247:23] ==> public final var TitledPane.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [240:23] ==> public final var TitledPane.text: (String..String?)[MyPropertyDescriptor]
 
-'transaction' @ [247:40] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
+'transaction' @ [240:40] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
 
-'inputs' @ [247:52] ==> public final val inputs: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+'inputs' @ [240:52] ==> public final val inputs: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
 
-'resolved' @ [247:59] ==> public final val resolved: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
+'resolved' @ [240:59] ==> public final val resolved: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
 
-'count' @ [247:68] ==> @InlineOnly public inline fun <T> Collection<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>.count(): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'count' @ [240:68] ==> @InlineOnly public inline fun <T> Collection<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>.count(): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (net.corda.core.contracts.StateAndRef<net.corda.core.contracts.ContractState>..net.corda.core.contracts.StateAndRef<net.corda.core.contracts.ContractState>?)
 
-'outputPane' @ [248:13] ==> private final val outputPane: TitledPane defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
+'outputPane' @ [241:13] ==> private final val outputPane: TitledPane defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
 
-'text' @ [248:24] ==> public final var TitledPane.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [241:24] ==> public final var TitledPane.text: (String..String?)[MyPropertyDescriptor]
 
-'transaction' @ [248:42] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
+'transaction' @ [241:42] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
 
-'outputs' @ [248:54] ==> public final val outputs: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+'outputs' @ [241:54] ==> public final val outputs: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
 
-'count' @ [248:62] ==> @InlineOnly public inline fun <T> Collection<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>.count(): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'count' @ [241:62] ==> @InlineOnly public inline fun <T> Collection<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>.count(): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (net.corda.core.contracts.StateAndRef<net.corda.core.contracts.ContractState>..net.corda.core.contracts.StateAndRef<net.corda.core.contracts.ContractState>?)
 
-'signaturesPane' @ [249:13] ==> private final val signaturesPane: TitledPane defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
+'signaturesPane' @ [242:13] ==> private final val signaturesPane: TitledPane defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
 
-'text' @ [249:28] ==> public final var TitledPane.text: (String..String?)[MyPropertyDescriptor]
+'text' @ [242:28] ==> public final var TitledPane.text: (String..String?)[MyPropertyDescriptor]
 
-'signatureData' @ [249:50] ==> val signatureData: List<PublicKey> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[LocalVariableDescriptor]
+'signatureData' @ [242:50] ==> val signatureData: List<PublicKey> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[LocalVariableDescriptor]
 
-'count' @ [249:64] ==> @InlineOnly public inline fun <T> Collection<PublicKey>.count(): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'count' @ [242:64] ==> @InlineOnly public inline fun <T> Collection<PublicKey>.count(): Int defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PublicKey
 
-'inputs' @ [251:13] ==> private final val inputs: ListView<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
+'inputs' @ [244:13] ==> private final val inputs: ListView<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
 
-'cellCache' @ [251:20] ==> public final fun <T> ListView<StateAndRef<ContractState>>.cellCache(cachedGraphicProvider: (StateAndRef<ContractState>) -> Node): Unit defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
+'cellCache' @ [244:20] ==> public final fun <T> ListView<StateAndRef<ContractState>>.cellCache(cachedGraphicProvider: (StateAndRef<ContractState>) -> Node): Unit defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateAndRef<ContractState>
 
-'getCell' @ [251:32] ==> private final fun getCell(contractState: StateAndRef<ContractState>): Node defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[SimpleFunctionDescriptorImpl]
+'getCell' @ [244:32] ==> private final fun getCell(contractState: StateAndRef<ContractState>): Node defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[SimpleFunctionDescriptorImpl]
 
-'it' @ [251:40] ==> value-parameter it: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [244:40] ==> value-parameter it: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'outputs' @ [252:13] ==> private final val outputs: ListView<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
+'outputs' @ [245:13] ==> private final val outputs: ListView<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
 
-'cellCache' @ [252:21] ==> public final fun <T> ListView<StateAndRef<ContractState>>.cellCache(cachedGraphicProvider: (StateAndRef<ContractState>) -> Node): Unit defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
+'cellCache' @ [245:21] ==> public final fun <T> ListView<StateAndRef<ContractState>>.cellCache(cachedGraphicProvider: (StateAndRef<ContractState>) -> Node): Unit defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateAndRef<ContractState>
 
-'getCell' @ [252:33] ==> private final fun getCell(contractState: StateAndRef<ContractState>): Node defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[SimpleFunctionDescriptorImpl]
+'getCell' @ [245:33] ==> private final fun getCell(contractState: StateAndRef<ContractState>): Node defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[SimpleFunctionDescriptorImpl]
 
-'it' @ [252:41] ==> value-parameter it: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [245:41] ==> value-parameter it: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'inputs' @ [254:13] ==> private final val inputs: ListView<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
+'inputs' @ [247:13] ==> private final val inputs: ListView<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
 
-'items' @ [254:20] ==> public final var <T : (Any..Any?)> ListView<StateAndRef<ContractState>>.items: (ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>..ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>?)[MyPropertyDescriptor]
+'items' @ [247:20] ==> public final var <T : (Any..Any?)> ListView<StateAndRef<ContractState>>.items: (ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>..ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>?)[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> StateAndRef<ContractState>
 
-'transaction' @ [254:28] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
+'transaction' @ [247:28] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
 
-'inputs' @ [254:40] ==> public final val inputs: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+'inputs' @ [247:40] ==> public final val inputs: TransactionViewer.Inputs defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
 
-'resolved' @ [254:47] ==> public final val resolved: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
+'resolved' @ [247:47] ==> public final val resolved: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Inputs[PropertyDescriptorImpl]
 
-'outputs' @ [255:13] ==> private final val outputs: ListView<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
+'outputs' @ [248:13] ==> private final val outputs: ListView<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
 
-'items' @ [255:21] ==> public final var <T : (Any..Any?)> ListView<StateAndRef<ContractState>>.items: (ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>..ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>?)[MyPropertyDescriptor]
+'items' @ [248:21] ==> public final var <T : (Any..Any?)> ListView<StateAndRef<ContractState>>.items: (ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>..ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>?)[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> StateAndRef<ContractState>
 
-'transaction' @ [255:29] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
+'transaction' @ [248:29] ==> value-parameter transaction: TransactionViewer.Transaction defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[ValueParameterDescriptorImpl]
 
-'outputs' @ [255:41] ==> public final val outputs: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
+'outputs' @ [248:41] ==> public final val outputs: ObservableList<StateAndRef<ContractState>> defined in net.corda.explorer.views.TransactionViewer.Transaction[PropertyDescriptorImpl]
 
-'observable' @ [255:49] ==> public fun <T> List<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>.observable(): ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'observable' @ [248:49] ==> public fun <T> List<(StateAndRef<ContractState>..StateAndRef<ContractState>?)>.observable(): ObservableList<(StateAndRef<ContractState>..StateAndRef<ContractState>?)> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (net.corda.core.contracts.StateAndRef<net.corda.core.contracts.ContractState>..net.corda.core.contracts.StateAndRef<net.corda.core.contracts.ContractState>?)
 
-'signatures' @ [257:13] ==> private final val signatures: VBox defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
+'signatures' @ [250:13] ==> private final val signatures: VBox defined in net.corda.explorer.views.TransactionViewer.ContractStatesView[PropertyDescriptorImpl]
 
-'children' @ [257:24] ==> public final val VBox.children: (ObservableList<(Node..Node?)>..ObservableList<(Node..Node?)>?)[MyPropertyDescriptor]
+'children' @ [250:24] ==> public final val VBox.children: (ObservableList<(Node..Node?)>..ObservableList<(Node..Node?)>?)[MyPropertyDescriptor]
 
-'addAll' @ [257:33] ==> public abstract fun addAll(elements: Collection<(Node..Node?)>): Boolean defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
+'addAll' @ [250:33] ==> public abstract fun addAll(elements: Collection<(Node..Node?)>): Boolean defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
 
-'signatureData' @ [257:40] ==> val signatureData: List<PublicKey> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[LocalVariableDescriptor]
+'signatureData' @ [250:40] ==> val signatureData: List<PublicKey> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>[LocalVariableDescriptor]
 
-'map' @ [257:54] ==> public inline fun <T, R> Iterable<PublicKey>.map(transform: (PublicKey) -> TextField): List<TextField> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [250:54] ==> public inline fun <T, R> Iterable<PublicKey>.map(transform: (PublicKey) -> TextField): List<TextField> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PublicKey
     <R> -> TextField
 
-'getModel' @ [258:32] ==> public inline fun <reified M : Any> UIComponent.getModel(): NetworkIdentityModel defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'getModel' @ [251:32] ==> public inline fun <reified M : Any> UIComponent.getModel(): NetworkIdentityModel defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified M : Any> -> NetworkIdentityModel
 
-'lookup' @ [258:65] ==> public final fun lookup(publicKey: PublicKey): ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedSimpleFunctionDescriptor]
+'lookup' @ [251:65] ==> public final fun lookup(publicKey: PublicKey): ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedSimpleFunctionDescriptor]
 
-'signature' @ [258:72] ==> value-parameter signature: PublicKey defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'signature' @ [251:72] ==> value-parameter signature: PublicKey defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'copyableLabel' @ [259:17] ==> public fun EventTarget.copyableLabel(value: ObservableValue<String>? = ..., op: (TextField.() -> Unit)? = ...): TextField defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'copyableLabel' @ [252:17] ==> public fun EventTarget.copyableLabel(value: ObservableValue<String>? = ..., op: (TextField.() -> Unit)? = ...): TextField defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
-'nodeInfo' @ [259:31] ==> val nodeInfo: ObservableValue<NodeInfo?> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[LocalVariableDescriptor]
+'nodeInfo' @ [252:31] ==> val nodeInfo: ObservableValue<NodeInfo?> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[LocalVariableDescriptor]
 
-'map' @ [259:40] ==> public fun <A, B> ObservableValue<out NodeInfo?>.map(function: (NodeInfo?) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [252:40] ==> public fun <A, B> ObservableValue<out NodeInfo?>.map(function: (NodeInfo?) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> NodeInfo?
     <B> -> String
 
-'signature' @ [259:49] ==> value-parameter signature: PublicKey defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'signature' @ [252:49] ==> value-parameter signature: PublicKey defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'toStringShort' @ [259:59] ==> public fun PublicKey.toStringShort(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
+'toStringShort' @ [252:59] ==> public fun PublicKey.toStringShort(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [259:79] ==> value-parameter it: NodeInfo? defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [252:79] ==> value-parameter it: NodeInfo? defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'legalIdentity' @ [259:83] ==> public final val legalIdentity: Party defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
+'legalIdentity' @ [252:83] ==> public final val legalIdentity: Party defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
 
-'let' @ [259:98] ==> @InlineOnly public inline fun <T, R> Party.let(block: (Party) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [252:98] ==> @InlineOnly public inline fun <T, R> Party.let(block: (Party) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Party
     <R> -> String
 
-'PartyNameFormatter' @ [259:104] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
+'PartyNameFormatter' @ [252:104] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
 
-'short' @ [259:123] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
+'short' @ [252:123] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
 
-'format' @ [259:129] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
+'format' @ [252:129] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
 
-'it' @ [259:136] ==> value-parameter it: Party defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [252:136] ==> value-parameter it: Party defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.<init>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'name' @ [259:139] ==> public final val name: X500Name defined in net.corda.core.identity.Party[DeserializedPropertyDescriptor]
+'name' @ [252:139] ==> public final val name: X500Name defined in net.corda.core.identity.Party[DeserializedPropertyDescriptor]
 
-'invoke' @ [264:20] ==> public abstract operator fun invoke(): GridPane defined in kotlin.Function0[FunctionInvokeDescriptor]
+'invoke' @ [257:20] ==> public abstract operator fun invoke(): GridPane defined in kotlin.Function0[FunctionInvokeDescriptor]
 
-'gridpane' @ [265:17] ==> public fun EventTarget.gridpane(op: (GridPane.() -> Unit)? = ...): GridPane defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'gridpane' @ [258:17] ==> public fun EventTarget.gridpane(op: (GridPane.() -> Unit)? = ...): GridPane defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'padding' @ [266:21] ==> public final var GridPane.padding: (Insets..Insets?)[MyPropertyDescriptor]
+'padding' @ [259:21] ==> public final var GridPane.padding: (Insets..Insets?)[MyPropertyDescriptor]
 
-'Insets' @ [266:31] ==> public constructor Insets(@NamedArg p0: Double, @NamedArg p1: Double, @NamedArg p2: Double, @NamedArg p3: Double) defined in javafx.geometry.Insets[JavaClassConstructorDescriptor]
+'Insets' @ [259:31] ==> public constructor Insets(@NamedArg p0: Double, @NamedArg p1: Double, @NamedArg p2: Double, @NamedArg p3: Double) defined in javafx.geometry.Insets[JavaClassConstructorDescriptor]
 
-'vgap' @ [267:21] ==> public final var GridPane.vgap: Double[MyPropertyDescriptor]
+'vgap' @ [260:21] ==> public final var GridPane.vgap: Double[MyPropertyDescriptor]
 
-'hgap' @ [268:21] ==> public final var GridPane.hgap: Double[MyPropertyDescriptor]
+'hgap' @ [261:21] ==> public final var GridPane.hgap: Double[MyPropertyDescriptor]
 
-'row' @ [269:21] ==> public fun GridPane.row(title: String? = ..., op: (Pane.() -> Unit)? = ...): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'row' @ [262:21] ==> public fun GridPane.row(title: String? = ..., op: (Pane.() -> Unit)? = ...): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'label' @ [270:25] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [263:25] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'contractState' @ [270:34] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
+'contractState' @ [263:34] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
 
-'contract' @ [270:48] ==> private final fun StateAndRef<ContractState>.contract(): Contract defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
+'contract' @ [263:48] ==> private final fun StateAndRef<ContractState>.contract(): Contract defined in net.corda.explorer.views.TransactionViewer[SimpleFunctionDescriptorImpl]
 
-'javaClass' @ [270:59] ==> public val <T : Any> Contract.javaClass: Class<Contract> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [263:59] ==> public val <T : Any> Contract.javaClass: Class<Contract> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> Contract
 
-'simpleName' @ [270:69] ==> public final val <T : (Any..Any?)> Class<Contract>.simpleName: (String..String?)[MyPropertyDescriptor]
+'simpleName' @ [263:69] ==> public final val <T : (Any..Any?)> Class<Contract>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> Contract
 
-'contractState' @ [270:84] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
+'contractState' @ [263:84] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
 
-'ref' @ [270:98] ==> public final val ref: StateRef defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'ref' @ [263:98] ==> public final val ref: StateRef defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'toString' @ [270:102] ==> public open fun toString(): String defined in net.corda.core.contracts.StateRef[DeserializedSimpleFunctionDescriptor]
+'toString' @ [263:102] ==> public open fun toString(): String defined in net.corda.core.contracts.StateRef[DeserializedSimpleFunctionDescriptor]
 
-'substring' @ [270:113] ==> @InlineOnly public inline fun String.substring(startIndex: Int, endIndex: Int): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+'substring' @ [263:113] ==> @InlineOnly public inline fun String.substring(startIndex: Int, endIndex: Int): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'contractState' @ [270:137] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
+'contractState' @ [263:137] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
 
-'ref' @ [270:151] ==> public final val ref: StateRef defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'ref' @ [263:151] ==> public final val ref: StateRef defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'index' @ [270:155] ==> public final val index: Int defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
+'index' @ [263:155] ==> public final val index: Int defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
 
-'graphic' @ [271:29] ==> public final var Label.graphic: (Node..Node?)[MyPropertyDescriptor]
+'graphic' @ [264:29] ==> public final var Label.graphic: (Node..Node?)[MyPropertyDescriptor]
 
-'identicon' @ [271:39] ==> public fun identicon(secureHash: SecureHash, size: Double): ImageView defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
+'identicon' @ [264:39] ==> public fun identicon(secureHash: SecureHash, size: Double): ImageView defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
 
-'contractState' @ [271:49] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
+'contractState' @ [264:49] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
 
-'ref' @ [271:63] ==> public final val ref: StateRef defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'ref' @ [264:63] ==> public final val ref: StateRef defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'txhash' @ [271:67] ==> public final val txhash: SecureHash defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
+'txhash' @ [264:67] ==> public final val txhash: SecureHash defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
 
-'tooltip' @ [272:29] ==> public final var Label.tooltip: (Tooltip..Tooltip?)[MyPropertyDescriptor]
+'tooltip' @ [265:29] ==> public final var Label.tooltip: (Tooltip..Tooltip?)[MyPropertyDescriptor]
 
-'identiconToolTip' @ [272:39] ==> public fun identiconToolTip(secureHash: SecureHash, description: String? = ...): Tooltip defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
+'identiconToolTip' @ [265:39] ==> public fun identiconToolTip(secureHash: SecureHash, description: String? = ...): Tooltip defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[SimpleFunctionDescriptorImpl]
 
-'contractState' @ [272:56] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
+'contractState' @ [265:56] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
 
-'ref' @ [272:70] ==> public final val ref: StateRef defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'ref' @ [265:70] ==> public final val ref: StateRef defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'txhash' @ [272:74] ==> public final val txhash: SecureHash defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
+'txhash' @ [265:74] ==> public final val txhash: SecureHash defined in net.corda.core.contracts.StateRef[DeserializedPropertyDescriptor]
 
-'gridpaneConstraints' @ [273:29] ==> public fun <T : Node> Label.gridpaneConstraints(op: GridPaneConstraint.() -> Unit): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'gridpaneConstraints' @ [266:29] ==> public fun <T : Node> Label.gridpaneConstraints(op: GridPaneConstraint.() -> Unit): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Node> -> Label
 
-'columnSpan' @ [273:51] ==> public final var columnSpan: Int? defined in tornadofx.GridPaneConstraint[DeserializedPropertyDescriptor]
+'columnSpan' @ [266:51] ==> public final var columnSpan: Int? defined in tornadofx.GridPaneConstraint[DeserializedPropertyDescriptor]
 
-'contractState' @ [276:32] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
+'contractState' @ [269:32] ==> value-parameter contractState: StateAndRef<ContractState> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell[ValueParameterDescriptorImpl]
 
-'state' @ [276:46] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'state' @ [269:46] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'data' @ [276:52] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
+'data' @ [269:52] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
 
 'when (data) {
                         is Cash.State -> {
@@ -1315,193 +1290,245 @@ Inferred types:
                         }
                     // TODO : Generic view using reflection?
                         else -> label {}
-                    }' @ [277:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any): Any[SimpleFunctionDescriptorImpl]
+                    }' @ [270:21] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any): Any[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
 
-'data' @ [277:27] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'data' @ [270:27] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'row' @ [279:29] ==> public fun GridPane.row(title: String? = ..., op: (Pane.() -> Unit)? = ...): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'row' @ [272:29] ==> public fun GridPane.row(title: String? = ..., op: (Pane.() -> Unit)? = ...): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'label' @ [280:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [273:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'gridpaneConstraints' @ [280:53] ==> public fun <T : Node> Label.gridpaneConstraints(op: GridPaneConstraint.() -> Unit): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'gridpaneConstraints' @ [273:53] ==> public fun <T : Node> Label.gridpaneConstraints(op: GridPaneConstraint.() -> Unit): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Node> -> Label
 
-'hAlignment' @ [280:75] ==> public final var hAlignment: HPos? defined in tornadofx.GridPaneConstraint[DeserializedPropertyDescriptor]
+'hAlignment' @ [273:75] ==> public final var hAlignment: HPos? defined in tornadofx.GridPaneConstraint[DeserializedPropertyDescriptor]
 
-'RIGHT' @ [280:93] ==> enum entry RIGHT defined in javafx.geometry.HPos[FakeCallableDescriptorForObject]
+'RIGHT' @ [273:93] ==> enum entry RIGHT defined in javafx.geometry.HPos[FakeCallableDescriptorForObject]
 
-'label' @ [281:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [274:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'AmountFormatter' @ [281:39] ==> public object AmountFormatter defined in net.corda.explorer.formatters in file AmountFormatter.kt[FakeCallableDescriptorForObject]
+'boring' @ [274:55] ==> public final val boring: Formatter<Amount<Currency>> defined in net.corda.explorer.formatters.AmountFormatter[PropertyDescriptorImpl]
 
-'boring' @ [281:55] ==> public final val boring: Formatter<Amount<Currency>> defined in net.corda.explorer.formatters.AmountFormatter[PropertyDescriptorImpl]
+'format' @ [274:62] ==> public abstract fun format(value: Amount<Currency>): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
 
-'format' @ [281:62] ==> public abstract fun format(value: Amount<Currency>): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
+'data' @ [274:69] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'data' @ [281:69] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'amount' @ [274:74] ==> public open val amount: Amount<Issued<Currency>> defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
 
-'amount' @ [281:74] ==> public open val amount: Amount<Issued<Currency>> defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
-
-'withoutIssuer' @ [281:81] ==> public fun <T : Any> Amount<Issued<Currency>>.withoutIssuer(): Amount<Currency> defined in net.corda.core.contracts[DeserializedSimpleFunctionDescriptor]
+'withoutIssuer' @ [274:81] ==> public fun <T : Any> Amount<Issued<Currency>>.withoutIssuer(): Amount<Currency> defined in net.corda.core.contracts[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> Currency
 
-'row' @ [283:29] ==> public fun GridPane.row(title: String? = ..., op: (Pane.() -> Unit)? = ...): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'row' @ [276:29] ==> public fun GridPane.row(title: String? = ..., op: (Pane.() -> Unit)? = ...): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'label' @ [284:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [277:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'gridpaneConstraints' @ [284:53] ==> public fun <T : Node> Label.gridpaneConstraints(op: GridPaneConstraint.() -> Unit): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'gridpaneConstraints' @ [277:53] ==> public fun <T : Node> Label.gridpaneConstraints(op: GridPaneConstraint.() -> Unit): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Node> -> Label
 
-'hAlignment' @ [284:75] ==> public final var hAlignment: HPos? defined in tornadofx.GridPaneConstraint[DeserializedPropertyDescriptor]
+'hAlignment' @ [277:75] ==> public final var hAlignment: HPos? defined in tornadofx.GridPaneConstraint[DeserializedPropertyDescriptor]
 
-'RIGHT' @ [284:93] ==> enum entry RIGHT defined in javafx.geometry.HPos[FakeCallableDescriptorForObject]
+'RIGHT' @ [277:93] ==> enum entry RIGHT defined in javafx.geometry.HPos[FakeCallableDescriptorForObject]
 
-'data' @ [285:70] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'data' @ [278:70] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'amount' @ [285:75] ==> public open val amount: Amount<Issued<Currency>> defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
+'amount' @ [278:75] ==> public open val amount: Amount<Issued<Currency>> defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
 
-'token' @ [285:82] ==> public final val token: Issued<Currency> defined in net.corda.core.contracts.Amount[DeserializedPropertyDescriptor]
+'token' @ [278:82] ==> public final val token: Issued<Currency> defined in net.corda.core.contracts.Amount[DeserializedPropertyDescriptor]
 
-'issuer' @ [285:88] ==> public final val issuer: PartyAndReference defined in net.corda.core.contracts.Issued[DeserializedPropertyDescriptor]
+'issuer' @ [278:88] ==> public final val issuer: PartyAndReference defined in net.corda.core.contracts.Issued[DeserializedPropertyDescriptor]
 
-'party' @ [285:95] ==> public final val party: AbstractParty defined in net.corda.core.contracts.PartyAndReference[DeserializedPropertyDescriptor]
+'party' @ [278:95] ==> public final val party: AbstractParty defined in net.corda.core.contracts.PartyAndReference[DeserializedPropertyDescriptor]
 
-'anonymousIssuer' @ [286:61] ==> val anonymousIssuer: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'anonymousIssuer' @ [279:61] ==> val anonymousIssuer: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'resolveIssuer' @ [286:77] ==> public fun AbstractParty.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'resolveIssuer' @ [279:77] ==> public fun AbstractParty.resolveIssuer(): ObservableValue<Party?> defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
-'value' @ [286:93] ==> public final val <T : (Any..Any?)> ObservableValue<Party?>.value: Party?[MyPropertyDescriptor]
+'value' @ [279:93] ==> public final val <T : (Any..Any?)> ObservableValue<Party?>.value: Party?[MyPropertyDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> Party?
 
-'anonymousIssuer' @ [286:102] ==> val anonymousIssuer: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'anonymousIssuer' @ [279:102] ==> val anonymousIssuer: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'label' @ [288:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [281:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'issuer' @ [288:39] ==> val issuer: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'issuer' @ [281:39] ==> val issuer: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'nameOrNull' @ [288:46] ==> public abstract fun nameOrNull(): X500Name? defined in net.corda.core.identity.AbstractParty[DeserializedSimpleFunctionDescriptor]
+'nameOrNull' @ [281:46] ==> public abstract fun nameOrNull(): X500Name? defined in net.corda.core.identity.AbstractParty[DeserializedSimpleFunctionDescriptor]
 
-'let' @ [288:60] ==> @InlineOnly public inline fun <T, R> X500Name.let(block: (X500Name) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [281:60] ==> @InlineOnly public inline fun <T, R> X500Name.let(block: (X500Name) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> X500Name
     <R> -> String
 
-'PartyNameFormatter' @ [288:66] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
+'PartyNameFormatter' @ [281:66] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
 
-'short' @ [288:85] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
+'short' @ [281:85] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
 
-'format' @ [288:91] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
+'format' @ [281:91] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
 
-'it' @ [288:98] ==> value-parameter it: X500Name defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [281:98] ==> value-parameter it: X500Name defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'tooltip' @ [289:37] ==> public fun Node.tooltip(text: String? = ..., graphic: Node? = ..., op: (Tooltip.() -> Unit)? = ...): Tooltip defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'tooltip' @ [282:37] ==> public fun Node.tooltip(text: String? = ..., graphic: Node? = ..., op: (Tooltip.() -> Unit)? = ...): Tooltip defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'anonymousIssuer' @ [289:45] ==> val anonymousIssuer: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'anonymousIssuer' @ [282:45] ==> val anonymousIssuer: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'owningKey' @ [289:61] ==> public final val owningKey: PublicKey defined in net.corda.core.identity.AbstractParty[DeserializedPropertyDescriptor]
+'owningKey' @ [282:61] ==> public final val owningKey: PublicKey defined in net.corda.core.identity.AbstractParty[DeserializedPropertyDescriptor]
 
-'toBase58String' @ [289:71] ==> public fun PublicKey.toBase58String(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
+'toBase58String' @ [282:71] ==> public fun PublicKey.toBase58String(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'row' @ [292:29] ==> public fun GridPane.row(title: String? = ..., op: (Pane.() -> Unit)? = ...): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'row' @ [285:29] ==> public fun GridPane.row(title: String? = ..., op: (Pane.() -> Unit)? = ...): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'label' @ [293:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [286:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'gridpaneConstraints' @ [293:52] ==> public fun <T : Node> Label.gridpaneConstraints(op: GridPaneConstraint.() -> Unit): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'gridpaneConstraints' @ [286:52] ==> public fun <T : Node> Label.gridpaneConstraints(op: GridPaneConstraint.() -> Unit): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Node> -> Label
 
-'hAlignment' @ [293:74] ==> public final var hAlignment: HPos? defined in tornadofx.GridPaneConstraint[DeserializedPropertyDescriptor]
+'hAlignment' @ [286:74] ==> public final var hAlignment: HPos? defined in tornadofx.GridPaneConstraint[DeserializedPropertyDescriptor]
 
-'RIGHT' @ [293:92] ==> enum entry RIGHT defined in javafx.geometry.HPos[FakeCallableDescriptorForObject]
+'RIGHT' @ [286:92] ==> enum entry RIGHT defined in javafx.geometry.HPos[FakeCallableDescriptorForObject]
 
-'data' @ [294:45] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'data' @ [287:45] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'owner' @ [294:50] ==> public open val owner: AbstractParty defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
+'owner' @ [287:50] ==> public open val owner: AbstractParty defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
 
-'getModel' @ [295:48] ==> public inline fun <reified M : Any> UIComponent.getModel(): NetworkIdentityModel defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'getModel' @ [288:48] ==> public inline fun <reified M : Any> UIComponent.getModel(): NetworkIdentityModel defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified M : Any> -> NetworkIdentityModel
 
-'lookup' @ [295:81] ==> public final fun lookup(publicKey: PublicKey): ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedSimpleFunctionDescriptor]
+'lookup' @ [288:81] ==> public final fun lookup(publicKey: PublicKey): ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedSimpleFunctionDescriptor]
 
-'owner' @ [295:88] ==> val owner: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'owner' @ [288:88] ==> val owner: AbstractParty defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'owningKey' @ [295:94] ==> public final val owningKey: PublicKey defined in net.corda.core.identity.AbstractParty[DeserializedPropertyDescriptor]
+'owningKey' @ [288:94] ==> public final val owningKey: PublicKey defined in net.corda.core.identity.AbstractParty[DeserializedPropertyDescriptor]
 
-'label' @ [296:33] ==> public inline fun <reified T> EventTarget.label(observable: ObservableValue<String>, noinline op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [289:33] ==> public inline fun <reified T> EventTarget.label(observable: ObservableValue<String>, noinline op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T> -> String
 
-'nodeInfo' @ [296:39] ==> val nodeInfo: ObservableValue<NodeInfo?> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'nodeInfo' @ [289:39] ==> val nodeInfo: ObservableValue<NodeInfo?> defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'map' @ [296:48] ==> public fun <A, B> ObservableValue<out NodeInfo?>.map(function: (NodeInfo?) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
+'map' @ [289:48] ==> public fun <A, B> ObservableValue<out NodeInfo?>.map(function: (NodeInfo?) -> String): ObservableValue<String> defined in net.corda.client.jfx.utils[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> NodeInfo?
     <B> -> String
 
-'it' @ [296:54] ==> value-parameter it: NodeInfo? defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [289:54] ==> value-parameter it: NodeInfo? defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'legalIdentity' @ [296:58] ==> public final val legalIdentity: Party defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
+'legalIdentity' @ [289:58] ==> public final val legalIdentity: Party defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
 
-'let' @ [296:73] ==> @InlineOnly public inline fun <T, R> Party.let(block: (Party) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [289:73] ==> @InlineOnly public inline fun <T, R> Party.let(block: (Party) -> String): String defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Party
     <R> -> String
 
-'PartyNameFormatter' @ [296:79] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
+'PartyNameFormatter' @ [289:79] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
 
-'short' @ [296:98] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
+'short' @ [289:98] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
 
-'format' @ [296:104] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
+'format' @ [289:104] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
 
-'it' @ [296:111] ==> value-parameter it: Party defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [289:111] ==> value-parameter it: Party defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'name' @ [296:114] ==> public final val name: X500Name defined in net.corda.core.identity.Party[DeserializedPropertyDescriptor]
+'name' @ [289:114] ==> public final val name: X500Name defined in net.corda.core.identity.Party[DeserializedPropertyDescriptor]
 
-'tooltip' @ [297:37] ==> public fun Node.tooltip(text: String? = ..., graphic: Node? = ..., op: (Tooltip.() -> Unit)? = ...): Tooltip defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'tooltip' @ [290:37] ==> public fun Node.tooltip(text: String? = ..., graphic: Node? = ..., op: (Tooltip.() -> Unit)? = ...): Tooltip defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'data' @ [297:45] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'data' @ [290:45] ==> val data: ContractState defined in net.corda.explorer.views.TransactionViewer.ContractStatesView.getCell.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'owner' @ [297:50] ==> public open val owner: AbstractParty defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
+'owner' @ [290:50] ==> public open val owner: AbstractParty defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
 
-'owningKey' @ [297:56] ==> public final val owningKey: PublicKey defined in net.corda.core.identity.AbstractParty[DeserializedPropertyDescriptor]
+'owningKey' @ [290:56] ==> public final val owningKey: PublicKey defined in net.corda.core.identity.AbstractParty[DeserializedPropertyDescriptor]
 
-'toBase58String' @ [297:66] ==> public fun PublicKey.toBase58String(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
+'toBase58String' @ [290:66] ==> public fun PublicKey.toBase58String(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'label' @ [302:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'label' @ [295:33] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'this' @ [309:57] ==> <this> defined in net.corda.explorer.views.TransactionViewer.contract[ReceiverParameterDescriptorImpl]
+'this' @ [302:57] ==> <this> defined in net.corda.explorer.views.TransactionViewer.contract[ReceiverParameterDescriptorImpl]
 
-'state' @ [309:62] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
+'state' @ [302:62] ==> public final val state: TransactionState<ContractState> defined in net.corda.core.contracts.StateAndRef[DeserializedPropertyDescriptor]
 
-'data' @ [309:68] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
+'data' @ [302:68] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
 
-'contract' @ [309:73] ==> public abstract val contract: Contract defined in net.corda.core.contracts.ContractState[DeserializedPropertyDescriptor]
+'contract' @ [302:73] ==> public abstract val contract: Contract defined in net.corda.core.contracts.ContractState[DeserializedPropertyDescriptor]
 
-'component1' @ [319:10] ==> public final operator fun component1(): Currency defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
+'component1' @ [312:10] ==> public final operator fun component1(): Currency defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'component2' @ [319:29] ==> public final operator fun component2(): (Amount<Currency>) -> Amount<Currency> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
+'component2' @ [312:29] ==> public final operator fun component2(): (Amount<Currency>) -> Amount<Currency> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'reportingCurrencyExchange' @ [319:41] ==> value-parameter reportingCurrencyExchange: Pair<Currency, (Amount<Currency>) -> Amount<Currency>> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
+'reportingCurrencyExchange' @ [312:41] ==> value-parameter reportingCurrencyExchange: Pair<Currency, (Amount<Currency>) -> Amount<Currency>> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
 
-'identity' @ [320:25] ==> value-parameter identity: NodeInfo? defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
+'identity' @ [313:25] ==> value-parameter identity: NodeInfo? defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
 
-'legalIdentity' @ [320:35] ==> public final val legalIdentity: Party defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
+'legalIdentity' @ [313:35] ==> public final val legalIdentity: Party defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
 
-'this' @ [321:37] ==> <this> defined in net.corda.explorer.views.calculateTotalEquiv.sum[ReceiverParameterDescriptorImpl]
+'this' @ [314:37] ==> <this> defined in net.corda.explorer.views.calculateTotalEquiv.sum[ReceiverParameterDescriptorImpl]
 
-'map' @ [321:42] ==> public inline fun <T, R> Iterable<ContractState>.map(transform: (ContractState) -> Cash.State?): List<Cash.State?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [314:42] ==> public inline fun <T, R> Iterable<ContractState>.map(transform: (ContractState) -> Cash.State?): List<Cash.State?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ContractState
     <R> -> State?
 
-'it' @ [321:48] ==> value-parameter it: ContractState defined in net.corda.explorer.views.calculateTotalEquiv.sum.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [314:48] ==> value-parameter it: ContractState defined in net.corda.explorer.views.calculateTotalEquiv.sum.<anonymous>[ValueParameterDescriptorImpl]
+
+'filterNotNull' @ [315:14] ==> public fun <T : Any> Iterable<Cash.State?>.filterNotNull(): List<Cash.State> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T : Any> -> State
+
+'filter' @ [316:14] ==> public inline fun <T> Iterable<Cash.State>.filter(predicate: (Cash.State) -> Boolean): List<Cash.State> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> State
+
+'legalIdentity' @ [316:23] ==> val legalIdentity: Party? defined in net.corda.explorer.views.calculateTotalEquiv[LocalVariableDescriptor]
+
+'it' @ [316:40] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.sum.<anonymous>[ValueParameterDescriptorImpl]
+
+'owner' @ [316:43] ==> public open val owner: AbstractParty defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
+
+'map' @ [317:14] ==> public inline fun <T, R> Iterable<Cash.State>.map(transform: (Cash.State) -> Long): List<Long> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> State
+    <R> -> Long
+
+'invoke' @ [317:20] ==> public abstract operator fun invoke(p1: Amount<Currency>): Amount<Currency> defined in kotlin.Function1[FunctionInvokeDescriptor]
+
+'it' @ [317:29] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.sum.<anonymous>[ValueParameterDescriptorImpl]
+
+'amount' @ [317:32] ==> public open val amount: Amount<Issued<Currency>> defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
+
+'withoutIssuer' @ [317:39] ==> public fun <T : Any> Amount<Issued<Currency>>.withoutIssuer(): Amount<Currency> defined in net.corda.core.contracts[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T : Any> -> Currency
+
+'quantity' @ [317:56] ==> public final val quantity: Long defined in net.corda.core.contracts.Amount[DeserializedPropertyDescriptor]
+
+'sum' @ [318:14] ==> @JvmName public fun Iterable<Long>.sum(): Long defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+
+'if (inputs.isEmpty()) outputs.map { it as? Cash.State }
+            .filterNotNull()
+            .filter { legalIdentity == it.amount.token.issuer.party && legalIdentity != it.owner }
+            .map { exchange(it.amount.withoutIssuer()).quantity }
+            .sum() else 0' @ [321:24] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Long, elseBranch: Long): Long[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Long
+
+'inputs' @ [321:28] ==> value-parameter inputs: List<ContractState> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
+
+'isEmpty' @ [321:35] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
+
+'outputs' @ [321:46] ==> value-parameter outputs: List<ContractState> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
+
+'map' @ [321:54] ==> public inline fun <T, R> Iterable<ContractState>.map(transform: (ContractState) -> Cash.State?): List<Cash.State?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+Inferred types:
+    <T> -> ContractState
+    <R> -> State?
+
+'it' @ [321:60] ==> value-parameter it: ContractState defined in net.corda.explorer.views.calculateTotalEquiv.<anonymous>[ValueParameterDescriptorImpl]
 
 'filterNotNull' @ [322:14] ==> public fun <T : Any> Iterable<Cash.State?>.filterNotNull(): List<Cash.State> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1513,9 +1540,21 @@ Inferred types:
 
 'legalIdentity' @ [323:23] ==> val legalIdentity: Party? defined in net.corda.explorer.views.calculateTotalEquiv[LocalVariableDescriptor]
 
-'it' @ [323:40] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.sum.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [323:40] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.<anonymous>[ValueParameterDescriptorImpl]
 
-'owner' @ [323:43] ==> public open val owner: AbstractParty defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
+'amount' @ [323:43] ==> public open val amount: Amount<Issued<Currency>> defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
+
+'token' @ [323:50] ==> public final val token: Issued<Currency> defined in net.corda.core.contracts.Amount[DeserializedPropertyDescriptor]
+
+'issuer' @ [323:56] ==> public final val issuer: PartyAndReference defined in net.corda.core.contracts.Issued[DeserializedPropertyDescriptor]
+
+'party' @ [323:63] ==> public final val party: AbstractParty defined in net.corda.core.contracts.PartyAndReference[DeserializedPropertyDescriptor]
+
+'legalIdentity' @ [323:72] ==> val legalIdentity: Party? defined in net.corda.explorer.views.calculateTotalEquiv[LocalVariableDescriptor]
+
+'it' @ [323:89] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.<anonymous>[ValueParameterDescriptorImpl]
+
+'owner' @ [323:92] ==> public open val owner: AbstractParty defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
 
 'map' @ [324:14] ==> public inline fun <T, R> Iterable<Cash.State>.map(transform: (Cash.State) -> Long): List<Long> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1524,7 +1563,7 @@ Inferred types:
 
 'invoke' @ [324:20] ==> public abstract operator fun invoke(p1: Amount<Currency>): Amount<Currency> defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'it' @ [324:29] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.sum.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [324:29] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.<anonymous>[ValueParameterDescriptorImpl]
 
 'amount' @ [324:32] ==> public open val amount: Amount<Issued<Currency>> defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
 
@@ -1536,87 +1575,21 @@ Inferred types:
 
 'sum' @ [325:14] ==> @JvmName public fun Iterable<Long>.sum(): Long defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 
-'if (inputs.isEmpty()) outputs.map { it as? Cash.State }
-            .filterNotNull()
-            .filter { legalIdentity == it.amount.token.issuer.party && legalIdentity != it.owner }
-            .map { exchange(it.amount.withoutIssuer()).quantity }
-            .sum() else 0' @ [328:24] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Long, elseBranch: Long): Long[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Long
+'AmountDiff' @ [327:12] ==> public companion object defined in net.corda.explorer.AmountDiff[FakeCallableDescriptorForObject]
 
-'inputs' @ [328:28] ==> value-parameter inputs: List<ContractState> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
-
-'isEmpty' @ [328:35] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
-
-'outputs' @ [328:46] ==> value-parameter outputs: List<ContractState> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
-
-'map' @ [328:54] ==> public inline fun <T, R> Iterable<ContractState>.map(transform: (ContractState) -> Cash.State?): List<Cash.State?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <T> -> ContractState
-    <R> -> State?
-
-'it' @ [328:60] ==> value-parameter it: ContractState defined in net.corda.explorer.views.calculateTotalEquiv.<anonymous>[ValueParameterDescriptorImpl]
-
-'filterNotNull' @ [329:14] ==> public fun <T : Any> Iterable<Cash.State?>.filterNotNull(): List<Cash.State> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <T : Any> -> State
-
-'filter' @ [330:14] ==> public inline fun <T> Iterable<Cash.State>.filter(predicate: (Cash.State) -> Boolean): List<Cash.State> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <T> -> State
-
-'legalIdentity' @ [330:23] ==> val legalIdentity: Party? defined in net.corda.explorer.views.calculateTotalEquiv[LocalVariableDescriptor]
-
-'it' @ [330:40] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.<anonymous>[ValueParameterDescriptorImpl]
-
-'amount' @ [330:43] ==> public open val amount: Amount<Issued<Currency>> defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
-
-'token' @ [330:50] ==> public final val token: Issued<Currency> defined in net.corda.core.contracts.Amount[DeserializedPropertyDescriptor]
-
-'issuer' @ [330:56] ==> public final val issuer: PartyAndReference defined in net.corda.core.contracts.Issued[DeserializedPropertyDescriptor]
-
-'party' @ [330:63] ==> public final val party: AbstractParty defined in net.corda.core.contracts.PartyAndReference[DeserializedPropertyDescriptor]
-
-'legalIdentity' @ [330:72] ==> val legalIdentity: Party? defined in net.corda.explorer.views.calculateTotalEquiv[LocalVariableDescriptor]
-
-'it' @ [330:89] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.<anonymous>[ValueParameterDescriptorImpl]
-
-'owner' @ [330:92] ==> public open val owner: AbstractParty defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
-
-'map' @ [331:14] ==> public inline fun <T, R> Iterable<Cash.State>.map(transform: (Cash.State) -> Long): List<Long> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <T> -> State
-    <R> -> Long
-
-'invoke' @ [331:20] ==> public abstract operator fun invoke(p1: Amount<Currency>): Amount<Currency> defined in kotlin.Function1[FunctionInvokeDescriptor]
-
-'it' @ [331:29] ==> value-parameter it: Cash.State defined in net.corda.explorer.views.calculateTotalEquiv.<anonymous>[ValueParameterDescriptorImpl]
-
-'amount' @ [331:32] ==> public open val amount: Amount<Issued<Currency>> defined in net.corda.finance.contracts.asset.Cash.State[DeserializedPropertyDescriptor]
-
-'withoutIssuer' @ [331:39] ==> public fun <T : Any> Amount<Issued<Currency>>.withoutIssuer(): Amount<Currency> defined in net.corda.core.contracts[DeserializedSimpleFunctionDescriptor]
+'fromLong' @ [327:23] ==> public final fun <T : Any> fromLong(quantity: Long, token: Currency): AmountDiff<Currency> defined in net.corda.explorer.AmountDiff.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : Any> -> Currency
 
-'quantity' @ [331:56] ==> public final val quantity: Long defined in net.corda.core.contracts.Amount[DeserializedPropertyDescriptor]
+'outputs' @ [327:32] ==> value-parameter outputs: List<ContractState> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
 
-'sum' @ [332:14] ==> @JvmName public fun Iterable<Long>.sum(): Long defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'sum' @ [327:40] ==> local final fun List<ContractState>.sum(): Long defined in net.corda.explorer.views.calculateTotalEquiv[SimpleFunctionDescriptorImpl]
 
-'AmountDiff' @ [334:12] ==> public companion object defined in net.corda.explorer.AmountDiff[FakeCallableDescriptorForObject]
+'inputs' @ [327:48] ==> value-parameter inputs: List<ContractState> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
 
-'fromLong' @ [334:23] ==> public final fun <T : Any> fromLong(quantity: Long, token: Currency): AmountDiff<Currency> defined in net.corda.explorer.AmountDiff.Companion[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <T : Any> -> Currency
+'sum' @ [327:55] ==> local final fun List<ContractState>.sum(): Long defined in net.corda.explorer.views.calculateTotalEquiv[SimpleFunctionDescriptorImpl]
 
-'outputs' @ [334:32] ==> value-parameter outputs: List<ContractState> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
+'issuedAmount' @ [327:63] ==> val issuedAmount: Long defined in net.corda.explorer.views.calculateTotalEquiv[LocalVariableDescriptor]
 
-'sum' @ [334:40] ==> local final fun List<ContractState>.sum(): Long defined in net.corda.explorer.views.calculateTotalEquiv[SimpleFunctionDescriptorImpl]
-
-'inputs' @ [334:48] ==> value-parameter inputs: List<ContractState> defined in net.corda.explorer.views.calculateTotalEquiv[ValueParameterDescriptorImpl]
-
-'sum' @ [334:55] ==> local final fun List<ContractState>.sum(): Long defined in net.corda.explorer.views.calculateTotalEquiv[SimpleFunctionDescriptorImpl]
-
-'issuedAmount' @ [334:63] ==> val issuedAmount: Long defined in net.corda.explorer.views.calculateTotalEquiv[LocalVariableDescriptor]
-
-'reportingCurrency' @ [334:77] ==> val reportingCurrency: Currency defined in net.corda.explorer.views.calculateTotalEquiv[LocalVariableDescriptor]
+'reportingCurrency' @ [327:77] ==> val reportingCurrency: Currency defined in net.corda.explorer.views.calculateTotalEquiv[LocalVariableDescriptor]
 

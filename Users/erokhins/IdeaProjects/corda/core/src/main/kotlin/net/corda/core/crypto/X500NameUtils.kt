@@ -1,6 +1,6 @@
 'JvmName' @ [1:1] ==> public constructor JvmName(name: String) defined in kotlin.jvm.JvmName[DeserializedClassConstructorDescriptor]
 
-'mutateCommonName' @ [18:65] ==> private fun X500Name.mutateCommonName(mutator: (ASN1Encodable) -> String): X500Name defined in net.corda.core.crypto[SimpleFunctionDescriptorImpl]
+'mutateCommonName' @ [18:65] ==> private fun X500Name.mutateCommonName(mutator: (ASN1Encodable) -> String): X500Name defined in net.corda.core.crypto in file X500NameUtils.kt[SimpleFunctionDescriptorImpl]
 
 'attr' @ [18:92] ==> value-parameter attr: ASN1Encodable defined in net.corda.core.crypto.appendToCommonName.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -8,7 +8,7 @@
 
 'commonName' @ [18:110] ==> value-parameter commonName: String defined in net.corda.core.crypto.appendToCommonName[ValueParameterDescriptorImpl]
 
-'mutateCommonName' @ [25:64] ==> private fun X500Name.mutateCommonName(mutator: (ASN1Encodable) -> String): X500Name defined in net.corda.core.crypto[SimpleFunctionDescriptorImpl]
+'mutateCommonName' @ [25:64] ==> private fun X500Name.mutateCommonName(mutator: (ASN1Encodable) -> String): X500Name defined in net.corda.core.crypto in file X500NameUtils.kt[SimpleFunctionDescriptorImpl]
 
 'commonName' @ [25:88] ==> value-parameter commonName: String defined in net.corda.core.crypto.replaceCommonName[ValueParameterDescriptorImpl]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'location' @ [57:5] ==> public val X500Name.location: String defined in net.corda.core.crypto in file X500NameUtils.kt[PropertyDescriptorImpl]
 
-'toX509CertHolder' @ [61:47] ==> public fun Certificate.toX509CertHolder(): X509CertificateHolder defined in net.corda.core.internal[SimpleFunctionDescriptorImpl]
+'toX509CertHolder' @ [61:47] ==> public fun Certificate.toX509CertHolder(): X509CertificateHolder defined in net.corda.core.internal in file InternalUtils.kt[SimpleFunctionDescriptorImpl]
 
 'subject' @ [61:66] ==> public final val X509CertificateHolder.subject: (X500Name..X500Name?)[MyPropertyDescriptor]
 

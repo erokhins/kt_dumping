@@ -20,9 +20,9 @@ Inferred types:
 
 'newNotary' @ [30:85] ==> public final val newNotary: Party defined in net.corda.core.transactions.NotaryChangeWireTransaction[PropertyDescriptorImpl]
 
-'lazy' @ [37:36] ==> public fun <T> lazy(initializer: () -> SecureHash): Lazy<SecureHash> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [37:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SecureHash
+    <T> -> T
 
 'serializedHash' @ [37:43] ==> public fun <T : Any> serializedHash(x: List<Any>): SecureHash defined in net.corda.core.transactions[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -47,16 +47,16 @@ Inferred types:
 
 'ref' @ [41:32] ==> value-parameter ref: StateRef defined in net.corda.core.transactions.NotaryChangeWireTransaction.resolve.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [41:37] ==> @InlineOnly public inline fun <T, R> TransactionState<ContractState>.let(block: (TransactionState<ContractState>) -> StateAndRef<ContractState>): StateAndRef<ContractState> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [41:37] ==> @InlineOnly public inline fun <T, R> TransactionState<*>.let(block: (TransactionState<*>) -> StateAndRef<ContractState>): StateAndRef<ContractState> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TransactionState<ContractState>
+    <T> -> TransactionState<*>
     <R> -> StateAndRef<ContractState>
 
 'StateAndRef' @ [41:43] ==> public constructor StateAndRef<out T : ContractState>(state: TransactionState<ContractState>, ref: StateRef) defined in net.corda.core.contracts.StateAndRef[ClassConstructorDescriptorImpl]
 Inferred types:
     <out T : ContractState> -> ContractState
 
-'it' @ [41:55] ==> value-parameter it: TransactionState<ContractState> defined in net.corda.core.transactions.NotaryChangeWireTransaction.resolve.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [41:55] ==> value-parameter it: TransactionState<*> defined in net.corda.core.transactions.NotaryChangeWireTransaction.resolve.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'ref' @ [41:59] ==> value-parameter ref: StateRef defined in net.corda.core.transactions.NotaryChangeWireTransaction.resolve.<anonymous>[ValueParameterDescriptorImpl]
 

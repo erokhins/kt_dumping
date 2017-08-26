@@ -255,8 +255,6 @@ Inferred types:
 Inferred types:
     <T> -> StateAndRef<ContractState>
 
-'Vault' @ [99:62] ==> public companion object defined in net.corda.core.node.services.Vault[FakeCallableDescriptorForObject]
-
 'GENERAL' @ [99:79] ==> enum entry GENERAL defined in net.corda.core.node.services.Vault.UpdateType[FakeCallableDescriptorForObject]
 
 'Vault' @ [100:30] ==> public companion object defined in net.corda.core.node.services.Vault[FakeCallableDescriptorForObject]
@@ -272,8 +270,6 @@ Inferred types:
 'emptySet' @ [100:55] ==> public fun <T> emptySet(): Set<StateAndRef<ContractState>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateAndRef<ContractState>
-
-'Vault' @ [100:75] ==> public companion object defined in net.corda.core.node.services.Vault[FakeCallableDescriptorForObject]
 
 'NOTARY_CHANGE' @ [100:92] ==> enum entry NOTARY_CHANGE defined in net.corda.core.node.services.Vault.UpdateType[FakeCallableDescriptorForObject]
 

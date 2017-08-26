@@ -190,10 +190,10 @@ Inferred types:
     <A> -> String
     <B> -> String
 
-'to' @ [50:17] ==> public infix fun <A, B> String.to(that: List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>>): Pair<String, List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [50:17] ==> public infix fun <A, B> String.to(that: List<Map<String, (Any..Any?)>>): Pair<String, List<Map<String, (Any..Any?)>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>>
+    <B> -> List<Map<String, (kotlin.Any..kotlin.Any?)>>
 
 'completeSubgroups' @ [50:29] ==> val completeSubgroups: Map<String, SortedMap<String, Double>> defined in net.corda.vega.api.PortfolioApiUtils.createValuations[LocalVariableDescriptor]
 
@@ -212,16 +212,16 @@ Inferred types:
 
 'contains' @ [50:77] ==> public operator fun CharSequence.contains(other: CharSequence, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'map' @ [50:98] ==> public inline fun <K, V, R> Map<out (String..String?), (Double..Double?)>.map(transform: (Map.Entry<(String..String?), (Double..Double?)>) -> Map<String, {java.io.Serializable & Comparable<{Double & String}>}>): List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [50:98] ==> public inline fun <K, V, R> Map<out (String..String?), (Double..Double?)>.map(transform: (Map.Entry<(String..String?), (Double..Double?)>) -> Map<String, (Any..Any?)>): List<Map<String, (Any..Any?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> (kotlin.String..kotlin.String?)
     <V> -> (kotlin.Double..kotlin.Double?)
-    <R> -> Map<String, {java.io.Serializable & Comparable<{Double & String}>}>
+    <R> -> Map<String, (kotlin.Any..kotlin.Any?)>
 
-'mapOf' @ [51:21] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {java.io.Serializable & Comparable<{Double & String}>}>): Map<String, {java.io.Serializable & Comparable<{Double & String}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [51:21] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, (Any..Any?)>): Map<String, (Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {java.io.Serializable & Comparable<{Double & String}>}
+    <V> -> (kotlin.Any..kotlin.Any?)
 
 'to' @ [52:29] ==> public infix fun <A, B> String.to(that: (String..String?)): Pair<String, (String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -251,10 +251,10 @@ Inferred types:
     <A> -> String
     <B> -> String
 
-'to' @ [60:17] ==> public infix fun <A, B> String.to(that: List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>>): Pair<String, List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [60:17] ==> public infix fun <A, B> String.to(that: List<Map<String, (Any..Any?)>>): Pair<String, List<Map<String, (Any..Any?)>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>>
+    <B> -> List<Map<String, (kotlin.Any..kotlin.Any?)>>
 
 'completeSubgroups' @ [60:29] ==> val completeSubgroups: Map<String, SortedMap<String, Double>> defined in net.corda.vega.api.PortfolioApiUtils.createValuations[LocalVariableDescriptor]
 
@@ -271,16 +271,16 @@ Inferred types:
 
 'contains' @ [60:76] ==> public operator fun CharSequence.contains(other: CharSequence, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'map' @ [60:97] ==> public inline fun <K, V, R> Map<out (String..String?), (Double..Double?)>.map(transform: (Map.Entry<(String..String?), (Double..Double?)>) -> Map<String, {java.io.Serializable & Comparable<{Double & String}>}>): List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [60:97] ==> public inline fun <K, V, R> Map<out (String..String?), (Double..Double?)>.map(transform: (Map.Entry<(String..String?), (Double..Double?)>) -> Map<String, (Any..Any?)>): List<Map<String, (Any..Any?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> (kotlin.String..kotlin.String?)
     <V> -> (kotlin.Double..kotlin.Double?)
-    <R> -> Map<String, {java.io.Serializable & Comparable<{Double & String}>}>
+    <R> -> Map<String, (kotlin.Any..kotlin.Any?)>
 
-'mapOf' @ [61:21] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {java.io.Serializable & Comparable<{Double & String}>}>): Map<String, {java.io.Serializable & Comparable<{Double & String}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [61:21] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, (Any..Any?)>): Map<String, (Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {java.io.Serializable & Comparable<{Double & String}>}
+    <V> -> (kotlin.Any..kotlin.Any?)
 
 'to' @ [62:29] ==> public infix fun <A, B> String.to(that: (String..String?)): Pair<String, (String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -306,10 +306,10 @@ Inferred types:
 
 'sensitivities' @ [68:65] ==> public final val CurrencyParameterSensitivities.sensitivities: (ImmutableList<(CurrencyParameterSensitivity..CurrencyParameterSensitivity?)>..ImmutableList<(CurrencyParameterSensitivity..CurrencyParameterSensitivity?)>?)[MyPropertyDescriptor]
 
-'map' @ [68:79] ==> public inline fun <T, R> Iterable<(CurrencyParameterSensitivity..CurrencyParameterSensitivity?)>.map(transform: ((CurrencyParameterSensitivity..CurrencyParameterSensitivity?)) -> Pair<MarketDataName<out (Any..Any?)>, Map<(String..String?), (Double..Double?)>>): List<Pair<MarketDataName<out (Any..Any?)>, Map<(String..String?), (Double..Double?)>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [68:79] ==> public inline fun <T, R> Iterable<(CurrencyParameterSensitivity..CurrencyParameterSensitivity?)>.map(transform: ((CurrencyParameterSensitivity..CurrencyParameterSensitivity?)) -> Pair<(MarketDataName<*>..MarketDataName<*>?), Map<(String..String?), (Double..Double?)>>): List<Pair<(MarketDataName<*>..MarketDataName<*>?), Map<(String..String?), (Double..Double?)>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.opengamma.strata.market.param.CurrencyParameterSensitivity..com.opengamma.strata.market.param.CurrencyParameterSensitivity?)
-    <R> -> Pair<MarketDataName<out (kotlin.Any..kotlin.Any?)>, Map<(kotlin.String..kotlin.String?), (kotlin.Double..kotlin.Double?)>>
+    <R> -> Pair<(com.opengamma.strata.data.MarketDataName<*>..com.opengamma.strata.data.MarketDataName<*>?), Map<(kotlin.String..kotlin.String?), (kotlin.Double..kotlin.Double?)>>
 
 'it' @ [68:85] ==> value-parameter it: (CurrencyParameterSensitivity..CurrencyParameterSensitivity?) defined in net.corda.vega.api.PortfolioApiUtils.createValuations.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -344,9 +344,9 @@ Inferred types:
     <K> -> (kotlin.String..kotlin.String?)
     <V> -> (kotlin.Double..kotlin.Double?)
 
-'toMap' @ [68:183] ==> public fun <K, V> Iterable<Pair<MarketDataName<out (Any..Any?)>, Map<(String..String?), (Double..Double?)>>>.toMap(): Map<MarketDataName<out (Any..Any?)>, Map<(String..String?), (Double..Double?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toMap' @ [68:183] ==> public fun <K, V> Iterable<Pair<(MarketDataName<*>..MarketDataName<*>?), Map<(String..String?), (Double..Double?)>>>.toMap(): Map<(MarketDataName<*>..MarketDataName<*>?), Map<(String..String?), (Double..Double?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> MarketDataName<out (kotlin.Any..kotlin.Any?)>
+    <K> -> (com.opengamma.strata.data.MarketDataName<*>..com.opengamma.strata.data.MarketDataName<*>?)
     <V> -> Map<(kotlin.String..kotlin.String?), (kotlin.Double..kotlin.Double?)>
 
 'InitialMarginView' @ [70:33] ==> public constructor InitialMarginView(baseCurrency: String, post: Map<String, Double>, call: Map<String, Double>, agreed: Boolean) defined in net.corda.vega.api.PortfolioApiUtils.InitialMarginView[ClassConstructorDescriptorImpl]
@@ -441,10 +441,10 @@ Inferred types:
 
 'now' @ [89:42] ==> public open fun now(): (LocalDate..LocalDate?) defined in java.time.LocalDate[JavaMethodDescriptor]
 
-'mapOf' @ [90:29] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {Comparable<{Boolean & String & Int}> & java.io.Serializable}>): Map<String, {Comparable<{Boolean & String & Int}> & java.io.Serializable}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [90:29] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, Any>): Map<String, Any> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {Comparable<{Boolean & String & Int}> & java.io.Serializable}
+    <V> -> Any
 
 'to' @ [91:25] ==> public infix fun <A, B> String.to(that: Int): Pair<String, Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -523,17 +523,17 @@ Inferred types:
     <K> -> String
     <V> -> Any
 
-'to' @ [105:39] ==> public infix fun <A, B> String.to(that: Map<MarketDataName<out (Any..Any?)>, Map<(String..String?), (Double..Double?)>>): Pair<String, Map<MarketDataName<out (Any..Any?)>, Map<(String..String?), (Double..Double?)>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [105:39] ==> public infix fun <A, B> String.to(that: Map<(MarketDataName<*>..MarketDataName<*>?), Map<(String..String?), (Double..Double?)>>): Pair<String, Map<(MarketDataName<*>..MarketDataName<*>?), Map<(String..String?), (Double..Double?)>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> Map<MarketDataName<out (kotlin.Any..kotlin.Any?)>, Map<(kotlin.String..kotlin.String?), (kotlin.Double..kotlin.Double?)>>
+    <B> -> Map<(com.opengamma.strata.data.MarketDataName<*>..com.opengamma.strata.data.MarketDataName<*>?), Map<(kotlin.String..kotlin.String?), (kotlin.Double..kotlin.Double?)>>
 
-'processedSensitivities' @ [105:51] ==> val processedSensitivities: Map<MarketDataName<out (Any..Any?)>, Map<(String..String?), (Double..Double?)>> defined in net.corda.vega.api.PortfolioApiUtils.createValuations[LocalVariableDescriptor]
+'processedSensitivities' @ [105:51] ==> val processedSensitivities: Map<(MarketDataName<*>..MarketDataName<*>?), Map<(String..String?), (Double..Double?)>> defined in net.corda.vega.api.PortfolioApiUtils.createValuations[LocalVariableDescriptor]
 
-'to' @ [106:25] ==> public infix fun <A, B> String.to(that: List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>>): Pair<String, List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [106:25] ==> public infix fun <A, B> String.to(that: List<Map<String, (Any..Any?)>>): Pair<String, List<Map<String, (Any..Any?)>>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>>
+    <B> -> List<Map<String, (kotlin.Any..kotlin.Any?)>>
 
 'valuation' @ [106:39] ==> val valuation: PortfolioValuation defined in net.corda.vega.api.PortfolioApiUtils.createValuations[LocalVariableDescriptor]
 
@@ -545,15 +545,15 @@ Inferred types:
 Inferred types:
     <T> -> (com.opengamma.strata.basics.currency.CurrencyAmount..com.opengamma.strata.basics.currency.CurrencyAmount?)
 
-'map' @ [106:86] ==> public inline fun <T, R> Iterable<(CurrencyAmount..CurrencyAmount?)>.map(transform: ((CurrencyAmount..CurrencyAmount?)) -> Map<String, {java.io.Serializable & Comparable<{Double & String}>}>): List<Map<String, {java.io.Serializable & Comparable<{Double & String}>}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [106:86] ==> public inline fun <T, R> Iterable<(CurrencyAmount..CurrencyAmount?)>.map(transform: ((CurrencyAmount..CurrencyAmount?)) -> Map<String, (Any..Any?)>): List<Map<String, (Any..Any?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (com.opengamma.strata.basics.currency.CurrencyAmount..com.opengamma.strata.basics.currency.CurrencyAmount?)
-    <R> -> Map<String, {java.io.Serializable & Comparable<{Double & String}>}>
+    <R> -> Map<String, (kotlin.Any..kotlin.Any?)>
 
-'mapOf' @ [107:29] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {java.io.Serializable & Comparable<{Double & String}>}>): Map<String, {java.io.Serializable & Comparable<{Double & String}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [107:29] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, (Any..Any?)>): Map<String, (Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {java.io.Serializable & Comparable<{Double & String}>}
+    <V> -> (kotlin.Any..kotlin.Any?)
 
 'to' @ [108:37] ==> public infix fun <A, B> String.to(that: (String..String?)): Pair<String, (String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -582,10 +582,10 @@ Inferred types:
 
 'initialMarginView' @ [114:33] ==> val initialMarginView: PortfolioApiUtils.InitialMarginView defined in net.corda.vega.api.PortfolioApiUtils.createValuations[LocalVariableDescriptor]
 
-'mapOf' @ [115:32] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {java.io.Serializable & Comparable<{Boolean & String}>}>): Map<String, {java.io.Serializable & Comparable<{Boolean & String}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [115:32] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, Any>): Map<String, Any> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {java.io.Serializable & Comparable<{Boolean & String}>}
+    <V> -> Any
 
 'to' @ [116:25] ==> public infix fun <A, B> String.to(that: String): Pair<String, String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -717,15 +717,15 @@ Inferred types:
 
 'toBase58String' @ [139:114] ==> public fun PublicKey.toBase58String(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'to' @ [140:25] ==> public infix fun <A, B> String.to(that: Map<String, {java.io.Serializable & Comparable<{Double & String}>}>): Pair<String, Map<String, {java.io.Serializable & Comparable<{Double & String}>}>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [140:25] ==> public infix fun <A, B> String.to(that: Map<String, (Any..Any?)>): Pair<String, Map<String, (Any..Any?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> Map<String, {java.io.Serializable & Comparable<{Double & String}>}>
+    <B> -> Map<String, (kotlin.Any..kotlin.Any?)>
 
-'mapOf' @ [140:39] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {java.io.Serializable & Comparable<{Double & String}>}>): Map<String, {java.io.Serializable & Comparable<{Double & String}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [140:39] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, (Any..Any?)>): Map<String, (Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {java.io.Serializable & Comparable<{Double & String}>}
+    <V> -> (kotlin.Any..kotlin.Any?)
 
 'to' @ [141:33] ==> public infix fun <A, B> String.to(that: (String..String?)): Pair<String, (String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -861,15 +861,15 @@ Inferred types:
 
 'toBase58String' @ [155:123] ==> public fun PublicKey.toBase58String(): String defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
-'to' @ [156:25] ==> public infix fun <A, B> String.to(that: Map<String, {java.io.Serializable & Comparable<{Double & String}>}>): Pair<String, Map<String, {java.io.Serializable & Comparable<{Double & String}>}>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'to' @ [156:25] ==> public infix fun <A, B> String.to(that: Map<String, (Any..Any?)>): Pair<String, Map<String, (Any..Any?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> String
-    <B> -> Map<String, {java.io.Serializable & Comparable<{Double & String}>}>
+    <B> -> Map<String, (kotlin.Any..kotlin.Any?)>
 
-'mapOf' @ [156:39] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {java.io.Serializable & Comparable<{Double & String}>}>): Map<String, {java.io.Serializable & Comparable<{Double & String}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [156:39] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, (Any..Any?)>): Map<String, (Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {java.io.Serializable & Comparable<{Double & String}>}
+    <V> -> (kotlin.Any..kotlin.Any?)
 
 'to' @ [157:33] ==> public infix fun <A, B> String.to(that: (String..String?)): Pair<String, (String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:

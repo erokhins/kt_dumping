@@ -62,7 +62,7 @@ Inferred types:
 
 'createCriteriaDelete' @ [41:38] ==> public abstract fun <T : (Any..Any?)> createCriteriaDelete(p0: (Class<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..Class<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?)): (CriteriaDelete<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..CriteriaDelete<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DBCheckpoint
+    <T : (Any..Any?)> -> (net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint..net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint?)
 
 'DBCheckpoint' @ [41:59] ==> public constructor DBCheckpoint(checkpointId: String = ..., checkpoint: ByteArray = ...) defined in net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint[ClassConstructorDescriptorImpl]
 
@@ -90,9 +90,9 @@ Inferred types:
 
 'root' @ [43:44] ==> val root: (Root<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..Root<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?) defined in net.corda.node.services.persistence.DBCheckpointStorage.removeCheckpoint[LocalVariableDescriptor]
 
-'get' @ [43:49] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [43:49] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'DBCheckpoint' @ [43:61] ==> public constructor DBCheckpoint(checkpointId: String = ..., checkpoint: ByteArray = ...) defined in net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint[ClassConstructorDescriptorImpl]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'createQuery' @ [49:53] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (Class<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..Class<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?)): (CriteriaQuery<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..CriteriaQuery<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DBCheckpoint
+    <T : (Any..Any?)> -> (net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint..net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint?)
 
 'DBCheckpoint' @ [49:65] ==> public constructor DBCheckpoint(checkpointId: String = ..., checkpoint: ByteArray = ...) defined in net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint[ClassConstructorDescriptorImpl]
 
@@ -138,7 +138,7 @@ Inferred types:
 
 'from' @ [50:34] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..Class<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?)): (Root<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..Root<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> DBCheckpoint
+    <X : (Any..Any?)> -> (net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint..net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint?)
 
 'DBCheckpoint' @ [50:39] ==> public constructor DBCheckpoint(checkpointId: String = ..., checkpoint: ByteArray = ...) defined in net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint[ClassConstructorDescriptorImpl]
 
@@ -156,7 +156,7 @@ Inferred types:
 
 'createQuery' @ [52:29] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (CriteriaQuery<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..CriteriaQuery<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?)): (Query<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..Query<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DBCheckpoint
+    <T : (Any..Any?)> -> (net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint..net.corda.node.services.persistence.DBCheckpointStorage.DBCheckpoint?)
 
 'criteriaQuery' @ [52:41] ==> val criteriaQuery: (CriteriaQuery<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>..CriteriaQuery<(DBCheckpointStorage.DBCheckpoint..DBCheckpointStorage.DBCheckpoint?)>?) defined in net.corda.node.services.persistence.DBCheckpointStorage.forEach[LocalVariableDescriptor]
 

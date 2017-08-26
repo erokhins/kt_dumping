@@ -43,7 +43,7 @@ Inferred types:
 
 'allowMissingConfig' @ [35:99] ==> value-parameter allowMissingConfig: Boolean = ... defined in net.corda.node.services.config.ConfigHelper.loadConfig[ValueParameterDescriptorImpl]
 
-'configOf' @ [36:27] ==> public fun configOf(vararg pairs: Pair<String, Any?>): Config defined in net.corda.node.services.config[SimpleFunctionDescriptorImpl]
+'configOf' @ [36:27] ==> public fun configOf(vararg pairs: Pair<String, Any?>): Config defined in net.corda.node.services.config in file ConfigUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'to' @ [38:17] ==> public infix fun <A, B> String.to(that: String): Pair<String, String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -156,8 +156,6 @@ Inferred types:
 
 'getX509Certificate' @ [85:33] ==> public fun KeyStore.getX509Certificate(alias: String): X509CertificateHolder defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
-'X509Utilities' @ [85:52] ==> public object X509Utilities defined in net.corda.node.utilities in file X509Utilities.kt[FakeCallableDescriptorForObject]
-
 'CORDA_ROOT_CA' @ [85:66] ==> public final val CORDA_ROOT_CA: String defined in net.corda.node.utilities.X509Utilities[PropertyDescriptorImpl]
 
 'component1' @ [86:10] ==> public final operator fun component1(): X509CertificateHolder defined in net.corda.core.crypto.CertificateAndKeyPair[DeserializedSimpleFunctionDescriptor]
@@ -167,8 +165,6 @@ Inferred types:
 'caKeyStore' @ [86:55] ==> value-parameter caKeyStore: KeyStore defined in net.corda.node.services.config.createKeystoreForCordaNode[ValueParameterDescriptorImpl]
 
 'getCertificateAndKeyPair' @ [86:66] ==> public fun KeyStore.getCertificateAndKeyPair(alias: String, keyPassword: String): CertificateAndKeyPair defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
-
-'X509Utilities' @ [86:91] ==> public object X509Utilities defined in net.corda.node.utilities in file X509Utilities.kt[FakeCallableDescriptorForObject]
 
 'CORDA_INTERMEDIATE_CA' @ [86:105] ==> public final val CORDA_INTERMEDIATE_CA: String defined in net.corda.node.utilities.X509Utilities[PropertyDescriptorImpl]
 
@@ -250,9 +246,7 @@ Inferred types:
 
 'clientCAKeystore' @ [98:5] ==> val clientCAKeystore: KeyStore defined in net.corda.node.services.config.createKeystoreForCordaNode[LocalVariableDescriptor]
 
-'addOrReplaceKey' @ [98:22] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out X509CertificateHolder>): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
-
-'X509Utilities' @ [99:13] ==> public object X509Utilities defined in net.corda.node.utilities in file X509Utilities.kt[FakeCallableDescriptorForObject]
+'addOrReplaceKey' @ [98:22] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out X509CertificateHolder>): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'CORDA_CLIENT_CA' @ [99:27] ==> public final val CORDA_CLIENT_CA: String defined in net.corda.node.utilities.X509Utilities[PropertyDescriptorImpl]
 
@@ -274,7 +268,7 @@ Inferred types:
 
 'clientCAKeystore' @ [103:5] ==> val clientCAKeystore: KeyStore defined in net.corda.node.services.config.createKeystoreForCordaNode[LocalVariableDescriptor]
 
-'save' @ [103:22] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'save' @ [103:22] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'clientCAKeystorePath' @ [103:27] ==> value-parameter clientCAKeystorePath: Path defined in net.corda.node.services.config.createKeystoreForCordaNode[ValueParameterDescriptorImpl]
 
@@ -288,9 +282,7 @@ Inferred types:
 
 'tlsKeystore' @ [106:5] ==> val tlsKeystore: KeyStore defined in net.corda.node.services.config.createKeystoreForCordaNode[LocalVariableDescriptor]
 
-'addOrReplaceKey' @ [106:17] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out X509CertificateHolder>): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
-
-'X509Utilities' @ [107:13] ==> public object X509Utilities defined in net.corda.node.utilities in file X509Utilities.kt[FakeCallableDescriptorForObject]
+'addOrReplaceKey' @ [106:17] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out X509CertificateHolder>): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'CORDA_CLIENT_TLS' @ [107:27] ==> public final val CORDA_CLIENT_TLS: String defined in net.corda.node.utilities.X509Utilities[PropertyDescriptorImpl]
 
@@ -314,7 +306,7 @@ Inferred types:
 
 'tlsKeystore' @ [111:5] ==> val tlsKeystore: KeyStore defined in net.corda.node.services.config.createKeystoreForCordaNode[LocalVariableDescriptor]
 
-'save' @ [111:17] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'save' @ [111:17] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'sslKeyStorePath' @ [111:22] ==> value-parameter sslKeyStorePath: Path defined in net.corda.node.services.config.createKeystoreForCordaNode[ValueParameterDescriptorImpl]
 

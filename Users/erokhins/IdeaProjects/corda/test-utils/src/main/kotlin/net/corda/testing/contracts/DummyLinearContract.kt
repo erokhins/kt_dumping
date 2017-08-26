@@ -161,8 +161,6 @@ Inferred types:
 
 'schema' @ [49:26] ==> value-parameter schema: MappedSchema defined in net.corda.testing.contracts.DummyLinearContract.State.generateMappedObject[ValueParameterDescriptorImpl]
 
-'DummyLinearStateSchemaV1' @ [50:48] ==> public object DummyLinearStateSchemaV1 : MappedSchema defined in net.corda.testing.schemas in file DummyLinearStateSchemaV1.kt[FakeCallableDescriptorForObject]
-
 'PersistentDummyLinearState' @ [50:73] ==> public constructor PersistentDummyLinearState(participants: MutableSet<AbstractParty>, externalId: String?, uuid: UUID, linearString: String, linearNumber: Long, linearTimestamp: Instant, linearBoolean: Boolean) defined in net.corda.testing.schemas.DummyLinearStateSchemaV1.PersistentDummyLinearState[ClassConstructorDescriptorImpl]
 
 'participants' @ [51:40] ==> public open val participants: List<AbstractParty> defined in net.corda.testing.contracts.DummyLinearContract.State[PropertyDescriptorImpl]
@@ -186,8 +184,6 @@ Inferred types:
 'linearTimestamp' @ [56:43] ==> public final val linearTimestamp: Instant defined in net.corda.testing.contracts.DummyLinearContract.State[PropertyDescriptorImpl]
 
 'linearBoolean' @ [57:41] ==> public final val linearBoolean: Boolean defined in net.corda.testing.contracts.DummyLinearContract.State[PropertyDescriptorImpl]
-
-'DummyLinearStateSchemaV2' @ [59:48] ==> public object DummyLinearStateSchemaV2 : MappedSchema defined in net.corda.testing.schemas in file DummyLinearStateSchemaV2.kt[FakeCallableDescriptorForObject]
 
 'PersistentDummyLinearState' @ [59:73] ==> public constructor PersistentDummyLinearState(linearString: String, linearNumber: Long, linearTimestamp: Instant, linearBoolean: Boolean, _participants: Set<AbstractParty>, uid: UniqueIdentifier) defined in net.corda.testing.schemas.DummyLinearStateSchemaV2.PersistentDummyLinearState[ClassConstructorDescriptorImpl]
 

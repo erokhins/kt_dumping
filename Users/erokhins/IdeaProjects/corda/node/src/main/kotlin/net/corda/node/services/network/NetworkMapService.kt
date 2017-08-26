@@ -265,9 +265,9 @@ Inferred types:
             ArrayList(nodeRegistrations.values.map { it.reg })  // Snapshot to avoid attempting to serialise Map internals
         } else {
             null
-        }' @ [218:33] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: ArrayList<NodeRegistration>?, elseBranch: ArrayList<NodeRegistration>?): ArrayList<NodeRegistration>?[SimpleFunctionDescriptorImpl]
+        }' @ [218:33] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: ArrayList<(NodeRegistration..NodeRegistration?)>?, elseBranch: ArrayList<(NodeRegistration..NodeRegistration?)>?): ArrayList<(NodeRegistration..NodeRegistration?)>?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> ArrayList<NodeRegistration>?
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> ArrayList<(net.corda.node.services.network.NodeRegistration..net.corda.node.services.network.NodeRegistration?)>?
 
 'request' @ [218:37] ==> value-parameter request: NetworkMapService.FetchMapRequest defined in net.corda.node.services.network.AbstractNetworkMapService.processFetchAllRequest[ValueParameterDescriptorImpl]
 
@@ -281,7 +281,7 @@ Inferred types:
 
 'ArrayList' @ [220:13] ==> public constructor ArrayList<E : (Any..Any?)>(p0: (MutableCollection<out (NodeRegistration..NodeRegistration?)>..Collection<(NodeRegistration..NodeRegistration?)>?)) defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> NodeRegistration
+    <E : (Any..Any?)> -> (net.corda.node.services.network.NodeRegistration..net.corda.node.services.network.NodeRegistration?)
 
 'nodeRegistrations' @ [220:23] ==> protected abstract val nodeRegistrations: MutableMap<PartyAndCertificate, NodeRegistrationInfo> defined in net.corda.node.services.network.AbstractNetworkMapService[PropertyDescriptorImpl]
 
@@ -298,7 +298,7 @@ Inferred types:
 
 'FetchMapResponse' @ [224:16] ==> public constructor FetchMapResponse(nodes: List<NodeRegistration>?, version: Int) defined in net.corda.node.services.network.NetworkMapService.FetchMapResponse[ClassConstructorDescriptorImpl]
 
-'nodeRegistrations' @ [224:33] ==> val nodeRegistrations: ArrayList<NodeRegistration>? defined in net.corda.node.services.network.AbstractNetworkMapService.processFetchAllRequest[LocalVariableDescriptor]
+'nodeRegistrations' @ [224:33] ==> val nodeRegistrations: ArrayList<(NodeRegistration..NodeRegistration?)>? defined in net.corda.node.services.network.AbstractNetworkMapService.processFetchAllRequest[LocalVariableDescriptor]
 
 'currentVersion' @ [224:52] ==> val currentVersion: Int defined in net.corda.node.services.network.AbstractNetworkMapService.processFetchAllRequest[LocalVariableDescriptor]
 

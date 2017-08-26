@@ -410,6 +410,8 @@ Inferred types:
 
 'TransactionSignature' @ [234:46] ==> public constructor TransactionSignature(bytes: ByteArray, by: PublicKey, signatureMetadata: SignatureMetadata) defined in net.corda.core.crypto.TransactionSignature[ClassConstructorDescriptorImpl]
 
+'by' @ [234:68] ==> public final val by: PublicKey defined in net.corda.core.crypto.TransactionSignature[PropertyDescriptorImpl]
+
 'mapNotNull' @ [234:72] ==> public inline fun <T, R : Any> Iterable<PublicKey>.mapNotNull(transform: (PublicKey) -> Party?): List<Party> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PublicKey
@@ -418,6 +420,8 @@ Inferred types:
 'serviceHub' @ [234:83] ==> public final val serviceHub: ServiceHub defined in net.corda.core.flows.SignTransactionFlow[PropertyDescriptorImpl]
 
 'identityService' @ [234:94] ==> public abstract val identityService: IdentityService defined in net.corda.core.node.ServiceHub[PropertyDescriptorImpl]
+
+'partyFromKey' @ [234:111] ==> public abstract fun partyFromKey(key: PublicKey): Party? defined in net.corda.core.node.services.IdentityService[SimpleFunctionDescriptorImpl]
 
 'signingIdentities' @ [235:42] ==> val signingIdentities: List<Party> defined in net.corda.core.flows.SignTransactionFlow.checkSignatures[LocalVariableDescriptor]
 
@@ -429,6 +433,8 @@ Inferred types:
 'serviceHub' @ [235:71] ==> public final val serviceHub: ServiceHub defined in net.corda.core.flows.SignTransactionFlow[PropertyDescriptorImpl]
 
 'identityService' @ [235:82] ==> public abstract val identityService: IdentityService defined in net.corda.core.node.ServiceHub[PropertyDescriptorImpl]
+
+'partyFromAnonymous' @ [235:99] ==> public abstract fun partyFromAnonymous(party: AbstractParty): Party? defined in net.corda.core.node.services.IdentityService[SimpleFunctionDescriptorImpl]
 
 'require' @ [236:9] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 

@@ -161,16 +161,16 @@ Inferred types:
 
 'ref' @ [91:29] ==> value-parameter ref: StateRef defined in net.corda.core.transactions.WireTransaction.toLedgerTransaction.<anonymous>[ValueParameterDescriptorImpl]
 
-'let' @ [91:35] ==> @InlineOnly public inline fun <T, R> TransactionState<ContractState>.let(block: (TransactionState<ContractState>) -> StateAndRef<ContractState>): StateAndRef<ContractState> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [91:35] ==> @InlineOnly public inline fun <T, R> TransactionState<*>.let(block: (TransactionState<*>) -> StateAndRef<ContractState>): StateAndRef<ContractState> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TransactionState<ContractState>
+    <T> -> TransactionState<*>
     <R> -> StateAndRef<ContractState>
 
 'StateAndRef' @ [91:41] ==> public constructor StateAndRef<out T : ContractState>(state: TransactionState<ContractState>, ref: StateRef) defined in net.corda.core.contracts.StateAndRef[ClassConstructorDescriptorImpl]
 Inferred types:
     <out T : ContractState> -> ContractState
 
-'it' @ [91:53] ==> value-parameter it: TransactionState<ContractState> defined in net.corda.core.transactions.WireTransaction.toLedgerTransaction.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [91:53] ==> value-parameter it: TransactionState<*> defined in net.corda.core.transactions.WireTransaction.toLedgerTransaction.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'ref' @ [91:57] ==> value-parameter ref: StateRef defined in net.corda.core.transactions.WireTransaction.toLedgerTransaction.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -206,9 +206,9 @@ Inferred types:
 
 'filtering' @ [100:65] ==> value-parameter filtering: Predicate<Any> defined in net.corda.core.transactions.WireTransaction.buildFilteredTransaction[ValueParameterDescriptorImpl]
 
-'lazy' @ [106:35] ==> public fun <T> lazy(initializer: () -> MerkleTree): Lazy<MerkleTree> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [106:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> MerkleTree
+    <T> -> T
 
 'MerkleTree' @ [106:42] ==> public companion object defined in net.corda.core.crypto.MerkleTree[FakeCallableDescriptorForObject]
 
@@ -245,7 +245,7 @@ Inferred types:
 
 'add' @ [121:24] ==> public abstract fun add(element: SecureHash): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'computeNonce' @ [121:28] ==> public fun computeNonce(privacySalt: PrivacySalt, index: Int): SecureHash.SHA256 defined in net.corda.core.transactions[SimpleFunctionDescriptorImpl]
+'computeNonce' @ [121:28] ==> public fun computeNonce(privacySalt: PrivacySalt, index: Int): SecureHash.SHA256 defined in net.corda.core.transactions in file MerkleTransaction.kt[SimpleFunctionDescriptorImpl]
 
 'privacySalt' @ [121:41] ==> public open val privacySalt: PrivacySalt defined in net.corda.core.transactions.WireTransaction[PropertyDescriptorImpl]
 
@@ -272,7 +272,7 @@ Inferred types:
 
 'add' @ [128:24] ==> public abstract fun add(element: SecureHash): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'computeNonce' @ [128:28] ==> public fun computeNonce(privacySalt: PrivacySalt, index: Int): SecureHash.SHA256 defined in net.corda.core.transactions[SimpleFunctionDescriptorImpl]
+'computeNonce' @ [128:28] ==> public fun computeNonce(privacySalt: PrivacySalt, index: Int): SecureHash.SHA256 defined in net.corda.core.transactions in file MerkleTransaction.kt[SimpleFunctionDescriptorImpl]
 
 'privacySalt' @ [128:41] ==> public open val privacySalt: PrivacySalt defined in net.corda.core.transactions.WireTransaction[PropertyDescriptorImpl]
 
@@ -332,9 +332,9 @@ Inferred types:
 Inferred types:
     <T> -> Command<*>
 
-'filterAndNoncesUpdate' @ [142:55] ==> local final fun <T : Any> filterAndNoncesUpdate(t: Command<out CommandData>, index: Int): Boolean defined in net.corda.core.transactions.WireTransaction.filterWithFun[SimpleFunctionDescriptorImpl]
+'filterAndNoncesUpdate' @ [142:55] ==> local final fun <T : Any> filterAndNoncesUpdate(t: Command<*>, index: Int): Boolean defined in net.corda.core.transactions.WireTransaction.filterWithFun[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> Command<out CommandData>
+    <T : Any> -> Command<*>
 
 'it' @ [142:77] ==> value-parameter it: Command<*> defined in net.corda.core.transactions.WireTransaction.filterWithFun.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -80,7 +80,7 @@ Inferred types:
 
 'loadTestConfiguration' @ [69:53] ==> val loadTestConfiguration: LoadTestConfiguration defined in net.corda.loadtest.main[LocalVariableDescriptor]
 
-'runLoadTests' @ [74:5] ==> public fun runLoadTests(configuration: LoadTestConfiguration, tests: List<Pair<LoadTest<*, *>, LoadTest.RunParameters>>): Unit defined in net.corda.loadtest[SimpleFunctionDescriptorImpl]
+'runLoadTests' @ [74:5] ==> public fun runLoadTests(configuration: LoadTestConfiguration, tests: List<Pair<LoadTest<*, *>, LoadTest.RunParameters>>): Unit defined in net.corda.loadtest in file LoadTest.kt[SimpleFunctionDescriptorImpl]
 
 'loadTestConfiguration' @ [74:18] ==> value-parameter loadTestConfiguration: LoadTestConfiguration defined in net.corda.loadtest.runLoadTest[ValueParameterDescriptorImpl]
 
@@ -89,8 +89,6 @@ Inferred types:
     <T> -> Pair<LoadTest<out Any, out Any>, RunParameters>
 
 'selfIssueTest' @ [75:13] ==> public val selfIssueTest: LoadTest<SelfIssueCommand, SelfIssueState> defined in net.corda.loadtest.tests in file SelfIssueTest.kt[PropertyDescriptorImpl]
-
-'LoadTest' @ [75:30] ==> public companion object defined in net.corda.loadtest.LoadTest[FakeCallableDescriptorForObject]
 
 'RunParameters' @ [75:39] ==> public constructor RunParameters(parallelism: Int, generateCount: Int, clearDatabaseBeforeRun: Boolean, executionFrequency: Int?, gatherFrequency: Int, disruptionPatterns: List<List<DisruptionSpec>>) defined in net.corda.loadtest.LoadTest.RunParameters[ClassConstructorDescriptorImpl]
 
@@ -108,7 +106,7 @@ Inferred types:
 
 'DisruptionSpec' @ [84:37] ==> public constructor DisruptionSpec(nodeFilter: (NodeConnection) -> Boolean, disruption: Disruption, noDisruptionWindowMs: LongRange) defined in net.corda.loadtest.DisruptionSpec[ClassConstructorDescriptorImpl]
 
-'hang' @ [85:58] ==> public fun hang(hangIntervalRange: LongRange): Disruption defined in net.corda.loadtest[SimpleFunctionDescriptorImpl]
+'hang' @ [85:58] ==> public fun hang(hangIntervalRange: LongRange): Disruption defined in net.corda.loadtest in file Disruption.kt[SimpleFunctionDescriptorImpl]
 
 '..' @ [85:63] ==> public final operator fun rangeTo(other: Long): LongRange defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
@@ -130,13 +128,11 @@ Inferred types:
 
 'DisruptionSpec' @ [95:37] ==> public constructor DisruptionSpec(nodeFilter: (NodeConnection) -> Boolean, disruption: Disruption, noDisruptionWindowMs: LongRange) defined in net.corda.loadtest.DisruptionSpec[ClassConstructorDescriptorImpl]
 
-'strainCpu' @ [96:58] ==> public fun strainCpu(parallelism: Int, durationSeconds: Int): Disruption defined in net.corda.loadtest[SimpleFunctionDescriptorImpl]
+'strainCpu' @ [96:58] ==> public fun strainCpu(parallelism: Int, durationSeconds: Int): Disruption defined in net.corda.loadtest in file Disruption.kt[SimpleFunctionDescriptorImpl]
 
 '..' @ [98:68] ==> public final operator fun rangeTo(other: Long): LongRange defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
 'crossCashTest' @ [104:13] ==> public val crossCashTest: LoadTest<CrossCashCommand, CrossCashState> defined in net.corda.loadtest.tests in file CrossCashTest.kt[PropertyDescriptorImpl]
-
-'LoadTest' @ [104:30] ==> public companion object defined in net.corda.loadtest.LoadTest[FakeCallableDescriptorForObject]
 
 'RunParameters' @ [104:39] ==> public constructor RunParameters(parallelism: Int, generateCount: Int, clearDatabaseBeforeRun: Boolean, executionFrequency: Int?, gatherFrequency: Int, disruptionPatterns: List<List<DisruptionSpec>>) defined in net.corda.loadtest.LoadTest.RunParameters[ClassConstructorDescriptorImpl]
 
@@ -154,7 +150,7 @@ Inferred types:
 
 'DisruptionSpec' @ [113:37] ==> public constructor DisruptionSpec(nodeFilter: (NodeConnection) -> Boolean, disruption: Disruption, noDisruptionWindowMs: LongRange) defined in net.corda.loadtest.DisruptionSpec[ClassConstructorDescriptorImpl]
 
-'hang' @ [114:58] ==> public fun hang(hangIntervalRange: LongRange): Disruption defined in net.corda.loadtest[SimpleFunctionDescriptorImpl]
+'hang' @ [114:58] ==> public fun hang(hangIntervalRange: LongRange): Disruption defined in net.corda.loadtest in file Disruption.kt[SimpleFunctionDescriptorImpl]
 
 '..' @ [114:63] ==> public final operator fun rangeTo(other: Long): LongRange defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
@@ -176,11 +172,11 @@ Inferred types:
 
 'DisruptionSpec' @ [123:37] ==> public constructor DisruptionSpec(nodeFilter: (NodeConnection) -> Boolean, disruption: Disruption, noDisruptionWindowMs: LongRange) defined in net.corda.loadtest.DisruptionSpec[ClassConstructorDescriptorImpl]
 
-'strainCpu' @ [124:58] ==> public fun strainCpu(parallelism: Int, durationSeconds: Int): Disruption defined in net.corda.loadtest[SimpleFunctionDescriptorImpl]
+'strainCpu' @ [124:58] ==> public fun strainCpu(parallelism: Int, durationSeconds: Int): Disruption defined in net.corda.loadtest in file Disruption.kt[SimpleFunctionDescriptorImpl]
 
 '..' @ [126:68] ==> public final operator fun rangeTo(other: Long): LongRange defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
-'runLoadTests' @ [135:5] ==> public fun runLoadTests(configuration: LoadTestConfiguration, tests: List<Pair<LoadTest<*, *>, LoadTest.RunParameters>>): Unit defined in net.corda.loadtest[SimpleFunctionDescriptorImpl]
+'runLoadTests' @ [135:5] ==> public fun runLoadTests(configuration: LoadTestConfiguration, tests: List<Pair<LoadTest<*, *>, LoadTest.RunParameters>>): Unit defined in net.corda.loadtest in file LoadTest.kt[SimpleFunctionDescriptorImpl]
 
 'loadTestConfiguration' @ [135:18] ==> value-parameter loadTestConfiguration: LoadTestConfiguration defined in net.corda.loadtest.runStabilityTest[ValueParameterDescriptorImpl]
 
@@ -191,8 +187,6 @@ Inferred types:
 'StabilityTest' @ [137:13] ==> public object StabilityTest defined in net.corda.loadtest.tests in file StabilityTest.kt[FakeCallableDescriptorForObject]
 
 'selfIssueTest' @ [137:27] ==> public final fun selfIssueTest(replication: Int): LoadTest<SelfIssueCommand, Unit> defined in net.corda.loadtest.tests.StabilityTest[SimpleFunctionDescriptorImpl]
-
-'LoadTest' @ [137:49] ==> public companion object defined in net.corda.loadtest.LoadTest[FakeCallableDescriptorForObject]
 
 'RunParameters' @ [137:58] ==> public constructor RunParameters(parallelism: Int, generateCount: Int, clearDatabaseBeforeRun: Boolean, executionFrequency: Int?, gatherFrequency: Int, disruptionPatterns: List<List<DisruptionSpec>>) defined in net.corda.loadtest.LoadTest.RunParameters[ClassConstructorDescriptorImpl]
 
@@ -211,8 +205,6 @@ Inferred types:
 'StabilityTest' @ [146:13] ==> public object StabilityTest defined in net.corda.loadtest.tests in file StabilityTest.kt[FakeCallableDescriptorForObject]
 
 'crossCashTest' @ [146:27] ==> public final fun crossCashTest(replication: Int): LoadTest<CrossCashCommand, Unit> defined in net.corda.loadtest.tests.StabilityTest[SimpleFunctionDescriptorImpl]
-
-'LoadTest' @ [146:49] ==> public companion object defined in net.corda.loadtest.LoadTest[FakeCallableDescriptorForObject]
 
 'RunParameters' @ [146:58] ==> public constructor RunParameters(parallelism: Int, generateCount: Int, clearDatabaseBeforeRun: Boolean, executionFrequency: Int?, gatherFrequency: Int, disruptionPatterns: List<List<DisruptionSpec>>) defined in net.corda.loadtest.LoadTest.RunParameters[ClassConstructorDescriptorImpl]
 

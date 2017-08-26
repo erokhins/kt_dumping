@@ -27,8 +27,6 @@ Inferred types:
 
 'keySpec' @ [18:22] ==> value-parameter keySpec: KeySpec defined in net.corda.core.crypto.composite.KeyFactory.engineGeneratePublic[ValueParameterDescriptorImpl]
 
-'CompositeKey' @ [19:38] ==> public companion object defined in net.corda.core.crypto.composite.CompositeKey[FakeCallableDescriptorForObject]
-
 'getInstance' @ [19:51] ==> public final fun getInstance(encoded: ByteArray): PublicKey defined in net.corda.core.crypto.composite.CompositeKey.Companion[SimpleFunctionDescriptorImpl]
 
 'keySpec' @ [19:63] ==> value-parameter keySpec: KeySpec defined in net.corda.core.crypto.composite.KeyFactory.engineGeneratePublic[ValueParameterDescriptorImpl]

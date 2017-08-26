@@ -1,6 +1,6 @@
 'load' @ [15:48] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(FlowStackSnapshotFactory..FlowStackSnapshotFactory?)>..Class<(FlowStackSnapshotFactory..FlowStackSnapshotFactory?)>?)): (ServiceLoader<(FlowStackSnapshotFactory..FlowStackSnapshotFactory?)>..ServiceLoader<(FlowStackSnapshotFactory..FlowStackSnapshotFactory?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> FlowStackSnapshotFactory
+    <S : (Any..Any?)> -> (net.corda.node.services.statemachine.FlowStackSnapshotFactory..net.corda.node.services.statemachine.FlowStackSnapshotFactory?)
 
 'FlowStackSnapshotFactory' @ [15:53] ==> public companion object defined in net.corda.node.services.statemachine.FlowStackSnapshotFactory[FakeCallableDescriptorForObject]
 
@@ -18,9 +18,9 @@ Inferred types:
 
 'DefaultFlowStackSnapshotFactory' @ [16:42] ==> private object DefaultFlowStackSnapshotFactory : FlowStackSnapshotFactory defined in net.corda.node.services.statemachine.FlowStackSnapshotFactory[FakeCallableDescriptorForObject]
 
-'lazy' @ [21:51] ==> public fun <T> lazy(initializer: () -> FlowStackSnapshotFactory): Lazy<FlowStackSnapshotFactory> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [21:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> FlowStackSnapshotFactory
+    <T> -> T
 
 'Holder' @ [21:58] ==> private object Holder defined in net.corda.node.services.statemachine.FlowStackSnapshotFactory[FakeCallableDescriptorForObject]
 

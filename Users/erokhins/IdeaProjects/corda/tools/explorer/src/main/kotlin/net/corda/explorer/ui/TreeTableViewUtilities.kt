@@ -66,9 +66,9 @@ Inferred types:
 
 'it' @ [25:9] ==> value-parameter it: (TreeTableColumn<(S..S?), *>..TreeTableColumn<(S..S?), *>?) defined in net.corda.explorer.ui.setColumnPrefWidthPolicy.<anonymous>[ValueParameterDescriptorImpl]
 
-'setPrefWidthPolicy' @ [25:12] ==> private fun <S> TreeTableColumn<(S..S?), *>.setPrefWidthPolicy(widthWithoutPaddingAndBorder: ObservableValue<Number>, getColumnWidth: (tableWidthWithoutPaddingAndBorder: Number, column: TreeTableColumn<(S..S?), *>) -> Number): Unit defined in net.corda.explorer.ui[SimpleFunctionDescriptorImpl]
+'setPrefWidthPolicy' @ [25:12] ==> private fun <S> TreeTableColumn<S, *>.setPrefWidthPolicy(widthWithoutPaddingAndBorder: ObservableValue<Number>, getColumnWidth: (tableWidthWithoutPaddingAndBorder: Number, column: TreeTableColumn<S, *>) -> Number): Unit defined in net.corda.explorer.ui[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <S> -> (S..S?)
+    <S> -> S
 
 'tableWidthWithoutPaddingAndBorder' @ [25:31] ==> val tableWidthWithoutPaddingAndBorder: (DoubleBinding..DoubleBinding?) defined in net.corda.explorer.ui.setColumnPrefWidthPolicy[LocalVariableDescriptor]
 
@@ -80,8 +80,8 @@ Inferred types:
 
 'map' @ [33:39] ==> public final fun <T : (Any..Any?), U : (Any..Any?)> map(p0: (ObservableValue<(Number..Number?)>..ObservableValue<(Number..Number?)>?), p1: (((Number..Number?)) -> (Number..Number?)..(((Number..Number?)) -> (Number..Number?))?)): (MonadicBinding<(Number..Number?)>..MonadicBinding<(Number..Number?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Number
-    <U : (Any..Any?)> -> Number
+    <T : (Any..Any?)> -> (kotlin.Number..kotlin.Number?)
+    <U : (Any..Any?)> -> (kotlin.Number..kotlin.Number?)
 
 'widthWithoutPaddingAndBorder' @ [33:43] ==> value-parameter widthWithoutPaddingAndBorder: ObservableValue<Number> defined in net.corda.explorer.ui.setPrefWidthPolicy[ValueParameterDescriptorImpl]
 
@@ -130,17 +130,17 @@ Inferred types:
 
 'value' @ [45:24] ==> value-parameter value: T? defined in net.corda.explorer.ui.toTreeTableCellFactory.<anonymous>.<no name provided>.updateItem[ValueParameterDescriptorImpl]
 
-'createObjectBinding' @ [52:18] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> (SingleRowSelection<S>..SingleRowSelection<S>?)..(() -> (SingleRowSelection<S>..SingleRowSelection<S>?))?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<(SingleRowSelection<S>..SingleRowSelection<S>?)>..ObjectBinding<(SingleRowSelection<S>..SingleRowSelection<S>?)>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
+'createObjectBinding' @ [52:18] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> (SingleRowSelection<(S..S?)>..SingleRowSelection<(S..S?)>?)..(() -> (SingleRowSelection<(S..S?)>..SingleRowSelection<(S..S?)>?))?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<(SingleRowSelection<(S..S?)>..SingleRowSelection<(S..S?)>?)>..ObjectBinding<(SingleRowSelection<(S..S?)>..SingleRowSelection<(S..S?)>?)>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SingleRowSelection<S>
+    <T : (Any..Any?)> -> (net.corda.explorer.ui.SingleRowSelection<(S..S?)>..net.corda.explorer.ui.SingleRowSelection<(S..S?)>?)
 
 'if (selectionModel.selectedItems.size == 0) {
                 SingleRowSelection.None<S>()
             } else {
                 SingleRowSelection.Selected(selectionModel.selectedItems[0].value)
-            }' @ [53:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: SingleRowSelection<S>, elseBranch: SingleRowSelection<S>): SingleRowSelection<S>[SimpleFunctionDescriptorImpl]
+            }' @ [53:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: SingleRowSelection<(S..S?)>, elseBranch: SingleRowSelection<(S..S?)>): SingleRowSelection<(S..S?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SingleRowSelection<S>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> SingleRowSelection<(S..S?)>
 
 'selectionModel' @ [53:17] ==> public final var <S : (Any..Any?)> TreeTableView<S>.selectionModel: (TreeTableView.TreeTableViewSelectionModel<(S..S?)>..TreeTableView.TreeTableViewSelectionModel<(S..S?)>?)[MyPropertyDescriptor]
 Inferred types:

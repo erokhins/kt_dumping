@@ -1,4 +1,4 @@
-'arrange' @ [8:9] ==> public fun arrange(init: ContractBuilder.() -> Unit): Arrangement defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'arrange' @ [8:9] ==> public fun arrange(init: ContractBuilder.() -> Unit): Arrangement defined in net.corda.finance.contracts.universal in file Literal.kt[SimpleFunctionDescriptorImpl]
 
 'partyA' @ [9:13] ==> value-parameter partyA: Party defined in net.corda.finance.contracts.universal.swap[ValueParameterDescriptorImpl]
 
@@ -20,7 +20,7 @@
 
 'currencyB' @ [10:42] ==> value-parameter currencyB: Currency defined in net.corda.finance.contracts.universal.swap[ValueParameterDescriptorImpl]
 
-'arrange' @ [16:9] ==> public fun arrange(init: ContractBuilder.() -> Unit): Arrangement defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'arrange' @ [16:9] ==> public fun arrange(init: ContractBuilder.() -> Unit): Arrangement defined in net.corda.finance.contracts.universal in file Literal.kt[SimpleFunctionDescriptorImpl]
 
 'actions' @ [17:13] ==> public final fun actions(init: ActionsBuilder.() -> Action): Arrangement defined in net.corda.finance.contracts.universal.ContractBuilder[SimpleFunctionDescriptorImpl]
 
@@ -32,11 +32,11 @@
 
 'givenThat' @ [19:31] ==> public final fun String.givenThat(condition: Perceivable<Boolean>, init: ContractBuilder.() -> Arrangement): Action defined in net.corda.finance.contracts.universal.ActionBuilder[SimpleFunctionDescriptorImpl]
 
-'after' @ [19:41] ==> public fun after(expiry: String): TimePerceivable defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'after' @ [19:41] ==> public fun after(expiry: String): TimePerceivable defined in net.corda.finance.contracts.universal in file Perceivable.kt[SimpleFunctionDescriptorImpl]
 
 'expiry' @ [19:47] ==> value-parameter expiry: String defined in net.corda.finance.contracts.universal.fx_swap[ValueParameterDescriptorImpl]
 
-'swap' @ [20:25] ==> public fun swap(partyA: Party, amountA: BigDecimal, currencyA: Currency, partyB: Party, amountB: BigDecimal, currencyB: Currency): Arrangement defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'swap' @ [20:25] ==> public fun swap(partyA: Party, amountA: BigDecimal, currencyA: Currency, partyB: Party, amountB: BigDecimal, currencyB: Currency): Arrangement defined in net.corda.finance.contracts.universal in file ContractFunctions.kt[SimpleFunctionDescriptorImpl]
 
 'partyA' @ [20:30] ==> value-parameter partyA: Party defined in net.corda.finance.contracts.universal.fx_swap[ValueParameterDescriptorImpl]
 
@@ -54,19 +54,19 @@
 
 'Action' @ [30:9] ==> public constructor Action(name: String, condition: Perceivable<Boolean>, arrangement: Arrangement) defined in net.corda.finance.contracts.universal.Action[ClassConstructorDescriptorImpl]
 
-'after' @ [30:27] ==> public fun after(expiry: String): TimePerceivable defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'after' @ [30:27] ==> public fun after(expiry: String): TimePerceivable defined in net.corda.finance.contracts.universal in file Perceivable.kt[SimpleFunctionDescriptorImpl]
 
 'expiry' @ [30:33] ==> value-parameter expiry: String defined in net.corda.finance.contracts.universal.fx_swap2[ValueParameterDescriptorImpl]
 
-'signedBy' @ [30:46] ==> public fun signedBy(actor: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signedBy' @ [30:46] ==> public fun signedBy(actor: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Perceivable.kt[SimpleFunctionDescriptorImpl]
 
 'partyA' @ [30:55] ==> value-parameter partyA: Party defined in net.corda.finance.contracts.universal.fx_swap2[ValueParameterDescriptorImpl]
 
-'signedBy' @ [30:66] ==> public fun signedBy(actor: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signedBy' @ [30:66] ==> public fun signedBy(actor: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Perceivable.kt[SimpleFunctionDescriptorImpl]
 
 'partyB' @ [30:75] ==> value-parameter partyB: Party defined in net.corda.finance.contracts.universal.fx_swap2[ValueParameterDescriptorImpl]
 
-'swap' @ [31:17] ==> public fun swap(partyA: Party, amountA: BigDecimal, currencyA: Currency, partyB: Party, amountB: BigDecimal, currencyB: Currency): Arrangement defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'swap' @ [31:17] ==> public fun swap(partyA: Party, amountA: BigDecimal, currencyA: Currency, partyB: Party, amountB: BigDecimal, currencyB: Currency): Arrangement defined in net.corda.finance.contracts.universal in file ContractFunctions.kt[SimpleFunctionDescriptorImpl]
 
 'partyA' @ [31:22] ==> value-parameter partyA: Party defined in net.corda.finance.contracts.universal.fx_swap2[ValueParameterDescriptorImpl]
 

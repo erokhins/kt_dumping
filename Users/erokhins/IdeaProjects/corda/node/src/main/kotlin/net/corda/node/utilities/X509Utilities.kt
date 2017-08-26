@@ -478,8 +478,6 @@ Inferred types:
 
 'private' @ [228:74] ==> public final val KeyPair.private: (PrivateKey..PrivateKey?)[MyPropertyDescriptor]
 
-'Crypto' @ [228:83] ==> public object Crypto defined in net.corda.core.crypto[FakeCallableDescriptorForObject]
-
 'findProvider' @ [228:90] ==> @JvmStatic public final fun findProvider(name: String): Provider defined in net.corda.core.crypto.Crypto[DeserializedSimpleFunctionDescriptor]
 
 'signatureScheme' @ [228:103] ==> value-parameter signatureScheme: SignatureScheme defined in net.corda.node.utilities.X509Utilities.createCertificateSigningRequest[ValueParameterDescriptorImpl]

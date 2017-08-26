@@ -8,11 +8,11 @@
 
 'skin' @ [15:29] ==> public final var TabPane.skin: (Skin<*>..Skin<*>?)[MyPropertyDescriptor]
 
-'skin' @ [16:21] ==> val skin: Skin<out (Skinnable..Skinnable?)> defined in net.corda.demobench.ui.CloseableTab.requestClose[LocalVariableDescriptor]
+'skin' @ [16:21] ==> val skin: Skin<*> defined in net.corda.demobench.ui.CloseableTab.requestClose[LocalVariableDescriptor]
 
-'javaClass' @ [16:26] ==> public val <T : Any> Skin<out (Skinnable..Skinnable?)>.javaClass: Class<Skin<out (Skinnable..Skinnable?)>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [16:26] ==> public val <T : Any> Skin<*>.javaClass: Class<Skin<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> Skin<out (javafx.scene.control.Skinnable..javafx.scene.control.Skinnable?)>
+    <T : Any> -> Skin<*>
 
 'findFieldByName' @ [16:36] ==> public fun Class<*>.findFieldByName(name: String): Field? defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
@@ -24,7 +24,7 @@ Inferred types:
 
 'get' @ [19:31] ==> @CallerSensitive public open operator fun get(p0: (Any..Any?)): (Any..Any?) defined in java.lang.reflect.Field[JavaMethodDescriptor]
 
-'skin' @ [19:35] ==> val skin: Skin<out (Skinnable..Skinnable?)> defined in net.corda.demobench.ui.CloseableTab.requestClose[LocalVariableDescriptor]
+'skin' @ [19:35] ==> val skin: Skin<*> defined in net.corda.demobench.ui.CloseableTab.requestClose[LocalVariableDescriptor]
 
 'behaviour' @ [20:13] ==> val behaviour: TabPaneBehavior defined in net.corda.demobench.ui.CloseableTab.requestClose[LocalVariableDescriptor]
 

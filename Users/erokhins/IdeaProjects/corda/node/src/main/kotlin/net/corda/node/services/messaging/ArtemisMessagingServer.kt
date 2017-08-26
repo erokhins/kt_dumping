@@ -304,31 +304,21 @@ Inferred types:
 
 'queueConfig' @ [203:17] ==> private final fun queueConfig(name: String, address: String = ..., filter: String? = ..., durable: Boolean): CoreQueueConfiguration defined in net.corda.node.services.messaging.ArtemisMessagingServer[SimpleFunctionDescriptorImpl]
 
-'RPCApi' @ [203:29] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'RPC_SERVER_QUEUE_NAME' @ [203:36] ==> public final val RPC_SERVER_QUEUE_NAME: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
 'queueConfig' @ [204:17] ==> private final fun queueConfig(name: String, address: String = ..., filter: String? = ..., durable: Boolean): CoreQueueConfiguration defined in net.corda.node.services.messaging.ArtemisMessagingServer[SimpleFunctionDescriptorImpl]
-
-'RPCApi' @ [205:32] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
 
 'RPC_CLIENT_BINDING_REMOVALS' @ [205:39] ==> public final val RPC_CLIENT_BINDING_REMOVALS: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
 'NOTIFICATIONS_ADDRESS' @ [206:35] ==> public const final val NOTIFICATIONS_ADDRESS: String defined in net.corda.nodeapi.ArtemisMessagingComponent.Companion[DeserializedPropertyDescriptor]
 
-'RPCApi' @ [207:34] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'RPC_CLIENT_BINDING_REMOVAL_FILTER_EXPRESSION' @ [207:41] ==> public final val RPC_CLIENT_BINDING_REMOVAL_FILTER_EXPRESSION: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
 'queueConfig' @ [210:17] ==> private final fun queueConfig(name: String, address: String = ..., filter: String? = ..., durable: Boolean): CoreQueueConfiguration defined in net.corda.node.services.messaging.ArtemisMessagingServer[SimpleFunctionDescriptorImpl]
 
-'RPCApi' @ [211:32] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'RPC_CLIENT_BINDING_ADDITIONS' @ [211:39] ==> public final val RPC_CLIENT_BINDING_ADDITIONS: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
 'NOTIFICATIONS_ADDRESS' @ [212:35] ==> public const final val NOTIFICATIONS_ADDRESS: String defined in net.corda.nodeapi.ArtemisMessagingComponent.Companion[DeserializedPropertyDescriptor]
-
-'RPCApi' @ [213:34] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
 
 'RPC_CLIENT_BINDING_ADDITION_FILTER_EXPRESSION' @ [213:41] ==> public final val RPC_CLIENT_BINDING_ADDITION_FILTER_EXPRESSION: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
@@ -424,8 +414,6 @@ Inferred types:
 
 'securityRoles' @ [246:9] ==> public final var ConfigurationImpl.securityRoles: (MutableMap<(String..String?), (MutableSet<(Role..Role?)>..Set<(Role..Role?)>?)>..Map<(String..String?), (MutableSet<(Role..Role?)>..Set<(Role..Role?)>?)>?)[MyPropertyDescriptor]
 
-'RPCApi' @ [246:23] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'RPC_SERVER_QUEUE_NAME' @ [246:30] ==> public final val RPC_SERVER_QUEUE_NAME: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
 'setOf' @ [246:55] ==> public fun <T> setOf(vararg elements: Role): Set<Role> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -497,8 +485,6 @@ Inferred types:
 'username' @ [258:77] ==> val username: String defined in net.corda.node.services.messaging.ArtemisMessagingServer.configureAddressSecurity[LocalVariableDescriptor]
 
 'securityRoles' @ [260:9] ==> public final var ConfigurationImpl.securityRoles: (MutableMap<(String..String?), (MutableSet<(Role..Role?)>..Set<(Role..Role?)>?)>..Map<(String..String?), (MutableSet<(Role..Role?)>..Set<(Role..Role?)>?)>?)[MyPropertyDescriptor]
-
-'VerifierApi' @ [260:23] ==> public object VerifierApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
 
 'VERIFICATION_REQUESTS_QUEUE_NAME' @ [260:35] ==> public final val VERIFICATION_REQUESTS_QUEUE_NAME: String defined in net.corda.nodeapi.VerifierApi[DeserializedPropertyDescriptor]
 
@@ -1340,8 +1326,6 @@ Inferred types:
 
 'configuration' @ [495:37] ==> protected/*protected and package*/ final val configuration: (MutableMap<(String..String?), (Any..Any?)>..Map<(String..String?), (Any..Any?)>?) defined in net.corda.node.services.messaging.VerifyingNettyConnector[JavaPropertyDescriptor]
 
-'ArtemisTcpTransport' @ [495:51] ==> public companion object defined in net.corda.nodeapi.ArtemisTcpTransport[FakeCallableDescriptorForObject]
-
 'VERIFY_PEER_LEGAL_NAME' @ [495:71] ==> public const final val VERIFY_PEER_LEGAL_NAME: String defined in net.corda.nodeapi.ArtemisTcpTransport.Companion[DeserializedPropertyDescriptor]
 
 'connection' @ [497:31] ==> val connection: NettyConnection? defined in net.corda.node.services.messaging.VerifyingNettyConnector.createConnection[LocalVariableDescriptor]
@@ -1352,7 +1336,7 @@ Inferred types:
 
 'get' @ [499:26] ==> public abstract operator fun <T : (ChannelHandler..ChannelHandler?)> get(p0: (Class<(SslHandler..SslHandler?)>..Class<(SslHandler..SslHandler?)>?)): (SslHandler..SslHandler?) defined in io.netty.channel.ChannelPipeline[JavaMethodDescriptor]
 Inferred types:
-    <T : (ChannelHandler..ChannelHandler?)> -> SslHandler
+    <T : (ChannelHandler..ChannelHandler?)> -> (io.netty.handler.ssl.SslHandler..io.netty.handler.ssl.SslHandler?)
 
 'java' @ [499:48] ==> public val <T> KClass<SslHandler>.java: Class<SslHandler> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1372,6 +1356,8 @@ Inferred types:
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
     <R> -> X500Name
+
+'X500Name' @ [503:70] ==> public constructor X500Name(p0: (String..String?)) defined in org.bouncycastle.asn1.x500.X500Name[JavaClassConstructorDescriptor]
 
 'require' @ [504:17] ==> @InlineOnly public inline fun require(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 

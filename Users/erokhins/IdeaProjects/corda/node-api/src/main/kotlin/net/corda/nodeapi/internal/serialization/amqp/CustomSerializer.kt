@@ -4,7 +4,7 @@ Inferred types:
 
 'data' @ [33:9] ==> value-parameter data: Data defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer.writeObject[ValueParameterDescriptorImpl]
 
-'withDescribed' @ [33:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withDescribed' @ [33:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'descriptor' @ [33:28] ==> protected abstract val descriptor: Descriptor defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer[PropertyDescriptorImpl]
 
@@ -40,7 +40,7 @@ Inferred types:
 
 'DESCRIPTOR_DOMAIN' @ [53:49] ==> public val DESCRIPTOR_DOMAIN: String defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[PropertyDescriptorImpl]
 
-'fingerprintForDescriptors' @ [53:69] ==> internal fun fingerprintForDescriptors(vararg typeDescriptors: String): String defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'fingerprintForDescriptors' @ [53:69] ==> internal fun fingerprintForDescriptors(vararg typeDescriptors: String): String defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[SimpleFunctionDescriptorImpl]
 
 'superClassSerializer' @ [53:95] ==> protected final val superClassSerializer: CustomSerializer<T> defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer.SubClass[PropertyDescriptorImpl]
 
@@ -52,8 +52,6 @@ Inferred types:
 
 'RestrictedType' @ [54:50] ==> public constructor RestrictedType(name: String, label: String?, provides: List<String>, source: String, descriptor: Descriptor, choices: List<Choice>) defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType[ClassConstructorDescriptorImpl]
 
-'SerializerFactory' @ [54:65] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
-
 'nameForType' @ [54:83] ==> public final fun nameForType(type: Type): String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 
 'clazz' @ [54:95] ==> protected final val clazz: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer.SubClass[PropertyDescriptorImpl]
@@ -61,8 +59,6 @@ Inferred types:
 'emptyList' @ [54:109] ==> public fun <T> emptyList(): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
-
-'SerializerFactory' @ [54:122] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
 
 'nameForType' @ [54:140] ==> public final fun nameForType(type: Type): String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 
@@ -186,9 +182,9 @@ Inferred types:
 
 'clazz' @ [103:141] ==> value-parameter clazz: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer.Proxy.isSerializerFor[ValueParameterDescriptorImpl]
 
-'lazy' @ [105:58] ==> public fun <T> lazy(initializer: () -> ObjectSerializer): Lazy<ObjectSerializer> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [105:58] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ObjectSerializer
+    <T> -> T
 
 'ObjectSerializer' @ [105:65] ==> public constructor ObjectSerializer(clazz: Type, factory: SerializerFactory) defined in net.corda.nodeapi.internal.serialization.amqp.ObjectSerializer[ClassConstructorDescriptorImpl]
 
@@ -196,9 +192,9 @@ Inferred types:
 
 'factory' @ [105:94] ==> protected final val factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer.Proxy[PropertyDescriptorImpl]
 
-'lazy' @ [107:56] ==> public fun <T> lazy(initializer: () -> Schema): Lazy<Schema> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [107:56] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Schema
+    <T> -> T
 
 'mutableSetOf' @ [108:33] ==> public fun <T> mutableSetOf(vararg elements: TypeNotation): MutableSet<TypeNotation> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -248,7 +244,7 @@ Inferred types:
 
 'data' @ [124:13] ==> value-parameter data: Data defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer.Proxy.writeDescribedObject[ValueParameterDescriptorImpl]
 
-'withList' @ [124:18] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withList' @ [124:18] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'proxySerializer' @ [125:34] ==> private final val proxySerializer: ObjectSerializer defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer.Proxy[PropertyDescriptorImpl]
 
@@ -290,10 +286,10 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'let' @ [150:108] ==> @InlineOnly public inline fun <T, R> (Constructor<(T..T?)>..Constructor<(T..T?)>?).let(block: ((Constructor<(T..T?)>..Constructor<(T..T?)>?)) -> (String) -> T): (String) -> T defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [150:108] ==> @InlineOnly public inline fun <T, R> (Constructor<(T..T?)>..Constructor<(T..T?)>?).let(block: ((Constructor<(T..T?)>..Constructor<(T..T?)>?)) -> (String) -> (T..T?)): (String) -> (T..T?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.lang.reflect.Constructor<(T..T?)>..java.lang.reflect.Constructor<(T..T?)>?)
-    <R> -> Function1<String, T>
+    <R> -> Function1<String, (T..T?)>
 
 '`constructor`' @ [152:48] ==> value-parameter constructor: (Constructor<(T..T?)>..Constructor<(T..T?)>?) defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer.ToString.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -333,7 +329,9 @@ Inferred types:
 
 'type' @ [158:81] ==> public open val type: Type defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer.ToString[PropertyDescriptorImpl]
 
-'SerializerFactory' @ [159:25] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
+'!!' @ [159:25] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: String?): String[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> String
 
 'primitiveTypeName' @ [159:43] ==> public final fun primitiveTypeName(type: Type): String? defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 

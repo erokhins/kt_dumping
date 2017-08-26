@@ -18,8 +18,6 @@ Inferred types:
 
 'getResourceAsStream' @ [16:67] ==> public open fun getResourceAsStream(p0: (String..String?)): (InputStream..InputStream?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
 
-'Charsets' @ [16:139] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
-
 'UTF_8' @ [16:148] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 
 'name' @ [16:154] ==> public final fun name(): (String..String?) defined in java.nio.charset.Charset[JavaMethodDescriptor]
@@ -49,8 +47,6 @@ Inferred types:
 'contextClassLoader' @ [27:68] ==> public final var Thread.contextClassLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 
 'getResourceAsStream' @ [27:87] ==> public open fun getResourceAsStream(p0: (String..String?)): (InputStream..InputStream?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
-
-'Charsets' @ [27:154] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
 
 'UTF_8' @ [27:163] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 

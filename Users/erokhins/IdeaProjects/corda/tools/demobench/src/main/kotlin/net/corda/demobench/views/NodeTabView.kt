@@ -6,9 +6,7 @@
 Inferred types:
     <reified T : Component & Injectable> -> DemoBenchView
 
-'param' @ [38:31] ==> public final inline fun <reified T> param(defaultValue: Boolean?): ReadOnlyProperty<Component, Boolean> defined in net.corda.demobench.views.NodeTabView[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified T> -> Boolean
+'getValue' @ [38:31] ==> public abstract operator fun getValue(thisRef: Component, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
 'Component' @ [40:32] ==> public constructor Component() defined in tornadofx.Component[DeserializedClassConstructorDescriptor]
 
@@ -70,7 +68,7 @@ Inferred types:
 
 'addListener' @ [58:22] ==> public abstract fun addListener(p0: (InvalidationListener..InvalidationListener?)): Unit defined in javafx.collections.ObservableList[JavaMethodDescriptor]
 
-'InvalidationListener' @ [58:34] ==> @FunctionalInterface public fun InvalidationListener(function: ((Observable..Observable?)) -> Unit): InvalidationListener defined in javafx.beans[SimpleFunctionDescriptorImpl]
+'InvalidationListener' @ [58:34] ==> @FunctionalInterface public fun InvalidationListener(function: ((Observable..Observable?)) -> Unit): InvalidationListener defined in javafx.beans[SamConstructorDescriptorImpl]
 
 'log' @ [59:17] ==> public final val log: (Logger..Logger?) defined in net.corda.demobench.views.NodeTabView.Companion[DeserializedPropertyDescriptor]
 
@@ -285,21 +283,21 @@ Inferred types:
 
 'CheckListView' @ [121:40] ==> public constructor CheckListView<T : (Any..Any?)>(p0: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)) defined in org.controlsfx.control.CheckListView[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'availableServices' @ [121:54] ==> private final val availableServices: List<String> defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
-'observable' @ [121:72] ==> public fun <T> List<String>.observable(): ObservableList<String> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'observable' @ [121:72] ==> public fun <T> List<(String..String?)>.observable(): ObservableList<(String..String?)> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> (kotlin.String..kotlin.String?)
 
-'apply' @ [121:86] ==> @InlineOnly public inline fun <T> CheckListView<String>.apply(block: CheckListView<String>.() -> Unit): CheckListView<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [121:86] ==> @InlineOnly public inline fun <T> CheckListView<(String..String?)>.apply(block: CheckListView<(String..String?)>.() -> Unit): CheckListView<(String..String?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> CheckListView<String>
+    <T> -> CheckListView<(kotlin.String..kotlin.String?)>
 
-'vboxConstraints' @ [122:25] ==> public fun <T : Node> CheckListView<String>.vboxConstraints(op: VBoxConstraint.() -> Unit): CheckListView<String> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
+'vboxConstraints' @ [122:25] ==> public fun <T : Node> CheckListView<(String..String?)>.vboxConstraints(op: VBoxConstraint.() -> Unit): CheckListView<(String..String?)> defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Node> -> CheckListView<String>
+    <T : Node> -> CheckListView<(kotlin.String..kotlin.String?)>
 
 'vGrow' @ [122:43] ==> public final var vGrow: Priority? defined in tornadofx.VBoxConstraint[DeserializedPropertyDescriptor]
 
@@ -309,13 +307,13 @@ Inferred types:
 
 'item' @ [123:31] ==> public final var item: (NodeData..NodeData?) defined in net.corda.demobench.model.NodeDataModel[DeserializedPropertyDescriptor]
 
-'extraServices' @ [123:36] ==> public final val extraServices: SimpleListProperty<String> defined in net.corda.demobench.model.NodeData[PropertyDescriptorImpl]
+'extraServices' @ [123:36] ==> public final val extraServices: SimpleListProperty<(String..String?)> defined in net.corda.demobench.model.NodeData[PropertyDescriptorImpl]
 
 'set' @ [123:50] ==> public open fun set(p0: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)): Unit defined in javafx.beans.property.SimpleListProperty[JavaMethodDescriptor]
 
-'checkModel' @ [123:54] ==> public final var <T : (Any..Any?)> CheckListView<String>.checkModel: (IndexedCheckModel<(String..String?)>..IndexedCheckModel<(String..String?)>?)[MyPropertyDescriptor]
+'checkModel' @ [123:54] ==> public final var <T : (Any..Any?)> CheckListView<(String..String?)>.checkModel: (IndexedCheckModel<(String..String?)>..IndexedCheckModel<(String..String?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'checkedItems' @ [123:65] ==> public final val <T : (Any..Any?)> IndexedCheckModel<(String..String?)>.checkedItems: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)[MyPropertyDescriptor]
 Inferred types:
@@ -327,15 +325,15 @@ Inferred types:
 
 'hasNetworkMap' @ [124:45] ==> public final fun hasNetworkMap(): Boolean defined in net.corda.demobench.model.NodeController[SimpleFunctionDescriptorImpl]
 
-'checkModel' @ [125:29] ==> public final var <T : (Any..Any?)> CheckListView<String>.checkModel: (IndexedCheckModel<(String..String?)>..IndexedCheckModel<(String..String?)>?)[MyPropertyDescriptor]
+'checkModel' @ [125:29] ==> public final var <T : (Any..Any?)> CheckListView<(String..String?)>.checkModel: (IndexedCheckModel<(String..String?)>..IndexedCheckModel<(String..String?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'check' @ [125:40] ==> public abstract fun check(p0: Int): Unit defined in org.controlsfx.control.IndexedCheckModel[JavaMethodDescriptor]
 
 'add' @ [128:21] ==> public final fun EventTarget.add(child: Node): Unit defined in net.corda.demobench.views.NodeTabView[DeserializedSimpleFunctionDescriptor]
 
-'servicesList' @ [128:25] ==> val servicesList: CheckListView<String> defined in net.corda.demobench.views.NodeTabView.nodeConfigView.<anonymous>.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'servicesList' @ [128:25] ==> val servicesList: CheckListView<(String..String?)> defined in net.corda.demobench.views.NodeTabView.nodeConfigView.<anonymous>.<anonymous>.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'hbox' @ [132:13] ==> public fun EventTarget.hbox(spacing: Number? = ..., children: Iterable<Node>? = ..., op: (HBox.() -> Unit)? = ...): HBox defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
@@ -447,9 +445,11 @@ Inferred types:
 
 'model' @ [176:9] ==> private final val model: NodeDataModel defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
-'p2pPort' @ [176:15] ==> public final val p2pPort: SimpleIntegerProperty defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
+'p2pPort' @ [176:15] ==> public final val p2pPort: Property<(Number..Number?)> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
 
-'value' @ [176:23] ==> public final var SimpleIntegerProperty.value: (Int..Int?)[MyPropertyDescriptor]
+'value' @ [176:23] ==> public final var <T : (Any..Any?)> Property<(Number..Number?)>.value: (Number..Number?)[MyPropertyDescriptor]
+Inferred types:
+    <T : (Any..Any?)> -> (kotlin.Number..kotlin.Number?)
 
 'nodeController' @ [176:31] ==> private final val nodeController: NodeController defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
@@ -457,9 +457,11 @@ Inferred types:
 
 'model' @ [177:9] ==> private final val model: NodeDataModel defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
-'rpcPort' @ [177:15] ==> public final val rpcPort: SimpleIntegerProperty defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
+'rpcPort' @ [177:15] ==> public final val rpcPort: Property<(Number..Number?)> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
 
-'value' @ [177:23] ==> public final var SimpleIntegerProperty.value: (Int..Int?)[MyPropertyDescriptor]
+'value' @ [177:23] ==> public final var <T : (Any..Any?)> Property<(Number..Number?)>.value: (Number..Number?)[MyPropertyDescriptor]
+Inferred types:
+    <T : (Any..Any?)> -> (kotlin.Number..kotlin.Number?)
 
 'nodeController' @ [177:31] ==> private final val nodeController: NodeController defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
@@ -467,9 +469,11 @@ Inferred types:
 
 'model' @ [178:9] ==> private final val model: NodeDataModel defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
-'webPort' @ [178:15] ==> public final val webPort: SimpleIntegerProperty defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
+'webPort' @ [178:15] ==> public final val webPort: Property<(Number..Number?)> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
 
-'value' @ [178:23] ==> public final var SimpleIntegerProperty.value: (Int..Int?)[MyPropertyDescriptor]
+'value' @ [178:23] ==> public final var <T : (Any..Any?)> Property<(Number..Number?)>.value: (Number..Number?)[MyPropertyDescriptor]
+Inferred types:
+    <T : (Any..Any?)> -> (kotlin.Number..kotlin.Number?)
 
 'nodeController' @ [178:31] ==> private final val nodeController: NodeController defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
@@ -477,9 +481,11 @@ Inferred types:
 
 'model' @ [179:9] ==> private final val model: NodeDataModel defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
-'h2Port' @ [179:15] ==> public final val h2Port: SimpleIntegerProperty defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
+'h2Port' @ [179:15] ==> public final val h2Port: Property<(Number..Number?)> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
 
-'value' @ [179:22] ==> public final var SimpleIntegerProperty.value: (Int..Int?)[MyPropertyDescriptor]
+'value' @ [179:22] ==> public final var <T : (Any..Any?)> Property<(Number..Number?)>.value: (Number..Number?)[MyPropertyDescriptor]
+Inferred types:
+    <T : (Any..Any?)> -> (kotlin.Number..kotlin.Number?)
 
 'nodeController' @ [179:30] ==> private final val nodeController: NodeController defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
@@ -491,9 +497,11 @@ Inferred types:
 
 'model' @ [182:9] ==> private final val model: NodeDataModel defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
-'legalName' @ [182:15] ==> public final val legalName: SimpleStringProperty defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
+'legalName' @ [182:15] ==> public final val legalName: Property<(String..String?)> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
 
-'value' @ [182:25] ==> public final var SimpleStringProperty.value: (String..String?)[MyPropertyDescriptor]
+'value' @ [182:25] ==> public final var <T : (Any..Any?)> Property<(String..String?)>.value: (String..String?)[MyPropertyDescriptor]
+Inferred types:
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'defaults' @ [182:33] ==> val defaults: Pair<String, String> defined in net.corda.demobench.views.NodeTabView.<init>[LocalVariableDescriptor]
 
@@ -501,11 +509,11 @@ Inferred types:
 
 'model' @ [183:9] ==> private final val model: NodeDataModel defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
-'nearestCity' @ [183:15] ==> public final val nearestCity: SimpleObjectProperty<WorldMapLocation> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
+'nearestCity' @ [183:15] ==> public final val nearestCity: Property<(WorldMapLocation..WorldMapLocation?)> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
 
-'value' @ [183:27] ==> public final var <T : (Any..Any?)> SimpleObjectProperty<WorldMapLocation>.value: (WorldMapLocation..WorldMapLocation?)[MyPropertyDescriptor]
+'value' @ [183:27] ==> public final var <T : (Any..Any?)> Property<(WorldMapLocation..WorldMapLocation?)>.value: (WorldMapLocation..WorldMapLocation?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> WorldMapLocation
+    <T : (Any..Any?)> -> (net.corda.core.node.WorldMapLocation..net.corda.core.node.WorldMapLocation?)
 
 'CityDatabase' @ [183:35] ==> public object CityDatabase defined in net.corda.core.node[FakeCallableDescriptorForObject]
 
@@ -543,7 +551,7 @@ Inferred types:
 
 'model' @ [192:50] ==> private final val model: NodeDataModel defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
-'legalName' @ [192:56] ==> public final val legalName: SimpleStringProperty defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
+'legalName' @ [192:56] ==> public final val legalName: Property<(String..String?)> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
 
 'minWidth' @ [193:9] ==> public final var TextField.minWidth: Double[MyPropertyDescriptor]
 
@@ -652,9 +660,7 @@ Inferred types:
 
 'model' @ [215:25] ==> private final val model: NodeDataModel defined in net.corda.demobench.views.NodeTabView[PropertyDescriptorImpl]
 
-'nearestCity' @ [215:31] ==> public final val nearestCity: SimpleObjectProperty<WorldMapLocation> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
-
-'CityDatabase' @ [215:44] ==> public object CityDatabase defined in net.corda.core.node[FakeCallableDescriptorForObject]
+'nearestCity' @ [215:31] ==> public final val nearestCity: Property<(WorldMapLocation..WorldMapLocation?)> defined in net.corda.demobench.model.NodeDataModel[PropertyDescriptorImpl]
 
 'cityMap' @ [215:57] ==> public final val cityMap: HashMap<String, WorldMapLocation> defined in net.corda.core.node.CityDatabase[DeserializedPropertyDescriptor]
 

@@ -67,7 +67,7 @@ Inferred types:
 
 'LinkedHashSet' @ [42:53] ==> public constructor LinkedHashSet<E : (Any..Any?)>() defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> SignedTransaction
+    <E : (Any..Any?)> -> (net.corda.core.transactions.SignedTransaction..net.corda.core.transactions.SignedTransaction?)
 
 'add' @ [42:71] ==> public open fun add(element: SignedTransaction): Boolean defined in java.util.HashSet[JavaMethodDescriptor]
 
@@ -113,6 +113,8 @@ Inferred types:
 Inferred types:
     <T> -> SignedTransaction
 
+'visit' @ [52:61] ==> local final fun visit(transaction: SignedTransaction): Unit defined in net.corda.core.internal.ResolveTransactionsFlow.Companion.topologicalSort[SimpleFunctionDescriptorImpl]
+
 'result' @ [53:21] ==> val result: ArrayList<SignedTransaction> defined in net.corda.core.internal.ResolveTransactionsFlow.Companion.topologicalSort[LocalVariableDescriptor]
 
 'add' @ [53:28] ==> public open fun add(element: SignedTransaction): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
@@ -124,6 +126,8 @@ Inferred types:
 'forEach' @ [57:26] ==> @HidesMembers public inline fun <T> Iterable<SignedTransaction>.forEach(action: (SignedTransaction) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> SignedTransaction
+
+'visit' @ [57:36] ==> local final fun visit(transaction: SignedTransaction): Unit defined in net.corda.core.internal.ResolveTransactionsFlow.Companion.topologicalSort[SimpleFunctionDescriptorImpl]
 
 'result' @ [59:13] ==> val result: ArrayList<SignedTransaction> defined in net.corda.core.internal.ResolveTransactionsFlow.Companion.topologicalSort[LocalVariableDescriptor]
 

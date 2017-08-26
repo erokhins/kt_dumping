@@ -128,8 +128,6 @@ Inferred types:
 
 'getNodesWithService' @ [127:63] ==> public open fun getNodesWithService(serviceType: ServiceType): List<NodeInfo> defined in net.corda.core.node.services.NetworkMapCache[DeserializedSimpleFunctionDescriptor]
 
-'ServiceType' @ [127:83] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
-
 'regulator' @ [127:95] ==> public final val regulator: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
 
 'legalIdentity' @ [127:109] ==> public final val legalIdentity: Party defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
@@ -211,8 +209,6 @@ Inferred types:
 'states' @ [214:70] ==> public final val states: List<StateAndRef<DummyState>> defined in net.corda.core.node.services.Vault.Page[DeserializedPropertyDescriptor]
 
 'StateRef' @ [226:41] ==> public constructor StateRef(txhash: SecureHash, index: Int) defined in net.corda.core.contracts.StateRef[DeserializedClassConstructorDescriptor]
-
-'SecureHash' @ [226:50] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
 'sha256' @ [226:61] ==> @JvmStatic public final fun sha256(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -530,8 +526,6 @@ Inferred types:
 
 'twiceSignedTx' @ [463:82] ==> val twiceSignedTx: SignedTransaction defined in net.corda.docs.FlowCookbook.InitiatorFlow.call[LocalVariableDescriptor]
 
-'SIGS_GATHERING' @ [463:97] ==> public object SIGS_GATHERING : ProgressTracker.Step defined in net.corda.docs.FlowCookbook.InitiatorFlow.Companion[FakeCallableDescriptorForObject]
-
 'childProgressTracker' @ [463:112] ==> public open fun childProgressTracker(): ProgressTracker defined in net.corda.docs.FlowCookbook.InitiatorFlow.Companion.SIGS_GATHERING[SimpleFunctionDescriptorImpl]
 
 'progressTracker' @ [469:13] ==> public open val progressTracker: ProgressTracker defined in net.corda.docs.FlowCookbook.InitiatorFlow[PropertyDescriptorImpl]
@@ -568,8 +562,6 @@ Inferred types:
 
 'fullySignedTx' @ [499:72] ==> val fullySignedTx: SignedTransaction defined in net.corda.docs.FlowCookbook.InitiatorFlow.call[LocalVariableDescriptor]
 
-'FINALISATION' @ [499:87] ==> public object FINALISATION : ProgressTracker.Step defined in net.corda.docs.FlowCookbook.InitiatorFlow.Companion[FakeCallableDescriptorForObject]
-
 'childProgressTracker' @ [499:100] ==> public open fun childProgressTracker(): ProgressTracker defined in net.corda.docs.FlowCookbook.InitiatorFlow.Companion.FINALISATION[SimpleFunctionDescriptorImpl]
 
 'single' @ [499:125] ==> public fun <T> List<SignedTransaction>.single(): SignedTransaction defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -595,8 +587,6 @@ Inferred types:
 'fullySignedTx' @ [505:79] ==> val fullySignedTx: SignedTransaction defined in net.corda.docs.FlowCookbook.InitiatorFlow.call[LocalVariableDescriptor]
 
 'additionalParties' @ [505:95] ==> val additionalParties: Set<Party> defined in net.corda.docs.FlowCookbook.InitiatorFlow.call[LocalVariableDescriptor]
-
-'FINALISATION' @ [505:114] ==> public object FINALISATION : ProgressTracker.Step defined in net.corda.docs.FlowCookbook.InitiatorFlow.Companion[FakeCallableDescriptorForObject]
 
 'childProgressTracker' @ [505:127] ==> public open fun childProgressTracker(): ProgressTracker defined in net.corda.docs.FlowCookbook.InitiatorFlow.Companion.FINALISATION[SimpleFunctionDescriptorImpl]
 

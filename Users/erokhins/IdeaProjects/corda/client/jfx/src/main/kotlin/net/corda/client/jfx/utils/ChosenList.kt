@@ -6,7 +6,7 @@ Inferred types:
 
 'value' @ [27:52] ==> public final val <T : (Any..Any?)> ObservableValue<out ObservableList<out E>>.value: (ObservableList<out E>..ObservableList<out E>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ObservableList<out E>
+    <T : (Any..Any?)> -> Captured(out ObservableList<out E>)
 
 'fireChange' @ [30:76] ==> protected/*protected and package*/ final fun fireChange(p0: (ListChangeListener.Change<out (E..E?)>..ListChangeListener.Change<out (E..E?)>?)): Unit defined in net.corda.client.jfx.utils.ChosenList[JavaMethodDescriptor]
 
@@ -20,7 +20,7 @@ Inferred types:
 
 'currentList' @ [35:9] ==> private final var currentList: (ObservableList<out E>..ObservableList<out E>?) defined in net.corda.client.jfx.utils.ChosenList[PropertyDescriptorImpl]
 
-'addListener' @ [35:21] ==> public abstract fun addListener(p0: (ListChangeListener<in (Nothing..Nothing?)>..ListChangeListener<in (Nothing..Nothing?)>?)): Unit defined in javafx.collections.ObservableList[JavaMethodDescriptor]
+'addListener' @ [35:21] ==> public abstract fun addListener(p0: (ListChangeListener<in (E..E?)>..ListChangeListener<in (E..E?)>?)): Unit defined in javafx.collections.ObservableList[JavaMethodDescriptor]
 
 'listener' @ [35:33] ==> private final val listener: <no name provided><E> defined in net.corda.client.jfx.utils.ChosenList[PropertyDescriptorImpl]
 
@@ -34,11 +34,11 @@ Inferred types:
 
 'endChange' @ [38:9] ==> protected/*protected and package*/ final fun endChange(): Unit defined in net.corda.client.jfx.utils.ChosenList[JavaMethodDescriptor]
 
-'currentList' @ [41:39] ==> private final var currentList: (ObservableList<out E>..ObservableList<out E>?) defined in net.corda.client.jfx.utils.ChosenList[PropertyDescriptorImpl]
+'currentList' @ [41:36] ==> private final var currentList: (ObservableList<out E>..ObservableList<out E>?) defined in net.corda.client.jfx.utils.ChosenList[PropertyDescriptorImpl]
 
-'get' @ [41:51] ==> public abstract fun get(index: Int): ({Any & E}..E?) defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
+'get' @ [41:48] ==> public abstract fun get(index: Int): (E..E?) defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
 
-'index' @ [41:55] ==> value-parameter index: Int defined in net.corda.client.jfx.utils.ChosenList.get[ValueParameterDescriptorImpl]
+'index' @ [41:52] ==> value-parameter index: Int defined in net.corda.client.jfx.utils.ChosenList.get[ValueParameterDescriptorImpl]
 
 'currentList' @ [42:36] ==> private final var currentList: (ObservableList<out E>..ObservableList<out E>?) defined in net.corda.client.jfx.utils.ChosenList[PropertyDescriptorImpl]
 
@@ -48,7 +48,7 @@ Inferred types:
 
 'value' @ [45:47] ==> public final val <T : (Any..Any?)> ObservableValue<out ObservableList<out E>>.value: (ObservableList<out E>..ObservableList<out E>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ObservableList<out E>
+    <T : (Any..Any?)> -> Captured(out ObservableList<out E>)
 
 'currentList' @ [46:13] ==> private final var currentList: (ObservableList<out E>..ObservableList<out E>?) defined in net.corda.client.jfx.utils.ChosenList[PropertyDescriptorImpl]
 
@@ -60,13 +60,13 @@ Inferred types:
 
 'currentList' @ [52:9] ==> private final var currentList: (ObservableList<out E>..ObservableList<out E>?) defined in net.corda.client.jfx.utils.ChosenList[PropertyDescriptorImpl]
 
-'removeListener' @ [52:21] ==> public abstract fun removeListener(p0: (ListChangeListener<in (Nothing..Nothing?)>..ListChangeListener<in (Nothing..Nothing?)>?)): Unit defined in javafx.collections.ObservableList[JavaMethodDescriptor]
+'removeListener' @ [52:21] ==> public abstract fun removeListener(p0: (ListChangeListener<in (E..E?)>..ListChangeListener<in (E..E?)>?)): Unit defined in javafx.collections.ObservableList[JavaMethodDescriptor]
 
 'listener' @ [52:36] ==> private final val listener: <no name provided><E> defined in net.corda.client.jfx.utils.ChosenList[PropertyDescriptorImpl]
 
 'list' @ [53:9] ==> value-parameter list: ObservableList<out E> defined in net.corda.client.jfx.utils.ChosenList.pick[ValueParameterDescriptorImpl]
 
-'addListener' @ [53:14] ==> public abstract fun addListener(p0: (ListChangeListener<in (Nothing..Nothing?)>..ListChangeListener<in (Nothing..Nothing?)>?)): Unit defined in javafx.collections.ObservableList[JavaMethodDescriptor]
+'addListener' @ [53:14] ==> public abstract fun addListener(p0: (ListChangeListener<in (E..E?)>..ListChangeListener<in (E..E?)>?)): Unit defined in javafx.collections.ObservableList[JavaMethodDescriptor]
 
 'listener' @ [53:26] ==> private final val listener: <no name provided><E> defined in net.corda.client.jfx.utils.ChosenList[PropertyDescriptorImpl]
 

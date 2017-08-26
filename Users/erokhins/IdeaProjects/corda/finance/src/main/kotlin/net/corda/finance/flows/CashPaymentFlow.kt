@@ -60,9 +60,9 @@ Inferred types:
             subFlow(TransactionKeyFlow(recipient))
         } else {
             emptyMap<Party, AnonymousParty>()
-        }' @ [41:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<Party, AnonymousParty>, elseBranch: Map<Party, AnonymousParty>): Map<Party, AnonymousParty>[SimpleFunctionDescriptorImpl]
+        }' @ [41:28] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Map<(Party..Party?), (AnonymousParty..AnonymousParty?)>, elseBranch: Map<(Party..Party?), (AnonymousParty..AnonymousParty?)>): Map<(Party..Party?), (AnonymousParty..AnonymousParty?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<Party, AnonymousParty>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Map<(net.corda.core.identity.Party..net.corda.core.identity.Party?), (net.corda.core.identity.AnonymousParty..net.corda.core.identity.AnonymousParty?)>
 
 'anonymous' @ [41:32] ==> public final val anonymous: Boolean defined in net.corda.finance.flows.CashPaymentFlow[PropertyDescriptorImpl]
 
@@ -79,7 +79,7 @@ Inferred types:
     <K> -> Party
     <V> -> AnonymousParty
 
-'txIdentities' @ [46:34] ==> val txIdentities: Map<Party, AnonymousParty> defined in net.corda.finance.flows.CashPaymentFlow.call[LocalVariableDescriptor]
+'txIdentities' @ [46:34] ==> val txIdentities: Map<(Party..Party?), (AnonymousParty..AnonymousParty?)> defined in net.corda.finance.flows.CashPaymentFlow.call[LocalVariableDescriptor]
 
 'recipient' @ [46:47] ==> public final val recipient: Party defined in net.corda.finance.flows.CashPaymentFlow[PropertyDescriptorImpl]
 

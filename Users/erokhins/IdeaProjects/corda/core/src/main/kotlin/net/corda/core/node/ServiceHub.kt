@@ -168,8 +168,6 @@ Inferred types:
 
 'platformVersion' @ [169:81] ==> public final val platformVersion: Int defined in net.corda.core.node.NodeInfo[PropertyDescriptorImpl]
 
-'Crypto' @ [169:98] ==> public object Crypto defined in net.corda.core.crypto in file Crypto.kt[FakeCallableDescriptorForObject]
-
 'findSignatureScheme' @ [169:105] ==> @JvmStatic public final fun findSignatureScheme(key: PublicKey): SignatureScheme defined in net.corda.core.crypto.Crypto[SimpleFunctionDescriptorImpl]
 
 'publicKey' @ [169:125] ==> value-parameter publicKey: PublicKey defined in net.corda.core.node.ServiceHub.signInitialTransaction[ValueParameterDescriptorImpl]
@@ -237,8 +235,6 @@ Inferred types:
 'myInfo' @ [213:77] ==> public abstract val myInfo: NodeInfo defined in net.corda.core.node.ServiceHub[PropertyDescriptorImpl]
 
 'platformVersion' @ [213:84] ==> public final val platformVersion: Int defined in net.corda.core.node.NodeInfo[PropertyDescriptorImpl]
-
-'Crypto' @ [213:101] ==> public object Crypto defined in net.corda.core.crypto in file Crypto.kt[FakeCallableDescriptorForObject]
 
 'findSignatureScheme' @ [213:108] ==> @JvmStatic public final fun findSignatureScheme(key: PublicKey): SignatureScheme defined in net.corda.core.crypto.Crypto[SimpleFunctionDescriptorImpl]
 

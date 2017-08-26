@@ -246,8 +246,6 @@ Inferred types:
 Inferred types:
     <R> -> List<TransactionSignature>
 
-'NotaryFlow' @ [130:32] ==> public object NotaryFlow defined in net.corda.core.flows in file NotaryFlow.kt[FakeCallableDescriptorForObject]
-
 'Client' @ [130:43] ==> public constructor Client(stx: SignedTransaction) defined in net.corda.core.flows.NotaryFlow.Client[ClassConstructorDescriptorImpl]
 
 'stx' @ [130:50] ==> value-parameter stx: SignedTransaction defined in net.corda.core.flows.AbstractStateReplacementFlow.Instigator.getNotarySignatures[ValueParameterDescriptorImpl]

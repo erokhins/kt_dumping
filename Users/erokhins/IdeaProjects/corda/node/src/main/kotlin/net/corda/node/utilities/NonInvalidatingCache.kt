@@ -30,13 +30,13 @@ Inferred types:
 
 'build' @ [19:28] ==> public open fun <K1 : (Any..Any?), V1 : (Any..Any?)> build(p0: (CacheLoader<in (K..K?), (V..V?)>..CacheLoader<in (K..K?), (V..V?)>?)): (LoadingCache<(K..K?), (V..V?)>..LoadingCache<(K..K?), (V..V?)>?) defined in com.google.common.cache.CacheBuilder[JavaMethodDescriptor]
 Inferred types:
-    <K1 : (Any..Any?)> -> K
-    <V1 : (Any..Any?)> -> V
+    <K1 : (Any..Any?)> -> (K..K?)
+    <V1 : (Any..Any?)> -> (V..V?)
 
-'NonInvalidatingCacheLoader' @ [19:34] ==> public constructor NonInvalidatingCacheLoader<K, V>(loadFunction: (K) -> V) defined in net.corda.node.utilities.NonInvalidatingCache.NonInvalidatingCacheLoader[ClassConstructorDescriptorImpl]
+'NonInvalidatingCacheLoader' @ [19:34] ==> public constructor NonInvalidatingCacheLoader<K, V>(loadFunction: ((K..K?)) -> (V..V?)) defined in net.corda.node.utilities.NonInvalidatingCache.NonInvalidatingCacheLoader[ClassConstructorDescriptorImpl]
 Inferred types:
-    <K> -> K
-    <V> -> V
+    <K> -> (K..K?)
+    <V> -> (V..V?)
 
 'loadFunction' @ [19:61] ==> value-parameter loadFunction: (K) -> V defined in net.corda.node.utilities.NonInvalidatingCache.Companion.buildCache[ValueParameterDescriptorImpl]
 

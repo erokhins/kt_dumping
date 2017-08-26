@@ -14,7 +14,7 @@ Inferred types:
 
 'load' @ [52:56] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(CashSelection..CashSelection?)>..Class<(CashSelection..CashSelection?)>?)): (ServiceLoader<(CashSelection..CashSelection?)>..ServiceLoader<(CashSelection..CashSelection?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> CashSelection
+    <S : (Any..Any?)> -> (net.corda.finance.contracts.asset.CashSelection..net.corda.finance.contracts.asset.CashSelection?)
 
 'CashSelection' @ [52:61] ==> public companion object defined in net.corda.finance.contracts.asset.CashSelection[FakeCallableDescriptorForObject]
 
@@ -40,10 +40,10 @@ Inferred types:
 
 'cashSelectionAlgo' @ [54:17] ==> val cashSelectionAlgo: CashSelection? defined in net.corda.finance.contracts.asset.CashSelection.Companion.getInstance.<anonymous>[LocalVariableDescriptor]
 
-'let' @ [54:36] ==> @InlineOnly public inline fun <T, R> CashSelection.let(block: (CashSelection) -> CashSelection): CashSelection defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [54:36] ==> @InlineOnly public inline fun <T, R> CashSelection.let(block: (CashSelection) -> CashSelection?): CashSelection? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> CashSelection
-    <R> -> CashSelection
+    <R> -> CashSelection?
 
 'instance' @ [55:21] ==> public final val instance: AtomicReference<CashSelection> defined in net.corda.finance.contracts.asset.CashSelection.Companion[PropertyDescriptorImpl]
 
@@ -242,8 +242,6 @@ Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> PersistentState
 
 'schema' @ [139:26] ==> value-parameter schema: MappedSchema defined in net.corda.finance.contracts.asset.Cash.State.generateMappedObject[ValueParameterDescriptorImpl]
-
-'CashSchemaV1' @ [140:36] ==> @CordaSerializable public object CashSchemaV1 : MappedSchema defined in net.corda.finance.schemas in file CashSchemaV1.kt[FakeCallableDescriptorForObject]
 
 'PersistentCashState' @ [140:49] ==> public constructor PersistentCashState(owner: AbstractParty, pennies: Long, currency: String, issuerParty: String, issuerRef: ByteArray) defined in net.corda.finance.schemas.CashSchemaV1.PersistentCashState[ClassConstructorDescriptorImpl]
 
@@ -462,13 +460,13 @@ Inferred types:
 
 'inputs' @ [217:35] ==> val inputs: List<Cash.State> defined in net.corda.finance.contracts.asset.Cash.verify[LocalVariableDescriptor]
 
-'sumCashOrNull' @ [217:42] ==> public fun Iterable<ContractState>.sumCashOrNull(): Amount<Issued<Currency>>? defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCashOrNull' @ [217:42] ==> public fun Iterable<ContractState>.sumCashOrNull(): Amount<Issued<Currency>>? defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'IllegalArgumentException' @ [217:67] ==> public final fun <init>(p0: (String..String?)): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
 
 'outputs' @ [218:36] ==> val outputs: List<Cash.State> defined in net.corda.finance.contracts.asset.Cash.verify[LocalVariableDescriptor]
 
-'sumCashOrZero' @ [218:44] ==> public fun Iterable<ContractState>.sumCashOrZero(currency: Issued<Currency>): Amount<Issued<Currency>> defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCashOrZero' @ [218:44] ==> public fun Iterable<ContractState>.sumCashOrZero(currency: Issued<Currency>): Amount<Issued<Currency>> defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'Issued' @ [218:58] ==> public constructor Issued<out P : Any>(issuer: PartyAndReference, product: Currency) defined in net.corda.core.contracts.Issued[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -597,7 +595,7 @@ Inferred types:
 
 'inputs' @ [254:27] ==> value-parameter inputs: List<Cash.State> defined in net.corda.finance.contracts.asset.Cash.verifyIssueCommand[ValueParameterDescriptorImpl]
 
-'sumCashOrZero' @ [254:34] ==> public fun Iterable<ContractState>.sumCashOrZero(currency: Issued<Currency>): Amount<Issued<Currency>> defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCashOrZero' @ [254:34] ==> public fun Iterable<ContractState>.sumCashOrZero(currency: Issued<Currency>): Amount<Issued<Currency>> defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'Issued' @ [254:48] ==> public constructor Issued<out P : Any>(issuer: PartyAndReference, product: Currency) defined in net.corda.core.contracts.Issued[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -609,7 +607,7 @@ Inferred types:
 
 'outputs' @ [255:28] ==> value-parameter outputs: List<Cash.State> defined in net.corda.finance.contracts.asset.Cash.verifyIssueCommand[ValueParameterDescriptorImpl]
 
-'sumCash' @ [255:36] ==> public fun Iterable<ContractState>.sumCash(): Amount<Issued<Currency>> defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCash' @ [255:36] ==> public fun Iterable<ContractState>.sumCash(): Amount<Issued<Currency>> defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'tx' @ [256:28] ==> value-parameter tx: LedgerTransaction defined in net.corda.finance.contracts.asset.Cash.verifyIssueCommand[ValueParameterDescriptorImpl]
 
@@ -744,17 +742,17 @@ Inferred types:
 
 'deposit' @ [311:108] ==> value-parameter deposit: PartyAndReference defined in net.corda.finance.contracts.asset.`with deposit`[ValueParameterDescriptorImpl]
 
-'lazy' @ [316:30] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [316:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [316:37] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
 'valueOf' @ [316:65] ==> public open fun valueOf(p0: Long): (BigInteger..BigInteger?) defined in java.math.BigInteger[JavaMethodDescriptor]
 
-'lazy' @ [318:26] ==> public fun <T> lazy(initializer: () -> PartyAndReference): Lazy<PartyAndReference> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [318:26] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PartyAndReference
+    <T> -> T
 
 'Party' @ [318:33] ==> public constructor Party(name: X500Name, owningKey: PublicKey) defined in net.corda.core.identity.Party[DeserializedClassConstructorDescriptor]
 

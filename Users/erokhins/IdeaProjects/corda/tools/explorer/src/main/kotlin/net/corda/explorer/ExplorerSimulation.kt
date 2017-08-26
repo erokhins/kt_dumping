@@ -73,8 +73,6 @@ Inferred types:
 
 'ServiceInfo' @ [74:82] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
 
-'SimpleNotaryService' @ [74:94] ==> public companion object defined in net.corda.node.services.transactions.SimpleNotaryService[FakeCallableDescriptorForObject]
-
 'type' @ [74:114] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.SimpleNotaryService.Companion[DeserializedPropertyDescriptor]
 
 'mapOf' @ [75:39] ==> public fun <K, V> mapOf(pair: Pair<String, String>): Map<String, String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -104,8 +102,6 @@ Inferred types:
     <T> -> ServiceInfo
 
 'ServiceInfo' @ [77:48] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'ServiceType' @ [77:60] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
 
 'corda' @ [77:72] ==> public final val corda: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
 
@@ -138,8 +134,6 @@ Inferred types:
     <T> -> ServiceInfo
 
 'ServiceInfo' @ [80:48] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'ServiceType' @ [80:60] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
 
 'corda' @ [80:72] ==> public final val corda: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
 
@@ -175,8 +169,6 @@ Inferred types:
 
 'ServiceInfo' @ [85:48] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
 
-'ServiceType' @ [85:60] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
-
 'corda' @ [85:72] ==> public final val corda: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
 
 'getSubType' @ [85:78] ==> public final fun getSubType(subTypeId: String): ServiceType defined in net.corda.core.node.services.ServiceType[DeserializedSimpleFunctionDescriptor]
@@ -206,8 +198,6 @@ Inferred types:
     <T> -> ServiceInfo
 
 'ServiceInfo' @ [88:48] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'ServiceType' @ [88:60] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
 
 'corda' @ [88:72] ==> public final val corda: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
 
@@ -582,6 +572,8 @@ Inferred types:
     <A> -> IssueAndPaymentRequest
     <reified R : FlowLogic<T>> -> CashIssueAndPaymentFlow
 
+'CashIssueAndPaymentFlow' @ [155:40] ==> public constructor CashIssueAndPaymentFlow(request: CashIssueAndPaymentFlow.IssueAndPaymentRequest) defined in net.corda.finance.flows.CashIssueAndPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'request' @ [155:65] ==> value-parameter request: AbstractCashFlow.AbstractRequest defined in net.corda.explorer.ExplorerSimulation.startSimulation.<anonymous>[ValueParameterDescriptorImpl]
 
 'log' @ [155:74] ==> local final fun FlowHandle<AbstractCashFlow.Result>.log(seq: Int, name: String): Unit defined in net.corda.explorer.ExplorerSimulation.startSimulation[SimpleFunctionDescriptorImpl]
@@ -629,6 +621,8 @@ Inferred types:
     <A> -> ExitRequest
     <reified R : FlowLogic<T>> -> CashExitFlow
 
+'CashExitFlow' @ [159:40] ==> public constructor CashExitFlow(request: CashExitFlow.ExitRequest) defined in net.corda.finance.flows.CashExitFlow[DeserializedClassConstructorDescriptor]
+
 'request' @ [159:54] ==> value-parameter request: AbstractCashFlow.AbstractRequest defined in net.corda.explorer.ExplorerSimulation.startSimulation.<anonymous>[ValueParameterDescriptorImpl]
 
 'log' @ [159:63] ==> local final fun FlowHandle<AbstractCashFlow.Result>.log(seq: Int, name: String): Unit defined in net.corda.explorer.ExplorerSimulation.startSimulation[SimpleFunctionDescriptorImpl]
@@ -657,8 +651,6 @@ Inferred types:
 Inferred types:
     <B> -> Pair<Party, CordaRPCOps>
     <R> -> Unit
-
-'Generator' @ [165:54] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
 'pickOne' @ [165:64] ==> public fun <A> Generator.Companion.pickOne(list: List<Pair<Party, CordaRPCOps>>): Generator<Pair<Party, CordaRPCOps>> defined in net.corda.client.mock[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -693,6 +685,8 @@ Inferred types:
     <T : Any> -> Result
     <A> -> PaymentRequest
     <reified R : FlowLogic<T>> -> CashPaymentFlow
+
+'CashPaymentFlow' @ [167:33] ==> public constructor CashPaymentFlow(request: CashPaymentFlow.PaymentRequest) defined in net.corda.finance.flows.CashPaymentFlow[DeserializedClassConstructorDescriptor]
 
 'request' @ [167:50] ==> value-parameter request: CashPaymentFlow.PaymentRequest defined in net.corda.explorer.ExplorerSimulation.startSimulation.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -782,6 +776,8 @@ Inferred types:
     <D> -> Boolean
     <E> -> Party
     <reified R : FlowLogic<T>> -> CashIssueAndPaymentFlow
+
+'CashIssueAndPaymentFlow' @ [188:40] ==> public constructor CashIssueAndPaymentFlow(amount: Amount<Currency>, issueRef: OpaqueBytes, recipient: Party, anonymous: Boolean, notary: Party) defined in net.corda.finance.flows.CashIssueAndPaymentFlow[DeserializedClassConstructorDescriptor]
 
 'amount' @ [188:65] ==> val amount: Amount<Currency> defined in net.corda.explorer.ExplorerSimulation.startNormalSimulation.<anonymous>[LocalVariableDescriptor]
 

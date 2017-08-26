@@ -109,6 +109,8 @@ Inferred types:
     <A> -> IssueAndPaymentRequest
     <reified R : FlowLogic<T>> -> CashIssueAndPaymentFlow
 
+'CashIssueAndPaymentFlow' @ [35:81] ==> public constructor CashIssueAndPaymentFlow(request: CashIssueAndPaymentFlow.IssueAndPaymentRequest) defined in net.corda.finance.flows.CashIssueAndPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'request' @ [35:106] ==> val request: AbstractCashFlow.AbstractRequest defined in net.corda.loadtest.tests.StabilityTest.crossCashTest.<anonymous>[LocalVariableDescriptor]
 
 'returnValue' @ [35:115] ==> public abstract val returnValue: CordaFuture<AbstractCashFlow.Result> defined in net.corda.core.messaging.FlowHandle[DeserializedPropertyDescriptor]
@@ -125,6 +127,8 @@ Inferred types:
     <A> -> PaymentRequest
     <reified R : FlowLogic<T>> -> CashPaymentFlow
 
+'CashPaymentFlow' @ [36:73] ==> public constructor CashPaymentFlow(request: CashPaymentFlow.PaymentRequest) defined in net.corda.finance.flows.CashPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'request' @ [36:90] ==> val request: AbstractCashFlow.AbstractRequest defined in net.corda.loadtest.tests.StabilityTest.crossCashTest.<anonymous>[LocalVariableDescriptor]
 
 'returnValue' @ [36:99] ==> public abstract val returnValue: CordaFuture<AbstractCashFlow.Result> defined in net.corda.core.messaging.FlowHandle[DeserializedPropertyDescriptor]
@@ -140,6 +144,8 @@ Inferred types:
     <T : Any> -> Result
     <A> -> ExitRequest
     <reified R : FlowLogic<T>> -> CashExitFlow
+
+'CashExitFlow' @ [37:70] ==> public constructor CashExitFlow(request: CashExitFlow.ExitRequest) defined in net.corda.finance.flows.CashExitFlow[DeserializedClassConstructorDescriptor]
 
 'request' @ [37:84] ==> val request: AbstractCashFlow.AbstractRequest defined in net.corda.loadtest.tests.StabilityTest.crossCashTest.<anonymous>[LocalVariableDescriptor]
 
@@ -195,8 +201,6 @@ Inferred types:
 
 'USD' @ [55:84] ==> @field:JvmField public val USD: Currency defined in net.corda.finance[DeserializedPropertyDescriptor]
 
-'OpaqueBytes' @ [55:90] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
-
 'of' @ [55:102] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[DeserializedSimpleFunctionDescriptor]
 
 'issuer' @ [55:109] ==> value-parameter issuer: NodeConnection defined in net.corda.loadtest.tests.StabilityTest.selfIssueTest.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -244,6 +248,8 @@ Inferred types:
     <T : Any> -> Result
     <A> -> IssueAndPaymentRequest
     <reified R : FlowLogic<T>> -> CashIssueAndPaymentFlow
+
+'CashIssueAndPaymentFlow' @ [62:57] ==> public constructor CashIssueAndPaymentFlow(request: CashIssueAndPaymentFlow.IssueAndPaymentRequest) defined in net.corda.finance.flows.CashIssueAndPaymentFlow[DeserializedClassConstructorDescriptor]
 
 'request' @ [62:82] ==> val request: CashIssueAndPaymentFlow.IssueAndPaymentRequest defined in net.corda.loadtest.tests.StabilityTest.selfIssueTest.<anonymous>[LocalVariableDescriptor]
 

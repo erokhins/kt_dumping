@@ -30,6 +30,8 @@ Inferred types:
 
 'UpdateBusinessDayFlow' @ [33:27] ==> public object UpdateBusinessDayFlow defined in net.corda.irs.flows in file UpdateBusinessDayFlow.kt[FakeCallableDescriptorForObject]
 
+'Broadcast' @ [33:50] ==> public constructor Broadcast(date: LocalDate) defined in net.corda.irs.flows.UpdateBusinessDayFlow.Broadcast[ClassConstructorDescriptorImpl]
+
 'newDemoDate' @ [33:61] ==> value-parameter newDemoDate: LocalDate defined in net.corda.irs.api.InterestRatesSwapDemoAPI.storeDemoDate[ValueParameterDescriptorImpl]
 
 'returnValue' @ [33:74] ==> public abstract val returnValue: CordaFuture<Unit> defined in net.corda.core.messaging.FlowHandle[DeserializedPropertyDescriptor]
@@ -97,6 +99,8 @@ Inferred types:
     <reified R : FlowLogic<T>> -> UploadFixesFlow
 
 'NodeInterestRates' @ [52:23] ==> public object NodeInterestRates defined in net.corda.irs.api[FakeCallableDescriptorForObject]
+
+'UploadFixesFlow' @ [52:42] ==> public constructor UploadFixesFlow(s: String) defined in net.corda.irs.api.NodeInterestRates.UploadFixesFlow[DeserializedClassConstructorDescriptor]
 
 'file' @ [52:59] ==> value-parameter file: String defined in net.corda.irs.api.InterestRatesSwapDemoAPI.storeFixes[ValueParameterDescriptorImpl]
 

@@ -57,15 +57,15 @@ Inferred types:
 
 'kotlin' @ [58:19] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
-'constructors' @ [58:26] ==> public abstract val constructors: Collection<KFunction<Any>> defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
+'constructors' @ [58:26] ==> public abstract val constructors: Collection<KFunction<(Any..Any?)>> defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
-'forEach' @ [58:39] ==> @HidesMembers public inline fun <T> Iterable<KFunction<Any>>.forEach(action: (KFunction<Any>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [58:39] ==> @HidesMembers public inline fun <T> Iterable<KFunction<(Any..Any?)>>.forEach(action: (KFunction<(Any..Any?)>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KFunction<Any>
+    <T> -> KFunction<(kotlin.Any..kotlin.Any?)>
 
-'it' @ [59:31] ==> value-parameter it: KFunction<Any> defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [59:31] ==> value-parameter it: KFunction<(Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor.<anonymous>[ValueParameterDescriptorImpl]
 
 'findAnnotation' @ [59:34] ==> @SinceKotlin public inline fun <reified T : Annotation> KAnnotatedElement.findAnnotation(): DeprecatedConstructorForDeserialization? defined in kotlin.reflect.full[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -79,7 +79,7 @@ Inferred types:
 
 'containsAll' @ [60:36] ==> public abstract fun containsAll(elements: Collection<Pair<String?, Type>>): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'it' @ [60:48] ==> value-parameter it: KFunction<Any> defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [60:48] ==> value-parameter it: KFunction<(Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor.<anonymous>[ValueParameterDescriptorImpl]
 
 'parameters' @ [60:51] ==> public abstract val parameters: List<KParameter> defined in kotlin.reflect.KFunction[DeserializedPropertyDescriptor]
 
@@ -109,7 +109,7 @@ Inferred types:
 
 'constructor' @ [62:21] ==> var constructor: KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor[LocalVariableDescriptor]
 
-'it' @ [62:35] ==> value-parameter it: KFunction<Any> defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [62:35] ==> value-parameter it: KFunction<(Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor.<anonymous>[ValueParameterDescriptorImpl]
 
 'maxConstructorVersion' @ [63:21] ==> var maxConstructorVersion: Int defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor[LocalVariableDescriptor]
 
@@ -117,7 +117,7 @@ Inferred types:
 
 'constructor' @ [69:20] ==> var constructor: KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor[LocalVariableDescriptor]
 
-'constructorForDeserialization' @ [69:35] ==> internal fun constructorForDeserialization(type: Type): KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'constructorForDeserialization' @ [69:35] ==> internal fun constructorForDeserialization(type: Type): KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'type' @ [69:65] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.getEvolverConstructor[ValueParameterDescriptorImpl]
 
@@ -136,7 +136,7 @@ Inferred types:
 
 'it' @ [85:39] ==> value-parameter it: Field defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make.<anonymous>[ValueParameterDescriptorImpl]
 
-'getTypeAsClass' @ [85:42] ==> public fun Field.getTypeAsClass(classloader: ClassLoader): Class<out Any> defined in net.corda.nodeapi.internal.serialization.carpenter[SimpleFunctionDescriptorImpl]
+'getTypeAsClass' @ [85:42] ==> public fun Field.getTypeAsClass(classloader: ClassLoader): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in net.corda.nodeapi.internal.serialization.carpenter in file AMQPSchemaExtensions.kt[SimpleFunctionDescriptorImpl]
 
 'factory' @ [85:57] ==> value-parameter factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make[ValueParameterDescriptorImpl]
 
@@ -176,7 +176,7 @@ Inferred types:
 
 'it' @ [95:34] ==> value-parameter it: Field defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make.<anonymous>[ValueParameterDescriptorImpl]
 
-'getTypeAsClass' @ [95:37] ==> public fun Field.getTypeAsClass(classloader: ClassLoader): Class<out Any> defined in net.corda.nodeapi.internal.serialization.carpenter[SimpleFunctionDescriptorImpl]
+'getTypeAsClass' @ [95:37] ==> public fun Field.getTypeAsClass(classloader: ClassLoader): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in net.corda.nodeapi.internal.serialization.carpenter in file AMQPSchemaExtensions.kt[SimpleFunctionDescriptorImpl]
 
 'factory' @ [95:52] ==> value-parameter factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make[ValueParameterDescriptorImpl]
 
@@ -190,11 +190,9 @@ Inferred types:
 
 'OldParam' @ [96:36] ==> public constructor OldParam(type: Type, idx: Int, property: PropertySerializer) defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.OldParam[ClassConstructorDescriptorImpl]
 
-'returnType' @ [97:25] ==> val returnType: Class<out Any> defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make.<anonymous>[LocalVariableDescriptor]
+'returnType' @ [97:25] ==> val returnType: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make.<anonymous>[LocalVariableDescriptor]
 
 'idx' @ [97:37] ==> var idx: Int defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make[LocalVariableDescriptor]
-
-'PropertySerializer' @ [97:44] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.PropertySerializer[FakeCallableDescriptorForObject]
 
 'make' @ [97:63] ==> public final fun make(name: String, readMethod: Method?, resolvedType: Type, factory: SerializerFactory): PropertySerializer defined in net.corda.nodeapi.internal.serialization.amqp.PropertySerializer.Companion[SimpleFunctionDescriptorImpl]
 
@@ -202,7 +200,7 @@ Inferred types:
 
 'name' @ [97:71] ==> public final val name: String defined in net.corda.nodeapi.internal.serialization.amqp.Field[PropertyDescriptorImpl]
 
-'returnType' @ [97:83] ==> val returnType: Class<out Any> defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make.<anonymous>[LocalVariableDescriptor]
+'returnType' @ [97:83] ==> val returnType: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make.<anonymous>[LocalVariableDescriptor]
 
 'factory' @ [97:95] ==> value-parameter factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.EvolutionSerializer.Companion.make[ValueParameterDescriptorImpl]
 

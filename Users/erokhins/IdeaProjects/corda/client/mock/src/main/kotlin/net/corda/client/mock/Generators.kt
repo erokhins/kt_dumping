@@ -12,7 +12,7 @@ Inferred types:
 
 'Generator' @ [12:12] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
-'longRange' @ [12:22] ==> public fun Generator.Companion.longRange(from: Long, to: Long): Generator<Long> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'longRange' @ [12:22] ==> public fun Generator.Companion.longRange(from: Long, to: Long): Generator<Long> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'min' @ [12:32] ==> value-parameter min: Long defined in net.corda.client.mock.generateAmount[ValueParameterDescriptorImpl]
 
@@ -41,11 +41,11 @@ Inferred types:
 
 'max' @ [16:32] ==> value-parameter max: Long defined in net.corda.client.mock.generateCurrencyAmount[ValueParameterDescriptorImpl]
 
-'generateCurrency' @ [16:37] ==> public fun generateCurrency(): Generator<Currency> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'generateCurrency' @ [16:37] ==> public fun generateCurrency(): Generator<Currency> defined in net.corda.client.mock in file Generators.kt[SimpleFunctionDescriptorImpl]
 
 'Generator' @ [20:12] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
-'bytes' @ [20:22] ==> public fun Generator.Companion.bytes(size: Int): Generator<ByteArray> defined in net.corda.client.mock[SimpleFunctionDescriptorImpl]
+'bytes' @ [20:22] ==> public fun Generator.Companion.bytes(size: Int): Generator<ByteArray> defined in net.corda.client.mock in file Generator.kt[SimpleFunctionDescriptorImpl]
 
 'size' @ [20:28] ==> value-parameter size: Int defined in net.corda.client.mock.generateIssueRef[ValueParameterDescriptorImpl]
 

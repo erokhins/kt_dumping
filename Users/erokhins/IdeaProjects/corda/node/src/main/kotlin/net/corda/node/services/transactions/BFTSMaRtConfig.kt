@@ -88,7 +88,7 @@ Inferred types:
 
 'n' @ [43:100] ==> val n: Int defined in net.corda.node.services.transactions.BFTSMaRtConfig.<init>[LocalVariableDescriptor]
 
-'maxFaultyReplicas' @ [43:103] ==> public fun maxFaultyReplicas(clusterSize: Int): Int defined in net.corda.node.services.transactions[SimpleFunctionDescriptorImpl]
+'maxFaultyReplicas' @ [43:103] ==> public fun maxFaultyReplicas(clusterSize: Int): Int defined in net.corda.node.services.transactions in file BFTSMaRtConfig.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [43:121] ==> val n: Int defined in net.corda.node.services.transactions.BFTSMaRtConfig.<init>[LocalVariableDescriptor]
 
@@ -165,7 +165,7 @@ Inferred types:
 
 'address' @ [67:17] ==> val address: NetworkHostAndPort defined in net.corda.node.services.transactions.BFTSMaRtConfig.waitUntilReplicaWillNotPrintStackTrace[LocalVariableDescriptor]
 
-'isListening' @ [67:25] ==> private fun NetworkHostAndPort.isListening(): Boolean defined in net.corda.node.services.transactions[SimpleFunctionDescriptorImpl]
+'isListening' @ [67:25] ==> private fun NetworkHostAndPort.isListening(): Boolean defined in net.corda.node.services.transactions in file BFTSMaRtConfig.kt[SimpleFunctionDescriptorImpl]
 
 'MILLISECONDS' @ [67:40] ==> enum entry MILLISECONDS defined in java.util.concurrent.TimeUnit[FakeCallableDescriptorForObject]
 
@@ -237,7 +237,7 @@ Inferred types:
 
 'name' @ [94:60] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'let' @ [94:65] ==> @InlineOnly public inline fun <T, R> (String..String?).let(block: ((String..String?)) -> Boolean): Boolean defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:

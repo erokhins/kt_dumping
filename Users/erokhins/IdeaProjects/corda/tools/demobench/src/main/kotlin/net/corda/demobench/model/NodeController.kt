@@ -81,11 +81,11 @@ Inferred types:
 
 'nodeData' @ [52:24] ==> value-parameter nodeData: NodeData defined in net.corda.demobench.model.NodeController.validate[ValueParameterDescriptorImpl]
 
-'nearestCity' @ [52:33] ==> public final val nearestCity: SimpleObjectProperty<WorldMapLocation> defined in net.corda.demobench.model.NodeData[PropertyDescriptorImpl]
+'nearestCity' @ [52:33] ==> public final val nearestCity: SimpleObjectProperty<(WorldMapLocation..WorldMapLocation?)> defined in net.corda.demobench.model.NodeData[PropertyDescriptorImpl]
 
-'value' @ [52:45] ==> public final var <T : (Any..Any?)> SimpleObjectProperty<WorldMapLocation>.value: (WorldMapLocation..WorldMapLocation?)[MyPropertyDescriptor]
+'value' @ [52:45] ==> public final var <T : (Any..Any?)> SimpleObjectProperty<(WorldMapLocation..WorldMapLocation?)>.value: (WorldMapLocation..WorldMapLocation?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> WorldMapLocation
+    <T : (Any..Any?)> -> (net.corda.core.node.WorldMapLocation..net.corda.core.node.WorldMapLocation?)
 
 'NodeConfig' @ [53:22] ==> public constructor NodeConfig(baseDir: Path, legalName: X500Name, p2pPort: Int, rpcPort: Int, webPort: Int, h2Port: Int, extraServices: List<String>, users: List<User> = ..., networkMap: NetworkMapConfig? = ...) defined in net.corda.demobench.model.NodeConfig[ClassConstructorDescriptorImpl]
 
@@ -141,11 +141,11 @@ Inferred types:
 
 'nodeData' @ [65:17] ==> value-parameter nodeData: NodeData defined in net.corda.demobench.model.NodeController.validate[ValueParameterDescriptorImpl]
 
-'extraServices' @ [65:26] ==> public final val extraServices: SimpleListProperty<String> defined in net.corda.demobench.model.NodeData[PropertyDescriptorImpl]
+'extraServices' @ [65:26] ==> public final val extraServices: SimpleListProperty<(String..String?)> defined in net.corda.demobench.model.NodeData[PropertyDescriptorImpl]
 
-'value' @ [65:40] ==> public final var <E : (Any..Any?)> SimpleListProperty<String>.value: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)[MyPropertyDescriptor]
+'value' @ [65:40] ==> public final var <E : (Any..Any?)> SimpleListProperty<(String..String?)>.value: (ObservableList<(String..String?)>..ObservableList<(String..String?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> String
+    <E : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'nodes' @ [68:13] ==> private final val nodes: LinkedHashMap<String, NodeConfig> defined in net.corda.demobench.model.NodeController[PropertyDescriptorImpl]
 
@@ -213,7 +213,7 @@ Inferred types:
 
 'name' @ [93:46] ==> value-parameter name: String defined in net.corda.demobench.model.NodeController.nameExists[ValueParameterDescriptorImpl]
 
-'toKey' @ [93:51] ==> public fun String.toKey(): String defined in net.corda.demobench.model[SimpleFunctionDescriptorImpl]
+'toKey' @ [93:51] ==> public fun String.toKey(): String defined in net.corda.demobench.model in file NetworkMapConfig.kt[SimpleFunctionDescriptorImpl]
 
 'networkMapConfig' @ [95:36] ==> private final var networkMapConfig: NetworkMapConfig? defined in net.corda.demobench.model.NodeController[PropertyDescriptorImpl]
 

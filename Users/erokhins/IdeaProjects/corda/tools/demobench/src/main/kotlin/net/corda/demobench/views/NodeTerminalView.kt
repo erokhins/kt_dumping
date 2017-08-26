@@ -327,7 +327,11 @@ Inferred types:
 
 'this' @ [184:17] ==> <this> defined in net.corda.demobench.views.NodeTerminalView[LazyClassReceiverParameterDescriptor]
 
+'initialise' @ [184:23] ==> private final fun initialise(config: NodeConfig, ops: CordaRPCOps): Unit defined in net.corda.demobench.views.NodeTerminalView[SimpleFunctionDescriptorImpl]
+
 'this' @ [185:18] ==> <this> defined in net.corda.demobench.views.NodeTerminalView[LazyClassReceiverParameterDescriptor]
+
+'pollCashBalances' @ [185:24] ==> private final fun pollCashBalances(ops: CordaRPCOps): Unit defined in net.corda.demobench.views.NodeTerminalView[SimpleFunctionDescriptorImpl]
 
 'component1' @ [190:18] ==> public final operator fun component1(): List<SignedTransaction> defined in net.corda.core.messaging.DataFeed[DeserializedSimpleFunctionDescriptor]
 
@@ -392,6 +396,8 @@ Inferred types:
 'from' @ [203:42] ==> public final fun from(p0: (((Runnable..Runnable?)) -> Unit..(((Runnable..Runnable?)) -> Unit)?)): (Scheduler..Scheduler?) defined in rx.schedulers.Schedulers[SamAdapterFunctionDescriptor]
 
 'Platform' @ [203:47] ==> private constructor Platform() defined in javafx.application.Platform[JavaClassConstructorDescriptor]
+
+'runLater' @ [203:57] ==> public open fun runLater(p0: (Runnable..Runnable?)): Unit defined in javafx.application.Platform[JavaMethodDescriptor]
 
 'subscriptions' @ [204:13] ==> private final val subscriptions: MutableList<Subscription> defined in net.corda.demobench.views.NodeTerminalView[PropertyDescriptorImpl]
 

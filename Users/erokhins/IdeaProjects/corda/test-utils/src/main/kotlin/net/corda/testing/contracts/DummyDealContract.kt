@@ -48,8 +48,6 @@ Inferred types:
 
 'schema' @ [40:26] ==> value-parameter schema: MappedSchema defined in net.corda.testing.contracts.DummyDealContract.State.generateMappedObject[ValueParameterDescriptorImpl]
 
-'DummyDealStateSchemaV1' @ [41:46] ==> public object DummyDealStateSchemaV1 : MappedSchema defined in net.corda.testing.schemas in file DummyDealStateSchemaV1.kt[FakeCallableDescriptorForObject]
-
 'PersistentDummyDealState' @ [41:69] ==> public constructor PersistentDummyDealState(_participants: Set<AbstractParty>, uid: UniqueIdentifier) defined in net.corda.testing.schemas.DummyDealStateSchemaV1.PersistentDummyDealState[ClassConstructorDescriptorImpl]
 
 'participants' @ [42:41] ==> public open val participants: List<AbstractParty> defined in net.corda.testing.contracts.DummyDealContract.State[PropertyDescriptorImpl]

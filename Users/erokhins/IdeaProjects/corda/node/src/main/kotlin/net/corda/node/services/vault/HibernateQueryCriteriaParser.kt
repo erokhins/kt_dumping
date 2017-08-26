@@ -98,13 +98,13 @@ Inferred types:
 
 'vaultStates' @ [52:58] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [52:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [52:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
-'isNull' @ [52:92] ==> public final val <X : (Any..Any?)> Path<(Any..Any?)>.isNull: (Predicate..Predicate?)[MyPropertyDescriptor]
+'isNull' @ [52:92] ==> public final val <X : (Any..Any?)> Path<(String..String?)>.isNull: (Predicate..Predicate?)[MyPropertyDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <X : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'LOCKED_ONLY' @ [53:47] ==> enum entry LOCKED_ONLY defined in net.corda.core.node.services.vault.QueryCriteria.SoftLockingType[FakeCallableDescriptorForObject]
 
@@ -118,13 +118,13 @@ Inferred types:
 
 'vaultStates' @ [54:58] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [54:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [54:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
-'isNotNull' @ [54:92] ==> public final val <X : (Any..Any?)> Path<(Any..Any?)>.isNotNull: (Predicate..Predicate?)[MyPropertyDescriptor]
+'isNotNull' @ [54:92] ==> public final val <X : (Any..Any?)> Path<(String..String?)>.isNotNull: (Predicate..Predicate?)[MyPropertyDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <X : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'UNLOCKED_AND_SPECIFIED' @ [55:47] ==> enum entry UNLOCKED_AND_SPECIFIED defined in net.corda.core.node.services.vault.QueryCriteria.SoftLockingType[FakeCallableDescriptorForObject]
 
@@ -148,19 +148,19 @@ Inferred types:
 
 'vaultStates' @ [57:57] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [57:69] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [57:69] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
-'isNull' @ [57:91] ==> public final val <X : (Any..Any?)> Path<(Any..Any?)>.isNull: (Predicate..Predicate?)[MyPropertyDescriptor]
+'isNull' @ [57:91] ==> public final val <X : (Any..Any?)> Path<(String..String?)>.isNull: (Predicate..Predicate?)[MyPropertyDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <X : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'vaultStates' @ [58:57] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [58:69] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [58:69] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 '`in`' @ [58:91] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 
@@ -199,9 +199,9 @@ Inferred types:
 
 'vaultStates' @ [62:58] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [62:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [62:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 '`in`' @ [62:92] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 
@@ -237,9 +237,9 @@ Inferred types:
 
 'vaultStates' @ [69:50] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [69:62] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [69:62] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(AbstractParty..AbstractParty?)>..Path<(AbstractParty..AbstractParty?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> AbstractParty
 
 '`in`' @ [69:91] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 
@@ -281,9 +281,9 @@ Inferred types:
 
 'vaultStates' @ [75:32] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [75:44] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [75:44] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> PersistentStateRef
 
 'predicateSet' @ [76:13] ==> val predicateSet: MutableSet<Predicate> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
@@ -293,7 +293,7 @@ Inferred types:
 
 'and' @ [76:46] ==> public abstract fun and(vararg p0: (Predicate..Predicate?)): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'compositeKey' @ [76:50] ==> val compositeKey: (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria.<anonymous>[LocalVariableDescriptor]
+'compositeKey' @ [76:50] ==> val compositeKey: (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria.<anonymous>[LocalVariableDescriptor]
 
 '`in`' @ [76:63] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 
@@ -336,6 +336,8 @@ Inferred types:
 
 'VaultStates' @ [84:80] ==> public constructor VaultStates(notary: AbstractParty, contractStateClassName: String, contractState: ByteArray, stateStatus: Vault.StateStatus, recordedTime: Instant, consumedTime: Instant? = ..., lockId: String? = ..., lockUpdateTime: Instant? = ...) defined in net.corda.node.services.vault.VaultSchemaV1.VaultStates[ClassConstructorDescriptorImpl]
 
+'recordedTime' @ [84:93] ==> @Column public final var recordedTime: Instant defined in net.corda.node.services.vault.VaultSchemaV1.VaultStates[PropertyDescriptorImpl]
+
 'CONSUMED' @ [85:47] ==> enum entry CONSUMED defined in net.corda.core.node.services.vault.QueryCriteria.TimeInstantType[FakeCallableDescriptorForObject]
 
 'Column' @ [85:59] ==> public constructor Column<O, out C>(property: KProperty1<VaultSchemaV1.VaultStates, Instant?>) defined in net.corda.core.node.services.vault.Column[DeserializedClassConstructorDescriptor]
@@ -346,6 +348,8 @@ Inferred types:
 'VaultSchemaV1' @ [85:66] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
 
 'VaultStates' @ [85:80] ==> public constructor VaultStates(notary: AbstractParty, contractStateClassName: String, contractState: ByteArray, stateStatus: Vault.StateStatus, recordedTime: Instant, consumedTime: Instant? = ..., lockId: String? = ..., lockUpdateTime: Instant? = ...) defined in net.corda.node.services.vault.VaultSchemaV1.VaultStates[ClassConstructorDescriptorImpl]
+
+'consumedTime' @ [85:93] ==> @Column public final var consumedTime: Instant? defined in net.corda.node.services.vault.VaultSchemaV1.VaultStates[PropertyDescriptorImpl]
 
 'ColumnPredicateExpression' @ [87:49] ==> public constructor ColumnPredicateExpression<O, C>(column: Column<VaultSchemaV1.VaultStates, Instant>, predicate: ColumnPredicate<Instant>) defined in net.corda.core.node.services.vault.CriteriaExpression.ColumnPredicateExpression[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -405,7 +409,7 @@ Inferred types:
 
 'name' @ [96:48] ==> public final val <T : (Any..Any?)> Class<out ContractState>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContractState
+    <T : (Any..Any?)> -> Captured(out ContractState)
 
 'java' @ [96:77] ==> public val <T> KClass<ContractState>.java: Class<ContractState> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -422,10 +426,10 @@ Inferred types:
 
 'it' @ [97:30] ==> value-parameter it: List<Class<out ContractState>> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.deriveContractTypes.<anonymous>[ValueParameterDescriptorImpl]
 
-'flatMap' @ [97:33] ==> public inline fun <T, R> Iterable<Class<out ContractState>>.flatMap(transform: (Class<out ContractState>) -> Iterable<(String..String?)>): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [97:33] ==> public inline fun <T, R> Iterable<Class<out ContractState>>.flatMap(transform: (Class<out ContractState>) -> Iterable<String>): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Class<out ContractState>
-    <R> -> (kotlin.String..kotlin.String?)
+    <R> -> String
 
 'contractTypeMappings' @ [97:43] ==> public final val contractTypeMappings: Map<String, Set<String>> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
@@ -433,7 +437,7 @@ Inferred types:
 
 'name' @ [97:67] ==> public final val <T : (Any..Any?)> Class<out ContractState>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContractState
+    <T : (Any..Any?)> -> Captured(out ContractState)
 
 'setOf' @ [97:76] ==> public fun <T> setOf(element: (String..String?)): Set<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -443,7 +447,7 @@ Inferred types:
 
 'name' @ [97:85] ==> public final val <T : (Any..Any?)> Class<out ContractState>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContractState
+    <T : (Any..Any?)> -> Captured(out ContractState)
 
 'it' @ [98:28] ==> value-parameter it: List<Class<out ContractState>> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.deriveContractTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -457,7 +461,7 @@ Inferred types:
 
 'isInterface' @ [98:44] ==> public final val <T : (Any..Any?)> Class<out ContractState>.isInterface: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContractState
+    <T : (Any..Any?)> -> Captured(out ContractState)
 
 'map' @ [98:58] ==> public inline fun <T, R> Iterable<Class<out ContractState>>.map(transform: (Class<out ContractState>) -> (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -468,13 +472,13 @@ Inferred types:
 
 'name' @ [98:67] ==> public final val <T : (Any..Any?)> Class<out ContractState>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ContractState
+    <T : (Any..Any?)> -> Captured(out ContractState)
 
 'log' @ [99:13] ==> public final val log: Logger defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.Companion[PropertyDescriptorImpl]
 
 'trace' @ [99:17] ==> public inline fun Logger.trace(msg: () -> String): Unit defined in net.corda.core.utilities[DeserializedSimpleFunctionDescriptor]
 
-'interfaces' @ [99:52] ==> val interfaces: List<(String..String?)> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.deriveContractTypes.<anonymous>[LocalVariableDescriptor]
+'interfaces' @ [99:52] ==> val interfaces: List<String> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.deriveContractTypes.<anonymous>[LocalVariableDescriptor]
 
 'union' @ [99:63] ==> public infix fun <T> Iterable<(String..String?)>.union(other: Iterable<(String..String?)>): Set<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -482,7 +486,7 @@ Inferred types:
 
 'concrete' @ [99:69] ==> val concrete: List<(String..String?)> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.deriveContractTypes.<anonymous>[LocalVariableDescriptor]
 
-'interfaces' @ [100:20] ==> val interfaces: List<(String..String?)> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.deriveContractTypes.<anonymous>[LocalVariableDescriptor]
+'interfaces' @ [100:20] ==> val interfaces: List<String> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.deriveContractTypes.<anonymous>[LocalVariableDescriptor]
 
 'union' @ [100:31] ==> public infix fun <T> Iterable<(String..String?)>.union(other: Iterable<(String..String?)>): Set<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -502,12 +506,12 @@ Inferred types:
                 @Suppress("UNCHECKED_CAST")
                 val literal = columnPredicate.rightLiteral as Comparable<Any?>?
                 @Suppress("UNCHECKED_CAST")
-                val c = column as Path<Comparable<Any?>?>
+                column as Path<Comparable<Any?>?>
                 when (columnPredicate.operator) {
-                    BinaryComparisonOperator.GREATER_THAN -> criteriaBuilder.greaterThan(c, literal)
-                    BinaryComparisonOperator.GREATER_THAN_OR_EQUAL -> criteriaBuilder.greaterThanOrEqualTo(c, literal)
-                    BinaryComparisonOperator.LESS_THAN -> criteriaBuilder.lessThan(c, literal)
-                    BinaryComparisonOperator.LESS_THAN_OR_EQUAL -> criteriaBuilder.lessThanOrEqualTo(c, literal)
+                    BinaryComparisonOperator.GREATER_THAN -> criteriaBuilder.greaterThan(column, literal)
+                    BinaryComparisonOperator.GREATER_THAN_OR_EQUAL -> criteriaBuilder.greaterThanOrEqualTo(column, literal)
+                    BinaryComparisonOperator.LESS_THAN -> criteriaBuilder.lessThan(column, literal)
+                    BinaryComparisonOperator.LESS_THAN_OR_EQUAL -> criteriaBuilder.lessThanOrEqualTo(column, literal)
                 }
             }
             is ColumnPredicate.Likeness -> {
@@ -526,12 +530,12 @@ Inferred types:
             }
             is ColumnPredicate.Between -> {
                 @Suppress("UNCHECKED_CAST")
-                val c = column as Path<Comparable<Any?>?>
+                column as Path<Comparable<Any?>?>
                 @Suppress("UNCHECKED_CAST")
                 val fromLiteral = columnPredicate.rightFromLiteral as Comparable<Any?>?
                 @Suppress("UNCHECKED_CAST")
                 val toLiteral = columnPredicate.rightToLiteral as Comparable<Any?>?
-                criteriaBuilder.between(c, fromLiteral, toLiteral)
+                criteriaBuilder.between(column, fromLiteral, toLiteral)
             }
             is ColumnPredicate.NullExpression -> {
                 when (columnPredicate.operator) {
@@ -585,17 +589,17 @@ Inferred types:
 
 'columnPredicate' @ [115:31] ==> value-parameter columnPredicate: ColumnPredicate<*> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
-'rightLiteral' @ [115:47] ==> public final val rightLiteral: Comparable<Nothing> defined in net.corda.core.node.services.vault.ColumnPredicate.BinaryComparison[DeserializedPropertyDescriptor]
+'rightLiteral' @ [115:47] ==> public final val rightLiteral: Any? defined in net.corda.core.node.services.vault.ColumnPredicate.BinaryComparison[DeserializedPropertyDescriptor]
 
 'Suppress' @ [116:17] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'column' @ [117:25] ==> value-parameter column: Path<out Any?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
+'column' @ [117:17] ==> value-parameter column: Path<out Any?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
 'when (columnPredicate.operator) {
-                    BinaryComparisonOperator.GREATER_THAN -> criteriaBuilder.greaterThan(c, literal)
-                    BinaryComparisonOperator.GREATER_THAN_OR_EQUAL -> criteriaBuilder.greaterThanOrEqualTo(c, literal)
-                    BinaryComparisonOperator.LESS_THAN -> criteriaBuilder.lessThan(c, literal)
-                    BinaryComparisonOperator.LESS_THAN_OR_EQUAL -> criteriaBuilder.lessThanOrEqualTo(c, literal)
+                    BinaryComparisonOperator.GREATER_THAN -> criteriaBuilder.greaterThan(column, literal)
+                    BinaryComparisonOperator.GREATER_THAN_OR_EQUAL -> criteriaBuilder.greaterThanOrEqualTo(column, literal)
+                    BinaryComparisonOperator.LESS_THAN -> criteriaBuilder.lessThan(column, literal)
+                    BinaryComparisonOperator.LESS_THAN_OR_EQUAL -> criteriaBuilder.lessThanOrEqualTo(column, literal)
                 }' @ [118:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Predicate..Predicate?), entry1: (Predicate..Predicate?), entry2: (Predicate..Predicate?), entry3: (Predicate..Predicate?)): (Predicate..Predicate?)[SimpleFunctionDescriptorImpl]
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (javax.persistence.criteria.Predicate..javax.persistence.criteria.Predicate?)
@@ -608,49 +612,49 @@ Inferred types:
 
 'criteriaBuilder' @ [119:62] ==> public final val criteriaBuilder: CriteriaBuilder defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'greaterThan' @ [119:78] ==> public abstract fun <Y : (Comparable<(Comparable<Any?>..Comparable<Any?>?)>..Comparable<(Comparable<Any?>..Comparable<Any?>?)>?)> greaterThan(p0: (Expression<out (Comparable<Any?>..Comparable<Any?>?)>..Expression<out (Comparable<Any?>..Comparable<Any?>?)>?), p1: (Comparable<Any?>..Comparable<Any?>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
+'greaterThan' @ [119:78] ==> public abstract fun <Y : (Comparable<Comparable<Any?>?>..Comparable<Comparable<Any?>?>?)> greaterThan(p0: (Expression<out Comparable<Any?>?>..Expression<out Comparable<Any?>?>?), p1: Comparable<Any?>?): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>
+    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>?
 
-'c' @ [119:90] ==> val c: Path<Comparable<Any?>?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'column' @ [119:90] ==> value-parameter column: Path<out Any?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
-'literal' @ [119:93] ==> val literal: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'literal' @ [119:98] ==> val literal: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
 
 'GREATER_THAN_OR_EQUAL' @ [120:46] ==> enum entry GREATER_THAN_OR_EQUAL defined in net.corda.core.node.services.vault.BinaryComparisonOperator[FakeCallableDescriptorForObject]
 
 'criteriaBuilder' @ [120:71] ==> public final val criteriaBuilder: CriteriaBuilder defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'greaterThanOrEqualTo' @ [120:87] ==> public abstract fun <Y : (Comparable<(Comparable<Any?>..Comparable<Any?>?)>..Comparable<(Comparable<Any?>..Comparable<Any?>?)>?)> greaterThanOrEqualTo(p0: (Expression<out (Comparable<Any?>..Comparable<Any?>?)>..Expression<out (Comparable<Any?>..Comparable<Any?>?)>?), p1: (Comparable<Any?>..Comparable<Any?>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
+'greaterThanOrEqualTo' @ [120:87] ==> public abstract fun <Y : (Comparable<Comparable<Any?>?>..Comparable<Comparable<Any?>?>?)> greaterThanOrEqualTo(p0: (Expression<out Comparable<Any?>?>..Expression<out Comparable<Any?>?>?), p1: Comparable<Any?>?): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>
+    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>?
 
-'c' @ [120:108] ==> val c: Path<Comparable<Any?>?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'column' @ [120:108] ==> value-parameter column: Path<out Any?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
-'literal' @ [120:111] ==> val literal: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'literal' @ [120:116] ==> val literal: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
 
 'LESS_THAN' @ [121:46] ==> enum entry LESS_THAN defined in net.corda.core.node.services.vault.BinaryComparisonOperator[FakeCallableDescriptorForObject]
 
 'criteriaBuilder' @ [121:59] ==> public final val criteriaBuilder: CriteriaBuilder defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'lessThan' @ [121:75] ==> public abstract fun <Y : (Comparable<(Comparable<Any?>..Comparable<Any?>?)>..Comparable<(Comparable<Any?>..Comparable<Any?>?)>?)> lessThan(p0: (Expression<out (Comparable<Any?>..Comparable<Any?>?)>..Expression<out (Comparable<Any?>..Comparable<Any?>?)>?), p1: (Comparable<Any?>..Comparable<Any?>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
+'lessThan' @ [121:75] ==> public abstract fun <Y : (Comparable<Comparable<Any?>?>..Comparable<Comparable<Any?>?>?)> lessThan(p0: (Expression<out Comparable<Any?>?>..Expression<out Comparable<Any?>?>?), p1: Comparable<Any?>?): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>
+    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>?
 
-'c' @ [121:84] ==> val c: Path<Comparable<Any?>?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'column' @ [121:84] ==> value-parameter column: Path<out Any?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
-'literal' @ [121:87] ==> val literal: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'literal' @ [121:92] ==> val literal: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
 
 'LESS_THAN_OR_EQUAL' @ [122:46] ==> enum entry LESS_THAN_OR_EQUAL defined in net.corda.core.node.services.vault.BinaryComparisonOperator[FakeCallableDescriptorForObject]
 
 'criteriaBuilder' @ [122:68] ==> public final val criteriaBuilder: CriteriaBuilder defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'lessThanOrEqualTo' @ [122:84] ==> public abstract fun <Y : (Comparable<(Comparable<Any?>..Comparable<Any?>?)>..Comparable<(Comparable<Any?>..Comparable<Any?>?)>?)> lessThanOrEqualTo(p0: (Expression<out (Comparable<Any?>..Comparable<Any?>?)>..Expression<out (Comparable<Any?>..Comparable<Any?>?)>?), p1: (Comparable<Any?>..Comparable<Any?>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
+'lessThanOrEqualTo' @ [122:84] ==> public abstract fun <Y : (Comparable<Comparable<Any?>?>..Comparable<Comparable<Any?>?>?)> lessThanOrEqualTo(p0: (Expression<out Comparable<Any?>?>..Expression<out Comparable<Any?>?>?), p1: Comparable<Any?>?): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>
+    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>?
 
-'c' @ [122:102] ==> val c: Path<Comparable<Any?>?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'column' @ [122:102] ==> value-parameter column: Path<out Any?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
-'literal' @ [122:105] ==> val literal: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'literal' @ [122:110] ==> val literal: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
 
 'Suppress' @ [126:17] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -728,31 +732,31 @@ Inferred types:
 
 'Suppress' @ [140:17] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'column' @ [141:25] ==> value-parameter column: Path<out Any?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
+'column' @ [141:17] ==> value-parameter column: Path<out Any?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
 'Suppress' @ [142:17] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
 'columnPredicate' @ [143:35] ==> value-parameter columnPredicate: ColumnPredicate<*> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
-'rightFromLiteral' @ [143:51] ==> public final val rightFromLiteral: Comparable<Nothing> defined in net.corda.core.node.services.vault.ColumnPredicate.Between[DeserializedPropertyDescriptor]
+'rightFromLiteral' @ [143:51] ==> public final val rightFromLiteral: Any? defined in net.corda.core.node.services.vault.ColumnPredicate.Between[DeserializedPropertyDescriptor]
 
 'Suppress' @ [144:17] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
 'columnPredicate' @ [145:33] ==> value-parameter columnPredicate: ColumnPredicate<*> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
-'rightToLiteral' @ [145:49] ==> public final val rightToLiteral: Comparable<Nothing> defined in net.corda.core.node.services.vault.ColumnPredicate.Between[DeserializedPropertyDescriptor]
+'rightToLiteral' @ [145:49] ==> public final val rightToLiteral: Any? defined in net.corda.core.node.services.vault.ColumnPredicate.Between[DeserializedPropertyDescriptor]
 
 'criteriaBuilder' @ [146:17] ==> public final val criteriaBuilder: CriteriaBuilder defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'between' @ [146:33] ==> public abstract fun <Y : (Comparable<(Comparable<Any?>..Comparable<Any?>?)>..Comparable<(Comparable<Any?>..Comparable<Any?>?)>?)> between(p0: (Expression<out (Comparable<Any?>..Comparable<Any?>?)>..Expression<out (Comparable<Any?>..Comparable<Any?>?)>?), p1: (Comparable<Any?>..Comparable<Any?>?), p2: (Comparable<Any?>..Comparable<Any?>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
+'between' @ [146:33] ==> public abstract fun <Y : (Comparable<Comparable<Any?>?>..Comparable<Comparable<Any?>?>?)> between(p0: (Expression<out Comparable<Any?>?>..Expression<out Comparable<Any?>?>?), p1: Comparable<Any?>?, p2: Comparable<Any?>?): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>
+    <Y : (Comparable<(Y..Y?)>..Comparable<(Y..Y?)>?)> -> Comparable<Any?>?
 
-'c' @ [146:41] ==> val c: Path<Comparable<Any?>?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'column' @ [146:41] ==> value-parameter column: Path<out Any?> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[ValueParameterDescriptorImpl]
 
-'fromLiteral' @ [146:44] ==> val fromLiteral: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'fromLiteral' @ [146:49] ==> val fromLiteral: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
 
-'toLiteral' @ [146:57] ==> val toLiteral: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
+'toLiteral' @ [146:62] ==> val toLiteral: Comparable<Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.columnPredicateToPredicate[LocalVariableDescriptor]
 
 'when (columnPredicate.operator) {
                     NullOperator.IS_NULL -> criteriaBuilder.isNull(column)
@@ -798,7 +802,7 @@ Inferred types:
 'parseAggregateFunction' @ [160:13] ==> private final fun <O, R> parseAggregateFunction(root: Root<O>, expression: CriteriaExpression.AggregateFunctionExpression<O, out Any?>): Expression<out Any?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[SimpleFunctionDescriptorImpl]
 Inferred types:
     <O> -> O
-    <R> -> Any?
+    <R> -> Captured(*)
 
 'entityRoot' @ [160:36] ==> value-parameter entityRoot: Root<O> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseExpression[ValueParameterDescriptorImpl]
 
@@ -908,9 +912,9 @@ Inferred types:
 
 'root' @ [178:30] ==> value-parameter root: Root<O> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseExpression[ValueParameterDescriptorImpl]
 
-'get' @ [178:35] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [178:35] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<Any?>..Path<Any?>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> Any?
 
 'getColumnName' @ [178:45] ==> public fun <O, C> getColumnName(column: Column<O, Any?>): String defined in net.corda.core.node.services.vault[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -923,7 +927,7 @@ Inferred types:
 
 'columnPredicateToPredicate' @ [179:17] ==> private final fun columnPredicateToPredicate(column: Path<out Any?>, columnPredicate: ColumnPredicate<*>): Predicate defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[SimpleFunctionDescriptorImpl]
 
-'column' @ [179:44] ==> val column: (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseExpression[LocalVariableDescriptor]
+'column' @ [179:44] ==> val column: (Path<Any?>..Path<Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseExpression[LocalVariableDescriptor]
 
 'expression' @ [179:52] ==> value-parameter expression: CriteriaExpression<O, R> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseExpression[ValueParameterDescriptorImpl]
 
@@ -935,9 +939,9 @@ Inferred types:
 
 'root' @ [186:22] ==> value-parameter root: Root<O> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[ValueParameterDescriptorImpl]
 
-'get' @ [186:27] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [186:27] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<Any?>..Path<Any?>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> Any?
 
 'getColumnName' @ [186:37] ==> public fun <O, C> getColumnName(column: Column<O, R>): String defined in net.corda.core.node.services.vault[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -955,14 +959,14 @@ Inferred types:
 'when (columnPredicate) {
             is ColumnPredicate.AggregateFunction -> {
                 @Suppress("UNCHECKED_CAST")
-                val c = column as Path<Long?>?
+                column as Path<Long?>?
                 val aggregateExpression =
                         when (columnPredicate.type) {
-                            AggregateFunctionType.SUM -> criteriaBuilder.sum(c)
-                            AggregateFunctionType.AVG -> criteriaBuilder.avg(c)
-                            AggregateFunctionType.COUNT -> criteriaBuilder.count(c)
-                            AggregateFunctionType.MAX -> criteriaBuilder.max(c)
-                            AggregateFunctionType.MIN -> criteriaBuilder.min(c)
+                            AggregateFunctionType.SUM -> criteriaBuilder.sum(column)
+                            AggregateFunctionType.AVG -> criteriaBuilder.avg(column)
+                            AggregateFunctionType.COUNT -> criteriaBuilder.count(column)
+                            AggregateFunctionType.MAX -> criteriaBuilder.max(column)
+                            AggregateFunctionType.MIN -> criteriaBuilder.min(column)
                         }
                 aggregateExpressions.add(aggregateExpression)
                 // optionally order by this aggregate function
@@ -995,17 +999,17 @@ Inferred types:
 
 'Suppress' @ [190:17] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'column' @ [191:25] ==> val column: (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'column' @ [191:17] ==> val column: (Path<Any?>..Path<Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'when (columnPredicate.type) {
-                            AggregateFunctionType.SUM -> criteriaBuilder.sum(c)
-                            AggregateFunctionType.AVG -> criteriaBuilder.avg(c)
-                            AggregateFunctionType.COUNT -> criteriaBuilder.count(c)
-                            AggregateFunctionType.MAX -> criteriaBuilder.max(c)
-                            AggregateFunctionType.MIN -> criteriaBuilder.min(c)
-                        }' @ [193:25] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?), entry1: (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?), entry2: (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?), entry3: (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?), entry4: (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?)): (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?)[SimpleFunctionDescriptorImpl]
+                            AggregateFunctionType.SUM -> criteriaBuilder.sum(column)
+                            AggregateFunctionType.AVG -> criteriaBuilder.avg(column)
+                            AggregateFunctionType.COUNT -> criteriaBuilder.count(column)
+                            AggregateFunctionType.MAX -> criteriaBuilder.max(column)
+                            AggregateFunctionType.MIN -> criteriaBuilder.min(column)
+                        }' @ [193:25] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Expression<out Any?>..Expression<out Any?>?), entry1: (Expression<out Any?>..Expression<out Any?>?), entry2: (Expression<out Any?>..Expression<out Any?>?), entry3: (Expression<out Any?>..Expression<out Any?>?), entry4: (Expression<out Any?>..Expression<out Any?>?)): (Expression<out Any?>..Expression<out Any?>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (javax.persistence.criteria.Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..javax.persistence.criteria.Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (javax.persistence.criteria.Expression<out kotlin.Any?>..javax.persistence.criteria.Expression<out kotlin.Any?>?)
 
 'columnPredicate' @ [193:31] ==> val columnPredicate: ColumnPredicate<R> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
@@ -1015,21 +1019,21 @@ Inferred types:
 
 'criteriaBuilder' @ [194:58] ==> public final val criteriaBuilder: CriteriaBuilder defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'sum' @ [194:74] ==> public abstract fun <N : (Number..Number?)> sum(p0: (Expression<(Long..Long?)>..Expression<(Long..Long?)>?)): (Expression<(Long..Long?)>..Expression<(Long..Long?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
+'sum' @ [194:74] ==> public abstract fun <N : (Number..Number?)> sum(p0: (Expression<Long?>..Expression<Long?>?)): (Expression<Long?>..Expression<Long?>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <N : (Number..Number?)> -> Long
+    <N : (Number..Number?)> -> Long?
 
-'c' @ [194:78] ==> val c: Path<Long?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'column' @ [194:78] ==> val column: (Path<Any?>..Path<Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'AVG' @ [195:51] ==> enum entry AVG defined in net.corda.core.node.services.vault.AggregateFunctionType[FakeCallableDescriptorForObject]
 
 'criteriaBuilder' @ [195:58] ==> public final val criteriaBuilder: CriteriaBuilder defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'avg' @ [195:74] ==> public abstract fun <N : (Number..Number?)> avg(p0: (Expression<(Long..Long?)>..Expression<(Long..Long?)>?)): (Expression<(Double..Double?)>..Expression<(Double..Double?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
+'avg' @ [195:74] ==> public abstract fun <N : (Number..Number?)> avg(p0: (Expression<Long?>..Expression<Long?>?)): (Expression<(Double..Double?)>..Expression<(Double..Double?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <N : (Number..Number?)> -> Long
+    <N : (Number..Number?)> -> Long?
 
-'c' @ [195:78] ==> val c: Path<Long?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'column' @ [195:78] ==> val column: (Path<Any?>..Path<Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'COUNT' @ [196:51] ==> enum entry COUNT defined in net.corda.core.node.services.vault.AggregateFunctionType[FakeCallableDescriptorForObject]
 
@@ -1037,33 +1041,33 @@ Inferred types:
 
 'count' @ [196:76] ==> public abstract fun count(p0: (Expression<*>..Expression<*>?)): (Expression<(Long..Long?)>..Expression<(Long..Long?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'c' @ [196:82] ==> val c: Path<Long?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'column' @ [196:82] ==> val column: (Path<Any?>..Path<Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'MAX' @ [197:51] ==> enum entry MAX defined in net.corda.core.node.services.vault.AggregateFunctionType[FakeCallableDescriptorForObject]
 
 'criteriaBuilder' @ [197:58] ==> public final val criteriaBuilder: CriteriaBuilder defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'max' @ [197:74] ==> public abstract fun <N : (Number..Number?)> max(p0: (Expression<(Long..Long?)>..Expression<(Long..Long?)>?)): (Expression<(Long..Long?)>..Expression<(Long..Long?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
+'max' @ [197:74] ==> public abstract fun <N : (Number..Number?)> max(p0: (Expression<Long?>..Expression<Long?>?)): (Expression<Long?>..Expression<Long?>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <N : (Number..Number?)> -> Long
+    <N : (Number..Number?)> -> Long?
 
-'c' @ [197:78] ==> val c: Path<Long?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'column' @ [197:78] ==> val column: (Path<Any?>..Path<Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'MIN' @ [198:51] ==> enum entry MIN defined in net.corda.core.node.services.vault.AggregateFunctionType[FakeCallableDescriptorForObject]
 
 'criteriaBuilder' @ [198:58] ==> public final val criteriaBuilder: CriteriaBuilder defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'min' @ [198:74] ==> public abstract fun <N : (Number..Number?)> min(p0: (Expression<(Long..Long?)>..Expression<(Long..Long?)>?)): (Expression<(Long..Long?)>..Expression<(Long..Long?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
+'min' @ [198:74] ==> public abstract fun <N : (Number..Number?)> min(p0: (Expression<Long?>..Expression<Long?>?)): (Expression<Long?>..Expression<Long?>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <N : (Number..Number?)> -> Long
+    <N : (Number..Number?)> -> Long?
 
-'c' @ [198:78] ==> val c: Path<Long?>? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'column' @ [198:78] ==> val column: (Path<Any?>..Path<Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'aggregateExpressions' @ [200:17] ==> private final val aggregateExpressions: MutableList<Expression<*>> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
 'add' @ [200:38] ==> public abstract fun add(element: Expression<*>): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'aggregateExpression' @ [200:42] ==> val aggregateExpression: (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'aggregateExpression' @ [200:42] ==> val aggregateExpression: (Expression<out Any?>..Expression<out Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'expression' @ [202:17] ==> value-parameter expression: CriteriaExpression.AggregateFunctionExpression<O, R> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[ValueParameterDescriptorImpl]
 
@@ -1091,7 +1095,7 @@ Inferred types:
 
 'asc' @ [205:71] ==> public abstract fun asc(p0: (Expression<*>..Expression<*>?)): (Order..Order?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'aggregateExpression' @ [205:75] ==> val aggregateExpression: (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'aggregateExpression' @ [205:75] ==> val aggregateExpression: (Expression<out Any?>..Expression<out Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'DESC' @ [206:48] ==> enum entry DESC defined in net.corda.core.node.services.vault.Sort.Direction[FakeCallableDescriptorForObject]
 
@@ -1099,7 +1103,7 @@ Inferred types:
 
 'desc' @ [206:72] ==> public abstract fun desc(p0: (Expression<*>..Expression<*>?)): (Order..Order?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'aggregateExpression' @ [206:77] ==> val aggregateExpression: (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'aggregateExpression' @ [206:77] ==> val aggregateExpression: (Expression<out Any?>..Expression<out Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'criteriaQuery' @ [208:21] ==> public final val criteriaQuery: CriteriaQuery<Tuple> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
@@ -1118,16 +1122,16 @@ Inferred types:
 
 'columns' @ [213:29] ==> value-parameter columns: List<Column<O, R>> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction.<anonymous>[ValueParameterDescriptorImpl]
 
-'map' @ [213:37] ==> public inline fun <T, R> Iterable<Column<O, R>>.map(transform: (Column<O, R>) -> (Path<(Any..Any?)>..Path<(Any..Any?)>?)): List<(Path<(Any..Any?)>..Path<(Any..Any?)>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [213:37] ==> public inline fun <T, R> Iterable<Column<O, R>>.map(transform: (Column<O, R>) -> (Path<Any?>..Path<Any?>?)): List<(Path<Any?>..Path<Any?>?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Column<O, R>
-    <R> -> (javax.persistence.criteria.Path<(kotlin.Any..kotlin.Any?)>..javax.persistence.criteria.Path<(kotlin.Any..kotlin.Any?)>?)
+    <R> -> (javax.persistence.criteria.Path<kotlin.Any?>..javax.persistence.criteria.Path<kotlin.Any?>?)
 
 'root' @ [214:44] ==> value-parameter root: Root<O> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[ValueParameterDescriptorImpl]
 
-'get' @ [214:49] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [214:49] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<Any?>..Path<Any?>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> Any?
 
 'getColumnName' @ [214:59] ==> public fun <O, C> getColumnName(column: Column<O, R>): String defined in net.corda.core.node.services.vault[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1140,17 +1144,17 @@ Inferred types:
 
 'add' @ [215:54] ==> public abstract fun add(element: Expression<*>): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
 
-'path' @ [215:58] ==> val path: (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'path' @ [215:58] ==> val path: (Path<Any?>..Path<Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'path' @ [216:33] ==> val path: (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'path' @ [216:33] ==> val path: (Path<Any?>..Path<Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'criteriaQuery' @ [218:21] ==> public final val criteriaQuery: CriteriaQuery<Tuple> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
 'groupBy' @ [218:35] ==> public abstract fun groupBy(p0: (MutableList<(Expression<*>..Expression<*>?)>..List<(Expression<*>..Expression<*>?)>?)): (CriteriaQuery<(Tuple..Tuple?)>..CriteriaQuery<(Tuple..Tuple?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 
-'groupByExpressions' @ [218:43] ==> val groupByExpressions: List<(Path<(Any..Any?)>..Path<(Any..Any?)>?)> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction.<anonymous>[LocalVariableDescriptor]
+'groupByExpressions' @ [218:43] ==> val groupByExpressions: List<(Path<Any?>..Path<Any?>?)> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction.<anonymous>[LocalVariableDescriptor]
 
-'aggregateExpression' @ [220:24] ==> val aggregateExpression: (Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>..Expression<out ({Comparable<{Long & Double}> & Number}..{Comparable<{Long & Double}> & Number}?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
+'aggregateExpression' @ [220:24] ==> val aggregateExpression: (Expression<out Any?>..Expression<out Any?>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseAggregateFunction[LocalVariableDescriptor]
 
 'VaultQueryException' @ [222:27] ==> public constructor VaultQueryException(description: String) defined in net.corda.core.node.services.VaultQueryException[DeserializedClassConstructorDescriptor]
 
@@ -1170,11 +1174,9 @@ Inferred types:
 
 'from' @ [231:49] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>..Class<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>?)): (Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>..Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> VaultFungibleStates
+    <X : (Any..Any?)> -> (net.corda.node.services.vault.VaultSchemaV1.VaultFungibleStates..net.corda.node.services.vault.VaultSchemaV1.VaultFungibleStates?)
 
 'VaultSchemaV1' @ [231:54] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
-
-'VaultFungibleStates' @ [231:68] ==> public constructor VaultFungibleStates(_owner: AbstractParty, _quantity: Long, _issuerParty: AbstractParty, _issuerRef: OpaqueBytes, _participants: List<AbstractParty>) defined in net.corda.node.services.vault.VaultSchemaV1.VaultFungibleStates[ClassConstructorDescriptorImpl]
 
 'java' @ [231:95] ==> public val <T> KClass<VaultSchemaV1.VaultFungibleStates>.java: Class<VaultSchemaV1.VaultFungibleStates> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1185,8 +1187,6 @@ Inferred types:
 'putIfAbsent' @ [232:22] ==> public open fun putIfAbsent(p0: Class<out PersistentState>, p1: Root<*>): Root<*>? defined in kotlin.collections.MutableMap[JavaMethodDescriptor]
 
 'VaultSchemaV1' @ [232:34] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
-
-'VaultFungibleStates' @ [232:48] ==> public constructor VaultFungibleStates(_owner: AbstractParty, _quantity: Long, _issuerParty: AbstractParty, _issuerRef: OpaqueBytes, _participants: List<AbstractParty>) defined in net.corda.node.services.vault.VaultSchemaV1.VaultFungibleStates[ClassConstructorDescriptorImpl]
 
 'java' @ [232:75] ==> public val <T> KClass<VaultSchemaV1.VaultFungibleStates>.java: Class<VaultSchemaV1.VaultFungibleStates> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1200,15 +1200,15 @@ Inferred types:
 
 'vaultStates' @ [234:51] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [234:63] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [234:63] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> PersistentStateRef
 
 'vaultFungibleStates' @ [234:100] ==> val vaultFungibleStates: (Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>..Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'get' @ [234:120] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [234:120] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> PersistentStateRef
 
 'predicateSet' @ [235:9] ==> val predicateSet: MutableSet<Predicate> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
@@ -1239,9 +1239,9 @@ Inferred types:
 
 'vaultFungibleStates' @ [240:50] ==> val vaultFungibleStates: (Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>..Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'get' @ [240:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [240:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(AbstractParty..AbstractParty?)>..Path<(AbstractParty..AbstractParty?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> AbstractParty
 
 '`in`' @ [240:98] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 
@@ -1264,9 +1264,9 @@ Inferred types:
 
 'vaultFungibleStates' @ [245:57] ==> val vaultFungibleStates: (Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>..Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'get' @ [245:77] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [245:77] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Long..Long?)>..Path<(Long..Long?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> Long
 
 'it' @ [245:100] ==> value-parameter it: ColumnPredicate<Long> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1293,9 +1293,9 @@ Inferred types:
 
 'vaultFungibleStates' @ [251:50] ==> val vaultFungibleStates: (Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>..Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'get' @ [251:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [251:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(AbstractParty..AbstractParty?)>..Path<(AbstractParty..AbstractParty?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> AbstractParty
 
 '`in`' @ [251:99] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 
@@ -1333,9 +1333,9 @@ Inferred types:
 
 'vaultFungibleStates' @ [257:50] ==> val vaultFungibleStates: (Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>..Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'get' @ [257:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [257:70] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(ByteArray..ByteArray?)>..Path<(ByteArray..ByteArray?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> ByteArray
 
 '`in`' @ [257:98] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 
@@ -1356,10 +1356,10 @@ Inferred types:
 
 'vaultFungibleStates' @ [263:42] ==> val vaultFungibleStates: (Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>..Root<(VaultSchemaV1.VaultFungibleStates..VaultSchemaV1.VaultFungibleStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'joinSet' @ [263:62] ==> public abstract fun <X : (Any..Any?), Y : (Any..Any?)> joinSet(p0: (String..String?)): (SetJoin<(Any..Any?), (Any..Any?)>..SetJoin<(Any..Any?), (Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'joinSet' @ [263:62] ==> public abstract fun <X : (Any..Any?), Y : (Any..Any?)> joinSet(p0: (String..String?)): (SetJoin<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?), (AbstractParty..AbstractParty?)>..SetJoin<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?), (AbstractParty..AbstractParty?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <X : (Any..Any?)> -> VaultLinearStates
+    <Y : (Any..Any?)> -> AbstractParty
 
 'predicateSet' @ [264:13] ==> val predicateSet: MutableSet<Predicate> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
@@ -1369,7 +1369,7 @@ Inferred types:
 
 'and' @ [264:46] ==> public abstract fun and(vararg p0: (Predicate..Predicate?)): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'joinLinearStateToParty' @ [264:50] ==> val joinLinearStateToParty: (SetJoin<(Any..Any?), (Any..Any?)>..SetJoin<(Any..Any?), (Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria.<anonymous>[LocalVariableDescriptor]
+'joinLinearStateToParty' @ [264:50] ==> val joinLinearStateToParty: (SetJoin<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?), (AbstractParty..AbstractParty?)>..SetJoin<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?), (AbstractParty..AbstractParty?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria.<anonymous>[LocalVariableDescriptor]
 
 '`in`' @ [264:73] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.SetJoin[JavaMethodDescriptor]
 
@@ -1395,11 +1395,9 @@ Inferred types:
 
 'from' @ [275:47] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>..Class<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>?)): (Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>..Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> VaultLinearStates
+    <X : (Any..Any?)> -> (net.corda.node.services.vault.VaultSchemaV1.VaultLinearStates..net.corda.node.services.vault.VaultSchemaV1.VaultLinearStates?)
 
 'VaultSchemaV1' @ [275:52] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
-
-'VaultLinearStates' @ [275:66] ==> public constructor VaultLinearStates(uid: UniqueIdentifier, _participants: List<AbstractParty>) defined in net.corda.node.services.vault.VaultSchemaV1.VaultLinearStates[ClassConstructorDescriptorImpl]
 
 'java' @ [275:91] ==> public val <T> KClass<VaultSchemaV1.VaultLinearStates>.java: Class<VaultSchemaV1.VaultLinearStates> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1410,8 +1408,6 @@ Inferred types:
 'putIfAbsent' @ [276:22] ==> public open fun putIfAbsent(p0: Class<out PersistentState>, p1: Root<*>): Root<*>? defined in kotlin.collections.MutableMap[JavaMethodDescriptor]
 
 'VaultSchemaV1' @ [276:34] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
-
-'VaultLinearStates' @ [276:48] ==> public constructor VaultLinearStates(uid: UniqueIdentifier, _participants: List<AbstractParty>) defined in net.corda.node.services.vault.VaultSchemaV1.VaultLinearStates[ClassConstructorDescriptorImpl]
 
 'java' @ [276:73] ==> public val <T> KClass<VaultSchemaV1.VaultLinearStates>.java: Class<VaultSchemaV1.VaultLinearStates> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1425,15 +1421,15 @@ Inferred types:
 
 'vaultStates' @ [278:51] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [278:63] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [278:63] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> PersistentStateRef
 
 'vaultLinearStates' @ [278:100] ==> val vaultLinearStates: (Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>..Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'get' @ [278:118] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [278:118] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> PersistentStateRef
 
 'joinPredicates' @ [279:9] ==> private final val joinPredicates: MutableList<Predicate> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
@@ -1464,9 +1460,9 @@ Inferred types:
 
 'vaultLinearStates' @ [284:50] ==> val vaultLinearStates: (Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>..Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'get' @ [284:68] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [284:68] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(UUID..UUID?)>..Path<(UUID..UUID?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> UUID
 
 '`in`' @ [284:86] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 
@@ -1495,9 +1491,9 @@ Inferred types:
 
 'vaultLinearStates' @ [290:50] ==> val vaultLinearStates: (Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>..Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'get' @ [290:68] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [290:68] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 '`in`' @ [290:94] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 
@@ -1518,10 +1514,10 @@ Inferred types:
 
 'vaultLinearStates' @ [296:42] ==> val vaultLinearStates: (Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>..Root<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'joinSet' @ [296:60] ==> public abstract fun <X : (Any..Any?), Y : (Any..Any?)> joinSet(p0: (String..String?)): (SetJoin<(Any..Any?), (Any..Any?)>..SetJoin<(Any..Any?), (Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'joinSet' @ [296:60] ==> public abstract fun <X : (Any..Any?), Y : (Any..Any?)> joinSet(p0: (String..String?)): (SetJoin<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?), (AbstractParty..AbstractParty?)>..SetJoin<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?), (AbstractParty..AbstractParty?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <X : (Any..Any?)> -> VaultLinearStates
+    <Y : (Any..Any?)> -> AbstractParty
 
 'predicateSet' @ [297:13] ==> val predicateSet: MutableSet<Predicate> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
@@ -1531,7 +1527,7 @@ Inferred types:
 
 'and' @ [297:46] ==> public abstract fun and(vararg p0: (Predicate..Predicate?)): (Predicate..Predicate?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'joinLinearStateToParty' @ [297:50] ==> val joinLinearStateToParty: (SetJoin<(Any..Any?), (Any..Any?)>..SetJoin<(Any..Any?), (Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria.<anonymous>[LocalVariableDescriptor]
+'joinLinearStateToParty' @ [297:50] ==> val joinLinearStateToParty: (SetJoin<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?), (AbstractParty..AbstractParty?)>..SetJoin<(VaultSchemaV1.VaultLinearStates..VaultSchemaV1.VaultLinearStates?), (AbstractParty..AbstractParty?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria.<anonymous>[LocalVariableDescriptor]
 
 '`in`' @ [297:73] ==> public abstract fun `in`(p0: (MutableCollection<*>..Collection<*>?)): (Predicate..Predicate?) defined in javax.persistence.criteria.SetJoin[JavaMethodDescriptor]
 
@@ -1566,7 +1562,7 @@ Inferred types:
 
 'from' @ [310:44] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(L..L?)>..Class<(L..L?)>?)): (Root<(L..L?)>..Root<(L..L?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> L
+    <X : (Any..Any?)> -> (L..L?)
 
 'entityClass' @ [310:49] ==> val entityClass: Class<L> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
@@ -1584,15 +1580,15 @@ Inferred types:
 
 'vaultStates' @ [313:55] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [313:67] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [313:67] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> PersistentStateRef
 
 'entityRoot' @ [313:104] ==> val entityRoot: (Root<(L..L?)>..Root<(L..L?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[LocalVariableDescriptor]
 
-'get' @ [313:115] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [313:115] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> PersistentStateRef
 
 'joinPredicates' @ [314:13] ==> private final val joinPredicates: MutableList<Predicate> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
@@ -1769,11 +1765,11 @@ Inferred types:
 
 'rootEntities' @ [368:21] ==> private final val rootEntities: MutableMap<Class<out PersistentState>, Root<*>> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'map' @ [368:34] ==> public inline fun <K, V, R> Map<out Class<out PersistentState>, Root<*>>.map(transform: (Map.Entry<Class<out PersistentState>, Root<*>>) -> Root<out (Any..Any?)>): List<Root<out (Any..Any?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [368:34] ==> public inline fun <K, V, R> Map<out Class<out PersistentState>, Root<*>>.map(transform: (Map.Entry<Class<out PersistentState>, Root<*>>) -> Root<*>): List<Root<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Class<out PersistentState>
     <V> -> Root<*>
-    <R> -> Root<out (kotlin.Any..kotlin.Any?)>
+    <R> -> Root<*>
 
 'it' @ [368:40] ==> value-parameter it: Map.Entry<Class<out PersistentState>, Root<*>> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1830,8 +1826,6 @@ Inferred types:
 'criteria' @ [383:13] ==> value-parameter criteria: QueryCriteria.CommonQueryCriteria defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parseCriteria[ValueParameterDescriptorImpl]
 
 'status' @ [383:22] ==> public abstract val status: Vault.StateStatus defined in net.corda.core.node.services.vault.QueryCriteria.CommonQueryCriteria[DeserializedPropertyDescriptor]
-
-'Vault' @ [383:32] ==> public companion object defined in net.corda.core.node.services.Vault[FakeCallableDescriptorForObject]
 
 'ALL' @ [383:50] ==> enum entry ALL defined in net.corda.core.node.services.Vault.StateStatus[FakeCallableDescriptorForObject]
 
@@ -1915,9 +1909,9 @@ Inferred types:
 
 'vaultStates' @ [389:81] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [389:93] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [389:93] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Vault.StateStatus..Vault.StateStatus?)>..Path<(Vault.StateStatus..Vault.StateStatus?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> StateStatus
 
 'VaultSchemaV1' @ [389:116] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
 
@@ -1943,9 +1937,9 @@ Inferred types:
 
 'vaultStates' @ [393:73] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [393:85] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [393:85] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Vault.StateStatus..Vault.StateStatus?)>..Path<(Vault.StateStatus..Vault.StateStatus?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> StateStatus
 
 'VaultSchemaV1' @ [393:108] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
 
@@ -2012,7 +2006,7 @@ Inferred types:
 
 'values' @ [402:104] ==> public final val <T : (Any..Any?)> InPredicate<out (Any..Any?)>.values: (MutableList<out (Expression<out (Any..Any?)>..Expression<out (Any..Any?)>?)>..List<(Expression<out (Any..Any?)>..Expression<out (Any..Any?)>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'map' @ [402:111] ==> public inline fun <T, R> Iterable<(Expression<out (Any..Any?)>..Expression<out (Any..Any?)>?)>.map(transform: ((Expression<out (Any..Any?)>..Expression<out (Any..Any?)>?)) -> (Any..Any?)): List<(Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -2023,7 +2017,7 @@ Inferred types:
 
 'literal' @ [402:143] ==> public final val <T : (Any..Any?)> LiteralExpression<out (Any..Any?)>.literal: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out (kotlin.Any..kotlin.Any?))
 
 'toSet' @ [402:153] ==> public fun <T> Iterable<(Any..Any?)>.toSet(): Set<(Any..Any?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -2061,9 +2055,9 @@ Inferred types:
 
 'vaultStates' @ [405:79] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [405:91] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [405:91] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'VaultSchemaV1' @ [405:103] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
 
@@ -2095,9 +2089,9 @@ Inferred types:
 
 'vaultStates' @ [408:71] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [408:83] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [408:83] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'VaultSchemaV1' @ [408:95] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
 
@@ -2175,18 +2169,18 @@ Inferred types:
 
 'rootEntities' @ [427:21] ==> private final val rootEntities: MutableMap<Class<out PersistentState>, Root<*>> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'getOrElse' @ [427:34] ==> @InlineOnly public inline fun <K, V> Map<Class<out PersistentState>, Root<*>>.getOrElse(key: Class<out PersistentState>, defaultValue: () -> Root<*>): Root<*> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'getOrElse' @ [427:34] ==> @InlineOnly public inline fun <K, V> Map<Class<out PersistentState>, (Root<out (Any..Any?)>..Root<out (Any..Any?)>?)>.getOrElse(key: Class<out PersistentState>, defaultValue: () -> (Root<out (Any..Any?)>..Root<out (Any..Any?)>?)): (Root<out (Any..Any?)>..Root<out (Any..Any?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Class<out PersistentState>
-    <V> -> Root<*>
+    <V> -> (javax.persistence.criteria.Root<out (kotlin.Any..kotlin.Any?)>..javax.persistence.criteria.Root<out (kotlin.Any..kotlin.Any?)>?)
 
 'entityStateClass' @ [427:44] ==> val entityStateClass: Class<out PersistentState> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
 'criteriaQuery' @ [429:42] ==> public final val criteriaQuery: CriteriaQuery<Tuple> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'from' @ [429:56] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<out (PersistentState..PersistentState?)>..Class<out (PersistentState..PersistentState?)>?)): (Root<out (PersistentState..PersistentState?)>..Root<out (PersistentState..PersistentState?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
+'from' @ [429:56] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<out PersistentState>..Class<out PersistentState>?)): (Root<out (PersistentState..PersistentState?)>..Root<out (PersistentState..PersistentState?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> PersistentState
+    <X : (Any..Any?)> -> Captured(out PersistentState)
 
 'entityStateClass' @ [429:61] ==> val entityStateClass: Class<out PersistentState> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
@@ -2204,15 +2198,15 @@ Inferred types:
 
 'vaultStates' @ [431:67] ==> public final val vaultStates: Root<VaultSchemaV1.VaultStates> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
-'get' @ [431:79] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [431:79] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> PersistentStateRef
 
 'entityRoot' @ [431:116] ==> val entityRoot: (Root<out (PersistentState..PersistentState?)>..Root<out (PersistentState..PersistentState?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'get' @ [431:127] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [431:127] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(PersistentStateRef..PersistentStateRef?)>..Path<(PersistentStateRef..PersistentStateRef?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> PersistentStateRef
 
 'joinPredicates' @ [432:25] ==> private final val joinPredicates: MutableList<Predicate> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser[PropertyDescriptorImpl]
 
@@ -2259,17 +2253,17 @@ Inferred types:
 
 'asc' @ [438:59] ==> public abstract fun asc(p0: (Expression<*>..Expression<*>?)): (Order..Order?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'sortEntityRoot' @ [438:63] ==> val sortEntityRoot: Root<*> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
+'sortEntityRoot' @ [438:63] ==> val sortEntityRoot: (Root<out (Any..Any?)>..Root<out (Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
-'get' @ [438:78] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [438:78] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'entityStateAttributeParent' @ [438:90] ==> val entityStateAttributeParent: String defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
-'get' @ [438:118] ==> public abstract operator fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
+'get' @ [438:118] ==> public abstract operator fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'entityStateAttributeChild' @ [438:130] ==> val entityStateAttributeChild: String? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
@@ -2281,11 +2275,11 @@ Inferred types:
 
 'asc' @ [440:59] ==> public abstract fun asc(p0: (Expression<*>..Expression<*>?)): (Order..Order?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'sortEntityRoot' @ [440:63] ==> val sortEntityRoot: Root<*> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
+'sortEntityRoot' @ [440:63] ==> val sortEntityRoot: (Root<out (Any..Any?)>..Root<out (Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
-'get' @ [440:78] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [440:78] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'entityStateAttributeParent' @ [440:90] ==> val entityStateAttributeParent: String defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
@@ -2308,17 +2302,17 @@ Inferred types:
 
 'desc' @ [444:59] ==> public abstract fun desc(p0: (Expression<*>..Expression<*>?)): (Order..Order?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'sortEntityRoot' @ [444:64] ==> val sortEntityRoot: Root<*> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
+'sortEntityRoot' @ [444:64] ==> val sortEntityRoot: (Root<out (Any..Any?)>..Root<out (Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
-'get' @ [444:79] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [444:79] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'entityStateAttributeParent' @ [444:91] ==> val entityStateAttributeParent: String defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
-'get' @ [444:119] ==> public abstract operator fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
+'get' @ [444:119] ==> public abstract operator fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Path[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'entityStateAttributeChild' @ [444:131] ==> val entityStateAttributeChild: String? defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
@@ -2330,11 +2324,11 @@ Inferred types:
 
 'desc' @ [446:59] ==> public abstract fun desc(p0: (Expression<*>..Expression<*>?)): (Order..Order?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 
-'sortEntityRoot' @ [446:64] ==> val sortEntityRoot: Root<*> defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
+'sortEntityRoot' @ [446:64] ==> val sortEntityRoot: (Root<out (Any..Any?)>..Root<out (Any..Any?)>?) defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
-'get' @ [446:79] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [446:79] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'entityStateAttributeParent' @ [446:91] ==> val entityStateAttributeParent: String defined in net.corda.node.services.vault.HibernateQueryCriteriaParser.parse.<anonymous>[LocalVariableDescriptor]
 
@@ -2428,8 +2422,6 @@ Inferred types:
 
 'VaultSchemaV1' @ [465:32] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
 
-'VaultLinearStates' @ [465:46] ==> public constructor VaultLinearStates(uid: UniqueIdentifier, _participants: List<AbstractParty>) defined in net.corda.node.services.vault.VaultSchemaV1.VaultLinearStates[ClassConstructorDescriptorImpl]
-
 'java' @ [465:71] ==> public val <T> KClass<VaultSchemaV1.VaultLinearStates>.java: Class<VaultSchemaV1.VaultLinearStates> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> VaultLinearStates
@@ -2445,8 +2437,6 @@ Inferred types:
     <out C> -> Nothing?
 
 'VaultSchemaV1' @ [468:32] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
-
-'VaultFungibleStates' @ [468:46] ==> public constructor VaultFungibleStates(_owner: AbstractParty, _quantity: Long, _issuerParty: AbstractParty, _issuerRef: OpaqueBytes, _participants: List<AbstractParty>) defined in net.corda.node.services.vault.VaultSchemaV1.VaultFungibleStates[ClassConstructorDescriptorImpl]
 
 'java' @ [468:73] ==> public val <T> KClass<VaultSchemaV1.VaultFungibleStates>.java: Class<VaultSchemaV1.VaultFungibleStates> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

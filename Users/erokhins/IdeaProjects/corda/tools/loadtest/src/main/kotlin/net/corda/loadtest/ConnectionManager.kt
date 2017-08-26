@@ -216,7 +216,7 @@ Inferred types:
 
 'map' @ [93:52] ==> public final fun <R : (Any..Any?)> map(p0: (((RemoteNode..RemoteNode?)) -> (NodeConnection..NodeConnection?)..(((RemoteNode..RemoteNode?)) -> (NodeConnection..NodeConnection?))?)): (Stream<(NodeConnection..NodeConnection?)>..Stream<(NodeConnection..NodeConnection?)>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> NodeConnection
+    <R : (Any..Any?)> -> (net.corda.loadtest.NodeConnection..net.corda.loadtest.NodeConnection?)
 
 'manager' @ [94:9] ==> val manager: ConnectionManager defined in net.corda.loadtest.connectToNodes[LocalVariableDescriptor]
 
@@ -243,6 +243,8 @@ Inferred types:
     <T> -> (net.corda.loadtest.NodeConnection..net.corda.loadtest.NodeConnection?)
 
 'NodeConnection' @ [99:29] ==> public companion object defined in net.corda.loadtest.NodeConnection[FakeCallableDescriptorForObject]
+
+'close' @ [99:45] ==> public open fun close(): Unit defined in net.corda.loadtest.NodeConnection[SimpleFunctionDescriptorImpl]
 
 '!' @ [104:12] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 

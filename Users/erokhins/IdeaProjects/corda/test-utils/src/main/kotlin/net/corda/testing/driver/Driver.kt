@@ -14,10 +14,10 @@ Inferred types:
 
 'InMemory' @ [93:61] ==> enum entry InMemory defined in net.corda.node.services.config.VerifierType[FakeCallableDescriptorForObject]
 
-'emptyMap' @ [94:56] ==> public fun <K, V> emptyMap(): Map<String, Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [94:56] ==> public fun <K, V> emptyMap(): Map<String, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> Nothing
+    <V> -> Any?
 
 'RaftValidatingNotaryService' @ [117:33] ==> public companion object defined in net.corda.node.services.transactions.RaftValidatingNotaryService[FakeCallableDescriptorForObject]
 
@@ -151,6 +151,8 @@ Inferred types:
 
 'driverDsl' @ [287:40] ==> value-parameter driverDsl: D defined in net.corda.testing.driver.genericDriver[ValueParameterDescriptorImpl]
 
+'shutdown' @ [287:51] ==> public abstract fun shutdown(): Unit defined in net.corda.testing.driver.DriverDSLInternalInterface[SimpleFunctionDescriptorImpl]
+
 'driverDsl' @ [289:9] ==> value-parameter driverDsl: D defined in net.corda.testing.driver.genericDriver[ValueParameterDescriptorImpl]
 
 'start' @ [289:19] ==> public abstract fun start(): Unit defined in net.corda.testing.driver.DriverDSLInternalInterface[SimpleFunctionDescriptorImpl]
@@ -199,7 +201,7 @@ Inferred types:
 
 'exitValue' @ [305:199] ==> public abstract fun exitValue(): Int defined in java.lang.Process[JavaMethodDescriptor]
 
-'addressMustBeBoundFuture' @ [311:5] ==> public fun addressMustBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort, listenProcess: Process? = ...): CordaFuture<Unit> defined in net.corda.testing.driver[SimpleFunctionDescriptorImpl]
+'addressMustBeBoundFuture' @ [311:5] ==> public fun addressMustBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort, listenProcess: Process? = ...): CordaFuture<Unit> defined in net.corda.testing.driver in file Driver.kt[SimpleFunctionDescriptorImpl]
 
 'executorService' @ [311:30] ==> value-parameter executorService: ScheduledExecutorService defined in net.corda.testing.driver.addressMustBeBound[ValueParameterDescriptorImpl]
 
@@ -247,7 +249,7 @@ Inferred types:
 
 'Unit' @ [321:13] ==> public object Unit defined in kotlin[FakeCallableDescriptorForObject]
 
-'addressMustNotBeBoundFuture' @ [329:5] ==> public fun addressMustNotBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort): CordaFuture<Unit> defined in net.corda.testing.driver[SimpleFunctionDescriptorImpl]
+'addressMustNotBeBoundFuture' @ [329:5] ==> public fun addressMustNotBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort): CordaFuture<Unit> defined in net.corda.testing.driver in file Driver.kt[SimpleFunctionDescriptorImpl]
 
 'executorService' @ [329:33] ==> value-parameter executorService: ScheduledExecutorService defined in net.corda.testing.driver.addressMustNotBeBound[ValueParameterDescriptorImpl]
 
@@ -319,9 +321,9 @@ Inferred types:
                     resultFuture.set(checkResult)
                 } else {
                     executorService.schedule(this, pollInterval.toMillis(), MILLISECONDS)
-                }' @ [360:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Comparable<{Boolean & Delayed}>, elseBranch: Comparable<{Boolean & Delayed}>): Comparable<{Boolean & Delayed}>[SimpleFunctionDescriptorImpl]
+                }' @ [360:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Comparable<*>..Comparable<*>?), elseBranch: (Comparable<*>..Comparable<*>?)): (Comparable<*>..Comparable<*>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Comparable<{Boolean & Delayed}>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.Comparable<*>..kotlin.Comparable<*>?)
 
 'checkResult' @ [360:21] ==> val checkResult: A? defined in net.corda.testing.driver.poll.<no name provided>.run[LocalVariableDescriptor]
 
@@ -646,9 +648,9 @@ Inferred types:
 
 'State' @ [488:35] ==> public constructor State() defined in net.corda.testing.driver.DriverDSL.State[ClassConstructorDescriptorImpl]
 
-'lazy' @ [491:42] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [491:42] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'getSystemClassLoader' @ [492:30] ==> @CallerSensitive public open fun getSystemClassLoader(): (ClassLoader..ClassLoader?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
 
@@ -744,11 +746,7 @@ Inferred types:
 
 'start' @ [521:24] ==> public final fun start(username: String, password: String): CordaRPCConnection defined in net.corda.client.rpc.CordaRPCClient[DeserializedSimpleFunctionDescriptor]
 
-'ArtemisMessagingComponent' @ [521:30] ==> public companion object defined in net.corda.nodeapi.ArtemisMessagingComponent[FakeCallableDescriptorForObject]
-
 'NODE_USER' @ [521:56] ==> public const final val NODE_USER: String defined in net.corda.nodeapi.ArtemisMessagingComponent.Companion[DeserializedPropertyDescriptor]
-
-'ArtemisMessagingComponent' @ [521:67] ==> public companion object defined in net.corda.nodeapi.ArtemisMessagingComponent[FakeCallableDescriptorForObject]
 
 'NODE_USER' @ [521:93] ==> public const final val NODE_USER: String defined in net.corda.nodeapi.ArtemisMessagingComponent.Companion[DeserializedPropertyDescriptor]
 
@@ -756,7 +754,7 @@ Inferred types:
 
 'isDone' @ [523:40] ==> public final val <V> CordaFuture<out Process>.isDone: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <V> -> Process
+    <V> -> Captured(out Process)
 
 'e' @ [523:54] ==> val e: Exception /* = Exception */ defined in net.corda.testing.driver.DriverDSL.establishRpc.<anonymous>[LocalVariableDescriptor]
 
@@ -789,7 +787,7 @@ Inferred types:
 
 'getOrThrow' @ [530:83] ==> public fun <V> Future<out Process>.getOrThrow(timeout: Duration? = ...): Process defined in net.corda.core.utilities[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <V> -> Process
+    <V> -> Captured(out Process)
 
 'connectionFuture' @ [532:30] ==> val connectionFuture: CordaFuture<CordaRPCConnection> defined in net.corda.testing.driver.DriverDSL.establishRpc[LocalVariableDescriptor]
 
@@ -802,6 +800,8 @@ Inferred types:
 'registerShutdown' @ [533:29] ==> public final fun registerShutdown(shutdown: () -> Unit): Unit defined in net.corda.testing.driver.ShutdownManager[SimpleFunctionDescriptorImpl]
 
 'connection' @ [533:46] ==> val connection: CordaRPCConnection defined in net.corda.testing.driver.DriverDSL.establishRpc.<anonymous>[LocalVariableDescriptor]
+
+'close' @ [533:58] ==> public open fun close(): Unit defined in net.corda.client.rpc.CordaRPCConnection[DeserializedSimpleFunctionDescriptor]
 
 'connection' @ [534:13] ==> val connection: CordaRPCConnection defined in net.corda.testing.driver.DriverDSL.establishRpc.<anonymous>[LocalVariableDescriptor]
 
@@ -837,10 +837,10 @@ Inferred types:
 
 'dedicatedNetworkMapAddress' @ [542:35] ==> private final val dedicatedNetworkMapAddress: NetworkHostAndPort defined in net.corda.testing.driver.DriverDSL[PropertyDescriptorImpl]
 
-'let' @ [542:63] ==> @InlineOnly public inline fun <T, R> Map<String, String>.let(block: (Map<String, String>) -> (X500Name) -> Map<String, String>?): (X500Name) -> Map<String, String>? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [542:63] ==> @InlineOnly public inline fun <T, R> Map<String, String>.let(block: (Map<String, String>) -> (X500Name) -> Map<String, String>): (X500Name) -> Map<String, String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Map<String, String>
-    <R> -> Function1<X500Name, Map<String, String>?>
+    <R> -> Function1<X500Name, Map<String, String>>
 
 'it' @ [543:42] ==> value-parameter it: Map<String, String> defined in net.corda.testing.driver.DriverDSL.networkMapServiceConfigLookup.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1938,7 +1938,7 @@ Inferred types:
     <V> -> Pair<Node, Thread>
     <W> -> Pair<Node, Thread>
 
-'addressMustBeBoundFuture' @ [781:42] ==> public fun addressMustBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort, listenProcess: Process? = ...): CordaFuture<Unit> defined in net.corda.testing.driver[SimpleFunctionDescriptorImpl]
+'addressMustBeBoundFuture' @ [781:42] ==> public fun addressMustBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort, listenProcess: Process? = ...): CordaFuture<Unit> defined in net.corda.testing.driver in file Driver.kt[SimpleFunctionDescriptorImpl]
 
 'executorService' @ [781:67] ==> value-parameter executorService: ScheduledExecutorService defined in net.corda.testing.driver.DriverDSL.Companion.startInProcessNode[ValueParameterDescriptorImpl]
 
@@ -2062,8 +2062,6 @@ Inferred types:
 
 'baseDirectory' @ [821:49] ==> public open val baseDirectory: Path defined in net.corda.node.services.config.FullNodeConfiguration[DeserializedPropertyDescriptor]
 
-'NodeStartup' @ [821:65] ==> public companion object defined in net.corda.node.internal.NodeStartup[FakeCallableDescriptorForObject]
-
 'LOGS_DIRECTORY_NAME' @ [821:77] ==> public final val LOGS_DIRECTORY_NAME: String defined in net.corda.node.internal.NodeStartup.Companion[DeserializedPropertyDescriptor]
 
 'nodeConf' @ [822:44] ==> value-parameter nodeConf: FullNodeConfiguration defined in net.corda.testing.driver.DriverDSL.Companion.startOutOfProcessNode[ValueParameterDescriptorImpl]
@@ -2077,7 +2075,7 @@ Inferred types:
     <V> -> Process
     <W> -> Process
 
-'addressMustBeBoundFuture' @ [826:28] ==> public fun addressMustBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort, listenProcess: Process? = ...): CordaFuture<Unit> defined in net.corda.testing.driver[SimpleFunctionDescriptorImpl]
+'addressMustBeBoundFuture' @ [826:28] ==> public fun addressMustBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort, listenProcess: Process? = ...): CordaFuture<Unit> defined in net.corda.testing.driver in file Driver.kt[SimpleFunctionDescriptorImpl]
 
 'executorService' @ [826:53] ==> value-parameter executorService: ScheduledExecutorService defined in net.corda.testing.driver.DriverDSL.Companion.startOutOfProcessNode[ValueParameterDescriptorImpl]
 
@@ -2141,7 +2139,7 @@ Inferred types:
     <V> -> Process
     <W> -> Process
 
-'addressMustBeBoundFuture' @ [847:36] ==> public fun addressMustBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort, listenProcess: Process? = ...): CordaFuture<Unit> defined in net.corda.testing.driver[SimpleFunctionDescriptorImpl]
+'addressMustBeBoundFuture' @ [847:36] ==> public fun addressMustBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort, listenProcess: Process? = ...): CordaFuture<Unit> defined in net.corda.testing.driver in file Driver.kt[SimpleFunctionDescriptorImpl]
 
 'executorService' @ [847:61] ==> value-parameter executorService: ScheduledExecutorService defined in net.corda.testing.driver.DriverDSL.Companion.startWebserver[ValueParameterDescriptorImpl]
 
@@ -2183,7 +2181,7 @@ Inferred types:
 
 '`package`' @ [854:56] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.`package`: (Package..Package?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'name' @ [854:66] ==> public final val Package.name: (String..String?)[MyPropertyDescriptor]
 

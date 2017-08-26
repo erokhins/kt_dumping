@@ -10,7 +10,7 @@
 
 'ofType' @ [17:60] ==> public final fun <T : (Any..Any?)> ofType(p0: (Class<(Role..Role?)>..Class<(Role..Role?)>?)): (ArgumentAcceptingOptionSpec<(Role..Role?)>..ArgumentAcceptingOptionSpec<(Role..Role?)>?) defined in joptsimple.ArgumentAcceptingOptionSpec[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Role
+    <T : (Any..Any?)> -> (net.corda.irs.Role..net.corda.irs.Role?)
 
 'Role' @ [17:67] ==> private constructor Role() defined in net.corda.irs.Role[ClassConstructorDescriptorImpl]
 
@@ -46,7 +46,7 @@ Inferred types:
 
 'valueOf' @ [29:24] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(Role..Role?)>..OptionSpec<(Role..Role?)>?)): (Role..Role?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Role
+    <V : (Any..Any?)> -> (net.corda.irs.Role..net.corda.irs.Role?)
 
 'roleArg' @ [29:32] ==> val roleArg: (ArgumentAcceptingOptionSpec<(Role..Role?)>..ArgumentAcceptingOptionSpec<(Role..Role?)>?) defined in net.corda.irs.main[LocalVariableDescriptor]
 
@@ -54,7 +54,7 @@ Inferred types:
 
 'valueOf' @ [30:25] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(String..String?)>..OptionSpec<(String..String?)>?)): (String..String?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> String
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'valueArg' @ [30:33] ==> val valueArg: (NonOptionArgumentSpec<(String..String?)>..NonOptionArgumentSpec<(String..String?)>?) defined in net.corda.irs.main[LocalVariableDescriptor]
 

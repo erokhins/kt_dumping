@@ -107,6 +107,8 @@ Inferred types:
     <A> -> SignedTransaction
     <reified R : FlowLogic<T>> -> FinalityFlow
 
+'FinalityFlow' @ [44:51] ==> public constructor FinalityFlow(transaction: SignedTransaction) defined in net.corda.core.flows.FinalityFlow[DeserializedClassConstructorDescriptor]
+
 'issueTx' @ [44:65] ==> val issueTx: SignedTransaction defined in net.corda.loadtest.tests.dummyNotarisationTest.<anonymous>[LocalVariableDescriptor]
 
 'issueFlow' @ [45:17] ==> val issueFlow: FlowHandle<List<SignedTransaction>> defined in net.corda.loadtest.tests.dummyNotarisationTest.<anonymous>[LocalVariableDescriptor]
@@ -126,6 +128,8 @@ Inferred types:
     <T : Any> -> List<SignedTransaction>
     <A> -> SignedTransaction
     <reified R : FlowLogic<T>> -> FinalityFlow
+
+'FinalityFlow' @ [46:39] ==> public constructor FinalityFlow(transaction: SignedTransaction) defined in net.corda.core.flows.FinalityFlow[DeserializedClassConstructorDescriptor]
 
 'moveTx' @ [46:53] ==> val moveTx: SignedTransaction defined in net.corda.loadtest.tests.dummyNotarisationTest.<anonymous>[LocalVariableDescriptor]
 

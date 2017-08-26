@@ -2,9 +2,9 @@
 
 'JvmName' @ [2:1] ==> public constructor JvmName(name: String) defined in kotlin.jvm.JvmName[DeserializedClassConstructorDescriptor]
 
-'lazy' @ [60:31] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [60:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'generateKeyPair' @ [60:38] ==> public fun generateKeyPair(): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -12,9 +12,9 @@ Inferred types:
 
 'public' @ [61:55] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [63:31] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [63:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'generateKeyPair' @ [63:38] ==> public fun generateKeyPair(): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -22,9 +22,9 @@ Inferred types:
 
 'public' @ [64:55] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'lazy' @ [66:28] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [66:28] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'generateKeyPair' @ [66:35] ==> public fun generateKeyPair(): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -64,9 +64,9 @@ Inferred types:
 
 'party' @ [76:49] ==> public final val party: Party defined in net.corda.core.identity.PartyAndCertificate[DeserializedPropertyDescriptor]
 
-'lazy' @ [78:25] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [78:25] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'generateKeyPair' @ [78:32] ==> public fun generateKeyPair(): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -88,15 +88,13 @@ Inferred types:
 
 'ref' @ [82:25] ==> public open fun ref(bytes: OpaqueBytes): PartyAndReference defined in net.corda.core.identity.Party[DeserializedSimpleFunctionDescriptor]
 
-'OpaqueBytes' @ [82:29] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
-
 'of' @ [82:41] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[DeserializedSimpleFunctionDescriptor]
 
 'reference' @ [82:48] ==> public final val reference: OpaqueBytes defined in net.corda.core.contracts.PartyAndReference[DeserializedPropertyDescriptor]
 
-'lazy' @ [84:30] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [84:30] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'generateKeyPair' @ [84:37] ==> public fun generateKeyPair(): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -117,8 +115,6 @@ Inferred types:
 'BIG_CORP' @ [88:26] ==> public val BIG_CORP: Party defined in net.corda.testing in file CoreTestUtils.kt[PropertyDescriptorImpl]
 
 'ref' @ [88:35] ==> public open fun ref(bytes: OpaqueBytes): PartyAndReference defined in net.corda.core.identity.Party[DeserializedSimpleFunctionDescriptor]
-
-'OpaqueBytes' @ [88:39] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
 
 'of' @ [88:51] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -173,8 +169,6 @@ Inferred types:
 'NetworkHostAndPort' @ [97:26] ==> public constructor NetworkHostAndPort(host: String, port: Int) defined in net.corda.core.utilities.NetworkHostAndPort[DeserializedClassConstructorDescriptor]
 
 'StateRef' @ [99:26] ==> public constructor StateRef(txhash: SecureHash, index: Int) defined in net.corda.core.contracts.StateRef[DeserializedClassConstructorDescriptor]
-
-'SecureHash' @ [99:35] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
 'randomSHA256' @ [99:46] ==> @JvmStatic public final fun randomSHA256(): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -256,7 +250,7 @@ Inferred types:
 
 'DUMMY_NOTARY' @ [155:78] ==> public val DUMMY_NOTARY: Party defined in net.corda.testing in file TestConstants.kt[PropertyDescriptorImpl]
 
-'ledger' @ [158:5] ==> @JvmOverloads public fun ledger(services: ServiceHub = ..., initialiseSerialization: Boolean = ..., dsl: LedgerDSL<TestTransactionDSLInterpreter, TestLedgerDSLInterpreter>.() -> Unit): LedgerDSL<TestTransactionDSLInterpreter, TestLedgerDSLInterpreter> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'ledger' @ [158:5] ==> @JvmOverloads public fun ledger(services: ServiceHub = ..., initialiseSerialization: Boolean = ..., dsl: LedgerDSL<TestTransactionDSLInterpreter, TestLedgerDSLInterpreter>.() -> Unit): LedgerDSL<TestTransactionDSLInterpreter, TestLedgerDSLInterpreter> defined in net.corda.testing in file CoreTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'initialiseSerialization' @ [158:38] ==> value-parameter initialiseSerialization: Boolean = ... defined in net.corda.testing.transaction[ValueParameterDescriptorImpl]
 

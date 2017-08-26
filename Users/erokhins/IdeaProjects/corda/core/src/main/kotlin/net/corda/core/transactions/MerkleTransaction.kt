@@ -13,7 +13,7 @@ Inferred types:
 
 'x' @ [18:24] ==> value-parameter x: T defined in net.corda.core.transactions.serializedHash[ValueParameterDescriptorImpl]
 
-'computeNonce' @ [18:27] ==> public fun computeNonce(privacySalt: PrivacySalt, index: Int): SecureHash.SHA256 defined in net.corda.core.transactions[SimpleFunctionDescriptorImpl]
+'computeNonce' @ [18:27] ==> public fun computeNonce(privacySalt: PrivacySalt, index: Int): SecureHash.SHA256 defined in net.corda.core.transactions in file MerkleTransaction.kt[SimpleFunctionDescriptorImpl]
 
 'privacySalt' @ [18:40] ==> value-parameter privacySalt: PrivacySalt? defined in net.corda.core.transactions.serializedHash[ValueParameterDescriptorImpl]
 
@@ -52,9 +52,9 @@ Inferred types:
 
 'sha256' @ [25:86] ==> public fun ByteArray.sha256(): SecureHash.SHA256 defined in net.corda.core.crypto in file SecureHash.kt[SimpleFunctionDescriptorImpl]
 
-'serializedHash' @ [27:9] ==> public fun <T : Any> serializedHash(x: {T & PrivacySalt}): SecureHash defined in net.corda.core.transactions[SimpleFunctionDescriptorImpl]
+'serializedHash' @ [27:9] ==> public fun <T : Any> serializedHash(x: Any): SecureHash defined in net.corda.core.transactions[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> {T & PrivacySalt}
+    <T : Any> -> Any
 
 'x' @ [27:24] ==> value-parameter x: T defined in net.corda.core.transactions.serializedHash[ValueParameterDescriptorImpl]
 

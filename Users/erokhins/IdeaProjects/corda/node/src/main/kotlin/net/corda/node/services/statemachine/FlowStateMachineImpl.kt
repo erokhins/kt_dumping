@@ -14,7 +14,7 @@ Inferred types:
 
 'Fiber' @ [40:40] ==> public constructor Fiber<V : (Any..Any?)>() defined in co.paralleluniverse.fibers.Fiber[JavaClassConstructorDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@70ada16a
 
 'staticField' @ [40:53] ==> public fun <T> KClass<*>.staticField(name: String): DeclaredField<Any> defined in net.corda.core.internal[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -66,8 +66,6 @@ Inferred types:
 'dataSource' @ [59:44] ==> public final var dataSource: CordaPersistence defined in net.corda.node.utilities.DatabaseTransactionManager.Companion[PropertyDescriptorImpl]
 
 'db' @ [59:57] ==> val db: CordaPersistence defined in net.corda.node.services.statemachine.FlowStateMachineImpl.Companion.sleep[LocalVariableDescriptor]
-
-'DatabaseTransactionManager' @ [60:17] ==> public companion object defined in net.corda.node.utilities.DatabaseTransactionManager[FakeCallableDescriptorForObject]
 
 'newTransaction' @ [60:44] ==> public final fun newTransaction(isolation: Int = ...): DatabaseTransaction defined in net.corda.node.utilities.DatabaseTransactionManager.Companion[SimpleFunctionDescriptorImpl]
 
@@ -228,8 +226,6 @@ Inferred types:
 
 'invoke' @ [124:9] ==> public abstract operator fun invoke(p1: Try<R>, p2: Boolean): Unit defined in kotlin.Function2[FunctionInvokeDescriptor]
 
-'Try' @ [124:21] ==> public companion object defined in net.corda.core.utilities.Try[FakeCallableDescriptorForObject]
-
 'Success' @ [124:25] ==> public constructor Success<out A>(value: R) defined in net.corda.core.utilities.Try.Success[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> R
@@ -275,8 +271,6 @@ Inferred types:
 'currentStrand' @ [133:113] ==> public open fun currentStrand(): (Strand..Strand?) defined in co.paralleluniverse.strands.Strand[JavaMethodDescriptor]
 
 'invoke' @ [137:9] ==> public abstract operator fun invoke(p1: Try<R>, p2: Boolean): Unit defined in kotlin.Function2[FunctionInvokeDescriptor]
-
-'Try' @ [137:21] ==> public companion object defined in net.corda.core.utilities.Try[FakeCallableDescriptorForObject]
 
 'Failure' @ [137:25] ==> public constructor Failure(exception: Throwable) defined in net.corda.core.utilities.Try.Failure[DeserializedClassConstructorDescriptor]
 
@@ -835,9 +829,9 @@ Inferred types:
 
 'openSessions' @ [310:16] ==> internal final val openSessions: HashMap<Pair<FlowLogic<*>, Party>, FlowSession> defined in net.corda.node.services.statemachine.FlowStateMachineImpl[PropertyDescriptorImpl]
 
-'Pair' @ [310:29] ==> public constructor Pair<out A, out B>(first: FlowLogic<Any?>, second: Party) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [310:29] ==> public constructor Pair<out A, out B>(first: FlowLogic<*>, second: Party) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> FlowLogic<Any?>
+    <out A> -> FlowLogic<*>
     <out B> -> Party
 
 'sessionFlow' @ [310:34] ==> value-parameter sessionFlow: FlowLogic<*> defined in net.corda.node.services.statemachine.FlowStateMachineImpl.getConfirmedSessionIfPresent[ValueParameterDescriptorImpl]
@@ -888,9 +882,9 @@ Inferred types:
 
 'openSessions' @ [338:9] ==> internal final val openSessions: HashMap<Pair<FlowLogic<*>, Party>, FlowSession> defined in net.corda.node.services.statemachine.FlowStateMachineImpl[PropertyDescriptorImpl]
 
-'Pair' @ [338:22] ==> public constructor Pair<out A, out B>(first: FlowLogic<Any?>, second: Party) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [338:22] ==> public constructor Pair<out A, out B>(first: FlowLogic<*>, second: Party) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> FlowLogic<Any?>
+    <out A> -> FlowLogic<*>
     <out B> -> Party
 
 'sessionFlow' @ [338:27] ==> value-parameter sessionFlow: FlowLogic<*> defined in net.corda.node.services.statemachine.FlowStateMachineImpl.startNewSession[ValueParameterDescriptorImpl]
@@ -905,9 +899,9 @@ Inferred types:
 
 'sessionFlow' @ [339:46] ==> value-parameter sessionFlow: FlowLogic<*> defined in net.corda.node.services.statemachine.FlowStateMachineImpl.startNewSession[ValueParameterDescriptorImpl]
 
-'javaClass' @ [339:58] ==> public val <T : Any> FlowLogic<Any?>.javaClass: Class<FlowLogic<Any?>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [339:58] ==> public val <T : Any> FlowLogic<*>.javaClass: Class<FlowLogic<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> FlowLogic<Any?>
+    <T : Any> -> FlowLogic<*>
 
 'flowVersionAndInitiatingClass' @ [339:68] ==> @Suppress public val Class<out FlowLogic<*>>.flowVersionAndInitiatingClass: Pair<Int, Class<out FlowLogic<*>>> defined in net.corda.node.services.statemachine in file FlowStateMachineImpl.kt[PropertyDescriptorImpl]
 
@@ -921,7 +915,7 @@ Inferred types:
 
 'name' @ [340:81] ==> public final val <T : (Any..Any?)> Class<out FlowLogic<*>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<*>
+    <T : (Any..Any?)> -> Captured(out FlowLogic<*>)
 
 'version' @ [340:87] ==> val version: Int defined in net.corda.node.services.statemachine.FlowStateMachineImpl.startNewSession[LocalVariableDescriptor]
 
@@ -1005,7 +999,7 @@ Inferred types:
 
 'simpleName' @ [369:80] ==> public final val <T : (Any..Any?)> Class<out SessionMessage>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SessionMessage
+    <T : (Any..Any?)> -> Captured(out SessionMessage)
 
 'this' @ [369:121] ==> <this> defined in net.corda.node.services.statemachine.FlowStateMachineImpl.suspendAndExpectReceive[ReceiverParameterDescriptorImpl]
 
@@ -1094,7 +1088,7 @@ Inferred types:
 
 'name' @ [385:68] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'receiveType' @ [385:76] ==> val receiveType: Class<M> defined in net.corda.node.services.statemachine.FlowStateMachineImpl.confirmReceiveType[LocalVariableDescriptor]
 
@@ -1248,7 +1242,7 @@ Inferred types:
 
 'unparkDeserialized' @ [441:23] ==> public open fun <V : (Any..Any?)> unparkDeserialized(p0: (Fiber<(Unit..Unit?)>..Fiber<(Unit..Unit?)>?), p1: (FiberScheduler..FiberScheduler?)): (Fiber<(Unit..Unit?)>..Fiber<(Unit..Unit?)>?) defined in co.paralleluniverse.fibers.Fiber[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Unit
+    <V : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'this' @ [441:42] ==> <this> defined in net.corda.node.services.statemachine.FlowStateMachineImpl[LazyClassReceiverParameterDescriptor]
 
@@ -1335,7 +1329,7 @@ Inferred types:
 
 'getDeclaredAnnotation' @ [472:34] ==> public open fun <A : (Annotation..Annotation?)> getDeclaredAnnotation(p0: (Class<(InitiatingFlow..InitiatingFlow?)>..Class<(InitiatingFlow..InitiatingFlow?)>?)): (InitiatingFlow..InitiatingFlow?) defined in java.lang.Class[JavaMethodDescriptor]
 Inferred types:
-    <A : (Annotation..Annotation?)> -> InitiatingFlow
+    <A : (Annotation..Annotation?)> -> (net.corda.core.flows.InitiatingFlow..net.corda.core.flows.InitiatingFlow?)
 
 'InitiatingFlow' @ [472:56] ==> public constructor InitiatingFlow(version: Int = ...) defined in net.corda.core.flows.InitiatingFlow[DeserializedClassConstructorDescriptor]
 
@@ -1377,9 +1371,9 @@ Inferred types:
 
 'current' @ [478:19] ==> var current: Class<*> defined in net.corda.node.services.statemachine.<get-flowVersionAndInitiatingClass>[LocalVariableDescriptor]
 
-'superclass' @ [478:27] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [478:27] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'found' @ [479:23] ==> var found: Pair<Int, Class<out FlowLogic<*>>>? defined in net.corda.node.services.statemachine.<get-flowVersionAndInitiatingClass>[LocalVariableDescriptor]
 
@@ -1389,7 +1383,7 @@ Inferred types:
 
 'name' @ [480:49] ==> public final val <T : (Any..Any?)> Class<out FlowLogic<*>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<*>
+    <T : (Any..Any?)> -> Captured(out FlowLogic<*>)
 
 'InitiatingFlow' @ [481:20] ==> public constructor InitiatingFlow(version: Int = ...) defined in net.corda.core.flows.InitiatingFlow[DeserializedClassConstructorDescriptor]
 

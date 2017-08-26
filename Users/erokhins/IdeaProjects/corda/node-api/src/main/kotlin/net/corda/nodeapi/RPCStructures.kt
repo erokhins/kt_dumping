@@ -86,10 +86,6 @@ Inferred types:
 
 'register' @ [56:9] ==> public open fun register(type: Class<*>?, serializer: Serializer<*>?): Registration defined in net.corda.nodeapi.RPCKryo[SimpleFunctionDescriptorImpl]
 
-'Observable' @ [56:18] ==> protected/*protected and package*/ constructor Observable<T : (Any..Any?)>(p0: (Observable.OnSubscribe<(Any..Any?)>..Observable.OnSubscribe<(Any..Any?)>?)) defined in rx.Observable[JavaClassConstructorDescriptor]
-Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-
 'java' @ [56:36] ==> public val <T> KClass<Observable<*>>.java: Class<Observable<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> Observable<*>
@@ -108,17 +104,13 @@ Inferred types:
 
 'input' @ [58:73] ==> value-parameter input: Input defined in net.corda.nodeapi.RPCKryo.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'Observable' @ [58:80] ==> protected/*protected and package*/ constructor Observable<T : (Any..Any?)>(p0: (Observable.OnSubscribe<(Any..Any?)>..Observable.OnSubscribe<(Any..Any?)>?)) defined in rx.Observable[JavaClassConstructorDescriptor]
-Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-
 'java' @ [58:98] ==> public val <T> KClass<Observable<*>>.java: Class<Observable<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> Observable<*>
 
 'toFuture' @ [58:104] ==> public fun <T> Observable<out (Any..Any?)>.toFuture(): CordaFuture<out (Any..Any?)> defined in net.corda.core[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (kotlin.Any..kotlin.Any?)
+    <T> -> Captured(*)
 
 'observableSerializer' @ [59:48] ==> value-parameter observableSerializer: Serializer<Observable<*>> defined in net.corda.nodeapi.RPCKryo.<init>[ValueParameterDescriptorImpl]
 
@@ -134,19 +126,13 @@ Inferred types:
 Inferred types:
     <A> -> Any?
 
-'Observable' @ [64:13] ==> protected/*protected and package*/ constructor Observable<T : (Any..Any?)>(p0: (Observable.OnSubscribe<(Any..Any?)>..Observable.OnSubscribe<(Any..Any?)>?)) defined in rx.Observable[JavaClassConstructorDescriptor]
-Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+'!=' @ [64:13] ==> public open fun equals(other: Any?): Boolean defined in java.lang.Class[DeserializedSimpleFunctionDescriptor]
 
 'java' @ [64:31] ==> public val <T> KClass<Observable<*>>.java: Class<Observable<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> Observable<*>
 
 'type' @ [64:39] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.RPCKryo.getRegistration[ValueParameterDescriptorImpl]
-
-'Observable' @ [64:47] ==> protected/*protected and package*/ constructor Observable<T : (Any..Any?)>(p0: (Observable.OnSubscribe<(Any..Any?)>..Observable.OnSubscribe<(Any..Any?)>?)) defined in rx.Observable[JavaClassConstructorDescriptor]
-Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'java' @ [64:65] ==> public val <T> KClass<Observable<*>>.java: Class<Observable<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -159,10 +145,6 @@ Inferred types:
 'super' @ [65:20] ==> <this> defined in net.corda.nodeapi.RPCKryo[LazyClassReceiverParameterDescriptor]
 
 'getRegistration' @ [65:26] ==> public open fun getRegistration(p0: raw (Class<(Any..Any?)>..Class<*>?)): (Registration..Registration?) defined in net.corda.nodeapi.internal.serialization.CordaKryo[JavaMethodDescriptor]
-
-'Observable' @ [65:42] ==> protected/*protected and package*/ constructor Observable<T : (Any..Any?)>(p0: (Observable.OnSubscribe<(Any..Any?)>..Observable.OnSubscribe<(Any..Any?)>?)) defined in rx.Observable[JavaClassConstructorDescriptor]
-Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'java' @ [65:60] ==> public val <T> KClass<Observable<*>>.java: Class<Observable<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -236,7 +218,7 @@ Inferred types:
 
 'name' @ [78:18] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'startsWith' @ [78:23] ==> public fun String.startsWith(prefix: String, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -244,7 +226,7 @@ Inferred types:
 
 'name' @ [78:57] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'contains' @ [78:62] ==> public operator fun CharSequence.contains(other: CharSequence, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
@@ -252,5 +234,5 @@ Inferred types:
 
 'name' @ [78:96] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 

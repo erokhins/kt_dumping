@@ -28,9 +28,9 @@ Inferred types:
 
 'stickTo' @ [29:33] ==> value-parameter stickTo: Any defined in net.corda.core.internal.LazyStickyPool.borrow[ValueParameterDescriptorImpl]
 
-'synchronized' @ [30:24] ==> @InlineOnly public inline fun <R> synchronized(lock: Any, block: () -> LinkedBlockingQueue<A>): LinkedBlockingQueue<A> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'synchronized' @ [30:24] ==> @InlineOnly public inline fun <R> synchronized(lock: Any, block: () -> LinkedBlockingQueue<(A..A?)>): LinkedBlockingQueue<(A..A?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <R> -> LinkedBlockingQueue<A>
+    <R> -> LinkedBlockingQueue<(A..A?)>
 
 'box' @ [30:37] ==> val box: LazyStickyPool.InstanceBox<A> defined in net.corda.core.internal.LazyStickyPool.borrow[LocalVariableDescriptor]
 
@@ -44,15 +44,15 @@ Inferred types:
                 newInstance
             } else {
                 instance
-            }' @ [32:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: LinkedBlockingQueue<A>, elseBranch: LinkedBlockingQueue<A>): LinkedBlockingQueue<A>[SimpleFunctionDescriptorImpl]
+            }' @ [32:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: LinkedBlockingQueue<(A..A?)>, elseBranch: LinkedBlockingQueue<(A..A?)>): LinkedBlockingQueue<(A..A?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> LinkedBlockingQueue<A>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> LinkedBlockingQueue<(A..A?)>
 
 'instance' @ [32:17] ==> val instance: LinkedBlockingQueue<A>? defined in net.corda.core.internal.LazyStickyPool.borrow.<anonymous>[LocalVariableDescriptor]
 
 'LinkedBlockingQueue' @ [33:35] ==> public constructor LinkedBlockingQueue<E : (Any..Any?)>(p0: (MutableCollection<out (A..A?)>..Collection<(A..A?)>?)) defined in java.util.concurrent.LinkedBlockingQueue[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> A
+    <E : (Any..Any?)> -> (A..A?)
 
 'listOf' @ [33:55] ==> public fun <T> listOf(element: A): List<A> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -64,13 +64,13 @@ Inferred types:
 
 'instance' @ [34:21] ==> public final var instance: LinkedBlockingQueue<A>? defined in net.corda.core.internal.LazyStickyPool.InstanceBox[PropertyDescriptorImpl]
 
-'newInstance' @ [34:32] ==> val newInstance: LinkedBlockingQueue<A> defined in net.corda.core.internal.LazyStickyPool.borrow.<anonymous>[LocalVariableDescriptor]
+'newInstance' @ [34:32] ==> val newInstance: LinkedBlockingQueue<(A..A?)> defined in net.corda.core.internal.LazyStickyPool.borrow.<anonymous>[LocalVariableDescriptor]
 
-'newInstance' @ [35:17] ==> val newInstance: LinkedBlockingQueue<A> defined in net.corda.core.internal.LazyStickyPool.borrow.<anonymous>[LocalVariableDescriptor]
+'newInstance' @ [35:17] ==> val newInstance: LinkedBlockingQueue<(A..A?)> defined in net.corda.core.internal.LazyStickyPool.borrow.<anonymous>[LocalVariableDescriptor]
 
 'instance' @ [37:17] ==> val instance: LinkedBlockingQueue<A>? defined in net.corda.core.internal.LazyStickyPool.borrow.<anonymous>[LocalVariableDescriptor]
 
-'instance' @ [40:16] ==> val instance: LinkedBlockingQueue<A> defined in net.corda.core.internal.LazyStickyPool.borrow[LocalVariableDescriptor]
+'instance' @ [40:16] ==> val instance: LinkedBlockingQueue<(A..A?)> defined in net.corda.core.internal.LazyStickyPool.borrow[LocalVariableDescriptor]
 
 'take' @ [40:25] ==> public open fun take(): (A..A?) defined in java.util.concurrent.LinkedBlockingQueue[JavaMethodDescriptor]
 

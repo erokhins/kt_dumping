@@ -26,7 +26,7 @@ Inferred types:
 
 'ofType' @ [37:64] ==> public final fun <T : (Any..Any?)> ofType(p0: (Class<(TraderDemo.Role..TraderDemo.Role?)>..Class<(TraderDemo.Role..TraderDemo.Role?)>?)): (ArgumentAcceptingOptionSpec<(TraderDemo.Role..TraderDemo.Role?)>..ArgumentAcceptingOptionSpec<(TraderDemo.Role..TraderDemo.Role?)>?) defined in joptsimple.ArgumentAcceptingOptionSpec[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Role
+    <T : (Any..Any?)> -> (net.corda.traderdemo.TraderDemo.Role..net.corda.traderdemo.TraderDemo.Role?)
 
 'Role' @ [37:71] ==> private constructor Role() defined in net.corda.traderdemo.TraderDemo.Role[ClassConstructorDescriptorImpl]
 
@@ -60,7 +60,7 @@ Inferred types:
 
 'valueOf' @ [48:28] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(TraderDemo.Role..TraderDemo.Role?)>..OptionSpec<(TraderDemo.Role..TraderDemo.Role?)>?)): (TraderDemo.Role..TraderDemo.Role?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Role
+    <V : (Any..Any?)> -> (net.corda.traderdemo.TraderDemo.Role..net.corda.traderdemo.TraderDemo.Role?)
 
 'roleArg' @ [48:36] ==> val roleArg: (ArgumentAcceptingOptionSpec<(TraderDemo.Role..TraderDemo.Role?)>..ArgumentAcceptingOptionSpec<(TraderDemo.Role..TraderDemo.Role?)>?) defined in net.corda.traderdemo.TraderDemo.main[LocalVariableDescriptor]
 

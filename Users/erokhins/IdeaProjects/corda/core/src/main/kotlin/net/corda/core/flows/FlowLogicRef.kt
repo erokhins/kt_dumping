@@ -12,7 +12,7 @@ Inferred types:
 
 'FlowLogic' @ [17:77] ==> public constructor FlowLogic<out T>() defined in net.corda.core.flows.FlowLogic[ClassConstructorDescriptorImpl]
 Inferred types:
-    <out T> -> Nothing
+    <out T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@1391e55b
 
 'java' @ [17:94] ==> public val <T> KClass<FlowLogic<*>>.java: Class<FlowLogic<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -26,7 +26,7 @@ Inferred types:
 
 'name' @ [17:126] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'msg' @ [17:133] ==> value-parameter msg: String defined in net.corda.core.flows.IllegalFlowLogicException.<init>[ValueParameterDescriptorImpl]
 

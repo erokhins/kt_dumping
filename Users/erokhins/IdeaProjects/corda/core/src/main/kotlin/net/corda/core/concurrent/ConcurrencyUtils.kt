@@ -15,13 +15,11 @@ Inferred types:
     <V> -> V
     <W> -> W
 
-'futures' @ [26:108] ==> value-parameter vararg futures: CordaFuture<out V> defined in net.corda.core.concurrent.firstOf[ValueParameterDescriptorImpl]
+'futures' @ [26:102] ==> value-parameter vararg futures: CordaFuture<out V> defined in net.corda.core.concurrent.firstOf[ValueParameterDescriptorImpl]
 
-'defaultLog' @ [26:117] ==> private val defaultLog: (Logger..Logger?) defined in net.corda.core.concurrent in file ConcurrencyUtils.kt[PropertyDescriptorImpl]
+'defaultLog' @ [26:111] ==> private val defaultLog: (Logger..Logger?) defined in net.corda.core.concurrent in file ConcurrencyUtils.kt[PropertyDescriptorImpl]
 
-'invoke' @ [26:131] ==> public abstract operator fun invoke(p1: CordaFuture<out V>): W defined in kotlin.Function1[FunctionInvokeDescriptor]
-
-'it' @ [26:139] ==> value-parameter it: CordaFuture<out V> defined in net.corda.core.concurrent.firstOf.<anonymous>[ValueParameterDescriptorImpl]
+'handler' @ [26:123] ==> value-parameter handler: (CordaFuture<out V>) -> W defined in net.corda.core.concurrent.firstOf[ValueParameterDescriptorImpl]
 
 'getLogger' @ [28:40] ==> public open fun getLogger(p0: (String..String?)): (Logger..Logger?) defined in org.slf4j.LoggerFactory[JavaMethodDescriptor]
 
@@ -41,7 +39,7 @@ Inferred types:
 
 'it' @ [36:9] ==> value-parameter it: CordaFuture<out V> defined in net.corda.core.concurrent.firstOf.<anonymous>[ValueParameterDescriptorImpl]
 
-'then' @ [36:12] ==> public abstract fun <W> then(callback: (Nothing) -> Any): Unit defined in net.corda.core.concurrent.CordaFuture[SimpleFunctionDescriptorImpl]
+'then' @ [36:12] ==> public abstract fun <W> then(callback: (CordaFuture<out V>) -> Any): Unit defined in net.corda.core.concurrent.CordaFuture[SimpleFunctionDescriptorImpl]
 Inferred types:
     <W> -> Any
 
@@ -79,13 +77,13 @@ Inferred types:
 
 'isCancelled' @ [39:27] ==> public final val <V> CordaFuture<out V>.isCancelled: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <V> -> V
+    <V> -> Captured(out V)
 
 'it' @ [42:17] ==> value-parameter it: CordaFuture<out V> defined in net.corda.core.concurrent.firstOf.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'match' @ [42:20] ==> public fun <V, W> Future<out V>.match(success: (Nothing) -> Unit, failure: (Throwable) -> Unit): Unit defined in net.corda.core.concurrent[SimpleFunctionDescriptorImpl]
+'match' @ [42:20] ==> public fun <V, W> Future<out V>.match(success: Function1<*, Unit>, failure: (Throwable) -> Unit): Unit defined in net.corda.core.concurrent[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <V> -> V
+    <V> -> Captured(out V)
     <W> -> Unit
 
 'log' @ [42:32] ==> value-parameter log: Logger defined in net.corda.core.concurrent.firstOf[ValueParameterDescriptorImpl]

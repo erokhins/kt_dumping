@@ -96,15 +96,15 @@ Inferred types:
 
 'metricRegistry' @ [67:5] ==> value-parameter metricRegistry: MetricRegistry defined in net.corda.testing.performance.startPublishingFixedRateInjector[ValueParameterDescriptorImpl]
 
-'register' @ [67:20] ==> public open fun <T : (Metric..Metric?)> register(p0: (String..String?), p1: (Gauge<Int>..Gauge<Int>?)): (Gauge<Int>..Gauge<Int>?) defined in com.codahale.metrics.MetricRegistry[JavaMethodDescriptor]
+'register' @ [67:20] ==> public open fun <T : (Metric..Metric?)> register(p0: (String..String?), p1: (Gauge<(Int..Int?)>..Gauge<(Int..Int?)>?)): (Gauge<(Int..Int?)>..Gauge<(Int..Int?)>?) defined in com.codahale.metrics.MetricRegistry[JavaMethodDescriptor]
 Inferred types:
-    <T : (Metric..Metric?)> -> Gauge<Int>
+    <T : (Metric..Metric?)> -> (com.codahale.metrics.Gauge<(kotlin.Int..kotlin.Int?)>..com.codahale.metrics.Gauge<(kotlin.Int..kotlin.Int?)>?)
 
 'queueSizeMetricName' @ [67:29] ==> value-parameter queueSizeMetricName: String = ... defined in net.corda.testing.performance.startPublishingFixedRateInjector[ValueParameterDescriptorImpl]
 
-'Gauge' @ [67:50] ==> public fun <T : (Any..Any?)> Gauge(function: () -> (Int..Int?)): Gauge<Int> defined in com.codahale.metrics[SimpleFunctionDescriptorImpl]
+'Gauge' @ [67:50] ==> public fun <T : (Any..Any?)> Gauge(function: () -> (Int..Int?)): Gauge<(Int..Int?)> defined in com.codahale.metrics[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'workSemaphore' @ [67:58] ==> val workSemaphore: Semaphore defined in net.corda.testing.performance.startPublishingFixedRateInjector[LocalVariableDescriptor]
 
@@ -142,7 +142,7 @@ Inferred types:
 
 'synchronizedList' @ [74:35] ==> public open fun <T : (Any..Any?)> synchronizedList(p0: (MutableList<(Long..Long?)>..List<(Long..Long?)>?)): (MutableList<(Long..Long?)>..List<(Long..Long?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'ArrayList' @ [74:52] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -164,7 +164,7 @@ Inferred types:
 
 'time' @ [80:43] ==> public final fun <T : (Any..Any?)> time(p0: (() -> (Boolean..Boolean?)..(() -> (Boolean..Boolean?))?)): (Boolean..Boolean?) defined in com.codahale.metrics.Timer[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Boolean
+    <T : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'timings' @ [81:29] ==> val timings: (MutableList<(Long..Long?)>..List<(Long..Long?)>?) defined in net.corda.testing.performance.startPublishingFixedRateInjector.<anonymous>[LocalVariableDescriptor]
 

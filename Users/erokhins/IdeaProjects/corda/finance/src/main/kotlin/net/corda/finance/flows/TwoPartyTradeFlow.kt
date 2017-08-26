@@ -76,8 +76,6 @@ Inferred types:
 
 'otherParty' @ [90:68] ==> public final val otherParty: Party defined in net.corda.finance.flows.TwoPartyTradeFlow.Seller[PropertyDescriptorImpl]
 
-'VERIFYING_AND_SIGNING' @ [90:80] ==> public object VERIFYING_AND_SIGNING : ProgressTracker.Step defined in net.corda.finance.flows.TwoPartyTradeFlow.Seller.Companion[FakeCallableDescriptorForObject]
-
 'childProgressTracker' @ [90:102] ==> public open fun childProgressTracker(): ProgressTracker defined in net.corda.finance.flows.TwoPartyTradeFlow.Seller.Companion.VERIFYING_AND_SIGNING[SimpleFunctionDescriptorImpl]
 
 'stx' @ [92:25] ==> value-parameter stx: SignedTransaction defined in net.corda.finance.flows.TwoPartyTradeFlow.Seller.call.<no name provided>.checkTransaction[ValueParameterDescriptorImpl]
@@ -86,7 +84,7 @@ Inferred types:
 
 'outputStates' @ [92:32] ==> public final val outputStates: List<ContractState> defined in net.corda.core.transactions.WireTransaction[DeserializedPropertyDescriptor]
 
-'sumCashBy' @ [92:45] ==> public fun Iterable<ContractState>.sumCashBy(owner: AbstractParty): Amount<Issued<Currency>> defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCashBy' @ [92:45] ==> public fun Iterable<ContractState>.sumCashBy(owner: AbstractParty): Amount<Issued<Currency>> defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'me' @ [92:55] ==> public final val me: AbstractParty defined in net.corda.finance.flows.TwoPartyTradeFlow.Seller[PropertyDescriptorImpl]
 
@@ -186,8 +184,6 @@ Inferred types:
 
 'partSignedTx' @ [151:63] ==> val partSignedTx: SignedTransaction defined in net.corda.finance.flows.TwoPartyTradeFlow.Buyer.call[LocalVariableDescriptor]
 
-'COLLECTING_SIGNATURES' @ [151:77] ==> public object COLLECTING_SIGNATURES : ProgressTracker.Step defined in net.corda.finance.flows.TwoPartyTradeFlow.Buyer[FakeCallableDescriptorForObject]
-
 'childProgressTracker' @ [151:99] ==> public open fun childProgressTracker(): ProgressTracker defined in net.corda.finance.flows.TwoPartyTradeFlow.Buyer.COLLECTING_SIGNATURES[SimpleFunctionDescriptorImpl]
 
 'progressTracker' @ [153:13] ==> public open val progressTracker: ProgressTracker defined in net.corda.finance.flows.TwoPartyTradeFlow.Buyer[PropertyDescriptorImpl]
@@ -285,7 +281,7 @@ Inferred types:
 
 'name' @ [167:60] ==> public final val <T : (Any..Any?)> Class<out OwnableState>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> OwnableState
+    <T : (Any..Any?)> -> Captured(out OwnableState)
 
 'assetTypeName' @ [167:66] ==> val assetTypeName: (String..String?) defined in net.corda.finance.flows.TwoPartyTradeFlow.Buyer.receiveAndValidateTradeRequest.<anonymous>[LocalVariableDescriptor]
 

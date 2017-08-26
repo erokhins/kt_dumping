@@ -1,6 +1,6 @@
-'lazy' @ [22:35] ==> public fun <T> lazy(initializer: () -> List<IRSState>): Lazy<List<IRSState>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [22:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<IRSState>
+    <T> -> T
 
 'tradeStateAndRefs' @ [22:42] ==> private final val tradeStateAndRefs: List<StateAndRef<IRSState>> defined in net.corda.vega.portfolio.Portfolio[PropertyDescriptorImpl]
 
@@ -15,9 +15,9 @@ Inferred types:
 
 'data' @ [22:75] ==> public final val data: IRSState defined in net.corda.core.contracts.TransactionState[DeserializedPropertyDescriptor]
 
-'lazy' @ [23:34] ==> public fun <T> lazy(initializer: () -> List<SwapData>): Lazy<List<SwapData>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [23:34] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<SwapData>
+    <T> -> T
 
 'trades' @ [23:41] ==> public final val trades: List<IRSState> defined in net.corda.vega.portfolio.Portfolio[PropertyDescriptorImpl]
 
@@ -30,9 +30,9 @@ Inferred types:
 
 'swap' @ [23:57] ==> public final val swap: SwapData defined in net.corda.vega.contracts.IRSState[PropertyDescriptorImpl]
 
-'lazy' @ [24:33] ==> public fun <T> lazy(initializer: () -> List<StateRef>): Lazy<List<StateRef>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [24:33] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<StateRef>
+    <T> -> T
 
 'tradeStateAndRefs' @ [24:40] ==> private final val tradeStateAndRefs: List<StateAndRef<IRSState>> defined in net.corda.vega.portfolio.Portfolio[PropertyDescriptorImpl]
 

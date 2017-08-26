@@ -6,8 +6,6 @@ Inferred types:
 
 'MappedSchema' @ [38:29] ==> public constructor MappedSchema(schemaFamily: Class<*>, version: Int, mappedTypes: Iterable<Class<*>>) defined in net.corda.core.schemas.MappedSchema[DeserializedClassConstructorDescriptor]
 
-'NodeServices' @ [38:57] ==> public object NodeServices defined in net.corda.node.services.schema.NodeSchemaService[FakeCallableDescriptorForObject]
-
 'javaClass' @ [38:70] ==> public val <T : Any> NodeSchemaService.NodeServices.javaClass: Class<NodeSchemaService.NodeServices> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> NodeServices

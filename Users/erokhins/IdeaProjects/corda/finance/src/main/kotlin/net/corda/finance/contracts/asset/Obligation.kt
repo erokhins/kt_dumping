@@ -1412,12 +1412,14 @@ Inferred types:
 
 'states' @ [491:19] ==> val states: List<Obligation.State<P>> defined in net.corda.finance.contracts.asset.Obligation.generateCloseOutNetting[LocalVariableDescriptor]
 
-'reduce' @ [491:26] ==> public inline fun <S, T : Obligation.State<P>> Iterable<Obligation.State<P>>.reduce(operation: (Obligation.State<P>, Obligation.State<P>) -> Obligation.State<P>): Obligation.State<P> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [491:26] ==> public inline fun <S, T : Obligation.State<P>> Iterable<Obligation.State<P>>.reduce(operation: (acc: Obligation.State<P>, Obligation.State<P>) -> Obligation.State<P>): Obligation.State<P> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> State<P>
     <T : S> -> State<P>
 
 'State' @ [491:33] ==> private constructor State() defined in kotlin.collections.State[DeserializedClassConstructorDescriptor]
+
+'net' @ [491:43] ==> public open fun net(other: Obligation.State<P>): Obligation.State<P> defined in net.corda.finance.contracts.asset.Obligation.State[SimpleFunctionDescriptorImpl]
 
 'out' @ [492:13] ==> val out: Obligation.State<P> defined in net.corda.finance.contracts.asset.Obligation.generateCloseOutNetting[LocalVariableDescriptor]
 
@@ -1482,15 +1484,11 @@ Inferred types:
 Inferred types:
     <P : Any> -> Currency
 
-'NonEmptySet' @ [535:33] ==> public companion object defined in net.corda.core.utilities.NonEmptySet[FakeCallableDescriptorForObject]
-
 'of' @ [535:45] ==> @JvmStatic public final fun <T> of(element: SecureHash): NonEmptySet<SecureHash> defined in net.corda.core.utilities.NonEmptySet.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> SecureHash
 
 'acceptableContract' @ [535:48] ==> value-parameter acceptableContract: SecureHash defined in net.corda.finance.contracts.asset.Obligation.generateCashIssue[ValueParameterDescriptorImpl]
-
-'NonEmptySet' @ [535:69] ==> public companion object defined in net.corda.core.utilities.NonEmptySet[FakeCallableDescriptorForObject]
 
 'of' @ [535:81] ==> @JvmStatic public final fun <T> of(element: Issued<Currency>): NonEmptySet<Issued<Currency>> defined in net.corda.core.utilities.NonEmptySet.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -2652,17 +2650,17 @@ Inferred types:
 
 'party' @ [791:104] ==> value-parameter party: AnonymousParty defined in net.corda.finance.contracts.asset.issuedBy[ValueParameterDescriptorImpl]
 
-'lazy' @ [794:36] ==> public fun <T> lazy(initializer: () -> KeyPair): Lazy<KeyPair> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [794:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KeyPair
+    <T> -> T
 
 'entropyToKeyPair' @ [794:43] ==> public fun entropyToKeyPair(entropy: BigInteger): KeyPair defined in net.corda.core.crypto[DeserializedSimpleFunctionDescriptor]
 
 'valueOf' @ [794:71] ==> public open fun valueOf(p0: Long): (BigInteger..BigInteger?) defined in java.math.BigInteger[JavaMethodDescriptor]
 
-'lazy' @ [796:32] ==> public fun <T> lazy(initializer: () -> Party): Lazy<Party> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [796:32] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Party
+    <T> -> T
 
 'Party' @ [796:39] ==> public constructor Party(name: X500Name, owningKey: PublicKey) defined in net.corda.core.identity.Party[DeserializedClassConstructorDescriptor]
 

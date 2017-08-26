@@ -24,7 +24,7 @@ Inferred types:
 
 'unparkDeserialized' @ [31:19] ==> public open fun <V : (Any..Any?)> unparkDeserialized(p0: (Fiber<(Any..Any?)>..Fiber<(Any..Any?)>?), p1: (FiberScheduler..FiberScheduler?)): (Fiber<(Any..Any?)>..Fiber<(Any..Any?)>?) defined in co.paralleluniverse.fibers.Fiber[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Any
+    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'fiber' @ [31:38] ==> value-parameter fiber: raw (Fiber<(Any..Any?)>..Fiber<*>?) defined in net.corda.testing.FlowStackSnapshotFactoryImpl.getFlowStackSnapshot.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -84,7 +84,7 @@ Inferred types:
 
 'fiber' @ [53:35] ==> value-parameter fiber: Fiber<*> defined in net.corda.testing.FlowStackSnapshotFactoryImpl.extractStackSnapshotFromFiber[ValueParameterDescriptorImpl]
 
-'getObjectStack' @ [54:27] ==> private fun getObjectStack(stack: Stack): Array<Any?> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'getObjectStack' @ [54:27] ==> private fun getObjectStack(stack: Stack): Array<Any?> defined in net.corda.testing in file FlowStackSnapshot.kt[SimpleFunctionDescriptorImpl]
 
 'stack' @ [54:42] ==> val stack: Stack defined in net.corda.testing.FlowStackSnapshotFactoryImpl.extractStackSnapshotFromFiber[LocalVariableDescriptor]
 
@@ -92,7 +92,7 @@ Inferred types:
 Inferred types:
     <T> -> Any?
 
-'getFrameOffsets' @ [55:28] ==> private fun getFrameOffsets(stack: Stack): List<Pair<Int, Int>> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'getFrameOffsets' @ [55:28] ==> private fun getFrameOffsets(stack: Stack): List<Pair<Int, Int>> defined in net.corda.testing in file FlowStackSnapshot.kt[SimpleFunctionDescriptorImpl]
 
 'stack' @ [55:44] ==> val stack: Stack defined in net.corda.testing.FlowStackSnapshotFactoryImpl.extractStackSnapshotFromFiber[LocalVariableDescriptor]
 
@@ -217,7 +217,7 @@ Inferred types:
 
 'name' @ [76:59] ==> public final val <T : (Any..Any?)> Class<out FlowLogic<*>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<*>
+    <T : (Any..Any?)> -> Captured(out FlowLogic<*>)
 
 'frames' @ [76:65] ==> val frames: List<FlowStackSnapshot.Frame> defined in net.corda.testing.FlowStackSnapshotFactoryImpl.extractStackSnapshotFromFiber[LocalVariableDescriptor]
 
@@ -227,7 +227,7 @@ Inferred types:
 
 'methods' @ [80:34] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'forEach' @ [80:42] ==> public inline fun <T> Array<out (Method..Method?)>.forEach(action: ((Method..Method?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -253,7 +253,7 @@ Inferred types:
 
 'getAnnotation' @ [82:27] ==> public open fun <T : (Annotation..Annotation?)> getAnnotation(p0: (Class<(Instrumented..Instrumented?)>..Class<(Instrumented..Instrumented?)>?)): (Instrumented..Instrumented?) defined in java.lang.reflect.Method[JavaMethodDescriptor]
 Inferred types:
-    <T : (Annotation..Annotation?)> -> Instrumented
+    <T : (Annotation..Annotation?)> -> (co.paralleluniverse.fibers.Instrumented..co.paralleluniverse.fibers.Instrumented?)
 
 'Instrumented' @ [82:41] ==> public constructor Instrumented(methodOptimized: Boolean = ..., suspendableCallSites: IntArray = ..., methodStart: Int = ..., methodEnd: Int = ..., suspendableCallSiteNames: Array<String> = ..., suspendableCallSitesOffsetsAfterInstr: IntArray = ...) defined in co.paralleluniverse.fibers.Instrumented[JavaClassConstructorDescriptor]
 
@@ -371,11 +371,11 @@ Inferred types:
 
 'java' @ [110:51] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'name' @ [110:56] ==> public final val <T : (Any..Any?)> Class<out Any>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'it' @ [112:21] ==> value-parameter it: Any? defined in net.corda.testing.FlowStackSnapshotFactoryImpl.filterOutStackDump.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -451,9 +451,9 @@ Inferred types:
 
 'fiber' @ [145:12] ==> value-parameter fiber: Fiber<*> defined in net.corda.testing.getFiberStack[ValueParameterDescriptorImpl]
 
-'getField' @ [145:18] ==> private inline fun <reified R, A> Fiber<out (Any..Any?)>.getField(name: String): Stack defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'getField' @ [145:18] ==> private inline fun <reified R, A> Fiber<*>.getField(name: String): Stack defined in net.corda.testing[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <reified R> -> Fiber<out (kotlin.Any..kotlin.Any?)>
+    <reified R> -> Fiber<*>
     <A> -> Stack
 
 'stack' @ [149:12] ==> value-parameter stack: Stack defined in net.corda.testing.getObjectStack[ValueParameterDescriptorImpl]

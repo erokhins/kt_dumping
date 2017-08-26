@@ -136,9 +136,9 @@ Inferred types:
     <C> -> Party
     <reified R : FlowLogic<T>> -> CashIssueFlow
 
-'amount' @ [55:40] ==> value-parameter amount: Amount<Currency> defined in net.corda.traderdemo.TraderDemoClientApi.runIssuer[ValueParameterDescriptorImpl]
+'CashIssueFlow' @ [55:25] ==> public constructor CashIssueFlow(amount: Amount<Currency>, issuerBankPartyRef: OpaqueBytes, notary: Party) defined in net.corda.finance.flows.CashIssueFlow[DeserializedClassConstructorDescriptor]
 
-'OpaqueBytes' @ [55:48] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
+'amount' @ [55:40] ==> value-parameter amount: Amount<Currency> defined in net.corda.traderdemo.TraderDemoClientApi.runIssuer[ValueParameterDescriptorImpl]
 
 'of' @ [55:60] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -166,6 +166,8 @@ Inferred types:
     <C> -> Boolean
     <reified R : FlowLogic<T>> -> CashPaymentFlow
 
+'CashPaymentFlow' @ [59:29] ==> public constructor CashPaymentFlow(amount: Amount<Currency>, recipient: Party, anonymous: Boolean) defined in net.corda.finance.flows.CashPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'amount' @ [59:46] ==> value-parameter amount: Amount<Currency> defined in net.corda.traderdemo.TraderDemoClientApi.runIssuer[ValueParameterDescriptorImpl]
 
 'copy' @ [59:53] ==> public final fun copy(quantity: Long = ..., displayTokenSize: BigDecimal = ..., token: Currency = ...): Amount<Currency> defined in net.corda.core.contracts.Amount[DeserializedSimpleFunctionDescriptor]
@@ -189,8 +191,6 @@ Inferred types:
 'rpc' @ [67:14] ==> public final val rpc: CordaRPCOps defined in net.corda.traderdemo.TraderDemoClientApi[PropertyDescriptorImpl]
 
 'attachmentExists' @ [67:18] ==> public abstract fun attachmentExists(id: SecureHash): Boolean defined in net.corda.core.messaging.CordaRPCOps[DeserializedSimpleFunctionDescriptor]
-
-'SellerFlow' @ [67:35] ==> public companion object defined in net.corda.traderdemo.flow.SellerFlow[FakeCallableDescriptorForObject]
 
 'PROSPECTUS_HASH' @ [67:46] ==> public final val PROSPECTUS_HASH: SecureHash.SHA256 defined in net.corda.traderdemo.flow.SellerFlow.Companion[PropertyDescriptorImpl]
 
@@ -234,6 +234,8 @@ Inferred types:
     <D> -> Party
     <reified R : FlowLogic<T>> -> CommercialPaperIssueFlow
 
+'CommercialPaperIssueFlow' @ [75:25] ==> public constructor CommercialPaperIssueFlow(amount: Amount<Currency>, issueRef: OpaqueBytes, recipient: Party, notary: Party) defined in net.corda.traderdemo.flow.CommercialPaperIssueFlow[ClassConstructorDescriptorImpl]
+
 'amount' @ [75:51] ==> value-parameter amount: Amount<Currency> defined in net.corda.traderdemo.TraderDemoClientApi.runIssuer[ValueParameterDescriptorImpl]
 
 'ref' @ [75:59] ==> val ref: OpaqueBytes defined in net.corda.traderdemo.TraderDemoClientApi.runIssuer[LocalVariableDescriptor]
@@ -269,8 +271,6 @@ Inferred types:
 'rpc' @ [87:14] ==> public final val rpc: CordaRPCOps defined in net.corda.traderdemo.TraderDemoClientApi[PropertyDescriptorImpl]
 
 'attachmentExists' @ [87:18] ==> public abstract fun attachmentExists(id: SecureHash): Boolean defined in net.corda.core.messaging.CordaRPCOps[DeserializedSimpleFunctionDescriptor]
-
-'SellerFlow' @ [87:35] ==> public companion object defined in net.corda.traderdemo.flow.SellerFlow[FakeCallableDescriptorForObject]
 
 'PROSPECTUS_HASH' @ [87:46] ==> public final val PROSPECTUS_HASH: SecureHash.SHA256 defined in net.corda.traderdemo.flow.SellerFlow.Companion[PropertyDescriptorImpl]
 
@@ -311,6 +311,8 @@ Inferred types:
     <A> -> Party
     <B> -> Amount<Currency>
     <reified R : FlowLogic<T>> -> SellerFlow
+
+'SellerFlow' @ [95:35] ==> public constructor SellerFlow(otherParty: Party, amount: Amount<Currency>) defined in net.corda.traderdemo.flow.SellerFlow[ClassConstructorDescriptorImpl]
 
 'otherParty' @ [95:47] ==> val otherParty: Party defined in net.corda.traderdemo.TraderDemoClientApi.runSeller[LocalVariableDescriptor]
 

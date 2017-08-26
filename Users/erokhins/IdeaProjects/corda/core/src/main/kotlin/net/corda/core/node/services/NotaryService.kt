@@ -128,8 +128,6 @@ Inferred types:
 
 'platformVersion' @ [77:81] ==> public final val platformVersion: Int defined in net.corda.core.node.NodeInfo[PropertyDescriptorImpl]
 
-'Crypto' @ [77:98] ==> public object Crypto defined in net.corda.core.crypto in file Crypto.kt[FakeCallableDescriptorForObject]
-
 'findSignatureScheme' @ [77:105] ==> @JvmStatic public final fun findSignatureScheme(key: PublicKey): SignatureScheme defined in net.corda.core.crypto.Crypto[SimpleFunctionDescriptorImpl]
 
 'services' @ [77:125] ==> public abstract val services: ServiceHub defined in net.corda.core.node.services.TrustedAuthorityNotaryService[PropertyDescriptorImpl]

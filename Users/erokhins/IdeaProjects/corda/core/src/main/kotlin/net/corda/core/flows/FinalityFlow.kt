@@ -214,8 +214,6 @@ Inferred types:
 Inferred types:
     <R> -> List<TransactionSignature>
 
-'NotaryFlow' @ [98:44] ==> public object NotaryFlow defined in net.corda.core.flows in file NotaryFlow.kt[FakeCallableDescriptorForObject]
-
 'Client' @ [98:55] ==> public constructor Client(stx: SignedTransaction) defined in net.corda.core.flows.NotaryFlow.Client[ClassConstructorDescriptorImpl]
 
 'stx' @ [98:62] ==> value-parameter stx: SignedTransaction defined in net.corda.core.flows.FinalityFlow.notariseAndRecord[ValueParameterDescriptorImpl]
@@ -285,7 +283,7 @@ Inferred types:
 
 'notaryKey' @ [117:18] ==> val notaryKey: PublicKey? defined in net.corda.core.flows.FinalityFlow.hasNoNotarySignature[LocalVariableDescriptor]
 
-'isFulfilledBy' @ [117:29] ==> public fun PublicKey.isFulfilledBy(otherKeys: Iterable<PublicKey>): Boolean defined in net.corda.core.crypto[SimpleFunctionDescriptorImpl]
+'isFulfilledBy' @ [117:29] ==> public fun PublicKey.isFulfilledBy(otherKeys: Iterable<PublicKey>): Boolean defined in net.corda.core.crypto in file CryptoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'signers' @ [117:43] ==> val signers: Set<PublicKey> defined in net.corda.core.flows.FinalityFlow.hasNoNotarySignature[LocalVariableDescriptor]
 
@@ -299,6 +297,8 @@ Inferred types:
     <R> -> Participant
 
 'this' @ [128:22] ==> <this> defined in net.corda.core.flows.FinalityFlow[LazyClassReceiverParameterDescriptor]
+
+'partyFromAnonymous' @ [128:28] ==> protected final fun partyFromAnonymous(anon: AbstractParty): FinalityFlow.Participant defined in net.corda.core.flows.FinalityFlow[SimpleFunctionDescriptorImpl]
 
 'toSet' @ [129:18] ==> public fun <T> Iterable<FinalityFlow.Participant>.toSet(): Set<FinalityFlow.Participant> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

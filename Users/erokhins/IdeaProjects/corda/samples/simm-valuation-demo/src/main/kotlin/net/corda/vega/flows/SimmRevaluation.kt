@@ -66,8 +66,6 @@ Inferred types:
 Inferred types:
     <R> -> RevisionedState<Update>
 
-'SimmFlow' @ [29:25] ==> public object SimmFlow defined in net.corda.vega.flows in file SimmFlow.kt[FakeCallableDescriptorForObject]
-
 'Requester' @ [29:34] ==> public constructor Requester(otherParty: Party, valuationDate: LocalDate, existing: StateAndRef<PortfolioState>?) defined in net.corda.vega.flows.SimmFlow.Requester[ClassConstructorDescriptorImpl]
 
 'otherParty' @ [29:44] ==> val otherParty: Party? defined in net.corda.vega.flows.SimmRevaluation.Initiator.call[LocalVariableDescriptor]

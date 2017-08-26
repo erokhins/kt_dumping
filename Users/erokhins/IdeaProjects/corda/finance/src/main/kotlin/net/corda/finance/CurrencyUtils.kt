@@ -82,27 +82,27 @@ Inferred types:
 
 'CHF' @ [23:66] ==> @JvmField public val CHF: Currency defined in net.corda.finance in file CurrencyUtils.kt[PropertyDescriptorImpl]
 
-'DOLLARS' @ [25:43] ==> public fun DOLLARS(amount: Int): Amount<Currency> defined in net.corda.finance[SimpleFunctionDescriptorImpl]
+'DOLLARS' @ [25:43] ==> public fun DOLLARS(amount: Int): Amount<Currency> defined in net.corda.finance in file CurrencyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [25:51] ==> <this> defined in net.corda.finance.DOLLARS[ReceiverParameterDescriptorImpl]
 
-'DOLLARS' @ [26:46] ==> public fun DOLLARS(amount: Double): Amount<Currency> defined in net.corda.finance[SimpleFunctionDescriptorImpl]
+'DOLLARS' @ [26:46] ==> public fun DOLLARS(amount: Double): Amount<Currency> defined in net.corda.finance in file CurrencyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [26:54] ==> <this> defined in net.corda.finance.DOLLARS[ReceiverParameterDescriptorImpl]
 
-'POUNDS' @ [27:42] ==> public fun POUNDS(amount: Int): Amount<Currency> defined in net.corda.finance[SimpleFunctionDescriptorImpl]
+'POUNDS' @ [27:42] ==> public fun POUNDS(amount: Int): Amount<Currency> defined in net.corda.finance in file CurrencyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [27:49] ==> <this> defined in net.corda.finance.POUNDS[ReceiverParameterDescriptorImpl]
 
-'SWISS_FRANCS' @ [28:48] ==> public fun SWISS_FRANCS(amount: Int): Amount<Currency> defined in net.corda.finance[SimpleFunctionDescriptorImpl]
+'SWISS_FRANCS' @ [28:48] ==> public fun SWISS_FRANCS(amount: Int): Amount<Currency> defined in net.corda.finance in file CurrencyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [28:61] ==> <this> defined in net.corda.finance.SWISS_FRANCS[ReceiverParameterDescriptorImpl]
 
-'issuedBy' @ [30:62] ==> public infix fun Currency.issuedBy(deposit: PartyAndReference): Issued<Currency> defined in net.corda.finance[SimpleFunctionDescriptorImpl]
+'issuedBy' @ [30:62] ==> public infix fun Currency.issuedBy(deposit: PartyAndReference): Issued<Currency> defined in net.corda.finance in file CurrencyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'deposit' @ [30:71] ==> value-parameter deposit: PartyAndReference defined in net.corda.finance.`issued by`[ValueParameterDescriptorImpl]
 
-'issuedBy' @ [31:70] ==> public infix fun Amount<Currency>.issuedBy(deposit: PartyAndReference): Amount<Issued<Currency>> defined in net.corda.finance[SimpleFunctionDescriptorImpl]
+'issuedBy' @ [31:70] ==> public infix fun Amount<Currency>.issuedBy(deposit: PartyAndReference): Amount<Issued<Currency>> defined in net.corda.finance in file CurrencyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'deposit' @ [31:79] ==> value-parameter deposit: PartyAndReference defined in net.corda.finance.`issued by`[ValueParameterDescriptorImpl]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'token' @ [33:102] ==> public final val token: Currency defined in net.corda.core.contracts.Amount[DeserializedPropertyDescriptor]
 
-'issuedBy' @ [33:108] ==> public infix fun Currency.issuedBy(deposit: PartyAndReference): Issued<Currency> defined in net.corda.finance[SimpleFunctionDescriptorImpl]
+'issuedBy' @ [33:108] ==> public infix fun Currency.issuedBy(deposit: PartyAndReference): Issued<Currency> defined in net.corda.finance in file CurrencyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'deposit' @ [33:117] ==> value-parameter deposit: PartyAndReference defined in net.corda.finance.issuedBy[ValueParameterDescriptorImpl]
 

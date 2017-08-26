@@ -6,22 +6,22 @@ Inferred types:
 
 'leftTable' @ [18:9] ==> public final val leftTable: ObservableMap<K, out A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap[PropertyDescriptorImpl]
 
-'forEach' @ [18:19] ==> @HidesMembers public inline fun <K, V> Map<out (K..K?), A>.forEach(action: (Map.Entry<(K..K?), A>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [18:19] ==> @HidesMembers public inline fun <K, V> Map<out (K..K?), (A..A?)>.forEach(action: (Map.Entry<(K..K?), (A..A?)>) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> (K..K?)
-    <V> -> A
+    <V> -> (A..A?)
 
 'SimpleObjectProperty' @ [19:38] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: B?) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> B?
 
-'rightTable' @ [19:63] ==> public final val rightTable: ObservableMap<K, out B> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap[PropertyDescriptorImpl]
+'rightTable' @ [19:59] ==> public final val rightTable: ObservableMap<K, out B> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap[PropertyDescriptorImpl]
 
-'get' @ [19:74] ==> public abstract fun get(key: (K..K?)): ({Any & B}?..B?) defined in javafx.collections.ObservableMap[DeserializedSimpleFunctionDescriptor]
+'get' @ [19:70] ==> public abstract fun get(key: (K..K?)): B? defined in javafx.collections.ObservableMap[DeserializedSimpleFunctionDescriptor]
 
-'entry' @ [19:78] ==> value-parameter entry: Map.Entry<(K..K?), A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'entry' @ [19:74] ==> value-parameter entry: Map.Entry<(K..K?), (A..A?)> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [19:84] ==> public abstract val key: (K..K?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'key' @ [19:80] ==> public abstract val key: (K..K?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
 'backingMap' @ [20:13] ==> protected final val backingMap: HashMap<K, Pair<C, SimpleObjectProperty<B?>>> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap[PropertyDescriptorImpl]
 
@@ -30,7 +30,7 @@ Inferred types:
     <K> -> K
     <V> -> Pair<C, SimpleObjectProperty<B?>>
 
-'entry' @ [20:28] ==> value-parameter entry: Map.Entry<(K..K?), A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'entry' @ [20:28] ==> value-parameter entry: Map.Entry<(K..K?), (A..A?)> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [20:34] ==> public abstract val key: (K..K?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
@@ -41,13 +41,13 @@ Inferred types:
 
 'invoke' @ [20:44] ==> public abstract operator fun invoke(p1: K, p2: A, p3: ObservableValue<B?>): C defined in kotlin.Function3[FunctionInvokeDescriptor]
 
-'entry' @ [20:53] ==> value-parameter entry: Map.Entry<(K..K?), A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'entry' @ [20:53] ==> value-parameter entry: Map.Entry<(K..K?), (A..A?)> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
 'key' @ [20:59] ==> public abstract val key: (K..K?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'entry' @ [20:64] ==> value-parameter entry: Map.Entry<(K..K?), A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
+'entry' @ [20:64] ==> value-parameter entry: Map.Entry<(K..K?), (A..A?)> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'value' @ [20:70] ==> public abstract val value: A defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'value' @ [20:70] ==> public abstract val value: (A..A?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
 'rightValueProperty' @ [20:77] ==> val rightValueProperty: SimpleObjectProperty<B?> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[LocalVariableDescriptor]
 
@@ -55,7 +55,7 @@ Inferred types:
 
 'leftTable' @ [23:9] ==> public final val leftTable: ObservableMap<K, out A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap[PropertyDescriptorImpl]
 
-'addListener' @ [23:19] ==> public final fun addListener(p0: (((MapChangeListener.Change<out (K..K?), out (Nothing..Nothing?)>..MapChangeListener.Change<out (K..K?), out (Nothing..Nothing?)>?)) -> Unit..(((MapChangeListener.Change<out (K..K?), out (Nothing..Nothing?)>..MapChangeListener.Change<out (K..K?), out (Nothing..Nothing?)>?)) -> Unit)?)): Unit defined in javafx.collections.ObservableMap[MyFunctionDescriptor]
+'addListener' @ [23:19] ==> public final fun addListener(p0: (((MapChangeListener.Change<out (K..K?), out (A..A?)>..MapChangeListener.Change<out (K..K?), out (A..A?)>?)) -> Unit..(((MapChangeListener.Change<out (K..K?), out (A..A?)>..MapChangeListener.Change<out (K..K?), out (A..A?)>?)) -> Unit)?)): Unit defined in javafx.collections.ObservableMap[MyFunctionDescriptor]
 
 'change' @ [27:17] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -69,10 +69,10 @@ Inferred types:
 
 'change' @ [28:50] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [28:57] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out ({A & Any}..A)>.key: (K..K?)[MyPropertyDescriptor]
+'key' @ [28:57] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> ({A & Any}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
 'first' @ [28:63] ==> public final val first: C defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
@@ -82,36 +82,36 @@ Inferred types:
 
 'rightTable' @ [32:34] ==> public final val rightTable: ObservableMap<K, out B> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap[PropertyDescriptorImpl]
 
-'get' @ [32:45] ==> public abstract fun get(key: (K..K?)): ({Any & B}?..B?) defined in javafx.collections.ObservableMap[DeserializedSimpleFunctionDescriptor]
+'get' @ [32:45] ==> public abstract fun get(key: (K..K?)): B? defined in javafx.collections.ObservableMap[DeserializedSimpleFunctionDescriptor]
 
 'change' @ [32:49] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [32:56] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out ({A & Any}..A)>.key: (K..K?)[MyPropertyDescriptor]
+'key' @ [32:56] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> ({A & Any}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
 'SimpleObjectProperty' @ [33:42] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: B?) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> B?
 
-'rightValue' @ [33:67] ==> val rightValue: ({Any & B}?..B?) defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[LocalVariableDescriptor]
+'rightValue' @ [33:63] ==> val rightValue: B? defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[LocalVariableDescriptor]
 
 'invoke' @ [34:32] ==> public abstract operator fun invoke(p1: K, p2: A, p3: ObservableValue<B?>): C defined in kotlin.Function3[FunctionInvokeDescriptor]
 
 'change' @ [34:41] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [34:48] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out ({A & Any}..A)>.key: (K..K?)[MyPropertyDescriptor]
+'key' @ [34:48] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> ({A & Any}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
 'change' @ [34:53] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'valueAdded' @ [34:60] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out ({A & Any}..A)>.valueAdded: ({A & Any}..A?)[MyPropertyDescriptor]
+'valueAdded' @ [34:60] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.valueAdded: (A..A?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> ({A & Any}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
 'rightValueProperty' @ [34:72] ==> val rightValueProperty: SimpleObjectProperty<B?> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[LocalVariableDescriptor]
 
@@ -124,10 +124,10 @@ Inferred types:
 
 'change' @ [35:32] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [35:39] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out ({A & Any}..A)>.key: (K..K?)[MyPropertyDescriptor]
+'key' @ [35:39] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> ({A & Any}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
 'Pair' @ [35:44] ==> public constructor Pair<out A, out B>(first: C, second: SimpleObjectProperty<B?>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -151,10 +151,10 @@ Inferred types:
 
 'change' @ [39:40] ==> value-parameter change: MapChangeListener.Change<out K, out A> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [39:47] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out ({A & Any}..A)>.key: (K..K?)[MyPropertyDescriptor]
+'key' @ [39:47] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out A>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> ({A & Any}..A)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out A)
 
 'removedValue' @ [39:52] ==> var removedValue: C? defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[LocalVariableDescriptor]
 
@@ -162,7 +162,7 @@ Inferred types:
 
 'rightTable' @ [41:9] ==> public final val rightTable: ObservableMap<K, out B> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap[PropertyDescriptorImpl]
 
-'addListener' @ [41:20] ==> public final fun addListener(p0: (((MapChangeListener.Change<out (K..K?), out (Nothing..Nothing?)>..MapChangeListener.Change<out (K..K?), out (Nothing..Nothing?)>?)) -> Unit..(((MapChangeListener.Change<out (K..K?), out (Nothing..Nothing?)>..MapChangeListener.Change<out (K..K?), out (Nothing..Nothing?)>?)) -> Unit)?)): Unit defined in javafx.collections.ObservableMap[MyFunctionDescriptor]
+'addListener' @ [41:20] ==> public final fun addListener(p0: (((MapChangeListener.Change<out (K..K?), out (B..B?)>..MapChangeListener.Change<out (K..K?), out (B..B?)>?)) -> Unit..(((MapChangeListener.Change<out (K..K?), out (B..B?)>..MapChangeListener.Change<out (K..K?), out (B..B?)>?)) -> Unit)?)): Unit defined in javafx.collections.ObservableMap[MyFunctionDescriptor]
 
 'change' @ [42:17] ==> value-parameter change: MapChangeListener.Change<out K, out B> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -180,10 +180,10 @@ Inferred types:
 
 'change' @ [43:32] ==> value-parameter change: MapChangeListener.Change<out K, out B> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [43:39] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out ({Any & B}..B)>.key: (K..K?)[MyPropertyDescriptor]
+'key' @ [43:39] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out B>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> ({Any & B}..B)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out B)
 
 'second' @ [43:45] ==> public final val second: SimpleObjectProperty<B?> defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
@@ -199,10 +199,10 @@ Inferred types:
 
 'change' @ [47:32] ==> value-parameter change: MapChangeListener.Change<out K, out B> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [47:39] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out ({Any & B}..B)>.key: (K..K?)[MyPropertyDescriptor]
+'key' @ [47:39] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out B>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> ({Any & B}..B)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out B)
 
 'second' @ [47:45] ==> public final val second: SimpleObjectProperty<B?> defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
@@ -210,8 +210,8 @@ Inferred types:
 
 'change' @ [47:57] ==> value-parameter change: MapChangeListener.Change<out K, out B> defined in net.corda.client.jfx.utils.LeftOuterJoinedMap.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
-'valueAdded' @ [47:64] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out ({Any & B}..B)>.valueAdded: ({Any & B}..B?)[MyPropertyDescriptor]
+'valueAdded' @ [47:64] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out B>.valueAdded: (B..B?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> ({Any & B}..B)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out B)
 

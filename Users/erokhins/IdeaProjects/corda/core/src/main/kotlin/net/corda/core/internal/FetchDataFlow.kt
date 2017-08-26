@@ -107,8 +107,6 @@ Inferred types:
 
 'Data' @ [89:74] ==> public constructor Data(hashes: NonEmptySet<SecureHash>, dataType: FetchDataFlow.DataType) defined in net.corda.core.internal.FetchDataFlow.Request.Data[ClassConstructorDescriptorImpl]
 
-'NonEmptySet' @ [89:79] ==> public companion object defined in net.corda.core.utilities.NonEmptySet[FakeCallableDescriptorForObject]
-
 'of' @ [89:91] ==> @JvmStatic public final fun <T> of(element: SecureHash): NonEmptySet<SecureHash> defined in net.corda.core.utilities.NonEmptySet.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> SecureHash
@@ -307,9 +305,9 @@ Inferred types:
 
 'dataLoader' @ [156:87] ==> value-parameter dataLoader: () -> ByteArray defined in net.corda.core.internal.FetchAttachmentsFlow.FetchedAttachment.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [157:40] ==> public fun <T> lazy(initializer: () -> SecureHash.SHA256): Lazy<SecureHash.SHA256> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [157:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SHA256
+    <T> -> T
 
 'attachmentData' @ [157:47] ==> protected final val attachmentData: ByteArray defined in net.corda.core.internal.FetchAttachmentsFlow.FetchedAttachment[PropertyDescriptorImpl]
 

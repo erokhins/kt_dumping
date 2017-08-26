@@ -48,8 +48,6 @@ Inferred types:
 
 'ServiceInfo' @ [52:65] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
 
-'ValidatingNotaryService' @ [52:77] ==> public companion object defined in net.corda.node.services.transactions.ValidatingNotaryService[FakeCallableDescriptorForObject]
-
 'type' @ [52:101] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.ValidatingNotaryService.Companion[DeserializedPropertyDescriptor]
 
 'startNode' @ [53:20] ==> public abstract fun startNode(providedName: X500Name? = ..., advertisedServices: Set<ServiceInfo> = ..., rpcUsers: List<User> = ..., verifierType: VerifierType = ..., customOverrides: Map<String, Any?> = ..., startInSameProcess: Boolean? = ...): CordaFuture<NodeHandle> defined in net.corda.testing.driver.DriverDSLExposedInterface[DeserializedSimpleFunctionDescriptor]
@@ -269,7 +267,7 @@ Inferred types:
 
 'vault' @ [110:25] ==> val vault: List<StateAndRef<Cash.State>> defined in net.corda.docs.generateTransactions[LocalVariableDescriptor]
 
-'fold' @ [110:31] ==> public inline fun <T, R> Iterable<StateAndRef<Cash.State>>.fold(initial: Long, operation: (Long, StateAndRef<Cash.State>) -> Long): Long defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [110:31] ==> public inline fun <T, R> Iterable<StateAndRef<Cash.State>>.fold(initial: Long, operation: (acc: Long, StateAndRef<Cash.State>) -> Long): Long defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateAndRef<State>
     <R> -> Long
@@ -368,6 +366,8 @@ Inferred types:
     <B> -> OpaqueBytes
     <reified R : FlowLogic<T>> -> CashExitFlow
 
+'CashExitFlow' @ [123:31] ==> public constructor CashExitFlow(amount: Amount<Currency>, issueRef: OpaqueBytes) defined in net.corda.finance.flows.CashExitFlow[DeserializedClassConstructorDescriptor]
+
 'Amount' @ [123:45] ==> public constructor Amount<T : Any>(tokenQuantity: Long, token: Currency) defined in net.corda.core.contracts.Amount[DeserializedClassConstructorDescriptor]
 Inferred types:
     <T : Any> -> Currency
@@ -416,6 +416,8 @@ Inferred types:
     <B> -> Party
     <reified R : FlowLogic<T>> -> CashPaymentFlow
 
+'CashPaymentFlow' @ [127:31] ==> public constructor CashPaymentFlow(amount: Amount<Currency>, recipient: Party) defined in net.corda.finance.flows.CashPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'Amount' @ [127:48] ==> public constructor Amount<T : Any>(tokenQuantity: Long, token: Currency) defined in net.corda.core.contracts.Amount[DeserializedClassConstructorDescriptor]
 Inferred types:
     <T : Any> -> Currency
@@ -441,6 +443,8 @@ Inferred types:
     <B> -> OpaqueBytes
     <C> -> Party
     <reified R : FlowLogic<T>> -> CashIssueFlow
+
+'CashIssueFlow' @ [130:31] ==> public constructor CashIssueFlow(amount: Amount<Currency>, issuerBankPartyRef: OpaqueBytes, notary: Party) defined in net.corda.finance.flows.CashIssueFlow[DeserializedClassConstructorDescriptor]
 
 'Amount' @ [130:46] ==> public constructor Amount<T : Any>(tokenQuantity: Long, token: Currency) defined in net.corda.core.contracts.Amount[DeserializedClassConstructorDescriptor]
 Inferred types:

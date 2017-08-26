@@ -10,8 +10,6 @@
 
 'DigitalSignature' @ [20:12] ==> public constructor DigitalSignature(bytes: ByteArray) defined in net.corda.core.crypto.DigitalSignature[ClassConstructorDescriptorImpl]
 
-'Crypto' @ [20:29] ==> public object Crypto defined in net.corda.core.crypto in file Crypto.kt[FakeCallableDescriptorForObject]
-
 'doSign' @ [20:36] ==> @JvmStatic @Throws public final fun doSign(privateKey: PrivateKey, clearData: ByteArray): ByteArray defined in net.corda.core.crypto.Crypto[SimpleFunctionDescriptorImpl]
 
 'this' @ [20:43] ==> <this> defined in net.corda.core.crypto.sign[ReceiverParameterDescriptorImpl]
@@ -46,7 +44,7 @@
 
 'public' @ [36:70] ==> public final val KeyPair.public: (PublicKey..PublicKey?)[MyPropertyDescriptor]
 
-'sign' @ [37:46] ==> @Throws public fun KeyPair.sign(bytesToSign: ByteArray): DigitalSignature.WithKey defined in net.corda.core.crypto[SimpleFunctionDescriptorImpl]
+'sign' @ [37:46] ==> @Throws public fun KeyPair.sign(bytesToSign: ByteArray): DigitalSignature.WithKey defined in net.corda.core.crypto in file CryptoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'bytesToSign' @ [37:51] ==> value-parameter bytesToSign: OpaqueBytes defined in net.corda.core.crypto.sign[ValueParameterDescriptorImpl]
 
@@ -135,7 +133,7 @@ Inferred types:
 
 'this' @ [85:16] ==> <this> defined in net.corda.core.crypto.keys[ReceiverParameterDescriptorImpl]
 
-'isFulfilledBy' @ [88:62] ==> public fun PublicKey.isFulfilledBy(otherKeys: Iterable<PublicKey>): Boolean defined in net.corda.core.crypto[SimpleFunctionDescriptorImpl]
+'isFulfilledBy' @ [88:62] ==> public fun PublicKey.isFulfilledBy(otherKeys: Iterable<PublicKey>): Boolean defined in net.corda.core.crypto in file CryptoUtils.kt[SimpleFunctionDescriptorImpl]
 
 'setOf' @ [88:76] ==> public fun <T> setOf(element: PublicKey): Set<PublicKey> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -291,8 +289,6 @@ Inferred types:
 'candidate' @ [192:13] ==> val candidate: Long defined in net.corda.core.crypto.random63BitValue[LocalVariableDescriptor]
 
 'candidate' @ [192:32] ==> val candidate: Long defined in net.corda.core.crypto.random63BitValue[LocalVariableDescriptor]
-
-'Long' @ [192:45] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
 'MIN_VALUE' @ [192:50] ==> public const final val MIN_VALUE: Long defined in kotlin.Long.Companion[DeserializedPropertyDescriptor]
 

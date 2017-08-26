@@ -1,6 +1,6 @@
-'lazy' @ [10:29] ==> public fun <T> lazy(initializer: () -> Boolean): Lazy<Boolean> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [10:29] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Boolean
+    <T> -> T
 
 '!=' @ [11:9] ==> public open fun equals(other: Any?): Boolean defined in kotlin.String[DeserializedSimpleFunctionDescriptor]
 

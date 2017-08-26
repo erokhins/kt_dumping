@@ -240,7 +240,7 @@ Inferred types:
 
 'stream' @ [100:27] ==> public open fun <T : (Any..Any?)> stream(p0: (Spliterator<(Path..Path?)>..Spliterator<(Path..Path?)>?), p1: Boolean): (Stream<(Path..Path?)>..Stream<(Path..Path?)>?) defined in java.util.stream.StreamSupport[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Path
+    <T : (Any..Any?)> -> (java.nio.file.Path..java.nio.file.Path?)
 
 'fs' @ [100:34] ==> value-parameter fs: (FileSystem..FileSystem?) defined in net.corda.demobench.profile.ProfileController.openProfile.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -250,7 +250,7 @@ Inferred types:
 
 'flatMap' @ [101:22] ==> public final fun <R : (Any..Any?)> flatMap(p0: (((Path..Path?)) -> (Stream<out (Path..Path?)>..Stream<out (Path..Path?)>?)..(((Path..Path?)) -> (Stream<out (Path..Path?)>..Stream<out (Path..Path?)>?))?)): (Stream<(Path..Path?)>..Stream<(Path..Path?)>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> Path
+    <R : (Any..Any?)> -> (java.nio.file.Path..java.nio.file.Path?)
 
 'find' @ [101:38] ==> public open fun find(p0: (Path..Path?), p1: Int, p2: (BiPredicate<(Path..Path?), (BasicFileAttributes..BasicFileAttributes?)>..BiPredicate<(Path..Path?), (BasicFileAttributes..BasicFileAttributes?)>?), vararg p3: (FileVisitOption..FileVisitOption?)): (Stream<(Path..Path?)>..Stream<(Path..Path?)>?) defined in java.nio.file.Files[JavaMethodDescriptor]
 
@@ -275,7 +275,7 @@ Inferred types:
 
 'map' @ [102:22] ==> public final fun <R : (Any..Any?)> map(p0: (((Path..Path?)) -> (InstallConfig..InstallConfig?)..(((Path..Path?)) -> (InstallConfig..InstallConfig?))?)): (Stream<(InstallConfig..InstallConfig?)>..Stream<(InstallConfig..InstallConfig?)>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> InstallConfig
+    <R : (Any..Any?)> -> (net.corda.demobench.model.InstallConfig..net.corda.demobench.model.InstallConfig?)
 
 'installFactory' @ [104:42] ==> private final val installFactory: InstallFactory defined in net.corda.demobench.profile.ProfileController[PropertyDescriptorImpl]
 
@@ -339,7 +339,7 @@ Inferred types:
 
 'stream' @ [120:27] ==> public open fun <T : (Any..Any?)> stream(p0: (Spliterator<(Path..Path?)>..Spliterator<(Path..Path?)>?), p1: Boolean): (Stream<(Path..Path?)>..Stream<(Path..Path?)>?) defined in java.util.stream.StreamSupport[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Path
+    <T : (Any..Any?)> -> (java.nio.file.Path..java.nio.file.Path?)
 
 'fs' @ [120:34] ==> value-parameter fs: (FileSystem..FileSystem?) defined in net.corda.demobench.profile.ProfileController.openProfile.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -349,7 +349,7 @@ Inferred types:
 
 'flatMap' @ [121:22] ==> public final fun <R : (Any..Any?)> flatMap(p0: (((Path..Path?)) -> (Stream<out (Path..Path?)>..Stream<out (Path..Path?)>?)..(((Path..Path?)) -> (Stream<out (Path..Path?)>..Stream<out (Path..Path?)>?))?)): (Stream<(Path..Path?)>..Stream<(Path..Path?)>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> Path
+    <R : (Any..Any?)> -> (java.nio.file.Path..java.nio.file.Path?)
 
 'find' @ [121:38] ==> public open fun find(p0: (Path..Path?), p1: Int, p2: (BiPredicate<(Path..Path?), (BasicFileAttributes..BasicFileAttributes?)>..BiPredicate<(Path..Path?), (BasicFileAttributes..BasicFileAttributes?)>?), vararg p3: (FileVisitOption..FileVisitOption?)): (Stream<(Path..Path?)>..Stream<(Path..Path?)>?) defined in java.nio.file.Files[JavaMethodDescriptor]
 
@@ -440,10 +440,10 @@ Inferred types:
 
 'path' @ [140:69] ==> value-parameter path: Path defined in net.corda.demobench.profile.ProfileController.parse[ValueParameterDescriptorImpl]
 
-'use' @ [140:75] ==> @InlineOnly public inline fun <T : Closeable?, R> (BufferedReader..BufferedReader?).use(block: ((BufferedReader..BufferedReader?)) -> Config): Config defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
+'use' @ [140:75] ==> @InlineOnly public inline fun <T : Closeable?, R> (BufferedReader..BufferedReader?).use(block: ((BufferedReader..BufferedReader?)) -> Nothing): Nothing defined in kotlin.io[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Closeable?> -> (java.io.BufferedReader..java.io.BufferedReader?)
-    <R> -> Config
+    <R> -> Nothing
 
 'parseReader' @ [141:30] ==> public open fun parseReader(p0: (Reader..Reader?)): (Config..Config?) defined in com.typesafe.config.ConfigFactory[JavaMethodDescriptor]
 

@@ -6,33 +6,29 @@ Inferred types:
 
 'GLOBE' @ [40:41] ==> enum entry GLOBE defined in de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon[FakeCallableDescriptorForObject]
 
-'observableValue' @ [42:23] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (NetworkIdentityModel) -> ObservableValue<NodeInfo?>): TrackedDelegate.ObservableValueDelegate<NetworkIdentityModel, NodeInfo?> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo?
+'getValue' @ [42:23] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [42:39] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
 
-'observableList' @ [43:21] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (NetworkIdentityModel) -> ObservableList<NodeInfo>): TrackedDelegate.ObservableListDelegate<NetworkIdentityModel, NodeInfo> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo
+'myIdentity' @ [42:61] ==> public final val myIdentity: ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [43:21] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [43:36] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
 
-'observableList' @ [44:18] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (NetworkIdentityModel) -> ObservableList<NodeInfo>): TrackedDelegate.ObservableListDelegate<NetworkIdentityModel, NodeInfo> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo
+'notaries' @ [43:58] ==> public final val notaries: ObservableList<NodeInfo> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [44:18] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [44:33] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
 
-'observableList' @ [45:25] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (TransactionDataModel) -> ObservableList<PartiallyResolvedTransaction>): TrackedDelegate.ObservableListDelegate<TransactionDataModel, PartiallyResolvedTransaction> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> TransactionDataModel
-    <T> -> PartiallyResolvedTransaction
+'parties' @ [44:55] ==> public final val parties: ObservableList<NodeInfo> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [45:25] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'TransactionDataModel' @ [45:40] ==> public constructor TransactionDataModel() defined in net.corda.client.jfx.model.TransactionDataModel[DeserializedClassConstructorDescriptor]
+
+'partiallyResolvedTransactions' @ [45:62] ==> public final val partiallyResolvedTransactions: ObservableList<PartiallyResolvedTransaction> defined in net.corda.client.jfx.model.TransactionDataModel[DeserializedPropertyDescriptor]
 
 'fxid' @ [50:35] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, BorderPane> defined in net.corda.explorer.views.Network[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -124,7 +120,7 @@ Inferred types:
 
 'observableArrayList' @ [67:47] ==> public open fun <E : (Any..Any?)> observableArrayList(vararg p0: (ObservableList<Network.MapViewComponents>..ObservableList<Network.MapViewComponents>?)): (ObservableList<(ObservableList<Network.MapViewComponents>..ObservableList<Network.MapViewComponents>?)>..ObservableList<(ObservableList<Network.MapViewComponents>..ObservableList<Network.MapViewComponents>?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableList<MapViewComponents>
+    <E : (Any..Any?)> -> (javafx.collections.ObservableList<net.corda.explorer.views.Network.MapViewComponents>..javafx.collections.ObservableList<net.corda.explorer.views.Network.MapViewComponents>?)
 
 'notaryComponents' @ [67:67] ==> private final val notaryComponents: ObservableList<Network.MapViewComponents> defined in net.corda.explorer.views.Network[PropertyDescriptorImpl]
 
@@ -277,8 +273,6 @@ Inferred types:
 
 'label' @ [94:17] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'PartyNameFormatter' @ [94:23] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
-
 'short' @ [94:42] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
 
 'format' @ [94:48] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
@@ -307,11 +301,11 @@ Inferred types:
 
 'row' @ [98:21] ==> public fun GridPane.row(title: String? = ..., op: (Pane.() -> Unit)? = ...): Unit defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'copyableLabel' @ [99:25] ==> public fun EventTarget.copyableLabel(value: ObservableValue<String>? = ..., op: (TextField.() -> Unit)? = ...): TextField defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'copyableLabel' @ [99:25] ==> public fun EventTarget.copyableLabel(value: ObservableValue<String>? = ..., op: (TextField.() -> Unit)? = ...): TextField defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'SimpleObjectProperty' @ [99:39] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: (String..String?)) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'node' @ [99:60] ==> val node: NodeInfo defined in net.corda.explorer.views.Network.renderButton[LocalVariableDescriptor]
 
@@ -376,8 +370,6 @@ Inferred types:
 
 'label' @ [113:24] ==> public fun EventTarget.label(text: String = ..., op: (Label.() -> Unit)? = ...): Label defined in tornadofx[DeserializedSimpleFunctionDescriptor]
 
-'PartyNameFormatter' @ [113:30] ==> public object PartyNameFormatter defined in net.corda.explorer.formatters in file PartyNameFormatter.kt[FakeCallableDescriptorForObject]
-
 'short' @ [113:49] ==> public final val short: Formatter<X500Name> defined in net.corda.explorer.formatters.PartyNameFormatter[PropertyDescriptorImpl]
 
 'format' @ [113:55] ==> public abstract fun format(value: X500Name): String defined in net.corda.explorer.formatters.Formatter[SimpleFunctionDescriptorImpl]
@@ -420,7 +412,7 @@ Inferred types:
 
 'createObjectBinding' @ [124:39] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> (ScreenCoordinate..ScreenCoordinate?)..(() -> (ScreenCoordinate..ScreenCoordinate?))?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<(ScreenCoordinate..ScreenCoordinate?)>..ObjectBinding<(ScreenCoordinate..ScreenCoordinate?)>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ScreenCoordinate
+    <T : (Any..Any?)> -> (net.corda.core.node.ScreenCoordinate..net.corda.core.node.ScreenCoordinate?)
 
 'node' @ [126:17] ==> val node: NodeInfo defined in net.corda.explorer.views.Network.render[LocalVariableDescriptor]
 
@@ -538,9 +530,9 @@ Inferred types:
 Inferred types:
     <A> -> Label
 
-'SimpleObjectProperty' @ [143:49] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: (Label..Label?)) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
+'SimpleObjectProperty' @ [143:49] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: Label?) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Label
+    <T : (Any..Any?)> -> Label?
 
 'myLabel' @ [143:70] ==> private final var myLabel: Label? defined in net.corda.explorer.views.Network[PropertyDescriptorImpl]
 
@@ -573,9 +565,9 @@ Inferred types:
 
 'centralLabel' @ [149:9] ==> private final var centralLabel: ObservableValue<Label?> defined in net.corda.explorer.views.Network[PropertyDescriptorImpl]
 
-'SimpleObjectProperty' @ [149:24] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: (Label..Label?)) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
+'SimpleObjectProperty' @ [149:24] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: Label?) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Label
+    <T : (Any..Any?)> -> Label?
 
 'myLabel' @ [149:45] ==> private final var myLabel: Label? defined in net.corda.explorer.views.Network[PropertyDescriptorImpl]
 
@@ -587,9 +579,9 @@ Inferred types:
 Inferred types:
     <A> -> Label
 
-'SimpleObjectProperty' @ [153:49] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: (Label..Label?)) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
+'SimpleObjectProperty' @ [153:49] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: Label?) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Label
+    <T : (Any..Any?)> -> Label?
 
 'myLabel' @ [153:70] ==> private final var myLabel: Label? defined in net.corda.explorer.views.Network[PropertyDescriptorImpl]
 
@@ -603,7 +595,7 @@ Inferred types:
 
 'bindContent' @ [154:18] ==> public open fun <E : (Any..Any?)> bindContent(p0: (MutableList<(Node..Node?)>..List<(Node..Node?)>?), p1: (ObservableList<out (Node..Node?)>..ObservableList<out (Node..Node?)>?)): Unit defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Node
+    <E : (Any..Any?)> -> (javafx.scene.Node..javafx.scene.Node?)
 
 'notaryList' @ [154:30] ==> private final val notaryList: VBox defined in net.corda.explorer.views.Network[PropertyDescriptorImpl]
 
@@ -613,7 +605,7 @@ Inferred types:
 
 'bindContent' @ [155:18] ==> public open fun <E : (Any..Any?)> bindContent(p0: (MutableList<(Node..Node?)>..List<(Node..Node?)>?), p1: (ObservableList<out (Node..Node?)>..ObservableList<out (Node..Node?)>?)): Unit defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Node
+    <E : (Any..Any?)> -> (javafx.scene.Node..javafx.scene.Node?)
 
 'peerList' @ [155:30] ==> private final val peerList: VBox defined in net.corda.explorer.views.Network[PropertyDescriptorImpl]
 

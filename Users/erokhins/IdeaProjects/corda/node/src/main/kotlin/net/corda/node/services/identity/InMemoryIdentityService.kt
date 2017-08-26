@@ -180,9 +180,9 @@ Inferred types:
 
 'name' @ [78:167] ==> public final val name: X500Name defined in net.corda.core.identity.Party[DeserializedPropertyDescriptor]
 
-'ArrayList' @ [81:70] ==> public final fun <E> <init>(p0: (MutableCollection<out (PartyAndCertificate..PartyAndCertificate?)>..Collection<(PartyAndCertificate..PartyAndCertificate?)>?)): ArrayList<PartyAndCertificate> /* = ArrayList<PartyAndCertificate> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
+'ArrayList' @ [81:70] ==> public final fun <E> <init>(p0: (MutableCollection<out (PartyAndCertificate..PartyAndCertificate?)>..Collection<(PartyAndCertificate..PartyAndCertificate?)>?)): ArrayList<(PartyAndCertificate..PartyAndCertificate?)> /* = ArrayList<(PartyAndCertificate..PartyAndCertificate?)> */ defined in kotlin.collections.ArrayList[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> PartyAndCertificate
+    <E> -> (net.corda.core.identity.PartyAndCertificate..net.corda.core.identity.PartyAndCertificate?)
 
 'keyToParties' @ [81:80] ==> private final val keyToParties: ConcurrentHashMap<PublicKey, PartyAndCertificate> defined in net.corda.node.services.identity.InMemoryIdentityService[PropertyDescriptorImpl]
 

@@ -73,11 +73,11 @@ Inferred types:
 
 'java' @ [31:103] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(out Any)
 
 'simpleName' @ [31:108] ==> public final val <T : (Any..Any?)> Class<out Any>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'FilteredTransaction' @ [32:48] ==> public companion object defined in net.corda.core.transactions.FilteredTransaction[FakeCallableDescriptorForObject]
 

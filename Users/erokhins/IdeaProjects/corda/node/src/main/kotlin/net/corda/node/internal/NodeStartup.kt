@@ -1,6 +1,6 @@
-'lazy' @ [39:31] ==> public fun <T> lazy(initializer: () -> Logger): Lazy<Logger> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [39:31] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Logger
+    <T> -> T
 
 'loggerFor' @ [39:38] ==> public inline fun <reified T : Any> loggerFor(): Logger defined in net.corda.core.utilities[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -488,15 +488,19 @@ Inferred types:
 
 'install' @ [169:22] ==> internal final fun install(acceptClass: (Class<*>) -> Boolean): Unit defined in net.corda.node.SerialFilter[SimpleFunctionDescriptorImpl]
 
-'if (conf.bftSMaRt.isValid()) ::bftSMaRtSerialFilter else ::defaultSerialFilter' @ [169:30] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KFunction1<Class<*>, Boolean>, elseBranch: KFunction1<Class<*>, Boolean>): KFunction1<Class<*>, Boolean>[SimpleFunctionDescriptorImpl]
+'if (conf.bftSMaRt.isValid()) ::bftSMaRtSerialFilter else ::defaultSerialFilter' @ [169:30] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: KFunction1<@ParameterName Class<*>, Boolean>, elseBranch: KFunction1<@ParameterName Class<*>, Boolean>): KFunction1<@ParameterName Class<*>, Boolean>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KFunction1<Class<*>, Boolean>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> KFunction1<[@kotlin.ParameterName] Class<*>, Boolean>
 
 'conf' @ [169:34] ==> value-parameter conf: FullNodeConfiguration defined in net.corda.node.internal.NodeStartup.banJavaSerialisation[ValueParameterDescriptorImpl]
 
 'bftSMaRt' @ [169:39] ==> public open val bftSMaRt: BFTSMaRtConfiguration defined in net.corda.node.services.config.FullNodeConfiguration[PropertyDescriptorImpl]
 
 'isValid' @ [169:48] ==> public final fun isValid(): Boolean defined in net.corda.node.services.config.BFTSMaRtConfiguration[SimpleFunctionDescriptorImpl]
+
+'bftSMaRtSerialFilter' @ [169:61] ==> public fun bftSMaRtSerialFilter(clazz: Class<*>): Boolean defined in net.corda.node.services.transactions in file BFTSMaRtConfig.kt[SimpleFunctionDescriptorImpl]
+
+'defaultSerialFilter' @ [169:89] ==> internal fun defaultSerialFilter(@Suppress clazz: Class<*>): Boolean defined in net.corda.node in file SerialFilter.kt[SimpleFunctionDescriptorImpl]
 
 'if (Manifests.exists(name)) Manifests.read(name) else null' @ [174:52] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String?, elseBranch: String?): String?[SimpleFunctionDescriptorImpl]
 Inferred types:

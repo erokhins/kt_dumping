@@ -127,9 +127,11 @@ Inferred types:
 
 'filter' @ [52:38] ==> public final fun filter(p0: (((Path..Path?)) -> Boolean..(((Path..Path?)) -> Boolean)?)): (Stream<(Path..Path?)>..Stream<(Path..Path?)>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
 
+'isPlugin' @ [52:51] ==> public fun Path.isPlugin(): Boolean defined in net.corda.demobench.plugin in file PluginController.kt[SimpleFunctionDescriptorImpl]
+
 'empty' @ [54:20] ==> public open fun <T : (Any..Any?)> empty(): (Stream<(Path..Path?)>..Stream<(Path..Path?)>?) defined in java.util.stream.Stream[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Path
+    <T : (Any..Any?)> -> (java.nio.file.Path..java.nio.file.Path?)
 
 'isReadable' @ [59:38] ==> public open fun isReadable(p0: (Path..Path?)): Boolean defined in java.nio.file.Files[JavaMethodDescriptor]
 

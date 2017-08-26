@@ -250,7 +250,7 @@ Inferred types:
 
 'getOrThrow' @ [155:57] ==> public fun <V> Future<out Any?>.getOrThrow(timeout: Duration? = ...): Any? defined in net.corda.core.utilities[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <V> -> Any?
+    <V> -> Captured(out Any?)
 
 'resolveNotaryChangeTransaction' @ [159:19] ==> public final fun resolveNotaryChangeTransaction(services: ServiceHub): NotaryChangeLedgerTransaction defined in net.corda.core.transactions.SignedTransaction[SimpleFunctionDescriptorImpl]
 

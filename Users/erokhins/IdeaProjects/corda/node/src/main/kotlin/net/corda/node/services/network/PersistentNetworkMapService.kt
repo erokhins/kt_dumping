@@ -38,7 +38,7 @@
 
 'getInstance' @ [56:50] ==> public final fun getInstance(p0: (String..String?)): (CertificateFactory..CertificateFactory?) defined in java.security.cert.CertificateFactory[JavaMethodDescriptor]
 
-'PersistentMap' @ [59:20] ==> public constructor PersistentMap<K, V, E, out EK>(toPersistentEntityKey: (PartyAndCertificate) -> String, fromPersistentEntity: (PersistentNetworkMapService.NetworkNode) -> Pair<PartyAndCertificate, NodeRegistrationInfo>, toPersistentEntity: (PartyAndCertificate, NodeRegistrationInfo) -> PersistentNetworkMapService.NetworkNode, persistentEntityClass: Class<PersistentNetworkMapService.NetworkNode>) defined in net.corda.node.utilities.PersistentMap[ClassConstructorDescriptorImpl]
+'PersistentMap' @ [59:20] ==> public constructor PersistentMap<K, V, E, out EK>(toPersistentEntityKey: (PartyAndCertificate) -> String, fromPersistentEntity: (PersistentNetworkMapService.NetworkNode) -> Pair<PartyAndCertificate, NodeRegistrationInfo>, toPersistentEntity: (key: PartyAndCertificate, value: NodeRegistrationInfo) -> PersistentNetworkMapService.NetworkNode, persistentEntityClass: Class<PersistentNetworkMapService.NetworkNode>) defined in net.corda.node.utilities.PersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> PartyAndCertificate
     <V> -> NodeRegistrationInfo
@@ -78,8 +78,6 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> NodeRegistrationInfo
 
-'SerializationDefaults' @ [63:75] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'STORAGE_CONTEXT' @ [63:97] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
 'NetworkNode' @ [66:25] ==> public constructor NetworkNode(publicKey: String = ..., nodeParty: PersistentNetworkMapService.NodeParty = ..., registrationInfo: ByteArray = ...) defined in net.corda.node.services.network.PersistentNetworkMapService.NetworkNode[ClassConstructorDescriptorImpl]
@@ -116,8 +114,6 @@ Inferred types:
 Inferred types:
     <T : Any> -> NodeRegistrationInfo
 
-'SerializationDefaults' @ [73:78] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'STORAGE_CONTEXT' @ [73:100] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
 'bytes' @ [73:117] ==> public open val bytes: ByteArray defined in net.corda.core.serialization.SerializedBytes[DeserializedPropertyDescriptor]
@@ -128,7 +124,7 @@ Inferred types:
 Inferred types:
     <T> -> NetworkNode
 
-'PersistentMap' @ [81:20] ==> public constructor PersistentMap<K, V, E, out EK>(toPersistentEntityKey: (SingleMessageRecipient) -> String, fromPersistentEntity: (PersistentNetworkMapService.NetworkSubscriber) -> Pair<SingleMessageRecipient, LastAcknowledgeInfo>, toPersistentEntity: (SingleMessageRecipient, LastAcknowledgeInfo) -> PersistentNetworkMapService.NetworkSubscriber, persistentEntityClass: Class<PersistentNetworkMapService.NetworkSubscriber>) defined in net.corda.node.utilities.PersistentMap[ClassConstructorDescriptorImpl]
+'PersistentMap' @ [81:20] ==> public constructor PersistentMap<K, V, E, out EK>(toPersistentEntityKey: (SingleMessageRecipient) -> String, fromPersistentEntity: (PersistentNetworkMapService.NetworkSubscriber) -> Pair<SingleMessageRecipient, LastAcknowledgeInfo>, toPersistentEntity: (key: SingleMessageRecipient, value: LastAcknowledgeInfo) -> PersistentNetworkMapService.NetworkSubscriber, persistentEntityClass: Class<PersistentNetworkMapService.NetworkSubscriber>) defined in net.corda.node.utilities.PersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> SingleMessageRecipient
     <V> -> LastAcknowledgeInfo
@@ -152,8 +148,6 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> SingleMessageRecipient
 
-'SerializationDefaults' @ [84:59] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'STORAGE_CONTEXT' @ [84:81] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
 'it' @ [85:33] ==> value-parameter it: PersistentNetworkMapService.NetworkSubscriber defined in net.corda.node.services.network.PersistentNetworkMapService.Companion.createNetworkSubscribersMap.<anonymous>[ValueParameterDescriptorImpl]
@@ -163,8 +157,6 @@ Inferred types:
 'deserialize' @ [85:42] ==> public inline fun <reified T : Any> ByteArray.deserialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): LastAcknowledgeInfo defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> LastAcknowledgeInfo
-
-'SerializationDefaults' @ [85:64] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'STORAGE_CONTEXT' @ [85:86] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
@@ -180,8 +172,6 @@ Inferred types:
 Inferred types:
     <T : Any> -> SingleMessageRecipient
 
-'SerializationDefaults' @ [90:61] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'STORAGE_CONTEXT' @ [90:83] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
 'bytes' @ [90:100] ==> public open val bytes: ByteArray defined in net.corda.core.serialization.SerializedBytes[DeserializedPropertyDescriptor]
@@ -191,8 +181,6 @@ Inferred types:
 'serialize' @ [91:43] ==> public fun <T : Any> LastAcknowledgeInfo.serialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): SerializedBytes<LastAcknowledgeInfo> defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> LastAcknowledgeInfo
-
-'SerializationDefaults' @ [91:63] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'STORAGE_CONTEXT' @ [91:85] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
@@ -226,8 +214,8 @@ Inferred types:
 
 'synchronizedMap' @ [107:25] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> synchronizedMap(p0: (MutableMap<(PartyAndCertificate..PartyAndCertificate?), (NodeRegistrationInfo..NodeRegistrationInfo?)>..Map<(PartyAndCertificate..PartyAndCertificate?), (NodeRegistrationInfo..NodeRegistrationInfo?)>?)): (MutableMap<(PartyAndCertificate..PartyAndCertificate?), (NodeRegistrationInfo..NodeRegistrationInfo?)>..Map<(PartyAndCertificate..PartyAndCertificate?), (NodeRegistrationInfo..NodeRegistrationInfo?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> PartyAndCertificate
-    <V : (Any..Any?)> -> NodeRegistrationInfo
+    <K : (Any..Any?)> -> (net.corda.core.identity.PartyAndCertificate..net.corda.core.identity.PartyAndCertificate?)
+    <V : (Any..Any?)> -> (net.corda.node.services.network.NodeRegistrationInfo..net.corda.node.services.network.NodeRegistrationInfo?)
 
 'createNetworkNodesMap' @ [107:41] ==> public final fun createNetworkNodesMap(): PersistentMap<PartyAndCertificate, NodeRegistrationInfo, PersistentNetworkMapService.NetworkNode, String> defined in net.corda.node.services.network.PersistentNetworkMapService.Companion[SimpleFunctionDescriptorImpl]
 

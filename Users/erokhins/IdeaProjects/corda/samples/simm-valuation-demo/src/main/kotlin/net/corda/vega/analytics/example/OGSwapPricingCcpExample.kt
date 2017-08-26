@@ -95,7 +95,7 @@ Inferred types:
 
 'of' @ [133:37] ==> public open fun <E : (Any..Any?)> of(p0: (Column..Column?), p1: (Column..Column?), p2: (Column..Column?), p3: (Column..Column?)): (ImmutableList<(Column..Column?)>..ImmutableList<(Column..Column?)>?) defined in com.google.common.collect.ImmutableList[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Column
+    <E : (Any..Any?)> -> (com.opengamma.strata.calc.Column..com.opengamma.strata.calc.Column?)
 
 'of' @ [134:24] ==> public open fun of(p0: (Measure..Measure?)): (Column..Column?) defined in com.opengamma.strata.calc.Column[JavaMethodDescriptor]
 
@@ -300,7 +300,7 @@ Inferred types:
 
 'of' @ [186:30] ==> public open fun <E : (Any..Any?)> of(p0: (Trade..Trade?), p1: (Trade..Trade?)): (ImmutableList<(Trade..Trade?)>..ImmutableList<(Trade..Trade?)>?) defined in com.google.common.collect.ImmutableList[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Trade
+    <E : (Any..Any?)> -> (com.opengamma.strata.product.Trade..com.opengamma.strata.product.Trade?)
 
 'createVanillaFixedVsLibor3mSwap' @ [186:33] ==> private final fun createVanillaFixedVsLibor3mSwap(ctptyId: StandardId): Trade defined in net.corda.vega.analytics.example.SwapPricingCcpExample[SimpleFunctionDescriptorImpl]
 
@@ -318,7 +318,7 @@ Inferred types:
 
 'addAttribute' @ [192:79] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [192:111] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 

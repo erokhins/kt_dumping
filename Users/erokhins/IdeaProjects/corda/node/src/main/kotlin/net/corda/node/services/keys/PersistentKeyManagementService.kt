@@ -16,7 +16,7 @@
 
 'ByteArray' @ [42:41] ==> public constructor ByteArray(size: Int) defined in kotlin.ByteArray[DeserializedClassConstructorDescriptor]
 
-'AppendOnlyPersistentMap' @ [47:20] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (PublicKey) -> String, fromPersistentEntity: (PersistentKeyManagementService.PersistentKey) -> Pair<PublicKey, PrivateKey>, toPersistentEntity: (PublicKey, PrivateKey) -> PersistentKeyManagementService.PersistentKey, persistentEntityClass: Class<PersistentKeyManagementService.PersistentKey>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
+'AppendOnlyPersistentMap' @ [47:20] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (PublicKey) -> String, fromPersistentEntity: (PersistentKeyManagementService.PersistentKey) -> Pair<PublicKey, PrivateKey>, toPersistentEntity: (key: PublicKey, value: PrivateKey) -> PersistentKeyManagementService.PersistentKey, persistentEntityClass: Class<PersistentKeyManagementService.PersistentKey>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> PublicKey
     <V> -> PrivateKey
@@ -46,8 +46,6 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> PrivateKey
 
-'SerializationDefaults' @ [50:77] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'STORAGE_CONTEXT' @ [50:99] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
 'PersistentKey' @ [52:25] ==> public constructor PersistentKey(publicKey: String = ..., privateKey: ByteArray = ...) defined in net.corda.node.services.keys.PersistentKeyManagementService.PersistentKey[ClassConstructorDescriptorImpl]
@@ -69,8 +67,6 @@ Inferred types:
 'serialize' @ [54:48] ==> public fun <T : Any> PrivateKey.serialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): SerializedBytes<PrivateKey> defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> PrivateKey
-
-'SerializationDefaults' @ [54:68] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'STORAGE_CONTEXT' @ [54:90] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 

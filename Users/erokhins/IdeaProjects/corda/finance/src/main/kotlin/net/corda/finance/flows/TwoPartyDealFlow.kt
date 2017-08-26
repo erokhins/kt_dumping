@@ -253,8 +253,6 @@ Inferred types:
 
 'serviceIdentities' @ [123:46] ==> public final fun serviceIdentities(type: ServiceType): List<Party> defined in net.corda.core.node.NodeInfo[DeserializedSimpleFunctionDescriptor]
 
-'ServiceType' @ [123:64] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
-
 'regulator' @ [123:76] ==> public final val regulator: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
 
 'first' @ [123:87] ==> public fun <T> List<Party>.first(): Party defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]

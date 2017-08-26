@@ -76,7 +76,7 @@ Inferred types:
 
 'p' @ [50:30] ==> val p: (Process..Process?) defined in net.corda.demobench.web.WebServer.open[LocalVariableDescriptor]
 
-'readErrorLines' @ [50:32] ==> public fun Process.readErrorLines(): List<String> defined in net.corda.demobench[SimpleFunctionDescriptorImpl]
+'readErrorLines' @ [50:32] ==> public fun Process.readErrorLines(): List<String> defined in net.corda.demobench in file DemoBench.kt[SimpleFunctionDescriptorImpl]
 
 'process' @ [51:17] ==> private final var process: Process? defined in net.corda.demobench.web.WebServer[PropertyDescriptorImpl]
 

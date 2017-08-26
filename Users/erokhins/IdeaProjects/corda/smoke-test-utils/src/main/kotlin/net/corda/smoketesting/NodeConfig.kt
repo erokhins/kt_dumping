@@ -89,6 +89,8 @@ Inferred types:
 
 'User' @ [41:55] ==> public constructor User(username: String, password: String, permissions: Set<String>) defined in net.corda.nodeapi.User[DeserializedClassConstructorDescriptor]
 
+'toMap' @ [41:61] ==> public final fun toMap(): Map<String, Any> defined in net.corda.nodeapi.User[DeserializedSimpleFunctionDescriptor]
+
 'toList' @ [41:68] ==> public fun <T> Iterable<Map<String, Any>>.toList(): List<Map<String, Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Map<String, Any>

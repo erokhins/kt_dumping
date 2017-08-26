@@ -36,11 +36,11 @@ Inferred types:
 
 'supplyAsync' @ [44:38] ==> public open fun <U : (Any..Any?)> supplyAsync(p0: (Supplier<(T..T?)>..Supplier<(T..T?)>?), p1: (Executor..Executor?)): (CompletableFuture<(T..T?)>..CompletableFuture<(T..T?)>?) defined in java.util.concurrent.CompletableFuture[JavaMethodDescriptor]
 Inferred types:
-    <U : (Any..Any?)> -> T
+    <U : (Any..Any?)> -> (T..T?)
 
-'Supplier' @ [44:50] ==> @FunctionalInterface public fun <T : (Any..Any?)> Supplier(function: () -> T): Supplier<T> defined in java.util.function[SimpleFunctionDescriptorImpl]
+'Supplier' @ [44:50] ==> @FunctionalInterface public fun <T : (Any..Any?)> Supplier(function: () -> (T..T?)): Supplier<(T..T?)> defined in java.util.function[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'invoke' @ [44:61] ==> public abstract operator fun invoke(): T defined in kotlin.Function0[FunctionInvokeDescriptor]
 
@@ -58,7 +58,7 @@ Inferred types:
 
 'synchronizedSet' @ [62:43] ==> public open fun <T : (Any..Any?)> synchronizedSet(p0: (MutableSet<(Thread..Thread?)>..Set<(Thread..Thread?)>?)): (MutableSet<(Thread..Thread?)>..Set<(Thread..Thread?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Thread
+    <T : (Any..Any?)> -> (java.lang.Thread..java.lang.Thread?)
 
 'HashSet' @ [62:59] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:
@@ -136,7 +136,7 @@ Inferred types:
 
 'putUninterruptibly' @ [106:30] ==> @GwtIncompatible public open fun <E : (Any..Any?)> putUninterruptibly(p0: (BlockingQueue<(Runnable..Runnable?)>..BlockingQueue<(Runnable..Runnable?)>?), p1: (Runnable..Runnable?)): Unit defined in com.google.common.util.concurrent.Uninterruptibles[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Runnable
+    <E : (Any..Any?)> -> (java.lang.Runnable..java.lang.Runnable?)
 
 'commandQ' @ [106:49] ==> private final val commandQ: LinkedBlockingQueue<Runnable> defined in net.corda.node.utilities.AffinityExecutor.Gate[PropertyDescriptorImpl]
 
@@ -144,7 +144,7 @@ Inferred types:
 
 'takeUninterruptibly' @ [110:45] ==> @GwtIncompatible public open fun <E : (Any..Any?)> takeUninterruptibly(p0: (BlockingQueue<(Runnable..Runnable?)>..BlockingQueue<(Runnable..Runnable?)>?)): (Runnable..Runnable?) defined in com.google.common.util.concurrent.Uninterruptibles[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Runnable
+    <E : (Any..Any?)> -> (java.lang.Runnable..java.lang.Runnable?)
 
 'commandQ' @ [110:65] ==> private final val commandQ: LinkedBlockingQueue<Runnable> defined in net.corda.node.utilities.AffinityExecutor.Gate[PropertyDescriptorImpl]
 

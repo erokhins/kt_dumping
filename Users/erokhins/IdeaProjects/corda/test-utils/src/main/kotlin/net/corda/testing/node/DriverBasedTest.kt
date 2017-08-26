@@ -20,7 +20,7 @@
 
 'create' @ [30:40] ==> public open fun <V : (Any..Any?)> create(): (SettableFuture<(Unit..Unit?)>..SettableFuture<(Unit..Unit?)>?) defined in com.google.common.util.concurrent.SettableFuture[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Unit
+    <V : (Any..Any?)> -> (kotlin.Unit..kotlin.Unit?)
 
 'driverThread' @ [31:9] ==> private final var driverThread: Thread? defined in net.corda.testing.node.DriverBasedTest[PropertyDescriptorImpl]
 

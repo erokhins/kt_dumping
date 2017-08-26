@@ -142,6 +142,8 @@ Inferred types:
     <T> -> ServiceEntry
     <R> -> ServiceHandle
 
+'ServiceHandle' @ [135:77] ==> public constructor ServiceHandle(service: ServiceEntry) defined in net.corda.testing.node.InMemoryMessagingNetwork.ServiceHandle[ClassConstructorDescriptorImpl]
+
 'executor' @ [135:93] ==> value-parameter executor: AffinityExecutor defined in net.corda.testing.node.InMemoryMessagingNetwork.createNodeWithID[ValueParameterDescriptorImpl]
 
 'database' @ [135:114] ==> value-parameter database: CordaPersistence defined in net.corda.testing.node.InMemoryMessagingNetwork.createNodeWithID[ValueParameterDescriptorImpl]
@@ -296,7 +298,7 @@ Inferred types:
 
 'immediateFuture' @ [197:32] ==> public open fun <V : (Any..Any?)> immediateFuture(@Nullable p0: InMemoryMessagingNetwork.InMemoryMessaging?): (ListenableFuture<(InMemoryMessagingNetwork.InMemoryMessaging..InMemoryMessagingNetwork.InMemoryMessaging?)>..ListenableFuture<(InMemoryMessagingNetwork.InMemoryMessaging..InMemoryMessagingNetwork.InMemoryMessaging?)>?) defined in com.google.common.util.concurrent.Futures[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> InMemoryMessaging
+    <V : (Any..Any?)> -> (net.corda.testing.node.InMemoryMessagingNetwork.InMemoryMessaging..net.corda.testing.node.InMemoryMessagingNetwork.InMemoryMessaging?)
 
 'node' @ [197:48] ==> val node: InMemoryMessagingNetwork.InMemoryMessaging defined in net.corda.testing.node.InMemoryMessagingNetwork.Builder.start.<anonymous>[LocalVariableDescriptor]
 
@@ -569,7 +571,7 @@ Inferred types:
 
 'synchronizedSet' @ [318:71] ==> public open fun <T : (Any..Any?)> synchronizedSet(p0: (MutableSet<(UUID..UUID?)>..Set<(UUID..UUID?)>?)): (MutableSet<(UUID..UUID?)>..Set<(UUID..UUID?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> UUID
+    <T : (Any..Any?)> -> (java.util.UUID..java.util.UUID?)
 
 'HashSet' @ [318:87] ==> public constructor HashSet<E : (Any..Any?)>() defined in java.util.HashSet[JavaClassConstructorDescriptor]
 Inferred types:

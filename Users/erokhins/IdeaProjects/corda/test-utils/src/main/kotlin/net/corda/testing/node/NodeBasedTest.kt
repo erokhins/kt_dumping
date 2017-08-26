@@ -45,6 +45,8 @@ Inferred types:
 
 'it' @ [65:43] ==> value-parameter it: Node defined in net.corda.testing.node.NodeBasedTest.stopAllNodes.<anonymous>[ValueParameterDescriptorImpl]
 
+'stop' @ [65:47] ==> public open fun stop(): Unit defined in net.corda.node.internal.Node[DeserializedSimpleFunctionDescriptor]
+
 'transpose' @ [65:55] ==> public fun <V> Collection<CordaFuture<out Unit>>.transpose(): CordaFuture<List<Unit>> defined in net.corda.core.internal.concurrent[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <V> -> Unit
@@ -75,7 +77,7 @@ Inferred types:
     <T> -> NetworkHostAndPort
     <R> -> CordaFuture<Unit>
 
-'addressMustNotBeBoundFuture' @ [69:55] ==> public fun addressMustNotBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort): CordaFuture<Unit> defined in net.corda.testing.driver[SimpleFunctionDescriptorImpl]
+'addressMustNotBeBoundFuture' @ [69:55] ==> public fun addressMustNotBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort): CordaFuture<Unit> defined in net.corda.testing.driver in file Driver.kt[SimpleFunctionDescriptorImpl]
 
 'shutdownExecutor' @ [69:83] ==> val shutdownExecutor: (ScheduledExecutorService..ScheduledExecutorService?) defined in net.corda.testing.node.NodeBasedTest.stopAllNodes[LocalVariableDescriptor]
 
@@ -92,7 +94,7 @@ Inferred types:
     <T> -> NetworkHostAndPort
     <R> -> CordaFuture<Unit>
 
-'addressMustNotBeBoundFuture' @ [70:56] ==> public fun addressMustNotBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort): CordaFuture<Unit> defined in net.corda.testing.driver[SimpleFunctionDescriptorImpl]
+'addressMustNotBeBoundFuture' @ [70:56] ==> public fun addressMustNotBeBoundFuture(executorService: ScheduledExecutorService, hostAndPort: NetworkHostAndPort): CordaFuture<Unit> defined in net.corda.testing.driver in file Driver.kt[SimpleFunctionDescriptorImpl]
 
 'shutdownExecutor' @ [70:84] ==> val shutdownExecutor: (ScheduledExecutorService..ScheduledExecutorService?) defined in net.corda.testing.node.NodeBasedTest.stopAllNodes[LocalVariableDescriptor]
 
@@ -275,7 +277,7 @@ Inferred types:
 
 'notaryName' @ [121:52] ==> value-parameter notaryName: X500Name defined in net.corda.testing.node.NodeBasedTest.startNotaryCluster[ValueParameterDescriptorImpl]
 
-'getFreeLocalPorts' @ [122:29] ==> public fun getFreeLocalPorts(hostName: String, numberToAlloc: Int): List<NetworkHostAndPort> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'getFreeLocalPorts' @ [122:29] ==> public fun getFreeLocalPorts(hostName: String, numberToAlloc: Int): List<NetworkHostAndPort> defined in net.corda.testing in file CoreTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'clusterSize' @ [122:60] ==> value-parameter clusterSize: Int defined in net.corda.testing.node.NodeBasedTest.startNotaryCluster[ValueParameterDescriptorImpl]
 
@@ -464,7 +466,7 @@ Inferred types:
 
 'createDirectories' @ [152:54] ==> public fun Path.createDirectories(vararg attrs: FileAttribute<*>): Path defined in net.corda.core.internal[DeserializedSimpleFunctionDescriptor]
 
-'getFreeLocalPorts' @ [153:25] ==> public fun getFreeLocalPorts(hostName: String, numberToAlloc: Int): List<NetworkHostAndPort> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'getFreeLocalPorts' @ [153:25] ==> public fun getFreeLocalPorts(hostName: String, numberToAlloc: Int): List<NetworkHostAndPort> defined in net.corda.testing in file CoreTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'ConfigHelper' @ [154:22] ==> public object ConfigHelper defined in net.corda.node.services.config[FakeCallableDescriptorForObject]
 

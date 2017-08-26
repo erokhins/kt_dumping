@@ -1,6 +1,6 @@
-'lazy' @ [13:23] ==> public fun <T> lazy(initializer: () -> (OkHttpClient..OkHttpClient?)): Lazy<(OkHttpClient..OkHttpClient?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [13:23] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (okhttp3.OkHttpClient..okhttp3.OkHttpClient?)
+    <T> -> T
 
 'Builder' @ [14:18] ==> public constructor Builder() defined in okhttp3.OkHttpClient.Builder[JavaClassConstructorDescriptor]
 

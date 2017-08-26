@@ -364,12 +364,10 @@ Inferred types:
 
 'pluginRegistries' @ [131:35] ==> public final val pluginRegistries: List<WebServerPluginRegistry> defined in net.corda.webserver.internal.NodeWebServer[PropertyDescriptorImpl]
 
-'fold' @ [131:52] ==> public inline fun <T, R> Iterable<WebServerPluginRegistry>.fold(initial: ObjectMapper, operation: (ObjectMapper, WebServerPluginRegistry) -> ObjectMapper): ObjectMapper defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [131:52] ==> public inline fun <T, R> Iterable<WebServerPluginRegistry>.fold(initial: ObjectMapper, operation: (acc: ObjectMapper, WebServerPluginRegistry) -> ObjectMapper): ObjectMapper defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> WebServerPluginRegistry
     <R> -> ObjectMapper
-
-'JacksonSupport' @ [131:57] ==> public object JacksonSupport defined in net.corda.jackson[FakeCallableDescriptorForObject]
 
 'createDefaultMapper' @ [131:72] ==> @JvmStatic @JvmOverloads public final fun createDefaultMapper(rpc: CordaRPCOps, factory: JsonFactory = ..., fuzzyIdentityMatch: Boolean = ...): ObjectMapper defined in net.corda.jackson.JacksonSupport[DeserializedSimpleFunctionDescriptor]
 
@@ -665,11 +663,7 @@ Inferred types:
 
 'start' @ [208:33] ==> public final fun start(username: String, password: String): CordaRPCConnection defined in net.corda.client.rpc.CordaRPCClient[DeserializedSimpleFunctionDescriptor]
 
-'ArtemisMessagingComponent' @ [208:39] ==> public companion object defined in net.corda.nodeapi.ArtemisMessagingComponent[FakeCallableDescriptorForObject]
-
 'NODE_USER' @ [208:65] ==> public const final val NODE_USER: String defined in net.corda.nodeapi.ArtemisMessagingComponent.Companion[DeserializedPropertyDescriptor]
-
-'ArtemisMessagingComponent' @ [208:76] ==> public companion object defined in net.corda.nodeapi.ArtemisMessagingComponent[FakeCallableDescriptorForObject]
 
 'NODE_USER' @ [208:102] ==> public const final val NODE_USER: String defined in net.corda.nodeapi.ArtemisMessagingComponent.Companion[DeserializedPropertyDescriptor]
 
@@ -677,13 +671,13 @@ Inferred types:
 
 'proxy' @ [209:27] ==> public open val proxy: CordaRPCOps defined in net.corda.client.rpc.CordaRPCConnection[DeserializedPropertyDescriptor]
 
-'lazy' @ [213:60] ==> public fun <T> lazy(initializer: () -> List<(WebServerPluginRegistry..WebServerPluginRegistry?)>): Lazy<List<(WebServerPluginRegistry..WebServerPluginRegistry?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [213:60] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<(net.corda.webserver.services.WebServerPluginRegistry..net.corda.webserver.services.WebServerPluginRegistry?)>
+    <T> -> T
 
 'load' @ [214:23] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(WebServerPluginRegistry..WebServerPluginRegistry?)>..Class<(WebServerPluginRegistry..WebServerPluginRegistry?)>?)): (ServiceLoader<(WebServerPluginRegistry..WebServerPluginRegistry?)>..ServiceLoader<(WebServerPluginRegistry..WebServerPluginRegistry?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> WebServerPluginRegistry
+    <S : (Any..Any?)> -> (net.corda.webserver.services.WebServerPluginRegistry..net.corda.webserver.services.WebServerPluginRegistry?)
 
 'java' @ [214:59] ==> public val <T> KClass<WebServerPluginRegistry>.java: Class<WebServerPluginRegistry> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

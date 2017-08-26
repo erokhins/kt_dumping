@@ -112,9 +112,9 @@ Inferred types:
 
 'database' @ [93:16] ==> private final val database: CordaPersistence defined in net.corda.node.internal.CordaRPCOpsImpl[PropertyDescriptorImpl]
 
-'transaction' @ [93:25] ==> public final fun <T> transaction(statement: DatabaseTransaction.() -> DataFeed<List<StateMachineInfo>, StateMachineUpdate>): DataFeed<List<StateMachineInfo>, StateMachineUpdate> defined in net.corda.node.utilities.CordaPersistence[SimpleFunctionDescriptorImpl]
+'transaction' @ [93:25] ==> public final fun <T> transaction(statement: DatabaseTransaction.() -> DataFeed<List<StateMachineInfo>, (StateMachineUpdate..StateMachineUpdate?)>): DataFeed<List<StateMachineInfo>, (StateMachineUpdate..StateMachineUpdate?)> defined in net.corda.node.utilities.CordaPersistence[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> DataFeed<List<StateMachineInfo>, StateMachineUpdate>
+    <T> -> DataFeed<List<StateMachineInfo>, (net.corda.core.messaging.StateMachineUpdate..net.corda.core.messaging.StateMachineUpdate?)>
 
 'component1' @ [94:18] ==> public final operator fun component1(): List<FlowStateMachineImpl<*>> defined in net.corda.core.messaging.DataFeed[DeserializedSimpleFunctionDescriptor]
 
@@ -124,10 +124,10 @@ Inferred types:
 
 'track' @ [94:51] ==> public final fun track(): DataFeed<List<FlowStateMachineImpl<*>>, StateMachineManager.Change> defined in net.corda.node.services.statemachine.StateMachineManager[SimpleFunctionDescriptorImpl]
 
-'DataFeed' @ [95:13] ==> public constructor DataFeed<out A, B>(snapshot: List<StateMachineInfo>, updates: Observable<StateMachineUpdate>) defined in net.corda.core.messaging.DataFeed[DeserializedClassConstructorDescriptor]
+'DataFeed' @ [95:13] ==> public constructor DataFeed<out A, B>(snapshot: List<StateMachineInfo>, updates: Observable<(StateMachineUpdate..StateMachineUpdate?)>) defined in net.corda.core.messaging.DataFeed[DeserializedClassConstructorDescriptor]
 Inferred types:
     <out A> -> List<StateMachineInfo>
-    <B> -> StateMachineUpdate
+    <B> -> (net.corda.core.messaging.StateMachineUpdate..net.corda.core.messaging.StateMachineUpdate?)
 
 'allStateMachines' @ [96:21] ==> val allStateMachines: List<FlowStateMachineImpl<*>> defined in net.corda.node.internal.CordaRPCOpsImpl.stateMachinesFeed.<anonymous>[LocalVariableDescriptor]
 
@@ -146,7 +146,7 @@ Inferred types:
 
 'map' @ [97:29] ==> public final fun <R : (Any..Any?)> map(p0: (((StateMachineManager.Change..StateMachineManager.Change?)) -> (StateMachineUpdate..StateMachineUpdate?)..(((StateMachineManager.Change..StateMachineManager.Change?)) -> (StateMachineUpdate..StateMachineUpdate?))?)): (Observable<(StateMachineUpdate..StateMachineUpdate?)>..Observable<(StateMachineUpdate..StateMachineUpdate?)>?) defined in rx.Observable[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> StateMachineUpdate
+    <R : (Any..Any?)> -> (net.corda.core.messaging.StateMachineUpdate..net.corda.core.messaging.StateMachineUpdate?)
 
 'stateMachineUpdateFromStateMachineChange' @ [97:35] ==> private final fun stateMachineUpdateFromStateMachineChange(change: StateMachineManager.Change): StateMachineUpdate defined in net.corda.node.internal.CordaRPCOpsImpl.Companion[SimpleFunctionDescriptorImpl]
 
@@ -242,7 +242,7 @@ Inferred types:
 
 'empty' @ [135:78] ==> public open fun <T : (Any..Any?)> empty(): (Observable<(String..String?)>..Observable<(String..String?)>?) defined in rx.Observable[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'startFlow' @ [140:28] ==> private final fun <T : Any> startFlow(logicType: Class<out FlowLogic<T>>, args: Array<out Any?>): FlowStateMachineImpl<T> defined in net.corda.node.internal.CordaRPCOpsImpl[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -280,7 +280,7 @@ Inferred types:
 
 'name' @ [145:91] ==> public final val <T : (Any..Any?)> Class<out FlowLogic<T>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<T>
+    <T : (Any..Any?)> -> Captured(out FlowLogic<T>)
 
 'getRpcContext' @ [146:26] ==> public fun getRpcContext(): RpcContext defined in net.corda.node.services.messaging in file RPCServer.kt[SimpleFunctionDescriptorImpl]
 
@@ -290,7 +290,7 @@ Inferred types:
 
 'startFlowPermission' @ [147:38] ==> public fun <P : FlowLogic<*>> startFlowPermission(clazz: Class<out FlowLogic<T>>): String defined in net.corda.node.services[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <P : FlowLogic<*>> -> FlowLogic<T>
+    <P : FlowLogic<*>> -> Captured(out FlowLogic<T>)
 
 'logicType' @ [147:58] ==> value-parameter logicType: Class<out FlowLogic<T>> defined in net.corda.node.internal.CordaRPCOpsImpl.startFlow[ValueParameterDescriptorImpl]
 
@@ -443,7 +443,7 @@ Inferred types:
 
 'name' @ [183:79] ==> public final val <T : (Any..Any?)> Class<out FlowLogic<*>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<*>
+    <T : (Any..Any?)> -> Captured(out FlowLogic<*>)
 
 'sorted' @ [183:86] ==> public fun <T : Comparable<(String..String?)>> Iterable<(String..String?)>.sorted(): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -457,13 +457,13 @@ Inferred types:
 
 'flowLogic' @ [187:54] ==> value-parameter flowLogic: FlowLogic<*> defined in net.corda.node.internal.CordaRPCOpsImpl.Companion.stateMachineInfoFromFlowLogic[ValueParameterDescriptorImpl]
 
-'javaClass' @ [187:64] ==> public val <T : Any> FlowLogic<Any?>.javaClass: Class<FlowLogic<Any?>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [187:64] ==> public val <T : Any> FlowLogic<*>.javaClass: Class<FlowLogic<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> FlowLogic<Any?>
+    <T : Any> -> FlowLogic<*>
 
-'name' @ [187:74] ==> public final val <T : (Any..Any?)> Class<FlowLogic<Any?>>.name: (String..String?)[MyPropertyDescriptor]
+'name' @ [187:74] ==> public final val <T : (Any..Any?)> Class<FlowLogic<*>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<Any?>
+    <T : (Any..Any?)> -> FlowLogic<*>
 
 'flowLogic' @ [187:80] ==> value-parameter flowLogic: FlowLogic<*> defined in net.corda.node.internal.CordaRPCOpsImpl.Companion.stateMachineInfoFromFlowLogic[ValueParameterDescriptorImpl]
 

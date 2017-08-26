@@ -77,6 +77,8 @@ Inferred types:
     <T> -> NetworkHostAndPort
     <R> -> NetworkMapAddress
 
+'NetworkMapAddress' @ [88:112] ==> public constructor NetworkMapAddress(hostAndPort: NetworkHostAndPort) defined in net.corda.nodeapi.ArtemisMessagingComponent.NetworkMapAddress[DeserializedClassConstructorDescriptor]
+
 'network' @ [89:54] ==> public final lateinit var network: MessagingService defined in net.corda.node.internal.Node[PropertyDescriptorImpl]
 
 'verifierService' @ [89:86] ==> public final val verifierService: TransactionVerifierService defined in net.corda.node.services.messaging.NodeMessagingClient[PropertyDescriptorImpl]
@@ -256,10 +258,10 @@ Inferred types:
 
 'networkMapAddress' @ [191:17] ==> protected open val networkMapAddress: ArtemisMessagingComponent.NetworkMapAddress? defined in net.corda.node.internal.Node[PropertyDescriptorImpl]
 
-'let' @ [191:36] ==> @InlineOnly public inline fun <T, R> ArtemisMessagingComponent.NetworkMapAddress.let(block: (ArtemisMessagingComponent.NetworkMapAddress) -> Nothing?): Nothing? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [191:36] ==> @InlineOnly public inline fun <T, R> ArtemisMessagingComponent.NetworkMapAddress.let(block: (ArtemisMessagingComponent.NetworkMapAddress) -> Nothing): Nothing defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> NetworkMapAddress
-    <R> -> Nothing?
+    <R> -> Nothing
 
 'discoverPublicHost' @ [191:49] ==> private final fun discoverPublicHost(serverAddress: NetworkHostAndPort): String? defined in net.corda.node.internal.Node[SimpleFunctionDescriptorImpl]
 
@@ -437,6 +439,8 @@ Inferred types:
 
 'this' @ [248:26] ==> <this> defined in net.corda.node.internal.Node.startMessagingService.<anonymous>[ReceiverParameterDescriptorImpl]
 
+'stop' @ [248:32] ==> public final fun stop(): Unit defined in net.corda.node.services.messaging.ArtemisMessagingServer[SimpleFunctionDescriptorImpl]
+
 'start' @ [249:13] ==> @Throws public final fun start(): Unit defined in net.corda.node.services.messaging.ArtemisMessagingServer[SimpleFunctionDescriptorImpl]
 
 'network' @ [253:10] ==> public final lateinit var network: MessagingService defined in net.corda.node.internal.Node[PropertyDescriptorImpl]
@@ -521,6 +525,8 @@ Inferred types:
 'runOnStop' @ [292:17] ==> protected final val runOnStop: ArrayList<() -> Any?> /* = ArrayList<() -> Any?> */ defined in net.corda.node.internal.Node[PropertyDescriptorImpl]
 
 'server' @ [292:30] ==> val server: (Server..Server?) defined in net.corda.node.internal.Node.initialiseDatabasePersistence[LocalVariableDescriptor]
+
+'stop' @ [292:38] ==> public open fun stop(): Unit defined in org.h2.tools.Server[JavaMethodDescriptor]
 
 'server' @ [293:27] ==> val server: (Server..Server?) defined in net.corda.node.internal.Node.initialiseDatabasePersistence[LocalVariableDescriptor]
 

@@ -7,9 +7,9 @@ Inferred types:
 
 'type' @ [12:66] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.Companion.make[ValueParameterDescriptorImpl]
 
-'Array' @ [13:13] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [13:13] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@45311f1d
 
 'java' @ [13:32] ==> public val <T> KClass<Array<Char>>.java: Class<Array<Char>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -59,11 +59,11 @@ Inferred types:
 
 'componentType' @ [30:50] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'isPrimitive' @ [30:64] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'type' @ [31:16] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.calcTypeName[ValueParameterDescriptorImpl]
 
@@ -73,9 +73,9 @@ Inferred types:
 
 'arrayType' @ [31:47] ==> val arrayType: String defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.calcTypeName[LocalVariableDescriptor]
 
-'lazy' @ [34:36] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [34:36] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'DESCRIPTOR_DOMAIN' @ [34:45] ==> public val DESCRIPTOR_DOMAIN: String defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[PropertyDescriptorImpl]
 
@@ -85,25 +85,25 @@ Inferred types:
 
 'factory' @ [34:90] ==> value-parameter factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.<init>[ValueParameterDescriptorImpl]
 
-'lazy' @ [35:39] ==> public fun <T> lazy(initializer: () -> Type): Lazy<Type> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [35:39] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Type
+    <T> -> T
 
 'type' @ [35:46] ==> public open val type: Type defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer[PropertyDescriptorImpl]
 
 'componentType' @ [35:51] ==> internal fun Type.componentType(): Type defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [36:35] ==> public fun <T> lazy(initializer: () -> String): Lazy<String> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [36:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> T
 
 'calcTypeName' @ [36:42] ==> private final fun calcTypeName(type: Type): String defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer[SimpleFunctionDescriptorImpl]
 
 'type' @ [36:55] ==> public open val type: Type defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer[PropertyDescriptorImpl]
 
-'lazy' @ [38:48] ==> public fun <T> lazy(initializer: () -> RestrictedType): Lazy<RestrictedType> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [38:48] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> RestrictedType
+    <T> -> T
 
 'RestrictedType' @ [39:9] ==> public constructor RestrictedType(name: String, label: String?, provides: List<String>, source: String, descriptor: Descriptor, choices: List<Choice>) defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType[ClassConstructorDescriptorImpl]
 
@@ -135,13 +135,13 @@ Inferred types:
 
 'data' @ [50:9] ==> value-parameter data: Data defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.writeObject[ValueParameterDescriptorImpl]
 
-'withDescribed' @ [50:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withDescribed' @ [50:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'typeNotation' @ [50:28] ==> internal final val typeNotation: TypeNotation defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer[PropertyDescriptorImpl]
 
 'descriptor' @ [50:41] ==> public abstract val descriptor: Descriptor defined in net.corda.nodeapi.internal.serialization.amqp.TypeNotation[PropertyDescriptorImpl]
 
-'withList' @ [51:13] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withList' @ [51:13] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'obj' @ [52:31] ==> value-parameter obj: Any defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.writeObject[ValueParameterDescriptorImpl]
 
@@ -202,7 +202,7 @@ Inferred types:
 
 'newInstance' @ [68:40] ==> public open fun newInstance(p0: (Class<*>..Class<*>?), p1: Int): (Any..Any?) defined in java.lang.reflect.Array[JavaMethodDescriptor]
 
-'elementType' @ [68:52] ==> val elementType: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.toArrayOfType[LocalVariableDescriptor]
+'elementType' @ [68:52] ==> val elementType: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.toArrayOfType[LocalVariableDescriptor]
 
 'this' @ [68:65] ==> <this> defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.toArrayOfType[ReceiverParameterDescriptorImpl]
 
@@ -234,9 +234,9 @@ Inferred types:
 
 'ArraySerializer' @ [76:57] ==> public constructor ArraySerializer(type: Type, factory: SerializerFactory) defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer[ClassConstructorDescriptorImpl]
 
-'Array' @ [76:73] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [76:73] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@3da4ada3
 
 'java' @ [76:92] ==> public val <T> KClass<Array<Char>>.java: Class<Array<Char>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -256,7 +256,7 @@ Inferred types:
 
 'newInstance' @ [80:40] ==> public open fun newInstance(p0: (Class<*>..Class<*>?), p1: Int): (Any..Any?) defined in java.lang.reflect.Array[JavaMethodDescriptor]
 
-'elementType' @ [80:52] ==> val elementType: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.CharArraySerializer.toArrayOfType[LocalVariableDescriptor]
+'elementType' @ [80:52] ==> val elementType: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.CharArraySerializer.toArrayOfType[LocalVariableDescriptor]
 
 'this' @ [80:65] ==> <this> defined in net.corda.nodeapi.internal.serialization.amqp.CharArraySerializer.toArrayOfType[ReceiverParameterDescriptorImpl]
 
@@ -398,13 +398,13 @@ Inferred types:
 
 'data' @ [106:9] ==> value-parameter data: Data defined in net.corda.nodeapi.internal.serialization.amqp.PrimArraySerializer.localWriteObject[ValueParameterDescriptorImpl]
 
-'withDescribed' @ [106:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withDescribed' @ [106:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'typeNotation' @ [106:28] ==> internal final val typeNotation: TypeNotation defined in net.corda.nodeapi.internal.serialization.amqp.PrimArraySerializer[PropertyDescriptorImpl]
 
 'descriptor' @ [106:41] ==> public abstract val descriptor: Descriptor defined in net.corda.nodeapi.internal.serialization.amqp.TypeNotation[PropertyDescriptorImpl]
 
-'withList' @ [106:55] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withList' @ [106:55] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'invoke' @ [106:66] ==> public abstract operator fun invoke(): Unit defined in kotlin.Function0[FunctionInvokeDescriptor]
 
@@ -472,7 +472,7 @@ Inferred types:
 
 'newInstance' @ [126:40] ==> public open fun newInstance(p0: (Class<*>..Class<*>?), p1: Int): (Any..Any?) defined in java.lang.reflect.Array[JavaMethodDescriptor]
 
-'elementType' @ [126:52] ==> val elementType: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.PrimCharArraySerializer.toArrayOfType[LocalVariableDescriptor]
+'elementType' @ [126:52] ==> val elementType: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.PrimCharArraySerializer.toArrayOfType[LocalVariableDescriptor]
 
 'this' @ [126:65] ==> <this> defined in net.corda.nodeapi.internal.serialization.amqp.PrimCharArraySerializer.toArrayOfType[ReceiverParameterDescriptorImpl]
 

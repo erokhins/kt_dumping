@@ -5,8 +5,8 @@ Inferred types:
 
 'fireValueChangedEvent' @ [24:27] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> fireValueChangedEvent(p0: (MapListenerHelper<(K..K?), (A..A?)>..MapListenerHelper<(K..K?), (A..A?)>?), p1: (MapChangeListener.Change<out (K..K?), out (A..A?)>..MapChangeListener.Change<out (K..K?), out (A..A?)>?)): Unit defined in com.sun.javafx.collections.MapListenerHelper[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> A
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (A..A?)
 
 'mapListenerHelper' @ [24:49] ==> private final var mapListenerHelper: MapListenerHelper<K, A>? defined in net.corda.client.jfx.utils.ReadOnlyBackedObservableMapBase[PropertyDescriptorImpl]
 
@@ -16,8 +16,8 @@ Inferred types:
 
 'addListener' @ [28:47] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> addListener(p0: (MapListenerHelper<(K..K?), (A..A?)>..MapListenerHelper<(K..K?), (A..A?)>?), p1: (InvalidationListener..InvalidationListener?)): (MapListenerHelper<(K..K?), (A..A?)>..MapListenerHelper<(K..K?), (A..A?)>?) defined in com.sun.javafx.collections.MapListenerHelper[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> A
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (A..A?)
 
 'mapListenerHelper' @ [28:59] ==> private final var mapListenerHelper: MapListenerHelper<K, A>? defined in net.corda.client.jfx.utils.ReadOnlyBackedObservableMapBase[PropertyDescriptorImpl]
 
@@ -27,8 +27,8 @@ Inferred types:
 
 'addListener' @ [32:47] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> addListener(p0: (MapListenerHelper<(K..K?), (A..A?)>..MapListenerHelper<(K..K?), (A..A?)>?), p1: (MapChangeListener<in (K..K?), in (A..A?)>..MapChangeListener<in (K..K?), in (A..A?)>?)): (MapListenerHelper<(K..K?), (A..A?)>..MapListenerHelper<(K..K?), (A..A?)>?) defined in com.sun.javafx.collections.MapListenerHelper[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> A
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (A..A?)
 
 'mapListenerHelper' @ [32:59] ==> private final var mapListenerHelper: MapListenerHelper<K, A>? defined in net.corda.client.jfx.utils.ReadOnlyBackedObservableMapBase[PropertyDescriptorImpl]
 
@@ -38,8 +38,8 @@ Inferred types:
 
 'removeListener' @ [36:47] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> removeListener(p0: (MapListenerHelper<(K..K?), (A..A?)>..MapListenerHelper<(K..K?), (A..A?)>?), p1: (InvalidationListener..InvalidationListener?)): (MapListenerHelper<(K..K?), (A..A?)>..MapListenerHelper<(K..K?), (A..A?)>?) defined in com.sun.javafx.collections.MapListenerHelper[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> A
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (A..A?)
 
 'mapListenerHelper' @ [36:62] ==> private final var mapListenerHelper: MapListenerHelper<K, A>? defined in net.corda.client.jfx.utils.ReadOnlyBackedObservableMapBase[PropertyDescriptorImpl]
 
@@ -49,8 +49,8 @@ Inferred types:
 
 'removeListener' @ [40:47] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> removeListener(p0: (MapListenerHelper<(K..K?), (A..A?)>..MapListenerHelper<(K..K?), (A..A?)>?), p1: (MapChangeListener<in (K..K?), in (A..A?)>..MapChangeListener<in (K..K?), in (A..A?)>?)): (MapListenerHelper<(K..K?), (A..A?)>..MapListenerHelper<(K..K?), (A..A?)>?) defined in com.sun.javafx.collections.MapListenerHelper[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> K
-    <V : (Any..Any?)> -> A
+    <K : (Any..Any?)> -> (K..K?)
+    <V : (Any..Any?)> -> (A..A?)
 
 'mapListenerHelper' @ [40:62] ==> private final var mapListenerHelper: MapListenerHelper<K, A>? defined in net.corda.client.jfx.utils.ReadOnlyBackedObservableMapBase[PropertyDescriptorImpl]
 
@@ -97,7 +97,7 @@ Inferred types:
 
 'entries' @ [53:88] ==> public open val entries: MutableSet<MutableMap.MutableEntry<K, Pair<A, B>>> defined in java.util.HashMap[JavaPropertyDescriptor]
 
-'fold' @ [53:96] ==> public inline fun <T, R> Iterable<MutableMap.MutableEntry<K, Pair<A, B>>>.fold(initial: MutableSet<MutableMap.MutableEntry<K, A>>, operation: (MutableSet<MutableMap.MutableEntry<K, A>>, MutableMap.MutableEntry<K, Pair<A, B>>) -> MutableSet<MutableMap.MutableEntry<K, A>>): MutableSet<MutableMap.MutableEntry<K, A>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [53:96] ==> public inline fun <T, R> Iterable<MutableMap.MutableEntry<K, Pair<A, B>>>.fold(initial: MutableSet<MutableMap.MutableEntry<K, A>>, operation: (acc: MutableSet<MutableMap.MutableEntry<K, A>>, MutableMap.MutableEntry<K, Pair<A, B>>) -> MutableSet<MutableMap.MutableEntry<K, A>>): MutableSet<MutableMap.MutableEntry<K, A>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> MutableEntry<K, Pair<A, B>>
     <R> -> MutableSet<MutableEntry<K, A>>

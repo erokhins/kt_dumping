@@ -1,6 +1,6 @@
-'freeLocalHostAndPort' @ [32:83] ==> public fun freeLocalHostAndPort(): NetworkHostAndPort defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'freeLocalHostAndPort' @ [32:83] ==> public fun freeLocalHostAndPort(): NetworkHostAndPort defined in net.corda.testing in file CoreTestUtils.kt[SimpleFunctionDescriptorImpl]
 
-'freeLocalHostAndPort' @ [33:51] ==> public fun freeLocalHostAndPort(): NetworkHostAndPort defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'freeLocalHostAndPort' @ [33:51] ==> public fun freeLocalHostAndPort(): NetworkHostAndPort defined in net.corda.testing in file CoreTestUtils.kt[SimpleFunctionDescriptorImpl]
 
 'RPCUserServiceImpl' @ [36:23] ==> public constructor RPCUserServiceImpl(users: List<User>) defined in net.corda.node.services.RPCUserServiceImpl[DeserializedClassConstructorDescriptor]
 

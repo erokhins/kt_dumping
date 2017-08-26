@@ -58,7 +58,7 @@ Inferred types:
 
 'actualClass' @ [67:51] ==> value-parameter actualClass: Class<*>? defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[ValueParameterDescriptorImpl]
 
-'declaredClass' @ [67:64] ==> val declaredClass: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
+'declaredClass' @ [67:64] ==> val declaredClass: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
 
 'declaredType' @ [67:79] ==> value-parameter declaredType: Type defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[ValueParameterDescriptorImpl]
 
@@ -86,7 +86,7 @@ Inferred types:
 
 'isAssignableFrom' @ [69:53] ==> public open fun isAssignableFrom(p0: (Class<*>..Class<*>?)): Boolean defined in java.lang.Class[JavaMethodDescriptor]
 
-'declaredClass' @ [69:70] ==> val declaredClass: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
+'declaredClass' @ [69:70] ==> val declaredClass: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
 
 'serializersByType' @ [70:13] ==> private final val serializersByType: ConcurrentHashMap<Type, AMQPSerializer<Any>> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[PropertyDescriptorImpl]
 
@@ -100,7 +100,7 @@ Inferred types:
 
 'DeserializedParameterizedType' @ [71:76] ==> public constructor DeserializedParameterizedType(rawType: Class<*>, params: Array<out Type>, ownerType: Type? = ...) defined in net.corda.nodeapi.internal.serialization.amqp.DeserializedParameterizedType[ClassConstructorDescriptorImpl]
 
-'declaredClass' @ [72:25] ==> val declaredClass: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
+'declaredClass' @ [72:25] ==> val declaredClass: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
 
 'arrayOf' @ [72:40] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: SerializerFactory.AnyType): Array<SerializerFactory.AnyType> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -127,13 +127,13 @@ Inferred types:
 
 'isAssignableFrom' @ [74:36] ==> public open fun isAssignableFrom(p0: (Class<*>..Class<*>?)): Boolean defined in java.lang.Class[JavaMethodDescriptor]
 
-'declaredClass' @ [74:53] ==> val declaredClass: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
+'declaredClass' @ [74:53] ==> val declaredClass: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
 
 'serializersByType' @ [75:13] ==> private final val serializersByType: ConcurrentHashMap<Type, AMQPSerializer<Any>> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[PropertyDescriptorImpl]
 
 'computeIfAbsent' @ [75:31] ==> public final fun computeIfAbsent(p0: Type, p1: (Type) -> AMQPSerializer<Any>): AMQPSerializer<Any> defined in java.util.concurrent.ConcurrentHashMap[MyFunctionDescriptor]
 
-'declaredClass' @ [75:47] ==> val declaredClass: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
+'declaredClass' @ [75:47] ==> val declaredClass: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
 
 'makeMapSerializer' @ [76:17] ==> private final fun makeMapSerializer(declaredType: ParameterizedType): AMQPSerializer<Any> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[SimpleFunctionDescriptorImpl]
 
@@ -141,7 +141,7 @@ Inferred types:
 
 'DeserializedParameterizedType' @ [76:73] ==> public constructor DeserializedParameterizedType(rawType: Class<*>, params: Array<out Type>, ownerType: Type? = ...) defined in net.corda.nodeapi.internal.serialization.amqp.DeserializedParameterizedType[ClassConstructorDescriptorImpl]
 
-'declaredClass' @ [77:25] ==> val declaredClass: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
+'declaredClass' @ [77:25] ==> val declaredClass: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
 
 'arrayOf' @ [77:40] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: SerializerFactory.AnyType): Array<SerializerFactory.AnyType> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -155,7 +155,7 @@ Inferred types:
 
 'actualClass' @ [80:33] ==> value-parameter actualClass: Class<*>? defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[ValueParameterDescriptorImpl]
 
-'declaredClass' @ [80:48] ==> val declaredClass: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
+'declaredClass' @ [80:48] ==> val declaredClass: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
 
 'actualType' @ [80:63] ==> val actualType: Type defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[LocalVariableDescriptor]
 
@@ -228,7 +228,7 @@ Inferred types:
 
 'componentType' @ [101:52] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'declaredComponent' @ [101:67] ==> val declaredComponent: (Type..Type?) defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.inferTypeVariables[LocalVariableDescriptor]
 
@@ -323,7 +323,7 @@ Inferred types:
 
 'typeParameters' @ [113:36] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.typeParameters: (Array<out (TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>..TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>?)>..Array<out (TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>..TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'isNotEmpty' @ [113:51] ==> @InlineOnly public inline fun <T> Array<out (TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>..TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>?)>.isNotEmpty(): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -379,7 +379,7 @@ Inferred types:
 Inferred types:
     <T> -> Type
 
-'fold' @ [120:52] ==> public inline fun <T, R> Iterable<Type>.fold(initial: (TypeResolver..TypeResolver?), operation: ((TypeResolver..TypeResolver?), Type) -> (TypeResolver..TypeResolver?)): (TypeResolver..TypeResolver?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [120:52] ==> public inline fun <T, R> Iterable<Type>.fold(initial: (TypeResolver..TypeResolver?), operation: (acc: (TypeResolver..TypeResolver?), Type) -> (TypeResolver..TypeResolver?)): (TypeResolver..TypeResolver?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Type
     <R> -> (com.google.common.reflect.TypeResolver..com.google.common.reflect.TypeResolver?)
@@ -414,7 +414,7 @@ Inferred types:
 
 'typeParameters' @ [126:90] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.typeParameters: (Array<out (TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>..TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>?)>..Array<out (TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>..TypeVariable<out (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'resolver' @ [127:40] ==> val resolver: (TypeResolver..TypeResolver?) defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.inferTypeVariables[LocalVariableDescriptor]
 
@@ -460,7 +460,7 @@ Inferred types:
 
 'genericSuperclass' @ [143:41] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.genericSuperclass: (Type..Type?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'if (superClass != null) {
             val resolved = TypeResolver().where(startingClass.asParameterizedType(), startingType.asParameterizedType()).resolveType(superClass)
@@ -507,7 +507,7 @@ Inferred types:
 
 'genericInterfaces' @ [149:38] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.genericInterfaces: (Array<(Type..Type?)>..Array<out (Type..Type?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'emptyArray' @ [149:59] ==> public inline fun <reified @PureReifiable T> emptyArray(): Array<(Type..Type?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -548,6 +548,8 @@ Inferred types:
 'serializersByDescriptor' @ [162:16] ==> private final val serializersByDescriptor: ConcurrentHashMap<Any, AMQPSerializer<Any>> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[PropertyDescriptorImpl]
 
 'typeDescriptor' @ [162:40] ==> value-parameter typeDescriptor: Any defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.get[ValueParameterDescriptorImpl]
+
+'invoke' @ [162:59] ==> public abstract operator fun invoke(): AMQPSerializer<Any> defined in kotlin.Function0[FunctionInvokeDescriptor]
 
 'processSchema' @ [163:13] ==> private final fun processSchema(schema: schemaAndDescriptor, sentinel: Boolean = ...): Unit defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[SimpleFunctionDescriptorImpl]
 
@@ -796,21 +798,17 @@ Inferred types:
 
 'componentType' @ [237:31] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'isPrimitive' @ [237:45] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-
-'PrimArraySerializer' @ [237:58] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.PrimArraySerializer[FakeCallableDescriptorForObject]
+    <T : (Any..Any?)> -> Captured(*)
 
 'make' @ [237:78] ==> public final fun make(type: Type, factory: SerializerFactory): PrimArraySerializer defined in net.corda.nodeapi.internal.serialization.amqp.PrimArraySerializer.Companion[SimpleFunctionDescriptorImpl]
 
 'type' @ [237:83] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.makeClassSerializer[ValueParameterDescriptorImpl]
 
 'this' @ [237:89] ==> <this> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.makeClassSerializer.<anonymous>.<anonymous>[ReceiverParameterDescriptorImpl]
-
-'ArraySerializer' @ [238:26] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer[FakeCallableDescriptorForObject]
 
 'make' @ [238:42] ==> public final fun make(type: Type, factory: SerializerFactory): ArraySerializer defined in net.corda.nodeapi.internal.serialization.amqp.ArraySerializer.Companion[SimpleFunctionDescriptorImpl]
 
@@ -832,7 +830,7 @@ Inferred types:
 
 'kotlin' @ [239:34] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'objectInstance' @ [239:41] ==> public abstract val objectInstance: Any? defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
@@ -848,7 +846,7 @@ Inferred types:
 
 'kotlin' @ [241:54] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'objectInstance' @ [241:61] ==> public abstract val objectInstance: Any? defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
@@ -876,9 +874,9 @@ Inferred types:
 
 'asClass' @ [255:55] ==> internal fun Type.asClass(): Class<*>? defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
-'superclass' @ [255:66] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [255:66] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'if (declaredSuperClass == null || !customSerializer.isSerializerFor(declaredSuperClass)) {
                     return customSerializer
@@ -890,7 +888,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Nothing
 
-'declaredSuperClass' @ [256:21] ==> val declaredSuperClass: Class<in (Nothing..Nothing?)>? defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.findCustomSerializer[LocalVariableDescriptor]
+'declaredSuperClass' @ [256:21] ==> val declaredSuperClass: Class<out Any?>? defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.findCustomSerializer[LocalVariableDescriptor]
 
 '!' @ [256:51] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -898,7 +896,7 @@ Inferred types:
 
 'isSerializerFor' @ [256:69] ==> public abstract fun isSerializerFor(clazz: Class<*>): Boolean defined in net.corda.nodeapi.internal.serialization.amqp.CustomSerializer[SimpleFunctionDescriptorImpl]
 
-'declaredSuperClass' @ [256:85] ==> val declaredSuperClass: Class<in (Nothing..Nothing?)>? defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.findCustomSerializer[LocalVariableDescriptor]
+'declaredSuperClass' @ [256:85] ==> val declaredSuperClass: Class<out Any?>? defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.findCustomSerializer[LocalVariableDescriptor]
 
 'customSerializer' @ [257:28] ==> val customSerializer: (CustomSerializer<out Any>..CustomSerializer<out Any>?) defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.findCustomSerializer[LocalVariableDescriptor]
 
@@ -918,7 +916,7 @@ Inferred types:
 
 'isNotWhitelisted' @ [270:13] ==> internal final fun isNotWhitelisted(clazz: Class<*>): Boolean defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[SimpleFunctionDescriptorImpl]
 
-'clazz' @ [270:30] ==> val clazz: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.whitelisted[LocalVariableDescriptor]
+'clazz' @ [270:30] ==> val clazz: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.whitelisted[LocalVariableDescriptor]
 
 'NotSerializableException' @ [271:19] ==> public constructor NotSerializableException(p0: (String..String?)) defined in java.io.NotSerializableException[JavaClassConstructorDescriptor]
 
@@ -958,7 +956,7 @@ Inferred types:
 
 'interfaces' @ [282:22] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.interfaces: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'any' @ [282:33] ==> public inline fun <T> Array<out (Class<*>..Class<*>?)>.any(predicate: ((Class<*>..Class<*>?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -970,17 +968,17 @@ Inferred types:
 
 'type' @ [283:21] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.hasAnnotationInHierarchy[ValueParameterDescriptorImpl]
 
-'superclass' @ [283:26] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [283:26] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'hasAnnotationInHierarchy' @ [283:48] ==> internal final fun hasAnnotationInHierarchy(type: Class<*>): Boolean defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[SimpleFunctionDescriptorImpl]
 
 'type' @ [283:73] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.hasAnnotationInHierarchy[ValueParameterDescriptorImpl]
 
-'superclass' @ [283:78] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [283:78] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'declaredType' @ [287:23] ==> value-parameter declaredType: ParameterizedType defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.makeMapSerializer[ValueParameterDescriptorImpl]
 
@@ -1006,9 +1004,9 @@ Inferred types:
 
 'unwrap' @ [297:50] ==> public open fun <T : (Any..Any?)> unwrap(p0: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in com.google.common.primitives.Primitives[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'clazz' @ [297:57] ==> val clazz: Class<out (Any..Any?)> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion.primitiveTypeName[LocalVariableDescriptor]
+'clazz' @ [297:57] ==> val clazz: Class<*> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion.primitiveTypeName[LocalVariableDescriptor]
 
 'namesOfPrimitiveTypes' @ [301:20] ==> private final val namesOfPrimitiveTypes: Map<String, Class<*>> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[PropertyDescriptorImpl]
 
@@ -1162,11 +1160,11 @@ Inferred types:
 
 'primitiveTypeNames' @ [327:68] ==> private final val primitiveTypeNames: Map<Class<*>, String> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[PropertyDescriptorImpl]
 
-'map' @ [327:87] ==> public inline fun <K, V, R> Map<out Class<*>, String>.map(transform: (Map.Entry<Class<*>, String>) -> Pair<String, Class<out (Any..Any?)>>): List<Pair<String, Class<out (Any..Any?)>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [327:87] ==> public inline fun <K, V, R> Map<out Class<*>, String>.map(transform: (Map.Entry<Class<*>, String>) -> Pair<String, Class<*>>): List<Pair<String, Class<*>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> Class<*>
     <V> -> String
-    <R> -> Pair<String, Class<out (kotlin.Any..kotlin.Any?)>>
+    <R> -> Pair<String, Class<*>>
 
 'it' @ [327:93] ==> value-parameter it: Map.Entry<Class<*>, String> defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion.namesOfPrimitiveTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1176,10 +1174,10 @@ Inferred types:
 
 'key' @ [327:108] ==> public abstract val key: Class<*> defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'toMap' @ [327:114] ==> public fun <K, V> Iterable<Pair<String, Class<out (Any..Any?)>>>.toMap(): Map<String, Class<out (Any..Any?)>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toMap' @ [327:114] ==> public fun <K, V> Iterable<Pair<String, Class<*>>>.toMap(): Map<String, Class<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> Class<out (kotlin.Any..kotlin.Any?)>
+    <V> -> Class<*>
 
 'when (type) {
             is Class<*> -> {
@@ -1203,15 +1201,15 @@ Inferred types:
 
 'if (type.isArray) {
                     "${nameForType(type.componentType)}${if (type.componentType.isPrimitive) "[p]" else "[]"}"
-                } else type.name' @ [331:44] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
+                } else type.name' @ [331:44] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (String..String?), elseBranch: (String..String?)): (String..String?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.String..kotlin.String?)
 
 'type' @ [331:48] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion.nameForType[ValueParameterDescriptorImpl]
 
 'isArray' @ [331:53] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'nameForType' @ [332:24] ==> public final fun nameForType(type: Type): String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1219,7 +1217,7 @@ Inferred types:
 
 'componentType' @ [332:41] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'if (type.componentType.isPrimitive) "[p]" else "[]"' @ [332:58] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: String, elseBranch: String): String[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -1229,17 +1227,17 @@ Inferred types:
 
 'componentType' @ [332:67] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'isPrimitive' @ [332:81] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'type' @ [333:24] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion.nameForType[ValueParameterDescriptorImpl]
 
 'name' @ [333:29] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'nameForType' @ [335:40] ==> public final fun nameForType(type: Type): String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 
@@ -1387,9 +1385,9 @@ Inferred types:
                     "short[p]" -> ShortArray::class.java
                     "long[p]" -> LongArray::class.java
                     else -> throw NotSerializableException("Not able to deserialize array type: $name")
-                }' @ [355:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Class<out {kotlin.Cloneable & java.io.Serializable}>, entry1: Class<out {kotlin.Cloneable & java.io.Serializable}>, entry2: Class<out {kotlin.Cloneable & java.io.Serializable}>, entry3: Class<out {kotlin.Cloneable & java.io.Serializable}>, entry4: Class<out {kotlin.Cloneable & java.io.Serializable}>, entry5: Class<out {kotlin.Cloneable & java.io.Serializable}>, entry6: Class<out {kotlin.Cloneable & java.io.Serializable}>, entry7: Class<out {kotlin.Cloneable & java.io.Serializable}>): Class<out {kotlin.Cloneable & java.io.Serializable}>[SimpleFunctionDescriptorImpl]
+                }' @ [355:17] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Class<out Any>, entry1: Class<out Any>, entry2: Class<out Any>, entry3: Class<out Any>, entry4: Class<out Any>, entry5: Class<out Any>, entry6: Class<out Any>, entry7: Class<out Any>): Class<out Any>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Class<out {kotlin.Cloneable & java.io.Serializable}>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Class<out Any>
 
 'name' @ [355:23] ==> value-parameter name: String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion.typeForName[ValueParameterDescriptorImpl]
 
@@ -1424,8 +1422,6 @@ Inferred types:
 'NotSerializableException' @ [363:35] ==> public constructor NotSerializableException(p0: (String..String?)) defined in java.io.NotSerializableException[JavaClassConstructorDescriptor]
 
 'name' @ [363:98] ==> value-parameter name: String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion.typeForName[ValueParameterDescriptorImpl]
-
-'DeserializedParameterizedType' @ [366:17] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.DeserializedParameterizedType[FakeCallableDescriptorForObject]
 
 'make' @ [366:47] ==> public final fun make(name: String, cl: ClassLoader = ...): Type defined in net.corda.nodeapi.internal.serialization.amqp.DeserializedParameterizedType.Companion[SimpleFunctionDescriptorImpl]
 

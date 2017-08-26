@@ -43,7 +43,7 @@ Inferred types:
 
 'configurer' @ [24:74] ==> value-parameter configurer: (Consumer<in (CordformNode..CordformNode?)>..Consumer<in (CordformNode..CordformNode?)>?) defined in net.corda.demorun.runNodes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'accept' @ [24:85] ==> public abstract fun accept(p0: (Any..Any?)): Unit defined in java.util.function.Consumer[JavaMethodDescriptor]
+'accept' @ [24:85] ==> public abstract fun accept(p0: (CordformNode..CordformNode?)): Unit defined in java.util.function.Consumer[JavaMethodDescriptor]
 
 'it' @ [24:92] ==> value-parameter it: CordformNode defined in net.corda.demorun.runNodes.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 

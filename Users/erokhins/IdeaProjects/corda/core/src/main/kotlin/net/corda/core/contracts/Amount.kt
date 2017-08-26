@@ -94,7 +94,7 @@ Inferred types:
 
 'JvmStatic' @ [100:9] ==> public constructor JvmStatic() defined in kotlin.jvm.JvmStatic[DeserializedClassConstructorDescriptor]
 
-'reduce' @ [101:58] ==> public inline fun <S, T : Amount<T>> Iterable<Amount<T>>.reduce(operation: (Amount<T>, Amount<T>) -> Amount<T>): Amount<T> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [101:58] ==> public inline fun <S, T : Amount<T>> Iterable<Amount<T>>.reduce(operation: (acc: Amount<T>, Amount<T>) -> Amount<T>): Amount<T> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> Amount<T>
     <T : S> -> Amount<T>
@@ -116,8 +116,6 @@ Inferred types:
 'sumOrThrow' @ [109:91] ==> @JvmStatic public final fun <T : Any> Iterable<Amount<T>>.sumOrThrow(): Amount<T> defined in net.corda.core.contracts.Amount.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : Any> -> T
-
-'Amount' @ [109:109] ==> public companion object defined in net.corda.core.contracts.Amount[FakeCallableDescriptorForObject]
 
 'zero' @ [109:116] ==> @JvmStatic public final fun <T : Any> zero(token: T): Amount<T> defined in net.corda.core.contracts.Amount.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -165,16 +163,16 @@ Inferred types:
 
 'getInstance' @ [116:33] ==> public open fun getInstance(p0: (String..String?)): (Currency..Currency?) defined in java.util.Currency[JavaMethodDescriptor]
 
-'lazy' @ [119:61] ==> public fun <T> lazy(initializer: () -> Map<String, (Currency..Currency?)>): Lazy<Map<String, (Currency..Currency?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [119:61] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<String, (java.util.Currency..java.util.Currency?)>
+    <T> -> T
 
 'getAvailableCurrencies' @ [120:22] ==> public open fun getAvailableCurrencies(): (MutableSet<(Currency..Currency?)>..Set<(Currency..Currency?)>?) defined in java.util.Currency[JavaMethodDescriptor]
 
-'associateBy' @ [120:47] ==> public inline fun <T, K> Iterable<(Currency..Currency?)>.associateBy(keySelector: ((Currency..Currency?)) -> String): Map<String, (Currency..Currency?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'associateBy' @ [120:47] ==> public inline fun <T, K> Iterable<(Currency..Currency?)>.associateBy(keySelector: ((Currency..Currency?)) -> (String..String?)): Map<(String..String?), (Currency..Currency?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.util.Currency..java.util.Currency?)
-    <K> -> String
+    <K> -> (kotlin.String..kotlin.String?)
 
 'it' @ [120:61] ==> value-parameter it: (Currency..Currency?) defined in net.corda.core.contracts.Amount.Companion.currencyCodes.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -638,8 +636,6 @@ Inferred types:
 'valueOf' @ [374:46] ==> public open fun valueOf(p0: Long, p1: Int): (BigDecimal..BigDecimal?) defined in java.math.BigDecimal[JavaMethodDescriptor]
 
 'quantityDelta' @ [374:54] ==> public final val quantityDelta: Long defined in net.corda.core.contracts.AmountTransfer[PropertyDescriptorImpl]
-
-'Amount' @ [374:74] ==> public companion object defined in net.corda.core.contracts.Amount[FakeCallableDescriptorForObject]
 
 'getDisplayTokenSize' @ [374:81] ==> @JvmStatic public final fun getDisplayTokenSize(token: Any): BigDecimal defined in net.corda.core.contracts.Amount.Companion[SimpleFunctionDescriptorImpl]
 

@@ -6,12 +6,11 @@
 Inferred types:
     <reified T : Component & Injectable> -> LoginView
 
-'observableValue' @ [30:31] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (SettingsModel) -> ObservableValue<(Boolean..Boolean?)>): TrackedDelegate.ObservableValueDelegate<SettingsModel, (Boolean..Boolean?)> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> SettingsModel
-    <T> -> (kotlin.Boolean..kotlin.Boolean?)
+'getValue' @ [30:31] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'SettingsModel' @ [30:47] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
+
+'fullscreenProperty' @ [30:62] ==> public final val fullscreenProperty: ObjectProperty<Boolean> defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
 
 'loggerFor' @ [33:19] ==> public inline fun <reified T : Any> loggerFor(): Logger defined in net.corda.core.utilities[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -157,7 +156,7 @@ Inferred types:
 
 'printStackTrace' @ [82:23] ==> public open fun printStackTrace(): Unit defined in kotlin.Throwable[JavaMethodDescriptor]
 
-'runInFxApplicationThread' @ [84:13] ==> public fun runInFxApplicationThread(block: () -> Unit): Unit defined in net.corda.explorer.views[SimpleFunctionDescriptorImpl]
+'runInFxApplicationThread' @ [84:13] ==> public fun runInFxApplicationThread(block: () -> Unit): Unit defined in net.corda.explorer.views in file GuiUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'ExceptionDialog' @ [86:17] ==> public constructor ExceptionDialog(p0: (Throwable..Throwable?)) defined in org.controlsfx.dialog.ExceptionDialog[JavaClassConstructorDescriptor]
 

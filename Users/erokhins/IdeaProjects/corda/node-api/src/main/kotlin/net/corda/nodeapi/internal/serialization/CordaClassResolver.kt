@@ -36,7 +36,7 @@
 
 'isPrimitive' @ [48:18] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'type' @ [48:33] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.CordaClassResolver.checkClass[ValueParameterDescriptorImpl]
 
@@ -52,7 +52,7 @@ Inferred types:
 
 'modifiers' @ [48:76] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.modifiers: Int[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'type' @ [48:90] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.CordaClassResolver.checkClass[ValueParameterDescriptorImpl]
 
@@ -66,7 +66,7 @@ Inferred types:
 
 'isArray' @ [50:18] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isArray: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'checkClass' @ [50:34] ==> private final fun checkClass(type: Class<*>): Registration? defined in net.corda.nodeapi.internal.serialization.CordaClassResolver[SimpleFunctionDescriptorImpl]
 
@@ -74,7 +74,7 @@ Inferred types:
 
 'componentType' @ [50:50] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.componentType: (Class<*>..Class<*>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '!' @ [52:13] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -82,7 +82,7 @@ Inferred types:
 
 'isEnum' @ [52:19] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isEnum: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'Enum' @ [52:29] ==> public companion object defined in kotlin.Enum[FakeCallableDescriptorForObject]
 
@@ -98,9 +98,9 @@ Inferred types:
 
 'type' @ [52:88] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.CordaClassResolver.checkClass[ValueParameterDescriptorImpl]
 
-'superclass' @ [52:93] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [52:93] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'Lambda' @ [54:33] ==> public constructor Lambda(arity: Int) defined in kotlin.jvm.internal.Lambda[DeserializedClassConstructorDescriptor]
 
@@ -136,7 +136,7 @@ Inferred types:
 
 'kotlin' @ [67:18] ==> public val <T : Any> Class<out (Any..Any?)>.kotlin: KClass<out (Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'objectInstance' @ [67:25] ==> public abstract val objectInstance: Any? defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
@@ -154,9 +154,9 @@ Inferred types:
                     FieldSerializer<Any>(kryo, type).apply { setIgnoreSyntheticFields(false) }
                 Throwable::class.java.isAssignableFrom(type) -> ThrowableSerializer(kryo, type)
                 else -> kryo.getDefaultSerializer(type)
-            }' @ [76:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Serializer<out (Any..Any?)>..Serializer<*>?), entry1: (Serializer<out (Any..Any?)>..Serializer<*>?), entry2: (Serializer<out (Any..Any?)>..Serializer<*>?), entry3: (Serializer<out (Any..Any?)>..Serializer<*>?)): (Serializer<out (Any..Any?)>..Serializer<*>?)[SimpleFunctionDescriptorImpl]
+            }' @ [76:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Serializer<out (Any..Any?)>..Serializer<out (Any..Any?)>?), entry1: (Serializer<out (Any..Any?)>..Serializer<out (Any..Any?)>?), entry2: (Serializer<out (Any..Any?)>..Serializer<out (Any..Any?)>?), entry3: (Serializer<out (Any..Any?)>..Serializer<out (Any..Any?)>?)): (Serializer<out (Any..Any?)>..Serializer<out (Any..Any?)>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (com.esotericsoftware.kryo.Serializer<out (kotlin.Any..kotlin.Any?)>..com.esotericsoftware.kryo.Serializer<*>?)
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (com.esotericsoftware.kryo.Serializer<out (kotlin.Any..kotlin.Any?)>..com.esotericsoftware.kryo.Serializer<out (kotlin.Any..kotlin.Any?)>?)
 
 'objectInstance' @ [77:17] ==> val objectInstance: Any? defined in net.corda.nodeapi.internal.serialization.CordaClassResolver.registerImplicit[LocalVariableDescriptor]
 
@@ -200,7 +200,7 @@ Inferred types:
 
 'ThrowableSerializer' @ [80:65] ==> public constructor ThrowableSerializer<T>(kryo: Kryo, type: Class<out (Any..Any?)>) defined in net.corda.nodeapi.internal.serialization.ThrowableSerializer[ClassConstructorDescriptorImpl]
 Inferred types:
-    <T> -> (kotlin.Any..kotlin.Any?)
+    <T> -> Captured(*)
 
 'kryo' @ [80:85] ==> protected/*protected and package*/ final var kryo: (Kryo..Kryo?) defined in net.corda.nodeapi.internal.serialization.CordaClassResolver[JavaPropertyDescriptor]
 
@@ -218,7 +218,7 @@ Inferred types:
 
 'type' @ [83:42] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.CordaClassResolver.registerImplicit[ValueParameterDescriptorImpl]
 
-'serializer' @ [83:48] ==> val serializer: (Serializer<out (Any..Any?)>..Serializer<*>?) defined in net.corda.nodeapi.internal.serialization.CordaClassResolver.registerImplicit[LocalVariableDescriptor]
+'serializer' @ [83:48] ==> val serializer: (Serializer<out (Any..Any?)>..Serializer<out (Any..Any?)>?) defined in net.corda.nodeapi.internal.serialization.CordaClassResolver.registerImplicit[LocalVariableDescriptor]
 
 'NAME' @ [83:60] ==> public const final val NAME: Byte defined in com.esotericsoftware.kryo.util.DefaultClassResolver[JavaPropertyDescriptor]
 
@@ -242,7 +242,7 @@ Inferred types:
 
 'classLoader' @ [99:22] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.classLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '!' @ [100:20] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
@@ -284,7 +284,7 @@ Inferred types:
 
 'interfaces' @ [107:21] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.interfaces: (Array<(Class<*>..Class<*>?)>..Array<out (Class<*>..Class<*>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'any' @ [107:32] ==> public inline fun <T> Array<out (Class<*>..Class<*>?)>.any(predicate: ((Class<*>..Class<*>?)) -> Boolean): Boolean defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -306,17 +306,17 @@ Inferred types:
 
 'type' @ [108:21] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.CordaClassResolver.hasInheritedAnnotation[ValueParameterDescriptorImpl]
 
-'superclass' @ [108:26] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [108:26] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'hasInheritedAnnotation' @ [108:48] ==> private final fun hasInheritedAnnotation(type: Class<*>): Boolean defined in net.corda.nodeapi.internal.serialization.CordaClassResolver[SimpleFunctionDescriptorImpl]
 
 'type' @ [108:71] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.CordaClassResolver.hasInheritedAnnotation[ValueParameterDescriptorImpl]
 
-'superclass' @ [108:76] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<in (Nothing..Nothing?)>..Class<in (Nothing..Nothing?)>?)[MyPropertyDescriptor]
+'superclass' @ [108:76] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.superclass: (Class<out Any?>..Class<out Any?>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'super' @ [113:9] ==> <this> defined in net.corda.nodeapi.internal.serialization.CordaClassResolver[LazyClassReceiverParameterDescriptor]
 
@@ -380,7 +380,7 @@ Inferred types:
 
 '`package`' @ [137:108] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.`package`: (Package..Package?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'name' @ [137:118] ==> public final val Package.name: (String..String?)[MyPropertyDescriptor]
 
@@ -390,17 +390,17 @@ Inferred types:
 
 'synchronizedSet' @ [147:57] ==> public open fun <T : (Any..Any?)> synchronizedSet(p0: (MutableSet<(String..String?)>..Set<(String..String?)>?)): (MutableSet<(String..String?)>..Set<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'mutableSetOf' @ [147:73] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mutableSetOf' @ [147:73] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> (kotlin.String..kotlin.String?)
 
 'type' @ [151:17] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.GlobalTransientClassWhiteList.hasListed[ValueParameterDescriptorImpl]
 
 'name' @ [151:22] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'whitelist' @ [151:30] ==> public final val whitelist: MutableSet<String> defined in net.corda.nodeapi.internal.serialization.GlobalTransientClassWhiteList.Companion[PropertyDescriptorImpl]
 
@@ -416,23 +416,23 @@ Inferred types:
 
 'name' @ [155:28] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'delegate' @ [162:104] ==> value-parameter delegate: ClassWhitelist defined in net.corda.nodeapi.internal.serialization.TransientClassWhiteList.<init>[ValueParameterDescriptorImpl]
 
 'synchronizedSet' @ [163:53] ==> public open fun <T : (Any..Any?)> synchronizedSet(p0: (MutableSet<(String..String?)>..Set<(String..String?)>?)): (MutableSet<(String..String?)>..Set<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'mutableSetOf' @ [163:69] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mutableSetOf' @ [163:69] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> (kotlin.String..kotlin.String?)
 
 'type' @ [166:17] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.TransientClassWhiteList.hasListed[ValueParameterDescriptorImpl]
 
 'name' @ [166:22] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'whitelist' @ [166:30] ==> public final val whitelist: MutableSet<String> defined in net.corda.nodeapi.internal.serialization.TransientClassWhiteList[PropertyDescriptorImpl]
 
@@ -448,7 +448,7 @@ Inferred types:
 
 'name' @ [170:28] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'Suppress' @ [179:1] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -458,11 +458,11 @@ Inferred types:
 
 'synchronizedSet' @ [183:60] ==> public open fun <T : (Any..Any?)> synchronizedSet(p0: (MutableSet<(String..String?)>..Set<(String..String?)>?)): (MutableSet<(String..String?)>..Set<(String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
-'mutableSetOf' @ [183:76] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mutableSetOf' @ [183:76] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> (kotlin.String..kotlin.String?)
 
 'openOptionalDynamicWhitelistJournal' @ [184:43] ==> private final fun openOptionalDynamicWhitelistJournal(): PrintWriter? defined in net.corda.nodeapi.internal.serialization.LoggingWhitelist.Companion[SimpleFunctionDescriptorImpl]
 
@@ -516,7 +516,7 @@ Inferred types:
 
 'name' @ [203:18] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'alreadySeen' @ [203:27] ==> private final val alreadySeen: MutableSet<String> defined in net.corda.nodeapi.internal.serialization.LoggingWhitelist[PropertyDescriptorImpl]
 
@@ -534,7 +534,7 @@ Inferred types:
 
 'name' @ [204:33] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'className' @ [205:34] ==> public open fun className(p0: raw (Class<(Any..Any?)>..Class<*>?)): (String..String?) defined in com.esotericsoftware.kryo.util.Util[JavaMethodDescriptor]
 

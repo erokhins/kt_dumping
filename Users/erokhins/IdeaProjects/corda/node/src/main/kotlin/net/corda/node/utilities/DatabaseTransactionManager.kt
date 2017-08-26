@@ -1,8 +1,8 @@
 'randomUUID' @ [16:25] ==> public open fun randomUUID(): (UUID..UUID?) defined in java.util.UUID[JavaMethodDescriptor]
 
-'lazy' @ [18:35] ==> public fun <T> lazy(mode: LazyThreadSafetyMode, initializer: () -> (Connection..Connection?)): Lazy<(Connection..Connection?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [18:35] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (java.sql.Connection..java.sql.Connection?)
+    <T> -> T
 
 'NONE' @ [18:61] ==> enum entry NONE defined in kotlin.LazyThreadSafetyMode[FakeCallableDescriptorForObject]
 
@@ -113,8 +113,6 @@ Inferred types:
 'transactionBoundaries' @ [60:13] ==> public final val transactionBoundaries: Subject<DatabaseTransactionManager.Boundary, DatabaseTransactionManager.Boundary> defined in net.corda.node.utilities.DatabaseTransaction[PropertyDescriptorImpl]
 
 'onNext' @ [60:35] ==> public abstract fun onNext(p0: (DatabaseTransactionManager.Boundary..DatabaseTransactionManager.Boundary?)): Unit defined in rx.subjects.Subject[JavaMethodDescriptor]
-
-'DatabaseTransactionManager' @ [60:42] ==> public companion object defined in net.corda.node.utilities.DatabaseTransactionManager[FakeCallableDescriptorForObject]
 
 'Boundary' @ [60:69] ==> public constructor Boundary(txId: UUID) defined in net.corda.node.utilities.DatabaseTransactionManager.Boundary[ClassConstructorDescriptorImpl]
 

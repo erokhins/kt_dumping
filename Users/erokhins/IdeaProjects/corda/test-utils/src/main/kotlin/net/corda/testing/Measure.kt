@@ -16,6 +16,8 @@ Inferred types:
 Inferred types:
     <R> -> R
 
+'invoke' @ [14:45] ==> public abstract operator fun invoke(p1: Any?): R defined in kotlin.Function1[FunctionInvokeDescriptor]
+
 'f' @ [14:46] ==> value-parameter f: (A) -> R defined in net.corda.testing.measure[ValueParameterDescriptorImpl]
 
 'it' @ [14:64] ==> value-parameter it: Array<Any?> defined in net.corda.testing.measure.<anonymous>[ValueParameterDescriptorImpl]
@@ -39,6 +41,8 @@ Inferred types:
 'reflect' @ [17:33] ==> public fun <R> Function<R>.reflect(): KFunction<R>? defined in kotlin.reflect.jvm[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <R> -> R
+
+'invoke' @ [17:48] ==> public abstract operator fun invoke(p1: Any?, p2: Any?): R defined in kotlin.Function2[FunctionInvokeDescriptor]
 
 'f' @ [17:49] ==> value-parameter f: (A, B) -> R defined in net.corda.testing.measure[ValueParameterDescriptorImpl]
 
@@ -67,6 +71,8 @@ Inferred types:
 'reflect' @ [20:36] ==> public fun <R> Function<R>.reflect(): KFunction<R>? defined in kotlin.reflect.jvm[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <R> -> R
+
+'invoke' @ [20:51] ==> public abstract operator fun invoke(p1: Any?, p2: Any?, p3: Any?): R defined in kotlin.Function3[FunctionInvokeDescriptor]
 
 'f' @ [20:52] ==> value-parameter f: (A, B, C) -> R defined in net.corda.testing.measure[ValueParameterDescriptorImpl]
 
@@ -99,6 +105,8 @@ Inferred types:
 'reflect' @ [23:39] ==> public fun <R> Function<R>.reflect(): KFunction<R>? defined in kotlin.reflect.jvm[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <R> -> R
+
+'invoke' @ [23:54] ==> public abstract operator fun invoke(p1: Any?, p2: Any?, p3: Any?, p4: Any?): R defined in kotlin.Function4[FunctionInvokeDescriptor]
 
 'f' @ [23:55] ==> value-parameter f: (A, B, C, D) -> R defined in net.corda.testing.measure[ValueParameterDescriptorImpl]
 

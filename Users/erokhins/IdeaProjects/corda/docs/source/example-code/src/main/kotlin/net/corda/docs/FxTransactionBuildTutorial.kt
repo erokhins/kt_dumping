@@ -43,9 +43,9 @@ Inferred types:
 
 'notaries' @ [44:89] ==> val notaries: Party? defined in net.corda.docs.gatherOurInputs[LocalVariableDescriptor]
 
-'builder' @ [46:29] ==> public inline fun <A> builder(block: Builder.() -> CriteriaExpression.ColumnPredicateExpression<CashSchemaV1.PersistentCashState, String?>): CriteriaExpression.ColumnPredicateExpression<CashSchemaV1.PersistentCashState, String?> defined in net.corda.core.node.services.vault[DeserializedSimpleFunctionDescriptor]
+'builder' @ [46:29] ==> public inline fun <A> builder(block: Builder.() -> CriteriaExpression.ColumnPredicateExpression<CashSchemaV1.PersistentCashState, (String..String?)>): CriteriaExpression.ColumnPredicateExpression<CashSchemaV1.PersistentCashState, (String..String?)> defined in net.corda.core.node.services.vault[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <A> -> ColumnPredicateExpression<PersistentCashState, String?>
+    <A> -> ColumnPredicateExpression<PersistentCashState, (kotlin.String..kotlin.String?)>
 
 'CashSchemaV1' @ [46:39] ==> @CordaSerializable public object CashSchemaV1 : MappedSchema defined in net.corda.finance.schemas[FakeCallableDescriptorForObject]
 
@@ -53,7 +53,7 @@ Inferred types:
 
 'currency' @ [46:73] ==> @field:Column public final var currency: String defined in net.corda.finance.schemas.CashSchemaV1.PersistentCashState[DeserializedPropertyDescriptor]
 
-'equal' @ [46:82] ==> public final fun <O, R> KProperty1<CashSchemaV1.PersistentCashState, String?>.equal(value: (String..String?)): CriteriaExpression.ColumnPredicateExpression<CashSchemaV1.PersistentCashState, String?> defined in net.corda.core.node.services.vault.Builder[DeserializedSimpleFunctionDescriptor]
+'equal' @ [46:82] ==> public final fun <O, R> KProperty1<CashSchemaV1.PersistentCashState, String?>.equal(value: (String..String?)): CriteriaExpression.ColumnPredicateExpression<CashSchemaV1.PersistentCashState, (String..String?)> defined in net.corda.core.node.services.vault.Builder[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <O> -> PersistentCashState
     <R> -> (kotlin.String..kotlin.String?)
@@ -70,7 +70,7 @@ Inferred types:
 Inferred types:
     <L : PersistentState> -> PersistentCashState
 
-'logicalExpression' @ [47:63] ==> val logicalExpression: CriteriaExpression.ColumnPredicateExpression<CashSchemaV1.PersistentCashState, String?> defined in net.corda.docs.gatherOurInputs[LocalVariableDescriptor]
+'logicalExpression' @ [47:63] ==> val logicalExpression: CriteriaExpression.ColumnPredicateExpression<CashSchemaV1.PersistentCashState, (String..String?)> defined in net.corda.docs.gatherOurInputs[LocalVariableDescriptor]
 
 'fungibleCriteria' @ [49:24] ==> val fungibleCriteria: QueryCriteria.FungibleAssetQueryCriteria defined in net.corda.docs.gatherOurInputs[LocalVariableDescriptor]
 
@@ -117,7 +117,7 @@ Inferred types:
 
 'eligibleStates' @ [54:18] ==> val eligibleStates: List<StateAndRef<Cash.State>> defined in net.corda.docs.gatherOurInputs[LocalVariableDescriptor]
 
-'fold' @ [54:33] ==> public inline fun <T, R> Iterable<StateAndRef<Cash.State>>.fold(initial: Long, operation: (Long, StateAndRef<Cash.State>) -> Long): Long defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [54:33] ==> public inline fun <T, R> Iterable<StateAndRef<Cash.State>>.fold(initial: Long, operation: (acc: Long, StateAndRef<Cash.State>) -> Long): Long defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateAndRef<State>
     <R> -> Long
@@ -157,7 +157,7 @@ Inferred types:
 
 'component2' @ [71:18] ==> public final operator fun component2(): Long defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'gatherOurInputs' @ [71:30] ==> private fun gatherOurInputs(serviceHub: ServiceHub, lockId: UUID, amountRequired: Amount<Issued<Currency>>, notary: Party?): Pair<List<StateAndRef<Cash.State>>, Long> defined in net.corda.docs[SimpleFunctionDescriptorImpl]
+'gatherOurInputs' @ [71:30] ==> private fun gatherOurInputs(serviceHub: ServiceHub, lockId: UUID, amountRequired: Amount<Issued<Currency>>, notary: Party?): Pair<List<StateAndRef<Cash.State>>, Long> defined in net.corda.docs in file FxTransactionBuildTutorial.kt[SimpleFunctionDescriptorImpl]
 
 'serviceHub' @ [71:46] ==> value-parameter serviceHub: ServiceHub defined in net.corda.docs.prepareOurInputsAndOutputs[ValueParameterDescriptorImpl]
 
@@ -349,7 +349,7 @@ Inferred types:
 
 'component2' @ [112:30] ==> public final operator fun component2(): List<Cash.State> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'prepareOurInputsAndOutputs' @ [112:49] ==> private fun prepareOurInputsAndOutputs(serviceHub: ServiceHub, lockId: UUID, request: FxRequest): Pair<List<StateAndRef<Cash.State>>, List<Cash.State>> defined in net.corda.docs[SimpleFunctionDescriptorImpl]
+'prepareOurInputsAndOutputs' @ [112:49] ==> private fun prepareOurInputsAndOutputs(serviceHub: ServiceHub, lockId: UUID, request: FxRequest): Pair<List<StateAndRef<Cash.State>>, List<Cash.State>> defined in net.corda.docs in file FxTransactionBuildTutorial.kt[SimpleFunctionDescriptorImpl]
 
 'serviceHub' @ [112:76] ==> public final val serviceHub: ServiceHub defined in net.corda.docs.ForeignExchangeFlow[DeserializedPropertyDescriptor]
 
@@ -675,8 +675,6 @@ Inferred types:
 
 'addCommand' @ [182:17] ==> public final fun addCommand(data: CommandData, keys: List<PublicKey>): TransactionBuilder defined in net.corda.core.transactions.TransactionBuilder[DeserializedSimpleFunctionDescriptor]
 
-'Cash' @ [182:28] ==> public companion object defined in net.corda.finance.contracts.asset.Cash[FakeCallableDescriptorForObject]
-
 'Move' @ [182:42] ==> public constructor Move(contract: Class<out Contract>? = ...) defined in net.corda.finance.contracts.asset.Cash.Commands.Move[DeserializedClassConstructorDescriptor]
 
 'ourSigners' @ [182:51] ==> val ourSigners: Set<PublicKey> defined in net.corda.docs.ForeignExchangeFlow.buildTradeProposal[LocalVariableDescriptor]
@@ -786,7 +784,7 @@ Inferred types:
 
 'component2' @ [224:29] ==> public final operator fun component2(): List<Cash.State> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'prepareOurInputsAndOutputs' @ [224:47] ==> private fun prepareOurInputsAndOutputs(serviceHub: ServiceHub, lockId: UUID, request: FxRequest): Pair<List<StateAndRef<Cash.State>>, List<Cash.State>> defined in net.corda.docs[SimpleFunctionDescriptorImpl]
+'prepareOurInputsAndOutputs' @ [224:47] ==> private fun prepareOurInputsAndOutputs(serviceHub: ServiceHub, lockId: UUID, request: FxRequest): Pair<List<StateAndRef<Cash.State>>, List<Cash.State>> defined in net.corda.docs in file FxTransactionBuildTutorial.kt[SimpleFunctionDescriptorImpl]
 
 'serviceHub' @ [224:74] ==> public final val serviceHub: ServiceHub defined in net.corda.docs.ForeignExchangeRemoteFlow[DeserializedPropertyDescriptor]
 

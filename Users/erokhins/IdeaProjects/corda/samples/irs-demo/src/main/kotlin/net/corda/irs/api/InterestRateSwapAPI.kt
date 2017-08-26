@@ -137,6 +137,8 @@ Inferred types:
 
 'AutoOfferFlow' @ [64:27] ==> public object AutoOfferFlow defined in net.corda.irs.flows in file AutoOfferFlow.kt[FakeCallableDescriptorForObject]
 
+'Requester' @ [64:42] ==> public constructor Requester(dealToBeOffered: DealState) defined in net.corda.irs.flows.AutoOfferFlow.Requester[ClassConstructorDescriptorImpl]
+
 'newDeal' @ [64:53] ==> value-parameter newDeal: InterestRateSwap.State defined in net.corda.irs.api.InterestRateSwapAPI.storeDeal[ValueParameterDescriptorImpl]
 
 'returnValue' @ [64:62] ==> public abstract val returnValue: CordaFuture<SignedTransaction> defined in net.corda.core.messaging.FlowHandle[DeserializedPropertyDescriptor]

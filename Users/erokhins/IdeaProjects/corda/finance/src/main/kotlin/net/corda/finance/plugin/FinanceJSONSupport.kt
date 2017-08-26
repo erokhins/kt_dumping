@@ -8,7 +8,7 @@ Inferred types:
 
 'addSerializer' @ [16:9] ==> public open fun <T : (Any..Any?)> addSerializer(p0: (Class<out (BusinessCalendar..BusinessCalendar?)>..Class<out (BusinessCalendar..BusinessCalendar?)>?), p1: (JsonSerializer<(BusinessCalendar..BusinessCalendar?)>..JsonSerializer<(BusinessCalendar..BusinessCalendar?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> BusinessCalendar
+    <T : (Any..Any?)> -> (net.corda.finance.contracts.BusinessCalendar..net.corda.finance.contracts.BusinessCalendar?)
 
 'BusinessCalendar' @ [16:23] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
 
@@ -20,7 +20,7 @@ Inferred types:
 
 'addDeserializer' @ [17:9] ==> public open fun <T : (Any..Any?)> addDeserializer(p0: (Class<(BusinessCalendar..BusinessCalendar?)>..Class<(BusinessCalendar..BusinessCalendar?)>?), p1: (JsonDeserializer<out (BusinessCalendar..BusinessCalendar?)>..JsonDeserializer<out (BusinessCalendar..BusinessCalendar?)>?)): (SimpleModule..SimpleModule?) defined in com.fasterxml.jackson.databind.module.SimpleModule[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> BusinessCalendar
+    <T : (Any..Any?)> -> (net.corda.finance.contracts.BusinessCalendar..net.corda.finance.contracts.BusinessCalendar?)
 
 'BusinessCalendar' @ [17:25] ==> public companion object defined in net.corda.finance.contracts.BusinessCalendar[FakeCallableDescriptorForObject]
 
@@ -108,7 +108,7 @@ Inferred types:
 
 'readValueAs' @ [44:24] ==> public open fun <T : (Any..Any?)> readValueAs(p0: (Class<(BusinessCalendarWrapper..BusinessCalendarWrapper?)>..Class<(BusinessCalendarWrapper..BusinessCalendarWrapper?)>?)): (BusinessCalendarWrapper..BusinessCalendarWrapper?) defined in com.fasterxml.jackson.core.JsonParser[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> BusinessCalendarWrapper
+    <T : (Any..Any?)> -> (net.corda.finance.plugin.BusinessCalendarWrapper..net.corda.finance.plugin.BusinessCalendarWrapper?)
 
 'BusinessCalendarWrapper' @ [44:36] ==> public constructor BusinessCalendarWrapper(holidayDates: List<LocalDate>) defined in net.corda.finance.plugin.BusinessCalendarWrapper[ClassConstructorDescriptorImpl]
 

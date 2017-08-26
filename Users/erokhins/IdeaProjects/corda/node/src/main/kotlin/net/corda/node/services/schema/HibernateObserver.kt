@@ -70,8 +70,6 @@ Inferred types:
 
 'connection' @ [43:17] ==> public abstract fun connection(p0: (Connection..Connection?)): raw (SessionBuilder<(SessionBuilder<*>..SessionBuilder<*>?)>..SessionBuilder<out (SessionBuilder<*>..SessionBuilder<*>?)>?) defined in org.hibernate.SessionBuilder[JavaMethodDescriptor]
 
-'DatabaseTransactionManager' @ [43:28] ==> public companion object defined in net.corda.node.utilities.DatabaseTransactionManager[FakeCallableDescriptorForObject]
-
 'current' @ [43:55] ==> public final fun current(): DatabaseTransaction defined in net.corda.node.utilities.DatabaseTransactionManager.Companion[SimpleFunctionDescriptorImpl]
 
 'connection' @ [43:65] ==> public final val connection: Connection defined in net.corda.node.utilities.DatabaseTransaction[PropertyDescriptorImpl]

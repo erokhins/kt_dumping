@@ -12,8 +12,6 @@
 
 'CordaRPCClientConfiguration' @ [34:23] ==> public constructor CordaRPCClientConfiguration(connectionMaxRetryInterval: Duration) defined in net.corda.client.rpc.CordaRPCClientConfiguration[ClassConstructorDescriptorImpl]
 
-'RPCClientConfiguration' @ [35:46] ==> public companion object defined in net.corda.client.rpc.internal.RPCClientConfiguration[FakeCallableDescriptorForObject]
-
 'default' @ [35:69] ==> @JvmStatic public final val default: RPCClientConfiguration defined in net.corda.client.rpc.internal.RPCClientConfiguration.Companion[PropertyDescriptorImpl]
 
 'connectionMaxRetryInterval' @ [35:77] ==> public final val connectionMaxRetryInterval: Duration defined in net.corda.client.rpc.internal.RPCClientConfiguration[PropertyDescriptorImpl]

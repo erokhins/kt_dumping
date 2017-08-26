@@ -2,7 +2,7 @@
 
 'KeyValue' @ [35:108] ==> public constructor KeyValue<T : (Any..Any?)>(@NamedArg p0: (WritableValue<(T..T?)>..WritableValue<(T..T?)>?), @NamedArg p1: (T..T?), @NamedArg p2: (Interpolator..Interpolator?)) defined in javafx.animation.KeyValue[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'this' @ [35:117] ==> <this> defined in net.corda.netmap.keyValue[ReceiverParameterDescriptorImpl]
 
@@ -412,7 +412,7 @@ Inferred types:
 
 'SPACE' @ [154:61] ==> enum entry SPACE defined in javafx.scene.input.KeyCode[FakeCallableDescriptorForObject]
 
-'Runnable' @ [154:71] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SimpleFunctionDescriptorImpl]
+'Runnable' @ [154:71] ==> @FunctionalInterface public fun Runnable(function: () -> Unit): Runnable defined in java.lang[SamConstructorDescriptorImpl]
 
 'onNextInvoked' @ [154:82] ==> private final fun onNextInvoked(): Unit defined in net.corda.netmap.NetworkMapVisualiser[SimpleFunctionDescriptorImpl]
 
@@ -972,7 +972,7 @@ Inferred types:
 
 'KeyValue' @ [258:37] ==> public constructor KeyValue<T : (Any..Any?)>(@NamedArg p0: (WritableValue<(Number..Number?)>..WritableValue<(Number..Number?)>?), @NamedArg p1: (Number..Number?)) defined in javafx.animation.KeyValue[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Number
+    <T : (Any..Any?)> -> (kotlin.Number..kotlin.Number?)
 
 'pane' @ [258:46] ==> val pane: VBox defined in net.corda.netmap.NetworkMapVisualiser.bindSidebar.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -980,7 +980,7 @@ Inferred types:
 
 'KeyValue' @ [259:37] ==> public constructor KeyValue<T : (Any..Any?)>(@NamedArg p0: (WritableValue<(Number..Number?)>..WritableValue<(Number..Number?)>?), @NamedArg p1: (Number..Number?)) defined in javafx.animation.KeyValue[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Number
+    <T : (Any..Any?)> -> (kotlin.Number..kotlin.Number?)
 
 'slideProp' @ [259:46] ==> val slideProp: SimpleDoubleProperty defined in net.corda.netmap.NetworkMapVisualiser.bindSidebar.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -1299,7 +1299,7 @@ Inferred types:
 
 'recipients' @ [346:41] ==> public final val recipients: MessageRecipients defined in net.corda.testing.node.InMemoryMessagingNetwork.MessageTransfer[DeserializedPropertyDescriptor]
 
-'NetworkMapService' @ [348:13] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
+'in' @ [348:13] ==> public operator fun CharSequence.contains(other: CharSequence, ignoreCase: Boolean = ...): Boolean defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'PUSH_ACK_TOPIC' @ [348:31] ==> public final val PUSH_ACK_TOPIC: String defined in net.corda.node.services.network.NetworkMapService.Companion[DeserializedPropertyDescriptor]
 

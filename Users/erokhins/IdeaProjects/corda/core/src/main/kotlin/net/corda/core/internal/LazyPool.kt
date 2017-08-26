@@ -6,8 +6,6 @@ Inferred types:
 
 'bound' @ [24:43] ==> private final val bound: Int? defined in net.corda.core.internal.LazyPool[PropertyDescriptorImpl]
 
-'Int' @ [24:52] ==> public companion object defined in kotlin.Int[FakeCallableDescriptorForObject]
-
 'MAX_VALUE' @ [24:56] ==> public const final val MAX_VALUE: Int defined in kotlin.Int.Companion[DeserializedPropertyDescriptor]
 
 'LifeCycle' @ [30:29] ==> public constructor LifeCycle<S : Enum<LazyPool.State>>(initial: LazyPool.State) defined in net.corda.core.internal.LifeCycle[ClassConstructorDescriptorImpl]

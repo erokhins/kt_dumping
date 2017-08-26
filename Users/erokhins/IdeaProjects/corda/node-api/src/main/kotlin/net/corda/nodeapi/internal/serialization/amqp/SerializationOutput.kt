@@ -1,7 +1,7 @@
 'IdentityHashMap' @ [19:55] ==> public constructor IdentityHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.IdentityHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Any
-    <V : (Any..Any?)> -> Int
+    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <V : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'LinkedHashSet' @ [20:68] ==> public final fun <E> <init>(): LinkedHashSet<AMQPSerializer<*>> /* = LinkedHashSet<AMQPSerializer<*>> */ defined in kotlin.collections.LinkedHashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
@@ -19,13 +19,11 @@ Inferred types:
 
 'data' @ [32:13] ==> val data: (Data..Data?) defined in net.corda.nodeapi.internal.serialization.amqp.SerializationOutput.serialize[LocalVariableDescriptor]
 
-'withDescribed' @ [32:18] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
-
-'Envelope' @ [32:32] ==> public companion object : DescribedTypeConstructor<Envelope> defined in net.corda.nodeapi.internal.serialization.amqp.Envelope[FakeCallableDescriptorForObject]
+'withDescribed' @ [32:18] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'DESCRIPTOR_OBJECT' @ [32:41] ==> public final val DESCRIPTOR_OBJECT: Descriptor defined in net.corda.nodeapi.internal.serialization.amqp.Envelope.Companion[PropertyDescriptorImpl]
 
-'withList' @ [33:17] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withList' @ [33:17] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'writeObject' @ [35:21] ==> internal final fun writeObject(obj: Any, data: Data): Unit defined in net.corda.nodeapi.internal.serialization.amqp.SerializationOutput[SimpleFunctionDescriptorImpl]
 
@@ -133,8 +131,6 @@ Inferred types:
 
 'type' @ [64:40] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.SerializationOutput.writeObjectOrNull[ValueParameterDescriptorImpl]
 
-'SerializerFactory' @ [64:48] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
-
 'AnyType' @ [64:66] ==> public object AnyType : WildcardType defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
 
 'obj' @ [64:75] ==> value-parameter obj: Any? defined in net.corda.nodeapi.internal.serialization.amqp.SerializationOutput.writeObjectOrNull[ValueParameterDescriptorImpl]
@@ -194,8 +190,6 @@ Inferred types:
 'typeNotation' @ [78:37] ==> value-parameter vararg typeNotation: TypeNotation defined in net.corda.nodeapi.internal.serialization.amqp.SerializationOutput.writeTypeNotations[ValueParameterDescriptorImpl]
 
 'type' @ [82:13] ==> value-parameter type: Type defined in net.corda.nodeapi.internal.serialization.amqp.SerializationOutput.requireSerializer[ValueParameterDescriptorImpl]
-
-'SerializerFactory' @ [82:21] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
 
 'AnyType' @ [82:39] ==> public object AnyType : WildcardType defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
 

@@ -139,8 +139,6 @@ Inferred types:
 
 'containsType' @ [94:40] ==> public fun Iterable<ServiceInfo>.containsType(type: ServiceType): Boolean defined in net.corda.core.node.services[DeserializedSimpleFunctionDescriptor]
 
-'NetworkMapService' @ [94:53] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
-
 'type' @ [94:71] ==> public final val type: ServiceType defined in net.corda.node.services.network.NetworkMapService.Companion[DeserializedPropertyDescriptor]
 
 'testNodeConfiguration' @ [95:23] ==> public fun testNodeConfiguration(baseDirectory: Path, myLegalName: X500Name): NodeConfiguration defined in net.corda.testing[DeserializedSimpleFunctionDescriptor]
@@ -174,8 +172,6 @@ Inferred types:
 'advertisedServices' @ [106:21] ==> value-parameter advertisedServices: Set<ServiceInfo> defined in net.corda.netmap.simulation.Simulation.NotaryNodeFactory.create[ValueParameterDescriptorImpl]
 
 'containsType' @ [106:40] ==> public fun Iterable<ServiceInfo>.containsType(type: ServiceType): Boolean defined in net.corda.core.node.services[DeserializedSimpleFunctionDescriptor]
-
-'SimpleNotaryService' @ [106:53] ==> public companion object defined in net.corda.node.services.transactions.SimpleNotaryService[FakeCallableDescriptorForObject]
 
 'type' @ [106:73] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.SimpleNotaryService.Companion[DeserializedPropertyDescriptor]
 
@@ -212,8 +208,6 @@ Inferred types:
 'advertisedServices' @ [121:21] ==> value-parameter advertisedServices: Set<ServiceInfo> defined in net.corda.netmap.simulation.Simulation.RatesOracleFactory.create[ValueParameterDescriptorImpl]
 
 'containsType' @ [121:40] ==> public fun Iterable<ServiceInfo>.containsType(type: ServiceType): Boolean defined in net.corda.core.node.services[DeserializedSimpleFunctionDescriptor]
-
-'NodeInterestRates' @ [121:53] ==> public object NodeInterestRates defined in net.corda.irs.api[FakeCallableDescriptorForObject]
 
 'type' @ [121:78] ==> @field:JvmField public final val type: ServiceType defined in net.corda.irs.api.NodeInterestRates.Oracle.Companion[DeserializedPropertyDescriptor]
 
@@ -352,8 +346,6 @@ Inferred types:
 
 'ServiceInfo' @ [157:99] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
 
-'NetworkMapService' @ [157:111] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
-
 'type' @ [157:129] ==> public final val type: ServiceType defined in net.corda.node.services.network.NetworkMapService.Companion[DeserializedPropertyDescriptor]
 
 'mockNet' @ [158:18] ==> public final val mockNet: MockNetwork defined in net.corda.netmap.simulation.Simulation[PropertyDescriptorImpl]
@@ -371,8 +363,6 @@ Inferred types:
 'NotaryNodeFactory' @ [158:81] ==> public object NotaryNodeFactory : MockNetwork.Factory<Simulation.SimulatedNode> defined in net.corda.netmap.simulation.Simulation[FakeCallableDescriptorForObject]
 
 'ServiceInfo' @ [158:121] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'SimpleNotaryService' @ [158:133] ==> public companion object defined in net.corda.node.services.transactions.SimpleNotaryService[FakeCallableDescriptorForObject]
 
 'type' @ [158:153] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.SimpleNotaryService.Companion[DeserializedPropertyDescriptor]
 
@@ -409,8 +399,6 @@ Inferred types:
 'RatesOracleFactory' @ [160:101] ==> public object RatesOracleFactory : MockNetwork.Factory<Simulation.SimulatedNode> defined in net.corda.netmap.simulation.Simulation[FakeCallableDescriptorForObject]
 
 'ServiceInfo' @ [160:142] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'NodeInterestRates' @ [160:154] ==> public object NodeInterestRates defined in net.corda.irs.api[FakeCallableDescriptorForObject]
 
 'type' @ [160:179] ==> @field:JvmField public final val type: ServiceType defined in net.corda.irs.api.NodeInterestRates.Oracle.Companion[DeserializedPropertyDescriptor]
 
@@ -495,13 +483,13 @@ Inferred types:
 
 'synchronizedMap' @ [200:74] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> synchronizedMap(p0: (MutableMap<(Simulation.SimulatedNode..Simulation.SimulatedNode?), (String..String?)>..Map<(Simulation.SimulatedNode..Simulation.SimulatedNode?), (String..String?)>?)): (MutableMap<(Simulation.SimulatedNode..Simulation.SimulatedNode?), (String..String?)>..Map<(Simulation.SimulatedNode..Simulation.SimulatedNode?), (String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> SimulatedNode
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (net.corda.netmap.simulation.Simulation.SimulatedNode..net.corda.netmap.simulation.Simulation.SimulatedNode?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'HashMap' @ [200:90] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> SimulatedNode
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (net.corda.netmap.simulation.Simulation.SimulatedNode..net.corda.netmap.simulation.Simulation.SimulatedNode?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'networkSendManuallyPumped' @ [213:13] ==> public final val networkSendManuallyPumped: Boolean defined in net.corda.netmap.simulation.Simulation[PropertyDescriptorImpl]
 

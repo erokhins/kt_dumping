@@ -1,25 +1,22 @@
 'Regex' @ [13:27] ==> public constructor Regex(pattern: String) defined in kotlin.text.Regex[DeserializedClassConstructorDescriptor]
 
-'observableList' @ [16:38] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (NetworkIdentityModel) -> ObservableList<NodeInfo>): TrackedDelegate.ObservableListDelegate<NetworkIdentityModel, NodeInfo> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo
+'getValue' @ [16:38] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [16:53] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
 
-'observableValue' @ [17:31] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (NetworkIdentityModel) -> ObservableValue<NodeInfo?>): TrackedDelegate.ObservableValueDelegate<NetworkIdentityModel, NodeInfo?> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> NetworkIdentityModel
-    <T> -> NodeInfo?
+'networkIdentities' @ [16:75] ==> public final val networkIdentities: ObservableList<NodeInfo> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [17:31] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[DeserializedSimpleFunctionDescriptor]
 
 'NetworkIdentityModel' @ [17:47] ==> public constructor NetworkIdentityModel() defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedClassConstructorDescriptor]
 
-'observableList' @ [18:40] ==> public inline fun <reified M : Any, T> observableList(noinline observableListProperty: (ReportingCurrencyModel) -> ObservableList<Currency>): TrackedDelegate.ObservableListDelegate<ReportingCurrencyModel, Currency> defined in net.corda.client.jfx.model[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <reified M : Any> -> ReportingCurrencyModel
-    <T> -> Currency
+'myIdentity' @ [17:69] ==> public final val myIdentity: ObservableValue<NodeInfo?> defined in net.corda.client.jfx.model.NetworkIdentityModel[DeserializedPropertyDescriptor]
+
+'getValue' @ [18:40] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableList<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableListDelegate[DeserializedSimpleFunctionDescriptor]
 
 'ReportingCurrencyModel' @ [18:55] ==> public constructor ReportingCurrencyModel() defined in net.corda.explorer.model.ReportingCurrencyModel[ClassConstructorDescriptorImpl]
+
+'supportedCurrencies' @ [18:79] ==> public final val supportedCurrencies: ObservableList<Currency> defined in net.corda.explorer.model.ReportingCurrencyModel[PropertyDescriptorImpl]
 
 'networkIdentities' @ [20:45] ==> private final val networkIdentities: ObservableList<NodeInfo> defined in net.corda.explorer.model.IssuerModel[PropertyDescriptorImpl]
 

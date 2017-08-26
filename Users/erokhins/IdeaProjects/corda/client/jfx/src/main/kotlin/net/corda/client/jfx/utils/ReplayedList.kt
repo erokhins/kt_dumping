@@ -65,15 +65,15 @@ Inferred types:
 
 'c' @ [23:28] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'from' @ [23:30] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.from: Int[MyPropertyDescriptor]
+'from' @ [23:30] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'c' @ [24:26] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'to' @ [24:28] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.to: Int[MyPropertyDescriptor]
+'to' @ [24:28] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'IntArray' @ [25:35] ==> public constructor IntArray(size: Int, init: (Int) -> Int) defined in kotlin.IntArray[DeserializedClassConstructorDescriptor]
 
@@ -97,9 +97,9 @@ Inferred types:
 
 'addAll' @ [27:33] ==> public open fun addAll(elements: Collection<A?>): Boolean defined in java.util.ArrayList[JavaMethodDescriptor]
 
-'nCopies' @ [27:52] ==> public open fun <T : (Any..Any?)> nCopies(p0: Int, p1: (A..A?)): (MutableList<(A..A?)>..List<(A..A?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'nCopies' @ [27:52] ==> public open fun <T : (Any..Any?)> nCopies(p0: Int, p1: Nothing?): (MutableList<Nothing?>..List<Nothing?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> A
+    <T : (Any..Any?)> -> Nothing?
 
 'to' @ [27:60] ==> val to: Int defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[LocalVariableDescriptor]
 
@@ -178,15 +178,15 @@ Inferred types:
 
 'c' @ [36:27] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'from' @ [36:29] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.from: Int[MyPropertyDescriptor]
+'from' @ [36:29] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'c' @ [36:35] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'to' @ [36:37] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.to: Int[MyPropertyDescriptor]
+'to' @ [36:37] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'replayedList' @ [37:21] ==> public final val replayedList: ArrayList<A> defined in net.corda.client.jfx.utils.ReplayedList[PropertyDescriptorImpl]
 
@@ -194,9 +194,9 @@ Inferred types:
 
 'c' @ [37:39] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'list' @ [37:41] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.list: (ObservableList<out ({Any & A}..A?)>..ObservableList<out ({Any & A}..A?)>?)[MyPropertyDescriptor]
+'list' @ [37:41] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.list: (ObservableList<out (A..A?)>..ObservableList<out (A..A?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'i' @ [37:46] ==> val i: Int defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[LocalVariableDescriptor]
 
@@ -210,17 +210,17 @@ Inferred types:
 
 'c' @ [42:42] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'from' @ [42:44] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.from: Int[MyPropertyDescriptor]
+'from' @ [42:44] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 '..' @ [43:31] ==> public final operator fun rangeTo(other: Int): IntRange defined in kotlin.Int[DeserializedSimpleFunctionDescriptor]
 
 'c' @ [43:34] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'removedSize' @ [43:36] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.removedSize: Int[MyPropertyDescriptor]
+'removedSize' @ [43:36] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.removedSize: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'replayedList' @ [44:25] ==> public final val replayedList: ArrayList<A> defined in net.corda.client.jfx.utils.ReplayedList[PropertyDescriptorImpl]
 
@@ -232,15 +232,15 @@ Inferred types:
 
 'c' @ [46:32] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'from' @ [46:34] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.from: Int[MyPropertyDescriptor]
+'from' @ [46:34] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'c' @ [46:40] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'removed' @ [46:42] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.removed: (MutableList<out ({Any & A}..A?)>..List<({Any & A}..A?)>?)[MyPropertyDescriptor]
+'removed' @ [46:42] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.removed: (MutableList<out (A..A?)>..List<(A..A?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'c' @ [48:21] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
@@ -248,15 +248,15 @@ Inferred types:
 
 'c' @ [49:36] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'from' @ [49:38] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.from: Int[MyPropertyDescriptor]
+'from' @ [49:38] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'c' @ [50:34] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'to' @ [50:36] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.to: Int[MyPropertyDescriptor]
+'to' @ [50:36] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'addStart' @ [51:31] ==> val addStart: Int defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[LocalVariableDescriptor]
 
@@ -270,9 +270,9 @@ Inferred types:
 
 'c' @ [52:45] ==> value-parameter c: ListChangeListener.Change<out A> defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[ValueParameterDescriptorImpl]
 
-'list' @ [52:47] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ({Any & A}..A)>.list: (ObservableList<out ({Any & A}..A?)>..ObservableList<out ({Any & A}..A?)>?)[MyPropertyDescriptor]
+'list' @ [52:47] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out A>.list: (ObservableList<out (A..A?)>..ObservableList<out (A..A?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ({Any & A}..A)
+    <E : (Any..Any?)> -> Captured(out A)
 
 'i' @ [52:52] ==> val i: Int defined in net.corda.client.jfx.utils.ReplayedList.sourceChanged[LocalVariableDescriptor]
 

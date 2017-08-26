@@ -4,8 +4,6 @@
 
 'KryoHeaderV0_1' @ [12:56] ==> public val KryoHeaderV0_1: OpaqueBytes defined in net.corda.nodeapi.internal.serialization in file SerializationScheme.kt[PropertyDescriptorImpl]
 
-'SerializationDefaults' @ [13:9] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'javaClass' @ [13:31] ==> public val <T : Any> SerializationDefaults.javaClass: Class<SerializationDefaults> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> SerializationDefaults

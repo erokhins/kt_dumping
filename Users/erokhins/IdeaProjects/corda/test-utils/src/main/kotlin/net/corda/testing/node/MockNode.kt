@@ -176,7 +176,7 @@ Inferred types:
 
 'getOrThrow' @ [162:22] ==> public fun <V> Future<out (InMemoryMessagingNetwork.InMemoryMessaging..InMemoryMessagingNetwork.InMemoryMessaging?)>.getOrThrow(timeout: Duration? = ...): (InMemoryMessagingNetwork.InMemoryMessaging..InMemoryMessagingNetwork.InMemoryMessaging?) defined in net.corda.core.utilities[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <V> -> (net.corda.testing.node.InMemoryMessagingNetwork.InMemoryMessaging..net.corda.testing.node.InMemoryMessagingNetwork.InMemoryMessaging?)
+    <V> -> Captured(out (net.corda.testing.node.InMemoryMessagingNetwork.InMemoryMessaging..net.corda.testing.node.InMemoryMessagingNetwork.InMemoryMessaging?))
 
 'listOf' @ [168:58] ==> public fun <T> listOf(vararg elements: X509Certificate?): List<X509Certificate?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -386,8 +386,6 @@ Inferred types:
 
 'type' @ [254:17] ==> value-parameter type: ServiceType defined in net.corda.testing.node.MockNetwork.MockNode.makeCoreNotaryService[ValueParameterDescriptorImpl]
 
-'BFTNonValidatingNotaryService' @ [254:25] ==> public companion object defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService[FakeCallableDescriptorForObject]
-
 'type' @ [254:55] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService.Companion[DeserializedPropertyDescriptor]
 
 'super' @ [254:68] ==> <this> defined in net.corda.testing.node.MockNetwork.MockNode[LazyClassReceiverParameterDescriptor]
@@ -417,8 +415,6 @@ Inferred types:
 'info' @ [258:58] ==> public final lateinit var info: NodeInfo defined in net.corda.testing.node.MockNetwork.MockNode[DeserializedPropertyDescriptor]
 
 'serviceIdentities' @ [258:63] ==> public final fun serviceIdentities(type: ServiceType): List<Party> defined in net.corda.core.node.NodeInfo[DeserializedSimpleFunctionDescriptor]
-
-'BFTNonValidatingNotaryService' @ [258:81] ==> public companion object defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService[FakeCallableDescriptorForObject]
 
 'type' @ [258:111] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.BFTNonValidatingNotaryService.Companion[DeserializedPropertyDescriptor]
 
@@ -655,8 +651,6 @@ Inferred types:
 
 'ServiceInfo' @ [346:33] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
 
-'SimpleNotaryService' @ [346:45] ==> public companion object defined in net.corda.node.services.transactions.SimpleNotaryService[FakeCallableDescriptorForObject]
-
 'type' @ [346:65] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.SimpleNotaryService.Companion[DeserializedPropertyDescriptor]
 
 'if (notaryKeyPair != null)
@@ -689,8 +683,6 @@ Inferred types:
 'nodeFactory' @ [351:48] ==> value-parameter nodeFactory: MockNetwork.Factory<*> = ... defined in net.corda.testing.node.MockNetwork.createSomeNodes[ValueParameterDescriptorImpl]
 
 'ServiceInfo' @ [351:82] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'NetworkMapService' @ [351:94] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
 
 'type' @ [351:112] ==> public final val type: ServiceType defined in net.corda.node.services.network.NetworkMapService.Companion[DeserializedPropertyDescriptor]
 
@@ -756,6 +748,8 @@ Inferred types:
 
 'identityService' @ [359:76] ==> public abstract val identityService: IdentityService defined in net.corda.node.services.api.ServiceHubInternal[DeserializedPropertyDescriptor]
 
+'verifyAndRegisterIdentity' @ [359:93] ==> public abstract fun verifyAndRegisterIdentity(identity: PartyAndCertificate): PartyAndCertificate? defined in net.corda.core.node.services.IdentityService[DeserializedSimpleFunctionDescriptor]
+
 'BasketOfNodes' @ [361:16] ==> public constructor BasketOfNodes(partyNodes: List<MockNetwork.MockNode>, notaryNode: MockNetwork.MockNode, mapNode: MockNetwork.MockNode) defined in net.corda.testing.node.MockNetwork.BasketOfNodes[ClassConstructorDescriptorImpl]
 
 'nodes' @ [361:30] ==> val nodes: ArrayList<MockNetwork.MockNode> /* = ArrayList<MockNetwork.MockNode> */ defined in net.corda.testing.node.MockNetwork.createSomeNodes[LocalVariableDescriptor]
@@ -778,13 +772,9 @@ Inferred types:
 
 'ServiceInfo' @ [369:47] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
 
-'NetworkMapService' @ [369:59] ==> public companion object defined in net.corda.node.services.network.NetworkMapService[FakeCallableDescriptorForObject]
-
 'type' @ [369:77] ==> public final val type: ServiceType defined in net.corda.node.services.network.NetworkMapService.Companion[DeserializedPropertyDescriptor]
 
 'ServiceInfo' @ [369:84] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'ValidatingNotaryService' @ [369:96] ==> public companion object defined in net.corda.node.services.transactions.ValidatingNotaryService[FakeCallableDescriptorForObject]
 
 'type' @ [369:120] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.ValidatingNotaryService.Companion[DeserializedPropertyDescriptor]
 

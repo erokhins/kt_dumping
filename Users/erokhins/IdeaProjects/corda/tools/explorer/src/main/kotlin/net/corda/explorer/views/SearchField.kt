@@ -1,8 +1,6 @@
 'UIComponent' @ [26:122] ==> public constructor UIComponent(viewTitle: String? = ...) defined in tornadofx.UIComponent[DeserializedClassConstructorDescriptor]
 
-'fxml' @ [27:34] ==> public final fun <T : Node> fxml(location: String?, hasControllerAttribute: Boolean): ReadOnlyProperty<UIComponent, Parent> defined in net.corda.explorer.views.SearchField[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <T : Node> -> Parent
+'getValue' @ [27:34] ==> public abstract operator fun getValue(thisRef: UIComponent, property: KProperty<*>): T defined in kotlin.properties.ReadOnlyProperty[DeserializedSimpleFunctionDescriptor]
 
 'fxid' @ [28:30] ==> public final inline fun <reified T : Any> fxid(propName: String?): ReadOnlyProperty<UIComponent, TextField> defined in net.corda.explorer.views.SearchField[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -22,7 +20,7 @@ Inferred types:
 
 'createObjectBinding' @ [33:44] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> (FilteredList<(T..T?)>..FilteredList<(T..T?)>?)..(() -> (FilteredList<(T..T?)>..FilteredList<(T..T?)>?))?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<(FilteredList<(T..T?)>..FilteredList<(T..T?)>?)>..ObjectBinding<(FilteredList<(T..T?)>..FilteredList<(T..T?)>?)>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FilteredList<(T..T?)>
+    <T : (Any..Any?)> -> (javafx.collections.transformation.FilteredList<(T..T?)>..javafx.collections.transformation.FilteredList<(T..T?)>?)
 
 'textField' @ [34:20] ==> private final val textField: TextField defined in net.corda.explorer.views.SearchField[PropertyDescriptorImpl]
 

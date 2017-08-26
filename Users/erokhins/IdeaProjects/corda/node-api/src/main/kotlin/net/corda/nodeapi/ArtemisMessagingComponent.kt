@@ -120,8 +120,6 @@ Inferred types:
 
 'type' @ [110:62] ==> public final val type: ServiceType defined in net.corda.core.node.services.ServiceInfo[DeserializedPropertyDescriptor]
 
-'ServiceType' @ [110:70] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
-
 'networkMap' @ [110:82] ==> public final val networkMap: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
 
 'NetworkMapAddress' @ [111:13] ==> public constructor NetworkMapAddress(hostAndPort: NetworkHostAndPort) defined in net.corda.nodeapi.ArtemisMessagingComponent.NetworkMapAddress[ClassConstructorDescriptorImpl]
@@ -133,8 +131,6 @@ Inferred types:
 'first' @ [111:50] ==> public fun <T> List<NetworkHostAndPort>.first(): NetworkHostAndPort defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> NetworkHostAndPort
-
-'NodeAddress' @ [113:13] ==> public companion object defined in net.corda.nodeapi.ArtemisMessagingComponent.NodeAddress[FakeCallableDescriptorForObject]
 
 'asPeer' @ [113:25] ==> public final fun asPeer(peerIdentity: PublicKey, hostAndPort: NetworkHostAndPort): ArtemisMessagingComponent.NodeAddress defined in net.corda.nodeapi.ArtemisMessagingComponent.NodeAddress.Companion[SimpleFunctionDescriptorImpl]
 

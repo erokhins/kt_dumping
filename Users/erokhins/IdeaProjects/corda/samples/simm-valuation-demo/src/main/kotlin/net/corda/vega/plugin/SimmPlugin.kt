@@ -1,11 +1,13 @@
-'listOf' @ [17:28] ==> public fun <T> listOf(element: Function<CordaRPCOps, PortfolioApi>): List<Function<CordaRPCOps, PortfolioApi>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [17:28] ==> public fun <T> listOf(element: Function<@ParameterName CordaRPCOps, PortfolioApi>): List<Function<@ParameterName CordaRPCOps, PortfolioApi>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Function<CordaRPCOps, PortfolioApi>
+    <T> -> Function<[@kotlin.ParameterName] CordaRPCOps, PortfolioApi>
 
-'Function' @ [17:35] ==> @FunctionalInterface public fun <T : (Any..Any?), R : (Any..Any?)> Function(function: (CordaRPCOps) -> PortfolioApi): Function<CordaRPCOps, PortfolioApi> defined in java.util.function[SimpleFunctionDescriptorImpl]
+'Function' @ [17:35] ==> @FunctionalInterface public fun <T : (Any..Any?), R : (Any..Any?)> Function(function: (rpc: CordaRPCOps) -> PortfolioApi): Function<@ParameterName CordaRPCOps, PortfolioApi> defined in java.util.function[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> CordaRPCOps
+    <T : (Any..Any?)> -> [@kotlin.ParameterName] CordaRPCOps
     <R : (Any..Any?)> -> PortfolioApi
+
+'PortfolioApi' @ [17:46] ==> public constructor PortfolioApi(rpc: CordaRPCOps) defined in net.corda.vega.api.PortfolioApi[ClassConstructorDescriptorImpl]
 
 'mapOf' @ [18:57] ==> public fun <K, V> mapOf(pair: Pair<String, (String..String?)>): Map<String, (String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

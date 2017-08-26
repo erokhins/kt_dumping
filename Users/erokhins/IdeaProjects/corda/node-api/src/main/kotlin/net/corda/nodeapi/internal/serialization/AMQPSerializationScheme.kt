@@ -282,8 +282,6 @@ Inferred types:
 
 'AmqpHeaderV1_0' @ [112:49] ==> public val AmqpHeaderV1_0: OpaqueBytes defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[PropertyDescriptorImpl]
 
-'SerializationDefaults' @ [113:9] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'javaClass' @ [113:31] ==> public val <T : Any> SerializationDefaults.javaClass: Class<SerializationDefaults> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> SerializationDefaults

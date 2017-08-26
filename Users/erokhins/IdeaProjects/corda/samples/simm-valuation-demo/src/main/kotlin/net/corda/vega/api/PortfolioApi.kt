@@ -280,7 +280,7 @@ Inferred types:
 
 'rpc' @ [137:86] ==> public final val rpc: CordaRPCOps defined in net.corda.vega.api.PortfolioApi[PropertyDescriptorImpl]
 
-'toPortfolio' @ [137:92] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio[SimpleFunctionDescriptorImpl]
+'toPortfolio' @ [137:92] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio in file Portfolio.kt[SimpleFunctionDescriptorImpl]
 
 'PVs' @ [138:25] ==> var PVs: Map<String, MultiCurrencyAmount>? defined in net.corda.vega.api.PortfolioApi.getPartyTrades.<anonymous>[LocalVariableDescriptor]
 
@@ -303,8 +303,6 @@ Inferred types:
 'id' @ [139:37] ==> public final val id: Pair<String, String> defined in net.corda.vega.contracts.SwapData[PropertyDescriptorImpl]
 
 'second' @ [139:40] ==> public final val second: String defined in kotlin.Pair[DeserializedPropertyDescriptor]
-
-'InitialMarginTriple' @ [139:51] ==> public companion object defined in net.corda.vega.analytics.InitialMarginTriple[FakeCallableDescriptorForObject]
 
 'zero' @ [139:71] ==> public final fun zero(): InitialMarginTriple defined in net.corda.vega.analytics.InitialMarginTriple.Companion[SimpleFunctionDescriptorImpl]
 
@@ -423,6 +421,8 @@ Inferred types:
 
 'IRSTradeFlow' @ [169:27] ==> public object IRSTradeFlow defined in net.corda.vega.flows in file IRSTradeFlow.kt[FakeCallableDescriptorForObject]
 
+'Requester' @ [169:41] ==> public constructor Requester(swap: SwapData, otherParty: Party) defined in net.corda.vega.flows.IRSTradeFlow.Requester[ClassConstructorDescriptorImpl]
+
 'swap' @ [169:52] ==> value-parameter swap: SwapDataModel defined in net.corda.vega.api.PortfolioApi.addTrade[ValueParameterDescriptorImpl]
 
 'toData' @ [169:57] ==> public final fun toData(buyer: Party, seller: Party): SwapData defined in net.corda.vega.api.SwapDataModel[SimpleFunctionDescriptorImpl]
@@ -473,7 +473,7 @@ Inferred types:
 
 'rpc' @ [185:82] ==> public final val rpc: CordaRPCOps defined in net.corda.vega.api.PortfolioApi[PropertyDescriptorImpl]
 
-'toPortfolio' @ [185:87] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio[SimpleFunctionDescriptorImpl]
+'toPortfolio' @ [185:87] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio in file Portfolio.kt[SimpleFunctionDescriptorImpl]
 
 'ok' @ [186:26] ==> public open fun ok(): (Response.ResponseBuilder..Response.ResponseBuilder?) defined in javax.ws.rs.core.Response[JavaMethodDescriptor]
 
@@ -511,10 +511,10 @@ Inferred types:
 
 'trades' @ [202:39] ==> val trades: List<StateAndRef<IRSState>> defined in net.corda.vega.api.PortfolioApi.getPortfolioSummary.<anonymous>[LocalVariableDescriptor]
 
-'mapOf' @ [203:27] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {Number & Comparable<{Double & Int}>}>): Map<String, {Number & Comparable<{Double & Int}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [203:27] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, Any>): Map<String, Any> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {Number & Comparable<{Double & Int}>}
+    <V> -> Any
 
 'to' @ [204:21] ==> public infix fun <A, B> String.to(that: Int): Pair<String, Int> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -544,7 +544,7 @@ Inferred types:
 
 'entity' @ [207:27] ==> public abstract fun entity(p0: (Any..Any?)): (Response.ResponseBuilder..Response.ResponseBuilder?) defined in javax.ws.rs.core.Response.ResponseBuilder[JavaMethodDescriptor]
 
-'summary' @ [207:34] ==> val summary: Map<String, {Number & Comparable<{Double & Int}>}> defined in net.corda.vega.api.PortfolioApi.getPortfolioSummary.<anonymous>[LocalVariableDescriptor]
+'summary' @ [207:34] ==> val summary: Map<String, Any> defined in net.corda.vega.api.PortfolioApi.getPortfolioSummary.<anonymous>[LocalVariableDescriptor]
 
 'build' @ [207:43] ==> public abstract fun build(): (Response..Response?) defined in javax.ws.rs.core.Response.ResponseBuilder[JavaMethodDescriptor]
 
@@ -614,7 +614,7 @@ Inferred types:
 
 'amount' @ [231:50] ==> public final val CurrencyAmount.amount: Double[MyPropertyDescriptor]
 
-'reduce' @ [232:23] ==> public inline fun <S, T : Double> Iterable<Double>.reduce(operation: (Double, Double) -> Double): Double defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'reduce' @ [232:23] ==> public inline fun <S, T : Double> Iterable<Double>.reduce(operation: (acc: Double, Double) -> Double): Double defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <S> -> Double
     <T : S> -> Double
@@ -731,11 +731,7 @@ Inferred types:
 Inferred types:
     <T> -> ServiceType
 
-'ServiceType' @ [257:63] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
-
 'networkMap' @ [257:75] ==> public final val networkMap: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
-
-'ServiceType' @ [257:87] ==> public companion object defined in net.corda.core.node.services.ServiceType[FakeCallableDescriptorForObject]
 
 'notary' @ [257:99] ==> public final val notary: ServiceType defined in net.corda.core.node.services.ServiceType.Companion[DeserializedPropertyDescriptor]
 
@@ -825,6 +821,8 @@ Inferred types:
 
 'SimmFlow' @ [279:31] ==> public object SimmFlow defined in net.corda.vega.flows in file SimmFlow.kt[FakeCallableDescriptorForObject]
 
+'Requester' @ [279:41] ==> public constructor Requester(otherParty: Party, valuationDate: LocalDate) defined in net.corda.vega.flows.SimmFlow.Requester[ClassConstructorDescriptorImpl]
+
 'otherParty' @ [279:52] ==> value-parameter otherParty: Party defined in net.corda.vega.api.PortfolioApi.startPortfolioCalculations.<anonymous>[ValueParameterDescriptorImpl]
 
 'params' @ [279:64] ==> value-parameter params: PortfolioApi.ValuationCreationParams = ... defined in net.corda.vega.api.PortfolioApi.startPortfolioCalculations[ValueParameterDescriptorImpl]
@@ -842,6 +840,8 @@ Inferred types:
 
 'SimmRevaluation' @ [281:31] ==> public object SimmRevaluation defined in net.corda.vega.flows in file SimmRevaluation.kt[FakeCallableDescriptorForObject]
 
+'Initiator' @ [281:48] ==> public constructor Initiator(curStateRef: StateRef, valuationDate: LocalDate) defined in net.corda.vega.flows.SimmRevaluation.Initiator[ClassConstructorDescriptorImpl]
+
 'getPortfolioStateAndRefWith' @ [281:59] ==> private final fun getPortfolioStateAndRefWith(party: Party): StateAndRef<PortfolioState> defined in net.corda.vega.api.PortfolioApi[SimpleFunctionDescriptorImpl]
 
 'otherParty' @ [281:87] ==> value-parameter otherParty: Party defined in net.corda.vega.api.PortfolioApi.startPortfolioCalculations.<anonymous>[ValueParameterDescriptorImpl]
@@ -858,7 +858,7 @@ Inferred types:
 
 'getOrThrow' @ [283:36] ==> public fun <V> Future<out Any>.getOrThrow(timeout: Duration? = ...): Any defined in net.corda.core.utilities[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <V> -> Any
+    <V> -> Captured(out Any)
 
 'withPortfolio' @ [285:13] ==> private final fun withPortfolio(party: Party, func: (PortfolioState) -> Response): Response defined in net.corda.vega.api.PortfolioApi[SimpleFunctionDescriptorImpl]
 
@@ -874,7 +874,7 @@ Inferred types:
 
 'rpc' @ [286:82] ==> public final val rpc: CordaRPCOps defined in net.corda.vega.api.PortfolioApi[PropertyDescriptorImpl]
 
-'toPortfolio' @ [286:87] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio[SimpleFunctionDescriptorImpl]
+'toPortfolio' @ [286:87] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio in file Portfolio.kt[SimpleFunctionDescriptorImpl]
 
 'ok' @ [287:26] ==> public open fun ok(): (Response.ResponseBuilder..Response.ResponseBuilder?) defined in javax.ws.rs.core.Response[JavaMethodDescriptor]
 

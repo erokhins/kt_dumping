@@ -12,6 +12,8 @@ Inferred types:
     <C> -> Party
     <reified R : FlowLogic<T>> -> CashIssueFlow
 
+'CashIssueFlow' @ [28:31] ==> public constructor CashIssueFlow(amount: Amount<Currency>, issuerBankPartyRef: OpaqueBytes, notary: Party) defined in net.corda.finance.flows.CashIssueFlow[ClassConstructorDescriptorImpl]
+
 'amount' @ [28:46] ==> public final val amount: Amount<Currency> defined in net.corda.finance.flows.CashFlowCommand.IssueCash[PropertyDescriptorImpl]
 
 'issueRef' @ [28:54] ==> public final val issueRef: OpaqueBytes defined in net.corda.finance.flows.CashFlowCommand.IssueCash[PropertyDescriptorImpl]
@@ -34,6 +36,8 @@ Inferred types:
     <C> -> Boolean
     <reified R : FlowLogic<T>> -> CashPaymentFlow
 
+'CashPaymentFlow' @ [29:38] ==> public constructor CashPaymentFlow(amount: Amount<Currency>, recipient: Party, anonymous: Boolean) defined in net.corda.finance.flows.CashPaymentFlow[ClassConstructorDescriptorImpl]
+
 'amount' @ [29:55] ==> public final val amount: Amount<Currency> defined in net.corda.finance.flows.CashFlowCommand.IssueCash[PropertyDescriptorImpl]
 
 'recipient' @ [29:63] ==> public final val recipient: Party defined in net.corda.finance.flows.CashFlowCommand.IssueCash[PropertyDescriptorImpl]
@@ -52,6 +56,8 @@ Inferred types:
     <C> -> Boolean
     <reified R : FlowLogic<T>> -> CashPaymentFlow
 
+'CashPaymentFlow' @ [41:72] ==> public constructor CashPaymentFlow(amount: Amount<Currency>, recipient: Party, anonymous: Boolean) defined in net.corda.finance.flows.CashPaymentFlow[ClassConstructorDescriptorImpl]
+
 'amount' @ [41:89] ==> public final val amount: Amount<Currency> defined in net.corda.finance.flows.CashFlowCommand.PayCash[PropertyDescriptorImpl]
 
 'recipient' @ [41:97] ==> public final val recipient: Party defined in net.corda.finance.flows.CashFlowCommand.PayCash[PropertyDescriptorImpl]
@@ -68,6 +74,8 @@ Inferred types:
     <A> -> Amount<Currency>
     <B> -> OpaqueBytes
     <reified R : FlowLogic<T>> -> CashExitFlow
+
+'CashExitFlow' @ [51:72] ==> public constructor CashExitFlow(amount: Amount<Currency>, issueRef: OpaqueBytes) defined in net.corda.finance.flows.CashExitFlow[ClassConstructorDescriptorImpl]
 
 'amount' @ [51:86] ==> public final val amount: Amount<Currency> defined in net.corda.finance.flows.CashFlowCommand.ExitCash[PropertyDescriptorImpl]
 

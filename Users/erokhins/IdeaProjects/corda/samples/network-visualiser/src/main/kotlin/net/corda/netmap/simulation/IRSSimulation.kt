@@ -14,7 +14,7 @@
 
 'synchronizedList' @ [43:54] ==> public open fun <T : (Any..Any?)> synchronizedList(p0: (MutableList<(() -> Unit..(() -> Unit)?)>..List<(() -> Unit..(() -> Unit)?)>?)): (MutableList<(() -> Unit..(() -> Unit)?)>..List<(() -> Unit..(() -> Unit)?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Function0<Unit>
+    <T : (Any..Any?)> -> (() -> kotlin.Unit..(() -> kotlin.Unit)?)
 
 'LinkedList' @ [43:71] ==> public constructor LinkedList<E : (Any..Any?)>() defined in java.util.LinkedList[JavaClassConstructorDescriptor]
 Inferred types:
@@ -147,6 +147,10 @@ Inferred types:
     <W> -> Unit
     <X> -> Unit
 
+'onSuccess' @ [71:43] ==> local final fun onSuccess(result: Unit?): Unit defined in net.corda.netmap.simulation.IRSSimulation.startMainSimulation.<anonymous>.<anonymous>[SimpleFunctionDescriptorImpl]
+
+'onFailure' @ [71:56] ==> local final fun onFailure(t: Throwable): Unit defined in net.corda.netmap.simulation.IRSSimulation.startMainSimulation.<anonymous>.<anonymous>[SimpleFunctionDescriptorImpl]
+
 'future' @ [74:29] ==> val future: OpenFuture<Unit> defined in net.corda.netmap.simulation.IRSSimulation.startMainSimulation[LocalVariableDescriptor]
 
 'set' @ [74:36] ==> public abstract fun set(value: Unit): Boolean defined in net.corda.core.internal.concurrent.OpenFuture[DeserializedSimpleFunctionDescriptor]
@@ -160,6 +164,10 @@ Inferred types:
     <V> -> Unit
     <W> -> Unit
     <X> -> Unit
+
+'onSuccess' @ [78:48] ==> local final fun onSuccess(result: Unit?): Unit defined in net.corda.netmap.simulation.IRSSimulation.startMainSimulation.<anonymous>.<anonymous>[SimpleFunctionDescriptorImpl]
+
+'onFailure' @ [78:61] ==> local final fun onFailure(t: Throwable): Unit defined in net.corda.netmap.simulation.IRSSimulation.startMainSimulation.<anonymous>.<anonymous>[SimpleFunctionDescriptorImpl]
 
 'future' @ [81:16] ==> val future: OpenFuture<Unit> defined in net.corda.netmap.simulation.IRSSimulation.startMainSimulation[LocalVariableDescriptor]
 

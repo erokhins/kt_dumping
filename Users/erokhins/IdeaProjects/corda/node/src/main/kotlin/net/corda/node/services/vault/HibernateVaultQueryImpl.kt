@@ -152,8 +152,6 @@ Inferred types:
 
 'count' @ [71:58] ==> val count: CriteriaExpression.AggregateFunctionExpression<VaultSchemaV1.VaultStates, Instant> defined in net.corda.node.services.vault.HibernateVaultQueryImpl._queryBy[LocalVariableDescriptor]
 
-'Vault' @ [71:65] ==> public companion object defined in net.corda.core.node.services.Vault[FakeCallableDescriptorForObject]
-
 'ALL' @ [71:83] ==> enum entry ALL defined in net.corda.core.node.services.Vault.StateStatus[FakeCallableDescriptorForObject]
 
 'queryBy' @ [72:27] ==> public open fun <T : ContractState> queryBy(contractType: Class<out T>, criteria: QueryCriteria): Vault.Page<T> defined in net.corda.node.services.vault.HibernateVaultQueryImpl[DeserializedSimpleFunctionDescriptor]
@@ -187,7 +185,7 @@ Inferred types:
 
 'createQuery' @ [79:49] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (Class<(Tuple..Tuple?)>..Class<(Tuple..Tuple?)>?)): (CriteriaQuery<(Tuple..Tuple?)>..CriteriaQuery<(Tuple..Tuple?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Tuple
+    <T : (Any..Any?)> -> (javax.persistence.Tuple..javax.persistence.Tuple?)
 
 'java' @ [79:74] ==> public val <T> KClass<Tuple>.java: Class<Tuple> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -197,7 +195,7 @@ Inferred types:
 
 'from' @ [80:54] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(VaultSchemaV1.VaultStates..VaultSchemaV1.VaultStates?)>..Class<(VaultSchemaV1.VaultStates..VaultSchemaV1.VaultStates?)>?)): (Root<(VaultSchemaV1.VaultStates..VaultSchemaV1.VaultStates?)>..Root<(VaultSchemaV1.VaultStates..VaultSchemaV1.VaultStates?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> VaultStates
+    <X : (Any..Any?)> -> (net.corda.node.services.vault.VaultSchemaV1.VaultStates..net.corda.node.services.vault.VaultSchemaV1.VaultStates?)
 
 'VaultSchemaV1' @ [80:59] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
 
@@ -231,7 +229,7 @@ Inferred types:
 
 'createQuery' @ [90:37] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (CriteriaQuery<(Tuple..Tuple?)>..CriteriaQuery<(Tuple..Tuple?)>?)): (Query<(Tuple..Tuple?)>..Query<(Tuple..Tuple?)>?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Tuple
+    <T : (Any..Any?)> -> (javax.persistence.Tuple..javax.persistence.Tuple?)
 
 'criteriaQuery' @ [90:49] ==> val criteriaQuery: (CriteriaQuery<(Tuple..Tuple?)>..CriteriaQuery<(Tuple..Tuple?)>?) defined in net.corda.node.services.vault.HibernateVaultQueryImpl._queryBy.<anonymous>[LocalVariableDescriptor]
 
@@ -381,8 +379,6 @@ Inferred types:
 
 'StateRef' @ [119:48] ==> public constructor StateRef(txhash: SecureHash, index: Int) defined in net.corda.core.contracts.StateRef[DeserializedClassConstructorDescriptor]
 
-'SecureHash' @ [119:57] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
-
 'parse' @ [119:68] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
 'vaultState' @ [119:74] ==> val vaultState: VaultSchemaV1.VaultStates defined in net.corda.node.services.vault.HibernateVaultQueryImpl._queryBy.<anonymous>.<anonymous>[LocalVariableDescriptor]
@@ -410,8 +406,6 @@ Inferred types:
 'statesMeta' @ [121:33] ==> val statesMeta: MutableList<Vault.StateMetadata> defined in net.corda.node.services.vault.HibernateVaultQueryImpl._queryBy.<anonymous>[LocalVariableDescriptor]
 
 'add' @ [121:44] ==> public abstract fun add(element: Vault.StateMetadata): Boolean defined in kotlin.collections.MutableList[DeserializedSimpleFunctionDescriptor]
-
-'Vault' @ [121:48] ==> public companion object defined in net.corda.core.node.services.Vault[FakeCallableDescriptorForObject]
 
 'StateMetadata' @ [121:54] ==> public constructor StateMetadata(ref: StateRef, contractStateClassName: String, recordedTime: Instant, consumedTime: Instant?, status: Vault.StateStatus, notary: AbstractParty?, lockId: String?, lockUpdateTime: Instant?) defined in net.corda.core.node.services.Vault.StateMetadata[DeserializedClassConstructorDescriptor]
 
@@ -557,7 +551,7 @@ Inferred types:
 
 'containsType' @ [153:86] ==> public final fun <T : ContractState> containsType(clazz: Class<out T>, status: Vault.StateStatus): Boolean defined in net.corda.core.node.services.Vault.Update[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : ContractState> -> T
+    <T : ContractState> -> Captured(out T)
 
 'contractType' @ [153:99] ==> value-parameter contractType: Class<out T> defined in net.corda.node.services.vault.HibernateVaultQueryImpl._trackBy[ValueParameterDescriptorImpl]
 
@@ -580,8 +574,6 @@ Inferred types:
 
 'connection' @ [160:17] ==> public abstract fun connection(p0: (Connection..Connection?)): raw (SessionBuilder<(SessionBuilder<*>..SessionBuilder<*>?)>..SessionBuilder<out (SessionBuilder<*>..SessionBuilder<*>?)>?) defined in org.hibernate.SessionBuilder[JavaMethodDescriptor]
 
-'DatabaseTransactionManager' @ [160:28] ==> public companion object defined in net.corda.node.utilities.DatabaseTransactionManager[FakeCallableDescriptorForObject]
-
 'current' @ [160:55] ==> public final fun current(): DatabaseTransaction defined in net.corda.node.utilities.DatabaseTransactionManager.Companion[SimpleFunctionDescriptorImpl]
 
 'connection' @ [160:65] ==> public final val connection: Connection defined in net.corda.node.utilities.DatabaseTransaction[PropertyDescriptorImpl]
@@ -592,7 +584,7 @@ Inferred types:
 
 'createQuery' @ [168:40] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (Class<(String..String?)>..Class<(String..String?)>?)): (CriteriaQuery<(String..String?)>..CriteriaQuery<(String..String?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'String' @ [168:52] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
@@ -604,7 +596,7 @@ Inferred types:
 
 'from' @ [169:36] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(VaultSchemaV1.VaultStates..VaultSchemaV1.VaultStates?)>..Class<(VaultSchemaV1.VaultStates..VaultSchemaV1.VaultStates?)>?)): (Root<(VaultSchemaV1.VaultStates..VaultSchemaV1.VaultStates?)>..Root<(VaultSchemaV1.VaultStates..VaultSchemaV1.VaultStates?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> VaultStates
+    <X : (Any..Any?)> -> (net.corda.node.services.vault.VaultSchemaV1.VaultStates..net.corda.node.services.vault.VaultSchemaV1.VaultStates?)
 
 'VaultSchemaV1' @ [169:41] ==> @CordaSerializable public object VaultSchemaV1 : MappedSchema defined in net.corda.node.services.vault in file VaultSchema.kt[FakeCallableDescriptorForObject]
 
@@ -639,7 +631,7 @@ Inferred types:
 
 'createQuery' @ [173:33] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (CriteriaQuery<(String..String?)>..CriteriaQuery<(String..String?)>?)): (Query<(String..String?)>..Query<(String..String?)>?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'criteria' @ [173:45] ==> val criteria: (CriteriaQuery<(String..String?)>..CriteriaQuery<(String..String?)>?) defined in net.corda.node.services.vault.HibernateVaultQueryImpl.bootstrapContractStateTypes[LocalVariableDescriptor]
 

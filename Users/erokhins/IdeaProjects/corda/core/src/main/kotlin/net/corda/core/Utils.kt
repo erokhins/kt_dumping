@@ -2,7 +2,7 @@
 
 'create' @ [14:23] ==> public final fun <T : (Any..Any?)> create(p0: (((Subscriber<in (A..A?)>..Subscriber<in (A..A?)>?)) -> Unit..(((Subscriber<in (A..A?)>..Subscriber<in (A..A?)>?)) -> Unit)?)): (Observable<(A..A?)>..Observable<(A..A?)>?) defined in rx.Observable[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> A
+    <T : (Any..Any?)> -> (A..A?)
 
 'thenMatch' @ [15:9] ==> public fun <V, W, X> CordaFuture<out A>.thenMatch(success: (A) -> Unit, failure: (Throwable) -> Unit): Unit defined in net.corda.core.internal.concurrent[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -12,7 +12,7 @@ Inferred types:
 
 'subscriber' @ [16:13] ==> value-parameter subscriber: (Subscriber<in (A..A?)>..Subscriber<in (A..A?)>?) defined in net.corda.core.toObservable.<anonymous>[ValueParameterDescriptorImpl]
 
-'onNext' @ [16:24] ==> public abstract fun onNext(p0: (Any..Any?)): Unit defined in rx.Subscriber[JavaMethodDescriptor]
+'onNext' @ [16:24] ==> public abstract fun onNext(p0: (A..A?)): Unit defined in rx.Subscriber[JavaMethodDescriptor]
 
 'it' @ [16:31] ==> value-parameter it: A defined in net.corda.core.toObservable.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 

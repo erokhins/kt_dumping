@@ -69,8 +69,6 @@ Inferred types:
 
 'schema' @ [72:26] ==> value-parameter schema: MappedSchema defined in net.corda.finance.contracts.CommercialPaper.State.generateMappedObject[ValueParameterDescriptorImpl]
 
-'CommercialPaperSchemaV1' @ [73:47] ==> @CordaSerializable public object CommercialPaperSchemaV1 : MappedSchema defined in net.corda.finance.schemas in file CommercialPaperSchemaV1.kt[FakeCallableDescriptorForObject]
-
 'PersistentCommercialPaperState' @ [73:71] ==> public constructor PersistentCommercialPaperState(issuanceParty: String, issuanceRef: ByteArray, owner: String, maturity: Instant, faceValue: Long, currency: String, faceValueIssuerParty: String, faceValueIssuerRef: ByteArray) defined in net.corda.finance.schemas.CommercialPaperSchemaV1.PersistentCommercialPaperState[ClassConstructorDescriptorImpl]
 
 'this' @ [74:41] ==> <this> defined in net.corda.finance.contracts.CommercialPaper.State[LazyClassReceiverParameterDescriptor]
@@ -175,6 +173,8 @@ Inferred types:
     <K : Any> -> State
 
 'State' @ [103:37] ==> private constructor State() defined in kotlin.collections.State[DeserializedClassConstructorDescriptor]
+
+'withoutOwner' @ [103:44] ==> public final fun withoutOwner(): CommercialPaper.State defined in net.corda.finance.contracts.CommercialPaper.State[SimpleFunctionDescriptorImpl]
 
 'tx' @ [107:23] ==> value-parameter tx: LedgerTransaction defined in net.corda.finance.contracts.CommercialPaper.verify[ValueParameterDescriptorImpl]
 
@@ -285,7 +285,7 @@ Inferred types:
 
 'outputStates' @ [127:39] ==> public final val outputStates: List<ContractState> defined in net.corda.core.transactions.LedgerTransaction[DeserializedPropertyDescriptor]
 
-'sumCashBy' @ [127:52] ==> public fun Iterable<ContractState>.sumCashBy(owner: AbstractParty): Amount<Issued<Currency>> defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCashBy' @ [127:52] ==> public fun Iterable<ContractState>.sumCashBy(owner: AbstractParty): Amount<Issued<Currency>> defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'input' @ [127:62] ==> val input: CommercialPaper.State defined in net.corda.finance.contracts.CommercialPaper.verify[LocalVariableDescriptor]
 

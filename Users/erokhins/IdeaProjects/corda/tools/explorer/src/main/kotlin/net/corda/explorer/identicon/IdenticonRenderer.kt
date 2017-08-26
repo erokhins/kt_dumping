@@ -39,6 +39,8 @@ Inferred types:
     <T> -> ByteArray
     <R> -> Patch
 
+'Patch' @ [67:49] ==> public constructor Patch(byteArray: ByteArray) defined in net.corda.explorer.identicon.IdenticonRenderer.Patch[ClassConstructorDescriptorImpl]
+
 'PATCH_CELLS' @ [70:31] ==> private final val PATCH_CELLS: Int defined in net.corda.explorer.identicon.IdenticonRenderer[PropertyDescriptorImpl]
 
 'byteArrayOf' @ [74:30] ==> public fun byteArrayOf(vararg elements: Byte): ByteArray defined in kotlin[DeserializedSimpleFunctionDescriptor]
@@ -59,8 +61,8 @@ Inferred types:
 
 'build' @ [78:51] ==> public open fun <K1 : (Any..Any?), V1 : (Any..Any?)> build(p0: (CacheLoader<in (SecureHash..SecureHash?), (Image..Image?)>..CacheLoader<in (SecureHash..SecureHash?), (Image..Image?)>?)): (LoadingCache<(SecureHash..SecureHash?), (Image..Image?)>..LoadingCache<(SecureHash..SecureHash?), (Image..Image?)>?) defined in com.google.common.cache.CacheBuilder[JavaMethodDescriptor]
 Inferred types:
-    <K1 : (Any..Any?)> -> SecureHash
-    <V1 : (Any..Any?)> -> Image
+    <K1 : (Any..Any?)> -> (net.corda.core.crypto.SecureHash..net.corda.core.crypto.SecureHash?)
+    <V1 : (Any..Any?)> -> (javafx.scene.image.Image..javafx.scene.image.Image?)
 
 'from' @ [78:69] ==> public final fun <K : (Any..Any?), V : (Any..Any?)> from(p0: ((SecureHash?) -> Image?..((SecureHash?) -> Image?)?)): (CacheLoader<(SecureHash..SecureHash?), (Image..Image?)>..CacheLoader<(SecureHash..SecureHash?), (Image..Image?)>?) defined in com.google.common.cache.CacheLoader[SamAdapterFunctionDescriptor]
 Inferred types:
@@ -90,6 +92,8 @@ Inferred types:
 
 'Byte' @ [84:34] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
 
+'toInt' @ [84:40] ==> public open fun toInt(): Int defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
+
 'map' @ [84:47] ==> public inline fun <T, R> Iterable<Int>.map(transform: (Int) -> Double): List<Double> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Int
@@ -114,6 +118,8 @@ Inferred types:
     <R> -> Int
 
 'Byte' @ [88:34] ==> public companion object defined in kotlin.Byte[FakeCallableDescriptorForObject]
+
+'toInt' @ [88:40] ==> public open fun toInt(): Int defined in kotlin.Byte[DeserializedSimpleFunctionDescriptor]
 
 'map' @ [88:47] ==> public inline fun <T, R> Iterable<Int>.map(transform: (Int) -> Double): List<Double> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -599,8 +605,6 @@ Inferred types:
 'toFloat' @ [190:55] ==> public open fun toFloat(): Float defined in kotlin.Double[DeserializedSimpleFunctionDescriptor]
 
 'ImageView' @ [195:12] ==> public constructor ImageView(p0: (Image..Image?)) defined in javafx.scene.image.ImageView[JavaClassConstructorDescriptor]
-
-'IdenticonRenderer' @ [195:22] ==> public object IdenticonRenderer defined in net.corda.explorer.identicon in file IdenticonRenderer.kt[FakeCallableDescriptorForObject]
 
 'getIdenticon' @ [195:40] ==> public final fun getIdenticon(hash: SecureHash): Image defined in net.corda.explorer.identicon.IdenticonRenderer[SimpleFunctionDescriptorImpl]
 

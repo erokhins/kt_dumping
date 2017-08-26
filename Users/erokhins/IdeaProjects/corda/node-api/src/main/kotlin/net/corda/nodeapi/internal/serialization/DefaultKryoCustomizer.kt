@@ -1,10 +1,10 @@
-'lazy' @ [49:64] ==> public fun <T> lazy(initializer: () -> List<(CordaPluginRegistry..CordaPluginRegistry?)>): Lazy<List<(CordaPluginRegistry..CordaPluginRegistry?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [49:64] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> List<(net.corda.core.node.CordaPluginRegistry..net.corda.core.node.CordaPluginRegistry?)>
+    <T> -> T
 
 'load' @ [50:23] ==> public open fun <S : (Any..Any?)> load(p0: (Class<(CordaPluginRegistry..CordaPluginRegistry?)>..Class<(CordaPluginRegistry..CordaPluginRegistry?)>?), p1: (ClassLoader..ClassLoader?)): (ServiceLoader<(CordaPluginRegistry..CordaPluginRegistry?)>..ServiceLoader<(CordaPluginRegistry..CordaPluginRegistry?)>?) defined in java.util.ServiceLoader[JavaMethodDescriptor]
 Inferred types:
-    <S : (Any..Any?)> -> CordaPluginRegistry
+    <S : (Any..Any?)> -> (net.corda.core.node.CordaPluginRegistry..net.corda.core.node.CordaPluginRegistry?)
 
 'CordaPluginRegistry' @ [50:28] ==> public constructor CordaPluginRegistry() defined in net.corda.core.node.CordaPluginRegistry[DeserializedClassConstructorDescriptor]
 
@@ -36,7 +36,7 @@ Inferred types:
 
 'CompatibleFieldSerializer' @ [57:34] ==> public constructor CompatibleFieldSerializer<T : (Any..Any?)>(p0: (Kryo..Kryo?), p1: raw (Class<(Any..Any?)>..Class<*>?)) defined in com.esotericsoftware.kryo.serializers.CompatibleFieldSerializer[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@15fb65a5
 
 'java' @ [57:67] ==> public val <T> KClass<CompatibleFieldSerializer<*>>.java: Class<CompatibleFieldSerializer<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -84,7 +84,7 @@ Inferred types:
 
 'asList' @ [74:29] ==> @SafeVarargs public open fun <T : (Any..Any?)> asList(vararg p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in java.util.Arrays[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'javaClass' @ [74:40] ==> public val <T : Any> (MutableList<(String..String?)>..List<(String..String?)>?).javaClass: Class<(MutableList<(String..String?)>..List<(String..String?)>?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -114,7 +114,7 @@ Inferred types:
 
 'SerializedBytes' @ [77:22] ==> public constructor SerializedBytes<T : Any>(bytes: ByteArray) defined in net.corda.core.serialization.SerializedBytes[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@2cacc942
 
 'java' @ [77:45] ==> public val <T> KClass<SerializedBytes<*>>.java: Class<SerializedBytes<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -202,9 +202,9 @@ Inferred types:
 Inferred types:
     <T : Any> -> Array<StackTraceElement>
 
-'Array' @ [93:22] ==> public constructor Array<T>(size: Int, init: (Int) -> Any?) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
+'Array' @ [93:22] ==> public constructor Array<T>(size: Int, init: (Int) -> ???) defined in kotlin.Array[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <T> -> Any?
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@4d0b8357
 
 'emptyArray' @ [93:72] ==> public inline fun <reified @PureReifiable T> emptyArray(): Array<StackTraceElement> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -234,7 +234,7 @@ Inferred types:
 
 'Class' @ [97:22] ==> private constructor Class<T : (Any..Any?)>(p0: (ClassLoader..ClassLoader?)) defined in java.lang.Class[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@393111e
 
 'java' @ [97:35] ==> public val <T> KClass<Class<*>>.java: Class<Class<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -424,7 +424,7 @@ Inferred types:
 
 'newInstantiatorOf' @ [129:26] ==> public abstract fun <T : (Any..Any?)> newInstantiatorOf(p0: (Class<(T..T?)>..Class<(T..T?)>?)): (ObjectInstantiator<(T..T?)>..ObjectInstantiator<(T..T?)>?) defined in org.objenesis.strategy.InstantiatorStrategy[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'type' @ [129:44] ==> value-parameter type: Class<T> defined in net.corda.nodeapi.internal.serialization.DefaultKryoCustomizer.CustomInstantiatorStrategy.newInstantiatorOf[ValueParameterDescriptorImpl]
 

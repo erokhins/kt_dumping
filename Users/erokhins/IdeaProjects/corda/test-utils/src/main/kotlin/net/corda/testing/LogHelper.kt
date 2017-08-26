@@ -51,11 +51,11 @@ Inferred types:
 
 'java' @ [28:80] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 '`package`' @ [28:85] ==> public final val <T : (Any..Any?)> Class<out Any>.`package`: (Package..Package?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'name' @ [28:95] ==> public final val Package.name: (String..String?)[MyPropertyDescriptor]
 
@@ -100,11 +100,11 @@ Inferred types:
 
 'java' @ [38:68] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 '`package`' @ [38:73] ==> public final val <T : (Any..Any?)> Class<out Any>.`package`: (Package..Package?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'name' @ [38:83] ==> public final val Package.name: (String..String?)[MyPropertyDescriptor]
 

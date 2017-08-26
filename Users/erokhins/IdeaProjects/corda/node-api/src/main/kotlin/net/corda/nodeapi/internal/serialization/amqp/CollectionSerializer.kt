@@ -1,7 +1,5 @@
 'declaredType' @ [17:31] ==> public final val declaredType: ParameterizedType defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer[PropertyDescriptorImpl]
 
-'DeserializedParameterizedType' @ [17:81] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.DeserializedParameterizedType[FakeCallableDescriptorForObject]
-
 'make' @ [17:111] ==> public final fun make(name: String, cl: ClassLoader = ...): Type defined in net.corda.nodeapi.internal.serialization.amqp.DeserializedParameterizedType.Companion[SimpleFunctionDescriptorImpl]
 
 'declaredType' @ [17:116] ==> public final val declaredType: ParameterizedType defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer[PropertyDescriptorImpl]
@@ -30,23 +28,23 @@ Inferred types:
 Inferred types:
     <T> -> Collection<*>
 
-'unmodifiableCollection' @ [22:65] ==> public open fun <T : (Any..Any?)> unmodifiableCollection(p0: (MutableCollection<out (Any..Any?)>..Collection<(Any..Any?)>?)): (MutableCollection<(Any..Any?)>..Collection<(Any..Any?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'unmodifiableCollection' @ [22:65] ==> public open fun <T : (Any..Any?)> unmodifiableCollection(p0: (MutableCollection<out Any?>..Collection<Any?>?)): (MutableCollection<Any?>..Collection<Any?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Any?
 
 'list' @ [22:88] ==> value-parameter list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
-'List' @ [23:17] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> Nothing): List<Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'List' @ [23:17] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> ???): List<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Nothing
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6c3f7963
 
 'java' @ [23:29] ==> public val <T> KClass<List<*>>.java: Class<List<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> List<*>
 
-'unmodifiableList' @ [23:59] ==> public open fun <T : (Any..Any?)> unmodifiableList(p0: (MutableList<out (Any..Any?)>..List<(Any..Any?)>?)): (MutableList<(Any..Any?)>..List<(Any..Any?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'unmodifiableList' @ [23:59] ==> public open fun <T : (Any..Any?)> unmodifiableList(p0: (MutableList<out Any?>..List<Any?>?)): (MutableList<Any?>..List<Any?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Any?
 
 'list' @ [23:76] ==> value-parameter list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -59,13 +57,13 @@ Inferred types:
 Inferred types:
     <T> -> Set<*>
 
-'unmodifiableSet' @ [24:58] ==> public open fun <T : (Any..Any?)> unmodifiableSet(p0: (MutableSet<out (Any..Any?)>..Set<(Any..Any?)>?)): (MutableSet<(Any..Any?)>..Set<(Any..Any?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'unmodifiableSet' @ [24:58] ==> public open fun <T : (Any..Any?)> unmodifiableSet(p0: (MutableSet<out Any?>..Set<Any?>?)): (MutableSet<Any?>..Set<Any?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Any?
 
-'LinkedHashSet' @ [24:74] ==> public final fun <E> <init>(p0: (MutableCollection<out (Any..Any?)>..Collection<(Any..Any?)>?)): LinkedHashSet<Any> /* = LinkedHashSet<Any> */ defined in kotlin.collections.LinkedHashSet[TypeAliasConstructorDescriptorImpl]
+'LinkedHashSet' @ [24:74] ==> public final fun <E> <init>(p0: (MutableCollection<out Any?>..Collection<Any?>?)): LinkedHashSet<Any?> /* = LinkedHashSet<Any?> */ defined in kotlin.collections.LinkedHashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> Any
+    <E> -> Any?
 
 'list' @ [24:88] ==> value-parameter list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -78,13 +76,13 @@ Inferred types:
 Inferred types:
     <T> -> SortedSet<*>
 
-'unmodifiableSortedSet' @ [25:64] ==> public open fun <T : (Any..Any?)> unmodifiableSortedSet(p0: (SortedSet<(Any..Any?)>..SortedSet<(Any..Any?)>?)): (SortedSet<(Any..Any?)>..SortedSet<(Any..Any?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'unmodifiableSortedSet' @ [25:64] ==> public open fun <T : (Any..Any?)> unmodifiableSortedSet(p0: (SortedSet<Any?>..SortedSet<Any?>?)): (SortedSet<Any?>..SortedSet<Any?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Any?
 
-'TreeSet' @ [25:86] ==> public constructor TreeSet<E : (Any..Any?)>(p0: (MutableCollection<out (Any..Any?)>..Collection<(Any..Any?)>?)) defined in java.util.TreeSet[JavaClassConstructorDescriptor]
+'TreeSet' @ [25:86] ==> public constructor TreeSet<E : (Any..Any?)>(p0: (MutableCollection<out Any?>..Collection<Any?>?)) defined in java.util.TreeSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Any
+    <E : (Any..Any?)> -> Any?
 
 'list' @ [25:94] ==> value-parameter list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -97,13 +95,13 @@ Inferred types:
 Inferred types:
     <T> -> NavigableSet<*>
 
-'unmodifiableNavigableSet' @ [26:67] ==> public open fun <T : (Any..Any?)> unmodifiableNavigableSet(p0: (NavigableSet<(Any..Any?)>..NavigableSet<(Any..Any?)>?)): (NavigableSet<(Any..Any?)>..NavigableSet<(Any..Any?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'unmodifiableNavigableSet' @ [26:67] ==> public open fun <T : (Any..Any?)> unmodifiableNavigableSet(p0: (NavigableSet<Any?>..NavigableSet<Any?>?)): (NavigableSet<Any?>..NavigableSet<Any?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Any?
 
-'TreeSet' @ [26:92] ==> public constructor TreeSet<E : (Any..Any?)>(p0: (MutableCollection<out (Any..Any?)>..Collection<(Any..Any?)>?)) defined in java.util.TreeSet[JavaClassConstructorDescriptor]
+'TreeSet' @ [26:92] ==> public constructor TreeSet<E : (Any..Any?)>(p0: (MutableCollection<out Any?>..Collection<Any?>?)) defined in java.util.TreeSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Any
+    <E : (Any..Any?)> -> Any?
 
 'list' @ [26:100] ==> value-parameter list: List<*> defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -137,8 +135,6 @@ Inferred types:
 
 'RestrictedType' @ [37:46] ==> public constructor RestrictedType(name: String, label: String?, provides: List<String>, source: String, descriptor: Descriptor, choices: List<Choice>) defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType[ClassConstructorDescriptorImpl]
 
-'SerializerFactory' @ [37:61] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
-
 'nameForType' @ [37:79] ==> public final fun nameForType(type: Type): String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 
 'declaredType' @ [37:91] ==> public final val declaredType: ParameterizedType defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer[PropertyDescriptorImpl]
@@ -171,13 +167,13 @@ Inferred types:
 
 'data' @ [47:9] ==> value-parameter data: Data defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer.writeObject[ValueParameterDescriptorImpl]
 
-'withDescribed' @ [47:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withDescribed' @ [47:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'typeNotation' @ [47:28] ==> private final val typeNotation: TypeNotation defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer[PropertyDescriptorImpl]
 
 'descriptor' @ [47:41] ==> public abstract val descriptor: Descriptor defined in net.corda.nodeapi.internal.serialization.amqp.TypeNotation[PropertyDescriptorImpl]
 
-'withList' @ [48:13] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withList' @ [48:13] ==> public fun Data.withList(block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'obj' @ [49:31] ==> value-parameter obj: Any defined in net.corda.nodeapi.internal.serialization.amqp.CollectionSerializer.writeObject[ValueParameterDescriptorImpl]
 

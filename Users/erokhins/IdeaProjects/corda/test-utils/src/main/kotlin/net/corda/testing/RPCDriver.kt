@@ -8,8 +8,6 @@
 
 '*' @ [68:47] ==> public final operator fun times(other: Int): Long defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
-'ArtemisMessagingServer' @ [68:53] ==> public companion object defined in net.corda.node.services.messaging.ArtemisMessagingServer[FakeCallableDescriptorForObject]
-
 'MAX_FILE_SIZE' @ [68:76] ==> @JvmStatic public final val MAX_FILE_SIZE: Int defined in net.corda.node.services.messaging.ArtemisMessagingServer.Companion[DeserializedPropertyDescriptor]
 
 'RPCServerConfiguration' @ [69:53] ==> public companion object defined in net.corda.node.services.messaging.RPCServerConfiguration[FakeCallableDescriptorForObject]
@@ -47,8 +45,6 @@
 'MAX_FILE_SIZE' @ [112:55] ==> @JvmStatic public final val MAX_FILE_SIZE: Int defined in net.corda.node.services.messaging.ArtemisMessagingServer.Companion[DeserializedPropertyDescriptor]
 
 '*' @ [113:47] ==> public final operator fun times(other: Int): Long defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
-
-'ArtemisMessagingServer' @ [113:53] ==> public companion object defined in net.corda.node.services.messaging.ArtemisMessagingServer[FakeCallableDescriptorForObject]
 
 'MAX_FILE_SIZE' @ [113:76] ==> @JvmStatic public final val MAX_FILE_SIZE: Int defined in net.corda.node.services.messaging.ArtemisMessagingServer.Companion[DeserializedPropertyDescriptor]
 
@@ -94,8 +90,6 @@
 
 '*' @ [168:47] ==> public final operator fun times(other: Int): Long defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
-'ArtemisMessagingServer' @ [168:53] ==> public companion object defined in net.corda.node.services.messaging.ArtemisMessagingServer[FakeCallableDescriptorForObject]
-
 'MAX_FILE_SIZE' @ [168:76] ==> @JvmStatic public final val MAX_FILE_SIZE: Int defined in net.corda.node.services.messaging.ArtemisMessagingServer.Companion[DeserializedPropertyDescriptor]
 
 'rpcTestUser' @ [173:29] ==> public val rpcTestUser: User defined in net.corda.testing in file RPCDriver.kt[PropertyDescriptorImpl]
@@ -105,8 +99,6 @@
 'MAX_FILE_SIZE' @ [174:55] ==> @JvmStatic public final val MAX_FILE_SIZE: Int defined in net.corda.node.services.messaging.ArtemisMessagingServer.Companion[DeserializedPropertyDescriptor]
 
 '*' @ [175:47] ==> public final operator fun times(other: Int): Long defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
-
-'ArtemisMessagingServer' @ [175:53] ==> public companion object defined in net.corda.node.services.messaging.ArtemisMessagingServer[FakeCallableDescriptorForObject]
 
 'MAX_FILE_SIZE' @ [175:76] ==> @JvmStatic public final val MAX_FILE_SIZE: Int defined in net.corda.node.services.messaging.ArtemisMessagingServer.Companion[DeserializedPropertyDescriptor]
 
@@ -499,8 +491,6 @@ Inferred types:
 Inferred types:
     <T> -> TransportConfiguration
 
-'ArtemisTcpTransport' @ [321:48] ==> public companion object defined in net.corda.nodeapi.ArtemisTcpTransport[FakeCallableDescriptorForObject]
-
 'tcpTransport' @ [321:68] ==> public final fun tcpTransport(direction: ConnectionDirection, hostAndPort: NetworkHostAndPort, config: SSLConfiguration?, enableSSL: Boolean = ...): TransportConfiguration defined in net.corda.nodeapi.ArtemisTcpTransport.Companion[DeserializedSimpleFunctionDescriptor]
 
 'connectionDirection' @ [321:81] ==> val connectionDirection: ConnectionDirection.Inbound defined in net.corda.testing.RPCDriverDSL.Companion.createRpcServerArtemisConfig[LocalVariableDescriptor]
@@ -685,8 +675,6 @@ Inferred types:
 Inferred types:
     <I : RPCOps> -> I
 
-'ArtemisTcpTransport' @ [390:39] ==> public companion object defined in net.corda.nodeapi.ArtemisTcpTransport[FakeCallableDescriptorForObject]
-
 'tcpTransport' @ [390:59] ==> public final fun tcpTransport(direction: ConnectionDirection, hostAndPort: NetworkHostAndPort, config: SSLConfiguration?, enableSSL: Boolean = ...): TransportConfiguration defined in net.corda.nodeapi.ArtemisTcpTransport.Companion[DeserializedSimpleFunctionDescriptor]
 
 'Outbound' @ [390:92] ==> public constructor Outbound(expectedCommonName: X500Name? = ..., connectorFactoryClassName: String = ...) defined in net.corda.nodeapi.ConnectionDirection.Outbound[DeserializedClassConstructorDescriptor]
@@ -733,9 +721,9 @@ Inferred types:
 Inferred types:
     <reified C : Any> -> RandomRpcUser
 
-'listOf' @ [401:62] ==> public fun <T> listOf(vararg elements: String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [401:62] ==> public fun <T> listOf(vararg elements: (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> String
+    <T> -> (kotlin.String..kotlin.String?)
 
 'rpcOpsClass' @ [401:69] ==> value-parameter rpcOpsClass: Class<I> defined in net.corda.testing.RPCDriverDSL.startRandomRpcClient[ValueParameterDescriptorImpl]
 
@@ -1046,15 +1034,11 @@ Inferred types:
 Inferred types:
     <reified T> -> String
 
-'Generator' @ [504:17] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
-
 'string' @ [504:27] ==> public fun Generator.Companion.string(meanSize: Double = ...): Generator<String> defined in net.corda.client.mock[DeserializedSimpleFunctionDescriptor]
 
 'add' @ [505:13] ==> private final inline fun <reified T> HashMap<Class<*>, Generator<*>>.add(generator: Generator<Int>): Generator<*>? defined in net.corda.testing.RandomRpcUser.Companion[SimpleFunctionDescriptorImpl]
 Inferred types:
     <reified T> -> Int
-
-'Generator' @ [505:17] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
 'int' @ [505:27] ==> public fun Generator.Companion.int(): Generator<Int> defined in net.corda.client.mock[DeserializedSimpleFunctionDescriptor]
 
@@ -1121,10 +1105,10 @@ Inferred types:
 
 'parameters' @ [520:43] ==> public final val Method.parameters: (Array<(Parameter..Parameter?)>..Array<out (Parameter..Parameter?)>?)[MyPropertyDescriptor]
 
-'map' @ [520:54] ==> public inline fun <T, R> Array<out (Parameter..Parameter?)>.map(transform: ((Parameter..Parameter?)) -> Generator<Any?>): List<Generator<Any?>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [520:54] ==> public inline fun <T, R> Array<out (Parameter..Parameter?)>.map(transform: ((Parameter..Parameter?)) -> Generator<*>): List<Generator<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.lang.reflect.Parameter..java.lang.reflect.Parameter?)
-    <R> -> Generator<Any?>
+    <R> -> Generator<*>
 
 'generatorStore' @ [521:21] ==> public final val generatorStore: HashMap<Class<*>, Generator<*>> defined in net.corda.testing.RandomRpcUser.Companion[PropertyDescriptorImpl]
 

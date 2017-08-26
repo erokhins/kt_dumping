@@ -78,7 +78,7 @@ Inferred types:
 
 'java' @ [47:62] ==> public val <T> KClass<out NodeProcess.Companion>.java: Class<out NodeProcess.Companion> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Companion
+    <T> -> Captured(out Companion)
 
 'getResource' @ [47:67] ==> public open fun getResource(p0: (String..String?)): (URL..URL?) defined in java.lang.Class[JavaMethodDescriptor]
 

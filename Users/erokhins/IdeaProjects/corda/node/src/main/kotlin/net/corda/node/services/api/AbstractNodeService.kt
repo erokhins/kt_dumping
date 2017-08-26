@@ -12,8 +12,6 @@
 
 'topic' @ [30:42] ==> value-parameter topic: String defined in net.corda.node.services.api.AbstractNodeService.addMessageHandler[ValueParameterDescriptorImpl]
 
-'MessagingService' @ [30:49] ==> public companion object defined in net.corda.node.services.messaging.MessagingService[FakeCallableDescriptorForObject]
-
 'DEFAULT_SESSION_ID' @ [30:66] ==> public final val DEFAULT_SESSION_ID: Long defined in net.corda.node.services.messaging.MessagingService.Companion[PropertyDescriptorImpl]
 
 'message' @ [32:31] ==> value-parameter message: ReceivedMessage defined in net.corda.node.services.api.AbstractNodeService.addMessageHandler.<anonymous>[ValueParameterDescriptorImpl]
@@ -33,8 +31,6 @@ Inferred types:
 'javaClass' @ [35:30] ==> public val <T : Any> R.javaClass: Class<R> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> R
-
-'Unit' @ [35:43] ==> public object Unit defined in kotlin[FakeCallableDescriptorForObject]
 
 'javaClass' @ [35:48] ==> public val <T : Any> Unit.javaClass: Class<Unit> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

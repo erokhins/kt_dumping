@@ -106,7 +106,7 @@ Inferred types:
 
 'amount' @ [51:21] ==> public final val amount: Amount<Currency> defined in net.corda.finance.flows.CashExitFlow[PropertyDescriptorImpl]
 
-'issuedBy' @ [51:28] ==> public infix fun Amount<Currency>.issuedBy(deposit: PartyAndReference): Amount<Issued<Currency>> defined in net.corda.finance[SimpleFunctionDescriptorImpl]
+'issuedBy' @ [51:28] ==> public infix fun Amount<Currency>.issuedBy(deposit: PartyAndReference): Amount<Issued<Currency>> defined in net.corda.finance in file CurrencyUtils.kt[SimpleFunctionDescriptorImpl]
 
 'issuer' @ [51:37] ==> val issuer: PartyAndReference defined in net.corda.finance.flows.CashExitFlow.call[LocalVariableDescriptor]
 

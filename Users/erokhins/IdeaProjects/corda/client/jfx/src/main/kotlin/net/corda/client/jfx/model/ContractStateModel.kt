@@ -1,15 +1,14 @@
-'observable' @ [22:74] ==> public inline fun <reified M : Any, T> observable(noinline observableProperty: (NodeMonitorModel) -> Observable<Vault.Update<ContractState>>): TrackedDelegate.ObservableDelegate<NodeMonitorModel, Vault.Update<ContractState>> defined in net.corda.client.jfx.model[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <reified M : Any> -> NodeMonitorModel
-    <T> -> Update<ContractState>
+'getValue' @ [22:74] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): Observable<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableDelegate[SimpleFunctionDescriptorImpl]
 
 'NodeMonitorModel' @ [22:85] ==> public constructor NodeMonitorModel() defined in net.corda.client.jfx.model.NodeMonitorModel[ClassConstructorDescriptorImpl]
+
+'vaultUpdates' @ [22:103] ==> public final val vaultUpdates: Observable<Vault.Update<ContractState>> defined in net.corda.client.jfx.model.NodeMonitorModel[PropertyDescriptorImpl]
 
 'vaultUpdates' @ [24:71] ==> private final val vaultUpdates: Observable<Vault.Update<ContractState>> defined in net.corda.client.jfx.model.ContractStateModel[PropertyDescriptorImpl]
 
 'map' @ [24:84] ==> public final fun <R : (Any..Any?)> map(p0: (((Vault.Update<ContractState>..Vault.Update<ContractState>?)) -> (Diff<ContractState>..Diff<ContractState>?)..(((Vault.Update<ContractState>..Vault.Update<ContractState>?)) -> (Diff<ContractState>..Diff<ContractState>?))?)): (Observable<(Diff<ContractState>..Diff<ContractState>?)>..Observable<(Diff<ContractState>..Diff<ContractState>?)>?) defined in rx.Observable[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> Diff<ContractState>
+    <R : (Any..Any?)> -> (net.corda.client.jfx.model.Diff<net.corda.core.contracts.ContractState>..net.corda.client.jfx.model.Diff<net.corda.core.contracts.ContractState>?)
 
 'Diff' @ [25:9] ==> public constructor Diff<out T : ContractState>(added: Collection<StateAndRef<ContractState>>, removed: Collection<StateAndRef<ContractState>>) defined in net.corda.client.jfx.model.Diff[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -27,7 +26,7 @@ Inferred types:
 
 'map' @ [27:83] ==> public final fun <R : (Any..Any?)> map(p0: (((Diff<ContractState>..Diff<ContractState>?)) -> (Diff<Cash.State>..Diff<Cash.State>?)..(((Diff<ContractState>..Diff<ContractState>?)) -> (Diff<Cash.State>..Diff<Cash.State>?))?)): (Observable<(Diff<Cash.State>..Diff<Cash.State>?)>..Observable<(Diff<Cash.State>..Diff<Cash.State>?)>?) defined in rx.Observable[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> Diff<State>
+    <R : (Any..Any?)> -> (net.corda.client.jfx.model.Diff<net.corda.finance.contracts.asset.Cash.State>..net.corda.client.jfx.model.Diff<net.corda.finance.contracts.asset.Cash.State>?)
 
 'Diff' @ [28:9] ==> public constructor Diff<out T : ContractState>(added: Collection<StateAndRef<Cash.State>>, removed: Collection<StateAndRef<Cash.State>>) defined in net.corda.client.jfx.model.Diff[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -47,14 +46,14 @@ Inferred types:
 
 'cashStatesDiff' @ [30:63] ==> private final val cashStatesDiff: Observable<Diff<Cash.State>> defined in net.corda.client.jfx.model.ContractStateModel[PropertyDescriptorImpl]
 
-'fold' @ [30:78] ==> public fun <T, R> Observable<Diff<Cash.State>>.fold(accumulator: (ObservableList<StateAndRef<Cash.State>>..ObservableList<StateAndRef<Cash.State>>?), folderFun: ((ObservableList<StateAndRef<Cash.State>>..ObservableList<StateAndRef<Cash.State>>?), Diff<Cash.State>) -> Unit): (ObservableList<StateAndRef<Cash.State>>..ObservableList<StateAndRef<Cash.State>>?) defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
+'fold' @ [30:78] ==> public fun <T, R> Observable<Diff<Cash.State>>.fold(accumulator: (ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>..ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>?), folderFun: ((ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>..ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>?), Diff<Cash.State>) -> Unit): (ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>..ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>?) defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> Diff<State>
-    <R> -> (javafx.collections.ObservableList<net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>>..javafx.collections.ObservableList<net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>>?)
+    <R> -> (javafx.collections.ObservableList<(net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>..net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>?)>..javafx.collections.ObservableList<(net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>..net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>?)>?)
 
 'observableArrayList' @ [30:97] ==> public open fun <E : (Any..Any?)> observableArrayList(): (ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>..ObservableList<(StateAndRef<Cash.State>..StateAndRef<Cash.State>?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> StateAndRef<State>
+    <E : (Any..Any?)> -> (net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>..net.corda.core.contracts.StateAndRef<net.corda.finance.contracts.asset.Cash.State>?)
 
 'list' @ [31:9] ==> value-parameter list: MutableList<StateAndRef<Cash.State>> defined in net.corda.client.jfx.model.ContractStateModel.cashStates.<anonymous>[ValueParameterDescriptorImpl]
 

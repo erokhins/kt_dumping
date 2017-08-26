@@ -24,7 +24,7 @@ Inferred types:
 Inferred types:
     <B> -> SelfIssueCommand
 
-'generateIssue' @ [43:17] ==> public fun generateIssue(max: Long, currency: Currency, notary: Party, possibleRecipients: List<Party>, anonymous: Boolean): Generator<CashIssueAndPaymentFlow.IssueAndPaymentRequest> defined in net.corda.loadtest.tests[SimpleFunctionDescriptorImpl]
+'generateIssue' @ [43:17] ==> public fun generateIssue(max: Long, currency: Currency, notary: Party, possibleRecipients: List<Party>, anonymous: Boolean): Generator<CashIssueAndPaymentFlow.IssueAndPaymentRequest> defined in net.corda.loadtest.tests in file GenerateHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'USD' @ [43:37] ==> @field:JvmField public val USD: Currency defined in net.corda.finance[DeserializedPropertyDescriptor]
 
@@ -82,8 +82,6 @@ Inferred types:
 
 'isEmpty' @ [49:24] ==> public abstract fun isEmpty(): Boolean defined in kotlin.collections.List[DeserializedSimpleFunctionDescriptor]
 
-'Generator' @ [50:21] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
-
 'sequence' @ [50:31] ==> public final fun <A> sequence(generators: List<Generator<SelfIssueCommand>>): Generator<List<SelfIssueCommand>> defined in net.corda.client.mock.Generator.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <A> -> SelfIssueCommand
@@ -93,8 +91,6 @@ Inferred types:
     <T> -> Generator<SelfIssueCommand>
 
 'generateIssue' @ [50:47] ==> val generateIssue: Generator<SelfIssueCommand> defined in net.corda.loadtest.tests.selfIssueTest.<anonymous>[LocalVariableDescriptor]
-
-'Generator' @ [52:21] ==> public companion object defined in net.corda.client.mock.Generator[FakeCallableDescriptorForObject]
 
 'pure' @ [52:31] ==> public final fun <A> pure(value: List<SelfIssueCommand>): Generator<List<SelfIssueCommand>> defined in net.corda.client.mock.Generator.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -151,6 +147,8 @@ Inferred types:
     <T : Any> -> Result
     <A> -> IssueAndPaymentRequest
     <reified R : FlowLogic<T>> -> CashIssueAndPaymentFlow
+
+'CashIssueAndPaymentFlow' @ [66:53] ==> public constructor CashIssueAndPaymentFlow(request: CashIssueAndPaymentFlow.IssueAndPaymentRequest) defined in net.corda.finance.flows.CashIssueAndPaymentFlow[DeserializedClassConstructorDescriptor]
 
 'request' @ [66:78] ==> val request: CashIssueAndPaymentFlow.IssueAndPaymentRequest defined in net.corda.loadtest.tests.selfIssueTest.<anonymous>[LocalVariableDescriptor]
 
@@ -251,9 +249,9 @@ Inferred types:
 
 'getInstance' @ [87:48] ==> public open fun getInstance(): (ObjectDiffer..ObjectDiffer?) defined in de.danielbechler.diff.ObjectDifferFactory[JavaMethodDescriptor]
 
-'compare' @ [87:62] ==> public open fun <T : (Any..Any?)> compare(p0: (Map<AbstractParty, Long>..Map<AbstractParty, Long>?), p1: (Map<AbstractParty, Long>..Map<AbstractParty, Long>?)): (Node..Node?) defined in de.danielbechler.diff.ObjectDiffer[JavaMethodDescriptor]
+'compare' @ [87:62] ==> public open fun <T : (Any..Any?)> compare(p0: (Map<(AbstractParty..AbstractParty?), (Long..Long?)>..Map<AbstractParty, Long>?), p1: (Map<(AbstractParty..AbstractParty?), (Long..Long?)>..Map<AbstractParty, Long>?)): (Node..Node?) defined in de.danielbechler.diff.ObjectDiffer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Map<AbstractParty, Long>
+    <T : (Any..Any?)> -> (kotlin.collections.Map<(net.corda.core.identity.AbstractParty..net.corda.core.identity.AbstractParty?), (kotlin.Long..kotlin.Long?)>..kotlin.collections.Map<net.corda.core.identity.AbstractParty, kotlin.Long>?)
 
 'previousState' @ [87:70] ==> value-parameter previousState: SelfIssueState? defined in net.corda.loadtest.tests.selfIssueTest.<anonymous>[ValueParameterDescriptorImpl]
 

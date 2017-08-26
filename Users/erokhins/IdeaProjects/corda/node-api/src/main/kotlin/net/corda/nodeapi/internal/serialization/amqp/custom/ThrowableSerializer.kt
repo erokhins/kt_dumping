@@ -49,13 +49,13 @@ Inferred types:
 
 'obj' @ [16:27] ==> value-parameter obj: Throwable defined in net.corda.nodeapi.internal.serialization.amqp.custom.ThrowableSerializer.toProxy[ValueParameterDescriptorImpl]
 
-'constructorForDeserialization' @ [19:35] ==> internal fun constructorForDeserialization(type: Type): KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'constructorForDeserialization' @ [19:35] ==> internal fun constructorForDeserialization(type: Type): KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'obj' @ [19:65] ==> value-parameter obj: Throwable defined in net.corda.nodeapi.internal.serialization.amqp.custom.ThrowableSerializer.toProxy[ValueParameterDescriptorImpl]
 
-'javaClass' @ [19:69] ==> public val <T : Any> {Throwable & CordaThrowable}.javaClass: Class<{Throwable & CordaThrowable}> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [19:69] ==> public val <T : Any> Any.javaClass: Class<Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> {Throwable & CordaThrowable}
+    <T : Any> -> Any
 
 'propertiesForSerialization' @ [20:29] ==> internal fun <T : Any> propertiesForSerialization(kotlinConstructor: KFunction<Any>?, type: Type, factory: SerializerFactory): Collection<PropertySerializer> defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -65,9 +65,9 @@ Inferred types:
 
 'obj' @ [20:69] ==> value-parameter obj: Throwable defined in net.corda.nodeapi.internal.serialization.amqp.custom.ThrowableSerializer.toProxy[ValueParameterDescriptorImpl]
 
-'javaClass' @ [20:73] ==> public val <T : Any> {Throwable & CordaThrowable}.javaClass: Class<{Throwable & CordaThrowable}> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [20:73] ==> public val <T : Any> Any.javaClass: Class<Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> {Throwable & CordaThrowable}
+    <T : Any> -> Any
 
 'factory' @ [20:84] ==> protected final val factory: SerializerFactory defined in net.corda.nodeapi.internal.serialization.amqp.custom.ThrowableSerializer[PropertyDescriptorImpl]
 
@@ -157,7 +157,7 @@ Inferred types:
 
 'clazz' @ [39:110] ==> val clazz: (Class<*>..Class<*>?) defined in net.corda.nodeapi.internal.serialization.amqp.custom.ThrowableSerializer.fromProxy[LocalVariableDescriptor]
 
-'constructorForDeserialization' @ [40:35] ==> internal fun constructorForDeserialization(type: Type): KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'constructorForDeserialization' @ [40:35] ==> internal fun constructorForDeserialization(type: Type): KFunction<Any>? defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'clazz' @ [40:65] ==> val clazz: (Class<*>..Class<*>?) defined in net.corda.nodeapi.internal.serialization.amqp.custom.ThrowableSerializer.fromProxy[LocalVariableDescriptor]
 

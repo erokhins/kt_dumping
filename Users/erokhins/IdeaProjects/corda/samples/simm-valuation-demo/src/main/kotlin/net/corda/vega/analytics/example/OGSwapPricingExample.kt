@@ -20,7 +20,7 @@
 
 'of' @ [84:37] ==> public open fun <E : (Any..Any?)> of(p0: (Column..Column?), p1: (Column..Column?), p2: (Column..Column?), p3: (Column..Column?), p4: (Column..Column?), p5: (Column..Column?), p6: (Column..Column?), p7: (Column..Column?), p8: (Column..Column?)): (ImmutableList<(Column..Column?)>..ImmutableList<(Column..Column?)>?) defined in com.google.common.collect.ImmutableList[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Column
+    <E : (Any..Any?)> -> (com.opengamma.strata.calc.Column..com.opengamma.strata.calc.Column?)
 
 'of' @ [85:24] ==> public open fun of(p0: (Measure..Measure?)): (Column..Column?) defined in com.opengamma.strata.calc.Column[JavaMethodDescriptor]
 
@@ -126,7 +126,7 @@ Inferred types:
 
 'of' @ [124:30] ==> @SafeVarargs public open fun <E : (Any..Any?)> of(p0: (Trade..Trade?), p1: (Trade..Trade?), p2: (Trade..Trade?), p3: (Trade..Trade?), p4: (Trade..Trade?), p5: (Trade..Trade?), p6: (Trade..Trade?), p7: (Trade..Trade?), p8: (Trade..Trade?), p9: (Trade..Trade?), p10: (Trade..Trade?), p11: (Trade..Trade?), vararg p12: (Trade..Trade?)): (ImmutableList<(Trade..Trade?)>..ImmutableList<(Trade..Trade?)>?) defined in com.google.common.collect.ImmutableList[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Trade
+    <E : (Any..Any?)> -> (com.opengamma.strata.product.Trade..com.opengamma.strata.product.Trade?)
 
 'createVanillaFixedVsLibor3mSwap' @ [125:17] ==> private final fun createVanillaFixedVsLibor3mSwap(): Trade defined in net.corda.vega.analytics.example.SwapPricingExample[SimpleFunctionDescriptorImpl]
 
@@ -168,7 +168,7 @@ Inferred types:
 
 'addAttribute' @ [148:18] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [148:50] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -342,7 +342,7 @@ Inferred types:
 
 'addAttribute' @ [203:132] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [203:164] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -514,7 +514,7 @@ Inferred types:
 
 'addAttribute' @ [231:26] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [231:58] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -538,7 +538,7 @@ Inferred types:
 
 'addAttribute' @ [240:18] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [240:50] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -572,7 +572,7 @@ Inferred types:
 
 'addAttribute' @ [255:18] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [255:50] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -742,7 +742,7 @@ Inferred types:
 
 'addAttribute' @ [299:18] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [299:50] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -906,7 +906,7 @@ Inferred types:
 
 'addAttribute' @ [312:132] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [312:164] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -1082,7 +1082,7 @@ Inferred types:
 
 'addAttribute' @ [323:132] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [323:164] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -1258,7 +1258,7 @@ Inferred types:
 
 'addAttribute' @ [334:132] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [334:164] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -1422,7 +1422,7 @@ Inferred types:
 
 'addAttribute' @ [345:133] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [345:165] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -1582,7 +1582,7 @@ Inferred types:
 
 'addAttribute' @ [356:133] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [356:165] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -1746,7 +1746,7 @@ Inferred types:
 
 'addAttribute' @ [367:133] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [367:165] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -1906,7 +1906,7 @@ Inferred types:
 
 'addAttribute' @ [378:133] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [378:165] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -2070,7 +2070,7 @@ Inferred types:
 
 'addAttribute' @ [387:133] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [387:165] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -2226,7 +2226,7 @@ Inferred types:
 
 'addAttribute' @ [396:133] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [396:165] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 
@@ -2406,7 +2406,7 @@ Inferred types:
 
 'addAttribute' @ [405:133] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [405:165] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 

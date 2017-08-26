@@ -26,7 +26,7 @@ Inferred types:
 
 'of' @ [17:45] ==> public open fun <E : (Any..Any?)> of(p0: (Party..Party?)): (ImmutableSet<(Party..Party?)>..ImmutableSet<(Party..Party?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Party
+    <E : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
 'perceivable' @ [17:49] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.signingParties[ValueParameterDescriptorImpl]
 
@@ -34,15 +34,15 @@ Inferred types:
 
 'union' @ [18:35] ==> public open fun <E : (Any..Any?)> union(p0: (MutableSet<out (Party..Party?)>..Set<(Party..Party?)>?), p1: (MutableSet<out (Party..Party?)>..Set<(Party..Party?)>?)): (Sets.SetView<(Party..Party?)>..Sets.SetView<(Party..Party?)>?) defined in com.google.common.collect.Sets[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Party
+    <E : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
-'signingParties' @ [18:42] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signingParties' @ [18:42] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'perceivable' @ [18:58] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.signingParties[ValueParameterDescriptorImpl]
 
 'left' @ [18:70] ==> public final val left: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.PerceivableAnd[PropertyDescriptorImpl]
 
-'signingParties' @ [18:78] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signingParties' @ [18:78] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'perceivable' @ [18:93] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.signingParties[ValueParameterDescriptorImpl]
 
@@ -52,15 +52,15 @@ Inferred types:
 
 'union' @ [19:34] ==> public open fun <E : (Any..Any?)> union(p0: (MutableSet<out (Party..Party?)>..Set<(Party..Party?)>?), p1: (MutableSet<out (Party..Party?)>..Set<(Party..Party?)>?)): (Sets.SetView<(Party..Party?)>..Sets.SetView<(Party..Party?)>?) defined in com.google.common.collect.Sets[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Party
+    <E : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
-'signingParties' @ [19:41] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signingParties' @ [19:41] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'perceivable' @ [19:57] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.signingParties[ValueParameterDescriptorImpl]
 
 'left' @ [19:69] ==> public final val left: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.PerceivableOr[PropertyDescriptorImpl]
 
-'signingParties' @ [19:77] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signingParties' @ [19:77] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'perceivable' @ [19:92] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.signingParties[ValueParameterDescriptorImpl]
 
@@ -74,7 +74,7 @@ Inferred types:
 
 'of' @ [21:42] ==> public open fun <E : (Any..Any?)> of(p0: (Party..Party?)): (ImmutableSet<(Party..Party?)>..ImmutableSet<(Party..Party?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Party
+    <E : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
 'perceivable' @ [21:46] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.signingParties[ValueParameterDescriptorImpl]
 
@@ -112,7 +112,7 @@ Inferred types:
 
 'of' @ [29:43] ==> public open fun <E : (Any..Any?)> of(p0: (PublicKey..PublicKey?)): (ImmutableSet<(PublicKey..PublicKey?)>..ImmutableSet<(PublicKey..PublicKey?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> PublicKey
+    <E : (Any..Any?)> -> (java.security.PublicKey..java.security.PublicKey?)
 
 'arrangement' @ [29:46] ==> value-parameter arrangement: Arrangement defined in net.corda.finance.contracts.universal.liablePartiesVisitor[ValueParameterDescriptorImpl]
 
@@ -124,20 +124,20 @@ Inferred types:
 
 'arrangements' @ [31:29] ==> public final val arrangements: Set<Arrangement> defined in net.corda.finance.contracts.universal.And[PropertyDescriptorImpl]
 
-'fold' @ [31:42] ==> public inline fun <T, R> Iterable<Arrangement>.fold(initial: (ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?), operation: ((ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?), Arrangement) -> (ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?)): (ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [31:42] ==> public inline fun <T, R> Iterable<Arrangement>.fold(initial: (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?), operation: (acc: (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?), Arrangement) -> (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?)): (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Arrangement
-    <R> -> (com.google.common.collect.ImmutableSet.Builder<java.security.PublicKey>..com.google.common.collect.ImmutableSet.Builder<java.security.PublicKey>?)
+    <R> -> (com.google.common.collect.ImmutableSet.Builder<(java.security.PublicKey..java.security.PublicKey?)>..com.google.common.collect.ImmutableSet.Builder<(java.security.PublicKey..java.security.PublicKey?)>?)
 
 'builder' @ [31:60] ==> public open fun <E : (Any..Any?)> builder(): (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
     <E : (Any..Any?)> -> PublicKey
 
-'builder' @ [31:98] ==> value-parameter builder: (ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?) defined in net.corda.finance.contracts.universal.liablePartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
+'builder' @ [31:98] ==> value-parameter builder: (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?) defined in net.corda.finance.contracts.universal.liablePartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
 
 'addAll' @ [31:106] ==> @CanIgnoreReturnValue public open fun addAll(p0: (MutableIterable<(PublicKey..PublicKey?)>..Iterable<(PublicKey..PublicKey?)>?)): (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?) defined in com.google.common.collect.ImmutableSet.Builder[JavaMethodDescriptor]
 
-'liablePartiesVisitor' @ [31:113] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'liablePartiesVisitor' @ [31:113] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'k' @ [31:134] ==> value-parameter k: Arrangement defined in net.corda.finance.contracts.universal.liablePartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -147,26 +147,26 @@ Inferred types:
 
 'actions' @ [33:29] ==> public final val actions: Set<Action> defined in net.corda.finance.contracts.universal.Actions[PropertyDescriptorImpl]
 
-'fold' @ [33:37] ==> public inline fun <T, R> Iterable<Action>.fold(initial: (ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?), operation: ((ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?), Action) -> (ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?)): (ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [33:37] ==> public inline fun <T, R> Iterable<Action>.fold(initial: (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?), operation: (acc: (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?), Action) -> (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?)): (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Action
-    <R> -> (com.google.common.collect.ImmutableSet.Builder<java.security.PublicKey>..com.google.common.collect.ImmutableSet.Builder<java.security.PublicKey>?)
+    <R> -> (com.google.common.collect.ImmutableSet.Builder<(java.security.PublicKey..java.security.PublicKey?)>..com.google.common.collect.ImmutableSet.Builder<(java.security.PublicKey..java.security.PublicKey?)>?)
 
 'builder' @ [33:55] ==> public open fun <E : (Any..Any?)> builder(): (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
     <E : (Any..Any?)> -> PublicKey
 
-'builder' @ [33:93] ==> value-parameter builder: (ImmutableSet.Builder<PublicKey>..ImmutableSet.Builder<PublicKey>?) defined in net.corda.finance.contracts.universal.liablePartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
+'builder' @ [33:93] ==> value-parameter builder: (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?) defined in net.corda.finance.contracts.universal.liablePartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
 
 'addAll' @ [33:101] ==> @CanIgnoreReturnValue public open fun addAll(p0: (MutableIterable<(PublicKey..PublicKey?)>..Iterable<(PublicKey..PublicKey?)>?)): (ImmutableSet.Builder<(PublicKey..PublicKey?)>..ImmutableSet.Builder<(PublicKey..PublicKey?)>?) defined in com.google.common.collect.ImmutableSet.Builder[JavaMethodDescriptor]
 
-'liablePartiesVisitor' @ [33:108] ==> private fun liablePartiesVisitor(action: Action): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'liablePartiesVisitor' @ [33:108] ==> private fun liablePartiesVisitor(action: Action): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'k' @ [33:129] ==> value-parameter k: Action defined in net.corda.finance.contracts.universal.liablePartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
 
 'build' @ [33:136] ==> public open fun build(): (ImmutableSet<(PublicKey..PublicKey?)>..ImmutableSet<(PublicKey..PublicKey?)>?) defined in com.google.common.collect.ImmutableSet.Builder[JavaMethodDescriptor]
 
-'liablePartiesVisitor' @ [34:27] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'liablePartiesVisitor' @ [34:27] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'arrangement' @ [34:48] ==> value-parameter arrangement: Arrangement defined in net.corda.finance.contracts.universal.liablePartiesVisitor[ValueParameterDescriptorImpl]
 
@@ -182,7 +182,7 @@ Inferred types:
 
 'arrangement' @ [36:71] ==> value-parameter arrangement: Arrangement defined in net.corda.finance.contracts.universal.liablePartiesVisitor[ValueParameterDescriptorImpl]
 
-'signingParties' @ [40:18] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signingParties' @ [40:18] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [40:33] ==> value-parameter action: Action defined in net.corda.finance.contracts.universal.liablePartiesVisitor[ValueParameterDescriptorImpl]
 
@@ -199,7 +199,7 @@ Inferred types:
 
 'size' @ [41:23] ==> public abstract val size: Int defined in com.google.common.collect.ImmutableSet[JavaPropertyDescriptor]
 
-'liablePartiesVisitor' @ [42:9] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'liablePartiesVisitor' @ [42:9] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [42:30] ==> value-parameter action: Action defined in net.corda.finance.contracts.universal.liablePartiesVisitor[ValueParameterDescriptorImpl]
 
@@ -207,9 +207,9 @@ Inferred types:
 
 'difference' @ [44:14] ==> public open fun <E : (Any..Any?)> difference(p0: (MutableSet<(PublicKey..PublicKey?)>..Set<(PublicKey..PublicKey?)>?), p1: (MutableSet<*>..Set<*>?)): (Sets.SetView<(PublicKey..PublicKey?)>..Sets.SetView<(PublicKey..PublicKey?)>?) defined in com.google.common.collect.Sets[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> PublicKey
+    <E : (Any..Any?)> -> (java.security.PublicKey..java.security.PublicKey?)
 
-'liablePartiesVisitor' @ [44:25] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'liablePartiesVisitor' @ [44:25] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [44:46] ==> value-parameter action: Action defined in net.corda.finance.contracts.universal.liablePartiesVisitor[ValueParameterDescriptorImpl]
 
@@ -217,7 +217,7 @@ Inferred types:
 
 'of' @ [44:80] ==> public open fun <E : (Any..Any?)> of(p0: (Party..Party?)): (ImmutableSet<(Party..Party?)>..ImmutableSet<(Party..Party?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Party
+    <E : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
 'actors' @ [44:83] ==> val actors: ImmutableSet<Party> defined in net.corda.finance.contracts.universal.liablePartiesVisitor[LocalVariableDescriptor]
 
@@ -227,21 +227,21 @@ Inferred types:
 
 'immutableCopy' @ [44:101] ==> public open fun immutableCopy(): (ImmutableSet<(PublicKey..PublicKey?)>..ImmutableSet<(PublicKey..PublicKey?)>?) defined in com.google.common.collect.Sets.SetView[JavaMethodDescriptor]
 
-'liablePartiesVisitor' @ [48:60] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'liablePartiesVisitor' @ [48:60] ==> private fun liablePartiesVisitor(arrangement: Arrangement): ImmutableSet<PublicKey> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'contract' @ [48:81] ==> value-parameter contract: Arrangement defined in net.corda.finance.contracts.universal.liableParties[ValueParameterDescriptorImpl]
 
 'union' @ [51:10] ==> public open fun <E : (Any..Any?)> union(p0: (MutableSet<out (Party..Party?)>..Set<(Party..Party?)>?), p1: (MutableSet<out (Party..Party?)>..Set<(Party..Party?)>?)): (Sets.SetView<(Party..Party?)>..Sets.SetView<(Party..Party?)>?) defined in com.google.common.collect.Sets[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Party
+    <E : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
-'involvedPartiesVisitor' @ [51:16] ==> private fun involvedPartiesVisitor(arrangement: Arrangement): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'involvedPartiesVisitor' @ [51:16] ==> private fun involvedPartiesVisitor(arrangement: Arrangement): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [51:39] ==> value-parameter action: Action defined in net.corda.finance.contracts.universal.involvedPartiesVisitor[ValueParameterDescriptorImpl]
 
 'arrangement' @ [51:46] ==> public final val arrangement: Arrangement defined in net.corda.finance.contracts.universal.Action[PropertyDescriptorImpl]
 
-'signingParties' @ [51:60] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signingParties' @ [51:60] ==> private fun signingParties(perceivable: Perceivable<Boolean>): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [51:75] ==> value-parameter action: Action defined in net.corda.finance.contracts.universal.involvedPartiesVisitor[ValueParameterDescriptorImpl]
 
@@ -271,7 +271,7 @@ Inferred types:
 
 'of' @ [56:43] ==> public open fun <E : (Any..Any?)> of(p0: (Party..Party?), p1: (Party..Party?)): (ImmutableSet<(Party..Party?)>..ImmutableSet<(Party..Party?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> Party
+    <E : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
 'arrangement' @ [56:46] ==> value-parameter arrangement: Arrangement defined in net.corda.finance.contracts.universal.involvedPartiesVisitor[ValueParameterDescriptorImpl]
 
@@ -281,7 +281,7 @@ Inferred types:
 
 'to' @ [56:76] ==> public final val to: Party defined in net.corda.finance.contracts.universal.Obligation[PropertyDescriptorImpl]
 
-'involvedPartiesVisitor' @ [57:27] ==> private fun involvedPartiesVisitor(arrangement: Arrangement): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'involvedPartiesVisitor' @ [57:27] ==> private fun involvedPartiesVisitor(arrangement: Arrangement): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'arrangement' @ [57:50] ==> value-parameter arrangement: Arrangement defined in net.corda.finance.contracts.universal.involvedPartiesVisitor[ValueParameterDescriptorImpl]
 
@@ -295,20 +295,20 @@ Inferred types:
 
 'arrangements' @ [60:29] ==> public final val arrangements: Set<Arrangement> defined in net.corda.finance.contracts.universal.And[PropertyDescriptorImpl]
 
-'fold' @ [60:42] ==> public inline fun <T, R> Iterable<Arrangement>.fold(initial: (ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?), operation: ((ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?), Arrangement) -> (ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?)): (ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [60:42] ==> public inline fun <T, R> Iterable<Arrangement>.fold(initial: (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?), operation: (acc: (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?), Arrangement) -> (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?)): (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Arrangement
-    <R> -> (com.google.common.collect.ImmutableSet.Builder<net.corda.core.identity.Party>..com.google.common.collect.ImmutableSet.Builder<net.corda.core.identity.Party>?)
+    <R> -> (com.google.common.collect.ImmutableSet.Builder<(net.corda.core.identity.Party..net.corda.core.identity.Party?)>..com.google.common.collect.ImmutableSet.Builder<(net.corda.core.identity.Party..net.corda.core.identity.Party?)>?)
 
 'builder' @ [60:60] ==> public open fun <E : (Any..Any?)> builder(): (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
     <E : (Any..Any?)> -> Party
 
-'builder' @ [60:94] ==> value-parameter builder: (ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?) defined in net.corda.finance.contracts.universal.involvedPartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
+'builder' @ [60:94] ==> value-parameter builder: (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?) defined in net.corda.finance.contracts.universal.involvedPartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
 
 'addAll' @ [60:102] ==> @CanIgnoreReturnValue public open fun addAll(p0: (MutableIterable<(Party..Party?)>..Iterable<(Party..Party?)>?)): (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?) defined in com.google.common.collect.ImmutableSet.Builder[JavaMethodDescriptor]
 
-'involvedPartiesVisitor' @ [60:109] ==> private fun involvedPartiesVisitor(arrangement: Arrangement): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'involvedPartiesVisitor' @ [60:109] ==> private fun involvedPartiesVisitor(arrangement: Arrangement): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'k' @ [60:132] ==> value-parameter k: Arrangement defined in net.corda.finance.contracts.universal.involvedPartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -318,20 +318,20 @@ Inferred types:
 
 'actions' @ [62:29] ==> public final val actions: Set<Action> defined in net.corda.finance.contracts.universal.Actions[PropertyDescriptorImpl]
 
-'fold' @ [62:37] ==> public inline fun <T, R> Iterable<Action>.fold(initial: (ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?), operation: ((ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?), Action) -> (ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?)): (ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [62:37] ==> public inline fun <T, R> Iterable<Action>.fold(initial: (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?), operation: (acc: (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?), Action) -> (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?)): (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Action
-    <R> -> (com.google.common.collect.ImmutableSet.Builder<net.corda.core.identity.Party>..com.google.common.collect.ImmutableSet.Builder<net.corda.core.identity.Party>?)
+    <R> -> (com.google.common.collect.ImmutableSet.Builder<(net.corda.core.identity.Party..net.corda.core.identity.Party?)>..com.google.common.collect.ImmutableSet.Builder<(net.corda.core.identity.Party..net.corda.core.identity.Party?)>?)
 
 'builder' @ [62:55] ==> public open fun <E : (Any..Any?)> builder(): (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?) defined in com.google.common.collect.ImmutableSet[JavaMethodDescriptor]
 Inferred types:
     <E : (Any..Any?)> -> Party
 
-'builder' @ [62:89] ==> value-parameter builder: (ImmutableSet.Builder<Party>..ImmutableSet.Builder<Party>?) defined in net.corda.finance.contracts.universal.involvedPartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
+'builder' @ [62:89] ==> value-parameter builder: (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?) defined in net.corda.finance.contracts.universal.involvedPartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
 
 'addAll' @ [62:97] ==> @CanIgnoreReturnValue public open fun addAll(p0: (MutableIterable<(Party..Party?)>..Iterable<(Party..Party?)>?)): (ImmutableSet.Builder<(Party..Party?)>..ImmutableSet.Builder<(Party..Party?)>?) defined in com.google.common.collect.ImmutableSet.Builder[JavaMethodDescriptor]
 
-'involvedPartiesVisitor' @ [62:104] ==> private fun involvedPartiesVisitor(action: Action): Set<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'involvedPartiesVisitor' @ [62:104] ==> private fun involvedPartiesVisitor(action: Action): Set<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'k' @ [62:127] ==> value-parameter k: Action defined in net.corda.finance.contracts.universal.involvedPartiesVisitor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -343,7 +343,7 @@ Inferred types:
 
 'toString' @ [63:64] ==> public open fun toString(): String defined in net.corda.finance.contracts.universal.Arrangement[DeserializedSimpleFunctionDescriptor]
 
-'involvedPartiesVisitor' @ [67:61] ==> private fun involvedPartiesVisitor(arrangement: Arrangement): ImmutableSet<Party> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'involvedPartiesVisitor' @ [67:61] ==> private fun involvedPartiesVisitor(arrangement: Arrangement): ImmutableSet<Party> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'arrangement' @ [67:84] ==> value-parameter arrangement: Arrangement defined in net.corda.finance.contracts.universal.involvedParties[ValueParameterDescriptorImpl]
 
@@ -376,13 +376,13 @@ Inferred types:
 
 'from' @ [72:42] ==> value-parameter from: Party defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
-'signedBy' @ [73:21] ==> public fun signedBy(actor: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'signedBy' @ [73:21] ==> public fun signedBy(actor: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Perceivable.kt[SimpleFunctionDescriptorImpl]
 
 'to' @ [73:30] ==> value-parameter to: Party defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
 'perceivable' @ [75:21] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
-'replaceParty' @ [76:34] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'replaceParty' @ [76:34] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'perceivable' @ [76:47] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
@@ -392,7 +392,7 @@ Inferred types:
 
 'to' @ [76:71] ==> value-parameter to: Party defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
-'replaceParty' @ [76:79] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'replaceParty' @ [76:79] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'perceivable' @ [76:92] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
@@ -402,7 +402,7 @@ Inferred types:
 
 'to' @ [76:117] ==> value-parameter to: Party defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
-'replaceParty' @ [77:33] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'replaceParty' @ [77:33] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'perceivable' @ [77:46] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
@@ -412,7 +412,7 @@ Inferred types:
 
 'to' @ [77:70] ==> value-parameter to: Party defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
-'replaceParty' @ [77:77] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'replaceParty' @ [77:77] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'perceivable' @ [77:90] ==> value-parameter perceivable: Perceivable<Boolean> defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
@@ -436,7 +436,7 @@ Inferred types:
 
 'name' @ [83:23] ==> public final val name: String defined in net.corda.finance.contracts.universal.Action[PropertyDescriptorImpl]
 
-'replaceParty' @ [83:29] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'replaceParty' @ [83:29] ==> public fun replaceParty(perceivable: Perceivable<Boolean>, from: Party, to: Party): Perceivable<Boolean> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'action' @ [83:42] ==> value-parameter action: Action defined in net.corda.finance.contracts.universal.replaceParty[ValueParameterDescriptorImpl]
 
@@ -652,10 +652,10 @@ Inferred types:
     is Zero -> mapOf()
     is Obligation -> mapOf()
     is Actions -> arrangement.actions.map { it.name to it }.toMap()
-    is And -> arrangement.arrangements.map { actions(it) }.fold(mutableMapOf()) { m: MutableMap<String, Action>, x ->
+    is And -> arrangement.arrangements.map { actions(it) }.fold(mutableMapOf()) { m, x ->
         x.forEach { entry ->
             val (s, action) = entry
-            m.set(s, action)
+            m[s] = action
         }
         m
     }
@@ -706,11 +706,11 @@ Inferred types:
     <T> -> Arrangement
     <R> -> Map<String, Action>
 
-'actions' @ [116:46] ==> public fun actions(arrangement: Arrangement): Map<String, Action> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'actions' @ [116:46] ==> public fun actions(arrangement: Arrangement): Map<String, Action> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [116:54] ==> value-parameter it: Arrangement defined in net.corda.finance.contracts.universal.actions.<anonymous>[ValueParameterDescriptorImpl]
 
-'fold' @ [116:60] ==> public inline fun <T, R> Iterable<Map<String, Action>>.fold(initial: MutableMap<String, Action>, operation: (MutableMap<String, Action>, Map<String, Action>) -> MutableMap<String, Action>): MutableMap<String, Action> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [116:60] ==> public inline fun <T, R> Iterable<Map<String, Action>>.fold(initial: MutableMap<String, Action>, operation: (acc: MutableMap<String, Action>, Map<String, Action>) -> MutableMap<String, Action>): MutableMap<String, Action> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Map<String, Action>
     <R> -> MutableMap<String, Action>
@@ -741,14 +741,9 @@ Inferred types:
 
 'm' @ [119:13] ==> value-parameter m: MutableMap<String, Action> defined in net.corda.finance.contracts.universal.actions.<anonymous>[ValueParameterDescriptorImpl]
 
-'set' @ [119:15] ==> @InlineOnly public operator inline fun <K, V> MutableMap<String, Action>.set(key: String, value: Action): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <K> -> String
-    <V> -> Action
+'s' @ [119:15] ==> val s: String defined in net.corda.finance.contracts.universal.actions.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'s' @ [119:19] ==> val s: String defined in net.corda.finance.contracts.universal.actions.<anonymous>.<anonymous>[LocalVariableDescriptor]
-
-'action' @ [119:22] ==> val action: Action defined in net.corda.finance.contracts.universal.actions.<anonymous>.<anonymous>[LocalVariableDescriptor]
+'action' @ [119:20] ==> val action: Action defined in net.corda.finance.contracts.universal.actions.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'm' @ [121:9] ==> value-parameter m: MutableMap<String, Action> defined in net.corda.finance.contracts.universal.actions.<anonymous>[ValueParameterDescriptorImpl]
 

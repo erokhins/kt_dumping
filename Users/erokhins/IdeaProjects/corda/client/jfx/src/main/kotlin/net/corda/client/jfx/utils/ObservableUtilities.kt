@@ -1,7 +1,7 @@
-'map' @ [32:90] ==> public final fun <T : (Any..Any?), U : (Any..Any?)> map(p0: (ObservableValue<out ({Any & A}..A?)>..ObservableValue<out ({Any & A}..A?)>?), p1: (((Nothing..Nothing?)) -> (B..B?)..(((Nothing..Nothing?)) -> (B..B?))?)): (MonadicBinding<(B..B?)>..MonadicBinding<(B..B?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
+'map' @ [32:90] ==> public final fun <T : (Any..Any?), U : (Any..Any?)> map(p0: (ObservableValue<out A>..ObservableValue<out A>?), p1: (Function1<*, (B..B?)>..Function1<*, (B..B?)>?)): (MonadicBinding<(B..B?)>..MonadicBinding<(B..B?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ({Any & A}..A)
-    <U : (Any..Any?)> -> B
+    <T : (Any..Any?)> -> Captured(out A)
+    <U : (Any..Any?)> -> (B..B?)
 
 'this' @ [32:94] ==> <this> defined in net.corda.client.jfx.utils.map[ReceiverParameterDescriptorImpl]
 
@@ -17,10 +17,10 @@ Inferred types:
 
 'cached' @ [42:9] ==> value-parameter cached: Boolean = ... defined in net.corda.client.jfx.utils.map[ValueParameterDescriptorImpl]
 
-'MappedList' @ [43:16] ==> public constructor MappedList<A, B>(list: ObservableList<out ({Any & A}..A)>, function: (Nothing) -> B) defined in net.corda.client.jfx.utils.MappedList[ClassConstructorDescriptorImpl]
+'MappedList' @ [43:16] ==> public constructor MappedList<A, B>(list: ObservableList<out A>, function: Function1<*, (B..B?)>) defined in net.corda.client.jfx.utils.MappedList[ClassConstructorDescriptorImpl]
 Inferred types:
-    <A> -> ({Any & A}..A)
-    <B> -> B
+    <A> -> Captured(out A)
+    <B> -> (B..B?)
 
 'this' @ [43:27] ==> <this> defined in net.corda.client.jfx.utils.map[ReceiverParameterDescriptorImpl]
 
@@ -28,8 +28,8 @@ Inferred types:
 
 'map' @ [45:25] ==> public final fun <T : (Any..Any?), U : (Any..Any?)> map(p0: (ObservableList<out (A..A?)>..ObservableList<out (A..A?)>?), p1: (((A..A?)) -> (B..B?)..(((A..A?)) -> (B..B?))?)): (ObservableList<(B..B?)>..ObservableList<(B..B?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> A
-    <U : (Any..Any?)> -> B
+    <T : (Any..Any?)> -> (A..A?)
+    <U : (Any..Any?)> -> (B..B?)
 
 'this' @ [45:29] ==> <this> defined in net.corda.client.jfx.utils.map[ReceiverParameterDescriptorImpl]
 
@@ -37,14 +37,14 @@ Inferred types:
 
 'ReadOnlyObjectWrapper' @ [57:40] ==> public constructor ReadOnlyObjectWrapper<T : (Any..Any?)>(p0: (A..A?)) defined in javafx.beans.property.ReadOnlyObjectWrapper[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> A
+    <T : (Any..Any?)> -> (A..A?)
 
 'this' @ [57:62] ==> <this> defined in net.corda.client.jfx.utils.lift[ReceiverParameterDescriptorImpl]
 
 'map' @ [61:34] ==> public final fun <T : (Any..Any?), U : (Any..Any?)> map(p0: (ObservableValue<(A..A?)>..ObservableValue<(A..A?)>?), p1: (((A..A?)) -> (R..R?)..(((A..A?)) -> (R..R?))?)): (MonadicBinding<(R..R?)>..MonadicBinding<(R..R?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> A
-    <U : (Any..Any?)> -> R
+    <T : (Any..Any?)> -> (A..A?)
+    <U : (Any..Any?)> -> (R..R?)
 
 'arg0' @ [61:38] ==> value-parameter arg0: ObservableValue<A> defined in net.corda.client.jfx.utils.lift[ValueParameterDescriptorImpl]
 
@@ -52,9 +52,9 @@ Inferred types:
 
 'combine' @ [66:34] ==> public final fun <A : (Any..Any?), B : (Any..Any?), R : (Any..Any?)> combine(p0: (ObservableValue<(A..A?)>..ObservableValue<(A..A?)>?), p1: (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?), p2: (((A..A?), (B..B?)) -> (R..R?)..(((A..A?), (B..B?)) -> (R..R?))?)): (MonadicBinding<(R..R?)>..MonadicBinding<(R..R?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> A
-    <B : (Any..Any?)> -> B
-    <R : (Any..Any?)> -> R
+    <A : (Any..Any?)> -> (A..A?)
+    <B : (Any..Any?)> -> (B..B?)
+    <R : (Any..Any?)> -> (R..R?)
 
 'arg0' @ [66:42] ==> value-parameter arg0: ObservableValue<A> defined in net.corda.client.jfx.utils.lift[ValueParameterDescriptorImpl]
 
@@ -64,10 +64,10 @@ Inferred types:
 
 'combine' @ [72:34] ==> public final fun <A : (Any..Any?), B : (Any..Any?), C : (Any..Any?), R : (Any..Any?)> combine(p0: (ObservableValue<(A..A?)>..ObservableValue<(A..A?)>?), p1: (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?), p2: (ObservableValue<(C..C?)>..ObservableValue<(C..C?)>?), p3: (((A..A?), (B..B?), (C..C?)) -> (R..R?)..(((A..A?), (B..B?), (C..C?)) -> (R..R?))?)): (MonadicBinding<(R..R?)>..MonadicBinding<(R..R?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> A
-    <B : (Any..Any?)> -> B
-    <C : (Any..Any?)> -> C
-    <R : (Any..Any?)> -> R
+    <A : (Any..Any?)> -> (A..A?)
+    <B : (Any..Any?)> -> (B..B?)
+    <C : (Any..Any?)> -> (C..C?)
+    <R : (Any..Any?)> -> (R..R?)
 
 'arg0' @ [72:42] ==> value-parameter arg0: ObservableValue<A> defined in net.corda.client.jfx.utils.lift[ValueParameterDescriptorImpl]
 
@@ -79,11 +79,11 @@ Inferred types:
 
 'combine' @ [79:34] ==> public final fun <A : (Any..Any?), B : (Any..Any?), C : (Any..Any?), D : (Any..Any?), R : (Any..Any?)> combine(p0: (ObservableValue<(A..A?)>..ObservableValue<(A..A?)>?), p1: (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?), p2: (ObservableValue<(C..C?)>..ObservableValue<(C..C?)>?), p3: (ObservableValue<(D..D?)>..ObservableValue<(D..D?)>?), p4: (((A..A?), (B..B?), (C..C?), (D..D?)) -> (R..R?)..(((A..A?), (B..B?), (C..C?), (D..D?)) -> (R..R?))?)): (MonadicBinding<(R..R?)>..MonadicBinding<(R..R?)>?) defined in org.fxmisc.easybind.EasyBind[SamAdapterFunctionDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> A
-    <B : (Any..Any?)> -> B
-    <C : (Any..Any?)> -> C
-    <D : (Any..Any?)> -> D
-    <R : (Any..Any?)> -> R
+    <A : (Any..Any?)> -> (A..A?)
+    <B : (Any..Any?)> -> (B..B?)
+    <C : (Any..Any?)> -> (C..C?)
+    <D : (Any..Any?)> -> (D..D?)
+    <R : (Any..Any?)> -> (R..R?)
 
 'arg0' @ [79:42] ==> value-parameter arg0: ObservableValue<A> defined in net.corda.client.jfx.utils.lift[ValueParameterDescriptorImpl]
 
@@ -95,29 +95,29 @@ Inferred types:
 
 'this' @ [79:66] ==> <this> defined in net.corda.client.jfx.utils.lift[ReceiverParameterDescriptorImpl]
 
-'monadic' @ [87:18] ==> public open fun <T : (Any..Any?)> monadic(p0: (ObservableValue<out ({Any & A}..A?)>..ObservableValue<out ({Any & A}..A?)>?)): (MonadicObservableValue<out ({Any & A}..A?)>..MonadicObservableValue<out ({Any & A}..A?)>?) defined in org.fxmisc.easybind.EasyBind[JavaMethodDescriptor]
+'monadic' @ [87:18] ==> public open fun <T : (Any..Any?)> monadic(p0: (ObservableValue<out A>..ObservableValue<out A>?)): (MonadicObservableValue<out (A..A?)>..MonadicObservableValue<out (A..A?)>?) defined in org.fxmisc.easybind.EasyBind[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ({Any & A}..A)
+    <T : (Any..Any?)> -> Captured(out A)
 
 'this' @ [87:26] ==> <this> defined in net.corda.client.jfx.utils.bind[ReceiverParameterDescriptorImpl]
 
-'flatMap' @ [87:32] ==> public final fun <U : (Any..Any?)> flatMap(p0: (((Nothing..Nothing?)) -> (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?)..(((Nothing..Nothing?)) -> (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?))?)): (MonadicBinding<(B..B?)>..MonadicBinding<(B..B?)>?) defined in org.fxmisc.easybind.monadic.MonadicObservableValue[MyFunctionDescriptor]
+'flatMap' @ [87:32] ==> public final fun <U : (Any..Any?)> flatMap(p0: (((A..A?)) -> (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?)..(((A..A?)) -> (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?))?)): (MonadicBinding<(B..B?)>..MonadicBinding<(B..B?)>?) defined in org.fxmisc.easybind.monadic.MonadicObservableValue[MyFunctionDescriptor]
 Inferred types:
-    <U : (Any..Any?)> -> B
+    <U : (Any..Any?)> -> (B..B?)
 
 'function' @ [87:40] ==> value-parameter function: (A) -> ObservableValue<B> defined in net.corda.client.jfx.utils.bind[ValueParameterDescriptorImpl]
 
 'Suppress' @ [94:9] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'monadic' @ [95:18] ==> public open fun <T : (Any..Any?)> monadic(p0: (ObservableValue<out ({Any & A}..A?)>..ObservableValue<out ({Any & A}..A?)>?)): (MonadicObservableValue<out ({Any & A}..A?)>..MonadicObservableValue<out ({Any & A}..A?)>?) defined in org.fxmisc.easybind.EasyBind[JavaMethodDescriptor]
+'monadic' @ [95:18] ==> public open fun <T : (Any..Any?)> monadic(p0: (ObservableValue<out A>..ObservableValue<out A>?)): (MonadicObservableValue<out (A..A?)>..MonadicObservableValue<out (A..A?)>?) defined in org.fxmisc.easybind.EasyBind[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ({Any & A}..A)
+    <T : (Any..Any?)> -> Captured(out A)
 
 'this' @ [95:26] ==> <this> defined in net.corda.client.jfx.utils.bindOut[ReceiverParameterDescriptorImpl]
 
-'flatMap' @ [95:32] ==> public final fun <U : (Any..Any?)> flatMap(p0: (((Nothing..Nothing?)) -> (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?)..(((Nothing..Nothing?)) -> (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?))?)): (MonadicBinding<(B..B?)>..MonadicBinding<(B..B?)>?) defined in org.fxmisc.easybind.monadic.MonadicObservableValue[MyFunctionDescriptor]
+'flatMap' @ [95:32] ==> public final fun <U : (Any..Any?)> flatMap(p0: (((A..A?)) -> (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?)..(((A..A?)) -> (ObservableValue<(B..B?)>..ObservableValue<(B..B?)>?))?)): (MonadicBinding<(B..B?)>..MonadicBinding<(B..B?)>?) defined in org.fxmisc.easybind.monadic.MonadicObservableValue[MyFunctionDescriptor]
 Inferred types:
-    <U : (Any..Any?)> -> B
+    <U : (Any..Any?)> -> (B..B?)
 
 'function' @ [95:40] ==> value-parameter function: (A) -> ObservableValue<out B> defined in net.corda.client.jfx.utils.bindOut[ValueParameterDescriptorImpl]
 
@@ -162,13 +162,13 @@ Inferred types:
 
 'createObjectBinding' @ [137:21] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> (B..B?)..(() -> (B..B?))?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<(B..B?)>..ObjectBinding<(B..B?)>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> B
+    <T : (Any..Any?)> -> (B..B?)
 
 'initial' @ [138:23] ==> value-parameter initial: B defined in net.corda.client.jfx.utils.foldObservable[ValueParameterDescriptorImpl]
 
-'forEach' @ [139:9] ==> @HidesMembers public inline fun <T> Iterable<A>.forEach(action: (A) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'forEach' @ [139:9] ==> @HidesMembers public inline fun <T> Iterable<(A..A?)>.forEach(action: ((A..A?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> A
+    <T> -> (A..A?)
 
 'current' @ [140:13] ==> var current: B defined in net.corda.client.jfx.utils.foldObservable.<anonymous>[LocalVariableDescriptor]
 
@@ -176,29 +176,29 @@ Inferred types:
 
 'current' @ [140:38] ==> var current: B defined in net.corda.client.jfx.utils.foldObservable.<anonymous>[LocalVariableDescriptor]
 
-'it' @ [140:47] ==> value-parameter it: A defined in net.corda.client.jfx.utils.foldObservable.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [140:47] ==> value-parameter it: (A..A?) defined in net.corda.client.jfx.utils.foldObservable.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'current' @ [142:9] ==> var current: B defined in net.corda.client.jfx.utils.foldObservable.<anonymous>[LocalVariableDescriptor]
 
-'arrayOf' @ [143:8] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: ObservableList<out ({Any & A}..A)>): Array<ObservableList<out ({Any & A}..A)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [143:8] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: ObservableList<out A>): Array<ObservableList<out A>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> ObservableList<out ({Any & A}..A)>
+    <reified @PureReifiable T> -> ObservableList<out A>
 
 'this' @ [143:16] ==> <this> defined in net.corda.client.jfx.utils.foldObservable[ReceiverParameterDescriptorImpl]
 
-'FlattenedList' @ [151:83] ==> public constructor FlattenedList<A>(sourceList: ObservableList<out ObservableValue<out A>>) defined in net.corda.client.jfx.utils.FlattenedList[ClassConstructorDescriptorImpl]
+'FlattenedList' @ [151:83] ==> public constructor FlattenedList<A>(sourceList: ObservableList<out ObservableValue<out (A..A?)>>) defined in net.corda.client.jfx.utils.FlattenedList[ClassConstructorDescriptorImpl]
 Inferred types:
-    <A> -> A
+    <A> -> (A..A?)
 
 'this' @ [151:97] ==> <this> defined in net.corda.client.jfx.utils.flatten[ReceiverParameterDescriptorImpl]
 
-'FlattenedList' @ [158:76] ==> public constructor FlattenedList<A>(sourceList: ObservableList<out ObservableValue<out A>>) defined in net.corda.client.jfx.utils.FlattenedList[ClassConstructorDescriptorImpl]
+'FlattenedList' @ [158:76] ==> public constructor FlattenedList<A>(sourceList: ObservableList<out ObservableValue<out (A..A?)>>) defined in net.corda.client.jfx.utils.FlattenedList[ClassConstructorDescriptorImpl]
 Inferred types:
-    <A> -> A
+    <A> -> (A..A?)
 
 'observableArrayList' @ [158:104] ==> public open fun <E : (Any..Any?)> observableArrayList(p0: (MutableCollection<out (ObservableValue<out A>..ObservableValue<out A>?)>..Collection<(ObservableValue<out A>..ObservableValue<out A>?)>?)): (ObservableList<(ObservableValue<out A>..ObservableValue<out A>?)>..ObservableList<(ObservableValue<out A>..ObservableValue<out A>?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> (javafx.beans.value.ObservableValue<out A>..javafx.beans.value.ObservableValue<out A>?)
 
 'this' @ [158:124] ==> <this> defined in net.corda.client.jfx.utils.sequence[ReceiverParameterDescriptorImpl]
 
@@ -224,10 +224,10 @@ Inferred types:
 
 'value' @ [174:45] ==> value-parameter value: A defined in net.corda.client.jfx.utils.associateBy.<anonymous>[ValueParameterDescriptorImpl]
 
-'AssociatedList' @ [182:12] ==> public constructor AssociatedList<K, out A, B>(sourceList: ObservableList<out Pair<K, ObservableList<A>>>, toKey: (Pair<K, ObservableList<A>>) -> K, assemble: (K, Pair<K, ObservableList<A>>) -> ObservableList<B>) defined in net.corda.client.jfx.utils.AssociatedList[ClassConstructorDescriptorImpl]
+'AssociatedList' @ [182:12] ==> public constructor AssociatedList<K, out A, B>(sourceList: ObservableList<out (Pair<K, ObservableList<A>>..Pair<K, ObservableList<A>>?)>, toKey: ((Pair<K, ObservableList<A>>..Pair<K, ObservableList<A>>?)) -> K, assemble: (K, (Pair<K, ObservableList<A>>..Pair<K, ObservableList<A>>?)) -> ObservableList<B>) defined in net.corda.client.jfx.utils.AssociatedList[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> K
-    <out A> -> Pair<K, ObservableList<A>>
+    <out A> -> (kotlin.Pair<K, javafx.collections.ObservableList<A>>..kotlin.Pair<K, javafx.collections.ObservableList<A>>?)
     <B> -> ObservableList<B>
 
 'AggregatedList' @ [182:27] ==> public constructor AggregatedList<A, E : Any, K : Any>(list: ObservableList<out A>, toKey: (A) -> K, assemble: (K, ObservableList<A>) -> Pair<K, ObservableList<A>>) defined in net.corda.client.jfx.utils.AggregatedList[ClassConstructorDescriptorImpl]
@@ -249,11 +249,11 @@ Inferred types:
 
 'members' @ [182:83] ==> value-parameter members: ObservableList<A> defined in net.corda.client.jfx.utils.associateByAggregation.<anonymous>[ValueParameterDescriptorImpl]
 
-'it' @ [182:97] ==> value-parameter it: Pair<K, ObservableList<A>> defined in net.corda.client.jfx.utils.associateByAggregation.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [182:97] ==> value-parameter it: (Pair<K, ObservableList<A>>..Pair<K, ObservableList<A>>?) defined in net.corda.client.jfx.utils.associateByAggregation.<anonymous>[ValueParameterDescriptorImpl]
 
 'first' @ [182:100] ==> public final val first: K defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
-'pair' @ [183:9] ==> value-parameter pair: Pair<K, ObservableList<A>> defined in net.corda.client.jfx.utils.associateByAggregation.<anonymous>[ValueParameterDescriptorImpl]
+'pair' @ [183:9] ==> value-parameter pair: (Pair<K, ObservableList<A>>..Pair<K, ObservableList<A>>?) defined in net.corda.client.jfx.utils.associateByAggregation.<anonymous>[ValueParameterDescriptorImpl]
 
 'second' @ [183:14] ==> public final val second: ObservableList<A> defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
@@ -278,9 +278,9 @@ Inferred types:
 
 'value' @ [192:56] ==> value-parameter value: A defined in net.corda.client.jfx.utils.associateByAggregation.<anonymous>[ValueParameterDescriptorImpl]
 
-'SimpleObjectProperty' @ [200:20] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: (V..V?)) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
+'SimpleObjectProperty' @ [200:20] ==> public constructor SimpleObjectProperty<T : (Any..Any?)>(p0: V?) defined in javafx.beans.property.SimpleObjectProperty[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> V
+    <T : (Any..Any?)> -> V?
 
 'get' @ [200:41] ==> public abstract fun get(key: (K..K?)): V? defined in javafx.collections.ObservableMap[DeserializedSimpleFunctionDescriptor]
 
@@ -290,10 +290,10 @@ Inferred types:
 
 'change' @ [202:13] ==> value-parameter change: MapChangeListener.Change<out K, out V> defined in net.corda.client.jfx.utils.getObservableValue.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [202:20] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out ({Any & K}..K), out ({Any & V}..V)>.key: ({Any & K}..K?)[MyPropertyDescriptor]
+'key' @ [202:20] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out V>.key: (K..K?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ({Any & K}..K)
-    <V : (Any..Any?)> -> ({Any & V}..V)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out V)
 
 'key' @ [202:27] ==> value-parameter key: K defined in net.corda.client.jfx.utils.getObservableValue[ValueParameterDescriptorImpl]
 
@@ -309,26 +309,26 @@ Inferred types:
 
 'wasAdded' @ [204:24] ==> public abstract fun wasAdded(): Boolean defined in javafx.collections.MapChangeListener.Change[JavaMethodDescriptor]
 
-'property' @ [205:17] ==> val property: SimpleObjectProperty<V> defined in net.corda.client.jfx.utils.getObservableValue[LocalVariableDescriptor]
+'property' @ [205:17] ==> val property: SimpleObjectProperty<V?> defined in net.corda.client.jfx.utils.getObservableValue[LocalVariableDescriptor]
 
-'set' @ [205:26] ==> public open fun set(p0: (V..V?)): Unit defined in javafx.beans.property.SimpleObjectProperty[JavaMethodDescriptor]
+'set' @ [205:26] ==> public open fun set(p0: V?): Unit defined in javafx.beans.property.SimpleObjectProperty[JavaMethodDescriptor]
 
 'change' @ [205:30] ==> value-parameter change: MapChangeListener.Change<out K, out V> defined in net.corda.client.jfx.utils.getObservableValue.<anonymous>[ValueParameterDescriptorImpl]
 
-'valueAdded' @ [205:37] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out ({Any & K}..K), out ({Any & V}..V)>.valueAdded: ({Any & V}..V?)[MyPropertyDescriptor]
+'valueAdded' @ [205:37] ==> public final val <K : (Any..Any?), V : (Any..Any?)> MapChangeListener.Change<out K, out V>.valueAdded: (V..V?)[MyPropertyDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> ({Any & K}..K)
-    <V : (Any..Any?)> -> ({Any & V}..V)
+    <K : (Any..Any?)> -> Captured(out K)
+    <V : (Any..Any?)> -> Captured(out V)
 
 'change' @ [206:24] ==> value-parameter change: MapChangeListener.Change<out K, out V> defined in net.corda.client.jfx.utils.getObservableValue.<anonymous>[ValueParameterDescriptorImpl]
 
 'wasRemoved' @ [206:31] ==> public abstract fun wasRemoved(): Boolean defined in javafx.collections.MapChangeListener.Change[JavaMethodDescriptor]
 
-'property' @ [207:17] ==> val property: SimpleObjectProperty<V> defined in net.corda.client.jfx.utils.getObservableValue[LocalVariableDescriptor]
+'property' @ [207:17] ==> val property: SimpleObjectProperty<V?> defined in net.corda.client.jfx.utils.getObservableValue[LocalVariableDescriptor]
 
-'set' @ [207:26] ==> public open fun set(p0: (V..V?)): Unit defined in javafx.beans.property.SimpleObjectProperty[JavaMethodDescriptor]
+'set' @ [207:26] ==> public open fun set(p0: V?): Unit defined in javafx.beans.property.SimpleObjectProperty[JavaMethodDescriptor]
 
-'property' @ [211:12] ==> val property: SimpleObjectProperty<V> defined in net.corda.client.jfx.utils.getObservableValue[LocalVariableDescriptor]
+'property' @ [211:12] ==> val property: SimpleObjectProperty<V?> defined in net.corda.client.jfx.utils.getObservableValue[LocalVariableDescriptor]
 
 'MapValuesList' @ [219:12] ==> public companion object defined in net.corda.client.jfx.utils.MapValuesList[FakeCallableDescriptorForObject]
 
@@ -447,22 +447,22 @@ Inferred types:
 
 'rightValue' @ [277:39] ==> value-parameter rightValue: ObservableValue<ObservableList<B>?> defined in net.corda.client.jfx.utils.leftOuterJoin.<anonymous>[ValueParameterDescriptorImpl]
 
-'map' @ [277:50] ==> public fun <A, B> ObservableValue<out ObservableList<B>?>.map(function: (ObservableList<B>?) -> (ObservableList<B>..ObservableList<B>?)): ObservableValue<(ObservableList<B>..ObservableList<B>?)> defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
+'map' @ [277:50] ==> public fun <A, B> ObservableValue<out ObservableList<B>?>.map(function: (ObservableList<B>?) -> ObservableList<B>): ObservableValue<ObservableList<B>> defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
 Inferred types:
     <A> -> ObservableList<B>?
-    <B> -> (javafx.collections.ObservableList<B>..javafx.collections.ObservableList<B>?)
+    <B> -> ObservableList<B>
 
 'it' @ [277:56] ==> value-parameter it: ObservableList<B>? defined in net.corda.client.jfx.utils.leftOuterJoin.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'emptyObservableList' @ [277:76] ==> public open fun <E : (Any..Any?)> emptyObservableList(): (ObservableList<(B..B?)>..ObservableList<(B..B?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> B
+    <E : (Any..Any?)> -> (B..B?)
 
 'joinedMap' @ [279:12] ==> val joinedMap: ObservableMap<K, Pair<ObservableList<A>, ObservableList<B>>> defined in net.corda.client.jfx.utils.leftOuterJoin[LocalVariableDescriptor]
 
 'valueAt' @ [283:21] ==> public open fun <E : (Any..Any?)> valueAt(p0: (ObservableList<(A..A?)>..ObservableList<(A..A?)>?), p1: Int): (ObjectBinding<(A..A?)>..ObjectBinding<(A..A?)>?) defined in javafx.beans.binding.Bindings[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> A
+    <E : (Any..Any?)> -> (A..A?)
 
 'this' @ [283:29] ==> <this> defined in net.corda.client.jfx.utils.getValueAt[ReceiverParameterDescriptorImpl]
 
@@ -472,9 +472,9 @@ Inferred types:
 Inferred types:
     <A> -> A
 
-'createObjectBinding' @ [291:21] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> (A..A?)..(() -> (A..A?))?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<(A..A?)>..ObjectBinding<(A..A?)>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
+'createObjectBinding' @ [291:21] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> A?..(() -> A?)?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<A?>..ObjectBinding<A?>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> A
+    <T : (Any..Any?)> -> A?
 
 'if (size > 0) {
             this[this.size - 1]
@@ -498,9 +498,9 @@ Inferred types:
 
 'this' @ [297:16] ==> <this> defined in net.corda.client.jfx.utils.last[ReceiverParameterDescriptorImpl]
 
-'AggregatedList' @ [301:12] ==> public constructor AggregatedList<A, E : Any, K : Any>(list: ObservableList<out T>, toKey: (T) -> T, assemble: (T, ObservableList<T>) -> T) defined in net.corda.client.jfx.utils.AggregatedList[ClassConstructorDescriptorImpl]
+'AggregatedList' @ [301:12] ==> public constructor AggregatedList<A, E : Any, K : Any>(list: ObservableList<out T>, toKey: (T) -> T, assemble: (T, ObservableList<T>) -> (T..T?)) defined in net.corda.client.jfx.utils.AggregatedList[ClassConstructorDescriptorImpl]
 Inferred types:
-    <A> -> T
+    <A> -> (T..T?)
     <E : Any> -> T
     <K : Any> -> T
 
@@ -516,17 +516,17 @@ Inferred types:
 
 'value' @ [305:49] ==> public final val <T : (Any..Any?)> ObservableValue<out (Any..Any?)>.value: (Any..Any?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'arrayOf' @ [305:66] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: ObservableValue<out (Any..Any?)>): Array<ObservableValue<out (Any..Any?)>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [305:66] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: ObservableValue<*>): Array<ObservableValue<*>> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> ObservableValue<out (kotlin.Any..kotlin.Any?)>
+    <reified @PureReifiable T> -> ObservableValue<*>
 
 'this' @ [305:74] ==> <this> defined in net.corda.client.jfx.utils.isNotNull[ReceiverParameterDescriptorImpl]
 
-'createObjectBinding' @ [313:21] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> (A..A?)..(() -> (A..A?))?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<(A..A?)>..ObjectBinding<(A..A?)>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
+'createObjectBinding' @ [313:21] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> A?..(() -> A?)?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<A?>..ObjectBinding<A?>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> A
+    <T : (Any..Any?)> -> A?
 
 'this' @ [313:43] ==> <this> defined in net.corda.client.jfx.utils.firstOrDefault[ReceiverParameterDescriptorImpl]
 
@@ -550,9 +550,9 @@ Inferred types:
 
 'default' @ [313:105] ==> value-parameter default: ObservableValue<A?> defined in net.corda.client.jfx.utils.firstOrDefault[ValueParameterDescriptorImpl]
 
-'createObjectBinding' @ [321:21] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> (A..A?)..(() -> (A..A?))?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<(A..A?)>..ObjectBinding<(A..A?)>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
+'createObjectBinding' @ [321:21] ==> public final fun <T : (Any..Any?)> createObjectBinding(p0: (() -> A?..(() -> A?)?), p1: (Array<(Observable..Observable?)>..Array<out (Observable..Observable?)>?)): (ObjectBinding<A?>..ObjectBinding<A?>?) defined in javafx.beans.binding.Bindings[SamAdapterFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> A
+    <T : (Any..Any?)> -> A?
 
 'this' @ [321:43] ==> <this> defined in net.corda.client.jfx.utils.firstOrNullObservable[ReceiverParameterDescriptorImpl]
 
@@ -574,9 +574,11 @@ Inferred types:
 
 'Platform' @ [330:86] ==> private constructor Platform() defined in javafx.application.Platform[JavaClassConstructorDescriptor]
 
+'runLater' @ [330:96] ==> public open fun runLater(p0: (Runnable..Runnable?)): Unit defined in javafx.application.Platform[JavaMethodDescriptor]
+
 'observableArrayList' @ [341:30] ==> public open fun <E : (Any..Any?)> observableArrayList(p0: (MutableCollection<out (StateAndRef<T>..StateAndRef<T>?)>..Collection<(StateAndRef<T>..StateAndRef<T>?)>?)): (ObservableList<(StateAndRef<T>..StateAndRef<T>?)>..ObservableList<(StateAndRef<T>..StateAndRef<T>?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> StateAndRef<T>
+    <E : (Any..Any?)> -> (net.corda.core.contracts.StateAndRef<T>..net.corda.core.contracts.StateAndRef<T>?)
 
 'snapshot' @ [341:50] ==> public final val snapshot: Vault.Page<T> defined in net.corda.core.messaging.DataFeed[DeserializedPropertyDescriptor]
 

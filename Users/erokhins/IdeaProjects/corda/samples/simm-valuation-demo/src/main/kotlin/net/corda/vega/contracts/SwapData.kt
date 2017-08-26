@@ -70,7 +70,7 @@ Inferred types:
 
 'addAttribute' @ [68:18] ==> public open fun <T : (Any..Any?)> addAttribute(p0: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?), p1: (String..String?)): (TradeInfoBuilder..TradeInfoBuilder?) defined in com.opengamma.strata.product.TradeInfoBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> String
+    <T : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'DESCRIPTION' @ [68:50] ==> public final val DESCRIPTION: (TradeAttributeType<(String..String?)>..TradeAttributeType<(String..String?)>?) defined in com.opengamma.strata.product.TradeAttributeType[JavaPropertyDescriptor]
 

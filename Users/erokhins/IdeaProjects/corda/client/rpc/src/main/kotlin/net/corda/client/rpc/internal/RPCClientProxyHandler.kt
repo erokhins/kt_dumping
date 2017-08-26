@@ -54,7 +54,7 @@ Inferred types:
 
 'synchronizedSet' @ [104:46] ==> public open fun <T : (Any..Any?)> synchronizedSet(p0: (MutableSet<(Observable<*>..Observable<*>?)>..Set<(Observable<*>..Observable<*>?)>?)): (MutableSet<(Observable<*>..Observable<*>?)>..Set<(Observable<*>..Observable<*>?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Observable<*>
+    <T : (Any..Any?)> -> (rx.Observable<*>..rx.Observable<*>?)
 
 'mutableSetOf' @ [104:62] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableSetOf(): MutableSet<Observable<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -134,8 +134,8 @@ Inferred types:
 
 'removalListener' @ [133:17] ==> @CheckReturnValue public open fun <K1 : (Any..Any?), V1 : (Any..Any?)> removalListener(p0: (RemovalListener<in (RPCApi.ObservableId..RPCApi.ObservableId?), in (UnicastSubject<Notification<*>>..UnicastSubject<Notification<*>>?)>..RemovalListener<in (RPCApi.ObservableId..RPCApi.ObservableId?), in (UnicastSubject<Notification<*>>..UnicastSubject<Notification<*>>?)>?)): (CacheBuilder<(RPCApi.ObservableId..RPCApi.ObservableId?), (UnicastSubject<Notification<*>>..UnicastSubject<Notification<*>>?)>..CacheBuilder<(RPCApi.ObservableId..RPCApi.ObservableId?), (UnicastSubject<Notification<*>>..UnicastSubject<Notification<*>>?)>?) defined in com.google.common.cache.CacheBuilder[JavaMethodDescriptor]
 Inferred types:
-    <K1 : (Any..Any?)> -> ObservableId
-    <V1 : (Any..Any?)> -> UnicastSubject<Notification<*>>
+    <K1 : (Any..Any?)> -> (net.corda.nodeapi.RPCApi.ObservableId..net.corda.nodeapi.RPCApi.ObservableId?)
+    <V1 : (Any..Any?)> -> (rx.subjects.UnicastSubject<rx.Notification<*>>..rx.subjects.UnicastSubject<rx.Notification<*>>?)
 
 'onObservableRemove' @ [133:33] ==> val onObservableRemove: RemovalListener<RPCApi.ObservableId, UnicastSubject<Notification<*>>> defined in net.corda.client.rpc.internal.RPCClientProxyHandler.createRpcObservableMap[LocalVariableDescriptor]
 
@@ -147,8 +147,8 @@ Inferred types:
 
 'build' @ [135:17] ==> public open fun <K1 : (RPCApi.ObservableId..RPCApi.ObservableId?), V1 : (UnicastSubject<Notification<*>>..UnicastSubject<Notification<*>>?)> build(): (Cache<(RPCApi.ObservableId..RPCApi.ObservableId?), (UnicastSubject<Notification<*>>..UnicastSubject<Notification<*>>?)>..Cache<(RPCApi.ObservableId..RPCApi.ObservableId?), (UnicastSubject<Notification<*>>..UnicastSubject<Notification<*>>?)>?) defined in com.google.common.cache.CacheBuilder[JavaMethodDescriptor]
 Inferred types:
-    <K1 : (RPCApi.ObservableId..RPCApi.ObservableId?)> -> ObservableId
-    <V1 : (UnicastSubject<Notification<*>>..UnicastSubject<Notification<*>>?)> -> UnicastSubject<Notification<*>>
+    <K1 : (RPCApi.ObservableId..RPCApi.ObservableId?)> -> (net.corda.nodeapi.RPCApi.ObservableId..net.corda.nodeapi.RPCApi.ObservableId?)
+    <V1 : (UnicastSubject<Notification<*>>..UnicastSubject<Notification<*>>?)> -> (rx.subjects.UnicastSubject<rx.Notification<*>>..rx.subjects.UnicastSubject<rx.Notification<*>>?)
 
 'LazyPool' @ [144:42] ==> public constructor LazyPool<A>(clear: ((ArtemisProducer) -> Unit)? = ..., shouldReturnToPool: ((ArtemisProducer) -> Boolean)? = ..., bound: Int? = ..., newInstance: () -> ArtemisProducer) defined in net.corda.core.internal.LazyPool[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -186,8 +186,6 @@ Inferred types:
 
 'createProducer' @ [152:58] ==> public abstract fun createProducer(p0: (String..String?)): (ClientProducer..ClientProducer?) defined in org.apache.activemq.artemis.api.core.client.ClientSession[JavaMethodDescriptor]
 
-'RPCApi' @ [152:73] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
-
 'RPC_SERVER_QUEUE_NAME' @ [152:80] ==> public final val RPC_SERVER_QUEUE_NAME: String defined in net.corda.nodeapi.RPCApi[DeserializedPropertyDescriptor]
 
 'lifeCycle' @ [159:9] ==> private final val lifeCycle: LifeCycle<RPCClientProxyHandler.State> defined in net.corda.client.rpc.internal.RPCClientProxyHandler[PropertyDescriptorImpl]
@@ -215,6 +213,8 @@ Inferred types:
 'scheduleAtFixedRate' @ [164:50] ==> public final fun scheduleAtFixedRate(p0: (() -> Unit..(() -> Unit)?), p1: Long, p2: Long, p3: (TimeUnit..TimeUnit?)): (ScheduledFuture<*>..ScheduledFuture<*>?) defined in java.util.concurrent.ScheduledExecutorService[MyFunctionDescriptor]
 
 'this' @ [165:17] ==> <this> defined in net.corda.client.rpc.internal.RPCClientProxyHandler[LazyClassReceiverParameterDescriptor]
+
+'reapObservablesAndNotify' @ [165:23] ==> private final fun reapObservablesAndNotify(): Unit defined in net.corda.client.rpc.internal.RPCClientProxyHandler[SimpleFunctionDescriptorImpl]
 
 'rpcConfiguration' @ [166:17] ==> private final val rpcConfiguration: RPCClientConfiguration defined in net.corda.client.rpc.internal.RPCClientProxyHandler[PropertyDescriptorImpl]
 
@@ -273,6 +273,8 @@ Inferred types:
 'setMessageHandler' @ [176:18] ==> public final fun setMessageHandler(p0: (((ClientMessage..ClientMessage?)) -> Unit..(((ClientMessage..ClientMessage?)) -> Unit)?)): (ClientConsumer..ClientConsumer?) defined in org.apache.activemq.artemis.api.core.client.ClientConsumer[MyFunctionDescriptor]
 
 'this@RPCClientProxyHandler' @ [176:36] ==> <this> defined in net.corda.client.rpc.internal.RPCClientProxyHandler[LazyClassReceiverParameterDescriptor]
+
+'artemisMessageHandler' @ [176:64] ==> private final fun artemisMessageHandler(message: ClientMessage): Unit defined in net.corda.client.rpc.internal.RPCClientProxyHandler[SimpleFunctionDescriptorImpl]
 
 'sessionAndConsumer' @ [177:9] ==> private final var sessionAndConsumer: ArtemisConsumer? defined in net.corda.client.rpc.internal.RPCClientProxyHandler[PropertyDescriptorImpl]
 
@@ -522,9 +524,9 @@ Inferred types:
                     }
                 }
             }
-        }' @ [228:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: Any, entry1: Any): Any[SimpleFunctionDescriptorImpl]
+        }' @ [228:9] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (Any..Any?), entry1: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Any
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
 
 'serverToClient' @ [228:15] ==> val serverToClient: RPCApi.ServerToClient defined in net.corda.client.rpc.internal.RPCClientProxyHandler.artemisMessageHandler[LocalVariableDescriptor]
 
@@ -645,9 +647,9 @@ Inferred types:
                             observable.onNext(content)
                         }
                     }
-                }' @ [247:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Any, elseBranch: Any): Any[SimpleFunctionDescriptorImpl]
+                }' @ [247:17] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Any..Any?), elseBranch: (Any..Any?)): (Any..Any?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Any
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (kotlin.Any..kotlin.Any?)
 
 'observable' @ [247:21] ==> val observable: UnicastSubject<Notification<*>>? defined in net.corda.client.rpc.internal.RPCClientProxyHandler.artemisMessageHandler[LocalVariableDescriptor]
 
@@ -667,9 +669,9 @@ Inferred types:
 
 'observationExecutorPool' @ [253:21] ==> private final val observationExecutorPool: LazyStickyPool<(ExecutorService..ExecutorService?)> defined in net.corda.client.rpc.internal.RPCClientProxyHandler[PropertyDescriptorImpl]
 
-'run' @ [253:45] ==> public final inline fun <R> run(stickToOrNull: Any? = ..., withInstance: ((ExecutorService..ExecutorService?)) -> Future<out (Any..Any?)>): Future<out (Any..Any?)> defined in net.corda.core.internal.LazyStickyPool[DeserializedSimpleFunctionDescriptor]
+'run' @ [253:45] ==> public final inline fun <R> run(stickToOrNull: Any? = ..., withInstance: ((ExecutorService..ExecutorService?)) -> (Future<*>..Future<*>?)): (Future<*>..Future<*>?) defined in net.corda.core.internal.LazyStickyPool[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <R> -> Future<out (kotlin.Any..kotlin.Any?)>
+    <R> -> (java.util.concurrent.Future<*>..java.util.concurrent.Future<*>?)
 
 'serverToClient' @ [253:49] ==> val serverToClient: RPCApi.ServerToClient defined in net.corda.client.rpc.internal.RPCClientProxyHandler.artemisMessageHandler[LocalVariableDescriptor]
 
@@ -687,13 +689,13 @@ Inferred types:
 
 'isOnCompleted' @ [256:41] ==> public final val <T : (Any..Any?)> Notification<out (Any..Any?)>.isOnCompleted: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'content' @ [256:58] ==> val content: Notification<*> defined in net.corda.client.rpc.internal.RPCClientProxyHandler.artemisMessageHandler.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
 'isOnError' @ [256:66] ==> public final val <T : (Any..Any?)> Notification<out (Any..Any?)>.isOnError: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'observableContext' @ [257:33] ==> private final val observableContext: ObservableContext defined in net.corda.client.rpc.internal.RPCClientProxyHandler[PropertyDescriptorImpl]
 
@@ -709,7 +711,7 @@ Inferred types:
 
 'isOnError' @ [260:41] ==> public final val <T : (Any..Any?)> Notification<out (Any..Any?)>.isOnError: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'callSiteMap' @ [261:51] ==> private final val callSiteMap: CallSiteMap? /* = ConcurrentHashMap<Long, Throwable?>? */ defined in net.corda.client.rpc.internal.RPCClientProxyHandler[PropertyDescriptorImpl]
 
@@ -729,7 +731,7 @@ Inferred types:
 
 'throwable' @ [262:92] ==> public final val <T : (Any..Any?)> Notification<out (Any..Any?)>.throwable: (Throwable..Throwable?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'rpcCallSite' @ [262:103] ==> val rpcCallSite: Throwable? defined in net.corda.client.rpc.internal.RPCClientProxyHandler.artemisMessageHandler.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
@@ -837,7 +839,7 @@ Inferred types:
 
 'getAnnotation' @ [324:45] ==> public open fun <T : (Annotation..Annotation?)> getAnnotation(p0: (Class<(RPCSinceVersion..RPCSinceVersion?)>..Class<(RPCSinceVersion..RPCSinceVersion?)>?)): (RPCSinceVersion..RPCSinceVersion?) defined in java.lang.reflect.Method[JavaMethodDescriptor]
 Inferred types:
-    <T : (Annotation..Annotation?)> -> RPCSinceVersion
+    <T : (Annotation..Annotation?)> -> (net.corda.nodeapi.RPCSinceVersion..net.corda.nodeapi.RPCSinceVersion?)
 
 'RPCSinceVersion' @ [324:59] ==> public constructor RPCSinceVersion(version: Int) defined in net.corda.nodeapi.RPCSinceVersion[DeserializedClassConstructorDescriptor]
 
@@ -1059,15 +1061,13 @@ Inferred types:
 
 'dematerialize' @ [412:11] ==> public final fun <T2 : (Any..Any?)> dematerialize(): (Observable<(Any..Any?)>..Observable<(Any..Any?)>?) defined in rx.Observable[JavaMethodDescriptor]
 Inferred types:
-    <T2 : (Any..Any?)> -> Any
+    <T2 : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'UnsupportedOperationException' @ [416:15] ==> public final fun <init>(p0: (String..String?)): UnsupportedOperationException /* = UnsupportedOperationException */ defined in kotlin.UnsupportedOperationException[TypeAliasConstructorDescriptorImpl]
 
 'kryo' @ [420:40] ==> value-parameter kryo: Kryo defined in net.corda.client.rpc.internal.RpcClientObservableSerializer.getRpcCallSite[ValueParameterDescriptorImpl]
 
 'context' @ [420:45] ==> public final val Kryo.context: raw (ObjectMap<(Any..Any?), (Any..Any?)>..ObjectMap<*, *>?)[MyPropertyDescriptor]
-
-'RPCApi' @ [420:53] ==> public object RPCApi defined in net.corda.nodeapi[FakeCallableDescriptorForObject]
 
 'RpcRequestOrObservableIdKey' @ [420:60] ==> public object RpcRequestOrObservableIdKey defined in net.corda.nodeapi.RPCApi[FakeCallableDescriptorForObject]
 

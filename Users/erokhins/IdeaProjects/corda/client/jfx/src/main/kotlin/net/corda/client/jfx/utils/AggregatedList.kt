@@ -93,7 +93,7 @@ Inferred types:
 
 'removed' @ [78:45] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out E>.removed: (MutableList<out (E..E?)>..List<(E..E?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> E
+    <E : (Any..Any?)> -> Captured(out E)
 
 'removeItem' @ [79:39] ==> private final fun removeItem(removedItem: E): Pair<Int, AggregatedList.AggregationGroup<E, A>>? defined in net.corda.client.jfx.utils.AggregatedList[SimpleFunctionDescriptorImpl]
 
@@ -117,7 +117,7 @@ Inferred types:
 
 'addedSubList' @ [84:37] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out E>.addedSubList: (MutableList<out (E..E?)>..List<(E..E?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> E
+    <E : (Any..Any?)> -> Captured(out E)
 
 'addItem' @ [85:39] ==> private final fun addItem(addedItem: E): Int? defined in net.corda.client.jfx.utils.AggregatedList[SimpleFunctionDescriptorImpl]
 

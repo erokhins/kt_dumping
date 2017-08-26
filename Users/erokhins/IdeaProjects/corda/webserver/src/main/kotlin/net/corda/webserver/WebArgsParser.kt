@@ -24,7 +24,7 @@
 
 'withValuesConvertedBy' @ [32:14] ==> public final fun <T : (Any..Any?)> withValuesConvertedBy(p0: (ValueConverter<(Level..Level?)>..ValueConverter<(Level..Level?)>?)): (ArgumentAcceptingOptionSpec<(Level..Level?)>..ArgumentAcceptingOptionSpec<(Level..Level?)>?) defined in joptsimple.ArgumentAcceptingOptionSpec[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Level
+    <T : (Any..Any?)> -> (org.slf4j.event.Level..org.slf4j.event.Level?)
 
 'EnumConverter<Level>' @ [32:45] ==> protected/*protected and package*/ constructor EnumConverter<E : (Enum<(Level..Level?)>..Enum<(Level..Level?)>?)>(p0: (Class<(Level..Level?)>..Class<(Level..Level?)>?)) defined in joptsimple.util.EnumConverter[JavaClassConstructorDescriptor]
 Inferred types:
@@ -88,7 +88,7 @@ Inferred types:
 
 'valueOf' @ [42:49] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(String..String?)>..OptionSpec<(String..String?)>?)): (String..String?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> String
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'baseDirectoryArg' @ [42:57] ==> private final val baseDirectoryArg: (ArgumentAcceptingOptionSpec<(String..String?)>..ArgumentAcceptingOptionSpec<(String..String?)>?) defined in net.corda.webserver.ArgsParser[PropertyDescriptorImpl]
 
@@ -102,7 +102,7 @@ Inferred types:
 
 'valueOf' @ [43:52] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(String..String?)>..OptionSpec<(String..String?)>?)): (String..String?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> String
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'configFileArg' @ [43:60] ==> private final val configFileArg: (ArgumentAcceptingOptionSpec<(String..String?)>..ArgumentAcceptingOptionSpec<(String..String?)>?) defined in net.corda.webserver.ArgsParser[PropertyDescriptorImpl]
 
@@ -116,7 +116,7 @@ Inferred types:
 
 'valueOf' @ [45:38] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(Level..Level?)>..OptionSpec<(Level..Level?)>?)): (Level..Level?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Level
+    <V : (Any..Any?)> -> (org.slf4j.event.Level..org.slf4j.event.Level?)
 
 'loggerLevel' @ [45:46] ==> private final val loggerLevel: (ArgumentAcceptingOptionSpec<(Level..Level?)>..ArgumentAcceptingOptionSpec<(Level..Level?)>?) defined in net.corda.webserver.ArgsParser[PropertyDescriptorImpl]
 
@@ -144,10 +144,10 @@ Inferred types:
 
 'sink' @ [50:65] ==> value-parameter sink: PrintStream defined in net.corda.webserver.ArgsParser.printHelp[ValueParameterDescriptorImpl]
 
-'emptyMap' @ [59:94] ==> public fun <K, V> emptyMap(): Map<String, Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [59:94] ==> public fun <K, V> emptyMap(): Map<String, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> Nothing
+    <V> -> Any?
 
 'loadConfig' @ [60:16] ==> private final fun loadConfig(baseDirectory: Path, configFile: Path = ..., allowMissingConfig: Boolean = ..., configOverrides: Map<String, Any?> = ...): Config defined in net.corda.webserver.CmdLineOptions[SimpleFunctionDescriptorImpl]
 
@@ -161,10 +161,10 @@ Inferred types:
 
 'baseDirectory' @ [64:47] ==> value-parameter baseDirectory: Path defined in net.corda.webserver.CmdLineOptions.loadConfig[ValueParameterDescriptorImpl]
 
-'emptyMap' @ [66:65] ==> public fun <K, V> emptyMap(): Map<String, Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'emptyMap' @ [66:65] ==> public fun <K, V> emptyMap(): Map<String, Any?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> Nothing
+    <V> -> Any?
 
 'defaults' @ [67:47] ==> public open fun defaults(): (ConfigParseOptions..ConfigParseOptions?) defined in com.typesafe.config.ConfigParseOptions[JavaMethodDescriptor]
 

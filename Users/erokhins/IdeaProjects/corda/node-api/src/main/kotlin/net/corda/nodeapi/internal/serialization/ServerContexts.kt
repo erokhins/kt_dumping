@@ -4,8 +4,6 @@
 
 'KryoHeaderV0_1' @ [18:56] ==> public val KryoHeaderV0_1: OpaqueBytes defined in net.corda.nodeapi.internal.serialization in file SerializationScheme.kt[PropertyDescriptorImpl]
 
-'SerializationDefaults' @ [19:9] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'javaClass' @ [19:31] ==> public val <T : Any> SerializationDefaults.javaClass: Class<SerializationDefaults> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> SerializationDefaults
@@ -29,8 +27,6 @@ Inferred types:
 
 'KryoHeaderV0_1' @ [24:53] ==> public val KryoHeaderV0_1: OpaqueBytes defined in net.corda.nodeapi.internal.serialization in file SerializationScheme.kt[PropertyDescriptorImpl]
 
-'SerializationDefaults' @ [25:9] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'javaClass' @ [25:31] ==> public val <T : Any> SerializationDefaults.javaClass: Class<SerializationDefaults> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> SerializationDefaults
@@ -52,8 +48,6 @@ Inferred types:
 
 'KryoHeaderV0_1' @ [30:56] ==> public val KryoHeaderV0_1: OpaqueBytes defined in net.corda.nodeapi.internal.serialization in file SerializationScheme.kt[PropertyDescriptorImpl]
 
-'SerializationDefaults' @ [31:9] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'javaClass' @ [31:31] ==> public val <T : Any> SerializationDefaults.javaClass: Class<SerializationDefaults> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> SerializationDefaults
@@ -74,8 +68,6 @@ Inferred types:
 'SerializationContextImpl' @ [41:28] ==> public constructor SerializationContextImpl(preferredSerializationVersion: ByteSequence, deserializationClassLoader: ClassLoader, whitelist: ClassWhitelist, properties: Map<Any, Any>, objectReferencesEnabled: Boolean, useCase: SerializationContext.UseCase) defined in net.corda.nodeapi.internal.serialization.SerializationContextImpl[ClassConstructorDescriptorImpl]
 
 'AmqpHeaderV1_0' @ [41:53] ==> public val AmqpHeaderV1_0: OpaqueBytes defined in net.corda.nodeapi.internal.serialization.amqp in file Schema.kt[PropertyDescriptorImpl]
-
-'SerializationDefaults' @ [42:9] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'javaClass' @ [42:31] ==> public val <T : Any> SerializationDefaults.javaClass: Class<SerializationDefaults> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

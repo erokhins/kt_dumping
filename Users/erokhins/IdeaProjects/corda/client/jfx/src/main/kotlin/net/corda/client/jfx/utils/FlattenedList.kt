@@ -16,15 +16,15 @@ Inferred types:
 Inferred types:
     <T> -> (javafx.beans.value.ObservableValue<out A>..javafx.beans.value.ObservableValue<out A>?)
 
-'WrappedObservableValue' @ [35:42] ==> public constructor WrappedObservableValue<A>(observableValue: ObservableValue<out ({Any & A}..A)>) defined in net.corda.client.jfx.utils.FlattenedList.WrappedObservableValue[ClassConstructorDescriptorImpl]
+'WrappedObservableValue' @ [35:42] ==> public constructor WrappedObservableValue<A>(observableValue: ObservableValue<out A>) defined in net.corda.client.jfx.utils.FlattenedList.WrappedObservableValue[ClassConstructorDescriptorImpl]
 Inferred types:
-    <A> -> ({Any & A}..A)
+    <A> -> Captured(out A)
 
 'observableValue' @ [35:65] ==> value-parameter observableValue: (ObservableValue<out A>..ObservableValue<out A>?) defined in net.corda.client.jfx.utils.FlattenedList.<init>.<anonymous>[ValueParameterDescriptorImpl]
 
 'indexMap' @ [36:13] ==> public final val indexMap: HashMap<FlattenedList.WrappedObservableValue<out A>, Pair<Int, ChangeListener<A>>> defined in net.corda.client.jfx.utils.FlattenedList[PropertyDescriptorImpl]
 
-'wrappedObservableValue' @ [36:22] ==> val wrappedObservableValue: FlattenedList.WrappedObservableValue<out ({Any & A}..A)> defined in net.corda.client.jfx.utils.FlattenedList.<init>.<anonymous>[LocalVariableDescriptor]
+'wrappedObservableValue' @ [36:22] ==> val wrappedObservableValue: FlattenedList.WrappedObservableValue<out A> defined in net.corda.client.jfx.utils.FlattenedList.<init>.<anonymous>[LocalVariableDescriptor]
 
 'Pair' @ [36:48] ==> public constructor Pair<out A, out B>(first: Int, second: ChangeListener<A>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -35,7 +35,7 @@ Inferred types:
 
 'createListener' @ [36:60] ==> private final fun createListener(wrapped: FlattenedList.WrappedObservableValue<out A>): ChangeListener<A> defined in net.corda.client.jfx.utils.FlattenedList[SimpleFunctionDescriptorImpl]
 
-'wrappedObservableValue' @ [36:75] ==> val wrappedObservableValue: FlattenedList.WrappedObservableValue<out ({Any & A}..A)> defined in net.corda.client.jfx.utils.FlattenedList.<init>.<anonymous>[LocalVariableDescriptor]
+'wrappedObservableValue' @ [36:75] ==> val wrappedObservableValue: FlattenedList.WrappedObservableValue<out A> defined in net.corda.client.jfx.utils.FlattenedList.<init>.<anonymous>[LocalVariableDescriptor]
 
 'ChangeListener' @ [41:24] ==> @FunctionalInterface public fun <T : (Any..Any?)> ChangeListener(function: ((ObservableValue<out (A..A?)>..ObservableValue<out (A..A?)>?), (A..A?), (A..A?)) -> Unit): ChangeListener<A> defined in javafx.beans.value[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -67,7 +67,7 @@ Inferred types:
 
 'observableValue' @ [47:17] ==> public final val observableValue: ObservableValue<out A> defined in net.corda.client.jfx.utils.FlattenedList.WrappedObservableValue[PropertyDescriptorImpl]
 
-'addListener' @ [47:33] ==> public abstract fun addListener(p0: (ChangeListener<in (Nothing..Nothing?)>..ChangeListener<in (Nothing..Nothing?)>?)): Unit defined in javafx.beans.value.ObservableValue[JavaMethodDescriptor]
+'addListener' @ [47:33] ==> public abstract fun addListener(p0: (ChangeListener<in (A..A?)>..ChangeListener<in (A..A?)>?)): Unit defined in javafx.beans.value.ObservableValue[JavaMethodDescriptor]
 
 'listener' @ [47:45] ==> val listener: ChangeListener<A> defined in net.corda.client.jfx.utils.FlattenedList.createListener[LocalVariableDescriptor]
 
@@ -143,13 +143,13 @@ Inferred types:
 
 'from' @ [55:30] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableValue<out A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> Captured(out ObservableValue<out A>)
 
 'c' @ [56:26] ==> value-parameter c: ListChangeListener.Change<out ObservableValue<out A>> defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged[ValueParameterDescriptorImpl]
 
 'to' @ [56:28] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableValue<out A>>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> Captured(out ObservableValue<out A>)
 
 'IntArray' @ [57:35] ==> public constructor IntArray(size: Int, init: (Int) -> Int) defined in kotlin.IntArray[DeserializedClassConstructorDescriptor]
 
@@ -248,7 +248,7 @@ Inferred types:
 
 'removed' @ [63:33] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableValue<out A>>.removed: (MutableList<out (ObservableValue<out A>..ObservableValue<out A>?)>..List<(ObservableValue<out A>..ObservableValue<out A>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> Captured(out ObservableValue<out A>)
 
 'removed' @ [64:21] ==> val removed: (MutableList<out (ObservableValue<out A>..ObservableValue<out A>?)>..List<(ObservableValue<out A>..ObservableValue<out A>?)>?) defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged[LocalVariableDescriptor]
 
@@ -258,13 +258,13 @@ Inferred types:
 
 'from' @ [66:41] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableValue<out A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> Captured(out ObservableValue<out A>)
 
 'c' @ [67:39] ==> value-parameter c: ListChangeListener.Change<out ObservableValue<out A>> defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged[ValueParameterDescriptorImpl]
 
 'removed' @ [67:41] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableValue<out A>>.removed: (MutableList<out (ObservableValue<out A>..ObservableValue<out A>?)>..List<(ObservableValue<out A>..ObservableValue<out A>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> Captured(out ObservableValue<out A>)
 
 'size' @ [67:49] ==> public abstract val size: Int defined in kotlin.collections.MutableList[DeserializedPropertyDescriptor]
 
@@ -272,7 +272,7 @@ Inferred types:
 
 'from' @ [68:39] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableValue<out A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> Captured(out ObservableValue<out A>)
 
 'removeRange' @ [68:46] ==> val removeRange: Int defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged[LocalVariableDescriptor]
 
@@ -325,7 +325,7 @@ Inferred types:
 
 'observableValue' @ [75:41] ==> public final val observableValue: ObservableValue<out A> defined in net.corda.client.jfx.utils.FlattenedList.WrappedObservableValue[PropertyDescriptorImpl]
 
-'removeListener' @ [75:57] ==> public abstract fun removeListener(p0: (ChangeListener<in (Nothing..Nothing?)>..ChangeListener<in (Nothing..Nothing?)>?)): Unit defined in javafx.beans.value.ObservableValue[JavaMethodDescriptor]
+'removeListener' @ [75:57] ==> public abstract fun removeListener(p0: (ChangeListener<in (A..A?)>..ChangeListener<in (A..A?)>?)): Unit defined in javafx.beans.value.ObservableValue[JavaMethodDescriptor]
 
 'listener' @ [75:72] ==> val listener: ChangeListener<A> defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged[LocalVariableDescriptor]
 
@@ -354,16 +354,16 @@ Inferred types:
 
 'removed' @ [83:45] ==> val removed: (MutableList<out (ObservableValue<out A>..ObservableValue<out A>?)>..List<(ObservableValue<out A>..ObservableValue<out A>?)>?) defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged[LocalVariableDescriptor]
 
-'map' @ [83:53] ==> public inline fun <T, R> Iterable<(ObservableValue<out A>..ObservableValue<out A>?)>.map(transform: ((ObservableValue<out A>..ObservableValue<out A>?)) -> A): List<A> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [83:53] ==> public inline fun <T, R> Iterable<(ObservableValue<out A>..ObservableValue<out A>?)>.map(transform: ((ObservableValue<out A>..ObservableValue<out A>?)) -> (A..A?)): List<(A..A?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (javafx.beans.value.ObservableValue<out A>..javafx.beans.value.ObservableValue<out A>?)
-    <R> -> A
+    <R> -> (A..A?)
 
 'it' @ [83:59] ==> value-parameter it: (ObservableValue<out A>..ObservableValue<out A>?) defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged.<anonymous>[ValueParameterDescriptorImpl]
 
-'value' @ [83:62] ==> public final val <T : (Any..Any?)> ObservableValue<out ({Any & A}..A)>.value: ({Any & A}..A?)[MyPropertyDescriptor]
+'value' @ [83:62] ==> public final val <T : (Any..Any?)> ObservableValue<out A>.value: (A..A?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ({Any & A}..A)
+    <T : (Any..Any?)> -> Captured(out A)
 
 'c' @ [85:21] ==> value-parameter c: ListChangeListener.Change<out ObservableValue<out A>> defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged[ValueParameterDescriptorImpl]
 
@@ -373,13 +373,13 @@ Inferred types:
 
 'from' @ [86:38] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableValue<out A>>.from: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> Captured(out ObservableValue<out A>)
 
 'c' @ [87:34] ==> value-parameter c: ListChangeListener.Change<out ObservableValue<out A>> defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged[ValueParameterDescriptorImpl]
 
 'to' @ [87:36] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableValue<out A>>.to: Int[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> Captured(out ObservableValue<out A>)
 
 'addEnd' @ [88:36] ==> val addEnd: Int defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged[LocalVariableDescriptor]
 
@@ -431,21 +431,21 @@ Inferred types:
 
 'addedSubList' @ [100:23] ==> public final val <E : (Any..Any?)> ListChangeListener.Change<out ObservableValue<out A>>.addedSubList: (MutableList<out (ObservableValue<out A>..ObservableValue<out A>?)>..List<(ObservableValue<out A>..ObservableValue<out A>?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ObservableValue<out A>
+    <E : (Any..Any?)> -> Captured(out ObservableValue<out A>)
 
 'forEachIndexed' @ [100:36] ==> public inline fun <T> Iterable<(ObservableValue<out A>..ObservableValue<out A>?)>.forEachIndexed(action: (index: Int, (ObservableValue<out A>..ObservableValue<out A>?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (javafx.beans.value.ObservableValue<out A>..javafx.beans.value.ObservableValue<out A>?)
 
-'WrappedObservableValue' @ [101:39] ==> public constructor WrappedObservableValue<A>(observableValue: ObservableValue<out ({Any & A}..A)>) defined in net.corda.client.jfx.utils.FlattenedList.WrappedObservableValue[ClassConstructorDescriptorImpl]
+'WrappedObservableValue' @ [101:39] ==> public constructor WrappedObservableValue<A>(observableValue: ObservableValue<out A>) defined in net.corda.client.jfx.utils.FlattenedList.WrappedObservableValue[ClassConstructorDescriptorImpl]
 Inferred types:
-    <A> -> ({Any & A}..A)
+    <A> -> Captured(out A)
 
 'observableValue' @ [101:62] ==> value-parameter observableValue: (ObservableValue<out A>..ObservableValue<out A>?) defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged.<anonymous>[ValueParameterDescriptorImpl]
 
 'indexMap' @ [102:25] ==> public final val indexMap: HashMap<FlattenedList.WrappedObservableValue<out A>, Pair<Int, ChangeListener<A>>> defined in net.corda.client.jfx.utils.FlattenedList[PropertyDescriptorImpl]
 
-'wrapped' @ [102:34] ==> val wrapped: FlattenedList.WrappedObservableValue<out ({Any & A}..A)> defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged.<anonymous>[LocalVariableDescriptor]
+'wrapped' @ [102:34] ==> val wrapped: FlattenedList.WrappedObservableValue<out A> defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged.<anonymous>[LocalVariableDescriptor]
 
 'Pair' @ [102:45] ==> public constructor Pair<out A, out B>(first: Int, second: ChangeListener<A>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -458,7 +458,7 @@ Inferred types:
 
 'createListener' @ [102:75] ==> private final fun createListener(wrapped: FlattenedList.WrappedObservableValue<out A>): ChangeListener<A> defined in net.corda.client.jfx.utils.FlattenedList[SimpleFunctionDescriptorImpl]
 
-'wrapped' @ [102:90] ==> val wrapped: FlattenedList.WrappedObservableValue<out ({Any & A}..A)> defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged.<anonymous>[LocalVariableDescriptor]
+'wrapped' @ [102:90] ==> val wrapped: FlattenedList.WrappedObservableValue<out A> defined in net.corda.client.jfx.utils.FlattenedList.sourceChanged.<anonymous>[LocalVariableDescriptor]
 
 'nextAdd' @ [104:21] ==> protected/*protected and package*/ final fun nextAdd(p0: Int, p1: Int): Unit defined in net.corda.client.jfx.utils.FlattenedList[JavaMethodDescriptor]
 
@@ -478,15 +478,15 @@ Inferred types:
 
 'size' @ [109:44] ==> public open val size: Int defined in java.util.HashMap[JavaPropertyDescriptor]
 
-'sourceList' @ [112:39] ==> public final val sourceList: ObservableList<out ObservableValue<out A>> defined in net.corda.client.jfx.utils.FlattenedList[PropertyDescriptorImpl]
+'sourceList' @ [112:36] ==> public final val sourceList: ObservableList<out ObservableValue<out A>> defined in net.corda.client.jfx.utils.FlattenedList[PropertyDescriptorImpl]
 
-'get' @ [112:50] ==> public abstract fun get(index: Int): (ObservableValue<out A>..ObservableValue<out A>?) defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
+'get' @ [112:47] ==> public abstract fun get(index: Int): (ObservableValue<out A>..ObservableValue<out A>?) defined in javafx.collections.ObservableList[DeserializedSimpleFunctionDescriptor]
 
-'index' @ [112:54] ==> value-parameter index: Int defined in net.corda.client.jfx.utils.FlattenedList.get[ValueParameterDescriptorImpl]
+'index' @ [112:51] ==> value-parameter index: Int defined in net.corda.client.jfx.utils.FlattenedList.get[ValueParameterDescriptorImpl]
 
-'value' @ [112:61] ==> public final val <T : (Any..Any?)> ObservableValue<out ({Any & A}..A)>.value: ({Any & A}..A?)[MyPropertyDescriptor]
+'value' @ [112:58] ==> public final val <T : (Any..Any?)> ObservableValue<out A>.value: (A..A?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> ({Any & A}..A)
+    <T : (Any..Any?)> -> Captured(out A)
 
 'index' @ [114:47] ==> value-parameter index: Int defined in net.corda.client.jfx.utils.FlattenedList.getSourceIndex[ValueParameterDescriptorImpl]
 

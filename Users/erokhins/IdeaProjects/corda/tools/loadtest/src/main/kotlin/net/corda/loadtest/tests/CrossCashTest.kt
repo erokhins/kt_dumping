@@ -240,8 +240,6 @@ Inferred types:
 
 'first' @ [115:65] ==> public final val first: AbstractParty defined in kotlin.Pair[DeserializedPropertyDescriptor]
 
-'OpaqueBytes' @ [115:72] ==> public companion object defined in net.corda.core.utilities.OpaqueBytes[FakeCallableDescriptorForObject]
-
 'of' @ [115:84] ==> @JvmStatic public final fun of(vararg b: Byte): OpaqueBytes defined in net.corda.core.utilities.OpaqueBytes.Companion[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [115:92] ==> value-parameter it: Pair<AbstractParty, Long> defined in net.corda.loadtest.tests.CrossCashState.toString.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
@@ -342,7 +340,7 @@ Inferred types:
 
 'toDouble' @ [134:42] ==> public open fun toDouble(): Double defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
-'generateMove' @ [134:63] ==> public fun generateMove(max: Long, currency: Currency, issuer: Party, possibleRecipients: List<Party>, anonymous: Boolean): Generator<CashPaymentFlow.PaymentRequest> defined in net.corda.loadtest.tests[SimpleFunctionDescriptorImpl]
+'generateMove' @ [134:63] ==> public fun generateMove(max: Long, currency: Currency, issuer: Party, possibleRecipients: List<Party>, anonymous: Boolean): Generator<CashPaymentFlow.PaymentRequest> defined in net.corda.loadtest.tests in file GenerateHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [134:76] ==> value-parameter it: Map.Entry<AbstractParty, Long> defined in net.corda.loadtest.tests.crossCashTest.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -392,7 +390,7 @@ Inferred types:
 
 'toDouble' @ [138:46] ==> public open fun toDouble(): Double defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
-'generateExit' @ [138:67] ==> public fun generateExit(max: Long, currency: Currency): Generator<CashExitFlow.ExitRequest> defined in net.corda.loadtest.tests[SimpleFunctionDescriptorImpl]
+'generateExit' @ [138:67] ==> public fun generateExit(max: Long, currency: Currency): Generator<CashExitFlow.ExitRequest> defined in net.corda.loadtest.tests in file GenerateHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [138:80] ==> value-parameter it: Map.Entry<AbstractParty, Long> defined in net.corda.loadtest.tests.crossCashTest.<anonymous>.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -415,7 +413,7 @@ Inferred types:
     <A> -> Double
     <B> -> Generator<IssueAndPaymentRequest>
 
-'generateIssue' @ [144:51] ==> public fun generateIssue(max: Long, currency: Currency, notary: Party, possibleRecipients: List<Party>, anonymous: Boolean): Generator<CashIssueAndPaymentFlow.IssueAndPaymentRequest> defined in net.corda.loadtest.tests[SimpleFunctionDescriptorImpl]
+'generateIssue' @ [144:51] ==> public fun generateIssue(max: Long, currency: Currency, notary: Party, possibleRecipients: List<Party>, anonymous: Boolean): Generator<CashIssueAndPaymentFlow.IssueAndPaymentRequest> defined in net.corda.loadtest.tests in file GenerateHelpers.kt[SimpleFunctionDescriptorImpl]
 
 'USD' @ [144:72] ==> @field:JvmField public val USD: Currency defined in net.corda.finance[DeserializedPropertyDescriptor]
 
@@ -891,6 +889,8 @@ Inferred types:
     <A> -> IssueAndPaymentRequest
     <reified R : FlowLogic<T>> -> CashIssueAndPaymentFlow
 
+'CashIssueAndPaymentFlow' @ [218:77] ==> public constructor CashIssueAndPaymentFlow(request: CashIssueAndPaymentFlow.IssueAndPaymentRequest) defined in net.corda.finance.flows.CashIssueAndPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'request' @ [218:102] ==> val request: AbstractCashFlow.AbstractRequest defined in net.corda.loadtest.tests.crossCashTest.<anonymous>[LocalVariableDescriptor]
 
 'returnValue' @ [218:111] ==> public abstract val returnValue: CordaFuture<AbstractCashFlow.Result> defined in net.corda.core.messaging.FlowHandle[DeserializedPropertyDescriptor]
@@ -907,6 +907,8 @@ Inferred types:
     <A> -> PaymentRequest
     <reified R : FlowLogic<T>> -> CashPaymentFlow
 
+'CashPaymentFlow' @ [219:69] ==> public constructor CashPaymentFlow(request: CashPaymentFlow.PaymentRequest) defined in net.corda.finance.flows.CashPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'request' @ [219:86] ==> val request: AbstractCashFlow.AbstractRequest defined in net.corda.loadtest.tests.crossCashTest.<anonymous>[LocalVariableDescriptor]
 
 'returnValue' @ [219:95] ==> public abstract val returnValue: CordaFuture<AbstractCashFlow.Result> defined in net.corda.core.messaging.FlowHandle[DeserializedPropertyDescriptor]
@@ -922,6 +924,8 @@ Inferred types:
     <T : Any> -> Result
     <A> -> ExitRequest
     <reified R : FlowLogic<T>> -> CashExitFlow
+
+'CashExitFlow' @ [220:66] ==> public constructor CashExitFlow(request: CashExitFlow.ExitRequest) defined in net.corda.finance.flows.CashExitFlow[DeserializedClassConstructorDescriptor]
 
 'request' @ [220:80] ==> val request: AbstractCashFlow.AbstractRequest defined in net.corda.loadtest.tests.crossCashTest.<anonymous>[LocalVariableDescriptor]
 
@@ -1039,7 +1043,7 @@ Inferred types:
 
 'component1' @ [243:18] ==> public final operator fun component1(): HashMap<AbstractParty, HashMap<AbstractParty, Long>> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'component2' @ [243:36] ==> public final operator fun component2(): Map<AbstractParty, Map<AbstractParty, List<Pair<AbstractParty, Long>>>> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
+'component2' @ [243:36] ==> public final operator fun component2(): Map<(AbstractParty..AbstractParty?), (Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>..Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>?)> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
 'if (previousState == null) {
                 Pair(currentNodeVaults, mapOf<AbstractParty, Map<AbstractParty, List<Pair<AbstractParty, Long>>>>())
@@ -1090,9 +1094,9 @@ Inferred types:
                     }
                 }
                 Pair(newConsistentVault, newDiffQueues)
-            }' @ [243:50] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Pair<HashMap<AbstractParty, HashMap<AbstractParty, Long>>, Map<AbstractParty, Map<AbstractParty, List<Pair<AbstractParty, Long>>>>>, elseBranch: Pair<HashMap<AbstractParty, HashMap<AbstractParty, Long>>, Map<AbstractParty, Map<AbstractParty, List<Pair<AbstractParty, Long>>>>>): Pair<HashMap<AbstractParty, HashMap<AbstractParty, Long>>, Map<AbstractParty, Map<AbstractParty, List<Pair<AbstractParty, Long>>>>>[SimpleFunctionDescriptorImpl]
+            }' @ [243:50] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Pair<HashMap<AbstractParty, HashMap<AbstractParty, Long>>, Map<(AbstractParty..AbstractParty?), (Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>..Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>?)>>, elseBranch: Pair<HashMap<AbstractParty, HashMap<AbstractParty, Long>>, Map<(AbstractParty..AbstractParty?), (Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>..Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>?)>>): Pair<HashMap<AbstractParty, HashMap<AbstractParty, Long>>, Map<(AbstractParty..AbstractParty?), (Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>..Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>?)>>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Pair<HashMap<AbstractParty, HashMap<AbstractParty, Long>>, Map<AbstractParty, Map<AbstractParty, List<Pair<AbstractParty, Long>>>>>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Pair<HashMap<AbstractParty, HashMap<AbstractParty, Long>>, Map<(net.corda.core.identity.AbstractParty..net.corda.core.identity.AbstractParty?), (kotlin.collections.Map<net.corda.core.identity.AbstractParty, (kotlin.collections.List<kotlin.Pair<net.corda.core.identity.AbstractParty, kotlin.Long>>..kotlin.collections.List<kotlin.Pair<net.corda.core.identity.AbstractParty, kotlin.Long>>?)>..kotlin.collections.Map<net.corda.core.identity.AbstractParty, (kotlin.collections.List<kotlin.Pair<net.corda.core.identity.AbstractParty, kotlin.Long>>..kotlin.collections.List<kotlin.Pair<net.corda.core.identity.AbstractParty, kotlin.Long>>?)>?)>>
 
 'previousState' @ [243:54] ==> value-parameter previousState: CrossCashState? defined in net.corda.loadtest.tests.crossCashTest.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1270,7 +1274,7 @@ Inferred types:
 
 'matches' @ [267:46] ==> val matches: List<Map<AbstractParty, Int>> defined in net.corda.loadtest.tests.crossCashTest.<anonymous>.<anonymous>[LocalVariableDescriptor]
 
-'fold' @ [267:54] ==> public inline fun <T, R> Iterable<Map<AbstractParty, Int>>.fold(initial: HashMap<AbstractParty, Int>?, operation: (HashMap<AbstractParty, Int>?, Map<AbstractParty, Int>) -> HashMap<AbstractParty, Int>?): HashMap<AbstractParty, Int>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [267:54] ==> public inline fun <T, R> Iterable<Map<AbstractParty, Int>>.fold(initial: HashMap<AbstractParty, Int>?, operation: (acc: HashMap<AbstractParty, Int>?, Map<AbstractParty, Int>) -> HashMap<AbstractParty, Int>?): HashMap<AbstractParty, Int>? defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Map<AbstractParty, Int>
     <R> -> HashMap<AbstractParty, Int>?
@@ -1313,6 +1317,8 @@ Inferred types:
 'value' @ [271:73] ==> public abstract val value: Int defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
 'Math' @ [271:80] ==> private constructor Math() defined in java.lang.Math[JavaClassConstructorDescriptor]
+
+'min' @ [271:86] ==> public open fun min(p0: Int, p1: Int): Int defined in java.lang.Math[JavaMethodDescriptor]
 
 'minimum' @ [272:33] ==> value-parameter minimum: HashMap<AbstractParty, Int>? defined in net.corda.loadtest.tests.crossCashTest.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1387,7 +1393,7 @@ Inferred types:
 
 'consistentVaults' @ [293:28] ==> val consistentVaults: HashMap<AbstractParty, HashMap<AbstractParty, Long>> defined in net.corda.loadtest.tests.crossCashTest.<anonymous>[LocalVariableDescriptor]
 
-'diffQueues' @ [293:46] ==> val diffQueues: Map<AbstractParty, Map<AbstractParty, List<Pair<AbstractParty, Long>>>> defined in net.corda.loadtest.tests.crossCashTest.<anonymous>[LocalVariableDescriptor]
+'diffQueues' @ [293:46] ==> val diffQueues: Map<(AbstractParty..AbstractParty?), (Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>..Map<AbstractParty, (List<Pair<AbstractParty, Long>>..List<Pair<AbstractParty, Long>>?)>?)> defined in net.corda.loadtest.tests.crossCashTest.<anonymous>[LocalVariableDescriptor]
 
 'state' @ [297:13] ==> value-parameter state: CrossCashState defined in net.corda.loadtest.tests.crossCashTest.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1456,7 +1462,7 @@ Inferred types:
 'HashMap' @ [317:29] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (A..A?), out (Int..Int?)>..Map<out (A..A?), (Int..Int?)>?)) defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
     <K : (Any..Any?)> -> A
-    <V : (Any..Any?)> -> Int
+    <V : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'consumedTxs' @ [317:37] ==> value-parameter consumedTxs: HashMap<A, Int> defined in net.corda.loadtest.tests.searchForState.searchForStateHelper[ValueParameterDescriptorImpl]
 
@@ -1543,14 +1549,14 @@ Inferred types:
 
 'HashMap' @ [345:20] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (A..A?), out (Long..Long?)>..Map<out (A..A?), (Long..Long?)>?)) defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> A
-    <V : (Any..Any?)> -> Long
+    <K : (Any..Any?)> -> (A..A?)
+    <V : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'state' @ [345:28] ==> value-parameter state: Map<A, Long> defined in net.corda.loadtest.tests.applyDiff[ValueParameterDescriptorImpl]
 
 '+' @ [346:23] ==> public final operator fun plus(other: Long): Long defined in kotlin.Long[DeserializedSimpleFunctionDescriptor]
 
-'newState' @ [346:24] ==> val newState: HashMap<A, Long> defined in net.corda.loadtest.tests.applyDiff[LocalVariableDescriptor]
+'newState' @ [346:24] ==> val newState: HashMap<(A..A?), (Long..Long?)> defined in net.corda.loadtest.tests.applyDiff[LocalVariableDescriptor]
 
 'issuer' @ [346:33] ==> value-parameter issuer: A defined in net.corda.loadtest.tests.applyDiff[ValueParameterDescriptorImpl]
 
@@ -1566,13 +1572,13 @@ Inferred types:
 
 'searchedQuantity' @ [348:51] ==> val searchedQuantity: Long? defined in net.corda.loadtest.tests.applyDiff[LocalVariableDescriptor]
 
-'newState' @ [351:5] ==> val newState: HashMap<A, Long> defined in net.corda.loadtest.tests.applyDiff[LocalVariableDescriptor]
+'newState' @ [351:5] ==> val newState: HashMap<(A..A?), (Long..Long?)> defined in net.corda.loadtest.tests.applyDiff[LocalVariableDescriptor]
 
-'put' @ [351:14] ==> public open fun put(key: A, value: Long): Long? defined in java.util.HashMap[JavaMethodDescriptor]
+'put' @ [351:14] ==> public open fun put(key: (A..A?), value: (Long..Long?)): Long? defined in java.util.HashMap[JavaMethodDescriptor]
 
 'issuer' @ [351:18] ==> value-parameter issuer: A defined in net.corda.loadtest.tests.applyDiff[ValueParameterDescriptorImpl]
 
 'newQuantity' @ [351:26] ==> val newQuantity: Long defined in net.corda.loadtest.tests.applyDiff[LocalVariableDescriptor]
 
-'newState' @ [352:12] ==> val newState: HashMap<A, Long> defined in net.corda.loadtest.tests.applyDiff[LocalVariableDescriptor]
+'newState' @ [352:12] ==> val newState: HashMap<(A..A?), (Long..Long?)> defined in net.corda.loadtest.tests.applyDiff[LocalVariableDescriptor]
 

@@ -24,7 +24,7 @@
 
 'withValuesConvertedBy' @ [30:14] ==> public final fun <T : (Any..Any?)> withValuesConvertedBy(p0: (ValueConverter<(Level..Level?)>..ValueConverter<(Level..Level?)>?)): (ArgumentAcceptingOptionSpec<(Level..Level?)>..ArgumentAcceptingOptionSpec<(Level..Level?)>?) defined in joptsimple.ArgumentAcceptingOptionSpec[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Level
+    <T : (Any..Any?)> -> (org.slf4j.event.Level..org.slf4j.event.Level?)
 
 'EnumConverter<Level>' @ [30:45] ==> protected/*protected and package*/ constructor EnumConverter<E : (Enum<(Level..Level?)>..Enum<(Level..Level?)>?)>(p0: (Class<(Level..Level?)>..Class<(Level..Level?)>?)) defined in joptsimple.util.EnumConverter[JavaClassConstructorDescriptor]
 Inferred types:
@@ -104,7 +104,7 @@ Inferred types:
 
 'valueOf' @ [44:49] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(String..String?)>..OptionSpec<(String..String?)>?)): (String..String?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> String
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'baseDirectoryArg' @ [44:57] ==> private final val baseDirectoryArg: (ArgumentAcceptingOptionSpec<(String..String?)>..ArgumentAcceptingOptionSpec<(String..String?)>?) defined in net.corda.node.ArgsParser[PropertyDescriptorImpl]
 
@@ -118,7 +118,7 @@ Inferred types:
 
 'valueOf' @ [45:52] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(String..String?)>..OptionSpec<(String..String?)>?)): (String..String?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> String
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'configFileArg' @ [45:60] ==> private final val configFileArg: (ArgumentAcceptingOptionSpec<(String..String?)>..ArgumentAcceptingOptionSpec<(String..String?)>?) defined in net.corda.node.ArgsParser[PropertyDescriptorImpl]
 
@@ -132,7 +132,7 @@ Inferred types:
 
 'valueOf' @ [47:38] ==> public open fun <V : (Any..Any?)> valueOf(p0: (OptionSpec<(Level..Level?)>..OptionSpec<(Level..Level?)>?)): (Level..Level?) defined in joptsimple.OptionSet[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Level
+    <V : (Any..Any?)> -> (org.slf4j.event.Level..org.slf4j.event.Level?)
 
 'loggerLevel' @ [47:46] ==> private final val loggerLevel: (ArgumentAcceptingOptionSpec<(Level..Level?)>..ArgumentAcceptingOptionSpec<(Level..Level?)>?) defined in net.corda.node.ArgsParser[PropertyDescriptorImpl]
 

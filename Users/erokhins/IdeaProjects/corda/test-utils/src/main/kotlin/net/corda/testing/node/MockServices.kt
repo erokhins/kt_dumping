@@ -18,8 +18,6 @@ Inferred types:
 
 'addMapping' @ [65:52] ==> public abstract fun addMapping(stateMachineRunId: StateMachineRunId, transactionId: SecureHash): Unit defined in net.corda.node.services.api.StateMachineRecordedTransactionMappingStorage[DeserializedSimpleFunctionDescriptor]
 
-'StateMachineRunId' @ [65:63] ==> public companion object defined in net.corda.core.flows.StateMachineRunId[FakeCallableDescriptorForObject]
-
 'createRandom' @ [65:81] ==> public final fun createRandom(): StateMachineRunId defined in net.corda.core.flows.StateMachineRunId.Companion[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [65:97] ==> value-parameter it: SignedTransaction defined in net.corda.testing.node.MockServices.recordTransactions.<anonymous>[ValueParameterDescriptorImpl]
@@ -79,8 +77,6 @@ Inferred types:
     <T> -> NetworkHostAndPort
 
 'identity' @ [84:38] ==> val identity: PartyAndCertificate defined in net.corda.testing.node.MockServices.<get-myInfo>[LocalVariableDescriptor]
-
-'NonEmptySet' @ [84:48] ==> public companion object defined in net.corda.core.utilities.NonEmptySet[FakeCallableDescriptorForObject]
 
 'of' @ [84:60] ==> @JvmStatic public final fun <T> of(element: PartyAndCertificate): NonEmptySet<PartyAndCertificate> defined in net.corda.core.utilities.NonEmptySet.Companion[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -446,7 +442,7 @@ Inferred types:
 
 'MEGA_CORP_KEY' @ [222:66] ==> public val MEGA_CORP_KEY: KeyPair defined in net.corda.testing in file CoreTestUtils.kt[PropertyDescriptorImpl]
 
-'makeTestIdentityService' @ [223:86] ==> public fun makeTestIdentityService(): InMemoryIdentityService defined in net.corda.testing.node[SimpleFunctionDescriptorImpl]
+'makeTestIdentityService' @ [223:86] ==> public fun makeTestIdentityService(): InMemoryIdentityService defined in net.corda.testing.node in file MockServices.kt[SimpleFunctionDescriptorImpl]
 
 'makeTestDataSourceProperties' @ [224:27] ==> public fun makeTestDataSourceProperties(nodeName: String = ...): Properties defined in net.corda.testing.node in file MockServices.kt[SimpleFunctionDescriptorImpl]
 

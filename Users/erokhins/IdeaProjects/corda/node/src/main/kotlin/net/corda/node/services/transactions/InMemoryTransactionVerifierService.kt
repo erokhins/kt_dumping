@@ -14,3 +14,5 @@ Inferred types:
 
 'transaction' @ [13:75] ==> value-parameter transaction: LedgerTransaction defined in net.corda.node.services.transactions.InMemoryTransactionVerifierService.verify[ValueParameterDescriptorImpl]
 
+'verify' @ [13:88] ==> public final fun verify(): Unit defined in net.corda.core.transactions.LedgerTransaction[DeserializedSimpleFunctionDescriptor]
+

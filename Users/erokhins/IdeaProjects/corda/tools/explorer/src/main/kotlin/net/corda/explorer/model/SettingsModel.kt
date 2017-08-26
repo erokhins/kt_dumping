@@ -37,12 +37,16 @@ Inferred types:
 
 'SettingsModel' @ [34:60] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
 
+'reportingCurrency' @ [34:75] ==> private final var reportingCurrency: Currency defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
+
 'writableConfigProperty' @ [35:30] ==> private final fun <S : Observable, T> SettingsModel.writableConfigProperty(k: KMutableProperty1<SettingsModel, Boolean>): ObjectProperty<Boolean> defined in net.corda.explorer.model.SettingsModel[SimpleFunctionDescriptorImpl]
 Inferred types:
     <S : Observable> -> SettingsModel
     <T> -> Boolean
 
 'SettingsModel' @ [35:53] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
+
+'rememberMe' @ [35:68] ==> private final var rememberMe: Boolean defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
 
 'writableConfigProperty' @ [36:24] ==> private final fun <S : Observable, T> SettingsModel.writableConfigProperty(k: KMutableProperty1<SettingsModel, String>): ObjectProperty<String> defined in net.corda.explorer.model.SettingsModel[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -51,12 +55,16 @@ Inferred types:
 
 'SettingsModel' @ [36:47] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
 
+'host' @ [36:62] ==> private final var host: String defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
+
 'writableConfigProperty' @ [37:24] ==> private final fun <S : Observable, T> SettingsModel.writableConfigProperty(k: KMutableProperty1<SettingsModel, String>): ObjectProperty<String> defined in net.corda.explorer.model.SettingsModel[SimpleFunctionDescriptorImpl]
 Inferred types:
     <S : Observable> -> SettingsModel
     <T> -> String
 
 'SettingsModel' @ [37:47] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
+
+'port' @ [37:62] ==> private final var port: String defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
 
 'writableConfigProperty' @ [38:28] ==> private final fun <S : Observable, T> SettingsModel.writableConfigProperty(k: KMutableProperty1<SettingsModel, String>): ObjectProperty<String> defined in net.corda.explorer.model.SettingsModel[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -65,12 +73,16 @@ Inferred types:
 
 'SettingsModel' @ [38:51] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
 
+'username' @ [38:66] ==> private final var username: String defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
+
 'writableConfigProperty' @ [39:30] ==> private final fun <S : Observable, T> SettingsModel.writableConfigProperty(k: KMutableProperty1<SettingsModel, Boolean>): ObjectProperty<Boolean> defined in net.corda.explorer.model.SettingsModel[SimpleFunctionDescriptorImpl]
 Inferred types:
     <S : Observable> -> SettingsModel
     <T> -> Boolean
 
 'SettingsModel' @ [39:53] ==> public constructor SettingsModel(path: Path = ...) defined in net.corda.explorer.model.SettingsModel[ClassConstructorDescriptorImpl]
+
+'fullscreen' @ [39:68] ==> private final var fullscreen: Boolean defined in net.corda.explorer.model.SettingsModel[PropertyDescriptorImpl]
 
 'load' @ [42:9] ==> public final fun load(): Properties defined in net.corda.explorer.model.SettingsModel[SimpleFunctionDescriptorImpl]
 

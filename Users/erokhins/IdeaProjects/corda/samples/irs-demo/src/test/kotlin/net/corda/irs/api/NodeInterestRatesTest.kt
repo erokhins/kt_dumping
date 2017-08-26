@@ -51,6 +51,8 @@ Inferred types:
 
 'makeTestDatabaseProperties' @ [64:70] ==> public fun makeTestDatabaseProperties(key: String? = ..., value: String? = ...): Properties defined in net.corda.testing.node[DeserializedSimpleFunctionDescriptor]
 
+'makeTestIdentityService' @ [64:126] ==> public fun makeTestIdentityService(): InMemoryIdentityService defined in net.corda.testing.node[DeserializedSimpleFunctionDescriptor]
+
 'database' @ [65:9] ==> public final lateinit var database: CordaPersistence defined in net.corda.irs.api.NodeInterestRatesTest[PropertyDescriptorImpl]
 
 'transaction' @ [65:18] ==> public final fun <T> transaction(statement: DatabaseTransaction.() -> Unit): Unit defined in net.corda.node.utilities.CordaPersistence[DeserializedSimpleFunctionDescriptor]
@@ -306,6 +308,8 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> Any
 
+'filterAllOutputs' @ [138:66] ==> local final fun filterAllOutputs(elem: Any): Boolean defined in net.corda.irs.api.NodeInterestRatesTest.`refuse to sign with no relevant commands`.<anonymous>[SimpleFunctionDescriptorImpl]
+
 'assertFailsWith' @ [139:13] ==> @InlineOnly public inline fun <reified T : Throwable> assertFailsWith(message: String? = ..., noinline block: () -> Unit): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.test[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Throwable> -> IllegalArgumentException
@@ -319,8 +323,6 @@ Inferred types:
 'tx' @ [140:13] ==> val tx: TransactionBuilder defined in net.corda.irs.api.NodeInterestRatesTest.`refuse to sign with no relevant commands`.<anonymous>[LocalVariableDescriptor]
 
 'addCommand' @ [140:16] ==> public final fun addCommand(data: CommandData, vararg keys: PublicKey): TransactionBuilder defined in net.corda.core.transactions.TransactionBuilder[DeserializedSimpleFunctionDescriptor]
-
-'Cash' @ [140:27] ==> public companion object defined in net.corda.finance.contracts.asset.Cash[FakeCallableDescriptorForObject]
 
 'Move' @ [140:41] ==> public constructor Move(contract: Class<out Contract>? = ...) defined in net.corda.finance.contracts.asset.Cash.Commands.Move[DeserializedClassConstructorDescriptor]
 
@@ -379,8 +381,6 @@ Inferred types:
 'listOf' @ [152:36] ==> public fun <T> listOf(element: FixOf): List<FixOf> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> FixOf
-
-'NodeInterestRates' @ [152:43] ==> public object NodeInterestRates defined in net.corda.irs.api[FakeCallableDescriptorForObject]
 
 'parseFixOf' @ [152:61] ==> public final fun parseFixOf(key: String): FixOf defined in net.corda.irs.api.NodeInterestRates[DeserializedSimpleFunctionDescriptor]
 
@@ -514,8 +514,6 @@ Inferred types:
 Inferred types:
     <T> -> FixOf
 
-'NodeInterestRates' @ [180:43] ==> public object NodeInterestRates defined in net.corda.irs.api[FakeCallableDescriptorForObject]
-
 'parseFixOf' @ [180:61] ==> public final fun parseFixOf(key: String): FixOf defined in net.corda.irs.api.NodeInterestRates[DeserializedSimpleFunctionDescriptor]
 
 'first' @ [180:97] ==> public fun <T> List<Fix>.first(): Fix defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
@@ -569,6 +567,8 @@ Inferred types:
 'Predicate' @ [190:52] ==> @FunctionalInterface public fun <T : (Any..Any?)> Predicate(function: (Any) -> Boolean): Predicate<Any> defined in java.util.function[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T : (Any..Any?)> -> Any
+
+'filtering' @ [190:64] ==> local final fun filtering(elem: Any): Boolean defined in net.corda.irs.api.NodeInterestRatesTest.`do not sign too many leaves`.<anonymous>[SimpleFunctionDescriptorImpl]
 
 'assertFailsWith' @ [191:13] ==> @InlineOnly public inline fun <reified T : Throwable> assertFailsWith(message: String? = ..., noinline block: () -> Unit): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.test[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -625,8 +625,6 @@ Inferred types:
 'myAddress' @ [207:48] ==> public abstract val myAddress: SingleMessageRecipient defined in net.corda.node.services.messaging.MessagingService[DeserializedPropertyDescriptor]
 
 'ServiceInfo' @ [207:80] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'NodeInterestRates' @ [207:92] ==> public object NodeInterestRates defined in net.corda.irs.api[FakeCallableDescriptorForObject]
 
 'type' @ [207:117] ==> @field:JvmField public final val type: ServiceType defined in net.corda.irs.api.NodeInterestRates.Oracle.Companion[DeserializedPropertyDescriptor]
 
@@ -695,8 +693,6 @@ Inferred types:
 'info' @ [215:25] ==> public final lateinit var info: NodeInfo defined in net.corda.testing.node.MockNetwork.MockNode[DeserializedPropertyDescriptor]
 
 'serviceIdentities' @ [215:30] ==> public final fun serviceIdentities(type: ServiceType): List<Party> defined in net.corda.core.node.NodeInfo[DeserializedSimpleFunctionDescriptor]
-
-'NodeInterestRates' @ [215:48] ==> public object NodeInterestRates defined in net.corda.irs.api[FakeCallableDescriptorForObject]
 
 'type' @ [215:73] ==> @field:JvmField public final val type: ServiceType defined in net.corda.irs.api.NodeInterestRates.Oracle.Companion[DeserializedPropertyDescriptor]
 

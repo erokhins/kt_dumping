@@ -6,7 +6,7 @@
 Inferred types:
     <reified T : Any> -> RaftUniquenessProvider
 
-'AppendOnlyPersistentMap' @ [53:17] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (String) -> String, fromPersistentEntity: (RaftUniquenessProvider.RaftState) -> Pair<String, Any>, toPersistentEntity: (String, Any) -> RaftUniquenessProvider.RaftState, persistentEntityClass: Class<RaftUniquenessProvider.RaftState>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
+'AppendOnlyPersistentMap' @ [53:17] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (String) -> String, fromPersistentEntity: (RaftUniquenessProvider.RaftState) -> Pair<String, Any>, toPersistentEntity: (key: String, value: Any) -> RaftUniquenessProvider.RaftState, persistentEntityClass: Class<RaftUniquenessProvider.RaftState>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> String
     <V> -> Any
@@ -32,8 +32,6 @@ Inferred types:
 Inferred types:
     <reified T : Any> -> Any
 
-'SerializationDefaults' @ [56:73] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
-
 'STORAGE_CONTEXT' @ [56:95] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
 'RaftState' @ [59:29] ==> public constructor RaftState(key: String = ..., value: ByteArray = ...) defined in net.corda.node.services.transactions.RaftUniquenessProvider.RaftState[ClassConstructorDescriptorImpl]
@@ -53,8 +51,6 @@ Inferred types:
 'serialize' @ [61:43] ==> public fun <T : Any> Any.serialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): SerializedBytes<Any> defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> Any
-
-'SerializationDefaults' @ [61:63] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'STORAGE_CONTEXT' @ [61:85] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
@@ -133,6 +129,8 @@ Inferred types:
 
 'Companion' @ [107:64] ==> public companion object defined in net.corda.node.services.transactions.RaftUniquenessProvider[FakeCallableDescriptorForObject]
 
+'createMap' @ [107:75] ==> public final fun createMap(): AppendOnlyPersistentMap<String, Any, RaftUniquenessProvider.RaftState, String> defined in net.corda.node.services.transactions.RaftUniquenessProvider.Companion[SimpleFunctionDescriptorImpl]
+
 'Address' @ [108:23] ==> public constructor Address(p0: (String..String?), p1: Int) defined in io.atomix.catalyst.transport.Address[JavaClassConstructorDescriptor]
 
 'myAddress' @ [108:31] ==> private final val myAddress: NetworkHostAndPort defined in net.corda.node.services.transactions.RaftUniquenessProvider[PropertyDescriptorImpl]
@@ -161,16 +159,16 @@ Inferred types:
 
 'DistributedImmutableMap' @ [113:22] ==> public companion object defined in net.corda.node.services.transactions.DistributedImmutableMap[FakeCallableDescriptorForObject]
 
-'PutAll' @ [113:55] ==> public constructor PutAll<K, V>(entries: Map<Any?, Any?>) defined in net.corda.node.services.transactions.DistributedImmutableMap.Commands.PutAll[ClassConstructorDescriptorImpl]
+'PutAll' @ [113:55] ==> public constructor PutAll<K, V>(entries: Map<???, ???>) defined in net.corda.node.services.transactions.DistributedImmutableMap.Commands.PutAll[ClassConstructorDescriptorImpl]
 Inferred types:
-    <K> -> Any?
-    <V> -> Any?
+    <K> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@46eff7cf
+    <V> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@44718627
 
 'java' @ [113:69] ==> public val <T> KClass<DistributedImmutableMap.Commands.PutAll<*, *>>.java: Class<DistributedImmutableMap.Commands.PutAll<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> PutAll<*, *>
 
-'writeMap' @ [118:25] ==> private fun writeMap(map: Map<*, *>, buffer: BufferOutput<out BufferOutput<*>>, serializer: Serializer): Unit defined in net.corda.node.services.transactions[SimpleFunctionDescriptorImpl]
+'writeMap' @ [118:25] ==> private fun writeMap(map: Map<*, *>, buffer: BufferOutput<out BufferOutput<*>>, serializer: Serializer): Unit defined in net.corda.node.services.transactions in file RaftUniquenessProvider.kt[SimpleFunctionDescriptorImpl]
 
 'obj' @ [118:34] ==> value-parameter obj: DistributedImmutableMap.Commands.PutAll<*, *> defined in net.corda.node.services.transactions.RaftUniquenessProvider.start.<anonymous>.<anonymous>.<no name provided>.write[ValueParameterDescriptorImpl]
 
@@ -187,7 +185,7 @@ Inferred types:
     <K> -> Any
     <V> -> Any
 
-'readMap' @ [123:72] ==> private fun readMap(buffer: BufferInput<out BufferInput<*>>, serializer: Serializer): LinkedHashMap<Any, Any> /* = LinkedHashMap<Any, Any> */ defined in net.corda.node.services.transactions[SimpleFunctionDescriptorImpl]
+'readMap' @ [123:72] ==> private fun readMap(buffer: BufferInput<out BufferInput<*>>, serializer: Serializer): LinkedHashMap<Any, Any> /* = LinkedHashMap<Any, Any> */ defined in net.corda.node.services.transactions in file RaftUniquenessProvider.kt[SimpleFunctionDescriptorImpl]
 
 'buffer' @ [123:80] ==> value-parameter buffer: BufferInput<out BufferInput<*>> defined in net.corda.node.services.transactions.RaftUniquenessProvider.start.<anonymous>.<anonymous>.<no name provided>.read[ValueParameterDescriptorImpl]
 
@@ -195,16 +193,16 @@ Inferred types:
 
 'register' @ [127:13] ==> public final fun register(p0: (Class<*>..Class<*>?), p1: (((Class<*>..Class<*>?)) -> (TypeSerializer<*>..TypeSerializer<*>?)..(((Class<*>..Class<*>?)) -> (TypeSerializer<*>..TypeSerializer<*>?))?)): (Serializer..Serializer?) defined in io.atomix.catalyst.serializer.Serializer[MyFunctionDescriptor]
 
-'LinkedHashMap' @ [127:22] ==> public final fun <K, V> <init>(): LinkedHashMap<Any?, Any?> /* = LinkedHashMap<Any?, Any?> */ defined in kotlin.collections.LinkedHashMap[TypeAliasConstructorDescriptorImpl]
+'LinkedHashMap' @ [127:22] ==> public final fun <K, V> <init>(): LinkedHashMap<???, ???> /* = LinkedHashMap<???, ???> */ defined in kotlin.collections.LinkedHashMap[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <K> -> Any?
-    <V> -> Any?
+    <K> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7a24c89d
+    <V> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@3c12214
 
 'java' @ [127:43] ==> public val <T> KClass<LinkedHashMap<*, *>>.java: Class<LinkedHashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> LinkedHashMap<*, *>
 
-'writeMap' @ [129:135] ==> private fun writeMap(map: Map<*, *>, buffer: BufferOutput<out BufferOutput<*>>, serializer: Serializer): Unit defined in net.corda.node.services.transactions[SimpleFunctionDescriptorImpl]
+'writeMap' @ [129:135] ==> private fun writeMap(map: Map<*, *>, buffer: BufferOutput<out BufferOutput<*>>, serializer: Serializer): Unit defined in net.corda.node.services.transactions in file RaftUniquenessProvider.kt[SimpleFunctionDescriptorImpl]
 
 'obj' @ [129:144] ==> value-parameter obj: LinkedHashMap<*, *> /* = LinkedHashMap<*, *> */ defined in net.corda.node.services.transactions.RaftUniquenessProvider.start.<anonymous>.<anonymous>.<no name provided>.write[ValueParameterDescriptorImpl]
 
@@ -212,7 +210,7 @@ Inferred types:
 
 'serializer' @ [129:157] ==> value-parameter serializer: Serializer defined in net.corda.node.services.transactions.RaftUniquenessProvider.start.<anonymous>.<anonymous>.<no name provided>.write[ValueParameterDescriptorImpl]
 
-'readMap' @ [130:140] ==> private fun readMap(buffer: BufferInput<out BufferInput<*>>, serializer: Serializer): LinkedHashMap<Any, Any> /* = LinkedHashMap<Any, Any> */ defined in net.corda.node.services.transactions[SimpleFunctionDescriptorImpl]
+'readMap' @ [130:140] ==> private fun readMap(buffer: BufferInput<out BufferInput<*>>, serializer: Serializer): LinkedHashMap<Any, Any> /* = LinkedHashMap<Any, Any> */ defined in net.corda.node.services.transactions in file RaftUniquenessProvider.kt[SimpleFunctionDescriptorImpl]
 
 'buffer' @ [130:148] ==> value-parameter buffer: BufferInput<out BufferInput<*>> defined in net.corda.node.services.transactions.RaftUniquenessProvider.start.<anonymous>.<anonymous>.<no name provided>.read[ValueParameterDescriptorImpl]
 
@@ -326,7 +324,7 @@ Inferred types:
 
 'thenCompose' @ [157:38] ==> public final fun <U : (Any..Any?)> thenCompose(p0: (((CopycatServer..CopycatServer?)) -> (CompletionStage<(CopycatClient..CopycatClient?)>..CompletionStage<(CopycatClient..CopycatClient?)>?)..(((CopycatServer..CopycatServer?)) -> (CompletionStage<(CopycatClient..CopycatClient?)>..CompletionStage<(CopycatClient..CopycatClient?)>?))?)): (CompletableFuture<(CopycatClient..CopycatClient?)>..CompletableFuture<(CopycatClient..CopycatClient?)>?) defined in java.util.concurrent.CompletableFuture[MyFunctionDescriptor]
 Inferred types:
-    <U : (Any..Any?)> -> CopycatClient
+    <U : (Any..Any?)> -> (io.atomix.copycat.client.CopycatClient..io.atomix.copycat.client.CopycatClient?)
 
 'client' @ [157:52] ==> val client: (CopycatClient..CopycatClient?) defined in net.corda.node.services.transactions.RaftUniquenessProvider.start[LocalVariableDescriptor]
 
@@ -432,7 +430,7 @@ Inferred types:
 
 'submit' @ [187:32] ==> public abstract fun <T : (Any..Any?)> submit(p0: (Command<(Map<String, ByteArray>..Map<String, ByteArray>?)>..Command<(Map<String, ByteArray>..Map<String, ByteArray>?)>?)): (CompletableFuture<(Map<String, ByteArray>..Map<String, ByteArray>?)>..CompletableFuture<(Map<String, ByteArray>..Map<String, ByteArray>?)>?) defined in io.atomix.copycat.client.CopycatClient[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Map<String, ByteArray>
+    <T : (Any..Any?)> -> (kotlin.collections.Map<kotlin.String, kotlin.ByteArray>..kotlin.collections.Map<kotlin.String, kotlin.ByteArray>?)
 
 'commitCommand' @ [187:39] ==> val commitCommand: DistributedImmutableMap.Commands.PutAll<String, ByteArray> defined in net.corda.node.services.transactions.RaftUniquenessProvider.commit[LocalVariableDescriptor]
 
@@ -500,8 +498,6 @@ Inferred types:
 
 'StateRef' @ [203:52] ==> public constructor StateRef(txhash: SecureHash, index: Int) defined in net.corda.core.contracts.StateRef[DeserializedClassConstructorDescriptor]
 
-'SecureHash' @ [203:61] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
-
 'parse' @ [203:72] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [203:78] ==> value-parameter it: List<String> defined in net.corda.node.services.transactions.RaftUniquenessProvider.decode.toStateRef.<anonymous>[ValueParameterDescriptorImpl]
@@ -537,9 +533,9 @@ Inferred types:
     <K> -> StateRef
     <V> -> ConsumingTx
 
-'with' @ [208:107] ==> @InlineOnly public inline fun <T, R> with(receiver: Map<out Any?, Any?>, block: Map<out Any?, Any?>.() -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [208:107] ==> @InlineOnly public inline fun <T, R> with(receiver: Map<*, *>, block: Map<*, *>.() -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Map<out Any?, Any?>
+    <T> -> Map<*, *>
     <R> -> Unit
 
 'map' @ [208:112] ==> value-parameter map: Map<*, *> defined in net.corda.node.services.transactions.writeMap[ValueParameterDescriptorImpl]
@@ -555,16 +551,16 @@ Inferred types:
     <K> -> Any?
     <V> -> Any?
 
-'with' @ [211:9] ==> @InlineOnly public inline fun <T, R> with(receiver: Serializer, block: Serializer.() -> BufferOutput<out (BufferOutput<*>..BufferOutput<*>?)>): BufferOutput<out (BufferOutput<*>..BufferOutput<*>?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'with' @ [211:9] ==> @InlineOnly public inline fun <T, R> with(receiver: Serializer, block: Serializer.() -> (BufferOutput<*>..BufferOutput<*>?)): (BufferOutput<*>..BufferOutput<*>?) defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> Serializer
-    <R> -> BufferOutput<out (io.atomix.catalyst.buffer.BufferOutput<*>..io.atomix.catalyst.buffer.BufferOutput<*>?)>
+    <R> -> (io.atomix.catalyst.buffer.BufferOutput<*>..io.atomix.catalyst.buffer.BufferOutput<*>?)
 
 'serializer' @ [211:14] ==> value-parameter serializer: Serializer defined in net.corda.node.services.transactions.writeMap[ValueParameterDescriptorImpl]
 
-'writeObject' @ [212:13] ==> public open fun <T : (Any..Any?)> writeObject(p0: (Any..Any?), p1: (BufferOutput<*>..BufferOutput<*>?)): (BufferOutput<*>..BufferOutput<*>?) defined in io.atomix.catalyst.serializer.Serializer[JavaMethodDescriptor]
+'writeObject' @ [212:13] ==> public open fun <T : (Any..Any?)> writeObject(p0: Any?, p1: (BufferOutput<*>..BufferOutput<*>?)): (BufferOutput<*>..BufferOutput<*>?) defined in io.atomix.catalyst.serializer.Serializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Any?
 
 'it' @ [212:25] ==> value-parameter it: Map.Entry<Any?, Any?> defined in net.corda.node.services.transactions.writeMap.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -572,9 +568,9 @@ Inferred types:
 
 'buffer' @ [212:33] ==> value-parameter buffer: BufferOutput<out BufferOutput<*>> defined in net.corda.node.services.transactions.writeMap[ValueParameterDescriptorImpl]
 
-'writeObject' @ [213:13] ==> public open fun <T : (Any..Any?)> writeObject(p0: (Any..Any?), p1: (BufferOutput<*>..BufferOutput<*>?)): (BufferOutput<*>..BufferOutput<*>?) defined in io.atomix.catalyst.serializer.Serializer[JavaMethodDescriptor]
+'writeObject' @ [213:13] ==> public open fun <T : (Any..Any?)> writeObject(p0: Any?, p1: (BufferOutput<*>..BufferOutput<*>?)): (BufferOutput<*>..BufferOutput<*>?) defined in io.atomix.catalyst.serializer.Serializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Any?
 
 'it' @ [213:25] ==> value-parameter it: Map.Entry<Any?, Any?> defined in net.corda.node.services.transactions.writeMap.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -603,7 +599,7 @@ Inferred types:
 
 'readObject' @ [221:28] ==> public open fun <T : (Any..Any?)> readObject(p0: (BufferInput<*>..BufferInput<*>?)): (Any..Any?) defined in io.atomix.catalyst.serializer.Serializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'buffer' @ [221:39] ==> value-parameter buffer: BufferInput<out BufferInput<*>> defined in net.corda.node.services.transactions.readMap[ValueParameterDescriptorImpl]
 
@@ -611,7 +607,7 @@ Inferred types:
 
 'readObject' @ [221:59] ==> public open fun <T : (Any..Any?)> readObject(p0: (BufferInput<*>..BufferInput<*>?)): (Any..Any?) defined in io.atomix.catalyst.serializer.Serializer[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'buffer' @ [221:70] ==> value-parameter buffer: BufferInput<out BufferInput<*>> defined in net.corda.node.services.transactions.readMap[ValueParameterDescriptorImpl]
 

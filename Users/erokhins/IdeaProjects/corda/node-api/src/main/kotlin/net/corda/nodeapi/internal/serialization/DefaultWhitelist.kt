@@ -18,9 +18,9 @@ Inferred types:
 
 'addToWhitelist' @ [23:13] ==> public abstract fun addToWhitelist(type: Class<*>): Unit defined in net.corda.core.serialization.SerializationCustomization[DeserializedSimpleFunctionDescriptor]
 
-'Notification' @ [23:28] ==> private constructor Notification<T : (Any..Any?)>(p0: (Notification.Kind..Notification.Kind?), p1: (Any..Any?), p2: (Throwable..Throwable?)) defined in rx.Notification[JavaClassConstructorDescriptor]
+'Notification' @ [23:28] ==> private constructor Notification<T : (Any..Any?)>(p0: (Notification.Kind..Notification.Kind?), p1: (???..???), p2: (Throwable..Throwable?)) defined in rx.Notification[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6dc40c6c
 
 'java' @ [23:48] ==> public val <T> KClass<Notification<*>>.java: Class<Notification<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -38,7 +38,7 @@ Inferred types:
 
 'ArrayList' @ [25:28] ==> public constructor ArrayList<E : (Any..Any?)>() defined in java.util.ArrayList[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7a2784d6
 
 'java' @ [25:45] ==> public val <T> KClass<ArrayList<*>>.java: Class<ArrayList<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -56,10 +56,10 @@ Inferred types:
 
 'addToWhitelist' @ [27:13] ==> public abstract fun addToWhitelist(type: Class<*>): Unit defined in net.corda.core.serialization.SerializationCustomization[DeserializedSimpleFunctionDescriptor]
 
-'Pair' @ [27:28] ==> public constructor Pair<out A, out B>(first: Nothing, second: Nothing) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [27:28] ==> public constructor Pair<out A, out B>(first: ???, second: ???) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> Nothing
-    <out B> -> Nothing
+    <out A> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@3723a578
+    <out B> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@2ff2df8a
 
 'java' @ [27:40] ==> public val <T> KClass<Pair<*, *>>.java: Class<Pair<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -81,7 +81,7 @@ Inferred types:
 
 'LinkedHashSet' @ [30:28] ==> public constructor LinkedHashSet<E : (Any..Any?)>() defined in java.util.LinkedHashSet[JavaClassConstructorDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <E : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@62981174
 
 'java' @ [30:49] ==> public val <T> KClass<LinkedHashSet<*>>.java: Class<LinkedHashSet<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -192,7 +192,7 @@ Inferred types:
 
 'Class' @ [42:38] ==> private constructor Class<T : (Any..Any?)>(p0: (ClassLoader..ClassLoader?)) defined in java.lang.Class[JavaClassConstructorDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@245f38c5
 
 'java' @ [42:51] ==> public val <T> KClass<Class<*>>.java: Class<Class<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -328,8 +328,8 @@ Inferred types:
 
 'singletonMap' @ [62:50] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> singletonMap(p0: (String..String?), p1: (String..String?)): (MutableMap<(String..String?), (String..String?)>..Map<(String..String?), (String..String?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'javaClass' @ [62:73] ==> public val <T : Any> (MutableMap<(String..String?), (String..String?)>..Map<(String..String?), (String..String?)>?).javaClass: Class<(MutableMap<(String..String?), (String..String?)>..Map<(String..String?), (String..String?)>?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -339,8 +339,8 @@ Inferred types:
 
 'LinkedHashMap' @ [63:38] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@e7d5153
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@37cad199
 
 'java' @ [63:59] ==> public val <T> KClass<LinkedHashMap<*, *>>.java: Class<LinkedHashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

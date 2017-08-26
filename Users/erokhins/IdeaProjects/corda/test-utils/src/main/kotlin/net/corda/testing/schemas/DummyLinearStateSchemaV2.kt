@@ -1,7 +1,5 @@
 'MappedSchema' @ [15:35] ==> public constructor MappedSchema(schemaFamily: Class<*>, version: Int, mappedTypes: Iterable<Class<*>>) defined in net.corda.core.schemas.MappedSchema[DeserializedClassConstructorDescriptor]
 
-'DummyLinearStateSchema' @ [15:63] ==> public object DummyLinearStateSchema defined in net.corda.testing.schemas in file DummyLinearStateSchemaV1.kt[FakeCallableDescriptorForObject]
-
 'javaClass' @ [15:86] ==> public val <T : Any> DummyLinearStateSchema.javaClass: Class<DummyLinearStateSchema> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T : Any> -> DummyLinearStateSchema

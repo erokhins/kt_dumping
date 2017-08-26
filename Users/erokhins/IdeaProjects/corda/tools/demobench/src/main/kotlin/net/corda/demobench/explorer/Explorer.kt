@@ -100,7 +100,7 @@ Inferred types:
 
 'p' @ [56:30] ==> val p: (Process..Process?) defined in net.corda.demobench.explorer.Explorer.open[LocalVariableDescriptor]
 
-'readErrorLines' @ [56:32] ==> public fun Process.readErrorLines(): List<String> defined in net.corda.demobench[SimpleFunctionDescriptorImpl]
+'readErrorLines' @ [56:32] ==> public fun Process.readErrorLines(): List<String> defined in net.corda.demobench in file DemoBench.kt[SimpleFunctionDescriptorImpl]
 
 'process' @ [57:17] ==> private final var process: Process? defined in net.corda.demobench.explorer.Explorer[PropertyDescriptorImpl]
 

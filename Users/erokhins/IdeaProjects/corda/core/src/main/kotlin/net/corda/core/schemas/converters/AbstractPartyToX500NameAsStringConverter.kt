@@ -1,8 +1,8 @@
 'Converter' @ [14:1] ==> public constructor Converter(autoApply: Boolean = ...) defined in javax.persistence.Converter[JavaClassConstructorDescriptor]
 
-'lazy' @ [17:53] ==> public fun <T> lazy(initializer: () -> IdentityService): Lazy<IdentityService> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [17:53] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> IdentityService
+    <T> -> T
 
 'invoke' @ [18:9] ==> public abstract operator fun invoke(): IdentityService defined in kotlin.Function0[FunctionInvokeDescriptor]
 

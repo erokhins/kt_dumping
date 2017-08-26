@@ -32,7 +32,7 @@ Inferred types:
 
 'singleton' @ [48:61] ==> public open fun <T : (Any..Any?)> singleton(p0: (PublicKey..PublicKey?)): (MutableSet<(PublicKey..PublicKey?)>..Set<(PublicKey..PublicKey?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> PublicKey
+    <T : (Any..Any?)> -> (java.security.PublicKey..java.security.PublicKey?)
 
 'owner' @ [48:71] ==> public open val owner: AbstractParty defined in net.corda.finance.contracts.asset.CommodityContract.State[PropertyDescriptorImpl]
 
@@ -181,13 +181,13 @@ Inferred types:
 
 'inputs' @ [102:35] ==> val inputs: List<CommodityContract.State> defined in net.corda.finance.contracts.asset.CommodityContract.verify[LocalVariableDescriptor]
 
-'sumCommoditiesOrNull' @ [102:42] ==> @Suppress public fun Iterable<ContractState>.sumCommoditiesOrNull(): Amount<Issued<Commodity>>? defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCommoditiesOrNull' @ [102:42] ==> @Suppress public fun Iterable<ContractState>.sumCommoditiesOrNull(): Amount<Issued<Commodity>>? defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'IllegalArgumentException' @ [102:74] ==> public final fun <init>(p0: (String..String?)): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
 
 'outputs' @ [103:36] ==> val outputs: List<CommodityContract.State> defined in net.corda.finance.contracts.asset.CommodityContract.verify[LocalVariableDescriptor]
 
-'sumCommoditiesOrZero' @ [103:44] ==> public fun Iterable<ContractState>.sumCommoditiesOrZero(currency: Issued<Commodity>): Amount<Issued<Commodity>> defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCommoditiesOrZero' @ [103:44] ==> public fun Iterable<ContractState>.sumCommoditiesOrZero(currency: Issued<Commodity>): Amount<Issued<Commodity>> defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'Issued' @ [103:65] ==> public constructor Issued<out P : Any>(issuer: PartyAndReference, product: Commodity) defined in net.corda.core.contracts.Issued[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -275,7 +275,7 @@ Inferred types:
 
 'inputs' @ [138:27] ==> value-parameter inputs: List<CommodityContract.State> defined in net.corda.finance.contracts.asset.CommodityContract.verifyIssueCommand[ValueParameterDescriptorImpl]
 
-'sumCommoditiesOrZero' @ [138:34] ==> public fun Iterable<ContractState>.sumCommoditiesOrZero(currency: Issued<Commodity>): Amount<Issued<Commodity>> defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCommoditiesOrZero' @ [138:34] ==> public fun Iterable<ContractState>.sumCommoditiesOrZero(currency: Issued<Commodity>): Amount<Issued<Commodity>> defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'Issued' @ [138:55] ==> public constructor Issued<out P : Any>(issuer: PartyAndReference, product: Commodity) defined in net.corda.core.contracts.Issued[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -287,7 +287,7 @@ Inferred types:
 
 'outputs' @ [139:28] ==> value-parameter outputs: List<CommodityContract.State> defined in net.corda.finance.contracts.asset.CommodityContract.verifyIssueCommand[ValueParameterDescriptorImpl]
 
-'sumCommodities' @ [139:36] ==> public fun Iterable<ContractState>.sumCommodities(): Amount<Issued<Commodity>> defined in net.corda.finance.utils[SimpleFunctionDescriptorImpl]
+'sumCommodities' @ [139:36] ==> public fun Iterable<ContractState>.sumCommodities(): Amount<Issued<Commodity>> defined in net.corda.finance.utils in file StateSummingUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'tx' @ [140:33] ==> value-parameter tx: LedgerTransaction defined in net.corda.finance.contracts.asset.CommodityContract.verifyIssueCommand[ValueParameterDescriptorImpl]
 

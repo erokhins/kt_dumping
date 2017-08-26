@@ -146,6 +146,8 @@ Inferred types:
     <E> -> Party
     <reified R : FlowLogic<T>> -> CashIssueAndPaymentFlow
 
+'CashIssueAndPaymentFlow' @ [59:29] ==> public constructor CashIssueAndPaymentFlow(amount: Amount<Currency>, issueRef: OpaqueBytes, recipient: Party, anonymous: Boolean, notary: Party) defined in net.corda.finance.flows.CashIssueAndPaymentFlow[DeserializedClassConstructorDescriptor]
+
 'amount' @ [59:54] ==> val amount: Amount<(Currency..Currency?)> defined in net.corda.bank.api.BankOfCordaWebApi.issueAssetRequest[LocalVariableDescriptor]
 
 'issuerBankPartyRef' @ [59:62] ==> val issuerBankPartyRef: OpaqueBytes defined in net.corda.bank.api.BankOfCordaWebApi.issueAssetRequest[LocalVariableDescriptor]

@@ -16,9 +16,9 @@ Inferred types:
 
 'IllegalStateException' @ [39:66] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
 
-'lazy' @ [40:27] ==> public fun <T> lazy(initializer: () -> NodeInfo): Lazy<NodeInfo> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [40:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> NodeInfo
+    <T> -> T
 
 'proxy' @ [40:34] ==> public final val proxy: CordaRPCOps defined in net.corda.loadtest.NodeConnection[PropertyDescriptorImpl]
 
@@ -124,7 +124,7 @@ Inferred types:
 
 'channel' @ [71:35] ==> val channel: ChannelExec defined in net.corda.loadtest.NodeConnection.withChannelExec[LocalVariableDescriptor]
 
-'poll' @ [72:13] ==> public fun poll(intervalMilliseconds: Long = ..., function: () -> Boolean): Unit defined in net.corda.loadtest[SimpleFunctionDescriptorImpl]
+'poll' @ [72:13] ==> public fun poll(intervalMilliseconds: Long = ..., function: () -> Boolean): Unit defined in net.corda.loadtest in file ConnectionManager.kt[SimpleFunctionDescriptorImpl]
 
 'channel' @ [72:20] ==> val channel: ChannelExec defined in net.corda.loadtest.NodeConnection.withChannelExec[LocalVariableDescriptor]
 
@@ -215,7 +215,7 @@ Inferred types:
 
 'connect' @ [95:25] ==> public open fun connect(): Unit defined in com.jcraft.jsch.ChannelExec[JavaMethodDescriptor]
 
-'poll' @ [96:17] ==> public fun poll(intervalMilliseconds: Long = ..., function: () -> Boolean): Unit defined in net.corda.loadtest[SimpleFunctionDescriptorImpl]
+'poll' @ [96:17] ==> public fun poll(intervalMilliseconds: Long = ..., function: () -> Boolean): Unit defined in net.corda.loadtest in file ConnectionManager.kt[SimpleFunctionDescriptorImpl]
 
 'channel' @ [96:24] ==> value-parameter channel: ChannelExec defined in net.corda.loadtest.NodeConnection.runShellCommand.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 

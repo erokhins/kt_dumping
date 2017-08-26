@@ -136,7 +136,7 @@ Inferred types:
 
 'targetDir' @ [93:13] ==> value-parameter targetDir: Path defined in net.corda.core.internal.copyToDirectory[ValueParameterDescriptorImpl]
 
-'isDirectory' @ [93:23] ==> public fun Path.isDirectory(vararg options: LinkOption): Boolean defined in net.corda.core.internal[SimpleFunctionDescriptorImpl]
+'isDirectory' @ [93:23] ==> public fun Path.isDirectory(vararg options: LinkOption): Boolean defined in net.corda.core.internal in file InternalUtils.kt[SimpleFunctionDescriptorImpl]
 
 'targetDir' @ [93:42] ==> value-parameter targetDir: Path defined in net.corda.core.internal.copyToDirectory[ValueParameterDescriptorImpl]
 
@@ -222,7 +222,7 @@ Inferred types:
 
 'parent' @ [108:21] ==> public final val Path.parent: (Path..Path?)[MyPropertyDescriptor]
 
-'createDirectories' @ [108:29] ==> public fun Path.createDirectories(vararg attrs: FileAttribute<*>): Path defined in net.corda.core.internal[SimpleFunctionDescriptorImpl]
+'createDirectories' @ [108:29] ==> public fun Path.createDirectories(vararg attrs: FileAttribute<*>): Path defined in net.corda.core.internal in file InternalUtils.kt[SimpleFunctionDescriptorImpl]
 
 'newOutputStream' @ [110:11] ==> public open fun newOutputStream(p0: (Path..Path?), vararg p1: (OpenOption..OpenOption?)): (OutputStream..OutputStream?) defined in java.nio.file.Files[JavaMethodDescriptor]
 
@@ -294,7 +294,7 @@ Inferred types:
 
 'maxWidth' @ [119:87] ==> value-parameter maxWidth: Int defined in net.corda.core.internal.abbreviate[ValueParameterDescriptorImpl]
 
-'fold' @ [122:46] ==> public inline fun <T, R> Iterable<BigDecimal>.fold(initial: (BigDecimal..BigDecimal?), operation: ((BigDecimal..BigDecimal?), BigDecimal) -> (BigDecimal..BigDecimal?)): (BigDecimal..BigDecimal?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'fold' @ [122:46] ==> public inline fun <T, R> Iterable<BigDecimal>.fold(initial: (BigDecimal..BigDecimal?), operation: (acc: (BigDecimal..BigDecimal?), BigDecimal) -> (BigDecimal..BigDecimal?)): (BigDecimal..BigDecimal?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> BigDecimal
     <R> -> (java.math.BigDecimal..java.math.BigDecimal?)
@@ -549,9 +549,9 @@ Inferred types:
 
 'Suppress' @ [225:1] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'toArray' @ [226:55] ==> public final fun <A : (Any..Any?)> toArray(p0: ((Int) -> (Array<(T..T?)>..Array<out (T..T?)>?)..((Int) -> (Array<(T..T?)>..Array<out (T..T?)>?))?)): (Array<(T..T?)>..Array<out (T..T?)>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
+'toArray' @ [226:55] ==> public final fun <A : (Any..Any?)> toArray(p0: ((Int) -> (Array<T?>..Array<out T?>?)..((Int) -> (Array<T?>..Array<out T?>?))?)): (Array<T?>..Array<out T?>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
 Inferred types:
-    <A : (Any..Any?)> -> T
+    <A : (Any..Any?)> -> T?
 
 'arrayOfNulls' @ [226:73] ==> public fun <reified @PureReifiable T> arrayOfNulls(size: Int): Array<T?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -585,7 +585,7 @@ Inferred types:
 
 'java' @ [233:79] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'name' @ [233:85] ==> value-parameter name: String defined in net.corda.core.internal.staticField[ValueParameterDescriptorImpl]
 
@@ -609,7 +609,7 @@ Inferred types:
 
 'java' @ [240:99] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'name' @ [240:105] ==> value-parameter name: String defined in net.corda.core.internal.declaredField[ValueParameterDescriptorImpl]
 

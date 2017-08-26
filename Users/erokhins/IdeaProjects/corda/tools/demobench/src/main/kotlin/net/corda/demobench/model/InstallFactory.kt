@@ -67,7 +67,7 @@ Inferred types:
     <T> -> (com.typesafe.config.ConfigObject..com.typesafe.config.ConfigObject?)
     <R> -> User
 
-'toUser' @ [34:56] ==> @Suppress public fun toUser(map: Map<String, Any>): User defined in net.corda.demobench.model[SimpleFunctionDescriptorImpl]
+'toUser' @ [34:56] ==> @Suppress public fun toUser(map: Map<String, Any>): User defined in net.corda.demobench.model in file User.kt[SimpleFunctionDescriptorImpl]
 
 'it' @ [34:63] ==> value-parameter it: (ConfigObject..ConfigObject?) defined in net.corda.demobench.model.InstallFactory.toInstallConfig.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -1,22 +1,21 @@
-'observable' @ [16:46] ==> public inline fun <reified M : Any, T> observable(noinline observableProperty: (NodeMonitorModel) -> Observable<NetworkMapCache.MapChange>): TrackedDelegate.ObservableDelegate<NodeMonitorModel, NetworkMapCache.MapChange> defined in net.corda.client.jfx.model[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <reified M : Any> -> NodeMonitorModel
-    <T> -> MapChange
+'getValue' @ [16:46] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): Observable<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableDelegate[SimpleFunctionDescriptorImpl]
 
 'NodeMonitorModel' @ [16:57] ==> public constructor NodeMonitorModel() defined in net.corda.client.jfx.model.NodeMonitorModel[ClassConstructorDescriptorImpl]
 
+'networkMap' @ [16:75] ==> public final val networkMap: Observable<NetworkMapCache.MapChange> defined in net.corda.client.jfx.model.NodeMonitorModel[PropertyDescriptorImpl]
+
 'networkIdentityObservable' @ [19:13] ==> private final val networkIdentityObservable: Observable<NetworkMapCache.MapChange> defined in net.corda.client.jfx.model.NetworkIdentityModel[PropertyDescriptorImpl]
 
-'fold' @ [19:39] ==> public fun <T, R> Observable<NetworkMapCache.MapChange>.fold(accumulator: (ObservableList<NodeInfo>..ObservableList<NodeInfo>?), folderFun: ((ObservableList<NodeInfo>..ObservableList<NodeInfo>?), NetworkMapCache.MapChange) -> Unit): (ObservableList<NodeInfo>..ObservableList<NodeInfo>?) defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
+'fold' @ [19:39] ==> public fun <T, R> Observable<NetworkMapCache.MapChange>.fold(accumulator: (ObservableList<(NodeInfo..NodeInfo?)>..ObservableList<(NodeInfo..NodeInfo?)>?), folderFun: ((ObservableList<(NodeInfo..NodeInfo?)>..ObservableList<(NodeInfo..NodeInfo?)>?), NetworkMapCache.MapChange) -> Unit): (ObservableList<(NodeInfo..NodeInfo?)>..ObservableList<(NodeInfo..NodeInfo?)>?) defined in net.corda.client.jfx.utils[SimpleFunctionDescriptorImpl]
 Inferred types:
     <T> -> MapChange
-    <R> -> (javafx.collections.ObservableList<net.corda.core.node.NodeInfo>..javafx.collections.ObservableList<net.corda.core.node.NodeInfo>?)
+    <R> -> (javafx.collections.ObservableList<(net.corda.core.node.NodeInfo..net.corda.core.node.NodeInfo?)>..javafx.collections.ObservableList<(net.corda.core.node.NodeInfo..net.corda.core.node.NodeInfo?)>?)
 
 'observableArrayList' @ [19:58] ==> public open fun <E : (Any..Any?)> observableArrayList(): (ObservableList<(NodeInfo..NodeInfo?)>..ObservableList<(NodeInfo..NodeInfo?)>?) defined in javafx.collections.FXCollections[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> NodeInfo
+    <E : (Any..Any?)> -> (net.corda.core.node.NodeInfo..net.corda.core.node.NodeInfo?)
 
-'list' @ [20:17] ==> value-parameter list: (ObservableList<NodeInfo>..ObservableList<NodeInfo>?) defined in net.corda.client.jfx.model.NetworkIdentityModel.networkIdentities.<anonymous>[ValueParameterDescriptorImpl]
+'list' @ [20:17] ==> value-parameter list: (ObservableList<(NodeInfo..NodeInfo?)>..ObservableList<(NodeInfo..NodeInfo?)>?) defined in net.corda.client.jfx.model.NetworkIdentityModel.networkIdentities.<anonymous>[ValueParameterDescriptorImpl]
 
 'removeIf' @ [20:22] ==> public final fun removeIf(p0: ((NodeInfo..NodeInfo?)) -> Boolean): Boolean defined in javafx.collections.ObservableList[MyFunctionDescriptor]
 
@@ -42,7 +41,7 @@ Inferred types:
 
 'previousNode' @ [23:63] ==> public final val previousNode: NodeInfo defined in net.corda.core.node.services.NetworkMapCache.MapChange.Modified[DeserializedPropertyDescriptor]
 
-'list' @ [27:17] ==> value-parameter list: (ObservableList<NodeInfo>..ObservableList<NodeInfo>?) defined in net.corda.client.jfx.model.NetworkIdentityModel.networkIdentities.<anonymous>[ValueParameterDescriptorImpl]
+'list' @ [27:17] ==> value-parameter list: (ObservableList<(NodeInfo..NodeInfo?)>..ObservableList<(NodeInfo..NodeInfo?)>?) defined in net.corda.client.jfx.model.NetworkIdentityModel.networkIdentities.<anonymous>[ValueParameterDescriptorImpl]
 
 'addAll' @ [27:22] ==> public abstract fun addAll(vararg p0: (NodeInfo..NodeInfo?)): Boolean defined in javafx.collections.ObservableList[JavaMethodDescriptor]
 
@@ -50,12 +49,11 @@ Inferred types:
 
 'node' @ [27:36] ==> public abstract val node: NodeInfo defined in net.corda.core.node.services.NetworkMapCache.MapChange[DeserializedPropertyDescriptor]
 
-'observableValue' @ [30:29] ==> public inline fun <reified M : Any, T> observableValue(noinline observableValueProperty: (NodeMonitorModel) -> ObservableValue<CordaRPCOps?>): TrackedDelegate.ObservableValueDelegate<NodeMonitorModel, CordaRPCOps?> defined in net.corda.client.jfx.model[SimpleFunctionDescriptorImpl]
-Inferred types:
-    <reified M : Any> -> NodeMonitorModel
-    <T> -> CordaRPCOps?
+'getValue' @ [30:29] ==> public final operator fun getValue(thisRef: Any, property: KProperty<*>): ObservableValue<T> defined in net.corda.client.jfx.model.TrackedDelegate.ObservableValueDelegate[SimpleFunctionDescriptorImpl]
 
 'NodeMonitorModel' @ [30:45] ==> public constructor NodeMonitorModel() defined in net.corda.client.jfx.model.NodeMonitorModel[ClassConstructorDescriptorImpl]
+
+'proxyObservable' @ [30:63] ==> public final val proxyObservable: SimpleObjectProperty<CordaRPCOps?> defined in net.corda.client.jfx.model.NodeMonitorModel[PropertyDescriptorImpl]
 
 'networkIdentities' @ [32:45] ==> public final val networkIdentities: ObservableList<NodeInfo> defined in net.corda.client.jfx.model.NetworkIdentityModel[PropertyDescriptorImpl]
 

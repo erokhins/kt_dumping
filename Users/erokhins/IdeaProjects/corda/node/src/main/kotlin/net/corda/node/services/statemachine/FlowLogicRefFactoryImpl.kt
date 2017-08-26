@@ -41,7 +41,7 @@ Inferred types:
 
 'kotlin' @ [47:23] ==> public val <T : Any> Class<out FlowLogic<*>>.kotlin: KClass<out FlowLogic<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> FlowLogic<*>
+    <T : Any> -> Captured(out FlowLogic<*>)
 
 'constructors' @ [47:30] ==> public abstract val constructors: Collection<KFunction<FlowLogic<*>>> defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
@@ -66,7 +66,7 @@ Inferred types:
 
 'wrap' @ [49:88] ==> public open fun <T : (Any..Any?)> wrap(p0: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)): (Class<out (Any..Any?)>..Class<out (Any..Any?)>?) defined in com.google.common.primitives.Primitives[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'it' @ [49:93] ==> value-parameter it: (Class<*>..Class<*>?) defined in net.corda.node.services.statemachine.FlowLogicRefFactoryImpl.createForRPC.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -175,7 +175,7 @@ Inferred types:
 
 'name' @ [81:38] ==> public final val <T : (Any..Any?)> Class<out FlowLogic<*>>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> FlowLogic<*>
+    <T : (Any..Any?)> -> Captured(out FlowLogic<*>)
 
 'appContext' @ [81:44] ==> val appContext: AppContext defined in net.corda.node.services.statemachine.FlowLogicRefFactoryImpl.createKotlin[LocalVariableDescriptor]
 
@@ -205,11 +205,11 @@ Inferred types:
 
 'asSubclass' @ [86:93] ==> public open fun <U : (Any..Any?)> asSubclass(p0: (Class<(FlowLogic<*>..FlowLogic<*>?)>..Class<(FlowLogic<*>..FlowLogic<*>?)>?)): (Class<out (FlowLogic<*>..FlowLogic<*>?)>..Class<out (FlowLogic<*>..FlowLogic<*>?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 Inferred types:
-    <U : (Any..Any?)> -> FlowLogic<*>
+    <U : (Any..Any?)> -> (net.corda.core.flows.FlowLogic<*>..net.corda.core.flows.FlowLogic<*>?)
 
 'FlowLogic' @ [86:104] ==> public constructor FlowLogic<out T>() defined in net.corda.core.flows.FlowLogic[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out T> -> Nothing
+    <out T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7bb64385
 
 'java' @ [86:121] ==> public val <T> KClass<FlowLogic<*>>.java: Class<FlowLogic<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -227,7 +227,7 @@ Inferred types:
 
 'kotlin' @ [91:35] ==> public val <T : Any> Class<out FlowLogic<*>>.kotlin: KClass<out FlowLogic<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> FlowLogic<*>
+    <T : Any> -> Captured(out FlowLogic<*>)
 
 'constructors' @ [91:42] ==> public abstract val constructors: Collection<KFunction<FlowLogic<*>>> defined in kotlin.reflect.KClass[DeserializedPropertyDescriptor]
 
@@ -380,19 +380,19 @@ Inferred types:
 
 'isPrimitive' @ [130:22] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 '==' @ [131:24] ==> public open fun equals(other: Any?): Boolean defined in java.lang.Class[DeserializedSimpleFunctionDescriptor]
 
 'unwrap' @ [131:35] ==> public open fun <T : (Any..Any?)> unwrap(p0: (Class<(Any..Any?)>..Class<(Any..Any?)>?)): (Class<(Any..Any?)>..Class<(Any..Any?)>?) defined in com.google.common.primitives.Primitives[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
 
 'value' @ [131:42] ==> value-parameter value: Any defined in net.corda.node.services.statemachine.FlowLogicRefFactoryImpl.parameterAssignableFrom[ValueParameterDescriptorImpl]
 
-'javaClass' @ [131:48] ==> public val <T : Any> Any.javaClass: Class<Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
+'javaClass' @ [131:48] ==> public val <T : Any> (Any..Any?).javaClass: Class<(Any..Any?)> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> (kotlin.Any..kotlin.Any?)
 
 'type' @ [131:62] ==> value-parameter type: Type defined in net.corda.node.services.statemachine.FlowLogicRefFactoryImpl.parameterAssignableFrom[ValueParameterDescriptorImpl]
 

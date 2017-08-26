@@ -1,11 +1,13 @@
-'listOf' @ [10:28] ==> public fun <T> listOf(element: Function<CordaRPCOps, InterestRateSwapAPI>): List<Function<CordaRPCOps, InterestRateSwapAPI>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [10:28] ==> public fun <T> listOf(element: Function<@ParameterName CordaRPCOps, InterestRateSwapAPI>): List<Function<@ParameterName CordaRPCOps, InterestRateSwapAPI>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Function<CordaRPCOps, InterestRateSwapAPI>
+    <T> -> Function<[@kotlin.ParameterName] CordaRPCOps, InterestRateSwapAPI>
 
-'Function' @ [10:35] ==> @FunctionalInterface public fun <T : (Any..Any?), R : (Any..Any?)> Function(function: (CordaRPCOps) -> InterestRateSwapAPI): Function<CordaRPCOps, InterestRateSwapAPI> defined in java.util.function[SimpleFunctionDescriptorImpl]
+'Function' @ [10:35] ==> @FunctionalInterface public fun <T : (Any..Any?), R : (Any..Any?)> Function(function: (rpc: CordaRPCOps) -> InterestRateSwapAPI): Function<@ParameterName CordaRPCOps, InterestRateSwapAPI> defined in java.util.function[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> CordaRPCOps
+    <T : (Any..Any?)> -> [@kotlin.ParameterName] CordaRPCOps
     <R : (Any..Any?)> -> InterestRateSwapAPI
+
+'InterestRateSwapAPI' @ [10:46] ==> public constructor InterestRateSwapAPI(rpc: CordaRPCOps) defined in net.corda.irs.api.InterestRateSwapAPI[ClassConstructorDescriptorImpl]
 
 'mapOf' @ [11:57] ==> public fun <K, V> mapOf(pair: Pair<String, (String..String?)>): Map<String, (String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

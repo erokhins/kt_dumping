@@ -185,8 +185,6 @@ Inferred types:
 Inferred types:
     <R> -> SignedTransaction
 
-'TwoPartyDealFlow' @ [91:21] ==> public object TwoPartyDealFlow defined in net.corda.finance.flows[FakeCallableDescriptorForObject]
-
 'Acceptor' @ [91:38] ==> public constructor Acceptor(otherParty: Party, progressTracker: ProgressTracker = ...) defined in net.corda.finance.flows.TwoPartyDealFlow.Acceptor[DeserializedClassConstructorDescriptor]
 
 'otherParty' @ [91:47] ==> public final val otherParty: Party defined in net.corda.vega.flows.SimmFlow.Requester[PropertyDescriptorImpl]
@@ -229,8 +227,6 @@ Inferred types:
 Inferred types:
     <R> -> StateAndRef<RevisionedState<Update>>
 
-'StateRevisionFlow' @ [100:21] ==> public object StateRevisionFlow defined in net.corda.vega.flows in file StateRevisionFlow.kt[FakeCallableDescriptorForObject]
-
 'Requester' @ [100:39] ==> public constructor Requester<T>(curStateRef: StateAndRef<RevisionedState<PortfolioState.Update>>, updatedData: PortfolioState.Update) defined in net.corda.vega.flows.StateRevisionFlow.Requester[ClassConstructorDescriptorImpl]
 Inferred types:
     <T> -> Update
@@ -267,7 +263,7 @@ Inferred types:
 
 'states' @ [107:125] ==> public final val states: List<StateAndRef<IRSState>> defined in net.corda.core.node.services.Vault.Page[DeserializedPropertyDescriptor]
 
-'toPortfolio' @ [107:132] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio[SimpleFunctionDescriptorImpl]
+'toPortfolio' @ [107:132] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio in file Portfolio.kt[SimpleFunctionDescriptorImpl]
 
 'serviceHub' @ [109:26] ==> public final val serviceHub: ServiceHub defined in net.corda.vega.flows.SimmFlow.Requester[DeserializedPropertyDescriptor]
 
@@ -298,8 +294,6 @@ Inferred types:
 'subFlow' @ [113:20] ==> @Suspendable public open fun <R> subFlow(subLogic: FlowLogic<StateAndRef<RevisionedState<PortfolioState.Update>>>): StateAndRef<RevisionedState<PortfolioState.Update>> defined in net.corda.vega.flows.SimmFlow.Requester[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <R> -> StateAndRef<RevisionedState<Update>>
-
-'StateRevisionFlow' @ [113:28] ==> public object StateRevisionFlow defined in net.corda.vega.flows in file StateRevisionFlow.kt[FakeCallableDescriptorForObject]
 
 'Requester' @ [113:46] ==> public constructor Requester<T>(curStateRef: StateAndRef<RevisionedState<PortfolioState.Update>>, updatedData: PortfolioState.Update) defined in net.corda.vega.flows.StateRevisionFlow.Requester[ClassConstructorDescriptorImpl]
 Inferred types:
@@ -478,7 +472,7 @@ Inferred types:
 
 'third' @ [143:87] ==> public final val third: Double defined in kotlin.Triple[DeserializedPropertyDescriptor]
 
-'toCordaCompatible' @ [143:94] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows[SimpleFunctionDescriptorImpl]
+'toCordaCompatible' @ [143:94] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows in file OpenGammaCordaUtils.kt[SimpleFunctionDescriptorImpl]
 
 'analyticsEngine' @ [144:27] ==> val analyticsEngine: OGSIMMAnalyticsEngine defined in net.corda.vega.flows.SimmFlow.Requester.agreeValuation[LocalVariableDescriptor]
 
@@ -516,7 +510,7 @@ Inferred types:
 
 'value' @ [145:77] ==> public abstract val value: InitialMarginTriple defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'toCordaCompatible' @ [145:83] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows[SimpleFunctionDescriptorImpl]
+'toCordaCompatible' @ [145:83] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows in file OpenGammaCordaUtils.kt[SimpleFunctionDescriptorImpl]
 
 'toMap' @ [145:105] ==> public fun <K, V> Iterable<Pair<(String..String?), InitialMarginTriple>>.toMap(): Map<(String..String?), InitialMarginTriple> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -937,7 +931,7 @@ Inferred types:
 
 'third' @ [263:87] ==> public final val third: Double defined in kotlin.Triple[DeserializedPropertyDescriptor]
 
-'toCordaCompatible' @ [263:94] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows[SimpleFunctionDescriptorImpl]
+'toCordaCompatible' @ [263:94] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows in file OpenGammaCordaUtils.kt[SimpleFunctionDescriptorImpl]
 
 'analyticsEngine' @ [264:27] ==> val analyticsEngine: OGSIMMAnalyticsEngine defined in net.corda.vega.flows.SimmFlow.Receiver.agreeValuation[LocalVariableDescriptor]
 
@@ -981,7 +975,7 @@ Inferred types:
 
 'value' @ [266:77] ==> public abstract val value: InitialMarginTriple defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'toCordaCompatible' @ [266:83] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows[SimpleFunctionDescriptorImpl]
+'toCordaCompatible' @ [266:83] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows in file OpenGammaCordaUtils.kt[SimpleFunctionDescriptorImpl]
 
 'toMap' @ [266:105] ==> public fun <K, V> Iterable<Pair<(String..String?), InitialMarginTriple>>.toMap(): Map<(String..String?), InitialMarginTriple> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -1078,8 +1072,6 @@ Inferred types:
 
 'replyToParty' @ [293:21] ==> public final val replyToParty: Party defined in net.corda.vega.flows.SimmFlow.Receiver[PropertyDescriptorImpl]
 
-'TwoPartyDealFlow' @ [294:21] ==> public object TwoPartyDealFlow defined in net.corda.finance.flows[FakeCallableDescriptorForObject]
-
 'AutoOffer' @ [294:38] ==> public constructor AutoOffer(notary: Party, dealBeingOffered: DealState) defined in net.corda.finance.flows.TwoPartyDealFlow.AutoOffer[DeserializedClassConstructorDescriptor]
 
 'offer' @ [294:48] ==> public final lateinit var offer: SimmFlow.OfferMessage defined in net.corda.vega.flows.SimmFlow.Receiver[PropertyDescriptorImpl]
@@ -1172,7 +1164,7 @@ Inferred types:
 
 'states' @ [314:139] ==> public final val states: List<StateAndRef<IRSState>> defined in net.corda.core.node.services.Vault.Page[DeserializedPropertyDescriptor]
 
-'toPortfolio' @ [314:146] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio[SimpleFunctionDescriptorImpl]
+'toPortfolio' @ [314:146] ==> public fun List<StateAndRef<IRSState>>.toPortfolio(): Portfolio defined in net.corda.vega.portfolio in file Portfolio.kt[SimpleFunctionDescriptorImpl]
 
 'serviceHub' @ [315:26] ==> public final val serviceHub: ServiceHub defined in net.corda.vega.flows.SimmFlow.Receiver[DeserializedPropertyDescriptor]
 

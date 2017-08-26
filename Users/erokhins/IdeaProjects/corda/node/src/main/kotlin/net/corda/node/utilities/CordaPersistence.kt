@@ -4,9 +4,9 @@
 
 'getProperty' @ [28:88] ==> public open fun getProperty(p0: (String..String?)): (String..String?) defined in java.util.Properties[JavaMethodDescriptor]
 
-'lazy' @ [30:51] ==> public fun <T> lazy(initializer: () -> HibernateConfiguration): Lazy<HibernateConfiguration> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [30:51] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> HibernateConfiguration
+    <T> -> T
 
 'transaction' @ [31:9] ==> public final fun <T> transaction(statement: DatabaseTransaction.() -> HibernateConfiguration): HibernateConfiguration defined in net.corda.node.utilities.CordaPersistence[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -20,9 +20,9 @@ Inferred types:
 
 'createIdentityService' @ [32:77] ==> private final val createIdentityService: () -> IdentityService defined in net.corda.node.utilities.CordaPersistence[PropertyDescriptorImpl]
 
-'lazy' @ [36:49] ==> public fun <T> lazy(initializer: () -> SessionFactory): Lazy<SessionFactory> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [36:49] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SessionFactory
+    <T> -> T
 
 'transaction' @ [37:9] ==> public final fun <T> transaction(statement: DatabaseTransaction.() -> SessionFactory): SessionFactory defined in net.corda.node.utilities.CordaPersistence[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -242,7 +242,7 @@ Inferred types:
 
 'delaySubscription' @ [137:13] ==> @Beta public final fun <U : (Any..Any?)> delaySubscription(p0: (Observable<(DatabaseTransactionManager.Boundary..DatabaseTransactionManager.Boundary?)>..Observable<(DatabaseTransactionManager.Boundary..DatabaseTransactionManager.Boundary?)>?)): (Observable<(T..T?)>..Observable<(T..T?)>?) defined in rx.subjects.UnicastSubject[JavaMethodDescriptor]
 Inferred types:
-    <U : (Any..Any?)> -> Boundary
+    <U : (Any..Any?)> -> (net.corda.node.utilities.DatabaseTransactionManager.Boundary..net.corda.node.utilities.DatabaseTransactionManager.Boundary?)
 
 'databaseTxBoundary' @ [137:31] ==> val databaseTxBoundary: Observable<DatabaseTransactionManager.Boundary> defined in net.corda.node.utilities.bufferUntilDatabaseCommit[LocalVariableDescriptor]
 
@@ -270,8 +270,6 @@ Inferred types:
 
 'db' @ [148:10] ==> public final val db: CordaPersistence? defined in net.corda.node.utilities.DatabaseTransactionWrappingSubscriber[PropertyDescriptorImpl]
 
-'DatabaseTransactionManager' @ [148:16] ==> public companion object defined in net.corda.node.utilities.DatabaseTransactionManager[FakeCallableDescriptorForObject]
-
 'dataSource' @ [148:43] ==> public final var dataSource: CordaPersistence defined in net.corda.node.utilities.DatabaseTransactionManager.Companion[PropertyDescriptorImpl]
 
 'transaction' @ [148:55] ==> public final fun <T> transaction(statement: DatabaseTransaction.() -> Unit): Unit defined in net.corda.node.utilities.CordaPersistence[SimpleFunctionDescriptorImpl]
@@ -290,7 +288,7 @@ Inferred types:
 
 'isUnsubscribed' @ [149:36] ==> public final val <T : (Any..Any?)> Subscriber<in U>.isUnsubscribed: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(in U)
 
 'forEach' @ [149:53] ==> @HidesMembers public inline fun <T> Iterable<(Subscriber<in U>..Subscriber<in U>?)>.forEach(action: ((Subscriber<in U>..Subscriber<in U>?)) -> Unit): Unit defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -328,7 +326,7 @@ Inferred types:
 
 'isUnsubscribed' @ [164:37] ==> public final val <T : (Any..Any?)> Subscriber<in U>.isUnsubscribed: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(in U)
 
 'delegates' @ [165:17] ==> public final val delegates: CopyOnWriteArrayList<Subscriber<in U>> defined in net.corda.node.utilities.DatabaseTransactionWrappingSubscriber[PropertyDescriptorImpl]
 
@@ -352,7 +350,7 @@ Inferred types:
 
 'lift' @ [193:17] ==> public final fun <R : (Any..Any?)> lift(p0: (((Subscriber<in (T..T?)>..Subscriber<in (T..T?)>?)) -> (Subscriber<in (T..T?)>..Subscriber<in (T..T?)>?)..(((Subscriber<in (T..T?)>..Subscriber<in (T..T?)>?)) -> (Subscriber<in (T..T?)>..Subscriber<in (T..T?)>?))?)): (Observable<(T..T?)>..Observable<(T..T?)>?) defined in rx.Observable[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> T
+    <R : (Any..Any?)> -> (T..T?)
 
 'wrappingSubscriber' @ [195:9] ==> var wrappingSubscriber: DatabaseTransactionWrappingSubscriber<T> defined in net.corda.node.utilities.wrapWithDatabaseTransaction[LocalVariableDescriptor]
 

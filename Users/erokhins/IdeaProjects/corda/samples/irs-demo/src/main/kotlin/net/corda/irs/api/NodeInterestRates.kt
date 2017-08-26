@@ -368,6 +368,8 @@ Inferred types:
 
 'checkWithFun' @ [170:25] ==> public final fun checkWithFun(checkingFun: (Any) -> Boolean): Boolean defined in net.corda.core.transactions.FilteredLeaves[DeserializedSimpleFunctionDescriptor]
 
+'check' @ [170:40] ==> local final fun check(elem: Any): Boolean defined in net.corda.irs.api.NodeInterestRates.Oracle.sign[SimpleFunctionDescriptorImpl]
+
 'IllegalArgumentException' @ [171:23] ==> public final fun <init>(): IllegalArgumentException /* = IllegalArgumentException */ defined in kotlin.IllegalArgumentException[TypeAliasConstructorDescriptorImpl]
 
 'SignableData' @ [178:32] ==> public constructor SignableData(txId: SecureHash, signatureMetadata: SignatureMetadata) defined in net.corda.core.crypto.SignableData[DeserializedClassConstructorDescriptor]
@@ -383,8 +385,6 @@ Inferred types:
 'myInfo' @ [178:86] ==> public abstract val myInfo: NodeInfo defined in net.corda.core.node.ServiceHub[DeserializedPropertyDescriptor]
 
 'platformVersion' @ [178:93] ==> public final val platformVersion: Int defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
-
-'Crypto' @ [178:110] ==> public object Crypto defined in net.corda.core.crypto[FakeCallableDescriptorForObject]
 
 'findSignatureScheme' @ [178:117] ==> @JvmStatic public final fun findSignatureScheme(key: PublicKey): SignatureScheme defined in net.corda.core.crypto.Crypto[DeserializedSimpleFunctionDescriptor]
 
@@ -431,8 +431,6 @@ Inferred types:
 'contextClassLoader' @ [189:76] ==> public final var Thread.contextClassLoader: (ClassLoader..ClassLoader?)[MyPropertyDescriptor]
 
 'getResourceAsStream' @ [189:95] ==> public open fun getResourceAsStream(p0: (String..String?)): (InputStream..InputStream?) defined in java.lang.ClassLoader[JavaMethodDescriptor]
-
-'Charsets' @ [189:162] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
 
 'UTF_8' @ [189:171] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 
@@ -569,8 +567,8 @@ Inferred types:
 
 'HashMap' @ [238:29] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (Tenor..Tenor?), out (BigDecimal..BigDecimal?)>..Map<out (Tenor..Tenor?), (BigDecimal..BigDecimal?)>?)) defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Tenor
-    <V : (Any..Any?)> -> BigDecimal
+    <K : (Any..Any?)> -> (net.corda.finance.contracts.Tenor..net.corda.finance.contracts.Tenor?)
+    <V : (Any..Any?)> -> (java.math.BigDecimal..java.math.BigDecimal?)
 
 'inputRates' @ [238:37] ==> value-parameter inputRates: Map<Tenor, BigDecimal> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.<init>[ValueParameterDescriptorImpl]
 
@@ -578,30 +576,30 @@ Inferred types:
 
 'size' @ [241:31] ==> public abstract val size: Int defined in kotlin.collections.Map[DeserializedPropertyDescriptor]
 
-'lazy' @ [243:52] ==> public fun <T> lazy(initializer: () -> Interpolator?): Lazy<Interpolator?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [243:52] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Interpolator?
+    <T> -> T
 
-'rates' @ [245:30] ==> private final val rates: HashMap<Tenor, BigDecimal> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap[PropertyDescriptorImpl]
+'rates' @ [245:30] ==> private final val rates: HashMap<(Tenor..Tenor?), (BigDecimal..BigDecimal?)> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap[PropertyDescriptorImpl]
 
-'mapKeys' @ [245:36] ==> public inline fun <K, V, R> Map<out Tenor, BigDecimal>.mapKeys(transform: (Map.Entry<Tenor, BigDecimal>) -> Int): Map<Int, BigDecimal> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapKeys' @ [245:36] ==> public inline fun <K, V, R> Map<out (Tenor..Tenor?), (BigDecimal..BigDecimal?)>.mapKeys(transform: (Map.Entry<(Tenor..Tenor?), (BigDecimal..BigDecimal?)>) -> Int): Map<Int, (BigDecimal..BigDecimal?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> Tenor
-    <V> -> BigDecimal
+    <K> -> (net.corda.finance.contracts.Tenor..net.corda.finance.contracts.Tenor?)
+    <V> -> (java.math.BigDecimal..java.math.BigDecimal?)
     <R> -> Int
 
 'daysToMaturity' @ [245:46] ==> private final fun daysToMaturity(tenor: Tenor): Int defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap[SimpleFunctionDescriptorImpl]
 
-'it' @ [245:61] ==> value-parameter it: Map.Entry<Tenor, BigDecimal> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.interpolator.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [245:61] ==> value-parameter it: Map.Entry<(Tenor..Tenor?), (BigDecimal..BigDecimal?)> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.interpolator.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'key' @ [245:64] ==> public abstract val key: Tenor defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
+'key' @ [245:64] ==> public abstract val key: (Tenor..Tenor?) defined in kotlin.collections.Map.Entry[DeserializedPropertyDescriptor]
 
-'toSortedMap' @ [245:71] ==> public fun <K : Comparable<Int>, V> Map<out Int, BigDecimal>.toSortedMap(): SortedMap<Int, BigDecimal> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'toSortedMap' @ [245:71] ==> public fun <K : Comparable<Int>, V> Map<out Int, (BigDecimal..BigDecimal?)>.toSortedMap(): SortedMap<Int, (BigDecimal..BigDecimal?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K : Comparable<K>> -> Int
-    <V> -> BigDecimal
+    <V> -> (java.math.BigDecimal..java.math.BigDecimal?)
 
-'numericMap' @ [246:24] ==> val numericMap: SortedMap<Int, BigDecimal> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.interpolator.<anonymous>[LocalVariableDescriptor]
+'numericMap' @ [246:24] ==> val numericMap: SortedMap<Int, (BigDecimal..BigDecimal?)> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.interpolator.<anonymous>[LocalVariableDescriptor]
 
 'keys' @ [246:35] ==> public abstract val keys: MutableSet<(Int..Int?)> defined in java.util.SortedMap[JavaPropertyDescriptor]
 
@@ -616,7 +614,7 @@ Inferred types:
 
 'toDoubleArray' @ [246:62] ==> public fun Collection<Double>.toDoubleArray(): DoubleArray defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 
-'numericMap' @ [247:26] ==> val numericMap: SortedMap<Int, BigDecimal> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.interpolator.<anonymous>[LocalVariableDescriptor]
+'numericMap' @ [247:26] ==> val numericMap: SortedMap<Int, (BigDecimal..BigDecimal?)> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.interpolator.<anonymous>[LocalVariableDescriptor]
 
 'values' @ [247:37] ==> public abstract val values: MutableCollection<(BigDecimal..BigDecimal?)> defined in java.util.SortedMap[JavaPropertyDescriptor]
 
@@ -639,12 +637,12 @@ Inferred types:
 
 'values' @ [250:38] ==> val values: DoubleArray defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.interpolator.<anonymous>[LocalVariableDescriptor]
 
-'rates' @ [261:20] ==> private final val rates: HashMap<Tenor, BigDecimal> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap[PropertyDescriptorImpl]
+'rates' @ [261:20] ==> private final val rates: HashMap<(Tenor..Tenor?), (BigDecimal..BigDecimal?)> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap[PropertyDescriptorImpl]
 
-'getOrElse' @ [261:26] ==> @InlineOnly public inline fun <K, V> Map<Tenor, BigDecimal>.getOrElse(key: Tenor, defaultValue: () -> BigDecimal): BigDecimal defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'getOrElse' @ [261:26] ==> @InlineOnly public inline fun <K, V> Map<(Tenor..Tenor?), (BigDecimal..BigDecimal?)>.getOrElse(key: (Tenor..Tenor?), defaultValue: () -> (BigDecimal..BigDecimal?)): (BigDecimal..BigDecimal?) defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <K> -> Tenor
-    <V> -> BigDecimal
+    <K> -> (net.corda.finance.contracts.Tenor..net.corda.finance.contracts.Tenor?)
+    <V> -> (java.math.BigDecimal..java.math.BigDecimal?)
 
 'tenor' @ [261:36] ==> value-parameter tenor: Tenor defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.getRate[ValueParameterDescriptorImpl]
 
@@ -654,9 +652,9 @@ Inferred types:
 
 'rate' @ [263:21] ==> val rate: BigDecimal? defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.getRate.<anonymous>[LocalVariableDescriptor]
 
-'rates' @ [263:35] ==> private final val rates: HashMap<Tenor, BigDecimal> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap[PropertyDescriptorImpl]
+'rates' @ [263:35] ==> private final val rates: HashMap<(Tenor..Tenor?), (BigDecimal..BigDecimal?)> defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap[PropertyDescriptorImpl]
 
-'put' @ [263:41] ==> public open fun put(key: Tenor, value: BigDecimal): BigDecimal? defined in java.util.HashMap[JavaMethodDescriptor]
+'put' @ [263:41] ==> public open fun put(key: (Tenor..Tenor?), value: (BigDecimal..BigDecimal?)): BigDecimal? defined in java.util.HashMap[JavaMethodDescriptor]
 
 'tenor' @ [263:45] ==> value-parameter tenor: Tenor defined in net.corda.irs.api.NodeInterestRates.InterpolatingRateMap.getRate[ValueParameterDescriptorImpl]
 
@@ -699,6 +697,8 @@ Inferred types:
 
 'String' @ [280:21] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
+'trim' @ [280:29] ==> @InlineOnly public inline fun String.trim(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
+
 'filterNot' @ [282:17] ==> public inline fun <T> Iterable<String>.filterNot(predicate: (String) -> Boolean): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> String
@@ -717,6 +717,8 @@ Inferred types:
     <R> -> Fix
 
 'this' @ [283:21] ==> <this> defined in net.corda.irs.api.NodeInterestRates[LazyClassReceiverParameterDescriptor]
+
+'parseFix' @ [283:27] ==> private final fun parseFix(s: String): Fix defined in net.corda.irs.api.NodeInterestRates[SimpleFunctionDescriptorImpl]
 
 'toSet' @ [284:17] ==> public fun <T> Iterable<Fix>.toSet(): Set<Fix> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -744,6 +746,8 @@ Inferred types:
     <R> -> String
 
 'String' @ [291:49] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
+
+'trim' @ [291:57] ==> @InlineOnly public inline fun String.trim(): String defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
 'parseFixOf' @ [292:22] ==> public final fun parseFixOf(key: String): FixOf defined in net.corda.irs.api.NodeInterestRates[SimpleFunctionDescriptorImpl]
 

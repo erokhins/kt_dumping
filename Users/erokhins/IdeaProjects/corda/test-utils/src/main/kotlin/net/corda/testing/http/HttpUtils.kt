@@ -2,9 +2,9 @@
 Inferred types:
     <reified T : Any> -> HttpUtils
 
-'lazy' @ [19:27] ==> public fun <T> lazy(initializer: () -> (OkHttpClient..OkHttpClient?)): Lazy<(OkHttpClient..OkHttpClient?)> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [19:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> (okhttp3.OkHttpClient..okhttp3.OkHttpClient?)
+    <T> -> T
 
 'Builder' @ [20:22] ==> public constructor Builder() defined in okhttp3.OkHttpClient.Builder[JavaClassConstructorDescriptor]
 
@@ -18,9 +18,9 @@ Inferred types:
 
 'build' @ [22:52] ==> public open fun build(): (OkHttpClient..OkHttpClient?) defined in okhttp3.OkHttpClient.Builder[JavaMethodDescriptor]
 
-'lazy' @ [24:40] ==> public fun <T> lazy(initializer: () -> ObjectMapper): Lazy<ObjectMapper> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [24:40] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> ObjectMapper
+    <T> -> T
 
 'createNonRpcMapper' @ [25:42] ==> @JvmStatic @JvmOverloads public final fun createNonRpcMapper(factory: JsonFactory = ...): ObjectMapper defined in net.corda.jackson.JacksonSupport[DeserializedSimpleFunctionDescriptor]
 
@@ -117,7 +117,7 @@ Inferred types:
 
 'readValue' @ [41:23] ==> public open fun <T : (Any..Any?)> readValue(p0: (URL..URL?), p1: (Class<(T..T?)>..Class<(T..T?)>?)): (T..T?) defined in com.fasterxml.jackson.databind.ObjectMapper[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'parameterisedUrl' @ [41:33] ==> val parameterisedUrl: URL defined in net.corda.testing.http.HttpUtils.getJson[LocalVariableDescriptor]
 

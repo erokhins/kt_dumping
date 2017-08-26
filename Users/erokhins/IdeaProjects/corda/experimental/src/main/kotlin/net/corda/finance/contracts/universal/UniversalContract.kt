@@ -211,9 +211,9 @@ Inferred types:
 'if (x > BigDecimal.ZERO)
                         x
                     else
-                        BigDecimal.ZERO' @ [65:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: BigDecimal, elseBranch: BigDecimal): BigDecimal[SimpleFunctionDescriptorImpl]
+                        BigDecimal.ZERO' @ [65:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (BigDecimal..BigDecimal?), elseBranch: (BigDecimal..BigDecimal?)): (BigDecimal..BigDecimal?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> BigDecimal
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (java.math.BigDecimal..java.math.BigDecimal?)
 
 'x' @ [65:25] ==> val x: BigDecimal defined in net.corda.finance.contracts.universal.UniversalContract.eval[LocalVariableDescriptor]
 
@@ -1211,7 +1211,7 @@ Inferred types:
 Inferred types:
     <T> -> StateAndRef<ContractState>
 
-'actions' @ [201:31] ==> public fun actions(arrangement: Arrangement): Map<String, Action> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'actions' @ [201:31] ==> public fun actions(arrangement: Arrangement): Map<String, Action> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'arr' @ [201:39] ==> val arr: Arrangement defined in net.corda.finance.contracts.universal.UniversalContract.verify[LocalVariableDescriptor]
 
@@ -1369,7 +1369,7 @@ Inferred types:
 
 'using' @ [244:21] ==> public final infix inline fun String.using(expr: Boolean): Unit defined in net.corda.core.contracts.Requirements[DeserializedSimpleFunctionDescriptor]
 
-'liableParties' @ [244:78] ==> public fun liableParties(contract: Arrangement): Set<PublicKey> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'liableParties' @ [244:78] ==> public fun liableParties(contract: Arrangement): Set<PublicKey> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'outState' @ [244:92] ==> val outState: UniversalContract.State defined in net.corda.finance.contracts.universal.UniversalContract.verify[LocalVariableDescriptor]
 
@@ -1419,7 +1419,7 @@ Inferred types:
 
 'using' @ [252:21] ==> public final infix inline fun String.using(expr: Boolean): Unit defined in net.corda.core.contracts.Requirements[DeserializedSimpleFunctionDescriptor]
 
-'liableParties' @ [253:30] ==> public fun liableParties(contract: Arrangement): Set<PublicKey> defined in net.corda.finance.contracts.universal[SimpleFunctionDescriptorImpl]
+'liableParties' @ [253:30] ==> public fun liableParties(contract: Arrangement): Set<PublicKey> defined in net.corda.finance.contracts.universal in file Util.kt[SimpleFunctionDescriptorImpl]
 
 'outState' @ [253:44] ==> val outState: UniversalContract.State defined in net.corda.finance.contracts.universal.UniversalContract.verify[LocalVariableDescriptor]
 

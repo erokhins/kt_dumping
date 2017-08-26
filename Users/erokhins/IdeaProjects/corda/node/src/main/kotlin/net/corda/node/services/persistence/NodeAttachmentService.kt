@@ -46,7 +46,7 @@ Inferred types:
 
 'createQuery' @ [55:45] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (Class<(Long..Long?)>..Class<(Long..Long?)>?)): (CriteriaQuery<(Long..Long?)>..CriteriaQuery<(Long..Long?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'Long' @ [55:57] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
@@ -66,7 +66,7 @@ Inferred types:
 
 'from' @ [56:66] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>..Class<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>?)): (Root<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>..Root<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> DBAttachment
+    <X : (Any..Any?)> -> (net.corda.node.services.persistence.NodeAttachmentService.DBAttachment..net.corda.node.services.persistence.NodeAttachmentService.DBAttachment?)
 
 'NodeAttachmentService' @ [56:71] ==> public companion object defined in net.corda.node.services.persistence.NodeAttachmentService[FakeCallableDescriptorForObject]
 
@@ -80,7 +80,7 @@ Inferred types:
 
 'createQuery' @ [57:29] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (CriteriaQuery<(Long..Long?)>..CriteriaQuery<(Long..Long?)>?)): (Query<(Long..Long?)>..Query<(Long..Long?)>?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'criteriaQuery' @ [57:41] ==> val criteriaQuery: (CriteriaQuery<(Long..Long?)>..CriteriaQuery<(Long..Long?)>?) defined in net.corda.node.services.persistence.NodeAttachmentService.<init>[LocalVariableDescriptor]
 
@@ -280,7 +280,7 @@ Inferred types:
 
 'get' @ [141:71] ==> public abstract operator fun <T : (Any..Any?)> get(p0: (Class<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>..Class<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>?), p1: (Serializable..Serializable?)): (NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> DBAttachment
+    <T : (Any..Any?)> -> (net.corda.node.services.persistence.NodeAttachmentService.DBAttachment..net.corda.node.services.persistence.NodeAttachmentService.DBAttachment?)
 
 'NodeAttachmentService' @ [141:75] ==> public companion object defined in net.corda.node.services.persistence.NodeAttachmentService[FakeCallableDescriptorForObject]
 
@@ -355,7 +355,7 @@ Inferred types:
 
 'createQuery' @ [164:45] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (Class<(Long..Long?)>..Class<(Long..Long?)>?)): (CriteriaQuery<(Long..Long?)>..CriteriaQuery<(Long..Long?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'Long' @ [164:57] ==> public companion object defined in kotlin.Long[FakeCallableDescriptorForObject]
 
@@ -367,7 +367,7 @@ Inferred types:
 
 'from' @ [165:41] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>..Class<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>?)): (Root<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>..Root<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> DBAttachment
+    <X : (Any..Any?)> -> (net.corda.node.services.persistence.NodeAttachmentService.DBAttachment..net.corda.node.services.persistence.NodeAttachmentService.DBAttachment?)
 
 'NodeAttachmentService' @ [165:46] ==> public companion object defined in net.corda.node.services.persistence.NodeAttachmentService[FakeCallableDescriptorForObject]
 
@@ -389,7 +389,7 @@ Inferred types:
 
 'from' @ [166:66] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>..Class<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>?)): (Root<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>..Root<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> DBAttachment
+    <X : (Any..Any?)> -> (net.corda.node.services.persistence.NodeAttachmentService.DBAttachment..net.corda.node.services.persistence.NodeAttachmentService.DBAttachment?)
 
 'NodeAttachmentService' @ [166:71] ==> public companion object defined in net.corda.node.services.persistence.NodeAttachmentService[FakeCallableDescriptorForObject]
 
@@ -409,9 +409,9 @@ Inferred types:
 
 'attachments' @ [167:51] ==> val attachments: (Root<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>..Root<(NodeAttachmentService.DBAttachment..NodeAttachmentService.DBAttachment?)>?) defined in net.corda.node.services.persistence.NodeAttachmentService.importAttachment[LocalVariableDescriptor]
 
-'get' @ [167:63] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(Any..Any?)>..Path<(Any..Any?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
+'get' @ [167:63] ==> public abstract fun <Y : (Any..Any?)> get(p0: (String..String?)): (Path<(String..String?)>..Path<(String..String?)>?) defined in javax.persistence.criteria.Root[JavaMethodDescriptor]
 Inferred types:
-    <Y : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <Y : (Any..Any?)> -> String
 
 'DBAttachment' @ [167:75] ==> public constructor DBAttachment(attId: String, content: ByteArray) defined in net.corda.node.services.persistence.NodeAttachmentService.DBAttachment[ClassConstructorDescriptorImpl]
 
@@ -427,7 +427,7 @@ Inferred types:
 
 'createQuery' @ [168:29] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (CriteriaQuery<(Long..Long?)>..CriteriaQuery<(Long..Long?)>?)): (Query<(Long..Long?)>..Query<(Long..Long?)>?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Long
+    <T : (Any..Any?)> -> (kotlin.Long..kotlin.Long?)
 
 'criteriaQuery' @ [168:41] ==> val criteriaQuery: (CriteriaQuery<(Long..Long?)>..CriteriaQuery<(Long..Long?)>?) defined in net.corda.node.services.persistence.NodeAttachmentService.importAttachment[LocalVariableDescriptor]
 

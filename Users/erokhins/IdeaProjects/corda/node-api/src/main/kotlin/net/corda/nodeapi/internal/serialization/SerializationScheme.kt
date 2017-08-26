@@ -32,13 +32,13 @@
 
 'name' @ [50:97] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'clazz' @ [50:105] ==> value-parameter clazz: Class<*> defined in net.corda.nodeapi.internal.serialization.SerializationContextImpl.withWhitelisted[ValueParameterDescriptorImpl]
 
 'name' @ [50:111] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'copy' @ [54:83] ==> public final fun copy(preferredSerializationVersion: ByteSequence = ..., deserializationClassLoader: ClassLoader = ..., whitelist: ClassWhitelist = ..., properties: Map<Any, Any> = ..., objectReferencesEnabled: Boolean = ..., useCase: SerializationContext.UseCase = ...): SerializationContextImpl defined in net.corda.nodeapi.internal.serialization.SerializationContextImpl[SimpleFunctionDescriptorImpl]
 
@@ -54,11 +54,11 @@ Inferred types:
 
 'synchronizedCollection' @ [62:89] ==> public open fun <T : (Any..Any?)> synchronizedCollection(p0: (MutableCollection<(SerializationScheme..SerializationScheme?)>..Collection<(SerializationScheme..SerializationScheme?)>?)): (MutableCollection<(SerializationScheme..SerializationScheme?)>..Collection<(SerializationScheme..SerializationScheme?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SerializationScheme
+    <T : (Any..Any?)> -> (net.corda.nodeapi.internal.serialization.SerializationScheme..net.corda.nodeapi.internal.serialization.SerializationScheme?)
 
-'mutableListOf' @ [62:112] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableListOf(): MutableList<SerializationScheme> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mutableListOf' @ [62:112] ==> @SinceKotlin @InlineOnly public inline fun <T> mutableListOf(): MutableList<(SerializationScheme..SerializationScheme?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SerializationScheme
+    <T> -> (net.corda.nodeapi.internal.serialization.SerializationScheme..net.corda.nodeapi.internal.serialization.SerializationScheme?)
 
 'ConcurrentHashMap' @ [65:117] ==> public constructor ConcurrentHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.concurrent.ConcurrentHashMap[JavaClassConstructorDescriptor]
 Inferred types:
@@ -157,7 +157,7 @@ Inferred types:
 
 'unmodifiableCollection' @ [89:87] ==> public open fun <T : (Any..Any?)> unmodifiableCollection(p0: (MutableCollection<out (SerializationScheme..SerializationScheme?)>..Collection<(SerializationScheme..SerializationScheme?)>?)): (MutableCollection<(SerializationScheme..SerializationScheme?)>..Collection<(SerializationScheme..SerializationScheme?)>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SerializationScheme
+    <T : (Any..Any?)> -> (net.corda.nodeapi.internal.serialization.SerializationScheme..net.corda.nodeapi.internal.serialization.SerializationScheme?)
 
 'registeredSchemes' @ [89:110] ==> private final val registeredSchemes: MutableCollection<SerializationScheme> defined in net.corda.nodeapi.internal.serialization.SerializationFactoryImpl[PropertyDescriptorImpl]
 
@@ -325,7 +325,7 @@ Inferred types:
 
 'addDefaultSerializer' @ [132:29] ==> public open fun addDefaultSerializer(p0: raw (Class<(Any..Any?)>..Class<*>?), p1: raw (Serializer<(Any..Any?)>..Serializer<*>?)): Unit defined in com.esotericsoftware.kryo.Kryo[JavaMethodDescriptor]
 
-'AutoCloseable' @ [132:50] ==> public fun AutoCloseable(function: () -> Unit): AutoCloseable defined in java.lang[SimpleFunctionDescriptorImpl]
+'AutoCloseable' @ [132:50] ==> public fun AutoCloseable(function: () -> Unit): AutoCloseable defined in java.lang[SamConstructorDescriptorImpl]
 
 'java' @ [132:71] ==> public val <T> KClass<AutoCloseable>.java: Class<AutoCloseable> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -469,7 +469,7 @@ Inferred types:
 
 'run' @ [166:25] ==> public final fun <T : (Any..Any?)> run(p0: (((Kryo..Kryo?)) -> (T..T?)..(((Kryo..Kryo?)) -> (T..T?))?)): (T..T?) defined in com.esotericsoftware.kryo.pool.KryoPool[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> (T..T?)
 
 'withContext' @ [167:17] ==> private final fun <T : Any> withContext(kryo: Kryo, context: SerializationContext, block: (Kryo) -> T): T defined in net.corda.nodeapi.internal.serialization.AbstractKryoSerializationScheme[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -519,7 +519,7 @@ Inferred types:
 
 'run' @ [181:21] ==> public final fun <T : (Any..Any?)> run(p0: (((Kryo..Kryo?)) -> (SerializedBytes<T>..SerializedBytes<T>?)..(((Kryo..Kryo?)) -> (SerializedBytes<T>..SerializedBytes<T>?))?)): (SerializedBytes<T>..SerializedBytes<T>?) defined in com.esotericsoftware.kryo.pool.KryoPool[MyFunctionDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> SerializedBytes<T>
+    <T : (Any..Any?)> -> (net.corda.core.serialization.SerializedBytes<T>..net.corda.core.serialization.SerializedBytes<T>?)
 
 'withContext' @ [182:13] ==> private final fun <T : Any> withContext(kryo: Kryo, context: SerializationContext, block: (Kryo) -> SerializedBytes<T>): SerializedBytes<T> defined in net.corda.nodeapi.internal.serialization.AbstractKryoSerializationScheme[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -620,6 +620,8 @@ Inferred types:
 
 'ByteArrayOutputStream' @ [206:17] ==> public constructor ByteArrayOutputStream() defined in java.io.ByteArrayOutputStream[JavaClassConstructorDescriptor]
 
+'reset' @ [206:40] ==> public open fun reset(): Unit defined in java.io.ByteArrayOutputStream[JavaMethodDescriptor]
+
 'it' @ [207:32] ==> value-parameter it: ByteArrayOutputStream defined in net.corda.nodeapi.internal.serialization.serializeOutputStreamPool.<anonymous>[ValueParameterDescriptorImpl]
 
 'size' @ [207:35] ==> public open fun size(): Int defined in java.io.ByteArrayOutputStream[JavaMethodDescriptor]
@@ -634,15 +636,11 @@ Inferred types:
 
 'toByteArray' @ [212:73] ==> @InlineOnly public inline fun String.toByteArray(charset: Charset = ...): ByteArray defined in kotlin.text[DeserializedSimpleFunctionDescriptor]
 
-'Charsets' @ [212:85] ==> public object Charsets defined in kotlin.text[FakeCallableDescriptorForObject]
-
 'UTF_8' @ [212:94] ==> @field:JvmField public final val UTF_8: Charset defined in kotlin.text.Charsets[DeserializedPropertyDescriptor]
 
 'SerializationContextImpl' @ [215:24] ==> public constructor SerializationContextImpl(preferredSerializationVersion: ByteSequence, deserializationClassLoader: ClassLoader, whitelist: ClassWhitelist, properties: Map<Any, Any>, objectReferencesEnabled: Boolean, useCase: SerializationContext.UseCase) defined in net.corda.nodeapi.internal.serialization.SerializationContextImpl[ClassConstructorDescriptorImpl]
 
 'KryoHeaderV0_1' @ [215:49] ==> public val KryoHeaderV0_1: OpaqueBytes defined in net.corda.nodeapi.internal.serialization in file SerializationScheme.kt[PropertyDescriptorImpl]
-
-'SerializationDefaults' @ [216:9] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'javaClass' @ [216:31] ==> public val <T : Any> SerializationDefaults.javaClass: Class<SerializationDefaults> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

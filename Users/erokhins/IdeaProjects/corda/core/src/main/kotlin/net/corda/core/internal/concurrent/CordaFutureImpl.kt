@@ -34,9 +34,9 @@ Inferred types:
 Inferred types:
     <W> -> Any?
 
-'match' @ [25:99] ==> public fun <V, W> Future<out V>.match(success: (Nothing) -> Any?, failure: (Throwable) -> Any?): Any? defined in net.corda.core.concurrent[SimpleFunctionDescriptorImpl]
+'match' @ [25:99] ==> public fun <V, W> Future<out V>.match(success: Function1<*, Any?>, failure: (Throwable) -> Any?): Any? defined in net.corda.core.concurrent[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <V> -> V
+    <V> -> Captured(out V)
     <W> -> Any?
 
 'success' @ [25:105] ==> value-parameter success: (V) -> W defined in net.corda.core.internal.concurrent.thenMatch[ValueParameterDescriptorImpl]
@@ -141,7 +141,7 @@ Inferred types:
 
 'it' @ [76:9] ==> value-parameter it: CordaFuture<out V> defined in net.corda.core.internal.concurrent.transpose.<anonymous>[ValueParameterDescriptorImpl]
 
-'then' @ [76:12] ==> public abstract fun <W> then(callback: (Nothing) -> Unit): Unit defined in net.corda.core.concurrent.CordaFuture[SimpleFunctionDescriptorImpl]
+'then' @ [76:12] ==> public abstract fun <W> then(callback: (CordaFuture<out V>) -> Unit): Unit defined in net.corda.core.concurrent.CordaFuture[SimpleFunctionDescriptorImpl]
 Inferred types:
     <W> -> Unit
 
@@ -153,9 +153,9 @@ Inferred types:
 
 'doneFuture' @ [78:17] ==> value-parameter doneFuture: CordaFuture<out V> defined in net.corda.core.internal.concurrent.transpose.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
-'match' @ [78:28] ==> public fun <V, W> Future<out V>.match(success: (Nothing) -> Unit, failure: (Throwable) -> Unit): Unit defined in net.corda.core.concurrent[SimpleFunctionDescriptorImpl]
+'match' @ [78:28] ==> public fun <V, W> Future<out V>.match(success: Function1<*, Unit>, failure: (Throwable) -> Unit): Unit defined in net.corda.core.concurrent[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <V> -> V
+    <V> -> Captured(out V)
     <W> -> Unit
 
 'if (failure == null) failure = throwable else failure!!.addSuppressed(throwable)' @ [79:21] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Unit, elseBranch: Unit): Unit[SimpleFunctionDescriptorImpl]
@@ -197,7 +197,7 @@ Inferred types:
 
 'getOrThrow' @ [82:65] ==> public fun <V> Future<out V>.getOrThrow(timeout: Duration? = ...): V defined in net.corda.core.utilities[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <V> -> V
+    <V> -> Captured(out V)
 
 'transpose' @ [82:86] ==> val transpose: CordaFutureImpl<List<V>> defined in net.corda.core.internal.concurrent.transpose[LocalVariableDescriptor]
 
@@ -209,7 +209,7 @@ Inferred types:
 
 'f' @ [99:47] ==> value-parameter f: CordaFuture<out V> defined in net.corda.core.internal.concurrent.ValueOrException.captureLater[ValueParameterDescriptorImpl]
 
-'then' @ [99:49] ==> public abstract fun <W> then(callback: (Nothing) -> Boolean): Unit defined in net.corda.core.concurrent.CordaFuture[SimpleFunctionDescriptorImpl]
+'then' @ [99:49] ==> public abstract fun <W> then(callback: (CordaFuture<out V>) -> Boolean): Unit defined in net.corda.core.concurrent.CordaFuture[SimpleFunctionDescriptorImpl]
 Inferred types:
     <W> -> Boolean
 
@@ -219,7 +219,7 @@ Inferred types:
 
 'getOrThrow' @ [99:68] ==> public fun <V> Future<out V>.getOrThrow(timeout: Duration? = ...): V defined in net.corda.core.utilities[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <V> -> V
+    <V> -> Captured(out V)
 
 'set' @ [103:16] ==> public abstract fun set(value: V): Boolean defined in net.corda.core.internal.concurrent.ValueOrException[SimpleFunctionDescriptorImpl]
 

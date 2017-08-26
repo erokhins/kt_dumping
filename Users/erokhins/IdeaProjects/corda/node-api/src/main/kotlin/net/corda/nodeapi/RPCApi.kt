@@ -282,9 +282,9 @@ Inferred types:
 
 'content' @ [170:47] ==> public final val content: Notification<*> defined in net.corda.nodeapi.RPCApi.ServerToClient.Observation[PropertyDescriptorImpl]
 
-'serialize' @ [170:55] ==> public fun <T : Any> Notification<out (Any..Any?)>.serialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): SerializedBytes<Notification<out (Any..Any?)>> defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
+'serialize' @ [170:55] ==> public fun <T : Any> Notification<*>.serialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): SerializedBytes<Notification<*>> defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Any> -> Notification<out (kotlin.Any..kotlin.Any?)>
+    <T : Any> -> Notification<*>
 
 'context' @ [170:75] ==> value-parameter context: SerializationContext defined in net.corda.nodeapi.RPCApi.ServerToClient.Observation.writeToClientMessage[ValueParameterDescriptorImpl]
 

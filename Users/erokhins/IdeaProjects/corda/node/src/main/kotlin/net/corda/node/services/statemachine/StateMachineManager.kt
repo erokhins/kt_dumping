@@ -31,24 +31,24 @@ Inferred types:
     <K : (Any..Any?)> -> FlowStateMachineImpl<*>
     <V : (Any..Any?)> -> Checkpoint
 
-'!!' @ [106:32] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: PublishSubject<StateMachineManager.Change>?): PublishSubject<StateMachineManager.Change>[SimpleFunctionDescriptorImpl]
+'!!' @ [106:32] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: PublishSubject<(StateMachineManager.Change..StateMachineManager.Change?)>?): PublishSubject<(StateMachineManager.Change..StateMachineManager.Change?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> PublishSubject<Change>
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> PublishSubject<(net.corda.node.services.statemachine.StateMachineManager.Change..net.corda.node.services.statemachine.StateMachineManager.Change?)>
 
 'create' @ [106:47] ==> public open fun <T : (Any..Any?)> create(): (PublishSubject<(StateMachineManager.Change..StateMachineManager.Change?)>..PublishSubject<(StateMachineManager.Change..StateMachineManager.Change?)>?) defined in rx.subjects.PublishSubject[JavaMethodDescriptor]
 Inferred types:
     <T : (Any..Any?)> -> Change
 
-'!!' @ [107:44] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: HashMultimap<SecureHash, FlowStateMachineImpl<*>>?): HashMultimap<SecureHash, FlowStateMachineImpl<*>>[SimpleFunctionDescriptorImpl]
+'!!' @ [107:44] ==> public final fun <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-EXCLEXCL-RESOLVE>`(baseExpr: HashMultimap<(SecureHash..SecureHash?), (FlowStateMachineImpl<*>..FlowStateMachineImpl<*>?)>?): HashMultimap<(SecureHash..SecureHash?), (FlowStateMachineImpl<*>..FlowStateMachineImpl<*>?)>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> HashMultimap<SecureHash, FlowStateMachineImpl<*>>
+    <`<TYPE-PARAMETER-FOR-EXCLEXCL-RESOLVE>`> -> HashMultimap<(net.corda.core.crypto.SecureHash..net.corda.core.crypto.SecureHash?), (net.corda.node.services.statemachine.FlowStateMachineImpl<*>..net.corda.node.services.statemachine.FlowStateMachineImpl<*>?)>
 
 'create' @ [107:57] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> create(): (HashMultimap<(SecureHash..SecureHash?), (FlowStateMachineImpl<*>..FlowStateMachineImpl<*>?)>..HashMultimap<(SecureHash..SecureHash?), (FlowStateMachineImpl<*>..FlowStateMachineImpl<*>?)>?) defined in com.google.common.collect.HashMultimap[JavaMethodDescriptor]
 Inferred types:
     <K : (Any..Any?)> -> SecureHash
     <V : (Any..Any?)> -> FlowStateMachineImpl<*>
 
-'changesPublisher' @ [110:13] ==> public final val changesPublisher: PublishSubject<StateMachineManager.Change> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
+'changesPublisher' @ [110:13] ==> public final val changesPublisher: PublishSubject<(StateMachineManager.Change..StateMachineManager.Change?)> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
 
 'bufferUntilDatabaseCommit' @ [110:30] ==> public fun <T : Any> Observer<(StateMachineManager.Change..StateMachineManager.Change?)>.bufferUntilDatabaseCommit(): Observer<(StateMachineManager.Change..StateMachineManager.Change?)> defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -94,7 +94,7 @@ Inferred types:
 
 'register' @ [130:17] ==> public open fun <T : (Metric..Metric?)> register(p0: (String..String?), p1: (Gauge<Int>..Gauge<Int>?)): (Gauge<Int>..Gauge<Int>?) defined in com.codahale.metrics.MetricRegistry[JavaMethodDescriptor]
 Inferred types:
-    <T : (Metric..Metric?)> -> Gauge<Int>
+    <T : (Metric..Metric?)> -> (com.codahale.metrics.Gauge<kotlin.Int>..com.codahale.metrics.Gauge<kotlin.Int>?)
 
 'Gauge' @ [130:44] ==> public fun <T : (Any..Any?)> Gauge(function: () -> (Int..Int?)): Gauge<Int> defined in com.codahale.metrics[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -134,9 +134,9 @@ Inferred types:
 Inferred types:
     <E> -> Any
 
-'lazy' @ [142:41] ==> public fun <T> lazy(initializer: () -> SerializeAsTokenContextImpl): Lazy<SerializeAsTokenContextImpl> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [142:41] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> SerializeAsTokenContextImpl
+    <T> -> T
 
 'SerializeAsTokenContextImpl' @ [143:9] ==> public constructor SerializeAsTokenContextImpl(toBeTokenized: Any, serializationFactory: SerializationFactory, context: SerializationContext, serviceHub: ServiceHub) defined in net.corda.nodeapi.internal.serialization.SerializeAsTokenContextImpl[DeserializedClassConstructorDescriptor]
 
@@ -219,7 +219,7 @@ Inferred types:
 
 'content' @ [167:45] ==> public final val content: StateMachineManager.InnerState defined in net.corda.core.internal.ThreadBox[DeserializedPropertyDescriptor]
 
-'changesPublisher' @ [167:53] ==> public final val changesPublisher: PublishSubject<StateMachineManager.Change> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
+'changesPublisher' @ [167:53] ==> public final val changesPublisher: PublishSubject<(StateMachineManager.Change..StateMachineManager.Change?)> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
 
 'wrapWithDatabaseTransaction' @ [167:70] ==> public fun <T : Any> Observable<(StateMachineManager.Change..StateMachineManager.Change?)>.wrapWithDatabaseTransaction(db: CordaPersistence? = ...): Observable<(StateMachineManager.Change..StateMachineManager.Change?)> defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -247,6 +247,8 @@ Inferred types:
 
 'this' @ [173:81] ==> <this> defined in net.corda.node.services.statemachine.StateMachineManager[LazyClassReceiverParameterDescriptor]
 
+'resumeRestoredFibers' @ [173:87] ==> private final fun resumeRestoredFibers(): Unit defined in net.corda.node.services.statemachine.StateMachineManager[SimpleFunctionDescriptorImpl]
+
 'check' @ [177:9] ==> @InlineOnly public inline fun check(value: Boolean, lazyMessage: () -> Any): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 
 'isJavaAgentActive' @ [177:33] ==> public open fun isJavaAgentActive(): Boolean defined in co.paralleluniverse.fibers.instrument.SuspendableHelper[JavaMethodDescriptor]
@@ -271,7 +273,7 @@ Inferred types:
 Inferred types:
     <R> -> (kotlin.collections.MutableSet<(net.corda.node.services.statemachine.FlowStateMachineImpl<*>..net.corda.node.services.statemachine.FlowStateMachineImpl<*>?)>..kotlin.collections.Set<(net.corda.node.services.statemachine.FlowStateMachineImpl<*>..net.corda.node.services.statemachine.FlowStateMachineImpl<*>?)>?)
 
-'fibersWaitingForLedgerCommit' @ [187:71] ==> public final val fibersWaitingForLedgerCommit: HashMultimap<SecureHash, FlowStateMachineImpl<*>> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
+'fibersWaitingForLedgerCommit' @ [187:71] ==> public final val fibersWaitingForLedgerCommit: HashMultimap<(SecureHash..SecureHash?), (FlowStateMachineImpl<*>..FlowStateMachineImpl<*>?)> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
 
 'removeAll' @ [187:100] ==> @CanIgnoreReturnValue public open fun removeAll(@Nullable p0: Any?): (MutableSet<(FlowStateMachineImpl<*>..FlowStateMachineImpl<*>?)>..Set<(FlowStateMachineImpl<*>..FlowStateMachineImpl<*>?)>?) defined in com.google.common.collect.HashMultimap[JavaMethodDescriptor]
 
@@ -360,9 +362,9 @@ Inferred types:
 
 'mutex' @ [232:16] ==> private final val mutex: ThreadBox<StateMachineManager.InnerState> defined in net.corda.node.services.statemachine.StateMachineManager[PropertyDescriptorImpl]
 
-'locked' @ [232:22] ==> public final inline fun <R> locked(body: StateMachineManager.InnerState.() -> DataFeed<List<FlowStateMachineImpl<*>>, StateMachineManager.Change>): DataFeed<List<FlowStateMachineImpl<*>>, StateMachineManager.Change> defined in net.corda.core.internal.ThreadBox[DeserializedSimpleFunctionDescriptor]
+'locked' @ [232:22] ==> public final inline fun <R> locked(body: StateMachineManager.InnerState.() -> DataFeed<List<FlowStateMachineImpl<*>>, (StateMachineManager.Change..StateMachineManager.Change?)>): DataFeed<List<FlowStateMachineImpl<*>>, (StateMachineManager.Change..StateMachineManager.Change?)> defined in net.corda.core.internal.ThreadBox[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <R> -> DataFeed<List<FlowStateMachineImpl<*>>, Change>
+    <R> -> DataFeed<List<FlowStateMachineImpl<*>>, (net.corda.node.services.statemachine.StateMachineManager.Change..net.corda.node.services.statemachine.StateMachineManager.Change?)>
 
 'DataFeed' @ [233:13] ==> public constructor DataFeed<out A, B>(snapshot: List<FlowStateMachineImpl<*>>, updates: Observable<(StateMachineManager.Change..StateMachineManager.Change?)>) defined in net.corda.core.messaging.DataFeed[DeserializedClassConstructorDescriptor]
 Inferred types:
@@ -377,7 +379,7 @@ Inferred types:
 Inferred types:
     <T> -> FlowStateMachineImpl<*>
 
-'changesPublisher' @ [233:51] ==> public final val changesPublisher: PublishSubject<StateMachineManager.Change> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
+'changesPublisher' @ [233:51] ==> public final val changesPublisher: PublishSubject<(StateMachineManager.Change..StateMachineManager.Change?)> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
 
 'bufferUntilSubscribed' @ [233:68] ==> public fun <T> Observable<(StateMachineManager.Change..StateMachineManager.Change?)>.bufferUntilSubscribed(): Observable<(StateMachineManager.Change..StateMachineManager.Change?)> defined in net.corda.core.internal[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -411,18 +413,18 @@ Inferred types:
 
 'logger' @ [242:50] ==> private final val logger: Logger defined in net.corda.node.services.statemachine.StateMachineManager.Companion[PropertyDescriptorImpl]
 
-'let' @ [242:59] ==> @InlineOnly public inline fun <T, R> FlowStateMachineImpl<out Any?>.let(block: (FlowStateMachineImpl<out Any?>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [242:59] ==> @InlineOnly public inline fun <T, R> FlowStateMachineImpl<*>.let(block: (FlowStateMachineImpl<*>) -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> FlowStateMachineImpl<out Any?>
+    <T> -> FlowStateMachineImpl<*>
     <R> -> Unit
 
 'initFiber' @ [243:25] ==> private final fun initFiber(fiber: FlowStateMachineImpl<*>): Unit defined in net.corda.node.services.statemachine.StateMachineManager[SimpleFunctionDescriptorImpl]
 
-'it' @ [243:35] ==> value-parameter it: FlowStateMachineImpl<out Any?> defined in net.corda.node.services.statemachine.StateMachineManager.restoreFibersFromCheckpoints.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [243:35] ==> value-parameter it: FlowStateMachineImpl<*> defined in net.corda.node.services.statemachine.StateMachineManager.restoreFibersFromCheckpoints.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'stateMachines' @ [244:25] ==> public final val stateMachines: LinkedHashMap<FlowStateMachineImpl<*>, Checkpoint> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
 
-'it' @ [244:39] ==> value-parameter it: FlowStateMachineImpl<out Any?> defined in net.corda.node.services.statemachine.StateMachineManager.restoreFibersFromCheckpoints.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [244:39] ==> value-parameter it: FlowStateMachineImpl<*> defined in net.corda.node.services.statemachine.StateMachineManager.restoreFibersFromCheckpoints.<anonymous>.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
 'checkpoint' @ [244:45] ==> value-parameter checkpoint: Checkpoint defined in net.corda.node.services.statemachine.StateMachineManager.restoreFibersFromCheckpoints.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -591,7 +593,7 @@ Inferred types:
 Inferred types:
     <R> -> Boolean
 
-'fibersWaitingForLedgerCommit' @ [277:36] ==> public final val fibersWaitingForLedgerCommit: HashMultimap<SecureHash, FlowStateMachineImpl<*>> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
+'fibersWaitingForLedgerCommit' @ [277:36] ==> public final val fibersWaitingForLedgerCommit: HashMultimap<(SecureHash..SecureHash?), (FlowStateMachineImpl<*>..FlowStateMachineImpl<*>?)> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
 
 'put' @ [277:65] ==> @CanIgnoreReturnValue public open fun put(@Nullable p0: SecureHash?, @Nullable p1: FlowStateMachineImpl<*>?): Boolean defined in com.google.common.collect.HashMultimap[JavaMethodDescriptor]
 
@@ -930,7 +932,7 @@ Inferred types:
 
 'component1' @ [354:14] ==> public final operator fun component1(): FlowSession defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
-'component2' @ [354:23] ==> public final operator fun component2(): InitiatedFlowFactory<FlowLogic<*>> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
+'component2' @ [354:23] ==> public final operator fun component2(): InitiatedFlowFactory<*> defined in kotlin.Pair[DeserializedSimpleFunctionDescriptor]
 
 'getInitiatedFlowFactory' @ [355:40] ==> private final fun getInitiatedFlowFactory(sessionInit: SessionInit): InitiatedFlowFactory<*> defined in net.corda.node.services.statemachine.StateMachineManager[SimpleFunctionDescriptorImpl]
 
@@ -1027,9 +1029,9 @@ Inferred types:
 
 'openSessions' @ [371:19] ==> internal final val openSessions: HashMap<Pair<FlowLogic<*>, Party>, FlowSession> defined in net.corda.node.services.statemachine.FlowStateMachineImpl[PropertyDescriptorImpl]
 
-'Pair' @ [371:32] ==> public constructor Pair<out A, out B>(first: FlowLogic<Any?>, second: Party) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
+'Pair' @ [371:32] ==> public constructor Pair<out A, out B>(first: FlowLogic<*>, second: Party) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out A> -> FlowLogic<Any?>
+    <out A> -> FlowLogic<*>
     <out B> -> Party
 
 'flow' @ [371:37] ==> val flow: FlowLogic<*> defined in net.corda.node.services.statemachine.StateMachineManager.onSessionInit[LocalVariableDescriptor]
@@ -1084,7 +1086,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> Pair<Int, String>
 
-'initiatedFlowFactory' @ [384:47] ==> val initiatedFlowFactory: InitiatedFlowFactory<FlowLogic<*>> defined in net.corda.node.services.statemachine.StateMachineManager.onSessionInit[LocalVariableDescriptor]
+'initiatedFlowFactory' @ [384:47] ==> val initiatedFlowFactory: InitiatedFlowFactory<*> defined in net.corda.node.services.statemachine.StateMachineManager.onSessionInit[LocalVariableDescriptor]
 
 'serviceHub' @ [386:45] ==> public final val serviceHub: ServiceHubInternal defined in net.corda.node.services.statemachine.StateMachineManager[PropertyDescriptorImpl]
 
@@ -1092,11 +1094,11 @@ Inferred types:
 
 'platformVersion' @ [386:63] ==> public final val platformVersion: Int defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
 
-'initiatedFlowFactory' @ [387:48] ==> val initiatedFlowFactory: InitiatedFlowFactory<FlowLogic<*>> defined in net.corda.node.services.statemachine.StateMachineManager.onSessionInit[LocalVariableDescriptor]
+'initiatedFlowFactory' @ [387:48] ==> val initiatedFlowFactory: InitiatedFlowFactory<*> defined in net.corda.node.services.statemachine.StateMachineManager.onSessionInit[LocalVariableDescriptor]
 
 'flowVersion' @ [387:69] ==> public final val flowVersion: Int defined in net.corda.node.internal.InitiatedFlowFactory.CorDapp[PropertyDescriptorImpl]
 
-'initiatedFlowFactory' @ [387:84] ==> val initiatedFlowFactory: InitiatedFlowFactory<FlowLogic<*>> defined in net.corda.node.services.statemachine.StateMachineManager.onSessionInit[LocalVariableDescriptor]
+'initiatedFlowFactory' @ [387:84] ==> val initiatedFlowFactory: InitiatedFlowFactory<*> defined in net.corda.node.services.statemachine.StateMachineManager.onSessionInit[LocalVariableDescriptor]
 
 'appName' @ [387:105] ==> public final val appName: String defined in net.corda.node.internal.InitiatedFlowFactory.CorDapp[PropertyDescriptorImpl]
 
@@ -1160,11 +1162,11 @@ Inferred types:
 
 'asSubclass' @ [398:60] ==> public open fun <U : (Any..Any?)> asSubclass(p0: (Class<(FlowLogic<*>..FlowLogic<*>?)>..Class<(FlowLogic<*>..FlowLogic<*>?)>?)): (Class<out (FlowLogic<*>..FlowLogic<*>?)>..Class<out (FlowLogic<*>..FlowLogic<*>?)>?) defined in java.lang.Class[JavaMethodDescriptor]
 Inferred types:
-    <U : (Any..Any?)> -> FlowLogic<*>
+    <U : (Any..Any?)> -> (net.corda.core.flows.FlowLogic<*>..net.corda.core.flows.FlowLogic<*>?)
 
 'FlowLogic' @ [398:71] ==> public constructor FlowLogic<out T>() defined in net.corda.core.flows.FlowLogic[DeserializedClassConstructorDescriptor]
 Inferred types:
-    <out T> -> Nothing
+    <out T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6f0e8f55
 
 'java' @ [398:88] ==> public val <T> KClass<FlowLogic<*>>.java: Class<FlowLogic<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -1218,9 +1220,9 @@ Inferred types:
 
 'serializationContext' @ [414:98] ==> private final val serializationContext: SerializeAsTokenContextImpl defined in net.corda.node.services.statemachine.StateMachineManager[PropertyDescriptorImpl]
 
-'apply' @ [414:121] ==> @InlineOnly public inline fun <T> FlowStateMachineImpl<out Any?>.apply(block: FlowStateMachineImpl<out Any?>.() -> Unit): FlowStateMachineImpl<out Any?> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'apply' @ [414:121] ==> @InlineOnly public inline fun <T> FlowStateMachineImpl<*>.apply(block: FlowStateMachineImpl<*>.() -> Unit): FlowStateMachineImpl<*> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> FlowStateMachineImpl<out Any?>
+    <T> -> FlowStateMachineImpl<*>
 
 'fromCheckpoint' @ [415:17] ==> @Transient internal final var fromCheckpoint: Boolean defined in net.corda.node.services.statemachine.FlowStateMachineImpl[PropertyDescriptorImpl]
 
@@ -1319,13 +1321,13 @@ Inferred types:
 
 'logic' @ [443:64] ==> public final val logic: FlowLogic<Any?> defined in net.corda.node.services.statemachine.FlowStateMachineImpl[PropertyDescriptorImpl]
 
-'result' @ [443:71] ==> value-parameter result: Try<Nothing> defined in net.corda.node.services.statemachine.StateMachineManager.initFiber.<anonymous>[ValueParameterDescriptorImpl]
+'result' @ [443:71] ==> value-parameter result: Try<Any?> defined in net.corda.node.services.statemachine.StateMachineManager.initFiber.<anonymous>[ValueParameterDescriptorImpl]
 
 'endAllFiberSessions' @ [445:17] ==> private final fun endAllFiberSessions(fiber: FlowStateMachineImpl<*>, result: Try<*>, propagated: Boolean): Unit defined in net.corda.node.services.statemachine.StateMachineManager[SimpleFunctionDescriptorImpl]
 
 'fiber' @ [445:37] ==> value-parameter fiber: FlowStateMachineImpl<*> defined in net.corda.node.services.statemachine.StateMachineManager.initFiber[ValueParameterDescriptorImpl]
 
-'result' @ [445:44] ==> value-parameter result: Try<Nothing> defined in net.corda.node.services.statemachine.StateMachineManager.initFiber.<anonymous>[ValueParameterDescriptorImpl]
+'result' @ [445:44] ==> value-parameter result: Try<Any?> defined in net.corda.node.services.statemachine.StateMachineManager.initFiber.<anonymous>[ValueParameterDescriptorImpl]
 
 'propagated' @ [445:52] ==> value-parameter propagated: Boolean defined in net.corda.node.services.statemachine.StateMachineManager.initFiber.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -1511,7 +1513,7 @@ Inferred types:
 
 'state' @ [514:21] ==> public final val <R> FlowStateMachineImpl<out Any?>.state: (Strand.State..Strand.State?)[MyPropertyDescriptor]
 Inferred types:
-    <R> -> Any?
+    <R> -> Captured(*)
 
 'RUNNING' @ [514:43] ==> enum entry RUNNING defined in co.paralleluniverse.strands.Strand.State[FakeCallableDescriptorForObject]
 
@@ -1737,7 +1739,7 @@ Inferred types:
 Inferred types:
     <R> -> Unit
 
-'fibersWaitingForLedgerCommit' @ [582:17] ==> public final val fibersWaitingForLedgerCommit: HashMultimap<SecureHash, FlowStateMachineImpl<*>> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
+'fibersWaitingForLedgerCommit' @ [582:17] ==> public final val fibersWaitingForLedgerCommit: HashMultimap<(SecureHash..SecureHash?), (FlowStateMachineImpl<*>..FlowStateMachineImpl<*>?)> defined in net.corda.node.services.statemachine.StateMachineManager.InnerState[PropertyDescriptorImpl]
 
 'ioRequest' @ [582:46] ==> value-parameter ioRequest: WaitForLedgerCommit defined in net.corda.node.services.statemachine.StateMachineManager.processWaitForCommitRequest[ValueParameterDescriptorImpl]
 

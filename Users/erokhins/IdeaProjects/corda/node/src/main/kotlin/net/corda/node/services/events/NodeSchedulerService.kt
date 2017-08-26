@@ -10,7 +10,7 @@
 Inferred types:
     <reified T : Any> -> NodeSchedulerService
 
-'PersistentMap' @ [52:20] ==> public constructor PersistentMap<K, V, E, out EK>(toPersistentEntityKey: (StateRef) -> PersistentStateRef, fromPersistentEntity: (NodeSchedulerService.PersistentScheduledState) -> Pair<StateRef, ScheduledStateRef>, toPersistentEntity: (StateRef, ScheduledStateRef) -> NodeSchedulerService.PersistentScheduledState, persistentEntityClass: Class<NodeSchedulerService.PersistentScheduledState>) defined in net.corda.node.utilities.PersistentMap[ClassConstructorDescriptorImpl]
+'PersistentMap' @ [52:20] ==> public constructor PersistentMap<K, V, E, out EK>(toPersistentEntityKey: (StateRef) -> PersistentStateRef, fromPersistentEntity: (NodeSchedulerService.PersistentScheduledState) -> Pair<StateRef, ScheduledStateRef>, toPersistentEntity: (key: StateRef, value: ScheduledStateRef) -> NodeSchedulerService.PersistentScheduledState, persistentEntityClass: Class<NodeSchedulerService.PersistentScheduledState>) defined in net.corda.node.utilities.PersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> StateRef
     <V> -> ScheduledStateRef
@@ -52,8 +52,6 @@ Inferred types:
 
 'StateRef' @ [58:30] ==> public constructor StateRef(txhash: SecureHash, index: Int) defined in net.corda.core.contracts.StateRef[DeserializedClassConstructorDescriptor]
 
-'SecureHash' @ [58:39] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
-
 'parse' @ [58:50] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
 'txId' @ [58:56] ==> var txId: String defined in net.corda.node.services.events.NodeSchedulerService.Companion.createMap.<anonymous>[LocalVariableDescriptor]
@@ -63,8 +61,6 @@ Inferred types:
 'ScheduledStateRef' @ [59:29] ==> public constructor ScheduledStateRef(ref: StateRef, scheduledAt: Instant) defined in net.corda.core.contracts.ScheduledStateRef[DeserializedClassConstructorDescriptor]
 
 'StateRef' @ [59:47] ==> public constructor StateRef(txhash: SecureHash, index: Int) defined in net.corda.core.contracts.StateRef[DeserializedClassConstructorDescriptor]
-
-'SecureHash' @ [59:56] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
 
 'parse' @ [59:67] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
@@ -319,7 +315,7 @@ Inferred types:
 
 'create' @ [148:42] ==> public open fun <V : (Any..Any?)> create(): (SettableFuture<(Boolean..Boolean?)>..SettableFuture<(Boolean..Boolean?)>?) defined in com.google.common.util.concurrent.SettableFuture[JavaMethodDescriptor]
 Inferred types:
-    <V : (Any..Any?)> -> Boolean
+    <V : (Any..Any?)> -> (kotlin.Boolean..kotlin.Boolean?)
 
 'Pair' @ [149:13] ==> public constructor Pair<out A, out B>(first: (ScheduledStateRef..ScheduledStateRef?), second: SettableFuture<Boolean>) defined in kotlin.Pair[DeserializedClassConstructorDescriptor]
 Inferred types:

@@ -32,10 +32,10 @@ Inferred types:
 
 'inputs' @ [38:51] ==> public open val inputs: List<StateRef> defined in net.corda.core.transactions.WireTransaction[PropertyDescriptorImpl]
 
-'map' @ [38:58] ==> public inline fun <T, R> Iterable<StateRef>.map(transform: (StateRef) -> TransactionState<ContractState>): List<TransactionState<ContractState>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [38:58] ==> public inline fun <T, R> Iterable<StateRef>.map(transform: (StateRef) -> TransactionState<*>): List<TransactionState<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> StateRef
-    <R> -> TransactionState<ContractState>
+    <R> -> TransactionState<*>
 
 'serviceHub' @ [38:64] ==> public final val serviceHub: ServiceHub defined in net.corda.core.flows.IdentitySyncFlow.Send[PropertyDescriptorImpl]
 
@@ -43,16 +43,16 @@ Inferred types:
 
 'it' @ [38:85] ==> value-parameter it: StateRef defined in net.corda.core.flows.IdentitySyncFlow.Send.call.<anonymous>[ValueParameterDescriptorImpl]
 
-'requireNoNulls' @ [38:91] ==> public fun <T : Any> List<TransactionState<ContractState>?>.requireNoNulls(): List<TransactionState<ContractState>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'requireNoNulls' @ [38:91] ==> public fun <T : Any> List<TransactionState<*>?>.requireNoNulls(): List<TransactionState<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T : Any> -> TransactionState<ContractState>
+    <T : Any> -> TransactionState<*>
 
-'map' @ [38:108] ==> public inline fun <T, R> Iterable<TransactionState<ContractState>>.map(transform: (TransactionState<ContractState>) -> ContractState): List<ContractState> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [38:108] ==> public inline fun <T, R> Iterable<TransactionState<*>>.map(transform: (TransactionState<*>) -> ContractState): List<ContractState> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> TransactionState<ContractState>
+    <T> -> TransactionState<*>
     <R> -> ContractState
 
-'it' @ [38:114] ==> value-parameter it: TransactionState<ContractState> defined in net.corda.core.flows.IdentitySyncFlow.Send.call.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [38:114] ==> value-parameter it: TransactionState<*> defined in net.corda.core.flows.IdentitySyncFlow.Send.call.<anonymous>[ValueParameterDescriptorImpl]
 
 'data' @ [38:117] ==> public final val data: ContractState defined in net.corda.core.contracts.TransactionState[PropertyDescriptorImpl]
 

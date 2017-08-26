@@ -8,8 +8,6 @@
 
 'username' @ [12:21] ==> @OldConfig public final val username: String defined in net.corda.nodeapi.User[DeserializedPropertyDescriptor]
 
-'ArtemisMessagingComponent' @ [12:33] ==> public companion object defined in net.corda.nodeapi.ArtemisMessagingComponent[FakeCallableDescriptorForObject]
-
 'NODE_USER' @ [12:59] ==> public const final val NODE_USER: String defined in net.corda.nodeapi.ArtemisMessagingComponent.Companion[DeserializedPropertyDescriptor]
 
 'currentUserPermissions' @ [12:72] ==> val currentUserPermissions: Set<String> defined in net.corda.node.services.messaging.requirePermission[LocalVariableDescriptor]

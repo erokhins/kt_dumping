@@ -14,7 +14,7 @@ Inferred types:
 
 'setOriginComments' @ [25:81] ==> public open fun setOriginComments(p0: Boolean): (ConfigRenderOptions..ConfigRenderOptions?) defined in com.typesafe.config.ConfigRenderOptions[JavaMethodDescriptor]
 
-'user' @ [26:27] ==> public fun user(name: String): User defined in net.corda.demobench.model[SimpleFunctionDescriptorImpl]
+'user' @ [26:27] ==> public fun user(name: String): User defined in net.corda.demobench.model in file User.kt[SimpleFunctionDescriptorImpl]
 
 'legalName' @ [29:31] ==> value-parameter legalName: X500Name defined in net.corda.demobench.model.NodeConfig.<init>[ValueParameterDescriptorImpl]
 
@@ -64,7 +64,7 @@ Inferred types:
 
 'withValue' @ [48:14] ==> public abstract fun withValue(p0: (String..String?), p1: (ConfigValue..ConfigValue?)): (Config..Config?) defined in com.typesafe.config.Config[JavaMethodDescriptor]
 
-'addressValueFor' @ [48:38] ==> private fun addressValueFor(port: Int): ConfigValue? defined in net.corda.demobench.model[SimpleFunctionDescriptorImpl]
+'addressValueFor' @ [48:38] ==> private fun addressValueFor(port: Int): ConfigValue? defined in net.corda.demobench.model in file NodeConfig.kt[SimpleFunctionDescriptorImpl]
 
 'p2pPort' @ [48:54] ==> public final val p2pPort: Int defined in net.corda.demobench.model.NodeConfig[PropertyDescriptorImpl]
 
@@ -88,7 +88,7 @@ Inferred types:
 
 'withValue' @ [51:19] ==> public abstract fun withValue(p0: (String..String?), p1: (ConfigValue..ConfigValue?)): (Config..Config?) defined in com.typesafe.config.Config[JavaMethodDescriptor]
 
-'addressValueFor' @ [51:40] ==> private fun addressValueFor(port: Int): ConfigValue? defined in net.corda.demobench.model[SimpleFunctionDescriptorImpl]
+'addressValueFor' @ [51:40] ==> private fun addressValueFor(port: Int): ConfigValue? defined in net.corda.demobench.model in file NodeConfig.kt[SimpleFunctionDescriptorImpl]
 
 'n' @ [51:56] ==> value-parameter n: NetworkMapConfig defined in net.corda.demobench.model.NodeConfig.toFileConfig.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -108,13 +108,13 @@ Inferred types:
 
 'withValue' @ [54:14] ==> public abstract fun withValue(p0: (String..String?), p1: (ConfigValue..ConfigValue?)): (Config..Config?) defined in com.typesafe.config.Config[JavaMethodDescriptor]
 
-'addressValueFor' @ [54:38] ==> private fun addressValueFor(port: Int): ConfigValue? defined in net.corda.demobench.model[SimpleFunctionDescriptorImpl]
+'addressValueFor' @ [54:38] ==> private fun addressValueFor(port: Int): ConfigValue? defined in net.corda.demobench.model in file NodeConfig.kt[SimpleFunctionDescriptorImpl]
 
 'webPort' @ [54:54] ==> public final val webPort: Int defined in net.corda.demobench.model.NodeConfig[PropertyDescriptorImpl]
 
 'withValue' @ [55:14] ==> public abstract fun withValue(p0: (String..String?), p1: (ConfigValue..ConfigValue?)): (Config..Config?) defined in com.typesafe.config.Config[JavaMethodDescriptor]
 
-'addressValueFor' @ [55:38] ==> private fun addressValueFor(port: Int): ConfigValue? defined in net.corda.demobench.model[SimpleFunctionDescriptorImpl]
+'addressValueFor' @ [55:38] ==> private fun addressValueFor(port: Int): ConfigValue? defined in net.corda.demobench.model in file NodeConfig.kt[SimpleFunctionDescriptorImpl]
 
 'rpcPort' @ [55:54] ==> public final val rpcPort: Int defined in net.corda.demobench.model.NodeConfig[PropertyDescriptorImpl]
 
@@ -132,6 +132,8 @@ Inferred types:
     <R> -> Map<String, Any>
 
 'User' @ [56:55] ==> public constructor User(username: String, password: String, permissions: Set<String>) defined in net.corda.nodeapi.User[DeserializedClassConstructorDescriptor]
+
+'toMap' @ [56:61] ==> public final fun toMap(): Map<String, Any> defined in net.corda.nodeapi.User[DeserializedSimpleFunctionDescriptor]
 
 'toList' @ [56:68] ==> public fun <T> Iterable<Map<String, Any>>.toList(): List<Map<String, Any>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

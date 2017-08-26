@@ -105,8 +105,6 @@ Inferred types:
 
 'generateKeyPair' @ [47:38] ==> @JvmStatic @JvmOverloads public final fun generateKeyPair(signatureScheme: SignatureScheme = ...): KeyPair defined in net.corda.core.crypto.Crypto[DeserializedSimpleFunctionDescriptor]
 
-'X509Utilities' @ [47:54] ==> public object X509Utilities defined in net.corda.node.utilities in file X509Utilities.kt[FakeCallableDescriptorForObject]
-
 'DEFAULT_TLS_SIGNATURE_SCHEME' @ [47:68] ==> public final val DEFAULT_TLS_SIGNATURE_SCHEME: SignatureScheme defined in net.corda.node.utilities.X509Utilities[PropertyDescriptorImpl]
 
 'X509Utilities' @ [48:36] ==> public object X509Utilities defined in net.corda.node.utilities in file X509Utilities.kt[FakeCallableDescriptorForObject]
@@ -121,7 +119,7 @@ Inferred types:
 
 'caKeyStore' @ [50:17] ==> val caKeyStore: KeyStore defined in net.corda.node.utilities.registration.NetworkRegistrationHelper.buildKeystore[LocalVariableDescriptor]
 
-'addOrReplaceKey' @ [50:28] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out X509CertificateHolder>): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'addOrReplaceKey' @ [50:28] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out X509CertificateHolder>): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'SELF_SIGNED_PRIVATE_KEY' @ [50:44] ==> public final val SELF_SIGNED_PRIVATE_KEY: String defined in net.corda.node.utilities.registration.NetworkRegistrationHelper.Companion[PropertyDescriptorImpl]
 
@@ -141,7 +139,7 @@ Inferred types:
 
 'caKeyStore' @ [52:17] ==> val caKeyStore: KeyStore defined in net.corda.node.utilities.registration.NetworkRegistrationHelper.buildKeystore[LocalVariableDescriptor]
 
-'save' @ [52:28] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'save' @ [52:28] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'config' @ [52:33] ==> public final val config: NodeConfiguration defined in net.corda.node.utilities.registration.NetworkRegistrationHelper[PropertyDescriptorImpl]
 
@@ -187,7 +185,7 @@ Inferred types:
 
 'caKeyStore' @ [69:13] ==> val caKeyStore: KeyStore defined in net.corda.node.utilities.registration.NetworkRegistrationHelper.buildKeystore[LocalVariableDescriptor]
 
-'addOrReplaceKey' @ [69:24] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out Certificate>): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'addOrReplaceKey' @ [69:24] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out Certificate>): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'CORDA_CLIENT_CA' @ [69:40] ==> public final val CORDA_CLIENT_CA: String defined in net.corda.node.utilities.X509Utilities[PropertyImportedFromObject]
 
@@ -209,7 +207,7 @@ Inferred types:
 
 'caKeyStore' @ [71:13] ==> val caKeyStore: KeyStore defined in net.corda.node.utilities.registration.NetworkRegistrationHelper.buildKeystore[LocalVariableDescriptor]
 
-'save' @ [71:24] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'save' @ [71:24] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'config' @ [71:29] ==> public final val config: NodeConfiguration defined in net.corda.node.utilities.registration.NetworkRegistrationHelper[PropertyDescriptorImpl]
 
@@ -241,7 +239,7 @@ Inferred types:
 
 'trustStore' @ [76:13] ==> val trustStore: KeyStore defined in net.corda.node.utilities.registration.NetworkRegistrationHelper.buildKeystore[LocalVariableDescriptor]
 
-'save' @ [76:24] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'save' @ [76:24] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'config' @ [76:29] ==> public final val config: NodeConfiguration defined in net.corda.node.utilities.registration.NetworkRegistrationHelper[PropertyDescriptorImpl]
 
@@ -262,8 +260,6 @@ Inferred types:
 'Crypto' @ [80:26] ==> public object Crypto defined in net.corda.core.crypto[FakeCallableDescriptorForObject]
 
 'generateKeyPair' @ [80:33] ==> @JvmStatic @JvmOverloads public final fun generateKeyPair(signatureScheme: SignatureScheme = ...): KeyPair defined in net.corda.core.crypto.Crypto[DeserializedSimpleFunctionDescriptor]
-
-'X509Utilities' @ [80:49] ==> public object X509Utilities defined in net.corda.node.utilities in file X509Utilities.kt[FakeCallableDescriptorForObject]
 
 'DEFAULT_TLS_SIGNATURE_SCHEME' @ [80:63] ==> public final val DEFAULT_TLS_SIGNATURE_SCHEME: SignatureScheme defined in net.corda.node.utilities.X509Utilities[PropertyDescriptorImpl]
 
@@ -301,7 +297,7 @@ Inferred types:
 
 'sslKeyStore' @ [84:13] ==> val sslKeyStore: KeyStore defined in net.corda.node.utilities.registration.NetworkRegistrationHelper.buildKeystore[LocalVariableDescriptor]
 
-'addOrReplaceKey' @ [84:25] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out Certificate>): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'addOrReplaceKey' @ [84:25] ==> public fun KeyStore.addOrReplaceKey(alias: String, key: Key, password: CharArray, chain: Array<out Certificate>): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'CORDA_CLIENT_TLS' @ [84:41] ==> public final val CORDA_CLIENT_TLS: String defined in net.corda.node.utilities.X509Utilities[PropertyImportedFromObject]
 
@@ -325,7 +321,7 @@ Inferred types:
 
 'sslKeyStore' @ [86:13] ==> val sslKeyStore: KeyStore defined in net.corda.node.utilities.registration.NetworkRegistrationHelper.buildKeystore[LocalVariableDescriptor]
 
-'save' @ [86:25] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities[SimpleFunctionDescriptorImpl]
+'save' @ [86:25] ==> public fun KeyStore.save(keyStoreFilePath: Path, storePassword: String): Unit defined in net.corda.node.utilities in file KeyStoreUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'config' @ [86:30] ==> public final val config: NodeConfiguration defined in net.corda.node.utilities.registration.NetworkRegistrationHelper[PropertyDescriptorImpl]
 

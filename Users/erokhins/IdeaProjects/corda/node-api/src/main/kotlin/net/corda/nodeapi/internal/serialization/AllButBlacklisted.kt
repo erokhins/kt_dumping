@@ -12,9 +12,9 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> Thread
 
-'HashSet' @ [40:13] ==> public final fun <E> <init>(): HashSet<Any?> /* = HashSet<Any?> */ defined in kotlin.collections.HashSet[TypeAliasConstructorDescriptorImpl]
+'HashSet' @ [40:13] ==> public final fun <E> <init>(): HashSet<???> /* = HashSet<???> */ defined in kotlin.collections.HashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> Any?
+    <E> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@346dde25
 
 'java' @ [40:28] ==> public val <T> KClass<HashSet<*>>.java: Class<HashSet<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -26,8 +26,8 @@ Inferred types:
 
 'HashMap' @ [41:13] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7e41f733
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6f41d297
 
 'java' @ [41:28] ==> public val <T> KClass<HashMap<*, *>>.java: Class<HashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -39,8 +39,8 @@ Inferred types:
 
 'WeakHashMap' @ [42:13] ==> public constructor WeakHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.WeakHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@74c12580
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@2e8751cb
 
 'java' @ [42:32] ==> public val <T> KClass<WeakHashMap<*, *>>.java: Class<WeakHashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -52,8 +52,8 @@ Inferred types:
 
 'Dictionary' @ [43:13] ==> public constructor Dictionary<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.Dictionary[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@5f0ec347
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@3eba775b
 
 'java' @ [43:31] ==> public val <T> KClass<Dictionary<*, *>>.java: Class<Dictionary<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -65,8 +65,8 @@ Inferred types:
 
 'Hashtable' @ [44:13] ==> public constructor Hashtable<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.Hashtable[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@43aab829
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@57b7a09e
 
 'java' @ [44:30] ==> public val <T> KClass<Hashtable<*, *>>.java: Class<Hashtable<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -462,9 +462,9 @@ Inferred types:
 Inferred types:
     <T> -> String
 
-'LinkedHashSet' @ [110:13] ==> public final fun <E> <init>(): LinkedHashSet<Any?> /* = LinkedHashSet<Any?> */ defined in kotlin.collections.LinkedHashSet[TypeAliasConstructorDescriptorImpl]
+'LinkedHashSet' @ [110:13] ==> public final fun <E> <init>(): LinkedHashSet<???> /* = LinkedHashSet<???> */ defined in kotlin.collections.LinkedHashSet[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <E> -> Any?
+    <E> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@7e8a55d4
 
 'java' @ [110:34] ==> public val <T> KClass<LinkedHashSet<*>>.java: Class<LinkedHashSet<*>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -476,8 +476,8 @@ Inferred types:
 
 'LinkedHashMap' @ [111:13] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@1367e5f1
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@59a7c44
 
 'java' @ [111:34] ==> public val <T> KClass<LinkedHashMap<*, *>>.java: Class<LinkedHashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -509,13 +509,13 @@ Inferred types:
 
 'name' @ [114:91] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'type' @ [122:13] ==> value-parameter type: Class<*> defined in net.corda.nodeapi.internal.serialization.AllButBlacklisted.hasListed[ValueParameterDescriptorImpl]
 
 'name' @ [122:18] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'forciblyAllowedClasses' @ [122:27] ==> private final val forciblyAllowedClasses: HashSet<String> /* = HashSet<String> */ defined in net.corda.nodeapi.internal.serialization.AllButBlacklisted[PropertyDescriptorImpl]
 
@@ -537,7 +537,7 @@ Inferred types:
 
 'name' @ [124:22] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'blacklistedClasses' @ [124:30] ==> private final val blacklistedClasses: HashSet<String> /* = HashSet<String> */ defined in net.corda.nodeapi.internal.serialization.AllButBlacklisted[PropertyDescriptorImpl]
 
@@ -547,7 +547,7 @@ Inferred types:
 
 'name' @ [125:59] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'blacklistedClasses' @ [128:30] ==> private final val blacklistedClasses: HashSet<String> /* = HashSet<String> */ defined in net.corda.nodeapi.internal.serialization.AllButBlacklisted[PropertyDescriptorImpl]
 
@@ -575,7 +575,7 @@ Inferred types:
 
 'isInterface' @ [131:63] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isInterface: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'IllegalStateException' @ [132:27] ==> public final fun <init>(p0: (String..String?)): IllegalStateException /* = IllegalStateException */ defined in kotlin.IllegalStateException[TypeAliasConstructorDescriptorImpl]
 
@@ -587,5 +587,5 @@ Inferred types:
 
 'name' @ [132:83] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.name: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 

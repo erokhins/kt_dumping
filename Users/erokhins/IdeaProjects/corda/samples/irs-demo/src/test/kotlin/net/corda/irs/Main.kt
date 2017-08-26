@@ -30,13 +30,9 @@ Inferred types:
 
 'ServiceInfo' @ [20:52] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
 
-'SimpleNotaryService' @ [20:64] ==> public companion object defined in net.corda.node.services.transactions.SimpleNotaryService[FakeCallableDescriptorForObject]
-
 'type' @ [20:84] ==> public final val type: ServiceType defined in net.corda.node.services.transactions.SimpleNotaryService.Companion[DeserializedPropertyDescriptor]
 
 'ServiceInfo' @ [20:91] ==> public constructor ServiceInfo(type: ServiceType, name: X500Name? = ...) defined in net.corda.core.node.services.ServiceInfo[DeserializedClassConstructorDescriptor]
-
-'NodeInterestRates' @ [20:103] ==> public object NodeInterestRates defined in net.corda.irs.api[FakeCallableDescriptorForObject]
 
 'type' @ [20:128] ==> @field:JvmField public final val type: ServiceType defined in net.corda.irs.api.NodeInterestRates.Oracle.Companion[DeserializedPropertyDescriptor]
 

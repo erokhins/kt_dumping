@@ -31,9 +31,9 @@ Inferred types:
 
 'notarise' @ [23:39] ==> public final fun notarise(count: Int): Unit defined in net.corda.notarydemo.NotaryDemoClientApi[SimpleFunctionDescriptorImpl]
 
-'lazy' @ [29:27] ==> public fun <T> lazy(initializer: () -> Party): Lazy<Party> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [29:27] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Party
+    <T> -> T
 
 'rpc' @ [30:23] ==> public final val rpc: CordaRPCOps defined in net.corda.notarydemo.NotaryDemoClientApi[PropertyDescriptorImpl]
 
@@ -63,7 +63,7 @@ Inferred types:
 
 'map' @ [31:100] ==> public final fun <R : (Any..Any?)> map(p0: (((NodeInfo..NodeInfo?)) -> (Party..Party?)..(((NodeInfo..NodeInfo?)) -> (Party..Party?))?)): (Stream<(Party..Party?)>..Stream<(Party..Party?)>?) defined in java.util.stream.Stream[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> Party
+    <R : (Any..Any?)> -> (net.corda.core.identity.Party..net.corda.core.identity.Party?)
 
 'it' @ [31:106] ==> value-parameter it: (NodeInfo..NodeInfo?) defined in net.corda.notarydemo.NotaryDemoClientApi.notary.<anonymous>.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -85,9 +85,9 @@ Inferred types:
 
 'id' @ [32:22] ==> val id: Party? defined in net.corda.notarydemo.NotaryDemoClientApi.notary.<anonymous>[LocalVariableDescriptor]
 
-'lazy' @ [35:37] ==> public fun <T> lazy(initializer: () -> NodeInfo): Lazy<NodeInfo> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'getValue' @ [35:37] ==> @InlineOnly public operator inline fun <T> Lazy<T>.getValue(thisRef: Any?, property: KProperty<*>): T defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> NodeInfo
+    <T> -> T
 
 'rpc' @ [36:23] ==> public final val rpc: CordaRPCOps defined in net.corda.notarydemo.NotaryDemoClientApi[PropertyDescriptorImpl]
 
@@ -189,6 +189,8 @@ Inferred types:
     <C> -> Int
     <reified R : FlowLogic<T>> -> DummyIssueAndMove
 
+'DummyIssueAndMove' @ [57:29] ==> public constructor DummyIssueAndMove(notary: Party, counterpartyNode: Party, discriminator: Int) defined in net.corda.notarydemo.flows.DummyIssueAndMove[ClassConstructorDescriptorImpl]
+
 'notary' @ [57:48] ==> private final val notary: Party defined in net.corda.notarydemo.NotaryDemoClientApi[PropertyDescriptorImpl]
 
 'counterpartyNode' @ [57:56] ==> private final val counterpartyNode: NodeInfo defined in net.corda.notarydemo.NotaryDemoClientApi[PropertyDescriptorImpl]
@@ -221,6 +223,8 @@ Inferred types:
     <T : Any> -> List<TransactionSignature>
     <A> -> SignedTransaction
     <reified R : FlowLogic<T>> -> RPCStartableNotaryFlowClient
+
+'RPCStartableNotaryFlowClient' @ [69:29] ==> public constructor RPCStartableNotaryFlowClient(stx: SignedTransaction) defined in net.corda.notarydemo.flows.RPCStartableNotaryFlowClient[ClassConstructorDescriptorImpl]
 
 'it' @ [69:59] ==> value-parameter it: SignedTransaction defined in net.corda.notarydemo.NotaryDemoClientApi.notariseTransactions.<anonymous>[ValueParameterDescriptorImpl]
 

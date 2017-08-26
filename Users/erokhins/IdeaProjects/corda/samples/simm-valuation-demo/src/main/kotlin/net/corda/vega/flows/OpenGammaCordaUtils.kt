@@ -12,7 +12,7 @@
 
 'toDouble' @ [22:87] ==> public open fun toDouble(): Double defined in java.math.BigDecimal[JavaMethodDescriptor]
 
-'roundDP' @ [25:24] ==> public fun roundDP(decimals: Int): (Double) -> Double defined in net.corda.vega.flows[SimpleFunctionDescriptorImpl]
+'roundDP' @ [25:24] ==> public fun roundDP(decimals: Int): (Double) -> Double defined in net.corda.vega.flows in file OpenGammaCordaUtils.kt[SimpleFunctionDescriptorImpl]
 
 'this' @ [33:18] ==> <this> defined in net.corda.vega.flows.toCordaCompatible[ReceiverParameterDescriptorImpl]
 
@@ -27,7 +27,7 @@ Inferred types:
 
 'getValue' @ [34:26] ==> public open fun <T : (Any..Any?)> getValue(p0: (MarketDataId<out (Any..Any?)>..MarketDataId<out (Any..Any?)>?)): (Any..Any?) defined in com.opengamma.strata.data.MarketData[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'it' @ [34:35] ==> value-parameter it: (MarketDataId<*>..MarketDataId<*>?) defined in net.corda.vega.flows.toCordaCompatible.<anonymous>[ValueParameterDescriptorImpl]
 

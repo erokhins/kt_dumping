@@ -1,7 +1,5 @@
 'declaredType' @ [17:31] ==> public final val declaredType: ParameterizedType defined in net.corda.nodeapi.internal.serialization.amqp.MapSerializer[PropertyDescriptorImpl]
 
-'DeserializedParameterizedType' @ [17:81] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.DeserializedParameterizedType[FakeCallableDescriptorForObject]
-
 'make' @ [17:111] ==> public final fun make(name: String, cl: ClassLoader = ...): Type defined in net.corda.nodeapi.internal.serialization.amqp.DeserializedParameterizedType.Companion[SimpleFunctionDescriptorImpl]
 
 'declaredType' @ [17:116] ==> public final val declaredType: ParameterizedType defined in net.corda.nodeapi.internal.serialization.amqp.MapSerializer[PropertyDescriptorImpl]
@@ -30,10 +28,10 @@ Inferred types:
 Inferred types:
     <T> -> Map<*, *>
 
-'unmodifiableMap' @ [23:57] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> unmodifiableMap(p0: (MutableMap<out (Any..Any?), out (Any..Any?)>..Map<out (Any..Any?), (Any..Any?)>?)): (MutableMap<(Any..Any?), (Any..Any?)>..Map<(Any..Any?), (Any..Any?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'unmodifiableMap' @ [23:57] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> unmodifiableMap(p0: (MutableMap<out Any?, out Any?>..Map<out Any?, Any?>?)): (MutableMap<Any?, Any?>..Map<Any?, Any?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Any
-    <V : (Any..Any?)> -> Any
+    <K : (Any..Any?)> -> Any?
+    <V : (Any..Any?)> -> Any?
 
 'map' @ [23:73] ==> value-parameter map: Map<*, *> defined in net.corda.nodeapi.internal.serialization.amqp.MapSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -46,15 +44,15 @@ Inferred types:
 Inferred types:
     <T> -> SortedMap<*, *>
 
-'unmodifiableSortedMap' @ [24:63] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> unmodifiableSortedMap(p0: (SortedMap<(Any..Any?), out (Any..Any?)>..SortedMap<(Any..Any?), out (Any..Any?)>?)): (SortedMap<(Any..Any?), (Any..Any?)>..SortedMap<(Any..Any?), (Any..Any?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'unmodifiableSortedMap' @ [24:63] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> unmodifiableSortedMap(p0: (SortedMap<Any?, out Any?>..SortedMap<Any?, out Any?>?)): (SortedMap<Any?, Any?>..SortedMap<Any?, Any?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Any
-    <V : (Any..Any?)> -> Any
+    <K : (Any..Any?)> -> Any?
+    <V : (Any..Any?)> -> Any?
 
-'TreeMap' @ [24:85] ==> public constructor TreeMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (Any..Any?), out (Any..Any?)>..Map<out (Any..Any?), (Any..Any?)>?)) defined in java.util.TreeMap[JavaClassConstructorDescriptor]
+'TreeMap' @ [24:85] ==> public constructor TreeMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out Any?, out Any?>..Map<out Any?, Any?>?)) defined in java.util.TreeMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Any
-    <V : (Any..Any?)> -> Any
+    <K : (Any..Any?)> -> Any?
+    <V : (Any..Any?)> -> Any?
 
 'map' @ [24:93] ==> value-parameter map: Map<*, *> defined in net.corda.nodeapi.internal.serialization.amqp.MapSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -67,47 +65,47 @@ Inferred types:
 Inferred types:
     <T> -> NavigableMap<*, *>
 
-'unmodifiableNavigableMap' @ [25:66] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> unmodifiableNavigableMap(p0: (NavigableMap<(Any..Any?), out (Any..Any?)>..NavigableMap<(Any..Any?), out (Any..Any?)>?)): (NavigableMap<(Any..Any?), (Any..Any?)>..NavigableMap<(Any..Any?), (Any..Any?)>?) defined in java.util.Collections[JavaMethodDescriptor]
+'unmodifiableNavigableMap' @ [25:66] ==> public open fun <K : (Any..Any?), V : (Any..Any?)> unmodifiableNavigableMap(p0: (NavigableMap<Any?, out Any?>..NavigableMap<Any?, out Any?>?)): (NavigableMap<Any?, Any?>..NavigableMap<Any?, Any?>?) defined in java.util.Collections[JavaMethodDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Any
-    <V : (Any..Any?)> -> Any
+    <K : (Any..Any?)> -> Any?
+    <V : (Any..Any?)> -> Any?
 
-'TreeMap' @ [25:91] ==> public constructor TreeMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (Any..Any?), out (Any..Any?)>..Map<out (Any..Any?), (Any..Any?)>?)) defined in java.util.TreeMap[JavaClassConstructorDescriptor]
+'TreeMap' @ [25:91] ==> public constructor TreeMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out Any?, out Any?>..Map<out Any?, Any?>?)) defined in java.util.TreeMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Any
-    <V : (Any..Any?)> -> Any
+    <K : (Any..Any?)> -> Any?
+    <V : (Any..Any?)> -> Any?
 
 'map' @ [25:99] ==> value-parameter map: Map<*, *> defined in net.corda.nodeapi.internal.serialization.amqp.MapSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
-'LinkedHashMap' @ [27:17] ==> public final fun <K, V> <init>(): LinkedHashMap<Any?, Any?> /* = LinkedHashMap<Any?, Any?> */ defined in kotlin.collections.LinkedHashMap[TypeAliasConstructorDescriptorImpl]
+'LinkedHashMap' @ [27:17] ==> public final fun <K, V> <init>(): LinkedHashMap<???, ???> /* = LinkedHashMap<???, ???> */ defined in kotlin.collections.LinkedHashMap[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <K> -> Any?
-    <V> -> Any?
+    <K> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@1cd85f70
+    <V> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@20dd059a
 
 'java' @ [27:38] ==> public val <T> KClass<LinkedHashMap<*, *>>.java: Class<LinkedHashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> LinkedHashMap<*, *>
 
-'LinkedHashMap' @ [27:55] ==> public final fun <K, V> <init>(p0: (MutableMap<out (Any..Any?), out (Any..Any?)>..Map<out (Any..Any?), (Any..Any?)>?)): LinkedHashMap<Any, Any> /* = LinkedHashMap<Any, Any> */ defined in kotlin.collections.LinkedHashMap[TypeAliasConstructorDescriptorImpl]
+'LinkedHashMap' @ [27:55] ==> public final fun <K, V> <init>(p0: (MutableMap<out Any?, out Any?>..Map<out Any?, Any?>?)): LinkedHashMap<Any?, Any?> /* = LinkedHashMap<Any?, Any?> */ defined in kotlin.collections.LinkedHashMap[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <K> -> Any
-    <V> -> Any
+    <K> -> Any?
+    <V> -> Any?
 
 'map' @ [27:69] ==> value-parameter map: Map<*, *> defined in net.corda.nodeapi.internal.serialization.amqp.MapSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
 'TreeMap' @ [28:17] ==> public constructor TreeMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.TreeMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6d03e225
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@60df63af
 
 'java' @ [28:32] ==> public val <T> KClass<TreeMap<*, *>>.java: Class<TreeMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
     <T> -> TreeMap<*, *>
 
-'TreeMap' @ [28:49] ==> public constructor TreeMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (Any..Any?), out (Any..Any?)>..Map<out (Any..Any?), (Any..Any?)>?)) defined in java.util.TreeMap[JavaClassConstructorDescriptor]
+'TreeMap' @ [28:49] ==> public constructor TreeMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out Any?, out Any?>..Map<out Any?, Any?>?)) defined in java.util.TreeMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> Any
-    <V : (Any..Any?)> -> Any
+    <K : (Any..Any?)> -> Any?
+    <V : (Any..Any?)> -> Any?
 
 'map' @ [28:57] ==> value-parameter map: Map<*, *> defined in net.corda.nodeapi.internal.serialization.amqp.MapSerializer.Companion.supportedTypes.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -126,8 +124,6 @@ Inferred types:
 'rawType' @ [35:91] ==> public final val ParameterizedType.rawType: (Type..Type?)[MyPropertyDescriptor]
 
 'RestrictedType' @ [37:46] ==> public constructor RestrictedType(name: String, label: String?, provides: List<String>, source: String, descriptor: Descriptor, choices: List<Choice>) defined in net.corda.nodeapi.internal.serialization.amqp.RestrictedType[ClassConstructorDescriptorImpl]
-
-'SerializerFactory' @ [37:61] ==> public companion object defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory[FakeCallableDescriptorForObject]
 
 'nameForType' @ [37:79] ==> public final fun nameForType(type: Type): String defined in net.corda.nodeapi.internal.serialization.amqp.SerializerFactory.Companion[SimpleFunctionDescriptorImpl]
 
@@ -177,7 +173,7 @@ Inferred types:
 
 'data' @ [49:9] ==> value-parameter data: Data defined in net.corda.nodeapi.internal.serialization.amqp.MapSerializer.writeObject[ValueParameterDescriptorImpl]
 
-'withDescribed' @ [49:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp[SimpleFunctionDescriptorImpl]
+'withDescribed' @ [49:14] ==> public fun Data.withDescribed(descriptor: Descriptor, block: Data.() -> Unit): Unit defined in net.corda.nodeapi.internal.serialization.amqp in file SerializationHelper.kt[SimpleFunctionDescriptorImpl]
 
 'typeNotation' @ [49:28] ==> private final val typeNotation: TypeNotation defined in net.corda.nodeapi.internal.serialization.amqp.MapSerializer[PropertyDescriptorImpl]
 
@@ -301,8 +297,8 @@ Inferred types:
 
 'HashMap' @ [73:9] ==> public constructor HashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.HashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@3e22931b
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@769ba090
 
 'java' @ [73:24] ==> public val <T> KClass<HashMap<*, *>>.java: Class<HashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -314,10 +310,10 @@ Inferred types:
 
 '!' @ [73:55] ==> public final operator fun not(): Boolean defined in kotlin.Boolean[DeserializedSimpleFunctionDescriptor]
 
-'LinkedHashMap' @ [73:56] ==> public final fun <K, V> <init>(): LinkedHashMap<Any?, Any?> /* = LinkedHashMap<Any?, Any?> */ defined in kotlin.collections.LinkedHashMap[TypeAliasConstructorDescriptorImpl]
+'LinkedHashMap' @ [73:56] ==> public final fun <K, V> <init>(): LinkedHashMap<???, ???> /* = LinkedHashMap<???, ???> */ defined in kotlin.collections.LinkedHashMap[TypeAliasConstructorDescriptorImpl]
 Inferred types:
-    <K> -> Any?
-    <V> -> Any?
+    <K> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@4fb66ac
+    <V> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@1fa2af87
 
 'java' @ [73:77] ==> public val <T> KClass<LinkedHashMap<*, *>>.java: Class<LinkedHashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -344,8 +340,8 @@ Inferred types:
 
 'WeakHashMap' @ [77:14] ==> public constructor WeakHashMap<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.WeakHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@35b25d23
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@1e06f425
 
 'java' @ [77:33] ==> public val <T> KClass<WeakHashMap<*, *>>.java: Class<WeakHashMap<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
@@ -361,8 +357,8 @@ Inferred types:
 
 'Dictionary' @ [81:14] ==> public constructor Dictionary<K : (Any..Any?), V : (Any..Any?)>() defined in java.util.Dictionary[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
-    <V : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <K : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@41972f4f
+    <V : (Any..Any?)> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@4b437e6d
 
 'java' @ [81:32] ==> public val <T> KClass<Dictionary<*, *>>.java: Class<Dictionary<*, *>> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:

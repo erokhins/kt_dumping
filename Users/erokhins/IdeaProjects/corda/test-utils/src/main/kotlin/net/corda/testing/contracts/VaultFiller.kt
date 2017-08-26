@@ -49,7 +49,7 @@ Inferred types:
 
 'addCommand' @ [45:13] ==> public final fun addCommand(arg: Command<*>): TransactionBuilder defined in net.corda.core.transactions.TransactionBuilder[DeserializedSimpleFunctionDescriptor]
 
-'dummyCommand' @ [45:24] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'dummyCommand' @ [45:24] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing in file TestConstants.kt[SimpleFunctionDescriptorImpl]
 
 'signInitialTransaction' @ [47:19] ==> public open fun signInitialTransaction(builder: TransactionBuilder): SignedTransaction defined in net.corda.core.node.ServiceHub[DeserializedSimpleFunctionDescriptor]
 
@@ -129,8 +129,6 @@ Inferred types:
 
 'platformVersion' @ [72:54] ==> public final val platformVersion: Int defined in net.corda.core.node.NodeInfo[DeserializedPropertyDescriptor]
 
-'Crypto' @ [72:71] ==> public object Crypto defined in net.corda.core.crypto[FakeCallableDescriptorForObject]
-
 'findSignatureScheme' @ [72:78] ==> @JvmStatic public final fun findSignatureScheme(key: PublicKey): SignatureScheme defined in net.corda.core.crypto.Crypto[DeserializedSimpleFunctionDescriptor]
 
 'issuerKey' @ [72:98] ==> val issuerKey: KeyPair defined in net.corda.testing.contracts.fillWithSomeTestLinearStates[LocalVariableDescriptor]
@@ -182,7 +180,7 @@ Inferred types:
 
 'addCommand' @ [84:13] ==> public final fun addCommand(arg: Command<*>): TransactionBuilder defined in net.corda.core.transactions.TransactionBuilder[DeserializedSimpleFunctionDescriptor]
 
-'dummyCommand' @ [84:24] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'dummyCommand' @ [84:24] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing in file TestConstants.kt[SimpleFunctionDescriptorImpl]
 
 'signInitialTransaction' @ [87:20] ==> public open fun signInitialTransaction(builder: TransactionBuilder): SignedTransaction defined in net.corda.core.node.ServiceHub[DeserializedSimpleFunctionDescriptor]
 
@@ -246,7 +244,7 @@ Inferred types:
 
 'DUMMY_CASH_ISSUER' @ [119:67] ==> public val DUMMY_CASH_ISSUER: PartyAndReference defined in net.corda.finance.contracts.asset[DeserializedPropertyDescriptor]
 
-'calculateRandomlySizedAmounts' @ [120:19] ==> public fun calculateRandomlySizedAmounts(howMuch: Amount<Currency>, min: Int, max: Int, rng: Random): LongArray defined in net.corda.testing.contracts[SimpleFunctionDescriptorImpl]
+'calculateRandomlySizedAmounts' @ [120:19] ==> public fun calculateRandomlySizedAmounts(howMuch: Amount<Currency>, min: Int, max: Int, rng: Random): LongArray defined in net.corda.testing.contracts in file VaultFiller.kt[SimpleFunctionDescriptorImpl]
 
 'howMuch' @ [120:49] ==> value-parameter howMuch: Amount<Currency> defined in net.corda.testing.contracts.fillWithSomeTestCash[ValueParameterDescriptorImpl]
 
@@ -584,7 +582,7 @@ Inferred types:
 
 'addCommand' @ [203:13] ==> public final fun addCommand(arg: Command<*>): TransactionBuilder defined in net.corda.core.transactions.TransactionBuilder[DeserializedSimpleFunctionDescriptor]
 
-'dummyCommand' @ [203:24] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'dummyCommand' @ [203:24] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing in file TestConstants.kt[SimpleFunctionDescriptorImpl]
 
 'notary' @ [203:37] ==> value-parameter notary: Party defined in net.corda.testing.contracts.consume[ValueParameterDescriptorImpl]
 
@@ -616,7 +614,7 @@ Inferred types:
 
 'addCommand' @ [215:9] ==> public final fun addCommand(arg: Command<*>): TransactionBuilder defined in net.corda.core.transactions.TransactionBuilder[DeserializedSimpleFunctionDescriptor]
 
-'dummyCommand' @ [215:20] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'dummyCommand' @ [215:20] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing in file TestConstants.kt[SimpleFunctionDescriptorImpl]
 
 'notary' @ [215:33] ==> value-parameter notary: Party defined in net.corda.testing.contracts.consumeAndProduce[ValueParameterDescriptorImpl]
 
@@ -666,7 +664,7 @@ Inferred types:
 
 'addCommand' @ [225:9] ==> public final fun addCommand(arg: Command<*>): TransactionBuilder defined in net.corda.core.transactions.TransactionBuilder[DeserializedSimpleFunctionDescriptor]
 
-'dummyCommand' @ [225:20] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing[SimpleFunctionDescriptorImpl]
+'dummyCommand' @ [225:20] ==> public fun dummyCommand(vararg signers: PublicKey = ...): Command<TypeOnlyCommandData> defined in net.corda.testing in file TestConstants.kt[SimpleFunctionDescriptorImpl]
 
 'notary' @ [225:33] ==> value-parameter notary: Party defined in net.corda.testing.contracts.consumeAndProduce[ValueParameterDescriptorImpl]
 

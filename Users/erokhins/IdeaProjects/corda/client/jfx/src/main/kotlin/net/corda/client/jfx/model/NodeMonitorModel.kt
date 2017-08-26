@@ -15,7 +15,7 @@ Inferred types:
 
 'map' @ [22:24] ==> public final fun <R : (Any..Any?)> map(p0: (((String..String?)) -> (ProgressTrackingEvent..ProgressTrackingEvent?)..(((String..String?)) -> (ProgressTrackingEvent..ProgressTrackingEvent?))?)): (Observable<(ProgressTrackingEvent..ProgressTrackingEvent?)>..Observable<(ProgressTrackingEvent..ProgressTrackingEvent?)>?) defined in rx.Observable[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> ProgressTrackingEvent
+    <R : (Any..Any?)> -> (net.corda.client.jfx.model.ProgressTrackingEvent..net.corda.client.jfx.model.ProgressTrackingEvent?)
 
 'ProgressTrackingEvent' @ [22:30] ==> public constructor ProgressTrackingEvent(stateMachineId: StateMachineRunId, message: String) defined in net.corda.client.jfx.model.ProgressTrackingEvent[ClassConstructorDescriptorImpl]
 
@@ -79,8 +79,6 @@ Inferred types:
 
 'nodeHostAndPort' @ [55:31] ==> value-parameter nodeHostAndPort: NetworkHostAndPort defined in net.corda.client.jfx.model.NodeMonitorModel.register[ValueParameterDescriptorImpl]
 
-'CordaRPCClientConfiguration' @ [56:33] ==> public companion object defined in net.corda.client.rpc.CordaRPCClientConfiguration[FakeCallableDescriptorForObject]
-
 'default' @ [56:61] ==> @JvmStatic public final val default: CordaRPCClientConfiguration defined in net.corda.client.rpc.CordaRPCClientConfiguration.Companion[DeserializedPropertyDescriptor]
 
 'copy' @ [56:69] ==> public final fun copy(connectionMaxRetryInterval: Duration = ...): CordaRPCClientConfiguration defined in net.corda.client.rpc.CordaRPCClientConfiguration[DeserializedSimpleFunctionDescriptor]
@@ -126,19 +124,21 @@ Inferred types:
 
 'map' @ [70:71] ==> public final fun <R : (Any..Any?)> map(p0: (((StateMachineUpdate..StateMachineUpdate?)) -> (Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?)..(((StateMachineUpdate..StateMachineUpdate?)) -> (Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?))?)): (Observable<(Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?)>..Observable<(Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?)>?) defined in rx.subjects.PublishSubject[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> Observable<ProgressTrackingEvent>
+    <R : (Any..Any?)> -> (rx.Observable<net.corda.client.jfx.model.ProgressTrackingEvent>..rx.Observable<net.corda.client.jfx.model.ProgressTrackingEvent>?)
 
 'if (stateMachineUpdate is StateMachineUpdate.Added) {
                 ProgressTrackingEvent.createStreamFromStateMachineInfo(stateMachineUpdate.stateMachineInfo) ?: Observable.empty<ProgressTrackingEvent>()
             } else {
                 Observable.empty<ProgressTrackingEvent>()
-            }' @ [71:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Observable<ProgressTrackingEvent>, elseBranch: Observable<ProgressTrackingEvent>): Observable<ProgressTrackingEvent>[SimpleFunctionDescriptorImpl]
+            }' @ [71:13] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: (Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?), elseBranch: (Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?)): (Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Observable<ProgressTrackingEvent>
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> (rx.Observable<net.corda.client.jfx.model.ProgressTrackingEvent>..rx.Observable<net.corda.client.jfx.model.ProgressTrackingEvent>?)
 
 'stateMachineUpdate' @ [71:17] ==> value-parameter stateMachineUpdate: (StateMachineUpdate..StateMachineUpdate?) defined in net.corda.client.jfx.model.NodeMonitorModel.register.<anonymous>[ValueParameterDescriptorImpl]
 
-'ProgressTrackingEvent' @ [72:17] ==> public companion object defined in net.corda.client.jfx.model.ProgressTrackingEvent[FakeCallableDescriptorForObject]
+'?:' @ [72:17] ==> public final fun <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-ELVIS-RESOLVE>`(left: Observable<ProgressTrackingEvent>?, right: (Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?)): (Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?)[SimpleFunctionDescriptorImpl]
+Inferred types:
+    <`<TYPE-PARAMETER-FOR-ELVIS-RESOLVE>`> -> (rx.Observable<net.corda.client.jfx.model.ProgressTrackingEvent>..rx.Observable<net.corda.client.jfx.model.ProgressTrackingEvent>?)
 
 'createStreamFromStateMachineInfo' @ [72:39] ==> public final fun createStreamFromStateMachineInfo(stateMachine: StateMachineInfo): Observable<ProgressTrackingEvent>? defined in net.corda.client.jfx.model.ProgressTrackingEvent.Companion[SimpleFunctionDescriptorImpl]
 
@@ -162,7 +162,7 @@ Inferred types:
 
 'flatMap' @ [79:79] ==> public final fun <R : (Any..Any?)> flatMap(p0: (((Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?)) -> (Observable<out (ProgressTrackingEvent..ProgressTrackingEvent?)>..Observable<out (ProgressTrackingEvent..ProgressTrackingEvent?)>?)..(((Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?)) -> (Observable<out (ProgressTrackingEvent..ProgressTrackingEvent?)>..Observable<out (ProgressTrackingEvent..ProgressTrackingEvent?)>?))?)): (Observable<(ProgressTrackingEvent..ProgressTrackingEvent?)>..Observable<(ProgressTrackingEvent..ProgressTrackingEvent?)>?) defined in rx.Observable[MyFunctionDescriptor]
 Inferred types:
-    <R : (Any..Any?)> -> ProgressTrackingEvent
+    <R : (Any..Any?)> -> (net.corda.client.jfx.model.ProgressTrackingEvent..net.corda.client.jfx.model.ProgressTrackingEvent?)
 
 'it' @ [79:89] ==> value-parameter it: (Observable<ProgressTrackingEvent>..Observable<ProgressTrackingEvent>?) defined in net.corda.client.jfx.model.NodeMonitorModel.register.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -204,8 +204,6 @@ Inferred types:
     <reified T : ContractState> -> ContractState
 
 'VaultQueryCriteria' @ [86:93] ==> @JvmOverloads public constructor VaultQueryCriteria(status: Vault.StateStatus = ..., contractStateTypes: Set<Class<out ContractState>>? = ..., stateRefs: List<StateRef>? = ..., notary: List<AbstractParty>? = ..., softLockingCondition: QueryCriteria.SoftLockingCondition? = ..., timeCondition: QueryCriteria.TimeCondition? = ...) defined in net.corda.core.node.services.vault.QueryCriteria.VaultQueryCriteria[DeserializedClassConstructorDescriptor]
-
-'Vault' @ [86:112] ==> public companion object defined in net.corda.core.node.services.Vault[FakeCallableDescriptorForObject]
 
 'ALL' @ [86:130] ==> enum entry ALL defined in net.corda.core.node.services.Vault.StateStatus[FakeCallableDescriptorForObject]
 

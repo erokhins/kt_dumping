@@ -173,7 +173,7 @@ Inferred types:
 
 'of' @ [125:63] ==> public open fun <E : (Any..Any?)> of(p0: (ResourceLocator..ResourceLocator?)): (ImmutableList<(ResourceLocator..ResourceLocator?)>..ImmutableList<(ResourceLocator..ResourceLocator?)>?) defined in com.google.common.collect.ImmutableList[JavaMethodDescriptor]
 Inferred types:
-    <E : (Any..Any?)> -> ResourceLocator
+    <E : (Any..Any?)> -> (com.opengamma.strata.collect.io.ResourceLocator..com.opengamma.strata.collect.io.ResourceLocator?)
 
 'ofClasspathUrl' @ [125:82] ==> public open fun ofClasspathUrl(p0: (URL..URL?)): (ResourceLocator..ResourceLocator?) defined in com.opengamma.strata.collect.io.ResourceLocator[JavaMethodDescriptor]
 
@@ -315,7 +315,7 @@ Inferred types:
 
 'third' @ [155:55] ==> public final val third: Double defined in kotlin.Triple[DeserializedPropertyDescriptor]
 
-'toCordaCompatible' @ [155:62] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows[SimpleFunctionDescriptorImpl]
+'toCordaCompatible' @ [155:62] ==> public fun InitialMarginTriple.toCordaCompatible(): InitialMarginTriple defined in net.corda.vega.flows in file OpenGammaCordaUtils.kt[SimpleFunctionDescriptorImpl]
 
 'toMap' @ [156:11] ==> public fun <K, V> Iterable<Pair<ResolvedSwapTrade, InitialMarginTriple>>.toMap(): Map<ResolvedSwapTrade, InitialMarginTriple> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

@@ -4,8 +4,8 @@ Inferred types:
 
 'LinkedHashMap' @ [19:13] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (String..String?), out (String..String?)>..Map<out (String..String?), (String..String?)>?)) defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> String
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (kotlin.String..kotlin.String?)
 
 'this' @ [19:27] ==> <this> defined in net.corda.nodeapi.internal.serialization.carpenter.Schema.descriptors[ReceiverParameterDescriptorImpl]
 
@@ -23,8 +23,8 @@ Inferred types:
 
 'LinkedHashMap' @ [23:18] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (String..String?), out (Field..Field?)>..Map<out (String..String?), (Field..Field?)>?)) defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> Field
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (net.corda.nodeapi.internal.serialization.carpenter.Field..net.corda.nodeapi.internal.serialization.carpenter.Field?)
 
 'fields' @ [23:32] ==> value-parameter fields: Map<String, Field> defined in net.corda.nodeapi.internal.serialization.carpenter.Schema.<init>[ValueParameterDescriptorImpl]
 
@@ -50,10 +50,10 @@ Inferred types:
 
 'field' @ [23:82] ==> public final val field: Class<out Any?> defined in net.corda.nodeapi.internal.serialization.carpenter.Field[PropertyDescriptorImpl]
 
-'+' @ [26:13] ==> public operator fun <K, V> Map<out String, Field>.plus(map: Map<out String, Field>): Map<String, Field> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'+' @ [26:13] ==> public operator fun <K, V> Map<out String, (Field..Field?)>.plus(map: Map<out String, (Field..Field?)>): Map<String, (Field..Field?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> Field
+    <V> -> (net.corda.nodeapi.internal.serialization.carpenter.Field..net.corda.nodeapi.internal.serialization.carpenter.Field?)
 
 'superclass' @ [26:14] ==> public final val superclass: Schema? defined in net.corda.nodeapi.internal.serialization.carpenter.Schema[PropertyDescriptorImpl]
 
@@ -66,15 +66,15 @@ Inferred types:
 
 'LinkedHashMap' @ [26:73] ==> public constructor LinkedHashMap<K : (Any..Any?), V : (Any..Any?)>(p0: (MutableMap<out (String..String?), out (Field..Field?)>..Map<out (String..String?), (Field..Field?)>?)) defined in java.util.LinkedHashMap[JavaClassConstructorDescriptor]
 Inferred types:
-    <K : (Any..Any?)> -> String
-    <V : (Any..Any?)> -> Field
+    <K : (Any..Any?)> -> (kotlin.String..kotlin.String?)
+    <V : (Any..Any?)> -> (net.corda.nodeapi.internal.serialization.carpenter.Field..net.corda.nodeapi.internal.serialization.carpenter.Field?)
 
-'fields' @ [26:87] ==> public final val fields: LinkedHashMap<String, Field> defined in net.corda.nodeapi.internal.serialization.carpenter.Schema[PropertyDescriptorImpl]
+'fields' @ [26:87] ==> public final val fields: LinkedHashMap<(String..String?), (Field..Field?)> defined in net.corda.nodeapi.internal.serialization.carpenter.Schema[PropertyDescriptorImpl]
 
-'+' @ [29:13] ==> public operator fun <K, V> Map<out String, String>.plus(map: Map<out String, String>): Map<String, String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'+' @ [29:13] ==> public operator fun <K, V> Map<out String, (String..String?)>.plus(map: Map<out String, (String..String?)>): Map<String, (String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> String
+    <V> -> (kotlin.String..kotlin.String?)
 
 'superclass' @ [29:14] ==> public final val superclass: Schema? defined in net.corda.nodeapi.internal.serialization.carpenter.Schema[PropertyDescriptorImpl]
 
@@ -85,9 +85,9 @@ Inferred types:
     <K> -> String
     <V> -> String
 
-'fields' @ [29:78] ==> public final val fields: LinkedHashMap<String, Field> defined in net.corda.nodeapi.internal.serialization.carpenter.Schema[PropertyDescriptorImpl]
+'fields' @ [29:78] ==> public final val fields: LinkedHashMap<(String..String?), (Field..Field?)> defined in net.corda.nodeapi.internal.serialization.carpenter.Schema[PropertyDescriptorImpl]
 
-'descriptors' @ [29:85] ==> private final fun Map<String, Field>.descriptors(): LinkedHashMap<String, String> defined in net.corda.nodeapi.internal.serialization.carpenter.Schema[SimpleFunctionDescriptorImpl]
+'descriptors' @ [29:85] ==> private final fun Map<String, Field>.descriptors(): LinkedHashMap<(String..String?), (String..String?)> defined in net.corda.nodeapi.internal.serialization.carpenter.Schema[SimpleFunctionDescriptorImpl]
 
 'name' @ [32:17] ==> public final val name: String defined in net.corda.nodeapi.internal.serialization.carpenter.Schema[PropertyDescriptorImpl]
 
@@ -168,9 +168,9 @@ Inferred types:
 
 'field' @ [73:26] ==> public final val field: Class<out Any?> defined in net.corda.nodeapi.internal.serialization.carpenter.Field[PropertyDescriptorImpl]
 
-'isPrimitive' @ [73:32] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
+'isPrimitive' @ [73:32] ==> public final val <T : (Any..Any?)> Class<out Any?>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out Any?)
 
 'this' @ [73:45] ==> <this> defined in net.corda.nodeapi.internal.serialization.carpenter.Field[LazyClassReceiverParameterDescriptor]
 
@@ -223,9 +223,9 @@ Inferred types:
 
 'field' @ [88:18] ==> public final val field: Class<out Any?> defined in net.corda.nodeapi.internal.serialization.carpenter.Field[PropertyDescriptorImpl]
 
-'isPrimitive' @ [88:24] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
+'isPrimitive' @ [88:24] ==> public final val <T : (Any..Any?)> Class<out Any?>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out Any?)
 
 'visitParameterAnnotation' @ [89:17] ==> public open fun visitParameterAnnotation(p0: Int, p1: (String..String?), p2: Boolean): (AnnotationVisitor..AnnotationVisitor?) defined in org.objectweb.asm.MethodVisitor[JavaMethodDescriptor]
 
@@ -265,9 +265,9 @@ Inferred types:
 
 'field' @ [110:14] ==> public final val field: Class<out Any?> defined in net.corda.nodeapi.internal.serialization.carpenter.NonNullableField[PropertyDescriptorImpl]
 
-'isPrimitive' @ [110:20] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
+'isPrimitive' @ [110:20] ==> public final val <T : (Any..Any?)> Class<out Any?>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out Any?)
 
 'with' @ [111:13] ==> @InlineOnly public inline fun <T, R> with(receiver: MethodVisitor, block: MethodVisitor.() -> Unit): Unit defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -308,9 +308,9 @@ Inferred types:
 
 'field' @ [129:13] ==> value-parameter field: Class<out Any?> defined in net.corda.nodeapi.internal.serialization.carpenter.NullableField.<init>[ValueParameterDescriptorImpl]
 
-'isPrimitive' @ [129:19] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.isPrimitive: Boolean[MyPropertyDescriptor]
+'isPrimitive' @ [129:19] ==> public final val <T : (Any..Any?)> Class<out Any?>.isPrimitive: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(out Any?)
 
 'NullablePrimitiveException' @ [130:19] ==> public constructor NullablePrimitiveException(msg: String) defined in net.corda.nodeapi.internal.serialization.carpenter.NullablePrimitiveException[ClassConstructorDescriptorImpl]
 

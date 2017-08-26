@@ -47,15 +47,15 @@ Inferred types:
 
 'metrics' @ [46:27] ==> public final val metrics: MetricRegistry defined in net.corda.node.services.api.MonitoringService[PropertyDescriptorImpl]
 
-'register' @ [46:35] ==> public open fun <T : (Metric..Metric?)> register(p0: (String..String?), p1: (Gauge<Int>..Gauge<Int>?)): (Gauge<Int>..Gauge<Int>?) defined in com.codahale.metrics.MetricRegistry[JavaMethodDescriptor]
+'register' @ [46:35] ==> public open fun <T : (Metric..Metric?)> register(p0: (String..String?), p1: (Gauge<(Int..Int?)>..Gauge<(Int..Int?)>?)): (Gauge<(Int..Int?)>..Gauge<(Int..Int?)>?) defined in com.codahale.metrics.MetricRegistry[JavaMethodDescriptor]
 Inferred types:
-    <T : (Metric..Metric?)> -> Gauge<Int>
+    <T : (Metric..Metric?)> -> (com.codahale.metrics.Gauge<(kotlin.Int..kotlin.Int?)>..com.codahale.metrics.Gauge<(kotlin.Int..kotlin.Int?)>?)
 
 'metric' @ [46:44] ==> private final fun metric(name: String): String defined in net.corda.node.services.transactions.OutOfProcessTransactionVerifierService[SimpleFunctionDescriptorImpl]
 
-'Gauge' @ [46:77] ==> public fun <T : (Any..Any?)> Gauge(function: () -> (Int..Int?)): Gauge<Int> defined in com.codahale.metrics[SimpleFunctionDescriptorImpl]
+'Gauge' @ [46:77] ==> public fun <T : (Any..Any?)> Gauge(function: () -> (Int..Int?)): Gauge<(Int..Int?)> defined in com.codahale.metrics[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : (Any..Any?)> -> Int
+    <T : (Any..Any?)> -> (kotlin.Int..kotlin.Int?)
 
 'verificationHandles' @ [46:85] ==> private final val verificationHandles: ConcurrentHashMap<Long, OutOfProcessTransactionVerifierService.VerificationHandle> defined in net.corda.node.services.transactions.OutOfProcessTransactionVerifierService[PropertyDescriptorImpl]
 

@@ -47,7 +47,7 @@ Inferred types:
 
 'createQuery' @ [32:53] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (Class<(E..E?)>..Class<(E..E?)>?)): (CriteriaQuery<(E..E?)>..CriteriaQuery<(E..E?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> (E..E?)
 
 'persistentEntityClass' @ [32:65] ==> public final val persistentEntityClass: Class<E> defined in net.corda.node.utilities.PersistentMap[PropertyDescriptorImpl]
 
@@ -59,7 +59,7 @@ Inferred types:
 
 'from' @ [33:44] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(E..E?)>..Class<(E..E?)>?)): (Root<(E..E?)>..Root<(E..E?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> E
+    <X : (Any..Any?)> -> (E..E?)
 
 'persistentEntityClass' @ [33:49] ==> public final val persistentEntityClass: Class<E> defined in net.corda.node.utilities.PersistentMap[PropertyDescriptorImpl]
 
@@ -69,7 +69,7 @@ Inferred types:
 
 'createQuery' @ [34:24] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (CriteriaQuery<(E..E?)>..CriteriaQuery<(E..E?)>?)): (Query<(E..E?)>..Query<(E..E?)>?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> (E..E?)
 
 'criteriaQuery' @ [34:36] ==> val criteriaQuery: (CriteriaQuery<(E..E?)>..CriteriaQuery<(E..E?)>?) defined in net.corda.node.utilities.PersistentMap.cache.<anonymous>[LocalVariableDescriptor]
 
@@ -127,7 +127,7 @@ Inferred types:
 
 'find' @ [42:40] ==> public abstract fun <T : (Any..Any?)> find(p0: (Class<(E..E?)>..Class<(E..E?)>?), p1: (Any..Any?)): (E..E?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> (E..E?)
 
 'persistentEntityClass' @ [42:45] ==> private final val persistentEntityClass: Class<E> defined in net.corda.node.utilities.PersistentMap.ExplicitRemoval[PropertyDescriptorImpl]
 
@@ -332,7 +332,7 @@ Inferred types:
 
 'find' @ [116:90] ==> public abstract fun <T : (Any..Any?)> find(p0: (Class<(E..E?)>..Class<(E..E?)>?), p1: (Any..Any?)): (E..E?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> (E..E?)
 
 'persistentEntityClass' @ [116:95] ==> public final val persistentEntityClass: Class<E> defined in net.corda.node.utilities.PersistentMap[PropertyDescriptorImpl]
 
@@ -423,7 +423,7 @@ Inferred types:
 
 'find' @ [146:74] ==> public abstract fun <T : (Any..Any?)> find(p0: (Class<(E..E?)>..Class<(E..E?)>?), p1: (Any..Any?)): (E..E?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> (E..E?)
 
 'persistentEntityClass' @ [146:79] ==> public final val persistentEntityClass: Class<E> defined in net.corda.node.utilities.PersistentMap[PropertyDescriptorImpl]
 
@@ -485,7 +485,7 @@ Inferred types:
 
 'find' @ [157:67] ==> public abstract fun <T : (Any..Any?)> find(p0: (Class<(E..E?)>..Class<(E..E?)>?), p1: (Any..Any?)): (E..E?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> (E..E?)
 
 'persistentEntityClass' @ [157:72] ==> public final val persistentEntityClass: Class<E> defined in net.corda.node.utilities.PersistentMap[PropertyDescriptorImpl]
 
@@ -677,7 +677,7 @@ Inferred types:
 
 'createQuery' @ [255:53] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (Class<(E..E?)>..Class<(E..E?)>?)): (CriteriaQuery<(E..E?)>..CriteriaQuery<(E..E?)>?) defined in javax.persistence.criteria.CriteriaBuilder[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> (E..E?)
 
 'persistentEntityClass' @ [255:65] ==> public final val persistentEntityClass: Class<E> defined in net.corda.node.utilities.PersistentMap[PropertyDescriptorImpl]
 
@@ -689,7 +689,7 @@ Inferred types:
 
 'from' @ [256:44] ==> public abstract fun <X : (Any..Any?)> from(p0: (Class<(E..E?)>..Class<(E..E?)>?)): (Root<(E..E?)>..Root<(E..E?)>?) defined in javax.persistence.criteria.CriteriaQuery[JavaMethodDescriptor]
 Inferred types:
-    <X : (Any..Any?)> -> E
+    <X : (Any..Any?)> -> (E..E?)
 
 'persistentEntityClass' @ [256:49] ==> public final val persistentEntityClass: Class<E> defined in net.corda.node.utilities.PersistentMap[PropertyDescriptorImpl]
 
@@ -701,7 +701,7 @@ Inferred types:
 
 'createQuery' @ [257:30] ==> public abstract fun <T : (Any..Any?)> createQuery(p0: (CriteriaQuery<(E..E?)>..CriteriaQuery<(E..E?)>?)): (Query<(E..E?)>..Query<(E..E?)>?) defined in org.hibernate.Session[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> E
+    <T : (Any..Any?)> -> (E..E?)
 
 'criteriaQuery' @ [257:42] ==> val criteriaQuery: (CriteriaQuery<(E..E?)>..CriteriaQuery<(E..E?)>?) defined in net.corda.node.utilities.PersistentMap.load[LocalVariableDescriptor]
 

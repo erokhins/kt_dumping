@@ -143,7 +143,7 @@ Inferred types:
 
 'type' @ [58:64] ==> value-parameter type: KType defined in net.corda.nodeapi.config.getValueInternal[ValueParameterDescriptorImpl]
 
-'getCollectionValue' @ [58:75] ==> private fun Config.getCollectionValue(path: String, type: KType): Collection<Any> defined in net.corda.nodeapi.config[SimpleFunctionDescriptorImpl]
+'getCollectionValue' @ [58:75] ==> private fun Config.getCollectionValue(path: String, type: KType): Collection<Any> defined in net.corda.nodeapi.config in file ConfigUtilities.kt[SimpleFunctionDescriptorImpl]
 
 'path' @ [58:94] ==> value-parameter path: String defined in net.corda.nodeapi.config.getValueInternal[ValueParameterDescriptorImpl]
 
@@ -279,11 +279,11 @@ Inferred types:
 
 'java' @ [77:31] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'isEnum' @ [77:36] ==> public final val <T : (Any..Any?)> Class<out Any>.isEnum: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'parseEnum' @ [78:13] ==> @Suppress private fun parseEnum(enumType: Class<*>, name: String): Enum<*> defined in net.corda.nodeapi.config in file ConfigUtilities.kt[SimpleFunctionDescriptorImpl]
 
@@ -291,7 +291,7 @@ Inferred types:
 
 'java' @ [78:33] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'getString' @ [78:39] ==> public abstract fun getString(p0: (String..String?)): (String..String?) defined in com.typesafe.config.Config[JavaMethodDescriptor]
 
@@ -303,7 +303,7 @@ Inferred types:
 
 'parseAs' @ [80:29] ==> public fun <T : Any> Config.parseAs(clazz: KClass<out Any>): Any defined in net.corda.nodeapi.config[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> Captured(*)
 
 'typeClass' @ [80:37] ==> val typeClass: KClass<*> defined in net.corda.nodeapi.config.getSingleValue[LocalVariableDescriptor]
 
@@ -315,9 +315,9 @@ Inferred types:
 
 'typeClass' @ [87:13] ==> val typeClass: KClass<*> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
 
-'List' @ [87:26] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> Nothing): List<Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'List' @ [87:26] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> ???): List<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Nothing
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@6f438f39
 
 'typeClass' @ [87:41] ==> val typeClass: KClass<*> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
 
@@ -347,9 +347,9 @@ Inferred types:
 
 'typeClass' @ [90:20] ==> val typeClass: KClass<*> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
 
-'List' @ [90:33] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> Nothing): List<Nothing> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'List' @ [90:33] ==> @SinceKotlin @InlineOnly public inline fun <T> List(size: Int, init: (index: Int) -> ???): List<???> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> Nothing
+    <T> -> org.jetbrains.kotlin.types.ErrorUtils$UninferredParameterTypeConstructor@43cb43f0
 
 'emptyList' @ [90:46] ==> public fun <T> emptyList(): List<Any> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -381,7 +381,7 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> List<Any>
 
-'elementClass' @ [92:35] ==> val elementClass: KClass<out Any> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
+'elementClass' @ [92:35] ==> val elementClass: KClass<*> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
 
 'String' @ [93:9] ==> public companion object defined in kotlin.String[FakeCallableDescriptorForObject]
 
@@ -426,6 +426,8 @@ Inferred types:
 
 'LocalDate' @ [98:53] ==> private constructor LocalDate(p0: Int, p1: Int, p2: Int) defined in java.time.LocalDate[JavaClassConstructorDescriptor]
 
+'parse' @ [98:64] ==> public open fun parse(p0: (CharSequence..CharSequence?)): (LocalDate..LocalDate?) defined in java.time.LocalDate[JavaMethodDescriptor]
+
 'Instant' @ [99:9] ==> private constructor Instant(p0: Long, p1: Int) defined in java.time.Instant[JavaClassConstructorDescriptor]
 
 'getStringList' @ [99:27] ==> public abstract fun getStringList(p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in com.typesafe.config.Config[JavaMethodDescriptor]
@@ -438,6 +440,8 @@ Inferred types:
     <R> -> (java.time.Instant..java.time.Instant?)
 
 'Instant' @ [99:51] ==> private constructor Instant(p0: Long, p1: Int) defined in java.time.Instant[JavaClassConstructorDescriptor]
+
+'parse' @ [99:60] ==> public open fun parse(p0: (CharSequence..CharSequence?)): (Instant..Instant?) defined in java.time.Instant[JavaMethodDescriptor]
 
 'NetworkHostAndPort' @ [100:9] ==> public companion object defined in net.corda.core.utilities.NetworkHostAndPort[FakeCallableDescriptorForObject]
 
@@ -476,6 +480,8 @@ Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
     <R> -> URL
 
+'URL' @ [102:49] ==> public constructor URL(p0: (String..String?)) defined in java.net.URL[JavaClassConstructorDescriptor]
+
 'getStringList' @ [103:28] ==> public abstract fun getStringList(p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in com.typesafe.config.Config[JavaMethodDescriptor]
 
 'path' @ [103:42] ==> value-parameter path: String defined in net.corda.nodeapi.config.getCollectionValue[ValueParameterDescriptorImpl]
@@ -484,6 +490,8 @@ Inferred types:
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
     <R> -> X500Name
+
+'X500Name' @ [103:54] ==> public constructor X500Name(p0: (String..String?)) defined in org.bouncycastle.asn1.x500.X500Name[JavaClassConstructorDescriptor]
 
 'Properties' @ [104:9] ==> public constructor Properties() defined in java.util.Properties[JavaClassConstructorDescriptor]
 
@@ -496,6 +504,8 @@ Inferred types:
     <T> -> (com.typesafe.config.Config..com.typesafe.config.Config?)
     <R> -> Properties
 
+'toProperties' @ [104:62] ==> public fun Config.toProperties(): Properties defined in net.corda.nodeapi.config in file ConfigUtilities.kt[SimpleFunctionDescriptorImpl]
+
 'if (elementClass.java.isEnum) {
             getStringList(path).map { parseEnum(elementClass.java, it) }
         } else {
@@ -504,32 +514,32 @@ Inferred types:
 Inferred types:
     <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> List<Any>
 
-'elementClass' @ [105:21] ==> val elementClass: KClass<out Any> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
+'elementClass' @ [105:21] ==> val elementClass: KClass<*> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
 
 'java' @ [105:34] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'isEnum' @ [105:39] ==> public final val <T : (Any..Any?)> Class<out Any>.isEnum: Boolean[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> Any
+    <T : (Any..Any?)> -> Captured(out Any)
 
 'getStringList' @ [106:13] ==> public abstract fun getStringList(p0: (String..String?)): (MutableList<(String..String?)>..List<(String..String?)>?) defined in com.typesafe.config.Config[JavaMethodDescriptor]
 
 'path' @ [106:27] ==> value-parameter path: String defined in net.corda.nodeapi.config.getCollectionValue[ValueParameterDescriptorImpl]
 
-'map' @ [106:33] ==> public inline fun <T, R> Iterable<(String..String?)>.map(transform: ((String..String?)) -> Enum<out Enum<out Enum<out Enum<out Enum<out Enum<out Any?>>>>>>): List<Enum<out Enum<out Enum<out Enum<out Enum<out Enum<out Any?>>>>>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [106:33] ==> public inline fun <T, R> Iterable<(String..String?)>.map(transform: ((String..String?)) -> Enum<*>): List<Enum<*>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (kotlin.String..kotlin.String?)
-    <R> -> Enum<out Enum<out Enum<out Enum<out Enum<out Enum<out Any?>>>>>>
+    <R> -> Enum<*>
 
 'parseEnum' @ [106:39] ==> @Suppress private fun parseEnum(enumType: Class<*>, name: String): Enum<*> defined in net.corda.nodeapi.config in file ConfigUtilities.kt[SimpleFunctionDescriptorImpl]
 
-'elementClass' @ [106:49] ==> val elementClass: KClass<out Any> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
+'elementClass' @ [106:49] ==> val elementClass: KClass<*> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
 
 'java' @ [106:62] ==> public val <T> KClass<out Any>.java: Class<out Any> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> Any
+    <T> -> Captured(*)
 
 'it' @ [106:68] ==> value-parameter it: (String..String?) defined in net.corda.nodeapi.config.getCollectionValue.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -546,9 +556,9 @@ Inferred types:
 
 'parseAs' @ [108:42] ==> public fun <T : Any> Config.parseAs(clazz: KClass<out Any>): Any defined in net.corda.nodeapi.config[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T : Any> -> Any
+    <T : Any> -> Captured(*)
 
-'elementClass' @ [108:50] ==> val elementClass: KClass<out Any> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
+'elementClass' @ [108:50] ==> val elementClass: KClass<*> defined in net.corda.nodeapi.config.getCollectionValue[LocalVariableDescriptor]
 
 'if (typeClass == Set::class) values.toSet() else values' @ [111:12] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Collection<Any>, elseBranch: Collection<Any>): Collection<Any>[SimpleFunctionDescriptorImpl]
 Inferred types:
@@ -626,7 +636,7 @@ Inferred types:
 
 'valueOf' @ [129:89] ==> public open fun <T : (Enum<(T..T?)>..Enum<(T..T?)>?)> valueOf(p0: (Class<(T..T?)>..Class<(T..T?)>?), p1: (String..String?)): (T..T?) defined in java.lang.Enum[JavaMethodDescriptor]
 Inferred types:
-    <T : (Enum<(T..T?)>..Enum<(T..T?)>?)> -> T
+    <T : (Enum<(T..T?)>..Enum<(T..T?)>?)> -> (T..T?)
 
 'clazz' @ [129:97] ==> value-parameter clazz: Class<T> defined in net.corda.nodeapi.config.enumBridge[ValueParameterDescriptorImpl]
 

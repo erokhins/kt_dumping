@@ -16,7 +16,7 @@
 
 'ByteArray' @ [26:42] ==> public constructor ByteArray(size: Int) defined in kotlin.ByteArray[DeserializedClassConstructorDescriptor]
 
-'AppendOnlyPersistentMap' @ [31:20] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (SecureHash) -> String, fromPersistentEntity: (DBTransactionStorage.DBTransaction) -> Pair<SecureHash, SignedTransaction>, toPersistentEntity: (SecureHash, SignedTransaction) -> DBTransactionStorage.DBTransaction, persistentEntityClass: Class<DBTransactionStorage.DBTransaction>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
+'AppendOnlyPersistentMap' @ [31:20] ==> public constructor AppendOnlyPersistentMap<K, V, E, out EK>(toPersistentEntityKey: (SecureHash) -> String, fromPersistentEntity: (DBTransactionStorage.DBTransaction) -> Pair<SecureHash, SignedTransaction>, toPersistentEntity: (key: SecureHash, value: SignedTransaction) -> DBTransactionStorage.DBTransaction, persistentEntityClass: Class<DBTransactionStorage.DBTransaction>, cacheBound: Long = ...) defined in net.corda.node.utilities.AppendOnlyPersistentMap[ClassConstructorDescriptorImpl]
 Inferred types:
     <K> -> SecureHash
     <V> -> SignedTransaction
@@ -32,8 +32,6 @@ Inferred types:
     <out A> -> SHA256
     <out B> -> SignedTransaction
 
-'SecureHash' @ [33:51] ==> public companion object defined in net.corda.core.crypto.SecureHash[FakeCallableDescriptorForObject]
-
 'parse' @ [33:62] ==> @JvmStatic public final fun parse(str: String): SecureHash.SHA256 defined in net.corda.core.crypto.SecureHash.Companion[DeserializedSimpleFunctionDescriptor]
 
 'it' @ [33:68] ==> value-parameter it: DBTransactionStorage.DBTransaction defined in net.corda.node.services.persistence.DBTransactionStorage.Companion.createTransactionsMap.<anonymous>[ValueParameterDescriptorImpl]
@@ -47,8 +45,6 @@ Inferred types:
 'deserialize' @ [34:44] ==> public inline fun <reified T : Any> ByteArray.deserialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): SignedTransaction defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <reified T : Any> -> SignedTransaction
-
-'SerializationDefaults' @ [34:86] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'STORAGE_CONTEXT' @ [34:108] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 
@@ -71,8 +67,6 @@ Inferred types:
 'serialize' @ [38:49] ==> public fun <T : Any> SignedTransaction.serialize(serializationFactory: SerializationFactory = ..., context: SerializationContext = ...): SerializedBytes<SignedTransaction> defined in net.corda.core.serialization[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T : Any> -> SignedTransaction
-
-'SerializationDefaults' @ [38:69] ==> public object SerializationDefaults defined in net.corda.core.serialization[FakeCallableDescriptorForObject]
 
 'STORAGE_CONTEXT' @ [38:91] ==> public final var STORAGE_CONTEXT: SerializationContext defined in net.corda.core.serialization.SerializationDefaults[DeserializedPropertyDescriptor]
 

@@ -227,9 +227,7 @@ Inferred types:
 
 'Suppress' @ [106:9] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
-'transient' @ [107:66] ==> public fun <T> transient(initializer: () -> StateAndRef<FixableDealState>): TransientProperty<StateAndRef<FixableDealState>> defined in net.corda.core.utilities[DeserializedSimpleFunctionDescriptor]
-Inferred types:
-    <T> -> StateAndRef<FixableDealState>
+'getValue' @ [107:66] ==> public final operator fun getValue(thisRef: Any?, property: KProperty<*>): T defined in net.corda.core.utilities.TransientProperty[DeserializedSimpleFunctionDescriptor]
 
 'serviceHub' @ [108:25] ==> public final val serviceHub: ServiceHub defined in net.corda.irs.flows.FixingFlow.Floater[DeserializedPropertyDescriptor]
 

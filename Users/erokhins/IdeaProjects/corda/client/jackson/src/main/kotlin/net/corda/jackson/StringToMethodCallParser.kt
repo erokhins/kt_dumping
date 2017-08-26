@@ -16,7 +16,7 @@ Inferred types:
 
 'java' @ [78:62] ==> public val <T> KClass<out T>.java: Class<out T> defined in kotlin.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T> -> T
+    <T> -> Captured(out T)
 
 'Suppress' @ [81:9] ==> public constructor Suppress(vararg names: String) defined in kotlin.Suppress[DeserializedClassConstructorDescriptor]
 
@@ -52,7 +52,7 @@ Inferred types:
 
 'methods' @ [86:40] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.methods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'filterNot' @ [86:48] ==> public inline fun <T> Array<out (Method..Method?)>.filterNot(predicate: ((Method..Method?)) -> Boolean): List<(Method..Method?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -109,7 +109,7 @@ Inferred types:
 
 'declaredMethods' @ [99:66] ==> public final val <T : (Any..Any?)> Class<out T>.declaredMethods: (Array<(Method..Method?)>..Array<out (Method..Method?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> T
+    <T : (Any..Any?)> -> Captured(out T)
 
 'mapNotNull' @ [99:82] ==> public inline fun <T, R : Any> Array<out (Method..Method?)>.mapNotNull(transform: ((Method..Method?)) -> Pair<(String..String?), List<String>>?): List<Pair<(String..String?), List<String>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
@@ -165,19 +165,19 @@ Inferred types:
 
 'parameters' @ [125:23] ==> public final val Method.parameters: (Array<(Parameter..Parameter?)>..Array<out (Parameter..Parameter?)>?)[MyPropertyDescriptor]
 
-'mapIndexed' @ [125:34] ==> public inline fun <T, R> Array<out (Parameter..Parameter?)>.mapIndexed(transform: (index: Int, (Parameter..Parameter?)) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapIndexed' @ [125:34] ==> public inline fun <T, R> Array<out (Parameter..Parameter?)>.mapIndexed(transform: (index: Int, (Parameter..Parameter?)) -> (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.lang.reflect.Parameter..java.lang.reflect.Parameter?)
-    <R> -> String
+    <R> -> (kotlin.String..kotlin.String?)
 
 'when {
                 param.isNamePresent -> param.name
             // index + 1 because the first Kotlin reflection param is 'this', but that doesn't match Java reflection.
                 kf != null -> kf.parameters[index + 1].name ?: throw UnparseableCallException.ReflectionDataMissing(method.name, index)
                 else -> throw UnparseableCallException.ReflectionDataMissing(method.name, index)
-            }' @ [126:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: String, entry1: String, entry2: String): String[SimpleFunctionDescriptorImpl]
+            }' @ [126:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (String..String?), entry1: (String..String?), entry2: (String..String?)): (String..String?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.String..kotlin.String?)
 
 'param' @ [127:17] ==> value-parameter param: (Parameter..Parameter?) defined in net.corda.jackson.StringToMethodCallParser.paramNamesFromMethod.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -217,26 +217,26 @@ Inferred types:
 
 'kotlinFunction' @ [139:38] ==> public val <T : Any> Constructor<out (Any..Any?)>.kotlinFunction: KFunction<(Any..Any?)>? defined in kotlin.reflect.jvm[DeserializedPropertyDescriptor]
 Inferred types:
-    <T : Any> -> (kotlin.Any..kotlin.Any?)
+    <T : Any> -> Captured(*)
 
 'ctor' @ [140:16] ==> value-parameter ctor: Constructor<*> defined in net.corda.jackson.StringToMethodCallParser.paramNamesFromConstructor[ValueParameterDescriptorImpl]
 
 'parameters' @ [140:21] ==> public final val <T : (Any..Any?)> Constructor<out (Any..Any?)>.parameters: (Array<(Parameter..Parameter?)>..Array<out (Parameter..Parameter?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
-'mapIndexed' @ [140:32] ==> public inline fun <T, R> Array<out (Parameter..Parameter?)>.mapIndexed(transform: (index: Int, (Parameter..Parameter?)) -> String): List<String> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapIndexed' @ [140:32] ==> public inline fun <T, R> Array<out (Parameter..Parameter?)>.mapIndexed(transform: (index: Int, (Parameter..Parameter?)) -> (String..String?)): List<(String..String?)> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> (java.lang.reflect.Parameter..java.lang.reflect.Parameter?)
-    <R> -> String
+    <R> -> (kotlin.String..kotlin.String?)
 
 'when {
                 param.isNamePresent -> param.name
                 kf != null -> kf.parameters[index].name ?: throw UnparseableCallException.ReflectionDataMissing("<init>", index)
                 else -> throw UnparseableCallException.ReflectionDataMissing("<init>", index)
-            }' @ [141:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: String, entry1: String, entry2: String): String[SimpleFunctionDescriptorImpl]
+            }' @ [141:13] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: (String..String?), entry1: (String..String?), entry2: (String..String?)): (String..String?)[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> String
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> (kotlin.String..kotlin.String?)
 
 'param' @ [142:17] ==> value-parameter param: (Parameter..Parameter?) defined in net.corda.jackson.StringToMethodCallParser.paramNamesFromConstructor.<anonymous>[ValueParameterDescriptorImpl]
 
@@ -472,7 +472,7 @@ Inferred types:
 
 'readValue' @ [199:20] ==> public open fun <T : (Any..Any?)> readValue(p0: (JsonParser..JsonParser?), p1: (Class<out (Any..Any?)>..Class<out (Any..Any?)>?)): (Any..Any?) defined in com.fasterxml.jackson.databind.ObjectMapper[JavaMethodDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'entry' @ [199:30] ==> val entry: JsonNode defined in net.corda.jackson.StringToMethodCallParser.parseArguments.<anonymous>[LocalVariableDescriptor]
 
@@ -581,7 +581,7 @@ Inferred types:
 
 'simpleName' @ [219:63] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.simpleName: (String..String?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Captured(*)
 
 'paramNames' @ [220:34] ==> val paramNames: List<String> defined in net.corda.jackson.StringToMethodCallParser.<get-availableCommands>.<anonymous>[LocalVariableDescriptor]
 
