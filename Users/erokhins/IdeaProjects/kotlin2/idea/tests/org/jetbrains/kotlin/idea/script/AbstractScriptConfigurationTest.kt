@@ -205,9 +205,9 @@ Inferred types:
 
 'join' @ [109:46] ==> @Contract public open fun join(@NotNull p0: (MutableIterable<*>..Iterable<*>), @NotNull @NonNls p1: String): (String..String?) defined in com.intellij.openapi.util.text.StringUtil[JavaMethodDescriptor]
 
-'listOf' @ [109:51] ==> public fun <T> listOf(vararg elements: {Comparable<{File & String}> & java.io.Serializable}): List<{Comparable<{File & String}> & java.io.Serializable}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [109:51] ==> public fun <T> listOf(vararg elements: {java.io.Serializable & Comparable<{File & String}>}): List<{java.io.Serializable & Comparable<{File & String}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {Comparable<{File & String}> & java.io.Serializable}
+    <T> -> {java.io.Serializable & Comparable<{File & String}>}
 
 'classpath' @ [109:59] ==> value-parameter vararg classpath: String defined in org.jetbrains.kotlin.idea.script.AbstractScriptConfigurationTest.compileLibToDir[ValueParameterDescriptorImpl]
 

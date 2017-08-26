@@ -1095,40 +1095,40 @@ Inferred types:
 Inferred types:
     <T> -> ReceiverType
 
-'typesByDslScopes' @ [345:5] ==> val typesByDslScopes: LinkedHashMap<FqName, MutableList<ReceiverType>> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
+'typesByDslScopes' @ [347:5] ==> val typesByDslScopes: LinkedHashMap<FqName, MutableList<ReceiverType>> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
 
-'flatMapTo' @ [345:22] ==> public inline fun <K, V, R, C : MutableCollection<in ReceiverType>> Map<out FqName, MutableList<ReceiverType>>.flatMapTo(destination: MutableSet<ReceiverType>, transform: (Map.Entry<FqName, MutableList<ReceiverType>>) -> Iterable<ReceiverType>): MutableSet<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'flatMapTo' @ [347:22] ==> public inline fun <K, V, R, C : MutableCollection<in ReceiverType>> Map<out FqName, MutableList<ReceiverType>>.flatMapTo(destination: MutableSet<ReceiverType>, transform: (Map.Entry<FqName, MutableList<ReceiverType>>) -> Iterable<ReceiverType>): MutableSet<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> FqName
     <V> -> MutableList<ReceiverType>
     <R> -> ReceiverType
     <C : MutableCollection<in R>> -> MutableSet<ReceiverType>
 
-'shadowedDslReceivers' @ [345:32] ==> val shadowedDslReceivers: MutableSet<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
+'shadowedDslReceivers' @ [347:32] ==> val shadowedDslReceivers: MutableSet<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
 
-'component1' @ [345:57] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<FqName, MutableList<ReceiverType>>.component1(): FqName defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component1' @ [347:57] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<FqName, MutableList<ReceiverType>>.component1(): FqName defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> FqName
     <V> -> MutableList<ReceiverType>
 
-'component2' @ [345:60] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<FqName, MutableList<ReceiverType>>.component2(): MutableList<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'component2' @ [347:60] ==> @InlineOnly public operator inline fun <K, V> Map.Entry<FqName, MutableList<ReceiverType>>.component2(): MutableList<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> FqName
     <V> -> MutableList<ReceiverType>
 
-'v' @ [345:66] ==> val v: MutableList<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers.<anonymous>[LocalVariableDescriptor]
+'v' @ [347:66] ==> val v: MutableList<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers.<anonymous>[LocalVariableDescriptor]
 
-'asSequence' @ [345:68] ==> public fun <T> Iterable<ReceiverType>.asSequence(): Sequence<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'asSequence' @ [347:68] ==> public fun <T> Iterable<ReceiverType>.asSequence(): Sequence<ReceiverType> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ReceiverType
 
-'drop' @ [345:81] ==> public fun <T> Sequence<ReceiverType>.drop(n: Int): Sequence<ReceiverType> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'drop' @ [347:81] ==> public fun <T> Sequence<ReceiverType>.drop(n: Int): Sequence<ReceiverType> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ReceiverType
 
-'asIterable' @ [345:89] ==> public fun <T> Sequence<ReceiverType>.asIterable(): Iterable<ReceiverType> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'asIterable' @ [347:89] ==> public fun <T> Sequence<ReceiverType>.asIterable(): Iterable<ReceiverType> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> ReceiverType
 
-'shadowedDslReceivers' @ [347:12] ==> val shadowedDslReceivers: MutableSet<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
+'shadowedDslReceivers' @ [349:12] ==> val shadowedDslReceivers: MutableSet<ReceiverType> defined in org.jetbrains.kotlin.idea.util.shadowedByDslMarkers[LocalVariableDescriptor]
 

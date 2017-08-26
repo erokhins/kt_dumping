@@ -422,12 +422,12 @@ Inferred types:
 Inferred types:
     <T> -> (com.intellij.psi.PsiField..com.intellij.psi.PsiField?)
 
-'map' @ [157:22] ==> public inline fun <T, R> Iterable<{PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}>.map(transform: ({PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}) -> PsiMember): List<PsiMember> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'map' @ [157:22] ==> public inline fun <T, R> Iterable<{PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}>.map(transform: ({PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}) -> PsiMember): List<PsiMember> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}
+    <T> -> {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}
     <R> -> PsiMember
 
-'it' @ [157:28] ==> value-parameter it: {PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>} defined in org.jetbrains.kotlin.idea.conversion.copy.PlainTextPasteImportResolver.tryResolveReferences.tryResolveReference.<anonymous>[ValueParameterDescriptorImpl]
+'it' @ [157:28] ==> value-parameter it: {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner} defined in org.jetbrains.kotlin.idea.conversion.copy.PlainTextPasteImportResolver.tryResolveReferences.tryResolveReference.<anonymous>[ValueParameterDescriptorImpl]
 
 'filter' @ [158:22] ==> public inline fun <T> Iterable<PsiMember>.filter(predicate: (PsiMember) -> Boolean): List<PsiMember> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:

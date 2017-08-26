@@ -397,9 +397,9 @@ Inferred types:
 
 'referencedName' @ [190:20] ==> value-parameter referencedName: String defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames.addSuperName[ValueParameterDescriptorImpl]
 
-'containingFile' @ [192:20] ==> public final val <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElementBase<out ({StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & KotlinClassOrObjectStub<out KtClassOrObject>}..KotlinClassOrObjectStub<out KtClassOrObject>)>.containingFile: PsiFile[MyPropertyDescriptor]
+'containingFile' @ [192:20] ==> public final val <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElementBase<out ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}..KotlinClassOrObjectStub<out KtClassOrObject>)>.containingFile: PsiFile[MyPropertyDescriptor]
 Inferred types:
-    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> ({StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & KotlinClassOrObjectStub<out KtClassOrObject>}..org.jetbrains.kotlin.psi.stubs.KotlinClassOrObjectStub<out org.jetbrains.kotlin.psi.KtClassOrObject>)
+    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}..org.jetbrains.kotlin.psi.stubs.KotlinClassOrObjectStub<out org.jetbrains.kotlin.psi.KtClassOrObject>)
 
 'file' @ [193:13] ==> val file: PsiFile defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames.addSuperName[LocalVariableDescriptor]
 
@@ -447,13 +447,13 @@ Inferred types:
 Inferred types:
     <T : (Any..Any?)> -> StubBasedPsiElementBase<out KotlinClassOrObjectStub<out KtClassOrObject>>
 
-'stub' @ [209:16] ==> public final val <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElementBase<out ({StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & KotlinClassOrObjectStub<out KtClassOrObject>}..KotlinClassOrObjectStub<out KtClassOrObject>)>.stub: ({StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & KotlinClassOrObjectStub<out KtClassOrObject>}?..KotlinClassOrObjectStub<out KtClassOrObject>?)[MyPropertyDescriptor]
+'stub' @ [209:16] ==> public final val <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> StubBasedPsiElementBase<out ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}..KotlinClassOrObjectStub<out KtClassOrObject>)>.stub: ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}?..KotlinClassOrObjectStub<out KtClassOrObject>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> ({StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & KotlinClassOrObjectStub<out KtClassOrObject>}..org.jetbrains.kotlin.psi.stubs.KotlinClassOrObjectStub<out org.jetbrains.kotlin.psi.KtClassOrObject>)
+    <T : raw (StubElement<(PsiElement..PsiElement?)>..StubElement<*>?)> -> ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}..org.jetbrains.kotlin.psi.stubs.KotlinClassOrObjectStub<out org.jetbrains.kotlin.psi.KtClassOrObject>)
 
-'stub' @ [210:9] ==> val stub: ({StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & KotlinClassOrObjectStub<out KtClassOrObject>}?..KotlinClassOrObjectStub<out KtClassOrObject>?) defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames[LocalVariableDescriptor]
+'stub' @ [210:9] ==> val stub: ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}?..KotlinClassOrObjectStub<out KtClassOrObject>?) defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames[LocalVariableDescriptor]
 
-'stub' @ [211:16] ==> val stub: ({StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & KotlinClassOrObjectStub<out KtClassOrObject>}?..KotlinClassOrObjectStub<out KtClassOrObject>?) defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames[LocalVariableDescriptor]
+'stub' @ [211:16] ==> val stub: ({KotlinClassOrObjectStub<out KtClassOrObject> & StubElement<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}?..KotlinClassOrObjectStub<out KtClassOrObject>?) defined in org.jetbrains.kotlin.psi.psiUtil.getSuperNames[LocalVariableDescriptor]
 
 'getSuperNames' @ [211:21] ==> public abstract fun getSuperNames(): List<String> defined in org.jetbrains.kotlin.psi.stubs.KotlinClassOrObjectStub[SimpleFunctionDescriptorImpl]
 

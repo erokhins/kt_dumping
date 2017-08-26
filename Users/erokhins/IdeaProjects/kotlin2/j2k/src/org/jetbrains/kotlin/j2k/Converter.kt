@@ -2228,7 +2228,7 @@ Inferred types:
 
 'it' @ [443:50] ==> value-parameter it: PsiElement defined in org.jetbrains.kotlin.j2k.Converter.convertProperty.<anonymous>[ValueParameterDescriptorImpl]
 
-'placementElement' @ [443:56] ==> val placementElement: {PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
+'placementElement' @ [443:56] ==> val placementElement: {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}? defined in org.jetbrains.kotlin.j2k.Converter.convertProperty[LocalVariableDescriptor]
 
 'CommentsAndSpacesInheritance' @ [443:74] ==> public companion object defined in org.jetbrains.kotlin.j2k.ast.CommentsAndSpacesInheritance[FakeCallableDescriptorForObject]
 

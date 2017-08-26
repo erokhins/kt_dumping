@@ -10,10 +10,10 @@ Inferred types:
 Inferred types:
     <T> -> File
 
-'mapOf' @ [40:16] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {java.io.Serializable & Comparable<{Boolean & String}>}?>): Map<String, {java.io.Serializable & Comparable<{Boolean & String}>}?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'mapOf' @ [40:16] ==> public fun <K, V> mapOf(vararg pairs: Pair<String, {Comparable<{Boolean & String}> & java.io.Serializable}?>): Map<String, {Comparable<{Boolean & String}> & java.io.Serializable}?> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <K> -> String
-    <V> -> {java.io.Serializable & Comparable<{Boolean & String}>}?
+    <V> -> {Comparable<{Boolean & String}> & java.io.Serializable}?
 
 'KotlinScriptResolveScopeProvider' @ [41:17] ==> public companion object defined in org.jetbrains.kotlin.idea.core.script.dependencies.KotlinScriptResolveScopeProvider[FakeCallableDescriptorForObject]
 

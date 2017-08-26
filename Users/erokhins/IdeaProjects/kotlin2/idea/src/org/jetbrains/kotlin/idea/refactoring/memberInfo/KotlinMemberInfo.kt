@@ -184,10 +184,10 @@ Inferred types:
 
 'toLightElements' @ [84:54] ==> public fun KtElement.toLightElements(): List<PsiNamedElement> defined in org.jetbrains.kotlin.asJava[DeserializedSimpleFunctionDescriptor]
 
-'let' @ [84:72] ==> @InlineOnly public inline fun <T, R> List<PsiNamedElement>.let(block: (List<PsiNamedElement>) -> {PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}?): {PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}? defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'let' @ [84:72] ==> @InlineOnly public inline fun <T, R> List<PsiNamedElement>.let(block: (List<PsiNamedElement>) -> {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}?): {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}? defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> List<PsiNamedElement>
-    <R> -> {PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}?
+    <R> -> {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}?
 
 'it' @ [85:13] ==> value-parameter it: List<PsiNamedElement> defined in org.jetbrains.kotlin.idea.refactoring.memberInfo.lightElementForMemberInfo.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -625,9 +625,9 @@ Inferred types:
     <T> -> File
     <R> -> Array<*>
 
-'arrayOf' @ [200:44] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: {Comparable<{File & String}> & Serializable}): Array<{Comparable<{File & String}> & Serializable}> defined in kotlin[DeserializedSimpleFunctionDescriptor]
+'arrayOf' @ [200:44] ==> public inline fun <reified @PureReifiable T> arrayOf(vararg elements: {Serializable & Comparable<{File & String}>}): Array<{Serializable & Comparable<{File & String}>}> defined in kotlin[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <reified @PureReifiable T> -> {Comparable<{File & String}> & Serializable}
+    <reified @PureReifiable T> -> {Serializable & Comparable<{File & String}>}
 
 'it' @ [200:52] ==> value-parameter it: File defined in org.jetbrains.kotlin.incremental.KotlinStandaloneIncrementalCompilationTest.Companion.data.<anonymous>[ValueParameterDescriptorImpl]
 

@@ -14,9 +14,9 @@ Inferred types:
 
 'this' @ [30:43] ==> <this> defined in org.jetbrains.kotlin.load.java.structure.reflect.isEnumClassOrSpecializedEnumEntryClass[ReceiverParameterDescriptorImpl]
 
-'listOf' @ [33:9] ==> public fun <T> listOf(vararg elements: KClass<out {Comparable<{Long & Boolean & Byte & Char & Double & Short & Float & Int}> & java.io.Serializable}>): List<KClass<out {Comparable<{Long & Boolean & Byte & Char & Double & Short & Float & Int}> & java.io.Serializable}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [33:9] ==> public fun <T> listOf(vararg elements: KClass<out {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Double & Short & Float & Int}>}>): List<KClass<out {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Double & Short & Float & Int}>}>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> KClass<out {Comparable<{Long & Boolean & Byte & Char & Double & Short & Float & Int}> & java.io.Serializable}>
+    <T> -> KClass<out {java.io.Serializable & Comparable<{Long & Boolean & Byte & Char & Double & Short & Float & Int}>}>
 
 'Boolean' @ [33:16] ==> private constructor Boolean() defined in kotlin.Boolean[DeserializedClassConstructorDescriptor]
 

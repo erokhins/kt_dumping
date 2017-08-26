@@ -2613,9 +2613,9 @@ Inferred types:
 'when (value) {
             value.toInt().toLong() -> factory.createIntValue(value.toInt())
             else -> factory.createLongValue(value)
-        }' @ [835:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: IntegerValueConstant<{Comparable<{Long & Int}> & Number}>, entry1: IntegerValueConstant<{Comparable<{Long & Int}> & Number}>): IntegerValueConstant<{Comparable<{Long & Int}> & Number}>[SimpleFunctionDescriptorImpl]
+        }' @ [835:16] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: IntegerValueConstant<{Number & Comparable<{Long & Int}>}>, entry1: IntegerValueConstant<{Number & Comparable<{Long & Int}>}>): IntegerValueConstant<{Number & Comparable<{Long & Int}>}>[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> IntegerValueConstant<{Comparable<{Long & Int}> & Number}>
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> IntegerValueConstant<{Number & Comparable<{Long & Int}>}>
 
 'value' @ [835:22] ==> value-parameter value: Long defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createIntegerCompileTimeConstant[ValueParameterDescriptorImpl]
 
@@ -2639,9 +2639,9 @@ Inferred types:
 
 'value' @ [837:45] ==> value-parameter value: Long defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createIntegerCompileTimeConstant[ValueParameterDescriptorImpl]
 
-'wrap' @ [838:11] ==> private final fun <T> ConstantValue<{Comparable<{Long & Int}> & Number}>.wrap(parameters: CompileTimeConstant.Parameters): TypedCompileTimeConstant<{Comparable<{Long & Int}> & Number}> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor[SimpleFunctionDescriptorImpl]
+'wrap' @ [838:11] ==> private final fun <T> ConstantValue<{Number & Comparable<{Long & Int}>}>.wrap(parameters: CompileTimeConstant.Parameters): TypedCompileTimeConstant<{Number & Comparable<{Long & Int}>}> defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <T> -> {Comparable<{Long & Int}> & Number}
+    <T> -> {Number & Comparable<{Long & Int}>}
 
 'parameters' @ [838:16] ==> value-parameter parameters: CompileTimeConstant.Parameters defined in org.jetbrains.kotlin.resolve.constants.evaluate.ConstantExpressionEvaluatorVisitor.createIntegerCompileTimeConstant[ValueParameterDescriptorImpl]
 

@@ -180,14 +180,14 @@ Inferred types:
 
 'candidates' @ [116:36] ==> value-parameter candidates: Collection<C> defined in org.jetbrains.kotlin.resolve.calls.results.OverloadingConflictResolver.filterOutEquivalentCalls[ValueParameterDescriptorImpl]
 
-'sortedBy' @ [116:47] ==> public inline fun <T, R : Comparable<{Long & Comparable<Nothing> & Comparable<{Long & Any & Byte & Short & Int}> & Int}>> Iterable<C>.sortedBy(crossinline selector: (C) -> {Long & Comparable<Nothing> & Comparable<{Long & Any & Byte & Short & Int}> & Int}?): List<C> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'sortedBy' @ [116:47] ==> public inline fun <T, R : Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>> Iterable<C>.sortedBy(crossinline selector: (C) -> {Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}?): List<C> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> C
-    <R : Comparable<R>> -> {Long & Comparable<Nothing> & Comparable<{Long & Any & Byte & Short & Int}> & Int}
+    <R : Comparable<R>> -> {Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}
 
-'if (isFromSources(it.resultingDescriptor)) 0 else 1' @ [116:58] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: Int, elseBranch: Int): Int[SimpleFunctionDescriptorImpl]
+'if (isFromSources(it.resultingDescriptor)) 0 else 1' @ [116:58] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}, elseBranch: {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}): {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> Int
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {Long? & Byte? & Comparable<{Long & Any & Byte & Short & Int}>? & Comparable<{Long & Comparable<{Long & Any & Byte & Short & Int}> & Comparable<Nothing> & Int}>? & Short? & Comparable<Nothing>? & Int?}
 
 'invoke' @ [116:62] ==> public abstract operator fun invoke(p1: CallableDescriptor): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 

@@ -14,7 +14,7 @@
 
 'invoke' @ [29:17] ==> public abstract operator fun invoke(p1: T): Boolean defined in kotlin.Function1[FunctionInvokeDescriptor]
 
-'instance' @ [29:27] ==> val instance: {T & Any} defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover.doTraverse[LocalVariableDescriptor]
+'instance' @ [29:27] ==> val instance: {Any & T} defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover.doTraverse[LocalVariableDescriptor]
 
 'ctx' @ [30:17] ==> value-parameter ctx: JsContext<*> defined in org.jetbrains.kotlin.js.inline.clean.NodeRemover.doTraverse[ValueParameterDescriptorImpl]
 

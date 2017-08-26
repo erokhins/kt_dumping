@@ -14,9 +14,9 @@
 
 'nameWithoutExtension' @ [60:41] ==> public final val VirtualFile.nameWithoutExtension: String[MyPropertyDescriptor]
 
-'if (i > 0) i else ""' @ [60:65] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {java.io.Serializable & Comparable<{String & Int}>}, elseBranch: {java.io.Serializable & Comparable<{String & Int}>}): {java.io.Serializable & Comparable<{String & Int}>}[SimpleFunctionDescriptorImpl]
+'if (i > 0) i else ""' @ [60:65] ==> public final fun <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-IF-RESOLVE>`(thenBranch: {Comparable<{String & Int}> & java.io.Serializable}, elseBranch: {Comparable<{String & Int}> & java.io.Serializable}): {Comparable<{String & Int}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {java.io.Serializable & Comparable<{String & Int}>}
+    <`<TYPE-PARAMETER-FOR-IF-RESOLVE>`> -> {Comparable<{String & Int}> & java.io.Serializable}
 
 'i' @ [60:69] ==> var i: Int defined in org.jetbrains.kotlin.idea.actions.JavaToKotlinAction.Companion.uniqueKotlinFileName[LocalVariableDescriptor]
 

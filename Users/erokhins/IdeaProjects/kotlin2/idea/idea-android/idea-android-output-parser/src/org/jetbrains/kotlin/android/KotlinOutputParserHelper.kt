@@ -674,9 +674,9 @@ Inferred types:
 
 'messageKindClass' @ [226:36] ==> val messageKindClass: Class<out Any> defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper.loadSeverityEnums[LocalVariableDescriptor]
 
-'enumConstants' @ [226:53] ==> public final val <T : (Any..Any?)> Class<out (Any..Any?)>.enumConstants: (Array<out (Any..Any?)>..Array<out (Any..Any?)>?)[MyPropertyDescriptor]
+'enumConstants' @ [226:53] ==> public final val <T : (Any..Any?)> Class<out Any>.enumConstants: (Array<out (Any..Any?)>..Array<out (Any..Any?)>?)[MyPropertyDescriptor]
 Inferred types:
-    <T : (Any..Any?)> -> (kotlin.Any..kotlin.Any?)
+    <T : (Any..Any?)> -> Any
 
 'messageKindConstants' @ [227:22] ==> val messageKindConstants: Array<Any> defined in org.jetbrains.kotlin.android.KotlinOutputParserHelper.loadSeverityEnums[LocalVariableDescriptor]
 

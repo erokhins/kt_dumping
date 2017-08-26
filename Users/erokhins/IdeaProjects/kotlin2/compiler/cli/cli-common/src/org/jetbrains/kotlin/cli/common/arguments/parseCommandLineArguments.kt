@@ -243,9 +243,9 @@ Inferred types:
             else -> {
                 args[i++]
             }
-        }' @ [114:26] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {java.io.Serializable & Comparable<{Boolean & String}>}, entry1: {java.io.Serializable & Comparable<{Boolean & String}>}, entry2: {java.io.Serializable & Comparable<{Boolean & String}>}, entry3: {java.io.Serializable & Comparable<{Boolean & String}>}): {java.io.Serializable & Comparable<{Boolean & String}>}[SimpleFunctionDescriptorImpl]
+        }' @ [114:26] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {Comparable<{Boolean & String}> & java.io.Serializable}, entry1: {Comparable<{Boolean & String}> & java.io.Serializable}, entry2: {Comparable<{Boolean & String}> & java.io.Serializable}, entry3: {Comparable<{Boolean & String}> & java.io.Serializable}): {Comparable<{Boolean & String}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {java.io.Serializable & Comparable<{Boolean & String}>}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {Comparable<{Boolean & String}> & java.io.Serializable}
 
 'argumentField' @ [115:13] ==> val argumentField: ArgumentField<A>? defined in org.jetbrains.kotlin.cli.common.arguments.parseCommandLineArguments[LocalVariableDescriptor]
 

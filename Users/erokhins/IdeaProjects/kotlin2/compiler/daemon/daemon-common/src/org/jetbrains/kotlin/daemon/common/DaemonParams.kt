@@ -632,9 +632,9 @@ Inferred types:
 
 'COMPILE_DAEMON_FORCE_SHUTDOWN_DEFAULT_TIMEOUT_MS' @ [209:54] ==> public val COMPILE_DAEMON_FORCE_SHUTDOWN_DEFAULT_TIMEOUT_MS: Long defined in org.jetbrains.kotlin.daemon.common in file DaemonParams.kt[PropertyDescriptorImpl]
 
-'listOf' @ [215:17] ==> public fun <T> listOf(vararg elements: PropMapper<DaemonOptions, out {java.io.Serializable & Comparable<{Long & Boolean & String & Int}>}, KMutableProperty1<DaemonOptions, out {java.io.Serializable & Comparable<{Long & Boolean & String & Int}>}>>): List<PropMapper<DaemonOptions, out {java.io.Serializable & Comparable<{Long & Boolean & String & Int}>}, KMutableProperty1<DaemonOptions, out {java.io.Serializable & Comparable<{Long & Boolean & String & Int}>}>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'listOf' @ [215:17] ==> public fun <T> listOf(vararg elements: PropMapper<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}, KMutableProperty1<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}>>): List<PropMapper<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}, KMutableProperty1<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}>>> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> PropMapper<DaemonOptions, out {java.io.Serializable & Comparable<{Long & Boolean & String & Int}>}, KMutableProperty1<DaemonOptions, out {java.io.Serializable & Comparable<{Long & Boolean & String & Int}>}>>
+    <T> -> PropMapper<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}, KMutableProperty1<DaemonOptions, out {Comparable<{Long & Boolean & String & Int}> & java.io.Serializable}>>
 
 'PropMapper' @ [215:24] ==> public constructor PropMapper<C, V, out P : KMutableProperty1<DaemonOptions, String>>(dest: DaemonOptions, prop: KMutableProperty1<DaemonOptions, String>, names: List<String> = ..., fromString: (String) -> String, toString: (String) -> String? = ..., skipIf: (String) -> Boolean = ..., mergeDelimiter: String? = ...) defined in org.jetbrains.kotlin.daemon.common.PropMapper[ClassConstructorDescriptorImpl]
 Inferred types:

@@ -361,9 +361,9 @@ Inferred types:
                 CHECKMARK_COLUMN -> parameterInfos[rowIndex].isEnabled
                 PARAMETER_NAME_COLUMN -> parameterInfos[rowIndex].name
                 else -> null
-            }' @ [190:20] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {java.io.Serializable & Comparable<{Boolean & String}>}?, entry1: {java.io.Serializable & Comparable<{Boolean & String}>}?, entry2: {java.io.Serializable & Comparable<{Boolean & String}>}?): {java.io.Serializable & Comparable<{Boolean & String}>}?[SimpleFunctionDescriptorImpl]
+            }' @ [190:20] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {Comparable<{Boolean & String}> & java.io.Serializable}?, entry1: {Comparable<{Boolean & String}> & java.io.Serializable}?, entry2: {Comparable<{Boolean & String}> & java.io.Serializable}?): {Comparable<{Boolean & String}> & java.io.Serializable}?[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {java.io.Serializable & Comparable<{Boolean & String}>}?
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {Comparable<{Boolean & String}> & java.io.Serializable}?
 
 'columnIndex' @ [190:26] ==> value-parameter columnIndex: Int defined in org.jetbrains.kotlin.idea.refactoring.introduce.ui.AbstractParameterTablePanel.TableModelBase.getValueAt[ValueParameterDescriptorImpl]
 

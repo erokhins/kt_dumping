@@ -30,9 +30,9 @@
 
 'text' @ [52:80] ==> public final val KtExpression.text: (String..String?)[MyPropertyDescriptor]
 
-'setOf' @ [54:27] ==> public fun <T> setOf(vararg elements: {Comparable<{Long & Double & Float}> & Number}): Set<{Comparable<{Long & Double & Float}> & Number}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
+'setOf' @ [54:27] ==> public fun <T> setOf(vararg elements: {Number & Comparable<{Long & Double & Float}>}): Set<{Number & Comparable<{Long & Double & Float}>}> defined in kotlin.collections[DeserializedSimpleFunctionDescriptor]
 Inferred types:
-    <T> -> {Comparable<{Long & Double & Float}> & Number}
+    <T> -> {Number & Comparable<{Long & Double & Float}>}
 
 'this' @ [57:9] ==> <this> defined in org.jetbrains.kotlin.idea.intentions.loopToCallChain.isZeroConstant[ReceiverParameterDescriptorImpl]
 

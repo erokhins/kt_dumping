@@ -926,10 +926,10 @@ Inferred types:
 Inferred types:
     <T> -> PsiShortNamesCache
 
-'flatMap' @ [317:36] ==> public fun <T, R> Sequence<PsiShortNamesCache>.flatMap(transform: (PsiShortNamesCache) -> Sequence<{PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}>): Sequence<{PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
+'flatMap' @ [317:36] ==> public fun <T, R> Sequence<PsiShortNamesCache>.flatMap(transform: (PsiShortNamesCache) -> Sequence<{PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}>): Sequence<{PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}> defined in kotlin.sequences[DeserializedSimpleFunctionDescriptor]
 Inferred types:
     <T> -> PsiShortNamesCache
-    <R> -> {PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner & PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)>}
+    <R> -> {PomRenameableTarget<(com.intellij.psi.PsiElement..com.intellij.psi.PsiElement?)> & PsiTarget & PsiNameIdentifierOwner & PsiDocCommentOwner}
 
 'cache' @ [318:13] ==> value-parameter cache: PsiShortNamesCache defined in org.jetbrains.kotlin.idea.core.KotlinIndicesHelper.getCallablesByName.<anonymous>[ValueParameterDescriptorImpl]
 

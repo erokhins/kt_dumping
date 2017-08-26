@@ -366,9 +366,9 @@ Inferred types:
                 Kind.LONG -> input.readLong()
                 Kind.DOUBLE -> input.readDouble()
                 Kind.STRING -> IOUtil.readString(input)!!
-            }' @ [147:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {Comparable<{Long & Double & Float & String & Int}> & java.io.Serializable}, entry1: {Comparable<{Long & Double & Float & String & Int}> & java.io.Serializable}, entry2: {Comparable<{Long & Double & Float & String & Int}> & java.io.Serializable}, entry3: {Comparable<{Long & Double & Float & String & Int}> & java.io.Serializable}, entry4: {Comparable<{Long & Double & Float & String & Int}> & java.io.Serializable}): {Comparable<{Long & Double & Float & String & Int}> & java.io.Serializable}[SimpleFunctionDescriptorImpl]
+            }' @ [147:30] ==> public final fun <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> `<SPECIAL-FUNCTION-FOR-WHEN-RESOLVE>`(entry0: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}, entry1: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}, entry2: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}, entry3: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}, entry4: {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}): {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}[SimpleFunctionDescriptorImpl]
 Inferred types:
-    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {Comparable<{Long & Double & Float & String & Int}> & java.io.Serializable}
+    <`<TYPE-PARAMETER-FOR-WHEN-RESOLVE>`> -> {java.io.Serializable & Comparable<{Long & Double & Float & String & Int}>}
 
 'kind' @ [147:36] ==> val kind: ConstantsMapExternalizer.Kind defined in org.jetbrains.kotlin.incremental.storage.ConstantsMapExternalizer.read.<anonymous>[LocalVariableDescriptor]
 
